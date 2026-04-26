@@ -1,8 +1,7 @@
----
 Criado em: 2026-04-10 23:27
-Ultima Atualizacao: 2026-04-10 23:27
+Ultima Atualizacao: 2026-04-26 00:57
 Status: Ativo
----
+
 
 # 🧬 rx-anatomy.md (Raio-X de Anatomia)
 

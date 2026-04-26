@@ -35,3 +35,29 @@ Status: Ativo
 
 ## [HARNESS-PASS] Report | spec:synapse_workflow
 - **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:synapse_workflow
+- **Detalhe:** handoff: Handoffs malformados: ['Handoff incompleto: ** @user -> @antigravity-agent'] | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'new_context_path' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'new_context_path': Arquivo '.context/maintenance/rx-anatomy.md' não foi propagado (ausente no diff).
+  - Regra 'new_context_path': Checkbox [x] para '.context/maintenance/rx-anatomy.md' ausente ou desmarcado no Journal.
+  - Contrato incompleto. Detectado: executor='', validator=''.
+  - Status de validação inválido: ''. Esperado 'READY TO COMMIT'.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:synapse_workflow
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'new_context_path' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'new_context_path': Arquivo '.context/maintenance/rx-anatomy.md' não foi propagado (ausente no diff).
+  - Regra 'new_context_path': Checkbox [x] para '.context/maintenance/rx-anatomy.md' ausente ou desmarcado no Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+

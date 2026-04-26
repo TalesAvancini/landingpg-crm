@@ -63,3 +63,39 @@ Governança, Regras, Market
 - segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Aprovado via SAM Audit. Infraestrutura resiliente e modo strict funcional.`
+
+## 📅 2026-04-26 00:08
+**Decisão/Bug:** 🧹 Saneamento de Contexto: Expurgo de Diretório Legado.
+**Tags:** Manutenção, Eficiência, Context-Sanitation
+**Ação:** 
+1. Identificado que o diretório `.context/specs/` continha apenas planos de implementação legados da v2.4.1 (Entulho Cognitivo).
+2. O usuário confirmou a exclusão total do diretório para manter o contexto "Lean".
+3. Validação via `npm run context:validate` confirmou que a integridade do framework v2.5.2 permanece intacta, pois as specs ativas residem na raiz em `.specs/features/`.
+**Implicação:** Redução de ruído no carregamento de arquivos e economia de processamento (tokens) ao eliminar documentos inertes.
+**Handoff:** @user -> @antigravity-agent | Estado: Contexto saneado e validado | Próximo: Evolução biológica.
+
+## 📅 2026-04-26 00:54
+**Decisão/Bug:** 🧬 Evolução de Governança: Novo RX Biológico (Foco Autobuilder).
+**Ação:**
+1. Arquivado o antigo `rx-biology.md` (v2.4.1) em `maintenance/_archive_context/rx_history/` para preservar o histórico.
+2. Implementado o novo `rx-biology.md` (v2.5.2) focado no **Metabolismo do Framework**.
+3. A nova versão foca em Scripts como "Órgãos" e Pipeline como "Processo Digestivo/Imunológico", alinhado à fase de construção permanente (Autobuilder).
+
+### Matriz de Propagação (Sinapse)
+- [x] `.context/maintenance/rx-biology.md` -> [Substituído por v2.5.2]
+- [x] `.context/maintenance/rx-anatomy.md` -> [Mapa anatômico atualizado/carimbado]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de saneamento]
+- [x] `.context/maintenance/_archive_context/rx_history/` -> [Arquivamento legacy]
+
+
+### Contrato de Validação
+- executor_context_id: `CTX_SAN_0426_01`
+- validator_context_id: `CTX_USER_AUDIT`
+- segregation_check: `executor_context_id != validator_context_id`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Saneamento e evolução biológica validados pelo usuário.`
+
+**Handoff:** @antigravity-agent -> @user | Estado: RX Biológico Evoluído | Próximo: Commitar mudanças.
+
+
+
