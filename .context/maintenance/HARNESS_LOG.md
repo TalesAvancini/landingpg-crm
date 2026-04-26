@@ -78,3 +78,17 @@ Status: Ativo
 
 [FATAL] Modo STRICT: Pipeline bloqueado.
 
+
+## [HARNESS-PASS] Report | spec:synapse_workflow
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:synapse_workflow
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Contrato incompleto. Detectado: executor='', validator=''.
+  - Status de validação inválido: '** [CONSISTENT & HARDENED]'. Esperado 'READY TO COMMIT'.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
