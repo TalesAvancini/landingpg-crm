@@ -2,12 +2,12 @@
 
 ---
 schema_version: 1
-generated_at: 2026-04-26T20:04:06.305510+00:00
+generated_at: 2026-04-26T20:06:03.239209+00:00
 root: template_inicío_de_projeto
 mode: full | TOC
 profile: ai-default
-file_count: 83
-byte_count: 265882
+file_count: 84
+byte_count: 307492
 ignored_dirs:
   - .cache
   - .cursor
@@ -94,6 +94,7 @@ sensitive_rules:
   - `.context/market/wiki_log.md` -> [file_c255058b56fe](#file_c255058b56fe)
   - `.context/monitoring/CONTEXT_HEALTH.md` -> [file_068a21d64bec](#file_068a21d64bec)
   - `.context/monitoring/EXECUTION_BUFFER.md` -> [file_c6d44cc7da35](#file_c6d44cc7da35)
+  - `.context/monitoring/PROJECT_INDEX.md` -> [file_3667001850eb](#file_3667001850eb)
   - `.specs/_template.md` -> [file_b838611f038c](#file_b838611f038c)
   - `.specs/features/harness_fail_closed/STATE.md` -> [file_d4f64fc3b549](#file_d4f64fc3b549)
   - `.specs/features/harness_fail_closed/spec.md` -> [file_a32e3bf74e3d](#file_a32e3bf74e3d)
@@ -196,6 +197,7 @@ sensitive_rules:
 - `.context/market/wiki_log.md` -> [file_c255058b56fe](#file_c255058b56fe)
 - `.context/monitoring/CONTEXT_HEALTH.md` -> [file_068a21d64bec](#file_068a21d64bec)
 - `.context/monitoring/EXECUTION_BUFFER.md` -> [file_c6d44cc7da35](#file_c6d44cc7da35)
+- `.context/monitoring/PROJECT_INDEX.md` -> [file_3667001850eb](#file_3667001850eb)
 - `.github/workflows/context-health.yml` -> [file_e477c4c5a96c](#file_e477c4c5a96c)
 - `.husky/_/husky.sh` -> [file_3adfd36c1559](#file_3adfd36c1559)
 - `.specs/_template.md` -> [file_b838611f038c](#file_b838611f038c)
@@ -418,13 +420,13 @@ FILE_END id=file_9b6470da8849
 
 ---
 <a id="file_41c3d3da4381"></a>
-FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=106 bytes=3846 mtime=2026-04-26T18:32:38.310520+00:00 sha1=21ad0bdbb1919e54783a64ed1a1b70e7989810c5
+FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=121 bytes=4420 mtime=2026-04-26T20:05:59.752583+00:00 sha1=b94178d622090aaa22da994afb498cbe0e283c89
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_41c3d3da4381
 
 ---
 <a id="file_019509328844"></a>
-FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=208 bytes=12213 mtime=2026-04-26T19:36:40.549831+00:00 sha1=70089e787e27273d1fc2d5ce0c463790f2434a41
+FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=235 bytes=13963 mtime=2026-04-26T20:05:27.832960+00:00 sha1=a45fd816e834debd56949d78e1f2daf1c8c2d803
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_019509328844
 
@@ -442,7 +444,7 @@ FILE_END id=file_ef714e7c8162
 
 ---
 <a id="file_d069d4f2ebef"></a>
-FILE_START id=file_d069d4f2ebef path=.context/maintenance/TECHNICAL_REQUIREMENTS.md domain=docs lang=markdown lines=144 bytes=1005 mtime=2026-04-26T18:32:37.458651+00:00 sha1=f8002a77c413d2a03230911904785af04697947e
+FILE_START id=file_d069d4f2ebef path=.context/maintenance/TECHNICAL_REQUIREMENTS.md domain=docs lang=markdown lines=146 bytes=1007 mtime=2026-04-26T20:05:59.031448+00:00 sha1=0d2b09786358f7eba7208d46d60d95bb6276305e
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_d069d4f2ebef
 
@@ -466,7 +468,7 @@ FILE_END id=file_a5c71962029a
 
 ---
 <a id="file_54a6a553d34b"></a>
-FILE_START id=file_54a6a553d34b path=.context/maintenance/rx-anatomy.md domain=docs lang=markdown lines=35 bytes=2194 mtime=2026-04-26T04:19:14.919042+00:00 sha1=d2bb81057a26d7e11cd26a5c02a6e87d2cf32fec
+FILE_START id=file_54a6a553d34b path=.context/maintenance/rx-anatomy.md domain=docs lang=markdown lines=35 bytes=2209 mtime=2026-04-26T20:05:14.112951+00:00 sha1=ff59b0326c4c35941a940ff02e478302cae30f20
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_54a6a553d34b
 
@@ -544,13 +546,13 @@ FILE_END id=file_b5d38697335e
 
 ---
 <a id="file_c255058b56fe"></a>
-FILE_START id=file_c255058b56fe path=.context/market/wiki_log.md domain=docs lang=markdown lines=44 bytes=3985 mtime=2026-04-26T18:32:39.119078+00:00 sha1=c29c1ddd1560f0bd1ddd719a847283806e71be34
+FILE_START id=file_c255058b56fe path=.context/market/wiki_log.md domain=docs lang=markdown lines=46 bytes=4222 mtime=2026-04-26T20:06:01.522451+00:00 sha1=525b8120abc62a582d323e1fcd0f900512fb59b5
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_c255058b56fe
 
 ---
 <a id="file_068a21d64bec"></a>
-FILE_START id=file_068a21d64bec path=.context/monitoring/CONTEXT_HEALTH.md domain=docs lang=markdown lines=38 bytes=1503 mtime=2026-04-26T18:32:39.990012+00:00 sha1=d7a73406ec22f92dc4112cc7d899fa3030bafb8e
+FILE_START id=file_068a21d64bec path=.context/monitoring/CONTEXT_HEALTH.md domain=docs lang=markdown lines=38 bytes=1503 mtime=2026-04-26T20:06:02.040350+00:00 sha1=9f3581839e4aff0f7e5e792327b375e2cf30d1c2
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_068a21d64bec
 
@@ -559,6 +561,12 @@ FILE_END id=file_068a21d64bec
 FILE_START id=file_c6d44cc7da35 path=.context/monitoring/EXECUTION_BUFFER.md domain=docs lang=markdown lines=10 bytes=327 mtime=2026-04-18T14:24:14.955191+00:00 sha1=d7989e55f1d5b4c9c8c2fa6057d6c8407b80e134
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_c6d44cc7da35
+
+---
+<a id="file_3667001850eb"></a>
+FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=723 bytes=39032 mtime=2026-04-26T20:04:06.306769+00:00 sha1=c6a61ea2ee0ea7b11d35b642700fcd01d5460730
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_3667001850eb
 
 ---
 <a id="file_e477c4c5a96c"></a>
@@ -604,7 +612,7 @@ FILE_END id=file_9801af51c558
 
 ---
 <a id="file_98c620fda2a6"></a>
-FILE_START id=file_98c620fda2a6 path=.specs/features/qa_subagent/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-26T18:32:38.312025+00:00 sha1=ce2ba24c2e6b8fcccd8c20bd297f4c4e86d873a5
+FILE_START id=file_98c620fda2a6 path=.specs/features/qa_subagent/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-26T20:05:59.752583+00:00 sha1=b93b107f8a16d137fdc4d01e6817ff9bfbed2141
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_98c620fda2a6
 

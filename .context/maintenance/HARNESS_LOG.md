@@ -116,3 +116,6 @@ Status: Ativo
 
 [FATAL] Modo STRICT: Pipeline bloqueado.
 
+
+## [HARNESS-PASS] Report | spec:qa_subagent
+- **Detalhe:** All contracts valid
