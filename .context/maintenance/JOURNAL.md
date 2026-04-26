@@ -5,8 +5,32 @@ Status: Ativo
 Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_144021.md.
 ---
 
-# JOURNAL.md (Memoria Curta)
+# JOURNAL.md (Memoria Contínua)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-04-26 16:30
+**Decisão/Bug:** 📖 Governança: Glossário de Arquivos e Correção de Memória Contínua.
+**Ação:**
+1. Criado o arquivo `.context/brain/FILE_GLOSSARY.md` para servir como dicionário definitivo de responsabilidades de cada arquivo `.md`.
+2. Atualizado `RX_REPOSITORIO.md` para refletir a nova infraestrutura de subagentes e Zero Trust.
+3. Realizada varredura global para substituir o termo errôneo "Memória Curta" por "Memória Contínua" em relação ao `JOURNAL.md` (arquivos afetados: `MASTER_FLOW.md`, `README_CONTEXT.md`, `contexto_v2.5.2.md`).
+4. Finalizada a limpeza de pastas legadas `.specs/` que já foram arquivadas.
+
+### Matriz de Propagação (Sinapse)
+- [x] `.context/brain/FILE_GLOSSARY.md` -> [Novo dicionário]
+- [x] `.context/maintenance/RX_REPOSITORIO.md` -> [Mapa atualizado]
+- [x] `.context/brain/MASTER_FLOW.md` -> [Terminologia corrigida]
+- [x] `README_CONTEXT.md` -> [Terminologia corrigida]
+- [x] `.context/maintenance/JOURNAL.md` -> [Título corrigido]
+
+### Contrato de Validação
+- executor_context_id: `CTX_GLOSSARY_0426`
+- validator_context_id: `CTX_USER_VALIDATION`
+- segregation_check: `executor_context_id != validator_context_id`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Glossário criado e terminologia de memória corrigida em todo o ecossistema.`
+
+**Handoff:** @antigravity-agent -> Pipeline | Estado: Documentação Hardened e Glossário Ativo | Próximo: Git Commit.
 
 ## 📅 2026-04-26 15:30
 **Decisão/Bug:** 🤖 Implementação do Subagente de QA (Validação Autônoma).

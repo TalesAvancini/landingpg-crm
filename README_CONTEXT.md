@@ -28,7 +28,7 @@ O diretório `.context/` é a **Fonte Unica da Verdade (SSOT)** do projeto. Ele 
 |--------|---------------------|--------|
 | 🧠 **Cognitiva** | `brain/` (`RULES`, `MASTER_FLOW`, `AGENT_REGISTRY`, `PROMPT_LIBRARY`, `PRD`) | Governanca, roteamento, execucao e requisitos. |
 | 💼 **Mercado** | `market/` | Camada Estratégica, limites operacionais e compliance financeiro. |
-| 🛠️ **Manutencao** | `maintenance/` (`JOURNAL`, `TECH_REQ`, `rebuild_guide`, `schema.sql`) | Memoria viva, inventario tecnico e recovery. |
+| 🛠️ **Manutencao** | `maintenance/` (`JOURNAL`, `TECH_REQ`, `rebuild_guide`, `schema.sql`) | Memoria continua, inventario tecnico e recovery. |
 | 📊 **Monitoramento** | `monitoring/` (`CONTEXT_HEALTH.md`) | Dashboard de integridade e limites de sessao. |
 | ⚙️ **Automacao** | `_scripts/*.py`, `run_context.py` | Validacao, purge, sync, harness e orquestracao. (SSOT de Execucao). |
 | 🛡️ **Qualidade** | `tests/test_context.py`, `.husky/` | Testes automaticos e gate de commit. |

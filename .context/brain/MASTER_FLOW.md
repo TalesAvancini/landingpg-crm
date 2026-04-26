@@ -47,7 +47,7 @@ Status: [Ativo | Arquivado | Depreciado]
     │   └── research/
     │
     ├── 🛠️ maintenance/                 # CAMADA DE MANUTENÇÃO (The Housekeeper)
-    │   ├── JOURNAL.md                 # Log vivo (Máx ~50k char - Memória Curta)
+    │   ├── JOURNAL.md                 # Log vivo (Máx ~50k char - Memória Contínua)
     │   ├── HARNESS_LOG.md             # Telemetria técnica automática do Harness (PASS/FAIL)
     │   ├── JOURNAL_SYNAPSE.md         # Matriz de Gatilhos Anti-Migué (SAM)
     │   ├── TECHNICAL_REQUIREMENTS.md  # Stack, libs e infra (Inventário)

@@ -1743,7 +1743,7 @@ Status: Ativo
 Nota: Semente pos-purge. {len(archive_entries)} entradas arquivadas em {archive_file.name}.
 ---
 
-# JOURNAL.md (Memoria Curta)
+# JOURNAL.md (Memoria Contínua)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
 """ + "\n\n".join(keep_entries) + "\n"
@@ -2468,7 +2468,7 @@ Status: [Ativo | Arquivado | Depreciado]
     │   └── research/
     │
     ├── 🛠️ maintenance/                 # CAMADA DE MANUTENÇÃO (The Housekeeper)
-    │   ├── JOURNAL.md                 # Log vivo (Máx ~50k char - Memória Curta)
+    │   ├── JOURNAL.md                 # Log vivo (Máx ~50k char - Memória Contínua)
     │   ├── TECHNICAL_REQUIREMENTS.md  # Stack, libs e infra (Inventário)
     │   ├── rebuild_guide.md           # Guia de setup e infra (Pós-Mortem Vivo)
     │   ├── schema.sql                 # Snapshot do Banco de Dados (Verdade Real)
