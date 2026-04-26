@@ -13,8 +13,9 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 **Ação:**
 1. Criado o arquivo `.context/brain/FILE_GLOSSARY.md` para servir como dicionário definitivo de responsabilidades de cada arquivo `.md`.
 2. Atualizado `RX_REPOSITORIO.md` para refletir a nova infraestrutura de subagentes e Zero Trust.
-3. Realizada varredura global para substituir o termo errôneo "Memória Curta" por "Memória Contínua" em relação ao `JOURNAL.md` (arquivos afetados: `MASTER_FLOW.md`, `README_CONTEXT.md`, `contexto_v2.5.2.md`).
-4. Finalizada a limpeza de pastas legadas `.specs/` que já foram arquivadas.
+3. Criado o arquivo `.context/brain/SCRIPT_GLOSSARY.md` para centralizar a documentação detalhada de todos os scripts de automação.
+4. Realizada varredura global para substituir o termo errôneo "Memória Curta" por "Memória Contínua" em relação ao `JOURNAL.md`.
+5. Finalizada a limpeza de pastas legadas `.specs/` que já foram arquivadas.
 
 ### Matriz de Propagação (Sinapse)
 - [x] `.context/brain/FILE_GLOSSARY.md` -> [Novo dicionário]

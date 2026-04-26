@@ -38,6 +38,7 @@ Status: Ativo
 | `PROMPT_LIBRARY.md` | **O Vocabulário.** Coleção de prompts padronizados para acionar os agentes de forma previsível e sem alucinações. | Humano |
 | `START_HERE.md` | **Onboarding.** Guia passo a passo para novos desenvolvedores entenderem o pipeline de descoberta (Visão -> Inception -> Execução). | Humano |
 | `FILE_GLOSSARY.md` | **O Dicionário (Este arquivo).** Mapeia a responsabilidade estrita de cada `.md` dentro do ecossistema. | `@context-keeper` |
+| `SCRIPT_GLOSSARY.md` | **O Dicionário de Automação.** Mapeia a função, responsabilidade e modo de invocação de todos os scripts Python da pasta `_scripts/`. | `@context-keeper` |
 
 ---
 
