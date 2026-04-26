@@ -64,3 +64,6 @@ Status: Ativo
 
 ## [HARNESS-PASS] Report | spec:synapse_workflow
 - **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:synapse_workflow
+- **Detalhe:** All contracts valid
