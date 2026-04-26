@@ -130,6 +130,11 @@ Governança, Regras, Market
 - Decidir se vamos fundir o `rx-anatomy.md` com o `RX_REPOSITORIO.md`.
 - Aprofundar o "RX de Negócio" do framework (vender governança AI).
 
+### Contrato de Encerramento
+- executor_context_id: `CTX_END_0426_01`
+- validator_context_id: `CTX_USER_DONE`
+- status: `🟢 READY TO COMMIT`
+
 **Handoff:** @antigravity-agent -> @user | Estado: Casa limpa, motor revisado e mapa traçado. | Próximo: Execução de Feature.
 
 
