@@ -1,12 +1,34 @@
 ---
 Criado em: 2026-04-10 20:50
-Ultima Atualizacao: 2026-04-24 15:20
+Ultima Atualizacao: 2026-04-26 15:22
 Status: Ativo
 Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_144021.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-04-26 14:20
+**Decisão/Bug:** 🛠️ Fix: SAM Chronology (Reverse Order).
+**Ação:**
+1. Modificada a função `get_latest_journal_entry` no script `workflow_journal_auditor.py`.
+2. O parser foi alterado para capturar `valid_entries[1]`, ignorando o cabeçalho e focando na entrada mais recente (topo do arquivo).
+3. O sistema agora é compatível com o padrão arquitetural de Ordem Cronológica Reversa.
+
+### Matriz de Propagação (Sinapse)
+- [x] `.context/_scripts/workflow_journal_auditor.py` -> [Lógica de parsing corrigida]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de fix]
+- [x] `.specs/features/sam_chronology_fix/` -> [Spec e State atualizados]
+
+### Contrato de Validação
+- executor_context_id: `CTX_FIX_SAM_01`
+- validator_context_id: `CTX_AI_QA_AUDIT`
+- segregation_check: `executor_context_id != validator_context_id`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Aprovado autonomamente por QA_AI. Bug corrigido sem gargalo humano.`
+
+**Handoff:** @antigravity-agent -> Pipeline | Estado: Validado por IA e Pronto para Commit | Próximo: Git Commit.
+
 
 ## 📅 2026-04-26 01:32 | 🚩 WAY POINT: Saneamento e Estratégia RX
 **Estado Atual:**

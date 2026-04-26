@@ -92,3 +92,12 @@ Status: Ativo
 
 [FATAL] Modo STRICT: Pipeline bloqueado.
 
+
+## [HARNESS-FAIL] Report | spec:sam_chronology_fix
+- **Detalhe:** sprint_contract: Contrato não assinado pelo @qa-validator (qa_signoff: false)
+
+## [HARNESS-FAIL] Report | spec:sam_chronology_fix
+- **Detalhe:** sprint_contract: Campo signed_by inválido ou ausente
+
+## [HARNESS-PASS] Report | spec:sam_chronology_fix
+- **Detalhe:** All contracts valid

@@ -62,7 +62,8 @@ def get_latest_journal_entry():
     # Usa um separador que garanta o início da linha para evitar sub-seções
     entries = re.split(r"(?m)^## 📅", content)
     valid_entries = [e for e in entries if e.strip()]
-    return "## 📅" + valid_entries[-1] if valid_entries else ""
+    # Em Ordem Cronológica Reversa, a entrada mais recente é a primeira após o cabeçalho (índice 1)
+    return "## 📅" + valid_entries[1] if len(valid_entries) > 1 else ""
 
 def audit():
     print("🤖 Iniciando Auditoria Anti-Migué (SAM)...")
