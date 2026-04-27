@@ -8,6 +8,25 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 # JOURNAL.md (Memoria Contínua)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-04-26 23:58
+**Decisão/Bug:** 📝 Planejamento: Registro de Insights para Evolução do Harness (H.O.K Forge).
+**Ação:**
+1. Criado o arquivo `planos/relatorio_MiMo-v2.5-Pro.md` contendo uma análise profunda e 10 propostas de melhorias incrementais para o framework.
+2. Os temas incluem: Telemetria de falhas, severidade de checks (Fatal/Warning), validação incremental via Git Diff, sistema de plugins para novos checks e o conceito de "Sistema Imunológico" (Febre/Modo Degradado).
+3. O documento servirá como base para o roadmap da versão v2.6.
+
+### Matriz de Propagação (Sinapse)
+- [x] `planos/relatorio_MiMo-v2.5-Pro.md` -> [Novo relatório de insights]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de planejamento]
+
+### Contrato de Validação
+- executor_context_id: `CTX_MIMO_INSIGHTS_0426`
+- validator_context_id: `CTX_USER_PLANNING`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Insights arquivados e registrados. O plano de imunidade sistêmica está oficialmente no radar de evolução do kit.`
+
+**Handoff:** @antigravity-agent -> Pipeline | Estado: Melhorias planejadas e arquivadas. | Próximo: Commit.
+
 ## 📅 2026-04-26 17:30
 **Decisão/Bug:** 📖 Governança, Regras: Atualização da Cognição da IA sobre o Radar Arquitetural.
 **Ação:**
