@@ -1,12 +1,32 @@
 ---
 Criado em: 2026-04-10 20:50
-Ultima Atualizacao: 2026-04-28 23:00
+Ultima Atualizacao: 2026-04-28 23:45
 Status: Ativo
 Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_144021.md.
 ---
 
 # JOURNAL.md (Memoria Contínua)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-04-28 23:45
+**Decisão/Bug:** 🏛️ Arquitetura Multi-Agent: Implementação do Modelo Hub & Spoke.
+**Ação:**
+1. Consolidada a nova coreografia de agentes: Hub (IA Principal/Planner) orquestrando Spokes (Executor/Validador) isolados.
+2. Definido o **Pre-flight Gate de Impacto** (Grep obrigatório) e o **Circuit Breaker** (`max_impact_radius`) como leis do framework.
+3. Implementado o reporte de **Telemetria no SCOPE_BLOWOUT** para garantir feedback loop real entre Executor e Hub na re-fragmentação de specs.
+4. Definida a fronteira entre Validação Semântica (Agente) e Estrutural (Scripts SAM/Harness).
+
+### Matriz de Propagação (Sinapse)
+- [x] `planos/plano_coreografia_multi_agent.md` -> [Novo plano de governança]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de decisão arquitetural]
+
+### Contrato de Validação
+- executor_context_id: `CTX_MULTI_AGENT_DANCE_0428`
+- validator_context_id: `CTX_USER_ARCHITECTURE_DONE`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Aprovado o modelo de Hub & Spoke com blindagem mecânica via Harness. Próximo passo: Aplicação nos arquivos mestre.`
+
+**Handoff:** @antigravity-agent -> @user | Estado: Governança Multi-Agent aprovada e registrada. | Próximo: Execução dos patches.
 
 ## 📅 2026-04-28 23:00
 **Decisão/Bug:** 🏗️ Hardening do Oracle Engine: Consolidação do Plano de Evolução v3.
