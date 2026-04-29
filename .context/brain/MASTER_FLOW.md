@@ -90,13 +90,16 @@ Status: [Ativo | Arquivado | Depreciado]
 ---
 
 ## 🔄 2.2 Coreografia Hub & Spoke (A Dança)
-Para projetos de complexidade média/alta, o Antigravity utiliza a segregação de agentes:
+Para projetos de complexidade média/alta, o Antigravity utiliza a segregação de agentes em processos isolados para atingir **Zero Trust**.
 
-1.  **[Planner - Hub]**: IA Principal desenha a SPEC, define `max_impact_radius` e delega.
-2.  **[Pre-flight - Executor]**: Subagente roda `grep` (Pre-flight Gate). Se impacto > Limite → `SCOPE_BLOWOUT` (Telemetria no `STATE.md`).
-3.  **[Execution - Executor]**: Subagente coda sob rigor do `flash-harness` (Log sequencial).
-4.  **[Auditoria - Validador]**: Subagente valida Semântica (Lógica) + Telemetria (Impacto resolvido).
-5.  **[Finalização - Hub]**: IA Principal retoma, valida SAM e arquiva.
+> **Mecanismo de Spawn (Isolamento Físico):**
+> Os Spokes (Executores e Validadores) não são apenas personas da IA Principal. Eles residem fisicamente em `.agent/subagents/` (ex: `spec-driver.md`, `qa-validator.md`). Para invocá-los sem poluição de contexto, o Hub deve finalizar a execução usando a sintaxe de delegação explícita do Host: `/[nome-do-subagente] [instrução]`.
+
+1.  **[Planner - Hub]**: IA Principal desenha a SPEC na janela atual, define `max_impact_radius` e emite o comando de Spawn (`/spec-driver`).
+2.  **[Pre-flight - Executor]**: Novo processo limpo nasce e roda `grep` (Pre-flight Gate). Se impacto > Limite → `SCOPE_BLOWOUT` (Telemetria no `STATE.md`).
+3.  **[Execution - Executor]**: Subagente coda sob rigor do `flash-harness` (Log sequencial). Ao terminar, emite `/qa-validator`.
+4.  **[Auditoria - Validador]**: Novo processo cego nasce. Valida Semântica (Lógica) + Telemetria (Impacto resolvido). Assina o `spec.md` se correto.
+5.  **[Finalização - Hub]**: IA Principal (Humano aciona o Hub) verifica a SPEC assinada, valida o SAM e comita/arquiva.
 
 ---
 

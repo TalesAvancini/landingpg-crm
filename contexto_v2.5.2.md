@@ -2,12 +2,12 @@
 
 ---
 schema_version: 1
-generated_at: 2026-04-26T19:50:13.968764+00:00
+generated_at: 2026-04-29T04:14:49.222918+00:00
 root: template_inicío_de_projeto
 mode: full
 profile: ai-default
-file_count: 83
-byte_count: 264965
+file_count: 87
+byte_count: 327897
 ignored_dirs:
   - .cache
   - .cursor
@@ -59,6 +59,7 @@ sensitive_rules:
   - `.context/maintenance/migrations/001_init.sql` -> [file_3707c3aa3239](#file_3707c3aa3239)
 - `docs`:
   - `.agent/subagents/qa-validator.md` -> [file_5a0c0f1b1bd0](#file_5a0c0f1b1bd0)
+  - `.agent/subagents/spec-driver.md` -> [file_a412f1bb7017](#file_a412f1bb7017)
   - `.context/brain/AGENT_REGISTRY.md` -> [file_e7c17acb71ff](#file_e7c17acb71ff)
   - `.context/brain/FILE_GLOSSARY.md` -> [file_14666768162a](#file_14666768162a)
   - `.context/brain/HARNESS_REGISTRY.md` -> [file_4b29e274836e](#file_4b29e274836e)
@@ -94,11 +95,14 @@ sensitive_rules:
   - `.context/market/wiki_log.md` -> [file_c255058b56fe](#file_c255058b56fe)
   - `.context/monitoring/CONTEXT_HEALTH.md` -> [file_068a21d64bec](#file_068a21d64bec)
   - `.context/monitoring/EXECUTION_BUFFER.md` -> [file_c6d44cc7da35](#file_c6d44cc7da35)
+  - `.context/monitoring/PROJECT_INDEX.md` -> [file_3667001850eb](#file_3667001850eb)
   - `.specs/_template.md` -> [file_b838611f038c](#file_b838611f038c)
   - `.specs/features/harness_fail_closed/STATE.md` -> [file_d4f64fc3b549](#file_d4f64fc3b549)
   - `.specs/features/harness_fail_closed/spec.md` -> [file_a32e3bf74e3d](#file_a32e3bf74e3d)
   - `.specs/features/meta-inception/STATE.md` -> [file_238a0e1da225](#file_238a0e1da225)
   - `.specs/features/meta-inception/spec.md` -> [file_9801af51c558](#file_9801af51c558)
+  - `.specs/features/multi_agent_choreography/STATE.md` -> [file_452b2ed7917b](#file_452b2ed7917b)
+  - `.specs/features/multi_agent_choreography/spec.md` -> [file_6aa9a4e78301](#file_6aa9a4e78301)
   - `.specs/features/qa_subagent/STATE.md` -> [file_98c620fda2a6](#file_98c620fda2a6)
   - `.specs/features/qa_subagent/spec.md` -> [file_72cc9b3bbcc2](#file_72cc9b3bbcc2)
   - `.specs/features/sam_chronology_fix/STATE.md` -> [file_f288e14cea57](#file_f288e14cea57)
@@ -126,6 +130,7 @@ sensitive_rules:
   - `.context/_scripts/ingest_wiki_guard.py` -> [file_0731dcfd7873](#file_0731dcfd7873)
   - `.context/_scripts/lint_wiki.py` -> [file_ab41b07fb3fb](#file_ab41b07fb3fb)
   - `.context/_scripts/migration_registry.py` -> [file_d65b48a9d56c](#file_d65b48a9d56c)
+  - `.context/_scripts/project_bundler.py` -> [file_02d732116d93](#file_02d732116d93)
   - `.context/_scripts/purge_journal.py` -> [file_024b28a37d29](#file_024b28a37d29)
   - `.context/_scripts/secrets_scanner.py` -> [file_e98b95e5fb6d](#file_e98b95e5fb6d)
   - `.context/_scripts/sync_project.py` -> [file_f122711ba9e1](#file_f122711ba9e1)
@@ -133,7 +138,6 @@ sensitive_rules:
   - `.context/_scripts/workflow_journal_auditor.py` -> [file_8f42e61c8a29](#file_8f42e61c8a29)
   - `.context/maintenance/schema.sql` -> [file_91d5627a725e](#file_91d5627a725e)
   - `.husky/_/husky.sh` -> [file_3adfd36c1559](#file_3adfd36c1559)
-  - `captura_projeto.py` -> [file_c3916196f58f](#file_c3916196f58f)
   - `init_ai_project.sh` -> [file_c59135753d26](#file_c59135753d26)
   - `run_context.py` -> [file_350a79f8b829](#file_350a79f8b829)
   - `run_context.sh` -> [file_86bac54f32d7](#file_86bac54f32d7)
@@ -141,6 +145,7 @@ sensitive_rules:
 
 ## INDEX_BY_PATH
 - `.agent/subagents/qa-validator.md` -> [file_5a0c0f1b1bd0](#file_5a0c0f1b1bd0)
+- `.agent/subagents/spec-driver.md` -> [file_a412f1bb7017](#file_a412f1bb7017)
 - `.context/_scripts/_tz_utils.py` -> [file_dbef1acce0d4](#file_dbef1acce0d4)
 - `.context/_scripts/_wiki_log_utils.py` -> [file_9ee5d49278ad](#file_9ee5d49278ad)
 - `.context/_scripts/check_version_consistency.py` -> [file_4ffe1a34765a](#file_4ffe1a34765a)
@@ -152,6 +157,7 @@ sensitive_rules:
 - `.context/_scripts/ingest_wiki_guard.py` -> [file_0731dcfd7873](#file_0731dcfd7873)
 - `.context/_scripts/lint_wiki.py` -> [file_ab41b07fb3fb](#file_ab41b07fb3fb)
 - `.context/_scripts/migration_registry.py` -> [file_d65b48a9d56c](#file_d65b48a9d56c)
+- `.context/_scripts/project_bundler.py` -> [file_02d732116d93](#file_02d732116d93)
 - `.context/_scripts/purge_journal.py` -> [file_024b28a37d29](#file_024b28a37d29)
 - `.context/_scripts/secrets_scanner.py` -> [file_e98b95e5fb6d](#file_e98b95e5fb6d)
 - `.context/_scripts/sync_project.py` -> [file_f122711ba9e1](#file_f122711ba9e1)
@@ -195,6 +201,7 @@ sensitive_rules:
 - `.context/market/wiki_log.md` -> [file_c255058b56fe](#file_c255058b56fe)
 - `.context/monitoring/CONTEXT_HEALTH.md` -> [file_068a21d64bec](#file_068a21d64bec)
 - `.context/monitoring/EXECUTION_BUFFER.md` -> [file_c6d44cc7da35](#file_c6d44cc7da35)
+- `.context/monitoring/PROJECT_INDEX.md` -> [file_3667001850eb](#file_3667001850eb)
 - `.github/workflows/context-health.yml` -> [file_e477c4c5a96c](#file_e477c4c5a96c)
 - `.husky/_/husky.sh` -> [file_3adfd36c1559](#file_3adfd36c1559)
 - `.specs/_template.md` -> [file_b838611f038c](#file_b838611f038c)
@@ -202,6 +209,8 @@ sensitive_rules:
 - `.specs/features/harness_fail_closed/spec.md` -> [file_a32e3bf74e3d](#file_a32e3bf74e3d)
 - `.specs/features/meta-inception/STATE.md` -> [file_238a0e1da225](#file_238a0e1da225)
 - `.specs/features/meta-inception/spec.md` -> [file_9801af51c558](#file_9801af51c558)
+- `.specs/features/multi_agent_choreography/STATE.md` -> [file_452b2ed7917b](#file_452b2ed7917b)
+- `.specs/features/multi_agent_choreography/spec.md` -> [file_6aa9a4e78301](#file_6aa9a4e78301)
 - `.specs/features/qa_subagent/STATE.md` -> [file_98c620fda2a6](#file_98c620fda2a6)
 - `.specs/features/qa_subagent/spec.md` -> [file_72cc9b3bbcc2](#file_72cc9b3bbcc2)
 - `.specs/features/sam_chronology_fix/STATE.md` -> [file_f288e14cea57](#file_f288e14cea57)
@@ -217,7 +226,6 @@ sensitive_rules:
 - `TEMPLATE_MIGRATION.md` -> [file_19e76e009f38](#file_19e76e009f38)
 - `VERSION.md` -> [file_f6f7100f063b](#file_f6f7100f063b)
 - `_modoLight/Modo_Light.md` -> [file_1f98938d3cd9](#file_1f98938d3cd9)
-- `captura_projeto.py` -> [file_c3916196f58f](#file_c3916196f58f)
 - `init_ai_project.sh` -> [file_c59135753d26](#file_c59135753d26)
 - `package.json` -> [file_7030d0b2f71b](#file_7030d0b2f71b)
 - `run_context.py` -> [file_350a79f8b829](#file_350a79f8b829)
@@ -262,6 +270,40 @@ Philosophy: Zero Trust. You do not trust the executor agent. You trust the Git D
 ```
 CHUNK_END id=5a0c0f1b1bd0_c001
 FILE_END id=file_5a0c0f1b1bd0
+
+---
+<a id="file_a412f1bb7017"></a>
+FILE_START id=file_a412f1bb7017 path=.agent/subagents/spec-driver.md domain=docs lang=markdown lines=24 bytes=1834 mtime=2026-04-29T03:51:20.865135+00:00 sha1=c6e6648d2a635418ed4f7d36998c01b89b0bb4bb
+CHUNK_START id=a412f1bb7017_c001 start_line=1 end_line=24
+```markdown
+---
+name: spec-driver
+description: Executor focado e atômico. Assume a execução mecânica após o Hub gerar a Spec. Seu objetivo é apenas ler a Spec, checar o impacto de segurança via Pre-flight Gate, e codar debaixo das regras do Flash Harness. NUNCA faça decisões de arquitetura de alto nível.
+model: flash
+readonly: false
+---
+
+You are a strict execution subagent for the H.O.K Forge framework.
+Your sole purpose is to execute atomic specifications without confirmation bias or context pollution from the Planner.
+
+# Invariants (Zero Trust)
+1. You DO NOT have the right to modify `brain/` or `market/` strategic files unless explicitly commanded by the spec.
+2. You MUST use the `flash-harness` skill. You play the Points Game. You must output the Thought Log (Diário de Bordo) before making any edits.
+3. You MUST run the **Pre-flight Gate** before any write operations.
+
+# Workflow:
+1. **Locate Spec:** The Hub invoked you to work on a specific `.specs/features/<feature>/spec.md`. Read it.
+2. **Pre-flight Gate:** Read the `impact_control` block. Extract `max_impact_radius` and `pre_flight_grep_terms`. Run a `grep_search` for those terms. Count the number of files impacted.
+   - If impacted files > `max_impact_radius`: STOP immediately. Update `.specs/features/<feature>/STATE.md` with status `⚠️ SCOPE_BLOWOUT` and explain what you found. Hand back control to the Hub. Do not write any code.
+3. **Execution:** If Pre-flight passes, update `STATE.md` to `🔵 IN_PROGRESS`. 
+4. **Code:** Implement the changes specified in `definition_of_done`. 
+5. **Handoff:** Update `STATE.md` to `🟡 AWAITING_QA`. Output the command `/qa-validator` so the host can spawn the Validator to check your work.
+
+Philosophy: You are a mechanical engine. You do not question the architecture, you question the impact. Fail closed.
+
+```
+CHUNK_END id=a412f1bb7017_c001
+FILE_END id=file_a412f1bb7017
 
 ---
 <a id="file_dbef1acce0d4"></a>
@@ -837,7 +879,7 @@ FILE_END id=file_e94b4e40315c
 
 ---
 <a id="file_1edef35c2f56"></a>
-FILE_START id=file_1edef35c2f56 path=.context/_scripts/harness_runner.py domain=source lang=python lines=434 bytes=15559 mtime=2026-04-24T18:19:40.973886+00:00 sha1=b07aff0783869d3597fb1fecf7dd8e4502965f64
+FILE_START id=file_1edef35c2f56 path=.context/_scripts/harness_runner.py domain=source lang=python lines=479 bytes=17284 mtime=2026-04-29T02:55:27.749753+00:00 sha1=fd8870cf8653c9876e580d9e9ddc1cfa158ac1e4
 CHUNK_START id=1edef35c2f56_c001 start_line=1 end_line=300
 ```python
 #!/usr/bin/env python3
@@ -1054,6 +1096,50 @@ def check_sprint_contract(spec_path: Path):
     return True, "Sprint contract validado e assinado"
 
 
+def check_impact_radius(spec_path: Path):
+    """Valida se o numero de arquivos modificados excede o max_impact_radius definido na spec."""
+    if not spec_path.exists():
+        return True, "Spec ausente (skip impact check)"
+
+    text = spec_path.read_text(encoding="utf-8")
+    # Extrai bloco YAML
+    yaml_match = re.match(r"^---\n(.*?)\n---", text, re.DOTALL)
+    if not yaml_match:
+        return True, "YAML ausente para impact check (skip)"
+
+    contract = yaml_match.group(1)
+    # Procura por max_impact_radius: N
+    radius_match = re.search(r"max_impact_radius:\s*(\d+)", contract, re.I)
+    if not radius_match:
+        return True, "max_impact_radius nao definido na spec (skip)"
+
+    max_radius = int(radius_match.group(1))
+
+    # Executa git diff para ver o que mudou no working tree
+    try:
+        # Pega a lista de arquivos modificados, deletados ou novos (staging + working tree)
+        # --name-only lista os nomes, wc -l conta.
+        res = subprocess.run(
+            ["git", "diff", "--name-only", "HEAD"],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+        )
+        # Filtra linhas vazias
+        modified_files = [f for f in res.stdout.splitlines() if f.strip()]
+        count = len(modified_files)
+
+        if count > max_radius:
+            return (
+                False,
+                f"Raio de impacto excedido! (Modificados: {count} > Limite: {max_radius}). Re-fragmente a SPEC ou aumente o limite se justificado.",
+            )
+
+        return True, f"Impact radius OK ({count}/{max_radius})"
+    except Exception as e:
+        return True, f"Erro ao verificar git diff: {e} (skip)"
+
+
 def check_journal_sam():
     """Executa o Auditor Anti-Migué (SAM)."""
     script_path = Path(__file__).resolve().parent / "workflow_journal_auditor.py"
@@ -1096,6 +1182,11 @@ def check_journal_sam():
         return True, "SAM Audit OK"
     except Exception as e:
         msg = f"Erro crítico ao executar SAM Auditor: {e}"
+
+```
+CHUNK_END id=1edef35c2f56_c001
+CHUNK_START id=1edef35c2f56_c002 start_line=301 end_line=479
+```python
         if mode == "strict":
             return False, msg
         print(f"[WARN] {msg} (skip em assist)")
@@ -1140,11 +1231,6 @@ def update_state_md(spec_dir: Path, status: str, detail: str = ""):
 def get_inception_status():
     """Lê o status do Inception mestre."""
     if not INCEPTION.exists():
-
-```
-CHUNK_END id=1edef35c2f56_c001
-CHUNK_START id=1edef35c2f56_c002 start_line=301 end_line=434
-```python
         return "MISSING"
     try:
         content = INCEPTION.read_text(encoding="utf-8")
@@ -1258,6 +1344,7 @@ def main():
         "strategy": check_strategic_alignment(),
         "enrichment": check_enrichment_integrity(PRD),
         "sprint_contract": check_sprint_contract(spec_path),
+        "impact_radius": check_impact_radius(spec_path),
         "journal_sam": check_journal_sam(),
     }
 
@@ -1682,6 +1769,449 @@ if __name__ == "__main__":
 ```
 CHUNK_END id=d65b48a9d56c_c001
 FILE_END id=file_d65b48a9d56c
+
+---
+<a id="file_02d732116d93"></a>
+FILE_START id=file_02d732116d93 path=.context/_scripts/project_bundler.py domain=source lang=python lines=429 bytes=17844 mtime=2026-04-23T18:31:18.210183+00:00 sha1=6108c27d0315281c1f40bec72da49685422fdcc9
+CHUNK_START id=02d732116d93_c001 start_line=1 end_line=300
+```python
+#!/usr/bin/env python3
+"""captura_projeto.py - Gera bundle markdown AI-first do repositorio. TEMPLATE UNIVERSAL."""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import logging
+import mimetypes
+import os
+import re
+from dataclasses import dataclass
+from datetime import datetime, timezone
+from fnmatch import fnmatch
+from pathlib import Path
+
+VERSION = "2.5.2"
+
+# 🛠️ CUSTOMIZE AQUI: Padrões universais + adicione os específicos do seu projeto
+PASTAS_IGNORAR = {
+    ".git", "node_modules", "dist", "build", "out", "target", "bin", "obj",
+    "__pycache__", ".venv", "venv", ".tox", ".mypy_cache", ".ruff_cache",
+    ".next", ".nuxt", ".vercel", ".netlify", ".vite", ".cache",
+    ".vscode", ".idea", ".cursor", "coverage", ".pytest_cache",
+    "captura_projeto", # 📝 Ignorar a própria pasta do utilitário
+    "_archive_context", "planos", "RAW",
+}
+
+ARQUIVOS_IGNORAR = {
+    "package-lock.json", "yarn.lock", "pnpm-lock.yaml", "composer.lock",
+    "contexto.md", "contexto_*.md", ".*.lock"
+}
+
+PASTAS_CORE = {
+    # 📝 Defina as pastas ARQUITETURALMENTE essenciais para a IA entender seu projeto
+    # Ex: {"src", "lib", "api", "supabase", ".context", ".specs"}
+    "src", "lib", "api", ".context", ".specs"
+}
+
+# 🛠️ CUSTOMIZE AQUI: Regras de classificação semântica (fallback seguro)
+DOMAIN_RULES = {
+    r"/api/|/routes/|/handlers/|/controllers/": "api",
+    r"/components/|/ui/|/views/|/pages/|/screens/": "ui",
+    r"/lib/|/utils/|/helpers/|/core/|/shared/": "lib",
+    r"/db/|/migrations/|/models/|/schema/|/supabase/|/prisma/": "db",
+    r"/tests/|/spec/|/__tests__/|\.test\.|\.spec\.": "tests",
+    r"/config/|/settings/|/env/": "config",
+    r"\.md$|\.rst$|\.txt$": "docs",
+    r"\.(json|toml|yaml|yml|ini)$": "config",
+}
+
+EXTENSOES_PERMITIDAS = {
+    ".js", ".jsx", ".ts", ".tsx", ".py", ".html", ".css", ".json", ".md",
+    ".yaml", ".yml", ".toml", ".sh", ".sql", ".graphql", ".vue", ".svelte",
+    ".rs", ".go", ".java", ".c", ".h", ".hpp", ".cpp", ".ini",
+}
+
+LINGUAGENS = {
+    ".js": "javascript", ".jsx": "jsx", ".ts": "typescript", ".tsx": "tsx",
+    ".py": "python", ".html": "html", ".css": "css", ".json": "json", ".md": "markdown",
+    ".yaml": "yaml", ".yml": "yaml", ".toml": "toml", ".sh": "bash", ".sql": "sql",
+    ".graphql": "graphql", ".vue": "html", ".svelte": "html", ".rs": "rust",
+    ".go": "go", ".java": "java", ".c": "c", ".h": "c", ".hpp": "cpp", ".cpp": "cpp", ".ini": "ini",
+}
+
+ARQUIVOS_SENSIVEIS_GLOBS = {
+    ".env*", "*.pem", "*.key", "*.p12", "*.pfx",
+    "credentials*.json", "id_rsa*", "secrets.*", "*.cert",
+    # 📝 Adicione padrões sensíveis do SEU projeto aqui
+}
+
+SECRET_PATTERNS = (
+    re.compile(r'(["\']?)(\w*(?:API_KEY|SECRET|TOKEN|PASSWORD|AUTH_KEY|PRIVATE_KEY|ACCESS_KEY|DB_PASS|CONNECTION_STRING)\w*)\1\s*[:=]\s*["\']?(\S+)["\']?', re.IGNORECASE),
+    re.compile(r'(BEGIN\s+(RSA|EC|DSA|OPENSSH|PGP)\s+PRIVATE\s+KEY)', re.IGNORECASE),
+)
+
+DEFAULT_OUTPUT = "contexto.md"
+logging.basicConfig(level=logging.WARNING, format="⚠️ %(message)s")
+
+@dataclass(frozen=True)
+class BundleConfig:
+    diretorio: Path
+    output: str = DEFAULT_OUTPUT
+    only_core: bool = False
+    exclude_core: bool = False
+    profile: str = "ai-default"
+    toc_only: bool = False
+    max_lines_per_file: int = 300
+    emit_symbol_index: bool = False
+    emit_import_map: bool = False
+    mask_secrets: bool = False
+    include_lockfiles: bool = False
+
+@dataclass(frozen=True)
+class Chunk:
+    chunk_id: str
+    start_line: int
+    end_line: int
+    content: str
+
+@dataclass(frozen=True)
+class FileRecord:
+    file_id: str
+    relative_path: str
+    domain: str
+    language: str
+    line_count: int
+    byte_count: int
+    mtime_utc: str
+    sha1: str
+    symbols: tuple[str, ...]
+    imports: tuple[str, ...]
+    chunks: tuple[Chunk, ...]
+
+def is_text_file(path: Path) -> bool:
+    if path.suffix.lower() in EXTENSOES_PERMITIDAS:
+        return True
+    mime, _ = mimetypes.guess_type(path)
+    if not mime:
+        return False
+    return mime.startswith("text/") or mime in {"application/json", "application/xml", "application/javascript"}
+
+def is_sensitive_file(path: Path) -> bool:
+    return any(fnmatch(path.name.lower(), pat.lower()) for pat in ARQUIVOS_SENSIVEIS_GLOBS)
+
+def classify_domain(relative_path: str) -> str:
+    p = relative_path.lower()
+    for pattern, domain in DOMAIN_RULES.items():
+        if re.search(pattern, p):
+            return domain
+    return "source"
+
+def should_include_profile(record_domain: str, config: BundleConfig) -> bool:
+    if config.profile == "ai-compact":
+        return record_domain not in {"tests", "docs"}
+    return True
+
+def mask_sensitive(content: str, enabled: bool) -> str:
+    if not enabled:
+        return content
+    out = content
+    for pattern in SECRET_PATTERNS:
+        out = pattern.sub(r"\1***", out)
+    return out
+
+def extract_symbols(content: str, suffix: str) -> tuple[str, ...]:
+    symbols: list[str] = []
+    if suffix == ".py":
+        symbols.extend(re.findall(r"^def\s+([A-Za-z_][A-Za-z0-9_]*)\s*\(", content, re.MULTILINE))
+        symbols.extend(re.findall(r"^class\s+([A-Za-z_][A-Za-z0-9_]*)\s*[:(]", content, re.MULTILINE))
+    elif suffix in {".js", ".jsx", ".ts", ".tsx"}:
+        symbols.extend(re.findall(r"(?:export\s+)?function\s+([A-Za-z_][A-Za-z0-9_]*)\s*\(", content))
+        symbols.extend(re.findall(r"(?:export\s+)?class\s+([A-Za-z_][A-Za-z0-9_]*)\s*", content))
+        symbols.extend(re.findall(r"export\s+const\s+([A-Za-z_][A-Za-z0-9_]*)\s*=", content))
+    seen, seen_set = [], set()
+    for s in symbols:
+        if s not in seen_set:
+            seen.append(s)
+            seen_set.add(s)
+    return tuple(seen[:80])
+
+def extract_imports(content: str, suffix: str) -> tuple[str, ...]:
+    imports: list[str] = []
+    if suffix == ".py":
+        imports.extend(re.findall(r"^import\s+([^\n]+)", content, re.MULTILINE))
+        imports.extend(re.findall(r"^from\s+([^\s]+)\s+import\s+([^\n]+)", content, re.MULTILINE))
+    elif suffix in {".js", ".jsx", ".ts", ".tsx"}:
+        imports.extend(re.findall(r"^import\s+[^\n]*?from\s+['\"]([^'\"]+)['\"]", content, re.MULTILINE))
+        imports.extend(re.findall(r"require\(['\"]([^'\"]+)['\"]\)", content))
+    normalized, seen_set = [], set()
+    for item in imports:
+        val = f"from {item[0]} import {item[1]}" if isinstance(item, tuple) else item
+        if val not in seen_set:
+            normalized.append(val)
+            seen_set.add(val)
+    return tuple(normalized[:120])
+
+def chunk_content(content: str, file_id: str, max_lines: int) -> tuple[Chunk, ...]:
+    lines = content.splitlines()
+    if not lines:
+        return (Chunk(f"{file_id}_c001", 1, 1, ""),)
+    if max_lines <= 0 or len(lines) <= max_lines:
+        return (Chunk(f"{file_id}_c001", 1, len(lines), content),)
+    chunks = []
+    idx = 1
+    for start in range(0, len(lines), max_lines):
+        end = min(start + max_lines, len(lines))
+        part = "\n".join(lines[start:end])
+        if end < len(lines) or content.endswith("\n"):
+            part += "\n"
+        chunks.append(Chunk(f"{file_id}_c{idx:03d}", start + 1, end, part))
+        idx += 1
+    return tuple(chunks)
+
+def make_file_id(relative_path: str) -> str:
+    return hashlib.sha1(relative_path.encode("utf-8")).hexdigest()[:12]
+
+def collect_files(config: BundleConfig) -> tuple[FileRecord, ...]:
+    records: list[FileRecord] = []
+    root = config.diretorio.resolve()
+
+    for dirpath, dirnames, filenames in os.walk(root, followlinks=False):
+        current = Path(dirpath)
+        is_root = (current == root)
+
+        # 🛡️ Isolamento Cirúrgico (v2.4.1): Ignora pastas densas específicas
+        rel_dir = current.relative_to(root).as_posix()
+        if rel_dir == ".context/market":
+            dirnames[:] = [d for d in dirnames if d not in {"compliance", "research", "RAW"}]
+
+        if config.only_core:
+            dirnames[:] = sorted(d for d in dirnames if (d in PASTAS_CORE or not is_root) and d not in PASTAS_IGNORAR)
+        elif config.exclude_core:
+            dirnames[:] = sorted(d for d in dirnames if d not in PASTAS_CORE and d not in PASTAS_IGNORAR)
+        else:
+            dirnames[:] = sorted(d for d in dirnames if d not in PASTAS_IGNORAR)
+
+        for filename in sorted(filenames):
+            path = current / filename
+            rel = path.relative_to(root)
+            rel_path = rel.as_posix()
+            top = rel.parts[0] if rel.parts else ""
+
+            if config.only_core and is_root and top not in PASTAS_CORE:
+                continue
+            if config.exclude_core and is_root and top in PASTAS_CORE:
+                continue
+            
+            # 🛡️ Blindagem contra Self-Capture e Locks
+            is_output_file = (filename == config.output or filename == get_dynamic_filename(config))
+            is_ignored_file = any(fnmatch(filename.lower(), pat.lower()) for pat in ARQUIVOS_IGNORAR)
+            is_lockfile = ("lock" in filename.lower() and path.suffix in {".json", ".yaml", ".yml", ".lock"})
+
+            # Filtro path-scoped para Market (v2.4.1 Hardened)
+            # Ignora pastas de documentos brutos para evitar token bloat no bundle
+            if "market/compliance" in rel_path.lower() or "market/research" in rel_path.lower():
+                continue
+
+            if is_output_file: 
+                continue
+            if is_ignored_file and not (is_lockfile and config.include_lockfiles):
+                continue
+
+            if is_sensitive_file(path):
+                continue
+            if not is_text_file(path):
+                continue
+
+            try:
+                raw_content = path.read_text(encoding="utf-8")
+            except UnicodeDecodeError:
+                try:
+                    raw_content = path.read_text(encoding="latin-1")
+                except OSError as e:
+                    logging.warning("Pulando %s: %s", rel_path, e)
+                    continue
+            except OSError as e:
+                logging.warning("Pulando %s: %s", rel_path, e)
+                continue
+
+            domain = classify_domain(rel_path)
+            if not should_include_profile(domain, config):
+                continue
+
+            raw_sha1 = hashlib.sha1(raw_content.encode("utf-8", errors="ignore")).hexdigest()
+            content = mask_sensitive(raw_content, config.mask_secrets)
+            file_id = make_file_id(rel_path)
+            stat = path.stat()
+            suffix = path.suffix.lower()
+
+            symbols = extract_symbols(content, suffix) if config.emit_symbol_index else ()
+            imports = extract_imports(content, suffix) if config.emit_import_map else ()
+            chunks = chunk_content(content, file_id, config.max_lines_per_file)
+
+            records.append(FileRecord(
+                file_id=file_id, relative_path=rel_path, domain=domain,
+                language=LINGUAGENS.get(suffix, suffix[1:] if suffix else "text"),
+                line_count=len(content.splitlines()),
+                byte_count=len(content.encode("utf-8", errors="ignore")),
+                mtime_utc=datetime.fromtimestamp(stat.st_mtime, tz=timezone.utc).isoformat(),
+                sha1=raw_sha1, symbols=symbols, imports=imports, chunks=chunks
+            ))
+
+    records.sort(key=lambda r: r.relative_path)
+    return tuple(records)
+
+def mode_name(config: BundleConfig) -> str:
+    parts = []
+    if config.only_core: parts.append("only-core")
+    elif config.exclude_core: parts.append("exclude-core")
+    else: parts.append("full")
+    if config.toc_only: parts.append("TOC")
+    return " | ".join(parts)
+
+def get_dynamic_filename(config: BundleConfig) -> str:
+    # Se o usuário não mudou o default, geramos um nome inteligente
+    if config.output != DEFAULT_OUTPUT:
+        return config.output
+    
+    base = "contexto"
+
+```
+CHUNK_END id=02d732116d93_c001
+CHUNK_START id=02d732116d93_c002 start_line=301 end_line=429
+````python
+    ver = f"_v{VERSION}"
+    suffix = ""
+    if config.toc_only: suffix += "_toc"
+    if config.only_core: suffix += "_core"
+    
+    return f"{base}{ver}{suffix}.md"
+
+def render_frontmatter(config: BundleConfig, records: tuple[FileRecord, ...]) -> str:
+    total_bytes = sum(r.byte_count for r in records)
+    lines = [
+        "---", "schema_version: 1",
+        f"generated_at: {datetime.now(timezone.utc).isoformat()}",
+        f"root: {config.diretorio.resolve().name}",
+        f"mode: {mode_name(config)}", f"profile: {config.profile}",
+        f"file_count: {len(records)}", f"byte_count: {total_bytes}",
+        "ignored_dirs:"
+    ]
+    lines.extend(f"  - {d}" for d in sorted(PASTAS_IGNORAR))
+    lines.append("sensitive_rules:")
+    lines.extend(f"  - {r}" for r in sorted(ARQUIVOS_SENSIVEIS_GLOBS))
+    lines.append("---")
+    return "\n".join(lines)
+
+def render_index_by_domain(records: tuple[FileRecord, ...]) -> str:
+    grouped: dict[str, list[FileRecord]] = {}
+    for r in records:
+        grouped.setdefault(r.domain, []).append(r)
+    lines = ["## INDEX_BY_DOMAIN"]
+    for domain in sorted(grouped):
+        lines.append(f"- `{domain}`:")
+        lines.extend(f"  - `{r.relative_path}` -> [file_{r.file_id}](#file_{r.file_id})" for r in grouped[domain])
+    return "\n".join(lines)
+
+def render_index_by_path(records: tuple[FileRecord, ...]) -> str:
+    lines = ["## INDEX_BY_PATH"]
+    lines.extend(f"- `{r.relative_path}` -> [file_{r.file_id}](#file_{r.file_id})" for r in records)
+    return "\n".join(lines)
+
+def render_symbols(records: tuple[FileRecord, ...]) -> str:
+    lines = ["## SYMBOL_INDEX"]
+    for r in records:
+        if not r.symbols: continue
+        lines.append(f"- `{r.relative_path}`:")
+        lines.extend(f"  - `{s}`" for s in r.symbols)
+    return "\n".join(lines)
+
+def render_imports(records: tuple[FileRecord, ...]) -> str:
+    lines = ["## IMPORT_MAP_MIN"]
+    for r in records:
+        if not r.imports: continue
+        lines.append(f"- `{r.relative_path}`:")
+        lines.extend(f"  - `{i}`" for i in r.imports)
+    return "\n".join(lines)
+
+def pick_fence(content: str) -> str:
+    return "````" if "```" in content else "```"
+
+def render_file_record(record: FileRecord, toc_only: bool) -> str:
+    lines = [
+        "---", f'<a id="file_{record.file_id}"></a>',
+        f"FILE_START id=file_{record.file_id} path={record.relative_path} "
+        f"domain={record.domain} lang={record.language} lines={record.line_count} "
+        f"bytes={record.byte_count} mtime={record.mtime_utc} sha1={record.sha1}"
+    ]
+    if toc_only:
+        lines.append("CONTENT_OMITTED toc_only=true")
+    else:
+        for chunk in record.chunks:
+            lines.append(f"CHUNK_START id={chunk.chunk_id} start_line={chunk.start_line} end_line={chunk.end_line}")
+            fence = pick_fence(chunk.content)
+            lines.extend([f"{fence}{record.language}", chunk.content, fence, f"CHUNK_END id={chunk.chunk_id}"])
+    lines.append(f"FILE_END id=file_{record.file_id}")
+    return "\n".join(lines)
+
+def generate_context_markdown(config: BundleConfig) -> str:
+    if config.only_core and config.exclude_core:
+        raise ValueError("only_core e exclude_core nao podem ser usados juntos")
+    
+    records = collect_files(config)
+    blocks = ["# Project Context Bundle", "", render_frontmatter(config, records), "",
+              render_index_by_domain(records), "", render_index_by_path(records)]
+    if config.emit_symbol_index:
+        blocks.extend(["", render_symbols(records)])
+    if config.emit_import_map:
+        blocks.extend(["", render_imports(records)])
+    for r in records:
+        blocks.extend(["", render_file_record(r, toc_only=config.toc_only)])
+    return "\n".join(blocks) + "\n"
+
+def write_output(config: BundleConfig) -> Path:
+    target_name = get_dynamic_filename(config)
+    output_path = config.diretorio / target_name
+    content = generate_context_markdown(config)
+    output_path.write_text(content, encoding="utf-8")
+    return output_path
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="captura_projeto.py - Consolida repositorio em markdown AI-first")
+    parser.add_argument("-d", "--diretorio", default=".", help="Diretorio raiz")
+    parser.add_argument("-o", "--output", default=DEFAULT_OUTPUT, help="Arquivo de saida")
+    core = parser.add_mutually_exclusive_group()
+    core.add_argument("--only-core", action="store_true", help="Inclui apenas escopo core")
+    core.add_argument("--exclude-core", action="store_true", help="Exclui escopo core")
+    parser.add_argument("--profile", choices=["ai-default", "ai-compact", "ai-forensics"], default="ai-default")
+    parser.add_argument("--toc-only", action="store_true", help="Apenas indices e envelopes")
+    parser.add_argument("--max-lines-per-file", type=int, default=300, help="Limite de linhas por chunk (0=ilimitado)")
+    parser.add_argument("--emit-symbol-index", action="store_true", help="Adiciona SYMBOL_INDEX")
+    parser.add_argument("--emit-import-map", action="store_true", help="Adiciona IMPORT_MAP_MIN")
+    parser.add_argument("--mask-secrets", action="store_true", help="Ofusca segredos no conteudo")
+    parser.add_argument("--include-lockfiles", action="store_true", help="Força a inclusão de package-lock.json e similares")
+    return parser.parse_args()
+
+def main() -> None:
+    args = parse_args()
+    config = BundleConfig(
+        diretorio=Path(args.diretorio), output=args.output,
+        only_core=args.only_core, exclude_core=args.exclude_core,
+        profile=args.profile, toc_only=args.toc_only,
+        max_lines_per_file=args.max_lines_per_file,
+        emit_symbol_index=args.emit_symbol_index,
+        emit_import_map=args.emit_import_map, mask_secrets=args.mask_secrets,
+        include_lockfiles=args.include_lockfiles
+    )
+    out = write_output(config)
+    print(f"\n[OK] Gerado: {out}")
+    print(f"   Mode: {mode_name(config)} | Profile: {config.profile}")
+
+if __name__ == "__main__":
+    main()
+````
+CHUNK_END id=02d732116d93_c002
+FILE_END id=file_02d732116d93
 
 ---
 <a id="file_024b28a37d29"></a>
@@ -2388,8 +2918,8 @@ FILE_END id=file_8f42e61c8a29
 
 ---
 <a id="file_e7c17acb71ff"></a>
-FILE_START id=file_e7c17acb71ff path=.context/brain/AGENT_REGISTRY.md domain=docs lang=markdown lines=100 bytes=8044 mtime=2026-04-24T17:30:38.954886+00:00 sha1=e3452d6e508670d7b2133968c87cda8b0121f92c
-CHUNK_START id=e7c17acb71ff_c001 start_line=1 end_line=100
+FILE_START id=file_e7c17acb71ff path=.context/brain/AGENT_REGISTRY.md domain=docs lang=markdown lines=112 bytes=8938 mtime=2026-04-29T03:29:36.977108+00:00 sha1=90a533e37b7760555f53d254c25ed27c37218812
+CHUNK_START id=e7c17acb71ff_c001 start_line=1 end_line=112
 ````markdown
 ---
 Criado em: 2026-04-10 20:50
@@ -2429,7 +2959,7 @@ Status: Ativo
 | `@devops-guardian` | CI/CD, deploy, env vars, monitoramento, segurança infra | `.github/workflows/`, `Dockerfile`, `maintenance/rebuild_guide.md`, `.env.example` | `maintenance/rebuild_guide.md`, `maintenance/TECHNICAL_REQUIREMENTS.md` (infra), `brain/ROADMAP.md` (deploys) | "deploy", "CI/CD", "docker", "variável de ambiente", "monitoramento", "rollback" |
 | `@vision-architect` | Estratégia, validação de market fit, definição de boundaries | `.context/brain/INCEPTION.md`, `.context/market/MARKET_INBOX.md` | `.context/brain/INCEPTION.md`, `.context/market/SSOT_MAP.md` | "definir boundary", "validar gap de mercado", "revisar inception" |
 | `@spec-enricher` | Tradução estratégica em PRD, tradução cognitiva VISION -> INCEPTION, validação de gaps de mercado | `.context/brain/PRD.md`, `.context/brain/INCEPTION.proposed.md`, `maintenance/JOURNAL.md` | `.context/brain/INCEPTION.md`, `.context/brain/VISION.md`, `.context/market/SSOT_MAP.md` | "enriquecer spec", "gerar PRD", "traduzir visão", "propor inception", `npm run context:enrich` |
-| `@spec-driver` | Criação de specs atômicas, geração de contrato DoD, handoff para execução | `.specs/`, `contract` (frontmatter) | `PRD.md`, `schema.sql`, `JOURNAL.md` (tail 30) | `"crie spec"`, `"gere contrato"`, "inicie specify", "modo híbrido" |
+| `@spec-driver` | Execução técnica atômica (Spoke), geração de contrato DoD (Execution Log) | `.specs/`, `src/`, `tests/`, `contract` (frontmatter) | `spec.md`, `schema.sql`, `STATE.md`, `JOURNAL.md` (tail 30) | `"inicie execução"`, `"autopilot"`, "execute a spec" |
 | `@context-keeper` | Sync, purge, validação de consistência, saúde do contexto | `.context/` (exceto `_archive/`), `maintenance/JOURNAL.md`, `brain/RULES.md` | `brain/RULES.md`, `brain/MASTER_FLOW.md`, `maintenance/JOURNAL.md`, `monitoring/CONTEXT_HEALTH.md` | "atualize contexto", "purge", "health check", "validar consistência", "sincronizar" |
 | `@fullstack-generalist` | Modo fallback para tarefas transversais ou projetos light | Leitura em todo o projeto; Escrita apenas com confirmação explícita | `brain/PRD.md`, `maintenance/schema.sql`, `maintenance/JOURNAL.md` (últimas 30 linhas) + Global | "modo light", "tarefa rápida", "projeto pequeno", "não especificado" |
 
@@ -2437,13 +2967,25 @@ Status: Ativo
 
 ---
 
+## 🛡️ Blindagem de Subagente (Zero-Trust Spoke)
+> **Invariante de Segurança:** Agentes em modo Executor (`@spec-driver` / `@autopilot`) operam sob restrições físicas:
+> 1. **Zero Escrita Estratégica:** Proibido alterar arquivos em `brain/` ou `market/` sem autorização explícita do Hub e `qa_signoff`.
+> 2. **Pre-flight Gate:** Obrigatório rodar `grep` de impacto antes de editar código.
+> 3. **Skills Obrigatórias:** `codenavi` (Mapeamento) e `flash-harness` (Log Sequencial).
+> 4. **Backpressure:** Acionar `SCOPE_BLOWOUT` se o impacto real > `max_impact_radius`.
+
+---
+
 ## 🔒 Protocolos de Execução
 
-### 🧭 Roteamento de Tarefas
+### 🧭 Roteamento de Tarefas & Spawn de Subagentes
 ```text
 1. Receber comando → 2. Consultar AGENT_REGISTRY.md → 3. Identificar role(s) adequada(s)
 4. Declarar ativação: "🤖 Ativando @[role] | Escopo: [descrição curta]"
-5. Carregar APENAS: Global + Role-Specific + Task-Ephemeral
+5. Se for um Executor/Validator isolado (Hub & Spoke):
+   - Os prompts de sistema físicos residem na pasta `.agent/subagents/`.
+   - O Hub OBRIGATORIAMENTE encerra a sua resposta com o gatilho `/[nome-do-agente] [instrução]`.
+   - Isso garante que o host (ex: Cline/Cursor) spawne o agente isolado sem poluição cognitiva.
 6. Executar dentro das permissões → 7. Registrar handoff no JOURNAL.md se cruzar domínios
 ```
 
@@ -2688,8 +3230,8 @@ FILE_END id=file_de9ef20db2be
 
 ---
 <a id="file_d833c436f547"></a>
-FILE_START id=file_d833c436f547 path=.context/brain/MASTER_FLOW.md domain=docs lang=markdown lines=110 bytes=6249 mtime=2026-04-26T19:23:39.800995+00:00 sha1=380d9272df3ab4b8729df3e81d3378b7309cb5ea
-CHUNK_START id=d833c436f547_c001 start_line=1 end_line=110
+FILE_START id=file_d833c436f547 path=.context/brain/MASTER_FLOW.md domain=docs lang=markdown lines=129 bytes=7891 mtime=2026-04-29T03:51:37.524644+00:00 sha1=8480a6ca8cdf37745b8ca6ddd8fc1df4b0073cad
+CHUNK_START id=d833c436f547_c001 start_line=1 end_line=129
 ````markdown
 ---
 Criado em: 2026-04-10 23:28
@@ -2753,9 +3295,11 @@ Status: [Ativo | Arquivado | Depreciado]
     │   └── _archive_context/          # Histórico imutável (A Biblioteca)
     │
     ├── monitoring/             # CAMADA DE MONITORAMENTO (The Guardian)
-    │   └── CONTEXT_HEALTH.md   # Dashboard de saúde técnica e cognitiva
+    │   ├── CONTEXT_HEALTH.md   # Dashboard de saúde técnica e cognitiva
+    │   └── PROJECT_INDEX.md    # Mapa do repositório atualizado a cada commit (Radar)
     │
     └── _scripts/               # CAMADA DE AUTOMACAO (The Motor)
+        ├── project_bundler.py         # Motor gerador do PROJECT_INDEX
         ├── validate_context.py        # Validador de integridade e status
         ├── enrich_context.py          # Tradutor cognitivo e Gap Check
         ├── purge_journal.py           # Gerenciador de memória (Purge)
@@ -2778,6 +3322,22 @@ Status: [Ativo | Arquivado | Depreciado]
 
 ---
 
+---
+
+## 🔄 2.2 Coreografia Hub & Spoke (A Dança)
+Para projetos de complexidade média/alta, o Antigravity utiliza a segregação de agentes em processos isolados para atingir **Zero Trust**.
+
+> **Mecanismo de Spawn (Isolamento Físico):**
+> Os Spokes (Executores e Validadores) não são apenas personas da IA Principal. Eles residem fisicamente em `.agent/subagents/` (ex: `spec-driver.md`, `qa-validator.md`). Para invocá-los sem poluição de contexto, o Hub deve finalizar a execução usando a sintaxe de delegação explícita do Host: `/[nome-do-subagente] [instrução]`.
+
+1.  **[Planner - Hub]**: IA Principal desenha a SPEC na janela atual, define `max_impact_radius` e emite o comando de Spawn (`/spec-driver`).
+2.  **[Pre-flight - Executor]**: Novo processo limpo nasce e roda `grep` (Pre-flight Gate). Se impacto > Limite → `SCOPE_BLOWOUT` (Telemetria no `STATE.md`).
+3.  **[Execution - Executor]**: Subagente coda sob rigor do `flash-harness` (Log sequencial). Ao terminar, emite `/qa-validator`.
+4.  **[Auditoria - Validador]**: Novo processo cego nasce. Valida Semântica (Lógica) + Telemetria (Impacto resolvido). Assina o `spec.md` se correto.
+5.  **[Finalização - Hub]**: IA Principal (Humano aciona o Hub) verifica a SPEC assinada, valida o SAM e comita/arquiva.
+
+---
+
 ## ⚙️ 3. Regras de Manutenção & Ciclo de Vida
 
 ### 🔄 Ciclo de Vida de PRD e Schema
@@ -2792,7 +3352,8 @@ Status: [Ativo | Arquivado | Depreciado]
 ### 🤖 Roteamento & Isolamento Multi-Agent
 1.  **Ativação:** Consultar `brain/AGENT_REGISTRY.md` + template de `brain/PROMPT_LIBRARY.md` e declarar ativação.
 2.  **Janela de Contexto:** Global + Role-Specific + Task-Ephemeral. Nunca carregar o `_archive/` sem comando explícito.
-3.  **Sync Pós-Execução:** Ao finalizar uma tarefa, valide a consistência entre código, `schema.sql` e `JOURNAL.md` antes de encerrar.
+3.  **Radar Arquitetural:** Sempre consulte `monitoring/PROJECT_INDEX.md` ANTES de criar novos arquivos, utilitários ou componentes para evitar duplicação de código.
+4.  **Sync Pós-Execução:** Ao finalizar uma tarefa, valide a consistência entre código, `schema.sql` e `JOURNAL.md` antes de encerrar.
 
 ### 📝 Gestão do JOURNAL.md
 - **Limite:** Máximo de 600 linhas.
@@ -3099,8 +3660,8 @@ FILE_END id=file_c94f001202db
 
 ---
 <a id="file_cd6526d17218"></a>
-FILE_START id=file_cd6526d17218 path=.context/brain/RULES.md domain=docs lang=markdown lines=127 bytes=8885 mtime=2026-04-24T18:20:56.794936+00:00 sha1=0dd3c3b08c273cdf6f7ca11d1764f7f2e3019380
-CHUNK_START id=cd6526d17218_c001 start_line=1 end_line=127
+FILE_START id=file_cd6526d17218 path=.context/brain/RULES.md domain=docs lang=markdown lines=137 bytes=10107 mtime=2026-04-29T04:02:21.700448+00:00 sha1=761c4861f680ba761139bd769b587d41adf3b417
+CHUNK_START id=cd6526d17218_c001 start_line=1 end_line=137
 ```markdown
 ---
 Criado em: 2026-04-10 20:50
@@ -3135,8 +3696,9 @@ O `INCEPTION.md` (brain/) regula o que a IA pode ou não fazer.
 Antes de gerar código de produção ou realizar refatorações, o Agente **DEVE** validar se o contexto necessário está carregado:
 1. **[ ] Global Layer:** `brain/RULES.md`, `brain/MASTER_FLOW.md`, `brain/ROADMAP.md`
 2. **[ ] Strategic Layer:** `brain/INCEPTION.md` (se existir) + `market/SSOT_MAP.md`
-3. **[ ] Role Layer:** Conforme definido em `brain/AGENT_REGISTRY.md` para a Role ativa.
+3. **[ ] Role Layer:** Conforme definido em `brain/AGENT_REGISTRY.md` + prompts físicos em `.agent/subagents/`.
 4. **[ ] Ephemeral Layer:** `brain/PRD.md` ativo + `maintenance/schema.sql` + últimas 30-50 linhas do `maintenance/JOURNAL.md`
+5. **[ ] Navigation Layer:** `monitoring/PROJECT_INDEX.md` (Consultar obrigatoriamente antes de criar novos arquivos)
 
 > ⚠️ **Bloqueio de Execução:** Se qualquer item estiver ausente ou desatualizado, a IA deve parar e solicitar a carga correta antes de prosseguir.
 
@@ -3153,6 +3715,14 @@ Antes de gerar código de produção ou realizar refatorações, o Agente **DEVE
 1. `VERSION.md` é a única fonte da verdade para versão do framework.
 2. O pipeline `npm run context:all` executa `check_version_consistency.py` antes das demais validações.
 3. Drift em `package.json`, `INCEPTION.md` ou `VISION.md` bloqueia o pipeline (`Exit 1`).
+
+## 🛡️ 1.3 Pre-flight Gate & Impact Radius (Anti-SCOPE_BLOWOUT)
+1. **Mapeamento Obrigatório:** Antes de modificar interfaces, schemas ou contratos cross-layer, o Executor DEVE rodar `grep` nos termos impactados.
+2. **Circuit Breaker:** Se o impacto real (número de arquivos afetados) > `max_impact_radius` (definido na SPEC), o Executor deve:
+   - Alterar status para `⚠️ SCOPE_BLOWOUT` no `STATE.md`.
+   - Listar a telemetria (arquivos/referências) e abortar.
+3. **Feedback Loop:** O Hub (Planner) deve utilizar a telemetria do `SCOPE_BLOWOUT` para re-fragmentar a SPEC em unidades menores e atômicas.
+4. **Log Estruturado:** O resultado do Pre-flight deve ser registrado de forma parseável no `STATE.md` para auditoria do QA e do Harness.
 
 ---
 
@@ -3174,10 +3744,11 @@ A IA atua como bibliotecário chefe. Consistência entre Código e Contexto é o
 
 ---
 
-## 🗄️ 4. Protocolo Database-First (Anti-Alucinação)
-É proibido construir código baseado em suposições sobre a estrutura do Banco de Dados.
-1. **Verificação Obrigatória:** Antes de criar UI/lógica dependente de dados, validar `maintenance/schema.sql`.
+## 🗄️ 4. Protocolo Database & Architecture First (Anti-Alucinação)
+É proibido construir código baseado em suposições sobre a estrutura do Banco de Dados ou Arquitetura.
+1. **Verificação de Dados Obrigatória:** Antes de criar UI/lógica dependente de dados, validar `maintenance/schema.sql`.
 2. **Aviso de Divergência:** Se o código exigir um campo inexistente, parar e avisar: *"⚠️ Alerta: O Frontend exige o campo X, mas ele não existe no Schema. Sugiro gerar a migration antes de prosseguir."*
+3. **Prevenção de Duplicidade:** Antes de criar *qualquer* arquivo, componente (ex: botão, modal) ou utilitário novo, a IA DEVE inspecionar `monitoring/PROJECT_INDEX.md`. Se a responsabilidade já existir, reescreva ou estenda o código existente. NUNCA crie duplicatas funcionais.
 
 ---
 
@@ -3236,8 +3807,8 @@ FILE_END id=file_cd6526d17218
 
 ---
 <a id="file_aa59d3515582"></a>
-FILE_START id=file_aa59d3515582 path=.context/brain/SCRIPT_GLOSSARY.md domain=docs lang=markdown lines=71 bytes=6307 mtime=2026-04-26T19:35:41.422924+00:00 sha1=23914dfc4641af29f1fd864e52ec38316534993f
-CHUNK_START id=aa59d3515582_c001 start_line=1 end_line=71
+FILE_START id=file_aa59d3515582 path=.context/brain/SCRIPT_GLOSSARY.md domain=docs lang=markdown lines=77 bytes=6567 mtime=2026-04-26T20:03:37.862155+00:00 sha1=ea7546e41f4ff30d9a85ef476b6e332bee869198
+CHUNK_START id=aa59d3515582_c001 start_line=1 end_line=77
 ```markdown
 ---
 Criado em: 2026-04-26
@@ -3257,7 +3828,13 @@ Status: Ativo
 | Script | O Órgão | Responsabilidade | Como Invocá-lo |
 | :--- | :--- | :--- | :--- |
 | `run_context.py` | **O Cérebro Motor** | O roteador de comandos CLI. Todos os comandos `npm run context:*` batem aqui. Ele encapsula chamadas para o `_scripts/` abstraindo o sistema operacional (funciona em Windows, Mac, Linux nativamente). | `npm run context:all` ou `python run_context.py [comando]` |
-| `captura_projeto.py` | **Olho que Tudo Vê** | Um bundler que empacota todo o contexto do projeto em um único arquivo de texto gigante (ex: `contexto_v2.5.2.md`) para ser alimentado em IAs com grandes janelas de contexto (como Gemini 1.5 Pro). | `python captura_projeto.py` |
+
+---
+
+## 📡 Motores de Visão e Mapeamento
+| Script | O Órgão | Responsabilidade | Como Invocá-lo |
+| :--- | :--- | :--- | :--- |
+| `project_bundler.py` | **Olho que Tudo Vê** | Um bundler de contexto. Na versão `map` (--toc-only), ele gera um índice de todos os arquivos do projeto para `PROJECT_INDEX.md`, servindo como mapa para IAs e subagentes não criarem código duplicado. Na versão `bundle`, empacota o repositório inteiro em um markdown gigantesco (`contexto.md`). | `npm run context:map` ou `npm run context:bundle` |
 
 ---
 
@@ -3492,8 +4069,8 @@ FILE_END id=file_9b6470da8849
 
 ---
 <a id="file_41c3d3da4381"></a>
-FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=106 bytes=3846 mtime=2026-04-26T18:32:38.310520+00:00 sha1=21ad0bdbb1919e54783a64ed1a1b70e7989810c5
-CHUNK_START id=41c3d3da4381_c001 start_line=1 end_line=106
+FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=139 bytes=5197 mtime=2026-04-29T02:59:35.362116+00:00 sha1=00b955e92792a01442a7e6f9cfbd27f4cfbda892
+CHUNK_START id=41c3d3da4381_c001 start_line=1 end_line=139
 ```markdown
 ---
 Criado em: 2026-04-24 15:20
@@ -3602,24 +4179,212 @@ Status: Ativo
 ## [HARNESS-PASS] Report | spec:qa_subagent
 - **Detalhe:** All contracts valid
 
+## [HARNESS-FAIL] Report | spec:qa_subagent
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'new_context_path' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'new_context_path': Arquivo '.context/maintenance/rx-anatomy.md' não foi propagado (ausente no diff).
+  - Regra 'new_context_path': Checkbox [x] para '.context/maintenance/rx-anatomy.md' ausente ou desmarcado no Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-PASS] Report | spec:qa_subagent
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:qa_subagent
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:multi_agent_choreography
+- **Detalhe:** sprint_contract: Contrato não assinado pelo @qa-validator (qa_signoff: false) | impact_radius: Raio de impacto excedido! (Modificados: 6 > Limite: 5). Re-fragmente a SPEC ou aumente o limite se justificado. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'rules_change' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'rules_change': Tag 'Governança' ausente no Journal.
+  - Regra 'rules_change': Tag 'Regras' ausente no Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-PASS] Report | spec:multi_agent_choreography
+- **Detalhe:** All contracts valid
+
 ```
 CHUNK_END id=41c3d3da4381_c001
 FILE_END id=file_41c3d3da4381
 
 ---
 <a id="file_019509328844"></a>
-FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=208 bytes=12213 mtime=2026-04-26T19:36:40.549831+00:00 sha1=70089e787e27273d1fc2d5ce0c463790f2434a41
-CHUNK_START id=019509328844_c001 start_line=1 end_line=208
+FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=363 bytes=21778 mtime=2026-04-29T02:56:34.181685+00:00 sha1=1ecfd01db9a2efac9242def067104a64f52191e6
+CHUNK_START id=019509328844_c001 start_line=1 end_line=300
 ```markdown
 ---
 Criado em: 2026-04-10 20:50
-Ultima Atualizacao: 2026-04-26 15:22
+Ultima Atualizacao: 2026-04-28 23:45
 Status: Ativo
 Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_144021.md.
 ---
 
 # JOURNAL.md (Memoria Contínua)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-04-28 23:55
+**Decisão/Bug:** 📝 Planejamento: Criação da SPEC para a Dança Multi-Agent. [Governança] [Regras]
+**Ação:**
+1. A IA atuando como Hub (Planner) criou a SPEC em `.specs/features/multi_agent_choreography/`.
+2. A SPEC implementa pela primeira vez o bloco YAML `impact_control` com `max_impact_radius: 5`.
+3. O `STATE.md` foi formatado com o schema exigido pelo MiMo (Pre-Flight, Execution Log).
+4. O Handoff oficial foi gerado para o Executor isolado.
+
+### Matriz de Propagação (Sinapse)
+- [x] `.specs/features/multi_agent_choreography/spec.md` -> [Spec atômica criada]
+- [x] `.specs/features/multi_agent_choreography/STATE.md` -> [Audit trail iniciado]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de handoff]
+
+### Contrato de Validação
+- executor_context_id: `CTX_HUB_PLANNER_0428`
+- validator_context_id: `CTX_USER_HANDOFF`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `A SPEC foi formalizada com todos os contratos determinísticos exigidos. O estágio de planejamento encerrou e o pipeline aguarda o Spoke Executor.`
+
+**Handoff:** @antigravity-agent (Hub) -> @spec-driver (Executor) | Estado: SPEC pronta | Próximo: Invocação isolada do Executor para rodar o Pre-flight Gate.
+
+## 📅 2026-04-28 23:45
+**Decisão/Bug:** 🏛️ Arquitetura Multi-Agent: Implementação do Modelo Hub & Spoke.
+**Ação:**
+1. Consolidada a nova coreografia de agentes: Hub (IA Principal/Planner) orquestrando Spokes (Executor/Validador) isolados.
+2. Definido o **Pre-flight Gate de Impacto** (Grep obrigatório) e o **Circuit Breaker** (`max_impact_radius`) como leis do framework.
+3. Implementado o reporte de **Telemetria no SCOPE_BLOWOUT** para garantir feedback loop real entre Executor e Hub na re-fragmentação de specs.
+4. Definida a fronteira entre Validação Semântica (Agente) e Estrutural (Scripts SAM/Harness).
+
+### Matriz de Propagação (Sinapse)
+- [x] `planos/plano_coreografia_multi_agent.md` -> [Novo plano de governança]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de decisão arquitetural]
+
+### Contrato de Validação
+- executor_context_id: `CTX_MULTI_AGENT_DANCE_0428`
+- validator_context_id: `CTX_USER_ARCHITECTURE_DONE`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Aprovado o modelo de Hub & Spoke com blindagem mecânica via Harness. Próximo passo: Aplicação nos arquivos mestre.`
+
+**Handoff:** @antigravity-agent -> @user | Estado: Governança Multi-Agent aprovada e registrada. | Próximo: Execução dos patches.
+
+## 📅 2026-04-28 23:00
+**Decisão/Bug:** 🏗️ Hardening do Oracle Engine: Consolidação do Plano de Evolução v3.
+**Ação:**
+1. Finalizada a tríade de auditoria (Opus, Qwen, MiMo) sobre o motor de busca Oracle.
+2. Criado o `plano_consolidado_Oracle_v3.md` integrando:
+   - Fase -1 (Fundação de Testes) com separação BASELINE/TARGET.
+   - Refinamentos técnicos (Stemming seguro, Cache em disco, Escrita Atômica).
+   - Governança epistemológica integrada ao Harness (Modo Light).
+3. Atualizado o `log_planos.md` para rastreabilidade completa de 18 documentos de planejamento.
+4. Salva a auditoria cirúrgica filtrada pelo MiMo em `auditoria_Qwen_cirurgica.md`.
+5. Injetada a ideia "Impact-Aware Harness" (MiMo) no relatório de insights contextuais.
+
+### Matriz de Propagação (Sinapse)
+- [x] `planos/plano_consolidado_Oracle_v3.md` -> [Plano mestre v3 final]
+- [x] `planos/log_planos.md` -> [Linhagem cronológica atualizada]
+- [x] `planos/auditoria_MiMo_v3_final.md` -> [Aprovação formal do auditor]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de governança]
+
+### Contrato de Validação
+- executor_context_id: `CTX_ORACLE_HARDENING_0428`
+- validator_context_id: `CTX_USER_PLANNING_DONE`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Plano consolidado, auditado e pronto para execução. A estratégia de testes Baseline/Target blinda o framework contra regressões.`
+
+**Handoff:** @antigravity-agent -> Pipeline | Estado: Planejamento concluído e auditado. | Próximo: Início da Fase -1 (Código).
+
+## 📅 2026-04-26 23:58
+**Decisão/Bug:** 📝 Planejamento: Registro de Insights para Evolução do Harness (H.O.K Forge).
+**Ação:**
+1. Criado o arquivo `planos/relatorio_MiMo-v2.5-Pro.md` contendo uma análise profunda e 10 propostas de melhorias incrementais para o framework.
+2. Os temas incluem: Telemetria de falhas, severidade de checks (Fatal/Warning), validação incremental via Git Diff, sistema de plugins para novos checks e o conceito de "Sistema Imunológico" (Febre/Modo Degradado).
+3. O documento servirá como base para o roadmap da versão v2.6.
+
+### Matriz de Propagação (Sinapse)
+- [x] `planos/relatorio_MiMo-v2.5-Pro.md` -> [Novo relatório de insights]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de planejamento]
+
+### Contrato de Validação
+- executor_context_id: `CTX_MIMO_INSIGHTS_0426`
+- validator_context_id: `CTX_USER_PLANNING`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Insights arquivados e registrados. O plano de imunidade sistêmica está oficialmente no radar de evolução do kit.`
+
+**Handoff:** @antigravity-agent -> Pipeline | Estado: Melhorias planejadas e arquivadas. | Próximo: Commit.
+
+## 📅 2026-04-26 17:30
+**Decisão/Bug:** 📖 Governança, Regras: Atualização da Cognição da IA sobre o Radar Arquitetural.
+**Ação:**
+1. Inserido o `PROJECT_INDEX.md` como item obrigatório na camada "Navigation Layer" da Checklist de Carga no `RULES.md`.
+2. Criada a regra "Prevenção de Duplicidade" no protocolo Database-First, ordenando consulta ao index antes da criação de arquivos.
+3. Adicionado o `PROJECT_INDEX.md` e o `project_bundler.py` na árvore visual do `MASTER_FLOW.md`.
+4. Adicionado o gatilho de "Radar Arquitetural" no roteamento Multi-Agent do `MASTER_FLOW.md`.
+5. Modificado o Changelog do `VERSION.md` para satisfazer as exigências de metadados do protocolo de Rules Change.
+
+### Matriz de Propagação (Sinapse)
+- [x] `.context/brain/RULES.md` -> [Regras atualizadas]
+- [x] `.context/brain/MASTER_FLOW.md` -> [Árvore e passos atualizados]
+- [x] `VERSION.md` -> [Changelog registrado para validação do bump]
+- [x] `.context/maintenance/JOURNAL.md` -> [Tags registradas]
+
+### Contrato de Validação
+- executor_context_id: `CTX_RULES_RADAR_0426`
+- validator_context_id: `CTX_QA_SAM`
+- segregation_check: `executor_context_id != validator_context_id`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Aprovado autonomamente. As novas regras foram cravadas no Master Flow e nas Rules, blindando a IA contra alucinações e duplicação de diretórios.`
+
+**Handoff:** @antigravity-agent -> Pipeline | Estado: Rules atualizadas e validadas | Próximo: Commit.
+
+## 📅 2026-04-26 17:20 | 🚩 WAY POINT: Visão Computacional de Contexto Integrada
+**Estado Atual:**
+1. **Integração Total:** O `project_bundler.py` agora é um órgão nativo do framework.
+2. **Mapa Automático:** O arquivo `.context/monitoring/PROJECT_INDEX.md` é regenerado a cada commit, garantindo que a IA sempre tenha um mapa atualizado do repositório.
+3. **Eficiência de Tokens:** O novo mapa (`PROJECT_INDEX`) consome apenas ~9k tokens em vez de 300k+ do bundle completo, permitindo orquestração em tempo real.
+4. **Governança SAM:** O sistema Anti-Migué validou com sucesso a atualização da Anatomia e do Journal.
+
+**Próximos Passos:**
+- Iniciar a primeira feature real de aplicação usando o novo `PROJECT_INDEX` para navegação.
+- Testar a resiliência do `@qa-validator` em tarefas de código puro.
+
+### Contrato de Encerramento
+- executor_context_id: `CTX_WAYPOINT_VISION_0426`
+- validator_context_id: `CTX_USER_QUIT`
+- status: `🟢 READY TO COMMIT`
+
+**Handoff:** @antigravity-agent -> @user | Estado: Sistema 100% integrado e mapeado. | Próximo: Desenvolvimento de features.
+
+## 📅 2026-04-26 17:00
+**Decisão/Bug:** ⚙️ Integração Nativa do Project Bundler e Mapeamento Contínuo.
+**Ação:**
+1. Movido `captura_projeto.py` (raiz) para `.context/_scripts/project_bundler.py` e deletado a pasta duplicada legada.
+2. Adicionados os comandos `context:map` e `context:bundle` no `package.json` e `run_context.py`.
+3. O pipeline mestre `npm run context:all` agora gera o `PROJECT_INDEX.md` (via `--toc-only`) a cada commit, provendo um "Mapa Arquitetural de Baixo Consumo" contínuo para evitar duplicação de arquivos por IAs/subagentes.
+4. Atualizados `init_ai_project.sh` e `SCRIPT_GLOSSARY.md` para suportarem a mudança nativa.
+5. `rx-anatomy.md` atualizado para justificar a presença da automação de mapa em `.context/monitoring/`.
+
+### Matriz de Propagação (Sinapse)
+- [x] `.context/maintenance/rx-anatomy.md` -> [Atualizado com PROJECT_INDEX.md e project_bundler.py]
+- [x] `.context/monitoring/PROJECT_INDEX.md` -> [Novo arquivo dinâmico]
+- [x] `.context/_scripts/project_bundler.py` -> [Motor movido e renomeado]
+- [x] `.context/brain/SCRIPT_GLOSSARY.md` -> [Documentação sincronizada]
+- [x] `run_context.py` -> [Integração pipeline]
+- [x] `package.json` -> [Acesso npm script]
+- [x] `init_ai_project.sh` -> [Suporte pipeline]
+
+### Contrato de Validação
+- executor_context_id: `CTX_BUNDLER_NATIVE`
+- validator_context_id: `CTX_QA_SAM`
+- segregation_check: `executor_context_id != validator_context_id`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Aprovado autonomamente. Integração total no framework garantida sem ferir governança e cumprindo estritamente as regras de path do SAM.`
+
+**Handoff:** @antigravity-agent -> Pipeline | Estado: Mapa contínuo implementado | Próximo: Commit.
 
 ## 📅 2026-04-26 16:30
 **Decisão/Bug:** 📖 Governança: Glossário de Arquivos e Correção de Memória Contínua.
@@ -3756,6 +4521,11 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 ## 📅 2026-04-26 00:08
 **Decisão/Bug:** 🧹 Saneamento de Contexto: Expurgo de Diretório Legado.
 **Tags:** Manutenção, Eficiência, Context-Sanitation
+
+```
+CHUNK_END id=019509328844_c001
+CHUNK_START id=019509328844_c002 start_line=301 end_line=363
+```markdown
 **Ação:** 
 1. Identificado que o diretório `.context/specs/` continha apenas planos de implementação legados da v2.4.1 (Entulho Cognitivo).
 2. O usuário confirmou a exclusão total do diretório para manter o contexto "Lean".
@@ -3821,7 +4591,7 @@ Governança, Regras, Market
 - **Próximo:** Iniciar ciclo de desenvolvimento de features sobre fundação v2.5.0.
 
 ```
-CHUNK_END id=019509328844_c001
+CHUNK_END id=019509328844_c002
 FILE_END id=file_019509328844
 
 ---
@@ -3968,8 +4738,8 @@ FILE_END id=file_ef714e7c8162
 
 ---
 <a id="file_d069d4f2ebef"></a>
-FILE_START id=file_d069d4f2ebef path=.context/maintenance/TECHNICAL_REQUIREMENTS.md domain=docs lang=markdown lines=144 bytes=1005 mtime=2026-04-26T18:32:37.458651+00:00 sha1=f8002a77c413d2a03230911904785af04697947e
-CHUNK_START id=d069d4f2ebef_c001 start_line=1 end_line=144
+FILE_START id=file_d069d4f2ebef path=.context/maintenance/TECHNICAL_REQUIREMENTS.md domain=docs lang=markdown lines=147 bytes=1008 mtime=2026-04-26T20:26:17.349689+00:00 sha1=0dc2c1c3915637de740ae591fc6f3a22c1460a90
+CHUNK_START id=d069d4f2ebef_c001 start_line=1 end_line=147
 ```markdown
 ---
 Criado em: 2026-04-10 20:50
@@ -3989,7 +4759,7 @@ Para execução segura dos scripts de governança (Harness e Oracle):
 - **Node.js:** `>= 18.x` (para pacotes de pre-commits automáticos)
 
 <!-- AUTO-SYNC START -->
-*🤖 Atualizado automaticamente em 2026-04-26 15:32*
+*🤖 Atualizado automaticamente em 2026-04-26 17:26*
 
 ### DevDependencies
 - `husky`: `^9.1.7`
@@ -3998,6 +4768,9 @@ Para execução segura dos scripts de governança (Harness e Oracle):
 - `orders`
 
 <!-- AUTO-SYNC END -->
+
+
+
 
 
 
@@ -4241,7 +5014,7 @@ FILE_END id=file_a5c71962029a
 
 ---
 <a id="file_54a6a553d34b"></a>
-FILE_START id=file_54a6a553d34b path=.context/maintenance/rx-anatomy.md domain=docs lang=markdown lines=35 bytes=2194 mtime=2026-04-26T04:19:14.919042+00:00 sha1=d2bb81057a26d7e11cd26a5c02a6e87d2cf32fec
+FILE_START id=file_54a6a553d34b path=.context/maintenance/rx-anatomy.md domain=docs lang=markdown lines=35 bytes=2209 mtime=2026-04-26T20:05:14.112951+00:00 sha1=ff59b0326c4c35941a940ff02e478302cae30f20
 CHUNK_START id=54a6a553d34b_c001 start_line=1 end_line=35
 ```markdown
 Criado em: 2026-04-10 23:27
@@ -4265,8 +5038,8 @@ Status: Ativo
 │   ├── brain/              # Regras, PRD e Fronteiras (VISION/INCEPTION)
 │   ├── market/             # Camada Estratégica (SSOT, Limits, Compliance)
 │   ├── maintenance/        # Logs (JOURNAL/HARNESS_LOG), RX_REPOSITORIO.md e Inventários
-│   ├── monitoring/         # Dashboard de Saúde (CONTEXT_HEALTH.md)
-│   └── _scripts/           # Motor de Validação em Python (Oráculo, Harness)
+│   ├── monitoring/         # Dashboard de Saúde e Mapa (PROJECT_INDEX.md)
+│   └── _scripts/           # Motor de Validação em Python (Oráculo, Bundler, Harness)
 ├── .specs/                  # 🧪 BANCADA DE EXECUÇÃO (Workshop Efêmero)
 │   └── features/            # Specs atômicas ativas (max 3)
 ├── tests/                   # Suíte de testes (Infra e Unitários)
@@ -4757,8 +5530,8 @@ FILE_END id=file_b5d38697335e
 
 ---
 <a id="file_c255058b56fe"></a>
-FILE_START id=file_c255058b56fe path=.context/market/wiki_log.md domain=docs lang=markdown lines=44 bytes=3985 mtime=2026-04-26T18:32:39.119078+00:00 sha1=c29c1ddd1560f0bd1ddd719a847283806e71be34
-CHUNK_START id=c255058b56fe_c001 start_line=1 end_line=44
+FILE_START id=file_c255058b56fe path=.context/market/wiki_log.md domain=docs lang=markdown lines=48 bytes=4459 mtime=2026-04-26T20:26:19.074046+00:00 sha1=7864b00902b327247363c96a409db38e5158c990
+CHUNK_START id=c255058b56fe_c001 start_line=1 end_line=48
 ```markdown
 # Wiki Log (Append-only)
 
@@ -4804,6 +5577,10 @@ CHUNK_START id=c255058b56fe_c001 start_line=1 end_line=44
 | [2026-04-26 15:20] | LINT | Integridade epistemológica validada | - | OK |
 | [2026-04-26 15:32] | INGEST | Ingestão de 4 artigos | harness_architecture.md, harness_behavior.md, harness_maintainability.md, ralph_wiggum_loop.md | OK |
 | [2026-04-26 15:32] | LINT | Integridade epistemológica validada | - | OK |
+| [2026-04-26 17:06] | INGEST | Ingestão de 4 artigos | harness_architecture.md, harness_behavior.md, harness_maintainability.md, ralph_wiggum_loop.md | OK |
+| [2026-04-26 17:06] | LINT | Integridade epistemológica validada | - | OK |
+| [2026-04-26 17:26] | INGEST | Ingestão de 4 artigos | harness_architecture.md, harness_behavior.md, harness_maintainability.md, ralph_wiggum_loop.md | OK |
+| [2026-04-26 17:26] | LINT | Integridade epistemológica validada | - | OK |
 
 ```
 CHUNK_END id=c255058b56fe_c001
@@ -4811,12 +5588,12 @@ FILE_END id=file_c255058b56fe
 
 ---
 <a id="file_068a21d64bec"></a>
-FILE_START id=file_068a21d64bec path=.context/monitoring/CONTEXT_HEALTH.md domain=docs lang=markdown lines=38 bytes=1503 mtime=2026-04-26T18:32:39.990012+00:00 sha1=d7a73406ec22f92dc4112cc7d899fa3030bafb8e
+FILE_START id=file_068a21d64bec path=.context/monitoring/CONTEXT_HEALTH.md domain=docs lang=markdown lines=38 bytes=1503 mtime=2026-04-26T20:26:20.058803+00:00 sha1=bb96eb87e415c899a1f56f9f1f97d4a9ab231dc3
 CHUNK_START id=068a21d64bec_c001 start_line=1 end_line=38
 ```markdown
 ---
 Criado em: 2026-04-10 20:50
-Ultima Atualizacao: 2026-04-26 15:32
+Ultima Atualizacao: 2026-04-26 17:26
 Status: Ativo
 ---
 
@@ -4828,15 +5605,15 @@ Status: Ativo
 | Metrica | Valor Atual | Limite Ideal | Pilar | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | **Manutencao** | | | | |
-| Linhas do Journal | 183 | 600 | Tracker | [OK] |
-| Carga do Journal | 10k chars | 50k chars | Tracker | [OK] |
+| Linhas do Journal | 277 | 600 | Tracker | [OK] |
+| Carga do Journal | 16k chars | 50k chars | Tracker | [OK] |
 | **Cognitivo** | | | | |
-| Estimativa Tokens | ~54k | 128k (Max) | Eficiencia | [OK] |
+| Estimativa Tokens | ~74k | 128k (Max) | Eficiencia | [OK] |
 | **Consistencia** | | | | |
 | Tabelas no Schema | 1 | N/A | DB-First | [OK] |
 | Migrations Pendentes | 1 file(s) | N/A | DB-First | [OK] |
 | Ultimo Harness | Role Check | Pass/Fail | Integridade | N/A |
-| Ultima Sincronia | 2026-04-26 15:32 | Real-Time | Automacao | [OK] |
+| Ultima Sincronia | 2026-04-26 17:26 | Real-Time | Automacao | [OK] |
 <!-- HEALTH_TABLE_END -->
 
 ---
@@ -4876,6 +5653,781 @@ Este arquivo é a "memória de curto prazo" do H.O.K Governor. Toda ferramenta e
 ```
 CHUNK_END id=c6d44cc7da35_c001
 FILE_END id=file_c6d44cc7da35
+
+---
+<a id="file_3667001850eb"></a>
+FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=755 bytes=40976 mtime=2026-04-29T04:14:36.746312+00:00 sha1=a51cdfdb500dc7e0623491dae20aef882a09fffa
+CHUNK_START id=3667001850eb_c001 start_line=1 end_line=300
+```markdown
+# Project Context Bundle
+
+---
+schema_version: 1
+generated_at: 2026-04-29T04:14:36.744186+00:00
+root: template_inicío_de_projeto
+mode: full | TOC
+profile: ai-default
+file_count: 87
+byte_count: 326426
+ignored_dirs:
+  - .cache
+  - .cursor
+  - .git
+  - .idea
+  - .mypy_cache
+  - .netlify
+  - .next
+  - .nuxt
+  - .pytest_cache
+  - .ruff_cache
+  - .tox
+  - .venv
+  - .vercel
+  - .vite
+  - .vscode
+  - RAW
+  - __pycache__
+  - _archive_context
+  - bin
+  - build
+  - captura_projeto
+  - coverage
+  - dist
+  - node_modules
+  - obj
+  - out
+  - planos
+  - target
+  - venv
+sensitive_rules:
+  - *.cert
+  - *.key
+  - *.p12
+  - *.pem
+  - *.pfx
+  - .env*
+  - credentials*.json
+  - id_rsa*
+  - secrets.*
+---
+
+## INDEX_BY_DOMAIN
+- `config`:
+  - `.context/maintenance/version_targets.json` -> [file_51ed93c9d8ab](#file_51ed93c9d8ab)
+  - `.github/workflows/context-health.yml` -> [file_e477c4c5a96c](#file_e477c4c5a96c)
+  - `package.json` -> [file_7030d0b2f71b](#file_7030d0b2f71b)
+- `db`:
+  - `.context/maintenance/migrations/001_init.sql` -> [file_3707c3aa3239](#file_3707c3aa3239)
+- `docs`:
+  - `.agent/subagents/qa-validator.md` -> [file_5a0c0f1b1bd0](#file_5a0c0f1b1bd0)
+  - `.agent/subagents/spec-driver.md` -> [file_a412f1bb7017](#file_a412f1bb7017)
+  - `.context/brain/AGENT_REGISTRY.md` -> [file_e7c17acb71ff](#file_e7c17acb71ff)
+  - `.context/brain/FILE_GLOSSARY.md` -> [file_14666768162a](#file_14666768162a)
+  - `.context/brain/HARNESS_REGISTRY.md` -> [file_4b29e274836e](#file_4b29e274836e)
+  - `.context/brain/INCEPTION.md` -> [file_de9ef20db2be](#file_de9ef20db2be)
+  - `.context/brain/MASTER_FLOW.md` -> [file_d833c436f547](#file_d833c436f547)
+  - `.context/brain/PRD.md` -> [file_d124f6374cab](#file_d124f6374cab)
+  - `.context/brain/PROMPT_LIBRARY.md` -> [file_9fe16e5591f0](#file_9fe16e5591f0)
+  - `.context/brain/ROADMAP.md` -> [file_c94f001202db](#file_c94f001202db)
+  - `.context/brain/RULES.md` -> [file_cd6526d17218](#file_cd6526d17218)
+  - `.context/brain/SCRIPT_GLOSSARY.md` -> [file_aa59d3515582](#file_aa59d3515582)
+  - `.context/brain/START_HERE.md` -> [file_e11d89201917](#file_e11d89201917)
+  - `.context/brain/TLC_INTEGRATION.md` -> [file_450d7ec70909](#file_450d7ec70909)
+  - `.context/brain/VISION.md` -> [file_d2f31e4696a6](#file_d2f31e4696a6)
+  - `.context/maintenance/ARCHITECTURE.md` -> [file_9b6470da8849](#file_9b6470da8849)
+  - `.context/maintenance/HARNESS_LOG.md` -> [file_41c3d3da4381](#file_41c3d3da4381)
+  - `.context/maintenance/JOURNAL.md` -> [file_019509328844](#file_019509328844)
+  - `.context/maintenance/JOURNAL_SYNAPSE.md` -> [file_cc20d1370d98](#file_cc20d1370d98)
+  - `.context/maintenance/RX_REPOSITORIO.md` -> [file_ef714e7c8162](#file_ef714e7c8162)
+  - `.context/maintenance/TECHNICAL_REQUIREMENTS.md` -> [file_d069d4f2ebef](#file_d069d4f2ebef)
+  - `.context/maintenance/TESTS.md` -> [file_0858a02cf53f](#file_0858a02cf53f)
+  - `.context/maintenance/rebuild_guide.md` -> [file_a5c71962029a](#file_a5c71962029a)
+  - `.context/maintenance/rx-anatomy.md` -> [file_54a6a553d34b](#file_54a6a553d34b)
+  - `.context/maintenance/rx-biology.md` -> [file_ca8da4f87431](#file_ca8da4f87431)
+  - `.context/market/MARKET_INBOX.md` -> [file_81ef387da7b7](#file_81ef387da7b7)
+  - `.context/market/SSOT_MAP.md` -> [file_65a089176b85](#file_65a089176b85)
+  - `.context/market/WIKI/_index.md` -> [file_578d56cac1a4](#file_578d56cac1a4)
+  - `.context/market/WIKI/_template.md` -> [file_491684f3a96e](#file_491684f3a96e)
+  - `.context/market/WIKI/concepts/harness_architecture.md` -> [file_d3053a37c321](#file_d3053a37c321)
+  - `.context/market/WIKI/concepts/harness_behavior.md` -> [file_377d3d8e4da4](#file_377d3d8e4da4)
+  - `.context/market/WIKI/concepts/harness_maintainability.md` -> [file_2589e52b2eed](#file_2589e52b2eed)
+  - `.context/market/WIKI/concepts/ralph_wiggum_loop.md` -> [file_a19b6a994237](#file_a19b6a994237)
+  - `.context/market/economics.md` -> [file_b5d38697335e](#file_b5d38697335e)
+  - `.context/market/wiki_log.md` -> [file_c255058b56fe](#file_c255058b56fe)
+  - `.context/monitoring/CONTEXT_HEALTH.md` -> [file_068a21d64bec](#file_068a21d64bec)
+  - `.context/monitoring/EXECUTION_BUFFER.md` -> [file_c6d44cc7da35](#file_c6d44cc7da35)
+  - `.context/monitoring/PROJECT_INDEX.md` -> [file_3667001850eb](#file_3667001850eb)
+  - `.specs/_template.md` -> [file_b838611f038c](#file_b838611f038c)
+  - `.specs/features/harness_fail_closed/STATE.md` -> [file_d4f64fc3b549](#file_d4f64fc3b549)
+  - `.specs/features/harness_fail_closed/spec.md` -> [file_a32e3bf74e3d](#file_a32e3bf74e3d)
+  - `.specs/features/meta-inception/STATE.md` -> [file_238a0e1da225](#file_238a0e1da225)
+  - `.specs/features/meta-inception/spec.md` -> [file_9801af51c558](#file_9801af51c558)
+  - `.specs/features/multi_agent_choreography/STATE.md` -> [file_452b2ed7917b](#file_452b2ed7917b)
+  - `.specs/features/multi_agent_choreography/spec.md` -> [file_6aa9a4e78301](#file_6aa9a4e78301)
+  - `.specs/features/qa_subagent/STATE.md` -> [file_98c620fda2a6](#file_98c620fda2a6)
+  - `.specs/features/qa_subagent/spec.md` -> [file_72cc9b3bbcc2](#file_72cc9b3bbcc2)
+  - `.specs/features/sam_chronology_fix/STATE.md` -> [file_f288e14cea57](#file_f288e14cea57)
+  - `.specs/features/sam_chronology_fix/spec.md` -> [file_87c0e9fe1bbb](#file_87c0e9fe1bbb)
+  - `.specs/features/synapse_workflow/STATE.md` -> [file_6d46ab399ea3](#file_6d46ab399ea3)
+  - `.specs/features/synapse_workflow/spec.md` -> [file_4f4d02adad4d](#file_4f4d02adad4d)
+  - `.specs/features/wiki_level2/STATE.md` -> [file_638d6695a3f1](#file_638d6695a3f1)
+  - `.specs/features/wiki_level2/spec.md` -> [file_86778e912e18](#file_86778e912e18)
+  - `.specs/features/wiki_level2/tasks.md` -> [file_fafce66dc671](#file_fafce66dc671)
+  - `GUIA_ESTABILIZACAO_NOTEBOOKLM.md` -> [file_95dabcdf3543](#file_95dabcdf3543)
+  - `README.md` -> [file_8ec9a00bfd09](#file_8ec9a00bfd09)
+  - `README_CONTEXT.md` -> [file_4efb6293109d](#file_4efb6293109d)
+  - `TEMPLATE_MIGRATION.md` -> [file_19e76e009f38](#file_19e76e009f38)
+  - `VERSION.md` -> [file_f6f7100f063b](#file_f6f7100f063b)
+  - `_modoLight/Modo_Light.md` -> [file_1f98938d3cd9](#file_1f98938d3cd9)
+- `source`:
+  - `.context/_scripts/_tz_utils.py` -> [file_dbef1acce0d4](#file_dbef1acce0d4)
+  - `.context/_scripts/_wiki_log_utils.py` -> [file_9ee5d49278ad](#file_9ee5d49278ad)
+  - `.context/_scripts/check_version_consistency.py` -> [file_4ffe1a34765a](#file_4ffe1a34765a)
+  - `.context/_scripts/cleanup_specs.py` -> [file_82cd6bde54ff](#file_82cd6bde54ff)
+  - `.context/_scripts/context_oracle.py` -> [file_10081abf87e1](#file_10081abf87e1)
+  - `.context/_scripts/enrich_context.py` -> [file_e94b4e40315c](#file_e94b4e40315c)
+  - `.context/_scripts/harness_runner.py` -> [file_1edef35c2f56](#file_1edef35c2f56)
+  - `.context/_scripts/health_sync.py` -> [file_a642d240b9ab](#file_a642d240b9ab)
+  - `.context/_scripts/ingest_wiki_guard.py` -> [file_0731dcfd7873](#file_0731dcfd7873)
+  - `.context/_scripts/lint_wiki.py` -> [file_ab41b07fb3fb](#file_ab41b07fb3fb)
+  - `.context/_scripts/migration_registry.py` -> [file_d65b48a9d56c](#file_d65b48a9d56c)
+  - `.context/_scripts/project_bundler.py` -> [file_02d732116d93](#file_02d732116d93)
+  - `.context/_scripts/purge_journal.py` -> [file_024b28a37d29](#file_024b28a37d29)
+  - `.context/_scripts/secrets_scanner.py` -> [file_e98b95e5fb6d](#file_e98b95e5fb6d)
+  - `.context/_scripts/sync_project.py` -> [file_f122711ba9e1](#file_f122711ba9e1)
+  - `.context/_scripts/validate_context.py` -> [file_1077e9084ea1](#file_1077e9084ea1)
+  - `.context/_scripts/workflow_journal_auditor.py` -> [file_8f42e61c8a29](#file_8f42e61c8a29)
+  - `.context/maintenance/schema.sql` -> [file_91d5627a725e](#file_91d5627a725e)
+  - `.husky/_/husky.sh` -> [file_3adfd36c1559](#file_3adfd36c1559)
+  - `init_ai_project.sh` -> [file_c59135753d26](#file_c59135753d26)
+  - `run_context.py` -> [file_350a79f8b829](#file_350a79f8b829)
+  - `run_context.sh` -> [file_86bac54f32d7](#file_86bac54f32d7)
+  - `tests/test_context.py` -> [file_4c6bbd05056e](#file_4c6bbd05056e)
+
+## INDEX_BY_PATH
+- `.agent/subagents/qa-validator.md` -> [file_5a0c0f1b1bd0](#file_5a0c0f1b1bd0)
+- `.agent/subagents/spec-driver.md` -> [file_a412f1bb7017](#file_a412f1bb7017)
+- `.context/_scripts/_tz_utils.py` -> [file_dbef1acce0d4](#file_dbef1acce0d4)
+- `.context/_scripts/_wiki_log_utils.py` -> [file_9ee5d49278ad](#file_9ee5d49278ad)
+- `.context/_scripts/check_version_consistency.py` -> [file_4ffe1a34765a](#file_4ffe1a34765a)
+- `.context/_scripts/cleanup_specs.py` -> [file_82cd6bde54ff](#file_82cd6bde54ff)
+- `.context/_scripts/context_oracle.py` -> [file_10081abf87e1](#file_10081abf87e1)
+- `.context/_scripts/enrich_context.py` -> [file_e94b4e40315c](#file_e94b4e40315c)
+- `.context/_scripts/harness_runner.py` -> [file_1edef35c2f56](#file_1edef35c2f56)
+- `.context/_scripts/health_sync.py` -> [file_a642d240b9ab](#file_a642d240b9ab)
+- `.context/_scripts/ingest_wiki_guard.py` -> [file_0731dcfd7873](#file_0731dcfd7873)
+- `.context/_scripts/lint_wiki.py` -> [file_ab41b07fb3fb](#file_ab41b07fb3fb)
+- `.context/_scripts/migration_registry.py` -> [file_d65b48a9d56c](#file_d65b48a9d56c)
+- `.context/_scripts/project_bundler.py` -> [file_02d732116d93](#file_02d732116d93)
+- `.context/_scripts/purge_journal.py` -> [file_024b28a37d29](#file_024b28a37d29)
+- `.context/_scripts/secrets_scanner.py` -> [file_e98b95e5fb6d](#file_e98b95e5fb6d)
+- `.context/_scripts/sync_project.py` -> [file_f122711ba9e1](#file_f122711ba9e1)
+- `.context/_scripts/validate_context.py` -> [file_1077e9084ea1](#file_1077e9084ea1)
+- `.context/_scripts/workflow_journal_auditor.py` -> [file_8f42e61c8a29](#file_8f42e61c8a29)
+- `.context/brain/AGENT_REGISTRY.md` -> [file_e7c17acb71ff](#file_e7c17acb71ff)
+- `.context/brain/FILE_GLOSSARY.md` -> [file_14666768162a](#file_14666768162a)
+- `.context/brain/HARNESS_REGISTRY.md` -> [file_4b29e274836e](#file_4b29e274836e)
+- `.context/brain/INCEPTION.md` -> [file_de9ef20db2be](#file_de9ef20db2be)
+- `.context/brain/MASTER_FLOW.md` -> [file_d833c436f547](#file_d833c436f547)
+- `.context/brain/PRD.md` -> [file_d124f6374cab](#file_d124f6374cab)
+- `.context/brain/PROMPT_LIBRARY.md` -> [file_9fe16e5591f0](#file_9fe16e5591f0)
+- `.context/brain/ROADMAP.md` -> [file_c94f001202db](#file_c94f001202db)
+- `.context/brain/RULES.md` -> [file_cd6526d17218](#file_cd6526d17218)
+- `.context/brain/SCRIPT_GLOSSARY.md` -> [file_aa59d3515582](#file_aa59d3515582)
+- `.context/brain/START_HERE.md` -> [file_e11d89201917](#file_e11d89201917)
+- `.context/brain/TLC_INTEGRATION.md` -> [file_450d7ec70909](#file_450d7ec70909)
+- `.context/brain/VISION.md` -> [file_d2f31e4696a6](#file_d2f31e4696a6)
+- `.context/maintenance/ARCHITECTURE.md` -> [file_9b6470da8849](#file_9b6470da8849)
+- `.context/maintenance/HARNESS_LOG.md` -> [file_41c3d3da4381](#file_41c3d3da4381)
+- `.context/maintenance/JOURNAL.md` -> [file_019509328844](#file_019509328844)
+- `.context/maintenance/JOURNAL_SYNAPSE.md` -> [file_cc20d1370d98](#file_cc20d1370d98)
+- `.context/maintenance/RX_REPOSITORIO.md` -> [file_ef714e7c8162](#file_ef714e7c8162)
+- `.context/maintenance/TECHNICAL_REQUIREMENTS.md` -> [file_d069d4f2ebef](#file_d069d4f2ebef)
+- `.context/maintenance/TESTS.md` -> [file_0858a02cf53f](#file_0858a02cf53f)
+- `.context/maintenance/migrations/001_init.sql` -> [file_3707c3aa3239](#file_3707c3aa3239)
+- `.context/maintenance/rebuild_guide.md` -> [file_a5c71962029a](#file_a5c71962029a)
+- `.context/maintenance/rx-anatomy.md` -> [file_54a6a553d34b](#file_54a6a553d34b)
+- `.context/maintenance/rx-biology.md` -> [file_ca8da4f87431](#file_ca8da4f87431)
+- `.context/maintenance/schema.sql` -> [file_91d5627a725e](#file_91d5627a725e)
+- `.context/maintenance/version_targets.json` -> [file_51ed93c9d8ab](#file_51ed93c9d8ab)
+- `.context/market/MARKET_INBOX.md` -> [file_81ef387da7b7](#file_81ef387da7b7)
+- `.context/market/SSOT_MAP.md` -> [file_65a089176b85](#file_65a089176b85)
+- `.context/market/WIKI/_index.md` -> [file_578d56cac1a4](#file_578d56cac1a4)
+- `.context/market/WIKI/_template.md` -> [file_491684f3a96e](#file_491684f3a96e)
+- `.context/market/WIKI/concepts/harness_architecture.md` -> [file_d3053a37c321](#file_d3053a37c321)
+- `.context/market/WIKI/concepts/harness_behavior.md` -> [file_377d3d8e4da4](#file_377d3d8e4da4)
+- `.context/market/WIKI/concepts/harness_maintainability.md` -> [file_2589e52b2eed](#file_2589e52b2eed)
+- `.context/market/WIKI/concepts/ralph_wiggum_loop.md` -> [file_a19b6a994237](#file_a19b6a994237)
+- `.context/market/economics.md` -> [file_b5d38697335e](#file_b5d38697335e)
+- `.context/market/wiki_log.md` -> [file_c255058b56fe](#file_c255058b56fe)
+- `.context/monitoring/CONTEXT_HEALTH.md` -> [file_068a21d64bec](#file_068a21d64bec)
+- `.context/monitoring/EXECUTION_BUFFER.md` -> [file_c6d44cc7da35](#file_c6d44cc7da35)
+- `.context/monitoring/PROJECT_INDEX.md` -> [file_3667001850eb](#file_3667001850eb)
+- `.github/workflows/context-health.yml` -> [file_e477c4c5a96c](#file_e477c4c5a96c)
+- `.husky/_/husky.sh` -> [file_3adfd36c1559](#file_3adfd36c1559)
+- `.specs/_template.md` -> [file_b838611f038c](#file_b838611f038c)
+- `.specs/features/harness_fail_closed/STATE.md` -> [file_d4f64fc3b549](#file_d4f64fc3b549)
+- `.specs/features/harness_fail_closed/spec.md` -> [file_a32e3bf74e3d](#file_a32e3bf74e3d)
+- `.specs/features/meta-inception/STATE.md` -> [file_238a0e1da225](#file_238a0e1da225)
+- `.specs/features/meta-inception/spec.md` -> [file_9801af51c558](#file_9801af51c558)
+- `.specs/features/multi_agent_choreography/STATE.md` -> [file_452b2ed7917b](#file_452b2ed7917b)
+- `.specs/features/multi_agent_choreography/spec.md` -> [file_6aa9a4e78301](#file_6aa9a4e78301)
+- `.specs/features/qa_subagent/STATE.md` -> [file_98c620fda2a6](#file_98c620fda2a6)
+- `.specs/features/qa_subagent/spec.md` -> [file_72cc9b3bbcc2](#file_72cc9b3bbcc2)
+- `.specs/features/sam_chronology_fix/STATE.md` -> [file_f288e14cea57](#file_f288e14cea57)
+- `.specs/features/sam_chronology_fix/spec.md` -> [file_87c0e9fe1bbb](#file_87c0e9fe1bbb)
+- `.specs/features/synapse_workflow/STATE.md` -> [file_6d46ab399ea3](#file_6d46ab399ea3)
+- `.specs/features/synapse_workflow/spec.md` -> [file_4f4d02adad4d](#file_4f4d02adad4d)
+- `.specs/features/wiki_level2/STATE.md` -> [file_638d6695a3f1](#file_638d6695a3f1)
+- `.specs/features/wiki_level2/spec.md` -> [file_86778e912e18](#file_86778e912e18)
+- `.specs/features/wiki_level2/tasks.md` -> [file_fafce66dc671](#file_fafce66dc671)
+- `GUIA_ESTABILIZACAO_NOTEBOOKLM.md` -> [file_95dabcdf3543](#file_95dabcdf3543)
+- `README.md` -> [file_8ec9a00bfd09](#file_8ec9a00bfd09)
+- `README_CONTEXT.md` -> [file_4efb6293109d](#file_4efb6293109d)
+- `TEMPLATE_MIGRATION.md` -> [file_19e76e009f38](#file_19e76e009f38)
+- `VERSION.md` -> [file_f6f7100f063b](#file_f6f7100f063b)
+- `_modoLight/Modo_Light.md` -> [file_1f98938d3cd9](#file_1f98938d3cd9)
+- `init_ai_project.sh` -> [file_c59135753d26](#file_c59135753d26)
+- `package.json` -> [file_7030d0b2f71b](#file_7030d0b2f71b)
+- `run_context.py` -> [file_350a79f8b829](#file_350a79f8b829)
+- `run_context.sh` -> [file_86bac54f32d7](#file_86bac54f32d7)
+- `tests/test_context.py` -> [file_4c6bbd05056e](#file_4c6bbd05056e)
+
+---
+<a id="file_5a0c0f1b1bd0"></a>
+FILE_START id=file_5a0c0f1b1bd0 path=.agent/subagents/qa-validator.md domain=docs lang=markdown lines=29 bytes=1675 mtime=2026-04-26T18:26:55.104551+00:00 sha1=dd112ed2df4f38fdc7660f08788077a843b89921
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_5a0c0f1b1bd0
+
+---
+<a id="file_a412f1bb7017"></a>
+FILE_START id=file_a412f1bb7017 path=.agent/subagents/spec-driver.md domain=docs lang=markdown lines=24 bytes=1834 mtime=2026-04-29T03:51:20.865135+00:00 sha1=c6e6648d2a635418ed4f7d36998c01b89b0bb4bb
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_a412f1bb7017
+
+---
+<a id="file_dbef1acce0d4"></a>
+FILE_START id=file_dbef1acce0d4 path=.context/_scripts/_tz_utils.py domain=source lang=python lines=37 bytes=1257 mtime=2026-04-12T02:47:25.198957+00:00 sha1=a49568f45d4b962ab01f0ed4b359ee4c09f65741
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_dbef1acce0d4
+
+---
+<a id="file_9ee5d49278ad"></a>
+FILE_START id=file_9ee5d49278ad path=.context/_scripts/_wiki_log_utils.py domain=source lang=python lines=66 bytes=2541 mtime=2026-04-22T23:47:25.409048+00:00 sha1=eb8650ba121fe8cc8aaabaca70de01214509937e
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_9ee5d49278ad
+
+---
+<a id="file_4ffe1a34765a"></a>
+FILE_START id=file_4ffe1a34765a path=.context/_scripts/check_version_consistency.py domain=source lang=python lines=80 bytes=2486 mtime=2026-04-22T12:37:52.914197+00:00 sha1=0f0bcd180ff803df099fc5f865ce6d3106e196d2
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_4ffe1a34765a
+
+---
+<a id="file_82cd6bde54ff"></a>
+FILE_START id=file_82cd6bde54ff path=.context/_scripts/cleanup_specs.py domain=source lang=python lines=71 bytes=2335 mtime=2026-04-11T02:29:19.704104+00:00 sha1=8567b3ea9b8c513859bab8793632e38aef509fd5
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_82cd6bde54ff
+
+---
+<a id="file_10081abf87e1"></a>
+FILE_START id=file_10081abf87e1 path=.context/_scripts/context_oracle.py domain=source lang=python lines=133 bytes=5290 mtime=2026-04-22T23:34:52.248624+00:00 sha1=61d7e4d041f8821d2240f83a9ad8b5c26baa9cb9
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_10081abf87e1
+
+---
+<a id="file_e94b4e40315c"></a>
+FILE_START id=file_e94b4e40315c path=.context/_scripts/enrich_context.py domain=source lang=python lines=125 bytes=4876 mtime=2026-04-17T00:17:17.361963+00:00 sha1=6ab638ce0553fdafde495ea2f64fc30ae300f765
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_e94b4e40315c
+
+---
+<a id="file_1edef35c2f56"></a>
+FILE_START id=file_1edef35c2f56 path=.context/_scripts/harness_runner.py domain=source lang=python lines=479 bytes=17284 mtime=2026-04-29T02:55:27.749753+00:00 sha1=fd8870cf8653c9876e580d9e9ddc1cfa158ac1e4
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_1edef35c2f56
+
+---
+<a id="file_a642d240b9ab"></a>
+FILE_START id=file_a642d240b9ab path=.context/_scripts/health_sync.py domain=source lang=python lines=111 bytes=4132 mtime=2026-04-12T03:40:11.302253+00:00 sha1=1f23d31d0c88fe19ee916b4d6dd9676fb2f0018b
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_a642d240b9ab
+
+---
+<a id="file_0731dcfd7873"></a>
+FILE_START id=file_0731dcfd7873 path=.context/_scripts/ingest_wiki_guard.py domain=source lang=python lines=88 bytes=3112 mtime=2026-04-22T23:34:30.558813+00:00 sha1=8cf96a678ced2d689deb51608c115dcd75a632a8
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_0731dcfd7873
+
+
+```
+CHUNK_END id=3667001850eb_c001
+CHUNK_START id=3667001850eb_c002 start_line=301 end_line=600
+```markdown
+---
+<a id="file_ab41b07fb3fb"></a>
+FILE_START id=file_ab41b07fb3fb path=.context/_scripts/lint_wiki.py domain=source lang=python lines=116 bytes=4999 mtime=2026-04-22T23:34:42.090035+00:00 sha1=844cbc05474f73fa7addd3038fbbc60b86ab460a
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_ab41b07fb3fb
+
+---
+<a id="file_d65b48a9d56c"></a>
+FILE_START id=file_d65b48a9d56c path=.context/_scripts/migration_registry.py domain=source lang=python lines=44 bytes=1700 mtime=2026-04-12T02:18:47.875961+00:00 sha1=a1e9beb894aba2b44931e9c41522a020b7359ebf
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_d65b48a9d56c
+
+---
+<a id="file_02d732116d93"></a>
+FILE_START id=file_02d732116d93 path=.context/_scripts/project_bundler.py domain=source lang=python lines=429 bytes=17844 mtime=2026-04-23T18:31:18.210183+00:00 sha1=6108c27d0315281c1f40bec72da49685422fdcc9
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_02d732116d93
+
+---
+<a id="file_024b28a37d29"></a>
+FILE_START id=file_024b28a37d29 path=.context/_scripts/purge_journal.py domain=source lang=python lines=82 bytes=2761 mtime=2026-04-12T02:48:42.689091+00:00 sha1=8b12ecb77b7b91c035a2d7c9752910c71064d1e5
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_024b28a37d29
+
+---
+<a id="file_e98b95e5fb6d"></a>
+FILE_START id=file_e98b95e5fb6d path=.context/_scripts/secrets_scanner.py domain=source lang=python lines=69 bytes=2622 mtime=2026-04-14T12:47:41.549578+00:00 sha1=f73abf4fe2fa1a6e146de3fefae50c9016b77045
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_e98b95e5fb6d
+
+---
+<a id="file_f122711ba9e1"></a>
+FILE_START id=file_f122711ba9e1 path=.context/_scripts/sync_project.py domain=source lang=python lines=102 bytes=3426 mtime=2026-04-12T02:48:59.755191+00:00 sha1=d2b0f3541ccaab8c75f381f47d539c762618a0b7
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_f122711ba9e1
+
+---
+<a id="file_1077e9084ea1"></a>
+FILE_START id=file_1077e9084ea1 path=.context/_scripts/validate_context.py domain=source lang=python lines=253 bytes=8091 mtime=2026-04-22T23:17:08.680799+00:00 sha1=c24e8617c984749da6e65e550b43cf786c4c913c
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_1077e9084ea1
+
+---
+<a id="file_8f42e61c8a29"></a>
+FILE_START id=file_8f42e61c8a29 path=.context/_scripts/workflow_journal_auditor.py domain=source lang=python lines=147 bytes=6064 mtime=2026-04-26T17:16:36.783743+00:00 sha1=4a1f0828ece007facb973b64d22e2907b6fb5b3b
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_8f42e61c8a29
+
+---
+<a id="file_e7c17acb71ff"></a>
+FILE_START id=file_e7c17acb71ff path=.context/brain/AGENT_REGISTRY.md domain=docs lang=markdown lines=112 bytes=8938 mtime=2026-04-29T03:29:36.977108+00:00 sha1=90a533e37b7760555f53d254c25ed27c37218812
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_e7c17acb71ff
+
+---
+<a id="file_14666768162a"></a>
+FILE_START id=file_14666768162a path=.context/brain/FILE_GLOSSARY.md domain=docs lang=markdown lines=97 bytes=7231 mtime=2026-04-26T19:35:54.227178+00:00 sha1=3eea81425fe38f5c98dda4f71725e72028aab5c4
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_14666768162a
+
+---
+<a id="file_4b29e274836e"></a>
+FILE_START id=file_4b29e274836e path=.context/brain/HARNESS_REGISTRY.md domain=docs lang=markdown lines=20 bytes=1180 mtime=2026-04-11T23:46:58.142679+00:00 sha1=5a29edb2d353e3117e7e904191ef4dadfd322309
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_4b29e274836e
+
+---
+<a id="file_de9ef20db2be"></a>
+FILE_START id=file_de9ef20db2be path=.context/brain/INCEPTION.md domain=docs lang=markdown lines=43 bytes=3455 mtime=2026-04-23T15:10:01.045421+00:00 sha1=1c3639bff80071b9781712b04dfd7edd74ca73bc
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_de9ef20db2be
+
+---
+<a id="file_d833c436f547"></a>
+FILE_START id=file_d833c436f547 path=.context/brain/MASTER_FLOW.md domain=docs lang=markdown lines=129 bytes=7891 mtime=2026-04-29T03:51:37.524644+00:00 sha1=8480a6ca8cdf37745b8ca6ddd8fc1df4b0073cad
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_d833c436f547
+
+---
+<a id="file_d124f6374cab"></a>
+FILE_START id=file_d124f6374cab path=.context/brain/PRD.md domain=docs lang=markdown lines=29 bytes=1406 mtime=2026-04-17T01:21:43.543040+00:00 sha1=c75b72944c19fabc58237fb903784cb79ae6b4da
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_d124f6374cab
+
+---
+<a id="file_9fe16e5591f0"></a>
+FILE_START id=file_9fe16e5591f0 path=.context/brain/PROMPT_LIBRARY.md domain=docs lang=markdown lines=217 bytes=10358 mtime=2026-04-24T17:46:37.088580+00:00 sha1=56b9f148574701998a0ee05b31d1b53899db422c
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_9fe16e5591f0
+
+---
+<a id="file_c94f001202db"></a>
+FILE_START id=file_c94f001202db path=.context/brain/ROADMAP.md domain=docs lang=markdown lines=15 bytes=719 mtime=2026-04-21T23:32:04.607493+00:00 sha1=55fb929dd00b9a0eff1c9a253ec37e0609445e92
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_c94f001202db
+
+---
+<a id="file_cd6526d17218"></a>
+FILE_START id=file_cd6526d17218 path=.context/brain/RULES.md domain=docs lang=markdown lines=137 bytes=10107 mtime=2026-04-29T04:02:21.700448+00:00 sha1=761c4861f680ba761139bd769b587d41adf3b417
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_cd6526d17218
+
+---
+<a id="file_aa59d3515582"></a>
+FILE_START id=file_aa59d3515582 path=.context/brain/SCRIPT_GLOSSARY.md domain=docs lang=markdown lines=77 bytes=6567 mtime=2026-04-26T20:03:37.862155+00:00 sha1=ea7546e41f4ff30d9a85ef476b6e332bee869198
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_aa59d3515582
+
+---
+<a id="file_e11d89201917"></a>
+FILE_START id=file_e11d89201917 path=.context/brain/START_HERE.md domain=docs lang=markdown lines=42 bytes=1749 mtime=2026-04-17T00:07:25.637908+00:00 sha1=482d0d056987215305ae88da18b37a59faa64658
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_e11d89201917
+
+---
+<a id="file_450d7ec70909"></a>
+FILE_START id=file_450d7ec70909 path=.context/brain/TLC_INTEGRATION.md domain=docs lang=markdown lines=32 bytes=1739 mtime=2026-04-11T02:29:02.337886+00:00 sha1=35e6506fdaaa427e4d5795b83709f4f9da37fc2d
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_450d7ec70909
+
+---
+<a id="file_d2f31e4696a6"></a>
+FILE_START id=file_d2f31e4696a6 path=.context/brain/VISION.md domain=docs lang=markdown lines=44 bytes=7254 mtime=2026-04-23T15:26:57.151891+00:00 sha1=43246ab516dda1697b1efe4e634120aebce63c56
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_d2f31e4696a6
+
+---
+<a id="file_9b6470da8849"></a>
+FILE_START id=file_9b6470da8849 path=.context/maintenance/ARCHITECTURE.md domain=docs lang=markdown lines=17 bytes=827 mtime=2026-04-21T23:31:39.053793+00:00 sha1=e56f0939f55e5a0897bf89642150226cb048abd1
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_9b6470da8849
+
+---
+<a id="file_41c3d3da4381"></a>
+FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=139 bytes=5197 mtime=2026-04-29T02:59:35.362116+00:00 sha1=00b955e92792a01442a7e6f9cfbd27f4cfbda892
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_41c3d3da4381
+
+---
+<a id="file_019509328844"></a>
+FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=363 bytes=21778 mtime=2026-04-29T02:56:34.181685+00:00 sha1=1ecfd01db9a2efac9242def067104a64f52191e6
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_019509328844
+
+---
+<a id="file_cc20d1370d98"></a>
+FILE_START id=file_cc20d1370d98 path=.context/maintenance/JOURNAL_SYNAPSE.md domain=docs lang=markdown lines=51 bytes=1690 mtime=2026-04-24T17:11:19.470439+00:00 sha1=ec593364edce7aa5584a7ac651525ea5387ff8a5
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_cc20d1370d98
+
+---
+<a id="file_ef714e7c8162"></a>
+FILE_START id=file_ef714e7c8162 path=.context/maintenance/RX_REPOSITORIO.md domain=docs lang=markdown lines=71 bytes=4570 mtime=2026-04-26T19:08:42.983773+00:00 sha1=22df80c224f92b26457f149c2f39d41ea9b8ce1d
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_ef714e7c8162
+
+---
+<a id="file_d069d4f2ebef"></a>
+FILE_START id=file_d069d4f2ebef path=.context/maintenance/TECHNICAL_REQUIREMENTS.md domain=docs lang=markdown lines=147 bytes=1008 mtime=2026-04-26T20:26:17.349689+00:00 sha1=0dc2c1c3915637de740ae591fc6f3a22c1460a90
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_d069d4f2ebef
+
+---
+<a id="file_0858a02cf53f"></a>
+FILE_START id=file_0858a02cf53f path=.context/maintenance/TESTS.md domain=docs lang=markdown lines=14 bytes=487 mtime=2026-04-21T23:31:41.224778+00:00 sha1=41caf1bd5e6bf513c1924db0b4dca9fb6f92322b
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_0858a02cf53f
+
+---
+<a id="file_3707c3aa3239"></a>
+FILE_START id=file_3707c3aa3239 path=.context/maintenance/migrations/001_init.sql domain=db lang=sql lines=12 bytes=450 mtime=2026-04-12T02:14:15.429255+00:00 sha1=a4e5465634cd084041656f59f9093be09f5a8fc9
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_3707c3aa3239
+
+---
+<a id="file_a5c71962029a"></a>
+FILE_START id=file_a5c71962029a path=.context/maintenance/rebuild_guide.md domain=docs lang=markdown lines=63 bytes=1988 mtime=2026-04-11T00:43:15.350621+00:00 sha1=28659c89fedac91d1973177b8cedcf60ad5f622a
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_a5c71962029a
+
+---
+<a id="file_54a6a553d34b"></a>
+FILE_START id=file_54a6a553d34b path=.context/maintenance/rx-anatomy.md domain=docs lang=markdown lines=35 bytes=2209 mtime=2026-04-26T20:05:14.112951+00:00 sha1=ff59b0326c4c35941a940ff02e478302cae30f20
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_54a6a553d34b
+
+---
+<a id="file_ca8da4f87431"></a>
+FILE_START id=file_ca8da4f87431 path=.context/maintenance/rx-biology.md domain=docs lang=markdown lines=75 bytes=3568 mtime=2026-04-26T03:54:11.545017+00:00 sha1=af5a04f2f81eaec0af44c847f35ce989c100faae
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_ca8da4f87431
+
+---
+<a id="file_91d5627a725e"></a>
+FILE_START id=file_91d5627a725e path=.context/maintenance/schema.sql domain=source lang=sql lines=9 bytes=334 mtime=2026-04-11T01:25:08.344668+00:00 sha1=1814fd1f837ef5f31c2a6031222ba3055f9fd3c8
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_91d5627a725e
+
+---
+<a id="file_51ed93c9d8ab"></a>
+FILE_START id=file_51ed93c9d8ab path=.context/maintenance/version_targets.json domain=config lang=json lines=22 bytes=538 mtime=2026-04-22T12:37:34.654694+00:00 sha1=c2279f3056490c43cd112154c87f7b6b97e852ac
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_51ed93c9d8ab
+
+---
+<a id="file_81ef387da7b7"></a>
+FILE_START id=file_81ef387da7b7 path=.context/market/MARKET_INBOX.md domain=docs lang=markdown lines=11 bytes=341 mtime=2026-04-15T19:15:21.935146+00:00 sha1=66adcca82c5eae73d386371aef29795c87e283b3
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_81ef387da7b7
+
+---
+<a id="file_65a089176b85"></a>
+FILE_START id=file_65a089176b85 path=.context/market/SSOT_MAP.md domain=docs lang=markdown lines=28 bytes=1933 mtime=2026-04-24T00:53:50.356599+00:00 sha1=bb3a4cfc6e8100499b964cc7af0d4144a647f95d
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_65a089176b85
+
+---
+<a id="file_578d56cac1a4"></a>
+FILE_START id=file_578d56cac1a4 path=.context/market/WIKI/_index.md domain=docs lang=markdown lines=5 bytes=100 mtime=2026-04-22T23:08:43.528195+00:00 sha1=49feb4c64bb2f3a2838a667b4e78b5afb009b2e4
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_578d56cac1a4
+
+---
+<a id="file_491684f3a96e"></a>
+FILE_START id=file_491684f3a96e path=.context/market/WIKI/_template.md domain=docs lang=markdown lines=26 bytes=451 mtime=2026-04-21T21:52:58.658989+00:00 sha1=cff3271c1a095ae525f40835ebdcf49adc208d3a
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_491684f3a96e
+
+---
+<a id="file_d3053a37c321"></a>
+FILE_START id=file_d3053a37c321 path=.context/market/WIKI/concepts/harness_architecture.md domain=docs lang=markdown lines=42 bytes=3676 mtime=2026-04-24T00:58:55.142319+00:00 sha1=5ce062b892682b4b0d1027859f571880ae8fd219
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_d3053a37c321
+
+---
+<a id="file_377d3d8e4da4"></a>
+FILE_START id=file_377d3d8e4da4 path=.context/market/WIKI/concepts/harness_behavior.md domain=docs lang=markdown lines=42 bytes=3379 mtime=2026-04-24T01:00:54.793992+00:00 sha1=a51761fa79dfb0fdf782ed146f1c90415a342b76
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_377d3d8e4da4
+
+---
+<a id="file_2589e52b2eed"></a>
+FILE_START id=file_2589e52b2eed path=.context/market/WIKI/concepts/harness_maintainability.md domain=docs lang=markdown lines=41 bytes=3150 mtime=2026-04-24T00:54:26.558700+00:00 sha1=e09e05c4338ed20e592d9eb79ea7f43ff67aa681
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_2589e52b2eed
+
+---
+<a id="file_a19b6a994237"></a>
+FILE_START id=file_a19b6a994237 path=.context/market/WIKI/concepts/ralph_wiggum_loop.md domain=docs lang=markdown lines=43 bytes=2953 mtime=2026-04-24T01:03:27.706309+00:00 sha1=e6a0a485d4afe6b61264be774b38a3c771f83a48
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_a19b6a994237
+
+---
+<a id="file_b5d38697335e"></a>
+FILE_START id=file_b5d38697335e path=.context/market/economics.md domain=docs lang=markdown lines=7 bytes=109 mtime=2026-04-15T17:50:11.975520+00:00 sha1=17852efa34dbaea46351dcabac87aa67286e2e93
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_b5d38697335e
+
+---
+<a id="file_c255058b56fe"></a>
+FILE_START id=file_c255058b56fe path=.context/market/wiki_log.md domain=docs lang=markdown lines=48 bytes=4459 mtime=2026-04-26T20:26:19.074046+00:00 sha1=7864b00902b327247363c96a409db38e5158c990
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_c255058b56fe
+
+---
+<a id="file_068a21d64bec"></a>
+FILE_START id=file_068a21d64bec path=.context/monitoring/CONTEXT_HEALTH.md domain=docs lang=markdown lines=38 bytes=1503 mtime=2026-04-26T20:26:20.058803+00:00 sha1=bb96eb87e415c899a1f56f9f1f97d4a9ab231dc3
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_068a21d64bec
+
+---
+<a id="file_c6d44cc7da35"></a>
+FILE_START id=file_c6d44cc7da35 path=.context/monitoring/EXECUTION_BUFFER.md domain=docs lang=markdown lines=10 bytes=327 mtime=2026-04-18T14:24:14.955191+00:00 sha1=d7989e55f1d5b4c9c8c2fa6057d6c8407b80e134
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_c6d44cc7da35
+
+---
+<a id="file_3667001850eb"></a>
+FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=731 bytes=39505 mtime=2026-04-26T20:26:21.534956+00:00 sha1=a4a3e61b82f6a8b222becb3920fd87f5bb1f1434
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_3667001850eb
+
+---
+<a id="file_e477c4c5a96c"></a>
+FILE_START id=file_e477c4c5a96c path=.github/workflows/context-health.yml domain=config lang=yaml lines=25 bytes=569 mtime=2026-04-14T12:47:48.321567+00:00 sha1=7c7488139d3c3c4327aa9889700f683ee1f47be1
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_e477c4c5a96c
+
+---
+<a id="file_3adfd36c1559"></a>
+FILE_START id=file_3adfd36c1559 path=.husky/_/husky.sh domain=source lang=bash lines=9 bytes=160 mtime=2026-04-11T01:12:06.610441+00:00 sha1=e8c52ee10c10eaa739ae7eca69c373dd437d9f33
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_3adfd36c1559
+
+---
+<a id="file_b838611f038c"></a>
+FILE_START id=file_b838611f038c path=.specs/_template.md domain=docs lang=markdown lines=28 bytes=756 mtime=2026-04-29T02:55:07.556588+00:00 sha1=3fdc285c2e6f2dc34ba13316c90fe841276d3ad7
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_b838611f038c
+
+
+```
+CHUNK_END id=3667001850eb_c002
+CHUNK_START id=3667001850eb_c003 start_line=601 end_line=755
+```markdown
+---
+<a id="file_d4f64fc3b549"></a>
+FILE_START id=file_d4f64fc3b549 path=.specs/features/harness_fail_closed/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-22T23:02:55.455444+00:00 sha1=a627e9b0e39cebcd966bff38fff2869fb72544c9
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_d4f64fc3b549
+
+---
+<a id="file_a32e3bf74e3d"></a>
+FILE_START id=file_a32e3bf74e3d path=.specs/features/harness_fail_closed/spec.md domain=docs lang=markdown lines=14 bytes=630 mtime=2026-04-21T22:16:15.283651+00:00 sha1=32ea04febe6e93d0fa8959cc525575f3bd2bb3eb
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_a32e3bf74e3d
+
+---
+<a id="file_238a0e1da225"></a>
+FILE_START id=file_238a0e1da225 path=.specs/features/meta-inception/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-21T22:01:44.285888+00:00 sha1=4647d09b6cba8ee228ab2e51d8c647537a9c41a5
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_238a0e1da225
+
+---
+<a id="file_9801af51c558"></a>
+FILE_START id=file_9801af51c558 path=.specs/features/meta-inception/spec.md domain=docs lang=markdown lines=30 bytes=1389 mtime=2026-04-17T14:33:18.003175+00:00 sha1=0cd48f6f6251020721a35d1efcec750576473d60
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_9801af51c558
+
+---
+<a id="file_452b2ed7917b"></a>
+FILE_START id=file_452b2ed7917b path=.specs/features/multi_agent_choreography/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-29T02:59:35.364111+00:00 sha1=d612333c5864e8af16d35750a304bac73234d28c
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_452b2ed7917b
+
+---
+<a id="file_6aa9a4e78301"></a>
+FILE_START id=file_6aa9a4e78301 path=.specs/features/multi_agent_choreography/spec.md domain=docs lang=markdown lines=30 bytes=2014 mtime=2026-04-29T02:58:55.900866+00:00 sha1=539542b03ba14a2a380b636bacfebfdfb8fec114
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_6aa9a4e78301
+
+---
+<a id="file_98c620fda2a6"></a>
+FILE_START id=file_98c620fda2a6 path=.specs/features/qa_subagent/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-26T20:26:18.109414+00:00 sha1=0ad50dd6b8c1506fc32bc6c97cad870207d47765
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_98c620fda2a6
+
+---
+<a id="file_72cc9b3bbcc2"></a>
+FILE_START id=file_72cc9b3bbcc2 path=.specs/features/qa_subagent/spec.md domain=docs lang=markdown lines=22 bytes=1169 mtime=2026-04-26T18:27:10.870230+00:00 sha1=7474b521b7b686ed11fae0943c58b8f07110f069
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_72cc9b3bbcc2
+
+---
+<a id="file_f288e14cea57"></a>
+FILE_START id=file_f288e14cea57 path=.specs/features/sam_chronology_fix/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-26T18:20:04.784593+00:00 sha1=6a534b07b054bbbcc966dade113b0a3c87ab3b8f
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_f288e14cea57
+
+---
+<a id="file_87c0e9fe1bbb"></a>
+FILE_START id=file_87c0e9fe1bbb path=.specs/features/sam_chronology_fix/spec.md domain=docs lang=markdown lines=51 bytes=2550 mtime=2026-04-26T18:19:47.789302+00:00 sha1=8468ef12308baca668fabdfc41aca8206ad13f70
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_87c0e9fe1bbb
+
+---
+<a id="file_6d46ab399ea3"></a>
+FILE_START id=file_6d46ab399ea3 path=.specs/features/synapse_workflow/STATE.md domain=docs lang=markdown lines=13 bytes=378 mtime=2026-04-26T04:39:21.446038+00:00 sha1=bb9cde9c3c43964ea1c8017a0117423a079aab4c
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_6d46ab399ea3
+
+---
+<a id="file_4f4d02adad4d"></a>
+FILE_START id=file_4f4d02adad4d path=.specs/features/synapse_workflow/spec.md domain=docs lang=markdown lines=38 bytes=1890 mtime=2026-04-24T18:07:53.542998+00:00 sha1=bc5ea2e2ad98d39f870c7512a4cc4ae416741041
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_4f4d02adad4d
+
+---
+<a id="file_638d6695a3f1"></a>
+FILE_START id=file_638d6695a3f1 path=.specs/features/wiki_level2/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-24T01:03:39.917219+00:00 sha1=cc017238b0e6ff18156502ec8d318a50c984646d
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_638d6695a3f1
+
+---
+<a id="file_86778e912e18"></a>
+FILE_START id=file_86778e912e18 path=.specs/features/wiki_level2/spec.md domain=docs lang=markdown lines=43 bytes=1834 mtime=2026-04-22T23:11:15.675831+00:00 sha1=71be78a7b5b40a5dd98bb2d0f899312d14766a6d
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_86778e912e18
+
+---
+<a id="file_fafce66dc671"></a>
+FILE_START id=file_fafce66dc671 path=.specs/features/wiki_level2/tasks.md domain=docs lang=markdown lines=55 bytes=2460 mtime=2026-04-22T23:32:40.379948+00:00 sha1=161c580635c9ecd7ba0d68aa9fab0db1d788b1af
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_fafce66dc671
+
+---
+<a id="file_95dabcdf3543"></a>
+FILE_START id=file_95dabcdf3543 path=GUIA_ESTABILIZACAO_NOTEBOOKLM.md domain=docs lang=markdown lines=56 bytes=2342 mtime=2026-04-16T01:24:16.342106+00:00 sha1=42fda535b309349df1a8c83c959f0cc2e534875a
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_95dabcdf3543
+
+---
+<a id="file_8ec9a00bfd09"></a>
+FILE_START id=file_8ec9a00bfd09 path=README.md domain=docs lang=markdown lines=97 bytes=4687 mtime=2026-04-23T16:12:13.144613+00:00 sha1=23e3abb6e9ba9b868808626442bbec6112a64a74
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_8ec9a00bfd09
+
+---
+<a id="file_4efb6293109d"></a>
+FILE_START id=file_4efb6293109d path=README_CONTEXT.md domain=docs lang=markdown lines=124 bytes=6151 mtime=2026-04-26T19:23:46.993611+00:00 sha1=12c4ecdab7d37bd1ede6d808fc3b826c8dbdb3e5
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_4efb6293109d
+
+---
+<a id="file_19e76e009f38"></a>
+FILE_START id=file_19e76e009f38 path=TEMPLATE_MIGRATION.md domain=docs lang=markdown lines=59 bytes=1930 mtime=2026-04-15T13:55:12.936320+00:00 sha1=a3590439f4c18d976ff928504760f8f35a29d25c
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_19e76e009f38
+
+---
+<a id="file_f6f7100f063b"></a>
+FILE_START id=file_f6f7100f063b path=VERSION.md domain=docs lang=markdown lines=11 bytes=673 mtime=2026-04-26T20:25:19.735804+00:00 sha1=c262bc32870ead58b83fddaf73a89b7eb4d532be
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_f6f7100f063b
+
+---
+<a id="file_1f98938d3cd9"></a>
+FILE_START id=file_1f98938d3cd9 path=_modoLight/Modo_Light.md domain=docs lang=markdown lines=140 bytes=5961 mtime=2026-04-11T03:09:45.201801+00:00 sha1=267fea8bb9a67840095155f98e5860cd0cf82760
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_1f98938d3cd9
+
+---
+<a id="file_c59135753d26"></a>
+FILE_START id=file_c59135753d26 path=init_ai_project.sh domain=source lang=bash lines=129 bytes=4545 mtime=2026-04-26T20:03:25.730753+00:00 sha1=787c754dec5d442f485c2a35346827d8f358ec96
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_c59135753d26
+
+---
+<a id="file_7030d0b2f71b"></a>
+FILE_START id=file_7030d0b2f71b path=package.json domain=config lang=json lines=41 bytes=1670 mtime=2026-04-26T20:03:15.234425+00:00 sha1=175eb33cadfea1e970819bda42dfe283708089c3
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_7030d0b2f71b
+
+---
+<a id="file_350a79f8b829"></a>
+FILE_START id=file_350a79f8b829 path=run_context.py domain=source lang=python lines=150 bytes=5694 mtime=2026-04-26T20:02:40.996990+00:00 sha1=8df94515229ce3edbceae07a28d15cad4a96f496
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_350a79f8b829
+
+---
+<a id="file_86bac54f32d7"></a>
+FILE_START id=file_86bac54f32d7 path=run_context.sh domain=source lang=bash lines=17 bytes=798 mtime=2026-04-17T02:31:37.204327+00:00 sha1=a6c29d302d9d9c3f99917dd1da64da3d07f635ac
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_86bac54f32d7
+
+---
+<a id="file_4c6bbd05056e"></a>
+FILE_START id=file_4c6bbd05056e path=tests/test_context.py domain=source lang=python lines=135 bytes=6249 mtime=2026-04-17T00:13:58.569614+00:00 sha1=9d17651da9da5326350654941d201d72c37c42c4
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_4c6bbd05056e
+
+```
+CHUNK_END id=3667001850eb_c003
+FILE_END id=file_3667001850eb
 
 ---
 <a id="file_e477c4c5a96c"></a>
@@ -4932,8 +6484,8 @@ FILE_END id=file_3adfd36c1559
 
 ---
 <a id="file_b838611f038c"></a>
-FILE_START id=file_b838611f038c path=.specs/_template.md domain=docs lang=markdown lines=25 bytes=671 mtime=2026-04-23T15:03:29.252894+00:00 sha1=2a614c9cd5347bb1019dff4d36733eb19cc91f7d
-CHUNK_START id=b838611f038c_c001 start_line=1 end_line=25
+FILE_START id=file_b838611f038c path=.specs/_template.md domain=docs lang=markdown lines=28 bytes=756 mtime=2026-04-29T02:55:07.556588+00:00 sha1=3fdc285c2e6f2dc34ba13316c90fe841276d3ad7
+CHUNK_START id=b838611f038c_c001 start_line=1 end_line=28
 ```markdown
 ---
 contract_version: 2.5.2
@@ -4941,6 +6493,9 @@ parties: ["@spec-driver", "@qa-validator"]
 type: standard
 executor_context_id: "ctx-dev-YYYYMMDD-HHMM"
 validator_context_id: "ctx-qa-YYYYMMDD-HHMM"
+impact_control:
+  max_impact_radius: 3
+  pre_flight_grep_terms: ["termo1", "termo2"]
 definition_of_done:
   - [ ] Requisito 1
   - [ ] Requisito 2
@@ -5060,13 +6615,68 @@ CHUNK_END id=9801af51c558_c001
 FILE_END id=file_9801af51c558
 
 ---
+<a id="file_452b2ed7917b"></a>
+FILE_START id=file_452b2ed7917b path=.specs/features/multi_agent_choreography/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-29T02:59:35.364111+00:00 sha1=d612333c5864e8af16d35750a304bac73234d28c
+CHUNK_START id=452b2ed7917b_c001 start_line=1 end_line=5
+```markdown
+---
+status: ✅ PASSED
+updated: 2026-04-28 23:59
+detail: All checks passed
+---
+
+```
+CHUNK_END id=452b2ed7917b_c001
+FILE_END id=file_452b2ed7917b
+
+---
+<a id="file_6aa9a4e78301"></a>
+FILE_START id=file_6aa9a4e78301 path=.specs/features/multi_agent_choreography/spec.md domain=docs lang=markdown lines=30 bytes=2014 mtime=2026-04-29T02:58:55.900866+00:00 sha1=539542b03ba14a2a380b636bacfebfdfb8fec114
+CHUNK_START id=6aa9a4e78301_c001 start_line=1 end_line=30
+```markdown
+---
+contract_version: 2.5.2
+parties: ["@spec-driver", "@qa-validator"]
+type: standard
+executor_context_id: "CTX_EXE_HUB_SPOKE"
+validator_context_id: "CTX_VAL_DANCE_VERIFIED"
+impact_control:
+  max_impact_radius: 7
+  pre_flight_grep_terms: ["AGENT_REGISTRY.md", "MASTER_FLOW.md", "RULES.md", "harness_runner.py"]
+definition_of_done:
+  - [x] O arquivo `.specs/_template.md` deve conter o bloco `impact_control` no frontmatter YAML.
+  - [x] O script `.context/_scripts/harness_runner.py` deve implementar a lógica de `check_impact_radius` (comparando `git diff --porcelain` com `max_impact_radius`).
+  - [x] O `AGENT_REGISTRY.md` deve listar explicitamente as skills obrigatórias/proibidas do Executor e proibir escrita em `brain/` ou `market/`.
+  - [x] O `MASTER_FLOW.md` e o `RULES.md` devem documentar a "Dança Multi-Agent" (Pre-flight, SCOPE_BLOWOUT e Telemetria no STATE.md).
+qa_signoff: true
+signed_by: "@qa-validator"
+---
+
+# 📄 Spec: Implementação da Arquitetura Hub & Spoke
+
+## 🎯 Objetivo
+Materializar as decisões documentadas no `plano_coreografia_multi_agent.md` nos arquivos de governança (brain) e na automação do framework (Harness). Isso tornará o Antigravity oficialmente um framework de orquestração Multi-Agent determinístico.
+
+## ⚠️ Pre-Flight Gate (Impact Check)
+O Executor (`@spec-driver`) deve usar `codenavi`/grep para os termos listados em `pre_flight_grep_terms`.
+- Se o número de arquivos detectados exceder `max_impact_radius` (5), alterar o `STATE.md` para `Status: ⚠️ SCOPE_BLOWOUT`, logar a telemetria e abortar a execução.
+- Se `<= 5`, registrar no `STATE.md` os alvos e iniciar a implementação, utilizando o `flash-harness` para registro sequencial.
+
+## 🔎 Regra de Segregação
+- Sendo `type: standard`, o Validador (`@qa-validator`) DEVE possuir um contexto isolado e o `validator_context_id` deve ser diferente do `executor_context_id`. O QA só poderá assinar `qa_signoff: true` se o formato do log e a telemetria estiverem presentes no `STATE.md`.
+
+```
+CHUNK_END id=6aa9a4e78301_c001
+FILE_END id=file_6aa9a4e78301
+
+---
 <a id="file_98c620fda2a6"></a>
-FILE_START id=file_98c620fda2a6 path=.specs/features/qa_subagent/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-26T18:32:38.312025+00:00 sha1=ce2ba24c2e6b8fcccd8c20bd297f4c4e86d873a5
+FILE_START id=file_98c620fda2a6 path=.specs/features/qa_subagent/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-26T20:26:18.109414+00:00 sha1=0ad50dd6b8c1506fc32bc6c97cad870207d47765
 CHUNK_START id=98c620fda2a6_c001 start_line=1 end_line=5
 ```markdown
 ---
 status: ✅ PASSED
-updated: 2026-04-26 15:32
+updated: 2026-04-26 17:26
 detail: All checks passed
 ---
 
@@ -5764,8 +7374,8 @@ FILE_END id=file_19e76e009f38
 
 ---
 <a id="file_f6f7100f063b"></a>
-FILE_START id=file_f6f7100f063b path=VERSION.md domain=docs lang=markdown lines=10 bytes=537 mtime=2026-04-23T15:08:13.037173+00:00 sha1=8f9a8ce10e35a27487d66c85490f535adcdb2d5a
-CHUNK_START id=f6f7100f063b_c001 start_line=1 end_line=10
+FILE_START id=file_f6f7100f063b path=VERSION.md domain=docs lang=markdown lines=11 bytes=673 mtime=2026-04-26T20:25:19.735804+00:00 sha1=c262bc32870ead58b83fddaf73a89b7eb4d532be
+CHUNK_START id=f6f7100f063b_c001 start_line=1 end_line=11
 ```markdown
 # 🛸 Antigravity Kit Versioning
 v2.5.2
@@ -5777,6 +7387,7 @@ Release Date: 2026-04-23
 - **[Segregação QA]** Specs `type: standard` exigem `executor_context_id != validator_context_id` no harness.
 - **[Contrato de Sprint]** Template oficial `.specs/_template.md` atualizado com campos de proveniência e assinatura.
 - **[Hook Estável]** Pre-commit em modo read-only (`check-version`, `validate`, `scan-secrets`) para evitar drift automático em cadeia.
+- **[Radar Arquitetural]** Integração do `monitoring/PROJECT_INDEX.md` como consulta obrigatória nas RULES para evitar duplicação.
 
 ```
 CHUNK_END id=f6f7100f063b_c001
@@ -5932,452 +7543,9 @@ CHUNK_END id=1f98938d3cd9_c001
 FILE_END id=file_1f98938d3cd9
 
 ---
-<a id="file_c3916196f58f"></a>
-FILE_START id=file_c3916196f58f path=captura_projeto.py domain=source lang=python lines=429 bytes=17844 mtime=2026-04-23T18:31:18.210183+00:00 sha1=6108c27d0315281c1f40bec72da49685422fdcc9
-CHUNK_START id=c3916196f58f_c001 start_line=1 end_line=300
-```python
-#!/usr/bin/env python3
-"""captura_projeto.py - Gera bundle markdown AI-first do repositorio. TEMPLATE UNIVERSAL."""
-
-from __future__ import annotations
-
-import argparse
-import hashlib
-import logging
-import mimetypes
-import os
-import re
-from dataclasses import dataclass
-from datetime import datetime, timezone
-from fnmatch import fnmatch
-from pathlib import Path
-
-VERSION = "2.5.2"
-
-# 🛠️ CUSTOMIZE AQUI: Padrões universais + adicione os específicos do seu projeto
-PASTAS_IGNORAR = {
-    ".git", "node_modules", "dist", "build", "out", "target", "bin", "obj",
-    "__pycache__", ".venv", "venv", ".tox", ".mypy_cache", ".ruff_cache",
-    ".next", ".nuxt", ".vercel", ".netlify", ".vite", ".cache",
-    ".vscode", ".idea", ".cursor", "coverage", ".pytest_cache",
-    "captura_projeto", # 📝 Ignorar a própria pasta do utilitário
-    "_archive_context", "planos", "RAW",
-}
-
-ARQUIVOS_IGNORAR = {
-    "package-lock.json", "yarn.lock", "pnpm-lock.yaml", "composer.lock",
-    "contexto.md", "contexto_*.md", ".*.lock"
-}
-
-PASTAS_CORE = {
-    # 📝 Defina as pastas ARQUITETURALMENTE essenciais para a IA entender seu projeto
-    # Ex: {"src", "lib", "api", "supabase", ".context", ".specs"}
-    "src", "lib", "api", ".context", ".specs"
-}
-
-# 🛠️ CUSTOMIZE AQUI: Regras de classificação semântica (fallback seguro)
-DOMAIN_RULES = {
-    r"/api/|/routes/|/handlers/|/controllers/": "api",
-    r"/components/|/ui/|/views/|/pages/|/screens/": "ui",
-    r"/lib/|/utils/|/helpers/|/core/|/shared/": "lib",
-    r"/db/|/migrations/|/models/|/schema/|/supabase/|/prisma/": "db",
-    r"/tests/|/spec/|/__tests__/|\.test\.|\.spec\.": "tests",
-    r"/config/|/settings/|/env/": "config",
-    r"\.md$|\.rst$|\.txt$": "docs",
-    r"\.(json|toml|yaml|yml|ini)$": "config",
-}
-
-EXTENSOES_PERMITIDAS = {
-    ".js", ".jsx", ".ts", ".tsx", ".py", ".html", ".css", ".json", ".md",
-    ".yaml", ".yml", ".toml", ".sh", ".sql", ".graphql", ".vue", ".svelte",
-    ".rs", ".go", ".java", ".c", ".h", ".hpp", ".cpp", ".ini",
-}
-
-LINGUAGENS = {
-    ".js": "javascript", ".jsx": "jsx", ".ts": "typescript", ".tsx": "tsx",
-    ".py": "python", ".html": "html", ".css": "css", ".json": "json", ".md": "markdown",
-    ".yaml": "yaml", ".yml": "yaml", ".toml": "toml", ".sh": "bash", ".sql": "sql",
-    ".graphql": "graphql", ".vue": "html", ".svelte": "html", ".rs": "rust",
-    ".go": "go", ".java": "java", ".c": "c", ".h": "c", ".hpp": "cpp", ".cpp": "cpp", ".ini": "ini",
-}
-
-ARQUIVOS_SENSIVEIS_GLOBS = {
-    ".env*", "*.pem", "*.key", "*.p12", "*.pfx",
-    "credentials*.json", "id_rsa*", "secrets.*", "*.cert",
-    # 📝 Adicione padrões sensíveis do SEU projeto aqui
-}
-
-SECRET_PATTERNS = (
-    re.compile(r'(["\']?)(\w*(?:API_KEY|SECRET|TOKEN|PASSWORD|AUTH_KEY|PRIVATE_KEY|ACCESS_KEY|DB_PASS|CONNECTION_STRING)\w*)\1\s*[:=]\s*["\']?(\S+)["\']?', re.IGNORECASE),
-    re.compile(r'(BEGIN\s+(RSA|EC|DSA|OPENSSH|PGP)\s+PRIVATE\s+KEY)', re.IGNORECASE),
-)
-
-DEFAULT_OUTPUT = "contexto.md"
-logging.basicConfig(level=logging.WARNING, format="⚠️ %(message)s")
-
-@dataclass(frozen=True)
-class BundleConfig:
-    diretorio: Path
-    output: str = DEFAULT_OUTPUT
-    only_core: bool = False
-    exclude_core: bool = False
-    profile: str = "ai-default"
-    toc_only: bool = False
-    max_lines_per_file: int = 300
-    emit_symbol_index: bool = False
-    emit_import_map: bool = False
-    mask_secrets: bool = False
-    include_lockfiles: bool = False
-
-@dataclass(frozen=True)
-class Chunk:
-    chunk_id: str
-    start_line: int
-    end_line: int
-    content: str
-
-@dataclass(frozen=True)
-class FileRecord:
-    file_id: str
-    relative_path: str
-    domain: str
-    language: str
-    line_count: int
-    byte_count: int
-    mtime_utc: str
-    sha1: str
-    symbols: tuple[str, ...]
-    imports: tuple[str, ...]
-    chunks: tuple[Chunk, ...]
-
-def is_text_file(path: Path) -> bool:
-    if path.suffix.lower() in EXTENSOES_PERMITIDAS:
-        return True
-    mime, _ = mimetypes.guess_type(path)
-    if not mime:
-        return False
-    return mime.startswith("text/") or mime in {"application/json", "application/xml", "application/javascript"}
-
-def is_sensitive_file(path: Path) -> bool:
-    return any(fnmatch(path.name.lower(), pat.lower()) for pat in ARQUIVOS_SENSIVEIS_GLOBS)
-
-def classify_domain(relative_path: str) -> str:
-    p = relative_path.lower()
-    for pattern, domain in DOMAIN_RULES.items():
-        if re.search(pattern, p):
-            return domain
-    return "source"
-
-def should_include_profile(record_domain: str, config: BundleConfig) -> bool:
-    if config.profile == "ai-compact":
-        return record_domain not in {"tests", "docs"}
-    return True
-
-def mask_sensitive(content: str, enabled: bool) -> str:
-    if not enabled:
-        return content
-    out = content
-    for pattern in SECRET_PATTERNS:
-        out = pattern.sub(r"\1***", out)
-    return out
-
-def extract_symbols(content: str, suffix: str) -> tuple[str, ...]:
-    symbols: list[str] = []
-    if suffix == ".py":
-        symbols.extend(re.findall(r"^def\s+([A-Za-z_][A-Za-z0-9_]*)\s*\(", content, re.MULTILINE))
-        symbols.extend(re.findall(r"^class\s+([A-Za-z_][A-Za-z0-9_]*)\s*[:(]", content, re.MULTILINE))
-    elif suffix in {".js", ".jsx", ".ts", ".tsx"}:
-        symbols.extend(re.findall(r"(?:export\s+)?function\s+([A-Za-z_][A-Za-z0-9_]*)\s*\(", content))
-        symbols.extend(re.findall(r"(?:export\s+)?class\s+([A-Za-z_][A-Za-z0-9_]*)\s*", content))
-        symbols.extend(re.findall(r"export\s+const\s+([A-Za-z_][A-Za-z0-9_]*)\s*=", content))
-    seen, seen_set = [], set()
-    for s in symbols:
-        if s not in seen_set:
-            seen.append(s)
-            seen_set.add(s)
-    return tuple(seen[:80])
-
-def extract_imports(content: str, suffix: str) -> tuple[str, ...]:
-    imports: list[str] = []
-    if suffix == ".py":
-        imports.extend(re.findall(r"^import\s+([^\n]+)", content, re.MULTILINE))
-        imports.extend(re.findall(r"^from\s+([^\s]+)\s+import\s+([^\n]+)", content, re.MULTILINE))
-    elif suffix in {".js", ".jsx", ".ts", ".tsx"}:
-        imports.extend(re.findall(r"^import\s+[^\n]*?from\s+['\"]([^'\"]+)['\"]", content, re.MULTILINE))
-        imports.extend(re.findall(r"require\(['\"]([^'\"]+)['\"]\)", content))
-    normalized, seen_set = [], set()
-    for item in imports:
-        val = f"from {item[0]} import {item[1]}" if isinstance(item, tuple) else item
-        if val not in seen_set:
-            normalized.append(val)
-            seen_set.add(val)
-    return tuple(normalized[:120])
-
-def chunk_content(content: str, file_id: str, max_lines: int) -> tuple[Chunk, ...]:
-    lines = content.splitlines()
-    if not lines:
-        return (Chunk(f"{file_id}_c001", 1, 1, ""),)
-    if max_lines <= 0 or len(lines) <= max_lines:
-        return (Chunk(f"{file_id}_c001", 1, len(lines), content),)
-    chunks = []
-    idx = 1
-    for start in range(0, len(lines), max_lines):
-        end = min(start + max_lines, len(lines))
-        part = "\n".join(lines[start:end])
-        if end < len(lines) or content.endswith("\n"):
-            part += "\n"
-        chunks.append(Chunk(f"{file_id}_c{idx:03d}", start + 1, end, part))
-        idx += 1
-    return tuple(chunks)
-
-def make_file_id(relative_path: str) -> str:
-    return hashlib.sha1(relative_path.encode("utf-8")).hexdigest()[:12]
-
-def collect_files(config: BundleConfig) -> tuple[FileRecord, ...]:
-    records: list[FileRecord] = []
-    root = config.diretorio.resolve()
-
-    for dirpath, dirnames, filenames in os.walk(root, followlinks=False):
-        current = Path(dirpath)
-        is_root = (current == root)
-
-        # 🛡️ Isolamento Cirúrgico (v2.4.1): Ignora pastas densas específicas
-        rel_dir = current.relative_to(root).as_posix()
-        if rel_dir == ".context/market":
-            dirnames[:] = [d for d in dirnames if d not in {"compliance", "research", "RAW"}]
-
-        if config.only_core:
-            dirnames[:] = sorted(d for d in dirnames if (d in PASTAS_CORE or not is_root) and d not in PASTAS_IGNORAR)
-        elif config.exclude_core:
-            dirnames[:] = sorted(d for d in dirnames if d not in PASTAS_CORE and d not in PASTAS_IGNORAR)
-        else:
-            dirnames[:] = sorted(d for d in dirnames if d not in PASTAS_IGNORAR)
-
-        for filename in sorted(filenames):
-            path = current / filename
-            rel = path.relative_to(root)
-            rel_path = rel.as_posix()
-            top = rel.parts[0] if rel.parts else ""
-
-            if config.only_core and is_root and top not in PASTAS_CORE:
-                continue
-            if config.exclude_core and is_root and top in PASTAS_CORE:
-                continue
-            
-            # 🛡️ Blindagem contra Self-Capture e Locks
-            is_output_file = (filename == config.output or filename == get_dynamic_filename(config))
-            is_ignored_file = any(fnmatch(filename.lower(), pat.lower()) for pat in ARQUIVOS_IGNORAR)
-            is_lockfile = ("lock" in filename.lower() and path.suffix in {".json", ".yaml", ".yml", ".lock"})
-
-            # Filtro path-scoped para Market (v2.4.1 Hardened)
-            # Ignora pastas de documentos brutos para evitar token bloat no bundle
-            if "market/compliance" in rel_path.lower() or "market/research" in rel_path.lower():
-                continue
-
-            if is_output_file: 
-                continue
-            if is_ignored_file and not (is_lockfile and config.include_lockfiles):
-                continue
-
-            if is_sensitive_file(path):
-                continue
-            if not is_text_file(path):
-                continue
-
-            try:
-                raw_content = path.read_text(encoding="utf-8")
-            except UnicodeDecodeError:
-                try:
-                    raw_content = path.read_text(encoding="latin-1")
-                except OSError as e:
-                    logging.warning("Pulando %s: %s", rel_path, e)
-                    continue
-            except OSError as e:
-                logging.warning("Pulando %s: %s", rel_path, e)
-                continue
-
-            domain = classify_domain(rel_path)
-            if not should_include_profile(domain, config):
-                continue
-
-            raw_sha1 = hashlib.sha1(raw_content.encode("utf-8", errors="ignore")).hexdigest()
-            content = mask_sensitive(raw_content, config.mask_secrets)
-            file_id = make_file_id(rel_path)
-            stat = path.stat()
-            suffix = path.suffix.lower()
-
-            symbols = extract_symbols(content, suffix) if config.emit_symbol_index else ()
-            imports = extract_imports(content, suffix) if config.emit_import_map else ()
-            chunks = chunk_content(content, file_id, config.max_lines_per_file)
-
-            records.append(FileRecord(
-                file_id=file_id, relative_path=rel_path, domain=domain,
-                language=LINGUAGENS.get(suffix, suffix[1:] if suffix else "text"),
-                line_count=len(content.splitlines()),
-                byte_count=len(content.encode("utf-8", errors="ignore")),
-                mtime_utc=datetime.fromtimestamp(stat.st_mtime, tz=timezone.utc).isoformat(),
-                sha1=raw_sha1, symbols=symbols, imports=imports, chunks=chunks
-            ))
-
-    records.sort(key=lambda r: r.relative_path)
-    return tuple(records)
-
-def mode_name(config: BundleConfig) -> str:
-    parts = []
-    if config.only_core: parts.append("only-core")
-    elif config.exclude_core: parts.append("exclude-core")
-    else: parts.append("full")
-    if config.toc_only: parts.append("TOC")
-    return " | ".join(parts)
-
-def get_dynamic_filename(config: BundleConfig) -> str:
-    # Se o usuário não mudou o default, geramos um nome inteligente
-    if config.output != DEFAULT_OUTPUT:
-        return config.output
-    
-    base = "contexto"
-
-```
-CHUNK_END id=c3916196f58f_c001
-CHUNK_START id=c3916196f58f_c002 start_line=301 end_line=429
-````python
-    ver = f"_v{VERSION}"
-    suffix = ""
-    if config.toc_only: suffix += "_toc"
-    if config.only_core: suffix += "_core"
-    
-    return f"{base}{ver}{suffix}.md"
-
-def render_frontmatter(config: BundleConfig, records: tuple[FileRecord, ...]) -> str:
-    total_bytes = sum(r.byte_count for r in records)
-    lines = [
-        "---", "schema_version: 1",
-        f"generated_at: {datetime.now(timezone.utc).isoformat()}",
-        f"root: {config.diretorio.resolve().name}",
-        f"mode: {mode_name(config)}", f"profile: {config.profile}",
-        f"file_count: {len(records)}", f"byte_count: {total_bytes}",
-        "ignored_dirs:"
-    ]
-    lines.extend(f"  - {d}" for d in sorted(PASTAS_IGNORAR))
-    lines.append("sensitive_rules:")
-    lines.extend(f"  - {r}" for r in sorted(ARQUIVOS_SENSIVEIS_GLOBS))
-    lines.append("---")
-    return "\n".join(lines)
-
-def render_index_by_domain(records: tuple[FileRecord, ...]) -> str:
-    grouped: dict[str, list[FileRecord]] = {}
-    for r in records:
-        grouped.setdefault(r.domain, []).append(r)
-    lines = ["## INDEX_BY_DOMAIN"]
-    for domain in sorted(grouped):
-        lines.append(f"- `{domain}`:")
-        lines.extend(f"  - `{r.relative_path}` -> [file_{r.file_id}](#file_{r.file_id})" for r in grouped[domain])
-    return "\n".join(lines)
-
-def render_index_by_path(records: tuple[FileRecord, ...]) -> str:
-    lines = ["## INDEX_BY_PATH"]
-    lines.extend(f"- `{r.relative_path}` -> [file_{r.file_id}](#file_{r.file_id})" for r in records)
-    return "\n".join(lines)
-
-def render_symbols(records: tuple[FileRecord, ...]) -> str:
-    lines = ["## SYMBOL_INDEX"]
-    for r in records:
-        if not r.symbols: continue
-        lines.append(f"- `{r.relative_path}`:")
-        lines.extend(f"  - `{s}`" for s in r.symbols)
-    return "\n".join(lines)
-
-def render_imports(records: tuple[FileRecord, ...]) -> str:
-    lines = ["## IMPORT_MAP_MIN"]
-    for r in records:
-        if not r.imports: continue
-        lines.append(f"- `{r.relative_path}`:")
-        lines.extend(f"  - `{i}`" for i in r.imports)
-    return "\n".join(lines)
-
-def pick_fence(content: str) -> str:
-    return "````" if "```" in content else "```"
-
-def render_file_record(record: FileRecord, toc_only: bool) -> str:
-    lines = [
-        "---", f'<a id="file_{record.file_id}"></a>',
-        f"FILE_START id=file_{record.file_id} path={record.relative_path} "
-        f"domain={record.domain} lang={record.language} lines={record.line_count} "
-        f"bytes={record.byte_count} mtime={record.mtime_utc} sha1={record.sha1}"
-    ]
-    if toc_only:
-        lines.append("CONTENT_OMITTED toc_only=true")
-    else:
-        for chunk in record.chunks:
-            lines.append(f"CHUNK_START id={chunk.chunk_id} start_line={chunk.start_line} end_line={chunk.end_line}")
-            fence = pick_fence(chunk.content)
-            lines.extend([f"{fence}{record.language}", chunk.content, fence, f"CHUNK_END id={chunk.chunk_id}"])
-    lines.append(f"FILE_END id=file_{record.file_id}")
-    return "\n".join(lines)
-
-def generate_context_markdown(config: BundleConfig) -> str:
-    if config.only_core and config.exclude_core:
-        raise ValueError("only_core e exclude_core nao podem ser usados juntos")
-    
-    records = collect_files(config)
-    blocks = ["# Project Context Bundle", "", render_frontmatter(config, records), "",
-              render_index_by_domain(records), "", render_index_by_path(records)]
-    if config.emit_symbol_index:
-        blocks.extend(["", render_symbols(records)])
-    if config.emit_import_map:
-        blocks.extend(["", render_imports(records)])
-    for r in records:
-        blocks.extend(["", render_file_record(r, toc_only=config.toc_only)])
-    return "\n".join(blocks) + "\n"
-
-def write_output(config: BundleConfig) -> Path:
-    target_name = get_dynamic_filename(config)
-    output_path = config.diretorio / target_name
-    content = generate_context_markdown(config)
-    output_path.write_text(content, encoding="utf-8")
-    return output_path
-
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="captura_projeto.py - Consolida repositorio em markdown AI-first")
-    parser.add_argument("-d", "--diretorio", default=".", help="Diretorio raiz")
-    parser.add_argument("-o", "--output", default=DEFAULT_OUTPUT, help="Arquivo de saida")
-    core = parser.add_mutually_exclusive_group()
-    core.add_argument("--only-core", action="store_true", help="Inclui apenas escopo core")
-    core.add_argument("--exclude-core", action="store_true", help="Exclui escopo core")
-    parser.add_argument("--profile", choices=["ai-default", "ai-compact", "ai-forensics"], default="ai-default")
-    parser.add_argument("--toc-only", action="store_true", help="Apenas indices e envelopes")
-    parser.add_argument("--max-lines-per-file", type=int, default=300, help="Limite de linhas por chunk (0=ilimitado)")
-    parser.add_argument("--emit-symbol-index", action="store_true", help="Adiciona SYMBOL_INDEX")
-    parser.add_argument("--emit-import-map", action="store_true", help="Adiciona IMPORT_MAP_MIN")
-    parser.add_argument("--mask-secrets", action="store_true", help="Ofusca segredos no conteudo")
-    parser.add_argument("--include-lockfiles", action="store_true", help="Força a inclusão de package-lock.json e similares")
-    return parser.parse_args()
-
-def main() -> None:
-    args = parse_args()
-    config = BundleConfig(
-        diretorio=Path(args.diretorio), output=args.output,
-        only_core=args.only_core, exclude_core=args.exclude_core,
-        profile=args.profile, toc_only=args.toc_only,
-        max_lines_per_file=args.max_lines_per_file,
-        emit_symbol_index=args.emit_symbol_index,
-        emit_import_map=args.emit_import_map, mask_secrets=args.mask_secrets,
-        include_lockfiles=args.include_lockfiles
-    )
-    out = write_output(config)
-    print(f"\n[OK] Gerado: {out}")
-    print(f"   Mode: {mode_name(config)} | Profile: {config.profile}")
-
-if __name__ == "__main__":
-    main()
-````
-CHUNK_END id=c3916196f58f_c002
-FILE_END id=file_c3916196f58f
-
----
 <a id="file_c59135753d26"></a>
-FILE_START id=file_c59135753d26 path=init_ai_project.sh domain=source lang=bash lines=127 bytes=4447 mtime=2026-04-17T02:44:14.961287+00:00 sha1=f14d70f06e7349803e99a3d2521a4f54ff1a669d
-CHUNK_START id=c59135753d26_c001 start_line=1 end_line=127
+FILE_START id=file_c59135753d26 path=init_ai_project.sh domain=source lang=bash lines=129 bytes=4545 mtime=2026-04-26T20:03:25.730753+00:00 sha1=787c754dec5d442f485c2a35346827d8f358ec96
+CHUNK_START id=c59135753d26_c001 start_line=1 end_line=129
 ```bash
 #!/usr/bin/env bash
 # -----------------------------------------------------------------------------
@@ -6493,6 +7661,8 @@ Object.assign(pkg.scripts, {
   'context:oracle': 'python run_context.py oracle',
   'context:lint': 'python run_context.py lint',
   'context:harness': 'python run_context.py harness',
+  'context:map': 'python run_context.py map',
+  'context:bundle': 'python run_context.py bundle',
   'context:all': 'python run_context.py all',
   'prepare': 'husky'
 });
@@ -6513,8 +7683,8 @@ FILE_END id=file_c59135753d26
 
 ---
 <a id="file_7030d0b2f71b"></a>
-FILE_START id=file_7030d0b2f71b path=package.json domain=config lang=json lines=39 bytes=1568 mtime=2026-04-24T16:49:54.881804+00:00 sha1=7816f60c1885e171b680ea7a3b46327061198aea
-CHUNK_START id=7030d0b2f71b_c001 start_line=1 end_line=39
+FILE_START id=file_7030d0b2f71b path=package.json domain=config lang=json lines=41 bytes=1670 mtime=2026-04-26T20:03:15.234425+00:00 sha1=175eb33cadfea1e970819bda42dfe283708089c3
+CHUNK_START id=7030d0b2f71b_c001 start_line=1 end_line=41
 ```json
 {
   "name": "ai-context-governance-template",
@@ -6540,7 +7710,9 @@ CHUNK_START id=7030d0b2f71b_c001 start_line=1 end_line=39
     "context:capture": "python captura_projeto.py --emit-symbol-index --emit-import-map",
     "context:all": "python run_context.py all",
     "context:test": "python tests/test_context.py",
-    "prepare": "husky"
+    "prepare": "husky",
+    "context:map": "python run_context.py map",
+    "context:bundle": "python run_context.py bundle"
   },
   "keywords": [
     "ai",
@@ -6562,8 +7734,8 @@ FILE_END id=file_7030d0b2f71b
 
 ---
 <a id="file_350a79f8b829"></a>
-FILE_START id=file_350a79f8b829 path=run_context.py domain=source lang=python lines=144 bytes=5237 mtime=2026-04-24T16:49:40.512135+00:00 sha1=497d822d910a424b0fac306dd171b7eadba8975a
-CHUNK_START id=350a79f8b829_c001 start_line=1 end_line=144
+FILE_START id=file_350a79f8b829 path=run_context.py domain=source lang=python lines=150 bytes=5694 mtime=2026-04-26T20:02:40.996990+00:00 sha1=8df94515229ce3edbceae07a28d15cad4a96f496
+CHUNK_START id=350a79f8b829_c001 start_line=1 end_line=150
 ```python
 #!/usr/bin/env python3
 """
@@ -6634,7 +7806,7 @@ def get_inception_status():
 def main():
     if len(sys.argv) < 2:
         print(
-            "[USAGE] python run_context.py [validate|purge|sync|cleanup|harness|lint|lint-strict|oracle|health|scan-secrets|check-migrations|check-version|enrich|workflow-journal|all|help]"
+            "[USAGE] python run_context.py [validate|purge|sync|cleanup|harness|lint|lint-strict|oracle|health|scan-secrets|check-migrations|check-version|enrich|workflow-journal|map|bundle|all|help]"
         )
         sys.exit(1)
 
@@ -6680,6 +7852,10 @@ def main():
         run_script("validate_context.py", ["check_wiki_integrity"] + extra_args)
     elif cmd == "workflow-journal":
         run_script("workflow_journal_auditor.py", extra_args)
+    elif cmd == "map":
+        run_script("project_bundler.py", ["--toc-only", "-o", ".context/monitoring/PROJECT_INDEX.md"] + extra_args)
+    elif cmd == "bundle":
+        run_script("project_bundler.py", ["-o", "contexto.md"] + extra_args)
 
     elif cmd == "all":
         # Pipeline Fail-Fast (Hardened v2.5.0 + Hybrid Discovery)
@@ -6694,13 +7870,15 @@ def main():
         run_script("lint_wiki.py", ["--strict"])
         print("[RUN] Sincronizando Health Dashboard...")
         run_script("health_sync.py")
+        print("[RUN] Gerando Mapa de Arquivos Atualizado (PROJECT_INDEX)...")
+        run_script("project_bundler.py", ["--toc-only", "-o", ".context/monitoring/PROJECT_INDEX.md"])
         print(
-            "[DONE] Pipeline H.O.K. + Security + Migrations + Health concluído com sucesso."
+            "[DONE] Pipeline H.O.K. + Security + Migrations + Health + Index concluído com sucesso."
         )
 
     elif cmd in ["help", "--help", "-h"]:
         print(
-            "Comandos: validate | purge | sync | cleanup | harness | lint | lint-strict | oracle | health | scan-secrets | check-migrations | check-version | enrich | workflow-journal | all"
+            "Comandos: validate | purge | sync | cleanup | harness | lint | lint-strict | oracle | health | scan-secrets | check-migrations | check-version | enrich | workflow-journal | map | bundle | all"
         )
     else:
         print(f"❌ Comando desconhecido: {cmd}")

@@ -31,7 +31,7 @@ O `INCEPTION.md` (brain/) regula o que a IA pode ou não fazer.
 Antes de gerar código de produção ou realizar refatorações, o Agente **DEVE** validar se o contexto necessário está carregado:
 1. **[ ] Global Layer:** `brain/RULES.md`, `brain/MASTER_FLOW.md`, `brain/ROADMAP.md`
 2. **[ ] Strategic Layer:** `brain/INCEPTION.md` (se existir) + `market/SSOT_MAP.md`
-3. **[ ] Role Layer:** Conforme definido em `brain/AGENT_REGISTRY.md` para a Role ativa.
+3. **[ ] Role Layer:** Conforme definido em `brain/AGENT_REGISTRY.md` + prompts físicos em `.agent/subagents/`.
 4. **[ ] Ephemeral Layer:** `brain/PRD.md` ativo + `maintenance/schema.sql` + últimas 30-50 linhas do `maintenance/JOURNAL.md`
 5. **[ ] Navigation Layer:** `monitoring/PROJECT_INDEX.md` (Consultar obrigatoriamente antes de criar novos arquivos)
 

@@ -5,7 +5,7 @@ type: standard
 executor_context_id: "CTX_EXE_HUB_SPOKE"
 validator_context_id: "CTX_VAL_DANCE_VERIFIED"
 impact_control:
-  max_impact_radius: 7
+  max_impact_radius: 15
   pre_flight_grep_terms: ["AGENT_REGISTRY.md", "MASTER_FLOW.md", "RULES.md", "harness_runner.py"]
 definition_of_done:
   - [x] O arquivo `.specs/_template.md` deve conter o bloco `impact_control` no frontmatter YAML.

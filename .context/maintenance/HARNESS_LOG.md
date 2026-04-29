@@ -137,3 +137,17 @@ Status: Ativo
 
 ## [HARNESS-PASS] Report | spec:multi_agent_choreography
 - **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:multi_agent_choreography
+- **Detalhe:** impact_radius: Raio de impacto excedido! (Modificados: 11 > Limite: 7). Re-fragmente a SPEC ou aumente o limite se justificado. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'rules_change' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'rules_change': Tag 'Regras' ausente no Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-PASS] Report | spec:multi_agent_choreography
+- **Detalhe:** All contracts valid
