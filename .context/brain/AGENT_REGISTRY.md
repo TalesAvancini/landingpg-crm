@@ -36,11 +36,20 @@ Status: Ativo
 | `@devops-guardian` | CI/CD, deploy, env vars, monitoramento, segurança infra | `.github/workflows/`, `Dockerfile`, `maintenance/rebuild_guide.md`, `.env.example` | `maintenance/rebuild_guide.md`, `maintenance/TECHNICAL_REQUIREMENTS.md` (infra), `brain/ROADMAP.md` (deploys) | "deploy", "CI/CD", "docker", "variável de ambiente", "monitoramento", "rollback" |
 | `@vision-architect` | Estratégia, validação de market fit, definição de boundaries | `.context/brain/INCEPTION.md`, `.context/market/MARKET_INBOX.md` | `.context/brain/INCEPTION.md`, `.context/market/SSOT_MAP.md` | "definir boundary", "validar gap de mercado", "revisar inception" |
 | `@spec-enricher` | Tradução estratégica em PRD, tradução cognitiva VISION -> INCEPTION, validação de gaps de mercado | `.context/brain/PRD.md`, `.context/brain/INCEPTION.proposed.md`, `maintenance/JOURNAL.md` | `.context/brain/INCEPTION.md`, `.context/brain/VISION.md`, `.context/market/SSOT_MAP.md` | "enriquecer spec", "gerar PRD", "traduzir visão", "propor inception", `npm run context:enrich` |
-| `@spec-driver` | Criação de specs atômicas, geração de contrato DoD, handoff para execução | `.specs/`, `contract` (frontmatter) | `PRD.md`, `schema.sql`, `JOURNAL.md` (tail 30) | `"crie spec"`, `"gere contrato"`, "inicie specify", "modo híbrido" |
+| `@spec-driver` | Criação de specs, execução técnica atômica, geração de contrato DoD | `.specs/`, `src/`, `tests/`, `contract` (frontmatter) | `spec.md`, `schema.sql`, `STATE.md`, `JOURNAL.md` (tail 30) | `"crie spec"`, `"inicie execução"`, `"autopilot"`, "modo híbrido" |
 | `@context-keeper` | Sync, purge, validação de consistência, saúde do contexto | `.context/` (exceto `_archive/`), `maintenance/JOURNAL.md`, `brain/RULES.md` | `brain/RULES.md`, `brain/MASTER_FLOW.md`, `maintenance/JOURNAL.md`, `monitoring/CONTEXT_HEALTH.md` | "atualize contexto", "purge", "health check", "validar consistência", "sincronizar" |
 | `@fullstack-generalist` | Modo fallback para tarefas transversais ou projetos light | Leitura em todo o projeto; Escrita apenas com confirmação explícita | `brain/PRD.md`, `maintenance/schema.sql`, `maintenance/JOURNAL.md` (últimas 30 linhas) + Global | "modo light", "tarefa rápida", "projeto pequeno", "não especificado" |
 
 💡 *Insight Humano: A role `@fullstack-generalist` é sua válvula de escape para projetos simples ou tarefas rápidas. Use com moderação: ela carrega mais contexto e tem menos restrições, o que aumenta o risco de alucinação. Prefira sempre as roles especializadas.*
+
+---
+
+## 🛡️ Blindagem de Subagente (Zero-Trust Spoke)
+> **Invariante de Segurança:** Agentes em modo Executor (`@spec-driver` / `@autopilot`) operam sob restrições físicas:
+> 1. **Zero Escrita Estratégica:** Proibido alterar arquivos em `brain/` ou `market/` sem autorização explícita do Hub e `qa_signoff`.
+> 2. **Pre-flight Gate:** Obrigatório rodar `grep` de impacto antes de editar código.
+> 3. **Skills Obrigatórias:** `codenavi` (Mapeamento) e `flash-harness` (Log Sequencial).
+> 4. **Backpressure:** Acionar `SCOPE_BLOWOUT` se o impacto real > `max_impact_radius`.
 
 ---
 

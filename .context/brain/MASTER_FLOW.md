@@ -87,6 +87,19 @@ Status: [Ativo | Arquivado | Depreciado]
 
 ---
 
+---
+
+## 🔄 2.2 Coreografia Hub & Spoke (A Dança)
+Para projetos de complexidade média/alta, o Antigravity utiliza a segregação de agentes:
+
+1.  **[Planner - Hub]**: IA Principal desenha a SPEC, define `max_impact_radius` e delega.
+2.  **[Pre-flight - Executor]**: Subagente roda `grep` (Pre-flight Gate). Se impacto > Limite → `SCOPE_BLOWOUT` (Telemetria no `STATE.md`).
+3.  **[Execution - Executor]**: Subagente coda sob rigor do `flash-harness` (Log sequencial).
+4.  **[Auditoria - Validador]**: Subagente valida Semântica (Lógica) + Telemetria (Impacto resolvido).
+5.  **[Finalização - Hub]**: IA Principal retoma, valida SAM e arquiva.
+
+---
+
 ## ⚙️ 3. Regras de Manutenção & Ciclo de Vida
 
 ### 🔄 Ciclo de Vida de PRD e Schema

@@ -51,6 +51,14 @@ Antes de gerar código de produção ou realizar refatorações, o Agente **DEVE
 2. O pipeline `npm run context:all` executa `check_version_consistency.py` antes das demais validações.
 3. Drift em `package.json`, `INCEPTION.md` ou `VISION.md` bloqueia o pipeline (`Exit 1`).
 
+## 🛡️ 1.3 Pre-flight Gate & Impact Radius (Anti-SCOPE_BLOWOUT)
+1. **Mapeamento Obrigatório:** Antes de modificar interfaces, schemas ou contratos cross-layer, o Executor DEVE rodar `grep` nos termos impactados.
+2. **Circuit Breaker:** Se o impacto real (número de arquivos afetados) > `max_impact_radius` (definido na SPEC), o Executor deve:
+   - Alterar status para `⚠️ SCOPE_BLOWOUT` no `STATE.md`.
+   - Listar a telemetria (arquivos/referências) e abortar.
+3. **Feedback Loop:** O Hub (Planner) deve utilizar a telemetria do `SCOPE_BLOWOUT` para re-fragmentar a SPEC em unidades menores e atômicas.
+4. **Log Estruturado:** O resultado do Pre-flight deve ser registrado de forma parseável no `STATE.md` para auditoria do QA e do Harness.
+
 ---
 
 ## 🔢 2. Ansiedade de Contexto & Ralph Wiggum Loop

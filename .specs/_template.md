@@ -4,6 +4,9 @@ parties: ["@spec-driver", "@qa-validator"]
 type: standard
 executor_context_id: "ctx-dev-YYYYMMDD-HHMM"
 validator_context_id: "ctx-qa-YYYYMMDD-HHMM"
+impact_control:
+  max_impact_radius: 3
+  pre_flight_grep_terms: ["termo1", "termo2"]
 definition_of_done:
   - [ ] Requisito 1
   - [ ] Requisito 2

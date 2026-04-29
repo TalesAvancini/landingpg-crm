@@ -212,6 +212,50 @@ def check_sprint_contract(spec_path: Path):
     return True, "Sprint contract validado e assinado"
 
 
+def check_impact_radius(spec_path: Path):
+    """Valida se o numero de arquivos modificados excede o max_impact_radius definido na spec."""
+    if not spec_path.exists():
+        return True, "Spec ausente (skip impact check)"
+
+    text = spec_path.read_text(encoding="utf-8")
+    # Extrai bloco YAML
+    yaml_match = re.match(r"^---\n(.*?)\n---", text, re.DOTALL)
+    if not yaml_match:
+        return True, "YAML ausente para impact check (skip)"
+
+    contract = yaml_match.group(1)
+    # Procura por max_impact_radius: N
+    radius_match = re.search(r"max_impact_radius:\s*(\d+)", contract, re.I)
+    if not radius_match:
+        return True, "max_impact_radius nao definido na spec (skip)"
+
+    max_radius = int(radius_match.group(1))
+
+    # Executa git diff para ver o que mudou no working tree
+    try:
+        # Pega a lista de arquivos modificados, deletados ou novos (staging + working tree)
+        # --name-only lista os nomes, wc -l conta.
+        res = subprocess.run(
+            ["git", "diff", "--name-only", "HEAD"],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+        )
+        # Filtra linhas vazias
+        modified_files = [f for f in res.stdout.splitlines() if f.strip()]
+        count = len(modified_files)
+
+        if count > max_radius:
+            return (
+                False,
+                f"Raio de impacto excedido! (Modificados: {count} > Limite: {max_radius}). Re-fragmente a SPEC ou aumente o limite se justificado.",
+            )
+
+        return True, f"Impact radius OK ({count}/{max_radius})"
+    except Exception as e:
+        return True, f"Erro ao verificar git diff: {e} (skip)"
+
+
 def check_journal_sam():
     """Executa o Auditor Anti-Migué (SAM)."""
     script_path = Path(__file__).resolve().parent / "workflow_journal_auditor.py"
@@ -411,6 +455,7 @@ def main():
         "strategy": check_strategic_alignment(),
         "enrichment": check_enrichment_integrity(PRD),
         "sprint_contract": check_sprint_contract(spec_path),
+        "impact_radius": check_impact_radius(spec_path),
         "journal_sam": check_journal_sam(),
     }
 

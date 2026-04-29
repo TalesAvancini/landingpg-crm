@@ -8,6 +8,27 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 # JOURNAL.md (Memoria Contínua)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-04-28 23:55
+**Decisão/Bug:** 📝 Planejamento: Criação da SPEC para a Dança Multi-Agent. [Governança] [Regras]
+**Ação:**
+1. A IA atuando como Hub (Planner) criou a SPEC em `.specs/features/multi_agent_choreography/`.
+2. A SPEC implementa pela primeira vez o bloco YAML `impact_control` com `max_impact_radius: 5`.
+3. O `STATE.md` foi formatado com o schema exigido pelo MiMo (Pre-Flight, Execution Log).
+4. O Handoff oficial foi gerado para o Executor isolado.
+
+### Matriz de Propagação (Sinapse)
+- [x] `.specs/features/multi_agent_choreography/spec.md` -> [Spec atômica criada]
+- [x] `.specs/features/multi_agent_choreography/STATE.md` -> [Audit trail iniciado]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de handoff]
+
+### Contrato de Validação
+- executor_context_id: `CTX_HUB_PLANNER_0428`
+- validator_context_id: `CTX_USER_HANDOFF`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `A SPEC foi formalizada com todos os contratos determinísticos exigidos. O estágio de planejamento encerrou e o pipeline aguarda o Spoke Executor.`
+
+**Handoff:** @antigravity-agent (Hub) -> @spec-driver (Executor) | Estado: SPEC pronta | Próximo: Invocação isolada do Executor para rodar o Pre-flight Gate.
+
 ## 📅 2026-04-28 23:45
 **Decisão/Bug:** 🏛️ Arquitetura Multi-Agent: Implementação do Modelo Hub & Spoke.
 **Ação:**
