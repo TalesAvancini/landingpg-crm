@@ -1,12 +1,38 @@
 ---
 Criado em: 2026-04-10 20:50
-Ultima Atualizacao: 2026-04-26 15:22
+Ultima Atualizacao: 2026-04-28 23:00
 Status: Ativo
 Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_144021.md.
 ---
 
 # JOURNAL.md (Memoria Contínua)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-04-28 23:00
+**Decisão/Bug:** 🏗️ Hardening do Oracle Engine: Consolidação do Plano de Evolução v3.
+**Ação:**
+1. Finalizada a tríade de auditoria (Opus, Qwen, MiMo) sobre o motor de busca Oracle.
+2. Criado o `plano_consolidado_Oracle_v3.md` integrando:
+   - Fase -1 (Fundação de Testes) com separação BASELINE/TARGET.
+   - Refinamentos técnicos (Stemming seguro, Cache em disco, Escrita Atômica).
+   - Governança epistemológica integrada ao Harness (Modo Light).
+3. Atualizado o `log_planos.md` para rastreabilidade completa de 18 documentos de planejamento.
+4. Salva a auditoria cirúrgica filtrada pelo MiMo em `auditoria_Qwen_cirurgica.md`.
+5. Injetada a ideia "Impact-Aware Harness" (MiMo) no relatório de insights contextuais.
+
+### Matriz de Propagação (Sinapse)
+- [x] `planos/plano_consolidado_Oracle_v3.md` -> [Plano mestre v3 final]
+- [x] `planos/log_planos.md` -> [Linhagem cronológica atualizada]
+- [x] `planos/auditoria_MiMo_v3_final.md` -> [Aprovação formal do auditor]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de governança]
+
+### Contrato de Validação
+- executor_context_id: `CTX_ORACLE_HARDENING_0428`
+- validator_context_id: `CTX_USER_PLANNING_DONE`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Plano consolidado, auditado e pronto para execução. A estratégia de testes Baseline/Target blinda o framework contra regressões.`
+
+**Handoff:** @antigravity-agent -> Pipeline | Estado: Planejamento concluído e auditado. | Próximo: Início da Fase -1 (Código).
 
 ## 📅 2026-04-26 23:58
 **Decisão/Bug:** 📝 Planejamento: Registro de Insights para Evolução do Harness (H.O.K Forge).
