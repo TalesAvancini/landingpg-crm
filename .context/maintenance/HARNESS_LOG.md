@@ -262,3 +262,12 @@ Status: Ativo
 
 ## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
 - **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist Operacional: Arquivo 'planos/mudanca_specdriven.md' proibido nesta missão.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG06] Start_hash inválido ou não resolvível: d9225d61486791e813f019a552805ef96e1a49f5
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
