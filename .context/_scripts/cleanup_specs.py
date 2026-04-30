@@ -6,6 +6,7 @@ Aplica a regra de 48h de inatividade e limite de 3 specs ativas simultâneas.
 Arquiva specs excedentes ou obsoletas em _archive_context/specs/.
 """
 import os
+import re
 import shutil
 import time
 from pathlib import Path
@@ -57,7 +58,6 @@ def is_protected(spec_path):
     return False
 
 def cleanup():
-    import re
     specs = get_specs()
     if not specs:
         print("[OK] Nenhuma spec ativa encontrada.")
