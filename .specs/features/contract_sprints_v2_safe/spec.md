@@ -36,8 +36,8 @@ sprints:
     goal: "Impacto Incremental: Captura Automática de start_hash"
     scope_allow: [".context/_scripts/harness_runner.py", ".specs/features/contract_sprints_v2_safe/STATE.md", ".specs/features/contract_sprints_v2_safe/spec.md", ".specs/features/contract_sprints_v2_safe/tasks.md", ".context/maintenance/HARNESS_LOG.md"]
     acceptance:
-      - "- [ ] Implementar captura automática de hash no STATE.md"
-      - "- [ ] Testar diff incremental (start_hash..HEAD)"
+      - "[x] Implementar captura automática de impacto (D1)"
+      - "[x] Testar diff incremental (D2)"
     qa_signoff: true
     signed_by: "@qa-validator"
 ---

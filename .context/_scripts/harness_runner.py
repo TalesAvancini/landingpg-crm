@@ -459,9 +459,13 @@ def _update_sprint_state(state_path: Path, sprint_name: str, stats: str):
             f"  churn_removed: {dels}"
         )
         
-        # Procura o bloco da sprint e substitui o impact_snapshot
-        pattern = rf"(##\s*{sprint_name}.*?impact_snapshot:)\s*\n\s*files_changed:.*?\n\s*churn_added:.*?\n\s*churn_removed:.*?\d+"
-        new_content = re.sub(pattern, rf"## {sprint_name}\n{impact_block}", content, flags=re.DOTALL | re.I)
+        # Procura o bloco da sprint e substitui APENAS o impact_snapshot
+        # O regex busca a seção da sprint e captura o bloco impact_snapshot para substituição
+        pattern = rf"(##\s*{sprint_name}.*?)(impact_snapshot:.*?\n\s*churn_removed:\s*\d+)"
+        
+        # O grupo 1 (\1) contém o heading e campos anteriores (start_hash, etc)
+        # Substituímos o grupo 2 (impact_snapshot) pelo novo bloco
+        new_content = re.sub(pattern, rf"\1{impact_block}", content, flags=re.DOTALL | re.I)
         
         if new_content != content:
             state_path.write_text(new_content, encoding="utf-8")

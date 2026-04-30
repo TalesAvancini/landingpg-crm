@@ -1,6 +1,6 @@
 ---
 status: ✅ PASSED
-updated: 2026-04-30 18:36
+updated: 2026-04-30 18:42
 detail: All checks passed
 ---
 
@@ -9,13 +9,13 @@ detail: All checks passed
 ## 📝 Logs de Decisão & Fatos da Sessão
 - 2026-04-30 17:15: Início da Onda 01.
 - 2026-04-30 18:25: Onda 03 encerrada.
-- 2026-04-30 18:35: **Onda 04 100% Concluída**. D1 Automático ativado.
+- 2026-04-30 18:41: **Onda 04 Corrigida**. Integridade de campos restaurada.
 
 ## ✅ Progresso Técnico (Checkpoint)
 - [x] Contrato Spec (Dual Mode).
 - [x] Harness Engine (HG04/C2 Enforced).
 - [x] QA Validator (Subagente Integrado).
-- [x] Impacto Incremental (D1/D2 Automatizados).
+- [x] Impacto Incremental (D1 Cirúrgico OK).
 
 ## sprint_01
 start_hash: b8def95b92a759b5020cc69c6c2779349eab2ef1
@@ -51,9 +51,14 @@ qa_checkpoint:
   signed_at: 2026-04-30 18:25
 
 ## sprint_04
+start_hash: 3fe9cdc5fd57a80d5a23649c75de0f4a621d86e8
+captured_at: 2026-04-30 18:30
+captured_by: @spec-driver
+status: PASSED
+policy_profile: hybrid
 impact_snapshot:
   files_changed: 5
-  churn_added: 97
+  churn_added: 104
   churn_removed: 19
 impact_score: 2.5
 gates:
@@ -65,4 +70,4 @@ qa_checkpoint:
   signed: true
   signed_by: @qa-validator
   signed_at: 2026-04-30 18:35
-  evidence: ["D1 Auto-Capture Active", "Impact Metrics Validated"]
+  evidence: ["D1 Structural Fix", "MiMo Fields Restored"]
