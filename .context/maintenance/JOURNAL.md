@@ -8,6 +8,47 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 # JOURNAL.md (Memoria Contínua)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-04-30 03:40 | 🚩 WAY POINT: Plano Definitivo LEARNINGS v2.6 Consolidado e Auditado
+**Decisão/Bug:** 🚩 WAY POINT: Finalização e selagem do Plano de Memória LEARNINGS. [Governança] [H2I]
+**Ação:**
+1. Finalizado o `planos/MiMo_Learnings_Consolidado.md` como versão **FINAL/SSOT** da memória de longo prazo.
+2. Incorporadas todas as camadas de auditoria (Flash, Codex, Qwen, MiMo) e correções de resiliência.
+3. Estabelecidas proteções mecânicas: **Cap de 5 scars**, **Scoring de Relevância** e **.enriched.md** temporário para evitar context rot e poluição de git.
+4. Definido o Roadmap H2I (Harness-to-Intelligence) com o subagente `@memory-distiller` (F-LRN-005).
+
+### Matriz de Propagação (Sinapse)
+- [x] `planos/MiMo_Learnings_Consolidado.md` -> [Plano Definitivo v2.6]
+- [x] `.context/maintenance/JOURNAL.md` -> [Way Point Registrado]
+
+### Contrato de Validação
+- executor_context_id: `CTX_LEARNINGS_FINAL_0430`
+- validator_context_id: `CTX_QA_AUDIT_FINAL`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Plano definitivo auditado e aprovado. Governança de memória institucionalizada sob o framework H.O.K Forge v2.6.`
+
+**Handoff:** @flash -> @user | Estado: Planejamento encerrado. Arquitetura selada. | Próximo: Git Commit e encerramento de sessão.
+
+## 📅 2026-04-30 02:45 | 🧠 Planejamento: Memória de Longo Prazo (LEARNINGS)
+**Decisão/Bug:** Refinamento técnico do Plano LEARNINGS v2.6 (H2I) com cap de injeção e resiliência de logs. [Governança] [H2I]
+**Ação:**
+1. Criado `planos/MiMo_Learnings_Consolidado.md` (substituindo a versão preliminar).
+2. Implementado **Cap de Injeção (5 scars)** com lógica de scoring por relevância (Feature > Check > Keywords).
+3. Adicionado subagente **@memory-distiller** ao Roadmap Futuro (F-LRN-005).
+4. Especificada função `safe_parse_log` com **validação de sanidade** para evitar falhas silenciosas por drift de formato.
+5. Sincronizado `log_planos.md` com a nova linhagem consolidada.
+
+### Matriz de Propagação (Sinapse)
+- [x] `planos/MiMo_Learnings_Consolidado.md` -> [Plano Refinado]
+- [x] `planos/log_planos.md` -> [Indexado]
+
+### Contrato de Validação
+- executor_context_id: `CTX_PLAN_REFINEMENT_0430`
+- validator_context_id: `CTX_FLASH_AUDITOR`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Refinamentos técnicos aplicados conforme auditoria. Sistema de memória blindado contra context-bloat e drift de logs. Pronto para commit.`
+
+**Handoff:** @flash -> @user | Estado: Plano LEARNINGS v2.6 consolidado e auditado. | Próximo: Implementação da Fase 1.
+
 ## 📅 2026-04-30 00:15 | 🚩 WAY POINT: Oracle v3.0 Hardened & Integrated
 **Decisão/Bug:** Entrega final do motor de busca e governança epistemológica. [Oracle] [Harness] [Governança]
 **Ação:**
@@ -32,7 +73,7 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Auditoria SAM concluída. Motor Oracle v3.0 validado e integrado com sucesso. Portão de commit liberado.`
 
-**Handoff:** @flash -> @user | Estado: Sistema auditado, documentado e pronto para o commit final.
+**Handoff:** @flash -> @user | Estado: Sistema auditado e pronto para commit | Próximo: Novo ciclo de feature.
 
 ## 📅 2026-04-29 01:35 | 🚩 WAY POINT: Consciência Sistêmica Hardened
 **Decisão/Bug:** 🧠 Sincronia Total: Conclusão da Ingestão de Bundle v2.5.2. [Governança] [Regras]

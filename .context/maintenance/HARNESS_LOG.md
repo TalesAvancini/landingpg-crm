@@ -178,3 +178,29 @@ Status: Ativo
 
 ## [HARNESS-FAIL] Report | spec:oracle_v3
 - **Detalhe:** handoff: Handoffs malformados: ['Handoff incompleto: ** @flash -> @user | Estado: S'] | impact_radius: Raio de impacto excedido! (Modificados: 29 > Limite: 10). Re-fragmente a SPEC ou aumente o limite se justificado.
+
+## [HARNESS-FAIL] Report | spec:oracle_v3
+- **Detalhe:** handoff: Handoffs malformados: ['Handoff incompleto: ** @flash -> @user | Estado: S']
+
+## [HARNESS-PASS] Report | spec:oracle_v3
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:oracle_v3
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:oracle_v3
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Contrato incompleto. Detectado: executor='', validator=''.
+  - Status de validação inválido: ''. Esperado 'READY TO COMMIT'.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-PASS] Report | spec:oracle_v3
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:oracle_v3
+- **Detalhe:** All contracts valid

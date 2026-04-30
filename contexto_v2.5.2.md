@@ -2,12 +2,12 @@
 
 ---
 schema_version: 1
-generated_at: 2026-04-29T04:14:49.222918+00:00
+generated_at: 2026-04-30T01:27:50.295304+00:00
 root: template_inicío_de_projeto
 mode: full
 profile: ai-default
-file_count: 87
-byte_count: 327897
+file_count: 91
+byte_count: 358108
 ignored_dirs:
   - .cache
   - .cursor
@@ -27,6 +27,7 @@ ignored_dirs:
   - RAW
   - __pycache__
   - _archive_context
+  - _flash_report
   - bin
   - build
   - captura_projeto
@@ -103,6 +104,8 @@ sensitive_rules:
   - `.specs/features/meta-inception/spec.md` -> [file_9801af51c558](#file_9801af51c558)
   - `.specs/features/multi_agent_choreography/STATE.md` -> [file_452b2ed7917b](#file_452b2ed7917b)
   - `.specs/features/multi_agent_choreography/spec.md` -> [file_6aa9a4e78301](#file_6aa9a4e78301)
+  - `.specs/features/oracle_v3/STATE.md` -> [file_95d7e7d932e2](#file_95d7e7d932e2)
+  - `.specs/features/oracle_v3/spec.md` -> [file_98232f54149e](#file_98232f54149e)
   - `.specs/features/qa_subagent/STATE.md` -> [file_98c620fda2a6](#file_98c620fda2a6)
   - `.specs/features/qa_subagent/spec.md` -> [file_72cc9b3bbcc2](#file_72cc9b3bbcc2)
   - `.specs/features/sam_chronology_fix/STATE.md` -> [file_f288e14cea57](#file_f288e14cea57)
@@ -130,6 +133,7 @@ sensitive_rules:
   - `.context/_scripts/ingest_wiki_guard.py` -> [file_0731dcfd7873](#file_0731dcfd7873)
   - `.context/_scripts/lint_wiki.py` -> [file_ab41b07fb3fb](#file_ab41b07fb3fb)
   - `.context/_scripts/migration_registry.py` -> [file_d65b48a9d56c](#file_d65b48a9d56c)
+  - `.context/_scripts/oracle_analytics.py` -> [file_6e825c0bd6ad](#file_6e825c0bd6ad)
   - `.context/_scripts/project_bundler.py` -> [file_02d732116d93](#file_02d732116d93)
   - `.context/_scripts/purge_journal.py` -> [file_024b28a37d29](#file_024b28a37d29)
   - `.context/_scripts/secrets_scanner.py` -> [file_e98b95e5fb6d](#file_e98b95e5fb6d)
@@ -142,6 +146,7 @@ sensitive_rules:
   - `run_context.py` -> [file_350a79f8b829](#file_350a79f8b829)
   - `run_context.sh` -> [file_86bac54f32d7](#file_86bac54f32d7)
   - `tests/test_context.py` -> [file_4c6bbd05056e](#file_4c6bbd05056e)
+  - `tests/test_oracle.py` -> [file_357f74cc7014](#file_357f74cc7014)
 
 ## INDEX_BY_PATH
 - `.agent/subagents/qa-validator.md` -> [file_5a0c0f1b1bd0](#file_5a0c0f1b1bd0)
@@ -157,6 +162,7 @@ sensitive_rules:
 - `.context/_scripts/ingest_wiki_guard.py` -> [file_0731dcfd7873](#file_0731dcfd7873)
 - `.context/_scripts/lint_wiki.py` -> [file_ab41b07fb3fb](#file_ab41b07fb3fb)
 - `.context/_scripts/migration_registry.py` -> [file_d65b48a9d56c](#file_d65b48a9d56c)
+- `.context/_scripts/oracle_analytics.py` -> [file_6e825c0bd6ad](#file_6e825c0bd6ad)
 - `.context/_scripts/project_bundler.py` -> [file_02d732116d93](#file_02d732116d93)
 - `.context/_scripts/purge_journal.py` -> [file_024b28a37d29](#file_024b28a37d29)
 - `.context/_scripts/secrets_scanner.py` -> [file_e98b95e5fb6d](#file_e98b95e5fb6d)
@@ -211,6 +217,8 @@ sensitive_rules:
 - `.specs/features/meta-inception/spec.md` -> [file_9801af51c558](#file_9801af51c558)
 - `.specs/features/multi_agent_choreography/STATE.md` -> [file_452b2ed7917b](#file_452b2ed7917b)
 - `.specs/features/multi_agent_choreography/spec.md` -> [file_6aa9a4e78301](#file_6aa9a4e78301)
+- `.specs/features/oracle_v3/STATE.md` -> [file_95d7e7d932e2](#file_95d7e7d932e2)
+- `.specs/features/oracle_v3/spec.md` -> [file_98232f54149e](#file_98232f54149e)
 - `.specs/features/qa_subagent/STATE.md` -> [file_98c620fda2a6](#file_98c620fda2a6)
 - `.specs/features/qa_subagent/spec.md` -> [file_72cc9b3bbcc2](#file_72cc9b3bbcc2)
 - `.specs/features/sam_chronology_fix/STATE.md` -> [file_f288e14cea57](#file_f288e14cea57)
@@ -231,6 +239,7 @@ sensitive_rules:
 - `run_context.py` -> [file_350a79f8b829](#file_350a79f8b829)
 - `run_context.sh` -> [file_86bac54f32d7](#file_86bac54f32d7)
 - `tests/test_context.py` -> [file_4c6bbd05056e](#file_4c6bbd05056e)
+- `tests/test_oracle.py` -> [file_357f74cc7014](#file_357f74cc7014)
 
 ---
 <a id="file_5a0c0f1b1bd0"></a>
@@ -354,7 +363,7 @@ FILE_END id=file_dbef1acce0d4
 
 ---
 <a id="file_9ee5d49278ad"></a>
-FILE_START id=file_9ee5d49278ad path=.context/_scripts/_wiki_log_utils.py domain=source lang=python lines=66 bytes=2541 mtime=2026-04-22T23:47:25.409048+00:00 sha1=eb8650ba121fe8cc8aaabaca70de01214509937e
+FILE_START id=file_9ee5d49278ad path=.context/_scripts/_wiki_log_utils.py domain=source lang=python lines=66 bytes=2586 mtime=2026-04-29T23:25:43.168444+00:00 sha1=9eee06f81a5d98bdda3ce503a7ddc2b3b3d64b86
 CHUNK_START id=9ee5d49278ad_c001 start_line=1 end_line=66
 ```python
 #!/usr/bin/env python3
@@ -386,7 +395,7 @@ def append_to_wiki_log(mode, description, files, status):
     line = f"| [{timestamp}] | {mode} | {safe_desc} | {safe_files} | {status} |\n"
     
     # Sincronização Simples (Spin Lock) para evitar concorrência
-    timeout = 5 # 5 segundos de timeout
+    timeout = 0.5 # Fire-and-forget: Timeout agressivo para não bloquear o usuário
     start_time = time.time()
     
     while True:
@@ -601,17 +610,30 @@ FILE_END id=file_82cd6bde54ff
 
 ---
 <a id="file_10081abf87e1"></a>
-FILE_START id=file_10081abf87e1 path=.context/_scripts/context_oracle.py domain=source lang=python lines=133 bytes=5290 mtime=2026-04-22T23:34:52.248624+00:00 sha1=61d7e4d041f8821d2240f83a9ad8b5c26baa9cb9
-CHUNK_START id=10081abf87e1_c001 start_line=1 end_line=133
+FILE_START id=file_10081abf87e1 path=.context/_scripts/context_oracle.py domain=source lang=python lines=200 bytes=8477 mtime=2026-04-29T23:44:35.875177+00:00 sha1=be9c070b99c0a242757843d869e9ef38d1410613
+CHUNK_START id=10081abf87e1_c001 start_line=1 end_line=200
 ```python
 #!/usr/bin/env python3
 """
 🔍 context_oracle.py — Oráculo de consulta local (H.O.K v2.5 Optimized)
 Busca determinística na camada WIKI/Compliance com retorno integral de arquivos.
 """
-import re, sys, json, os
+import re, sys, json, os, unicodedata, warnings
 from pathlib import Path
 from collections import Counter
+
+# 🎯 Siglas de 2 caracteres preservadas pelo filtro léxico
+DOMAIN_ACRONYMS = {'qa', 'ci', 'pr', 'ux', 'db', 'ai', 'io', 'os'}
+
+# 🧠 Stemming estrito para termos do domínio (Evita regressões do nltk)
+STEM_WHITELIST = {
+    'testar': 'teste', 'testes': 'teste', 'testando': 'teste',
+    'arquiteturas': 'arquitetura',
+    'configurar': 'configuracao', 'configurando': 'configuracao', 'configuracoes': 'configuracao',
+    'integrar': 'integracao', 'integracoes': 'integracao',
+    'automatizar': 'automacao', 'automacoes': 'automacao',
+    'governancas': 'governanca'
+}
 
 CONTEXT_DIR = Path(__file__).resolve().parents[1]
 
@@ -622,9 +644,22 @@ try:
 except ImportError:
     def append_to_wiki_log(*args): pass
 
+def normalize_text(text):
+    """Remove acentos, markdown e normaliza para lowercase."""
+    if not text: return ""
+    # 1. Remove Markdown básico
+    text = re.sub(r'\*\*|`|#|\[\[|\]\]', '', text)
+    # 2. Normaliza Acentos (NFD extrai os acentos dos caracteres)
+    text = "".join(c for c in unicodedata.normalize('NFD', text) if unicodedata.category(c) != 'Mn')
+    return text.lower().strip()
+
+def simple_stem(word):
+    """Reduz palavras a sua raiz com base em uma whitelist rigorosa."""
+    return STEM_WHITELIST.get(word, word)
+
 def load_index_file():
     """Lê o índice mestre WIKI para roteamento determinístico."""
-    index_file = CONTEXT_DIR / "market/WIKI/_index.md"
+    index_file = CONTEXT_DIR / "market" / "WIKI" / "_index.md"
     mapping = {}
     if index_file.exists():
         content = index_file.read_text(encoding="utf-8")
@@ -632,18 +667,24 @@ def load_index_file():
         matches = re.finditer(r'- \[\[(.+?)\]\]\s*\|\s*tags:\s*(.+)', content)
         for m in matches:
             path_stub = m.group(1).strip()
-            tags = [t.strip().lower() for t in m.group(2).split(",")]
+            tags = [normalize_text(t) for t in m.group(2).split(",")]
+            # Procura o arquivo real dentro de WIKI (suporta subdiretórios como concepts/)
+            wiki_dir = CONTEXT_DIR / "market" / "WIKI"
+            found = list(wiki_dir.rglob(f"{path_stub}.md"))
+            if not found:
+                continue
+            
+            full_path = found[0].relative_to(CONTEXT_DIR).as_posix()
             for tag in tags:
-                # Peso 1.0 para tags explícitas no índice
-                mapping.setdefault(tag, []).append({"path": f"market/WIKI/{path_stub}.md", "weight": 1.0})
+                # Peso 10.0 para tags explícitas no índice
+                mapping.setdefault(tag, []).append({"path": full_path, "weight": 10.0})
     return mapping
 
 def build_index():
     index = {}
-    # 🔒 Restringe busca APENAS a WIKI e compliance (Princípio do Menor Privilégio)
     search_paths = [
-        CONTEXT_DIR / "market/WIKI",
-        CONTEXT_DIR / "market/compliance"
+        CONTEXT_DIR / "market" / "WIKI",
+        CONTEXT_DIR / "market" / "compliance"
     ]
     
     for search_dir in search_paths:
@@ -653,40 +694,54 @@ def build_index():
             try:
                 rel = p.relative_to(CONTEXT_DIR).as_posix()
                 text = p.read_text(encoding="utf-8")
+                # Normalização integral do conteúdo para indexação
+                clean_text = normalize_text(text)
                 
-                # Heurística de Matching 1: Palavras-chave no corpo
-                words = re.findall(r'\b\w{3,}\b', text.lower())
-                for w in set(words):
+                # Heurística de Matching 1: Palavras-chave no corpo (Min 3 chars OU Sigla do domínio)
+                all_words = re.findall(r'\b\w{2,}\b', clean_text)
+                words = {simple_stem(w) for w in all_words if len(w) >= 3 or w in DOMAIN_ACRONYMS}
+                for w in words:
                     index.setdefault(w, []).append({"path": rel, "weight": 0.2})
                 
                 # Heurística de Matching 2: Nome do arquivo (stem)
-                stem = p.stem.lower()
+                stem = normalize_text(p.stem)
                 index.setdefault(stem, []).append({"path": rel, "weight": 0.5})
                 
                 # Heurística de Matching 3: Título / Keywords no Título
                 title_match = re.search(r'^#\s+(.+)$', text, re.MULTILINE)
                 if title_match:
-                    title = title_match.group(1).strip().lower()
+                    title = normalize_text(title_match.group(1))
                     # Match exato do título (0.8)
                     index.setdefault(title, []).append({"path": rel, "weight": 0.8})
                     # Keywords dentro do título (0.6 por palavra do título)
-                    title_words = re.findall(r'\b\w{3,}\b', title)
-                    for tw in set(title_words):
-                        index.setdefault(tw, []).append({"path": rel, "weight": 0.6})
-            except Exception:
+                    all_title_words = re.findall(r'\b\w{2,}\b', title)
+                    title_words = {simple_stem(w) for w in all_title_words if len(w) >= 3 or w in DOMAIN_ACRONYMS}
+                    for w in title_words:
+                        index.setdefault(w, []).append({"path": rel, "weight": 0.6})
+            except Exception as e:
+                warnings.warn(f"⚠️ Falha na indexação de {p}: {e}")
+                append_to_wiki_log("ERROR", f"Falha na indexação: {rel}", str(e), "FAIL")
                 continue
+
     return index
 
-def query_oracle(question, role="unknown"):
+def query_oracle(question):
+    """
+    Busca no oráculo de forma imparcial e robusta.
+    O parâmetro 'role' foi removido para garantir que a confiança seja puramente técnica.
+    """
     idx = build_index()
     det_idx = load_index_file()
-    keywords = set(re.findall(r'\b\w{3,}\b', question.lower()))
+    
+    clean_question = normalize_text(question)
+    all_kws = re.findall(r'\b\w{2,}\b', clean_question)
+    keywords = {simple_stem(w) for w in all_kws if len(w) >= 3 or w in DOMAIN_ACRONYMS}
     hits = Counter()
     
-    # 1. Busca Determinística (Peso 1.0 - Vindo do _index.md)
+    # 1. Busca Determinística (Peso absoluto superior para garantir prioridade sobre corpo)
     for kw in keywords:
         for match in det_idx.get(kw, []):
-            hits[match["path"]] += match["weight"]
+            hits[match["path"]] += 10.0  # Peso Massivo (Garante Top 1)
             
     # 2. Busca Léxica (Pesos variados - Vindo do build_index dinâmico)
     for kw in keywords:
@@ -698,32 +753,53 @@ def query_oracle(question, role="unknown"):
         return {
             "answer": "[INFO] Termo não encontrado na WIKI de Mercado. Para lógica interna (schema, PRD), consulte o bundle do projeto.",
             "confidence": 0.0, 
-            "sources": []
+            "sources": [],
+            "warnings": []
         }
     
-    # Seleciona apenas o match mais relevante (1 arquivo atômico por vez)
-    top_file, score = hits.most_common(1)[0]
+    # Seleciona os top 3 matches
+    top_hits = hits.most_common(3)
     
-    # Retorno Integral (Anti-Bloat)
-    if score >= 0.6:
+    # Processa Rank 1 (Arquivo completo)
+    top_file, top_score = top_hits[0]
+    if top_score >= 0.6:
         content = (CONTEXT_DIR / top_file).read_text(encoding="utf-8")
+        answer = f"📄 ARQUIVO COMPLETO ({top_file}):\n\n{content}"
+        sources = [top_file]
+        warnings_list = []
+        
+        # Processa Rank 2 e 3 (Apenas Resumos)
+        for file, score in top_hits[1:]:
+            if score >= 0.6:
+                text = (CONTEXT_DIR / file).read_text(encoding="utf-8")
+                # Extrai apenas a seção ## Resumo (ignora case, pega até o próximo ## ou fim do arquivo)
+                resumo_match = re.search(r'(?i)##\s*resumo\s*\n(.*?)(?=\n##\s|$)', text, re.DOTALL)
+                if resumo_match:
+                    resumo = resumo_match.group(1).strip()
+                    answer += f"\n\n---\n📎 RESUMO SECUNDÁRIO ({file}):\n{resumo}"
+                else:
+                    warnings_list.append(f"Arquivo {file} sem seção ## Resumo.")
+                sources.append(file)
+                
         return {
-            "answer": f"📄 ARQUIVO COMPLETO ({top_file}):\n\n{content}",
-            "confidence": min(1.0, score),
-            "sources": [top_file]
+            "answer": answer.strip(),
+            "confidence": min(1.0, top_score),
+            "sources": sources,
+            "warnings": warnings_list
         }
     
     return {
         "answer": "[WARN] Referência encontrada, mas com baixa confiança. Refine a pesquisa.",
-        "confidence": score,
-        "sources": [top_file]
+        "confidence": min(1.0, top_score),
+        "sources": [top_file],
+        "warnings": ["Confiança abaixo do limiar de 0.6"]
     }
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Uso: python context_oracle.py \"sua pergunta aqui\"")
         sys.exit(1)
-    res = query_oracle(sys.argv[1], os.environ.get("AGENT_ROLE", "manual"))
+    res = query_oracle(sys.argv[1])
     
     # Log de Query (Resumido)
     q_stub = sys.argv[1][:30] + "..." if len(sys.argv[1]) > 30 else sys.argv[1]
@@ -879,7 +955,7 @@ FILE_END id=file_e94b4e40315c
 
 ---
 <a id="file_1edef35c2f56"></a>
-FILE_START id=file_1edef35c2f56 path=.context/_scripts/harness_runner.py domain=source lang=python lines=479 bytes=17284 mtime=2026-04-29T02:55:27.749753+00:00 sha1=fd8870cf8653c9876e580d9e9ddc1cfa158ac1e4
+FILE_START id=file_1edef35c2f56 path=.context/_scripts/harness_runner.py domain=source lang=python lines=489 bytes=18442 mtime=2026-04-29T23:57:24.240107+00:00 sha1=1e255917bdd15074e0d2f2a339fdb9a0e672bf65
 CHUNK_START id=1edef35c2f56_c001 start_line=1 end_line=300
 ```python
 #!/usr/bin/env python3
@@ -1185,7 +1261,7 @@ def check_journal_sam():
 
 ```
 CHUNK_END id=1edef35c2f56_c001
-CHUNK_START id=1edef35c2f56_c002 start_line=301 end_line=479
+CHUNK_START id=1edef35c2f56_c002 start_line=301 end_line=489
 ```python
         if mode == "strict":
             return False, msg
@@ -1242,6 +1318,40 @@ def get_inception_status():
         return "ERROR"
     return "UNKNOWN"
 
+def check_epistemological_gate(spec_path: Path):
+    """Fase 2.6: Gate Epistemológico (Oracle como Pré-Gate do Harness)"""
+    if not spec_path.exists():
+        return True, "Spec ausente (skip oracle check)"
+    
+    try:
+        from context_oracle import query_oracle
+    except ImportError:
+        return True, "context_oracle indisponível (skip oracle check)"
+        
+    text = spec_path.read_text(encoding="utf-8")
+    title_match = re.search(r'^#\s+(.+)$', text, re.MULTILINE)
+    query = title_match.group(1) if title_match else spec_path.parent.name
+    
+    import concurrent.futures
+    try:
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            future = executor.submit(query_oracle, query)
+            res = future.result(timeout=2.0)
+            
+        conf = res.get("confidence", 0)
+        if conf < 0.4:
+            print(f"[WARN] Gate Epistemológico: Baixa confiança ({conf:.2f}) no oráculo para o termo '{query}'. Considere refinar o conhecimento.")
+            return True, f"Gate Epistemológico avisado (conf: {conf:.2f})"
+            
+        return True, f"Gate Epistemológico OK (conf: {conf:.2f})"
+        
+    except concurrent.futures.TimeoutError:
+        print("[WARN] Gate Epistemológico: Timeout ao consultar o Oráculo (> 2s). Bypass permitido.")
+        return True, "Gate Epistemológico Timeout"
+    except Exception as e:
+        print(f"[WARN] Gate Epistemológico falhou: {e}")
+        return True, "Gate Epistemológico Erro"
+
 
 def main():
     # 0. Verificação de Estado (Hybrid Discovery)
@@ -1249,17 +1359,7 @@ def main():
     if status == "DRAFT":
         root = CONTEXT_DIR.parent
         code_exts = {
-            ".py",
-            ".js",
-            ".jsx",
-            ".ts",
-            ".tsx",
-            ".go",
-            ".rs",
-            ".java",
-            ".kt",
-            ".cs",
-            ".php",
+            ".py", ".js", ".jsx", ".ts", ".tsx", ".go", ".rs", ".java", ".kt", ".cs", ".php",
         }
         ignore_names = {".gitkeep", ".keep"}
         ignore_prefixes = ("README",)
@@ -1273,10 +1373,8 @@ def main():
                 for cur, dirs, files in os.walk(base):
                     dirs[:] = [d for d in dirs if d not in ignore_dirs]
                     for fname in files:
-                        if fname in ignore_names:
-                            continue
-                        if fname.startswith(ignore_prefixes):
-                            continue
+                        if fname in ignore_names: continue
+                        if fname.startswith(ignore_prefixes): continue
                         path = Path(cur) / fname
                         if path.suffix.lower() in code_exts and path.stat().st_size > 0:
                             return True
@@ -1287,25 +1385,16 @@ def main():
             if not specs_dir.exists() or not specs_dir.is_dir():
                 return False
             for spec in specs_dir.iterdir():
-                if not spec.is_dir() or spec.name.startswith("_"):
-                    continue
+                if not spec.is_dir() or spec.name.startswith("_"): continue
                 spec_file = spec / "spec.md"
                 state_file = spec / "STATE.md"
-                if (
-                    spec_file.exists()
-                    and state_file.exists()
-                    and spec_file.stat().st_size > 0
-                ):
+                if spec_file.exists() and state_file.exists() and spec_file.stat().st_size > 0:
                     return True
             return False
 
         if has_real_code_activity() or has_real_spec_activity():
-            print(
-                "[FATAL] Projeto possui atividade real (código/specs) mas INCEPTION.md está em DRAFT."
-            )
-            print(
-                "[DICA] Ative a governança: altere status para ACTIVE em INCEPTION.md."
-            )
+            print("[FATAL] Projeto possui atividade real (código/specs) mas INCEPTION.md está em DRAFT.")
+            print("[DICA] Ative a governança: altere status para ACTIVE em INCEPTION.md.")
             sys.exit(1)
 
         print("[INFO] Modo Onboarding (DRAFT). Bypass permitido até ativação.")
@@ -1321,11 +1410,7 @@ def main():
         # Fallback: spec modificada mais recentemente
         if features_dir.exists():
             active = sorted(
-                [
-                    d
-                    for d in features_dir.iterdir()
-                    if d.is_dir() and not d.name.startswith("_")
-                ],
+                [d for d in features_dir.iterdir() if d.is_dir() and not d.name.startswith("_")],
                 key=os.path.getmtime,
                 reverse=True,
             )
@@ -1345,6 +1430,7 @@ def main():
         "enrichment": check_enrichment_integrity(PRD),
         "sprint_contract": check_sprint_contract(spec_path),
         "impact_radius": check_impact_radius(spec_path),
+        "epistemological": check_epistemological_gate(spec_path),
         "journal_sam": check_journal_sam(),
     }
 
@@ -1494,19 +1580,19 @@ FILE_END id=file_a642d240b9ab
 
 ---
 <a id="file_0731dcfd7873"></a>
-FILE_START id=file_0731dcfd7873 path=.context/_scripts/ingest_wiki_guard.py domain=source lang=python lines=88 bytes=3112 mtime=2026-04-22T23:34:30.558813+00:00 sha1=8cf96a678ced2d689deb51608c115dcd75a632a8
-CHUNK_START id=0731dcfd7873_c001 start_line=1 end_line=88
+FILE_START id=file_0731dcfd7873 path=.context/_scripts/ingest_wiki_guard.py domain=source lang=python lines=131 bytes=4932 mtime=2026-04-29T23:05:09.652881+00:00 sha1=40b8732e20e069a48afd820b2c56a395e27a5c26
+CHUNK_START id=0731dcfd7873_c001 start_line=1 end_line=131
 ```python
 #!/usr/bin/env python3
 """
 🛡️ ingest_wiki_guard.py — Guardião de Ingestão Wiki (H.O.K v2.5)
 Valida conformidade Karpathy antes de permitir a entrada de novos artigos.
 """
-import re, sys, os
+import re, sys, os, time
 from pathlib import Path
 
 CONTEXT_DIR = Path(__file__).resolve().parents[1]
-WIKI_DIR = CONTEXT_DIR / "market/WIKI"
+WIKI_DIR = CONTEXT_DIR / "market" / "WIKI"
 
 # Import utilitário de log
 sys.path.append(str(CONTEXT_DIR / "_scripts"))
@@ -1543,6 +1629,48 @@ def validate_article(path):
 
     return errors
 
+def rebuild_index_atomic(articles):
+    """Reconstrói o _index.md de forma atômica para evitar corrupção de leitura."""
+    header = "# WIKI Index Raiz\n> Fonte: SSOT_MAP.md\n\n## Topicos\n"
+    lines = []
+    for art in articles:
+        content = art.read_text(encoding="utf-8")
+        match = re.search(r'^---\s*\n(.*?)\n---\s*\n', content, re.DOTALL)
+        tag_list = []
+        if match:
+            fields = match.group(1)
+            for line in fields.split('\n'):
+                # Captura tags: e aliases:
+                if line.strip().startswith('tags:') or line.strip().startswith('aliases:'):
+                    # Limpa o prefixo, espaços e colchetes
+                    val = re.sub(r'^(tags|aliases):\s*', '', line.strip()).strip('[]')
+                    if val:
+                        tag_list.extend([t.strip() for t in val.split(',')])
+        
+        # Consolida tudo em uma string separada por vírgula para o _index.md
+        tags_str = ", ".join(sorted(set(tag_list)))
+        lines.append(f"- [[{art.stem}]] | tags: {tags_str}\n")
+    
+    # Ordem alfabética para determinismo
+    lines.sort()
+    index_content = header + "".join(lines)
+    
+    index_path = WIKI_DIR / "_index.md"
+    tmp_path = WIKI_DIR / "_index.md.tmp"
+    
+    tmp_path.write_text(index_content, encoding="utf-8")
+    
+    # Retry Backoff para contornar travamentos de I/O no Windows (PermissionError)
+    for attempt in range(3):
+        try:
+            os.replace(tmp_path, index_path)
+            break
+        except PermissionError:
+            if attempt == 2:
+                print("⚠️ Falha ao regenerar o _index.md (Arquivo travado por outro processo).")
+                raise
+            time.sleep(0.5 * (attempt + 1))
+
 def main():
     if not WIKI_DIR.exists():
         print("[OK] Diretório WIKI não encontrado. Ignorando.")
@@ -1574,7 +1702,8 @@ def main():
         append_to_wiki_log("INGEST", "Falha de conformidade Karpathy", ", ".join(paths), "FAIL")
         sys.exit(1)
 
-    print(f"✅ Todos os {len(articles)} artigos WIKI estão em conformidade.")
+    rebuild_index_atomic(articles)
+    print(f"✅ Todos os {len(articles)} artigos WIKI estão em conformidade e o índice foi regenerado.")
     filenames = [a.name for a in articles]
     append_to_wiki_log("INGEST", f"Ingestão de {len(articles)} artigos", ", ".join(filenames), "OK")
     sys.exit(0)
@@ -1771,8 +1900,78 @@ CHUNK_END id=d65b48a9d56c_c001
 FILE_END id=file_d65b48a9d56c
 
 ---
+<a id="file_6e825c0bd6ad"></a>
+FILE_START id=file_6e825c0bd6ad path=.context/_scripts/oracle_analytics.py domain=source lang=python lines=60 bytes=2162 mtime=2026-04-29T23:37:15.393689+00:00 sha1=7d8c8c35739ed1ff63529220af41f1f2204753fa
+CHUNK_START id=6e825c0bd6ad_c001 start_line=1 end_line=60
+```python
+#!/usr/bin/env python3
+"""
+📊 oracle_analytics.py — Analisador de Telemetria do Oráculo (H.O.K v2.5.2)
+Processa o wiki_log.md para gerar insights de confiança e identificar gaps no mercado.
+"""
+import re, sys, io
+from pathlib import Path
+from collections import Counter
+
+if sys.platform == "win32":
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8")
+
+CONTEXT_DIR = Path(__file__).resolve().parents[1]
+LOG_FILE = CONTEXT_DIR / "market" / "wiki_log.md"
+
+def parse_logs():
+    if not LOG_FILE.exists():
+        print("Nenhum log encontrado em wiki_log.md")
+        return
+
+    content = LOG_FILE.read_text(encoding="utf-8")
+    lines = content.strip().split("\n")
+    
+    total_queries = 0
+    total_conf = 0.0
+    failed_queries = []
+    
+    # Exemplo: | [2026-04-29 23:29:55] | QUERY | Busca: QA (conf: 1.00) | market/WIKI/concepts/harness_behavior.md | OK |
+    pattern = r'\|\s*\[(.*?)\]\s*\|\s*QUERY\s*\|\s*Busca:\s*(.*?)\s*\(conf:\s*([0-9.]+)\)\s*\|\s*(.*?)\s*\|\s*(FAIL|OK)\s*\|'
+    
+    for line in lines:
+        match = re.search(pattern, line)
+        if match:
+            total_queries += 1
+            timestamp, query, conf_str, source, status = match.groups()
+            conf = float(conf_str)
+            total_conf += conf
+            
+            if conf < 0.6 or status == "FAIL":
+                failed_queries.append(query)
+
+    print("========================================")
+    print(" 📊 ORACLE ANALYTICS (TELEMETRIA v3)")
+    print("========================================")
+    print(f"Total de Consultas: {total_queries}")
+    if total_queries > 0:
+        print(f"Confiança Média:    {total_conf / total_queries:.2f}")
+    
+    print("\n⚠️ Gaps de Conhecimento (Confiança Baixa / Falhas):")
+    if not failed_queries:
+        print("Nenhum gap detectado! Oráculo está calibrado.")
+    else:
+        counter = Counter(failed_queries)
+        for q, count in counter.most_common(5):
+            print(f" - {q} ({count}x)")
+    print("========================================")
+
+if __name__ == "__main__":
+    parse_logs()
+
+```
+CHUNK_END id=6e825c0bd6ad_c001
+FILE_END id=file_6e825c0bd6ad
+
+---
 <a id="file_02d732116d93"></a>
-FILE_START id=file_02d732116d93 path=.context/_scripts/project_bundler.py domain=source lang=python lines=429 bytes=17844 mtime=2026-04-23T18:31:18.210183+00:00 sha1=6108c27d0315281c1f40bec72da49685422fdcc9
+FILE_START id=file_02d732116d93 path=.context/_scripts/project_bundler.py domain=source lang=python lines=429 bytes=17861 mtime=2026-04-30T01:25:29.689806+00:00 sha1=9567f0399ca22a577183619b877e92abd8c6c5df
 CHUNK_START id=02d732116d93_c001 start_line=1 end_line=300
 ```python
 #!/usr/bin/env python3
@@ -1800,7 +1999,7 @@ PASTAS_IGNORAR = {
     ".next", ".nuxt", ".vercel", ".netlify", ".vite", ".cache",
     ".vscode", ".idea", ".cursor", "coverage", ".pytest_cache",
     "captura_projeto", # 📝 Ignorar a própria pasta do utilitário
-    "_archive_context", "planos", "RAW",
+    "_archive_context", "planos", "RAW", "_flash_report",
 }
 
 ARQUIVOS_IGNORAR = {
@@ -3408,8 +3607,8 @@ FILE_END id=file_d124f6374cab
 
 ---
 <a id="file_9fe16e5591f0"></a>
-FILE_START id=file_9fe16e5591f0 path=.context/brain/PROMPT_LIBRARY.md domain=docs lang=markdown lines=217 bytes=10358 mtime=2026-04-24T17:46:37.088580+00:00 sha1=56b9f148574701998a0ee05b31d1b53899db422c
-CHUNK_START id=9fe16e5591f0_c001 start_line=1 end_line=217
+FILE_START id=file_9fe16e5591f0 path=.context/brain/PROMPT_LIBRARY.md domain=docs lang=markdown lines=237 bytes=11426 mtime=2026-04-29T23:26:19.472088+00:00 sha1=9724dced356a0ffd1d4a1cd1c471e1aa26370e1b
+CHUNK_START id=9fe16e5591f0_c001 start_line=1 end_line=237
 ````markdown
 ---
 Criado em: 2026-04-10 21:35
@@ -3628,6 +3827,26 @@ Ao gerar o PRD.md, inclua EXATAMENTE esta seção no final:
 💡 *Insight IA: Este prompt transforma intenção em plano executável. A spec é o "compilador" entre PRD e código. Mantenha-a enxuta e verificável.*
 
 💡 *Insight IA: Estes templates sao contratos de execucao. Eles reduzem ruido e transformam a IA em um engenheiro previsivel.*
+
+### 🔮 `@oracle-searcher`
+**Gatilho:** Pesquisa de domínio, busca em WIKI, validação de conceitos de mercado, busca de compliance  
+**Contexto Obrigatório:** `.context/market/WIKI/_index.md`, `.context/_scripts/context_oracle.py`
+```text
+🤖 Ativando @oracle-searcher | Tarefa: Consulta de Domínio
+🎯 Objetivo: Localizar informações precisas na base de conhecimento local.
+🚧 Protocolo Oracle v3:
+1. Executar query via `python .context/_scripts/context_oracle.py "{{termo_de_busca}}"`
+2. Analisar o campo `confidence`:
+   - Confidence >= 0.8: Aceitar como verdade absoluta (SSOT).
+   - Confidence < 0.6: Tratar como sugestão; buscar confirmação em outros documentos.
+3. Analisar `warnings`: Se houver avisos de resumos amputados, ler o arquivo original se necessário.
+📤 Saída Esperada:
+1. Resumo da informação encontrada.
+2. Lista de fontes (`sources`) utilizadas.
+3. Nota sobre a confiança da informação.
+```
+
+💡 *Insight IA: O Oráculo é a memória de longo prazo do projeto. Use-o antes de assumir qualquer verdade sobre o negócio.*
 
 ````
 CHUNK_END id=9fe16e5591f0_c001
@@ -4069,8 +4288,8 @@ FILE_END id=file_9b6470da8849
 
 ---
 <a id="file_41c3d3da4381"></a>
-FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=139 bytes=5197 mtime=2026-04-29T02:59:35.362116+00:00 sha1=00b955e92792a01442a7e6f9cfbd27f4cfbda892
-CHUNK_START id=41c3d3da4381_c001 start_line=1 end_line=139
+FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=186 bytes=7651 mtime=2026-04-30T00:49:33.332606+00:00 sha1=aee0f0274c62f872c18e787e00c42ed44f3b920c
+CHUNK_START id=41c3d3da4381_c001 start_line=1 end_line=186
 ```markdown
 ---
 Criado em: 2026-04-24 15:20
@@ -4212,13 +4431,60 @@ Status: Ativo
 ## [HARNESS-PASS] Report | spec:multi_agent_choreography
 - **Detalhe:** All contracts valid
 
+## [HARNESS-FAIL] Report | spec:multi_agent_choreography
+- **Detalhe:** impact_radius: Raio de impacto excedido! (Modificados: 11 > Limite: 7). Re-fragmente a SPEC ou aumente o limite se justificado. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'rules_change' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'rules_change': Tag 'Regras' ausente no Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-PASS] Report | spec:multi_agent_choreography
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:oracle_v3
+- **Detalhe:** sprint_contract: Contrato não assinado pelo @qa-validator (qa_signoff: false) | impact_radius: Raio de impacto excedido! (Modificados: 8 > Limite: 6). Re-fragmente a SPEC ou aumente o limite se justificado. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'new_context_path' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'new_context_path': Arquivo '.context/maintenance/rx-anatomy.md' não foi propagado (ausente no diff).
+  - Regra 'new_context_path': Checkbox [x] para '.context/maintenance/rx-anatomy.md' ausente ou desmarcado no Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:oracle_v3
+- **Detalhe:** sprint_contract: Contrato não assinado pelo @qa-validator (qa_signoff: false) | impact_radius: Raio de impacto excedido! (Modificados: 9 > Limite: 6). Re-fragmente a SPEC ou aumente o limite se justificado. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'new_context_path' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'new_context_path': Arquivo '.context/maintenance/rx-anatomy.md' não foi propagado (ausente no diff).
+  - Regra 'new_context_path': Checkbox [x] para '.context/maintenance/rx-anatomy.md' ausente ou desmarcado no Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:oracle_v3
+- **Detalhe:** handoff: Handoffs malformados: ['Handoff incompleto: ** @flash -> @user | Estado: S'] | impact_radius: Raio de impacto excedido! (Modificados: 29 > Limite: 10). Re-fragmente a SPEC ou aumente o limite se justificado.
+
+## [HARNESS-FAIL] Report | spec:oracle_v3
+- **Detalhe:** handoff: Handoffs malformados: ['Handoff incompleto: ** @flash -> @user | Estado: S']
+
+## [HARNESS-PASS] Report | spec:oracle_v3
+- **Detalhe:** All contracts valid
+
 ```
 CHUNK_END id=41c3d3da4381_c001
 FILE_END id=file_41c3d3da4381
 
 ---
 <a id="file_019509328844"></a>
-FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=363 bytes=21778 mtime=2026-04-29T02:56:34.181685+00:00 sha1=1ecfd01db9a2efac9242def067104a64f52191e6
+FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=409 bytes=24853 mtime=2026-04-30T00:49:26.254476+00:00 sha1=4971afe48ac581b579c4b9b17b298898578cd2b6
 CHUNK_START id=019509328844_c001 start_line=1 end_line=300
 ```markdown
 ---
@@ -4230,6 +4496,52 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 
 # JOURNAL.md (Memoria Contínua)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-04-30 00:15 | 🚩 WAY POINT: Oracle v3.0 Hardened & Integrated
+**Decisão/Bug:** Entrega final do motor de busca e governança epistemológica. [Oracle] [Harness] [Governança]
+**Ação:**
+1. Motor `context_oracle.py` recalibrado para **Imparcialidade Técnica** (remoção de pesos por Role).
+2. Implementado **Stemming pt-BR** com whitelist estática e suporte a siglas de domínio (Fase 1.1).
+3. Padronização de saída **JSON v3** com campo `warnings` e Top-N graduado (Fase 1.3/1.4).
+4. Infraestrutura de log **Fire-and-Forget** com timeout de 0.5s para evitar locks no Windows (Fase 2.2).
+5. Criado `oracle_analytics.py` para telemetria de confiança e detecção de gaps no mercado (Fase 2.5).
+6. Implementado **Epistemological Gate** no `harness_runner.py` via import modular direto (zero boot overhead) e timeout de 2s (Fase 2.6).
+7. Saneamento físico: Removido `.wiki_index.cache.json` para manter o `_index.md` como SSOT único (Fase 2.4).
+8. Validação final: **12/12 testes passaram** no `tests/test_oracle.py`.
+
+### Matriz de Propagação (Sinapse)
+- [x] `.context/_scripts/context_oracle.py` -> [Motor v3.0]
+- [x] `.context/_scripts/harness_runner.py` -> [Gate Epistemológico]
+- [x] `.context/brain/PROMPT_LIBRARY.md` -> [Protocolo @oracle-searcher]
+- [x] `.specs/features/oracle_v3/spec.md` -> [Signed & Closed]
+
+### Contrato de Validação
+- executor_context_id: `CTX_ORACLE_V3_DEV`
+- validator_context_id: `CTX_QA_VALIDATOR`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Auditoria SAM concluída. Motor Oracle v3.0 validado e integrado com sucesso. Portão de commit liberado.`
+
+**Handoff:** @flash -> @user | Estado: Sistema auditado e pronto para commit | Próximo: Novo ciclo de feature.
+
+## 📅 2026-04-29 01:35 | 🚩 WAY POINT: Consciência Sistêmica Hardened
+**Decisão/Bug:** 🧠 Sincronia Total: Conclusão da Ingestão de Bundle v2.5.2. [Governança] [Regras]
+**Ação:**
+1. Finalizada a leitura sequencial física de 8066 linhas do arquivo `contexto_v2.5.2.md` via Flash Harness.
+2. O Modelo Pro (Hub) agora possui consciência bit-a-bit de todos os scripts (`_scripts/`), subagentes (`.agent/`) e leis fundacionais.
+3. Validada a regra de segregação de contexto (`executor != validator`) e o mecanismo de `impact_radius` no motor do Harness.
+4. O ceticismo do usuário foi registrado como requisito de "Hardening" contínuo para evitar drift estratégico.
+
+### Matriz de Propagação (Sinapse)
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de Waypoint de Consciência]
+- [x] `.context/monitoring/CONTEXT_HEALTH.md` -> [Atualização de métricas]
+
+### Contrato de Validação
+- executor_context_id: `CTX_HARDENED_CONSCIOUSNESS_0429`
+- validator_context_id: `CTX_USER_SUNSET`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `A IA provou a leitura total do contexto. O ciclo de "Arrogância Algorítmica" foi encerrado e o sistema está em estado de governança máxima.`
+
+**Handoff:** @antigravity-agent -> @user | Estado: Sistema auditado e trancado. | Próximo: Início da execução real amanhã.
 
 ## 📅 2026-04-28 23:55
 **Decisão/Bug:** 📝 Planejamento: Criação da SPEC para a Dança Multi-Agent. [Governança] [Regras]
@@ -4475,6 +4787,11 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 **Handoff:** @antigravity-agent -> @user | Estado: Casa limpa, motor revisado e mapa traçado. | Próximo: Execução de Feature.
 
 ## 📅 2026-04-26 01:18
+
+```
+CHUNK_END id=019509328844_c001
+CHUNK_START id=019509328844_c002 start_line=301 end_line=409
+```markdown
 **Decisão/Bug:** 🗺️ Implementação do RX_REPOSITORIO (Mapa Funcional).
 **Ação:**
 1. Criado o arquivo `.context/maintenance/RX_REPOSITORIO.md` baseado no modelo de sucesso do projeto `aline-insta`.
@@ -4521,11 +4838,6 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 ## 📅 2026-04-26 00:08
 **Decisão/Bug:** 🧹 Saneamento de Contexto: Expurgo de Diretório Legado.
 **Tags:** Manutenção, Eficiência, Context-Sanitation
-
-```
-CHUNK_END id=019509328844_c001
-CHUNK_START id=019509328844_c002 start_line=301 end_line=363
-```markdown
 **Ação:** 
 1. Identificado que o diretório `.context/specs/` continha apenas planos de implementação legados da v2.4.1 (Entulho Cognitivo).
 2. O usuário confirmou a exclusão total do diretório para manter o contexto "Lean".
@@ -4738,8 +5050,8 @@ FILE_END id=file_ef714e7c8162
 
 ---
 <a id="file_d069d4f2ebef"></a>
-FILE_START id=file_d069d4f2ebef path=.context/maintenance/TECHNICAL_REQUIREMENTS.md domain=docs lang=markdown lines=147 bytes=1008 mtime=2026-04-26T20:26:17.349689+00:00 sha1=0dc2c1c3915637de740ae591fc6f3a22c1460a90
-CHUNK_START id=d069d4f2ebef_c001 start_line=1 end_line=147
+FILE_START id=file_d069d4f2ebef path=.context/maintenance/TECHNICAL_REQUIREMENTS.md domain=docs lang=markdown lines=149 bytes=1010 mtime=2026-04-29T04:34:53.625388+00:00 sha1=b094637e9fa390ab5587964baff5244f35fd89c5
+CHUNK_START id=d069d4f2ebef_c001 start_line=1 end_line=149
 ```markdown
 ---
 Criado em: 2026-04-10 20:50
@@ -4759,7 +5071,7 @@ Para execução segura dos scripts de governança (Harness e Oracle):
 - **Node.js:** `>= 18.x` (para pacotes de pre-commits automáticos)
 
 <!-- AUTO-SYNC START -->
-*🤖 Atualizado automaticamente em 2026-04-26 17:26*
+*🤖 Atualizado automaticamente em 2026-04-29 01:34*
 
 ### DevDependencies
 - `husky`: `^9.1.7`
@@ -4768,6 +5080,8 @@ Para execução segura dos scripts de governança (Harness e Oracle):
 - `orders`
 
 <!-- AUTO-SYNC END -->
+
+
 
 
 
@@ -5254,14 +5568,17 @@ FILE_END id=file_65a089176b85
 
 ---
 <a id="file_578d56cac1a4"></a>
-FILE_START id=file_578d56cac1a4 path=.context/market/WIKI/_index.md domain=docs lang=markdown lines=5 bytes=100 mtime=2026-04-22T23:08:43.528195+00:00 sha1=49feb4c64bb2f3a2838a667b4e78b5afb009b2e4
-CHUNK_START id=578d56cac1a4_c001 start_line=1 end_line=5
+FILE_START id=file_578d56cac1a4 path=.context/market/WIKI/_index.md domain=docs lang=markdown lines=8 bytes=683 mtime=2026-04-29T22:57:40.778023+00:00 sha1=88e95b638c8214ffe557e70ecbf62f5201d72323
+CHUNK_START id=578d56cac1a4_c001 start_line=1 end_line=8
 ```markdown
 # WIKI Index Raiz
 > Fonte: SSOT_MAP.md
 
 ## Topicos
-- [[conceito_teste]] | tags: ecommerce, checkout
+- [[harness_architecture]] | tags: Architecture Fitness Harness, Harness de Arquitetura, arquitetura, design-de-software, fitness-functions, governanca, harness-engineering
+- [[harness_behavior]] | tags: Behaviour Harness, Contratos de Sprint, Harness de Comportamento, governanca, harness-engineering, leniency-bias, qa, testes
+- [[harness_maintainability]] | tags: Harness de Manutenibilidade, Maintainability Harness, governanca, harness-engineering, qualidade-de-codigo
+- [[ralph_wiggum_loop]] | tags: Atomic Loop, Clean Context Execution, O Loop de Ralph, agent-execution, context-management, harness-engineering, ralph-wiggum
 
 ```
 CHUNK_END id=578d56cac1a4_c001
@@ -5530,8 +5847,8 @@ FILE_END id=file_b5d38697335e
 
 ---
 <a id="file_c255058b56fe"></a>
-FILE_START id=file_c255058b56fe path=.context/market/wiki_log.md domain=docs lang=markdown lines=48 bytes=4459 mtime=2026-04-26T20:26:19.074046+00:00 sha1=7864b00902b327247363c96a409db38e5158c990
-CHUNK_START id=c255058b56fe_c001 start_line=1 end_line=48
+FILE_START id=file_c255058b56fe path=.context/market/wiki_log.md domain=docs lang=markdown lines=53 bytes=5131 mtime=2026-04-29T23:30:56.879877+00:00 sha1=2d421e2d6672672b17f7eee82146c1504748252f
+CHUNK_START id=c255058b56fe_c001 start_line=1 end_line=53
 ```markdown
 # Wiki Log (Append-only)
 
@@ -5581,6 +5898,11 @@ CHUNK_START id=c255058b56fe_c001 start_line=1 end_line=48
 | [2026-04-26 17:06] | LINT | Integridade epistemológica validada | - | OK |
 | [2026-04-26 17:26] | INGEST | Ingestão de 4 artigos | harness_architecture.md, harness_behavior.md, harness_maintainability.md, ralph_wiggum_loop.md | OK |
 | [2026-04-26 17:26] | LINT | Integridade epistemológica validada | - | OK |
+| [2026-04-29 01:34] | INGEST | Ingestão de 4 artigos | harness_architecture.md, harness_behavior.md, harness_maintainability.md, ralph_wiggum_loop.md | OK |
+| [2026-04-29 01:34] | LINT | Integridade epistemológica validada | - | OK |
+| [2026-04-29 19:49] | INGEST | Ingestão de 4 artigos | harness_architecture.md, harness_behavior.md, harness_maintainability.md, ralph_wiggum_loop.md | OK |
+| [2026-04-29 19:57] | INGEST | Ingestão de 4 artigos | harness_architecture.md, harness_behavior.md, harness_maintainability.md, ralph_wiggum_loop.md | OK |
+| [2026-04-29 20:30] | QUERY | Busca: testar sigla QA (conf: 1.00) | market/WIKI/concepts/harness_behavior.md | OK |
 
 ```
 CHUNK_END id=c255058b56fe_c001
@@ -5588,12 +5910,12 @@ FILE_END id=file_c255058b56fe
 
 ---
 <a id="file_068a21d64bec"></a>
-FILE_START id=file_068a21d64bec path=.context/monitoring/CONTEXT_HEALTH.md domain=docs lang=markdown lines=38 bytes=1503 mtime=2026-04-26T20:26:20.058803+00:00 sha1=bb96eb87e415c899a1f56f9f1f97d4a9ab231dc3
+FILE_START id=file_068a21d64bec path=.context/monitoring/CONTEXT_HEALTH.md domain=docs lang=markdown lines=38 bytes=1503 mtime=2026-04-29T04:34:54.863691+00:00 sha1=6b946c25c3816a3d043008c21610cc1c9ff51ada
 CHUNK_START id=068a21d64bec_c001 start_line=1 end_line=38
 ```markdown
 ---
 Criado em: 2026-04-10 20:50
-Ultima Atualizacao: 2026-04-26 17:26
+Ultima Atualizacao: 2026-04-29 01:34
 Status: Ativo
 ---
 
@@ -5605,15 +5927,15 @@ Status: Ativo
 | Metrica | Valor Atual | Limite Ideal | Pilar | Status |
 | :--- | :--- | :--- | :--- | :--- |
 | **Manutencao** | | | | |
-| Linhas do Journal | 277 | 600 | Tracker | [OK] |
-| Carga do Journal | 16k chars | 50k chars | Tracker | [OK] |
+| Linhas do Journal | 383 | 600 | Tracker | [OK] |
+| Carga do Journal | 22k chars | 50k chars | Tracker | [OK] |
 | **Cognitivo** | | | | |
-| Estimativa Tokens | ~74k | 128k (Max) | Eficiencia | [OK] |
+| Estimativa Tokens | ~77k | 128k (Max) | Eficiencia | [OK] |
 | **Consistencia** | | | | |
 | Tabelas no Schema | 1 | N/A | DB-First | [OK] |
 | Migrations Pendentes | 1 file(s) | N/A | DB-First | [OK] |
 | Ultimo Harness | Role Check | Pass/Fail | Integridade | N/A |
-| Ultima Sincronia | 2026-04-26 17:26 | Real-Time | Automacao | [OK] |
+| Ultima Sincronia | 2026-04-29 01:34 | Real-Time | Automacao | [OK] |
 <!-- HEALTH_TABLE_END -->
 
 ---
@@ -5656,19 +5978,19 @@ FILE_END id=file_c6d44cc7da35
 
 ---
 <a id="file_3667001850eb"></a>
-FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=755 bytes=40976 mtime=2026-04-29T04:14:36.746312+00:00 sha1=a51cdfdb500dc7e0623491dae20aef882a09fffa
+FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=803 bytes=43746 mtime=2026-04-30T01:22:24.940825+00:00 sha1=6070d3dc0c4e7e56d32fa73a389b584dc4ffdddd
 CHUNK_START id=3667001850eb_c001 start_line=1 end_line=300
 ```markdown
 # Project Context Bundle
 
 ---
 schema_version: 1
-generated_at: 2026-04-29T04:14:36.744186+00:00
+generated_at: 2026-04-30T01:22:24.937833+00:00
 root: template_inicío_de_projeto
 mode: full | TOC
 profile: ai-default
-file_count: 87
-byte_count: 326426
+file_count: 93
+byte_count: 386034
 ignored_dirs:
   - .cache
   - .cursor
@@ -5764,6 +6086,8 @@ sensitive_rules:
   - `.specs/features/meta-inception/spec.md` -> [file_9801af51c558](#file_9801af51c558)
   - `.specs/features/multi_agent_choreography/STATE.md` -> [file_452b2ed7917b](#file_452b2ed7917b)
   - `.specs/features/multi_agent_choreography/spec.md` -> [file_6aa9a4e78301](#file_6aa9a4e78301)
+  - `.specs/features/oracle_v3/STATE.md` -> [file_95d7e7d932e2](#file_95d7e7d932e2)
+  - `.specs/features/oracle_v3/spec.md` -> [file_98232f54149e](#file_98232f54149e)
   - `.specs/features/qa_subagent/STATE.md` -> [file_98c620fda2a6](#file_98c620fda2a6)
   - `.specs/features/qa_subagent/spec.md` -> [file_72cc9b3bbcc2](#file_72cc9b3bbcc2)
   - `.specs/features/sam_chronology_fix/STATE.md` -> [file_f288e14cea57](#file_f288e14cea57)
@@ -5778,6 +6102,8 @@ sensitive_rules:
   - `README_CONTEXT.md` -> [file_4efb6293109d](#file_4efb6293109d)
   - `TEMPLATE_MIGRATION.md` -> [file_19e76e009f38](#file_19e76e009f38)
   - `VERSION.md` -> [file_f6f7100f063b](#file_f6f7100f063b)
+  - `_flash_report/audit_v2.5.2_summary.md` -> [file_9c875f865e3c](#file_9c875f865e3c)
+  - `_flash_report/log_extracao_v2.5.2.md` -> [file_87da85453659](#file_87da85453659)
   - `_modoLight/Modo_Light.md` -> [file_1f98938d3cd9](#file_1f98938d3cd9)
 - `source`:
   - `.context/_scripts/_tz_utils.py` -> [file_dbef1acce0d4](#file_dbef1acce0d4)
@@ -5791,6 +6117,7 @@ sensitive_rules:
   - `.context/_scripts/ingest_wiki_guard.py` -> [file_0731dcfd7873](#file_0731dcfd7873)
   - `.context/_scripts/lint_wiki.py` -> [file_ab41b07fb3fb](#file_ab41b07fb3fb)
   - `.context/_scripts/migration_registry.py` -> [file_d65b48a9d56c](#file_d65b48a9d56c)
+  - `.context/_scripts/oracle_analytics.py` -> [file_6e825c0bd6ad](#file_6e825c0bd6ad)
   - `.context/_scripts/project_bundler.py` -> [file_02d732116d93](#file_02d732116d93)
   - `.context/_scripts/purge_journal.py` -> [file_024b28a37d29](#file_024b28a37d29)
   - `.context/_scripts/secrets_scanner.py` -> [file_e98b95e5fb6d](#file_e98b95e5fb6d)
@@ -5803,6 +6130,7 @@ sensitive_rules:
   - `run_context.py` -> [file_350a79f8b829](#file_350a79f8b829)
   - `run_context.sh` -> [file_86bac54f32d7](#file_86bac54f32d7)
   - `tests/test_context.py` -> [file_4c6bbd05056e](#file_4c6bbd05056e)
+  - `tests/test_oracle.py` -> [file_357f74cc7014](#file_357f74cc7014)
 
 ## INDEX_BY_PATH
 - `.agent/subagents/qa-validator.md` -> [file_5a0c0f1b1bd0](#file_5a0c0f1b1bd0)
@@ -5818,6 +6146,7 @@ sensitive_rules:
 - `.context/_scripts/ingest_wiki_guard.py` -> [file_0731dcfd7873](#file_0731dcfd7873)
 - `.context/_scripts/lint_wiki.py` -> [file_ab41b07fb3fb](#file_ab41b07fb3fb)
 - `.context/_scripts/migration_registry.py` -> [file_d65b48a9d56c](#file_d65b48a9d56c)
+- `.context/_scripts/oracle_analytics.py` -> [file_6e825c0bd6ad](#file_6e825c0bd6ad)
 - `.context/_scripts/project_bundler.py` -> [file_02d732116d93](#file_02d732116d93)
 - `.context/_scripts/purge_journal.py` -> [file_024b28a37d29](#file_024b28a37d29)
 - `.context/_scripts/secrets_scanner.py` -> [file_e98b95e5fb6d](#file_e98b95e5fb6d)
@@ -5872,6 +6201,8 @@ sensitive_rules:
 - `.specs/features/meta-inception/spec.md` -> [file_9801af51c558](#file_9801af51c558)
 - `.specs/features/multi_agent_choreography/STATE.md` -> [file_452b2ed7917b](#file_452b2ed7917b)
 - `.specs/features/multi_agent_choreography/spec.md` -> [file_6aa9a4e78301](#file_6aa9a4e78301)
+- `.specs/features/oracle_v3/STATE.md` -> [file_95d7e7d932e2](#file_95d7e7d932e2)
+- `.specs/features/oracle_v3/spec.md` -> [file_98232f54149e](#file_98232f54149e)
 - `.specs/features/qa_subagent/STATE.md` -> [file_98c620fda2a6](#file_98c620fda2a6)
 - `.specs/features/qa_subagent/spec.md` -> [file_72cc9b3bbcc2](#file_72cc9b3bbcc2)
 - `.specs/features/sam_chronology_fix/STATE.md` -> [file_f288e14cea57](#file_f288e14cea57)
@@ -5886,12 +6217,15 @@ sensitive_rules:
 - `README_CONTEXT.md` -> [file_4efb6293109d](#file_4efb6293109d)
 - `TEMPLATE_MIGRATION.md` -> [file_19e76e009f38](#file_19e76e009f38)
 - `VERSION.md` -> [file_f6f7100f063b](#file_f6f7100f063b)
+- `_flash_report/audit_v2.5.2_summary.md` -> [file_9c875f865e3c](#file_9c875f865e3c)
+- `_flash_report/log_extracao_v2.5.2.md` -> [file_87da85453659](#file_87da85453659)
 - `_modoLight/Modo_Light.md` -> [file_1f98938d3cd9](#file_1f98938d3cd9)
 - `init_ai_project.sh` -> [file_c59135753d26](#file_c59135753d26)
 - `package.json` -> [file_7030d0b2f71b](#file_7030d0b2f71b)
 - `run_context.py` -> [file_350a79f8b829](#file_350a79f8b829)
 - `run_context.sh` -> [file_86bac54f32d7](#file_86bac54f32d7)
 - `tests/test_context.py` -> [file_4c6bbd05056e](#file_4c6bbd05056e)
+- `tests/test_oracle.py` -> [file_357f74cc7014](#file_357f74cc7014)
 
 ---
 <a id="file_5a0c0f1b1bd0"></a>
@@ -5913,7 +6247,7 @@ FILE_END id=file_dbef1acce0d4
 
 ---
 <a id="file_9ee5d49278ad"></a>
-FILE_START id=file_9ee5d49278ad path=.context/_scripts/_wiki_log_utils.py domain=source lang=python lines=66 bytes=2541 mtime=2026-04-22T23:47:25.409048+00:00 sha1=eb8650ba121fe8cc8aaabaca70de01214509937e
+FILE_START id=file_9ee5d49278ad path=.context/_scripts/_wiki_log_utils.py domain=source lang=python lines=66 bytes=2586 mtime=2026-04-29T23:25:43.168444+00:00 sha1=9eee06f81a5d98bdda3ce503a7ddc2b3b3d64b86
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_9ee5d49278ad
 
@@ -5931,7 +6265,7 @@ FILE_END id=file_82cd6bde54ff
 
 ---
 <a id="file_10081abf87e1"></a>
-FILE_START id=file_10081abf87e1 path=.context/_scripts/context_oracle.py domain=source lang=python lines=133 bytes=5290 mtime=2026-04-22T23:34:52.248624+00:00 sha1=61d7e4d041f8821d2240f83a9ad8b5c26baa9cb9
+FILE_START id=file_10081abf87e1 path=.context/_scripts/context_oracle.py domain=source lang=python lines=200 bytes=8477 mtime=2026-04-29T23:44:35.875177+00:00 sha1=be9c070b99c0a242757843d869e9ef38d1410613
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_10081abf87e1
 
@@ -5943,10 +6277,15 @@ FILE_END id=file_e94b4e40315c
 
 ---
 <a id="file_1edef35c2f56"></a>
-FILE_START id=file_1edef35c2f56 path=.context/_scripts/harness_runner.py domain=source lang=python lines=479 bytes=17284 mtime=2026-04-29T02:55:27.749753+00:00 sha1=fd8870cf8653c9876e580d9e9ddc1cfa158ac1e4
+FILE_START id=file_1edef35c2f56 path=.context/_scripts/harness_runner.py domain=source lang=python lines=489 bytes=18442 mtime=2026-04-29T23:57:24.240107+00:00 sha1=1e255917bdd15074e0d2f2a339fdb9a0e672bf65
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_1edef35c2f56
 
+
+```
+CHUNK_END id=3667001850eb_c001
+CHUNK_START id=3667001850eb_c002 start_line=301 end_line=600
+```markdown
 ---
 <a id="file_a642d240b9ab"></a>
 FILE_START id=file_a642d240b9ab path=.context/_scripts/health_sync.py domain=source lang=python lines=111 bytes=4132 mtime=2026-04-12T03:40:11.302253+00:00 sha1=1f23d31d0c88fe19ee916b4d6dd9676fb2f0018b
@@ -5955,15 +6294,10 @@ FILE_END id=file_a642d240b9ab
 
 ---
 <a id="file_0731dcfd7873"></a>
-FILE_START id=file_0731dcfd7873 path=.context/_scripts/ingest_wiki_guard.py domain=source lang=python lines=88 bytes=3112 mtime=2026-04-22T23:34:30.558813+00:00 sha1=8cf96a678ced2d689deb51608c115dcd75a632a8
+FILE_START id=file_0731dcfd7873 path=.context/_scripts/ingest_wiki_guard.py domain=source lang=python lines=131 bytes=4932 mtime=2026-04-29T23:05:09.652881+00:00 sha1=40b8732e20e069a48afd820b2c56a395e27a5c26
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_0731dcfd7873
 
-
-```
-CHUNK_END id=3667001850eb_c001
-CHUNK_START id=3667001850eb_c002 start_line=301 end_line=600
-```markdown
 ---
 <a id="file_ab41b07fb3fb"></a>
 FILE_START id=file_ab41b07fb3fb path=.context/_scripts/lint_wiki.py domain=source lang=python lines=116 bytes=4999 mtime=2026-04-22T23:34:42.090035+00:00 sha1=844cbc05474f73fa7addd3038fbbc60b86ab460a
@@ -5975,6 +6309,12 @@ FILE_END id=file_ab41b07fb3fb
 FILE_START id=file_d65b48a9d56c path=.context/_scripts/migration_registry.py domain=source lang=python lines=44 bytes=1700 mtime=2026-04-12T02:18:47.875961+00:00 sha1=a1e9beb894aba2b44931e9c41522a020b7359ebf
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_d65b48a9d56c
+
+---
+<a id="file_6e825c0bd6ad"></a>
+FILE_START id=file_6e825c0bd6ad path=.context/_scripts/oracle_analytics.py domain=source lang=python lines=60 bytes=2162 mtime=2026-04-29T23:37:15.393689+00:00 sha1=7d8c8c35739ed1ff63529220af41f1f2204753fa
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_6e825c0bd6ad
 
 ---
 <a id="file_02d732116d93"></a>
@@ -6050,7 +6390,7 @@ FILE_END id=file_d124f6374cab
 
 ---
 <a id="file_9fe16e5591f0"></a>
-FILE_START id=file_9fe16e5591f0 path=.context/brain/PROMPT_LIBRARY.md domain=docs lang=markdown lines=217 bytes=10358 mtime=2026-04-24T17:46:37.088580+00:00 sha1=56b9f148574701998a0ee05b31d1b53899db422c
+FILE_START id=file_9fe16e5591f0 path=.context/brain/PROMPT_LIBRARY.md domain=docs lang=markdown lines=237 bytes=11426 mtime=2026-04-29T23:26:19.472088+00:00 sha1=9724dced356a0ffd1d4a1cd1c471e1aa26370e1b
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_9fe16e5591f0
 
@@ -6098,13 +6438,13 @@ FILE_END id=file_9b6470da8849
 
 ---
 <a id="file_41c3d3da4381"></a>
-FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=139 bytes=5197 mtime=2026-04-29T02:59:35.362116+00:00 sha1=00b955e92792a01442a7e6f9cfbd27f4cfbda892
+FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=186 bytes=7651 mtime=2026-04-30T00:49:33.332606+00:00 sha1=aee0f0274c62f872c18e787e00c42ed44f3b920c
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_41c3d3da4381
 
 ---
 <a id="file_019509328844"></a>
-FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=363 bytes=21778 mtime=2026-04-29T02:56:34.181685+00:00 sha1=1ecfd01db9a2efac9242def067104a64f52191e6
+FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=409 bytes=24853 mtime=2026-04-30T00:49:26.254476+00:00 sha1=4971afe48ac581b579c4b9b17b298898578cd2b6
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_019509328844
 
@@ -6122,7 +6462,7 @@ FILE_END id=file_ef714e7c8162
 
 ---
 <a id="file_d069d4f2ebef"></a>
-FILE_START id=file_d069d4f2ebef path=.context/maintenance/TECHNICAL_REQUIREMENTS.md domain=docs lang=markdown lines=147 bytes=1008 mtime=2026-04-26T20:26:17.349689+00:00 sha1=0dc2c1c3915637de740ae591fc6f3a22c1460a90
+FILE_START id=file_d069d4f2ebef path=.context/maintenance/TECHNICAL_REQUIREMENTS.md domain=docs lang=markdown lines=149 bytes=1010 mtime=2026-04-29T04:34:53.625388+00:00 sha1=b094637e9fa390ab5587964baff5244f35fd89c5
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_d069d4f2ebef
 
@@ -6182,7 +6522,7 @@ FILE_END id=file_65a089176b85
 
 ---
 <a id="file_578d56cac1a4"></a>
-FILE_START id=file_578d56cac1a4 path=.context/market/WIKI/_index.md domain=docs lang=markdown lines=5 bytes=100 mtime=2026-04-22T23:08:43.528195+00:00 sha1=49feb4c64bb2f3a2838a667b4e78b5afb009b2e4
+FILE_START id=file_578d56cac1a4 path=.context/market/WIKI/_index.md domain=docs lang=markdown lines=8 bytes=683 mtime=2026-04-29T22:57:40.778023+00:00 sha1=88e95b638c8214ffe557e70ecbf62f5201d72323
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_578d56cac1a4
 
@@ -6224,13 +6564,13 @@ FILE_END id=file_b5d38697335e
 
 ---
 <a id="file_c255058b56fe"></a>
-FILE_START id=file_c255058b56fe path=.context/market/wiki_log.md domain=docs lang=markdown lines=48 bytes=4459 mtime=2026-04-26T20:26:19.074046+00:00 sha1=7864b00902b327247363c96a409db38e5158c990
+FILE_START id=file_c255058b56fe path=.context/market/wiki_log.md domain=docs lang=markdown lines=53 bytes=5131 mtime=2026-04-29T23:30:56.879877+00:00 sha1=2d421e2d6672672b17f7eee82146c1504748252f
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_c255058b56fe
 
 ---
 <a id="file_068a21d64bec"></a>
-FILE_START id=file_068a21d64bec path=.context/monitoring/CONTEXT_HEALTH.md domain=docs lang=markdown lines=38 bytes=1503 mtime=2026-04-26T20:26:20.058803+00:00 sha1=bb96eb87e415c899a1f56f9f1f97d4a9ab231dc3
+FILE_START id=file_068a21d64bec path=.context/monitoring/CONTEXT_HEALTH.md domain=docs lang=markdown lines=38 bytes=1503 mtime=2026-04-29T04:34:54.863691+00:00 sha1=6b946c25c3816a3d043008c21610cc1c9ff51ada
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_068a21d64bec
 
@@ -6242,10 +6582,15 @@ FILE_END id=file_c6d44cc7da35
 
 ---
 <a id="file_3667001850eb"></a>
-FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=731 bytes=39505 mtime=2026-04-26T20:26:21.534956+00:00 sha1=a4a3e61b82f6a8b222becb3920fd87f5bb1f1434
+FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=755 bytes=40976 mtime=2026-04-29T04:34:55.788055+00:00 sha1=03af55384bcfd3630a54d8010e88d79a67df15f2
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_3667001850eb
 
+
+```
+CHUNK_END id=3667001850eb_c002
+CHUNK_START id=3667001850eb_c003 start_line=601 end_line=803
+```markdown
 ---
 <a id="file_e477c4c5a96c"></a>
 FILE_START id=file_e477c4c5a96c path=.github/workflows/context-health.yml domain=config lang=yaml lines=25 bytes=569 mtime=2026-04-14T12:47:48.321567+00:00 sha1=7c7488139d3c3c4327aa9889700f683ee1f47be1
@@ -6264,11 +6609,6 @@ FILE_START id=file_b838611f038c path=.specs/_template.md domain=docs lang=markdo
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_b838611f038c
 
-
-```
-CHUNK_END id=3667001850eb_c002
-CHUNK_START id=3667001850eb_c003 start_line=601 end_line=755
-```markdown
 ---
 <a id="file_d4f64fc3b549"></a>
 FILE_START id=file_d4f64fc3b549 path=.specs/features/harness_fail_closed/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-22T23:02:55.455444+00:00 sha1=a627e9b0e39cebcd966bff38fff2869fb72544c9
@@ -6295,15 +6635,27 @@ FILE_END id=file_9801af51c558
 
 ---
 <a id="file_452b2ed7917b"></a>
-FILE_START id=file_452b2ed7917b path=.specs/features/multi_agent_choreography/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-29T02:59:35.364111+00:00 sha1=d612333c5864e8af16d35750a304bac73234d28c
+FILE_START id=file_452b2ed7917b path=.specs/features/multi_agent_choreography/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-29T04:34:54.226138+00:00 sha1=71453a8519bf6455452aa7e57c7f54e04369c8b6
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_452b2ed7917b
 
 ---
 <a id="file_6aa9a4e78301"></a>
-FILE_START id=file_6aa9a4e78301 path=.specs/features/multi_agent_choreography/spec.md domain=docs lang=markdown lines=30 bytes=2014 mtime=2026-04-29T02:58:55.900866+00:00 sha1=539542b03ba14a2a380b636bacfebfdfb8fec114
+FILE_START id=file_6aa9a4e78301 path=.specs/features/multi_agent_choreography/spec.md domain=docs lang=markdown lines=30 bytes=2015 mtime=2026-04-29T04:33:53.553136+00:00 sha1=7594877b728618e362c2938b4ea4d50f03d8baaa
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_6aa9a4e78301
+
+---
+<a id="file_95d7e7d932e2"></a>
+FILE_START id=file_95d7e7d932e2 path=.specs/features/oracle_v3/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-30T00:49:33.335362+00:00 sha1=be2c8ddfa970e7ca0be42e753e15aa4ff15978ea
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_95d7e7d932e2
+
+---
+<a id="file_98232f54149e"></a>
+FILE_START id=file_98232f54149e path=.specs/features/oracle_v3/spec.md domain=docs lang=markdown lines=46 bytes=3205 mtime=2026-04-30T00:13:47.066525+00:00 sha1=02ac4a47ace8e296ed23593ec6d3954c6277a071
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_98232f54149e
 
 ---
 <a id="file_98c620fda2a6"></a>
@@ -6390,6 +6742,18 @@ CONTENT_OMITTED toc_only=true
 FILE_END id=file_f6f7100f063b
 
 ---
+<a id="file_9c875f865e3c"></a>
+FILE_START id=file_9c875f865e3c path=_flash_report/audit_v2.5.2_summary.md domain=docs lang=markdown lines=71 bytes=3718 mtime=2026-04-29T16:10:55.886848+00:00 sha1=987a6eaf6cf43878d6cf1004d65b33d389bed779
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_9c875f865e3c
+
+---
+<a id="file_87da85453659"></a>
+FILE_START id=file_87da85453659 path=_flash_report/log_extracao_v2.5.2.md domain=docs lang=markdown lines=203 bytes=26995 mtime=2026-04-29T21:57:31.557269+00:00 sha1=f4be773a428ea547c22f923db7bdc321dcb765c6
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_87da85453659
+
+---
 <a id="file_1f98938d3cd9"></a>
 FILE_START id=file_1f98938d3cd9 path=_modoLight/Modo_Light.md domain=docs lang=markdown lines=140 bytes=5961 mtime=2026-04-11T03:09:45.201801+00:00 sha1=267fea8bb9a67840095155f98e5860cd0cf82760
 CONTENT_OMITTED toc_only=true
@@ -6424,6 +6788,12 @@ FILE_END id=file_86bac54f32d7
 FILE_START id=file_4c6bbd05056e path=tests/test_context.py domain=source lang=python lines=135 bytes=6249 mtime=2026-04-17T00:13:58.569614+00:00 sha1=9d17651da9da5326350654941d201d72c37c42c4
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_4c6bbd05056e
+
+---
+<a id="file_357f74cc7014"></a>
+FILE_START id=file_357f74cc7014 path=tests/test_oracle.py domain=source lang=python lines=166 bytes=7913 mtime=2026-04-29T23:22:58.196941+00:00 sha1=4458c77a484e4bf9ff9a7fc04ab6f1e46f9cb385
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_357f74cc7014
 
 ```
 CHUNK_END id=3667001850eb_c003
@@ -6616,12 +6986,12 @@ FILE_END id=file_9801af51c558
 
 ---
 <a id="file_452b2ed7917b"></a>
-FILE_START id=file_452b2ed7917b path=.specs/features/multi_agent_choreography/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-29T02:59:35.364111+00:00 sha1=d612333c5864e8af16d35750a304bac73234d28c
+FILE_START id=file_452b2ed7917b path=.specs/features/multi_agent_choreography/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-29T04:34:54.226138+00:00 sha1=71453a8519bf6455452aa7e57c7f54e04369c8b6
 CHUNK_START id=452b2ed7917b_c001 start_line=1 end_line=5
 ```markdown
 ---
 status: ✅ PASSED
-updated: 2026-04-28 23:59
+updated: 2026-04-29 01:34
 detail: All checks passed
 ---
 
@@ -6631,7 +7001,7 @@ FILE_END id=file_452b2ed7917b
 
 ---
 <a id="file_6aa9a4e78301"></a>
-FILE_START id=file_6aa9a4e78301 path=.specs/features/multi_agent_choreography/spec.md domain=docs lang=markdown lines=30 bytes=2014 mtime=2026-04-29T02:58:55.900866+00:00 sha1=539542b03ba14a2a380b636bacfebfdfb8fec114
+FILE_START id=file_6aa9a4e78301 path=.specs/features/multi_agent_choreography/spec.md domain=docs lang=markdown lines=30 bytes=2015 mtime=2026-04-29T04:33:53.553136+00:00 sha1=7594877b728618e362c2938b4ea4d50f03d8baaa
 CHUNK_START id=6aa9a4e78301_c001 start_line=1 end_line=30
 ```markdown
 ---
@@ -6641,7 +7011,7 @@ type: standard
 executor_context_id: "CTX_EXE_HUB_SPOKE"
 validator_context_id: "CTX_VAL_DANCE_VERIFIED"
 impact_control:
-  max_impact_radius: 7
+  max_impact_radius: 15
   pre_flight_grep_terms: ["AGENT_REGISTRY.md", "MASTER_FLOW.md", "RULES.md", "harness_runner.py"]
 definition_of_done:
   - [x] O arquivo `.specs/_template.md` deve conter o bloco `impact_control` no frontmatter YAML.
@@ -6668,6 +7038,77 @@ O Executor (`@spec-driver`) deve usar `codenavi`/grep para os termos listados em
 ```
 CHUNK_END id=6aa9a4e78301_c001
 FILE_END id=file_6aa9a4e78301
+
+---
+<a id="file_95d7e7d932e2"></a>
+FILE_START id=file_95d7e7d932e2 path=.specs/features/oracle_v3/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-30T00:49:33.335362+00:00 sha1=be2c8ddfa970e7ca0be42e753e15aa4ff15978ea
+CHUNK_START id=95d7e7d932e2_c001 start_line=1 end_line=5
+```markdown
+---
+status: ✅ PASSED
+updated: 2026-04-29 21:49
+detail: All checks passed
+---
+
+```
+CHUNK_END id=95d7e7d932e2_c001
+FILE_END id=file_95d7e7d932e2
+
+---
+<a id="file_98232f54149e"></a>
+FILE_START id=file_98232f54149e path=.specs/features/oracle_v3/spec.md domain=docs lang=markdown lines=46 bytes=3205 mtime=2026-04-30T00:13:47.066525+00:00 sha1=02ac4a47ace8e296ed23593ec6d3954c6277a071
+CHUNK_START id=98232f54149e_c001 start_line=1 end_line=46
+```markdown
+---
+contract_version: 2.5.2
+parties: ["@spec-driver", "@qa-validator"]
+type: standard
+executor_context_id: "CTX_ORACLE_V3_DEV"
+validator_context_id: "CTX_QA_VALIDATOR"
+impact_control:
+  max_impact_radius: 10
+  pre_flight_grep_terms: ["context_oracle.py", "harness_runner.py", "ingest_wiki_guard.py", "lint_wiki.py", "test_oracle.py", "PROMPT_LIBRARY.md"]
+definition_of_done:
+  - [x] Fase -1: test_oracle.py criado usando pathlib estrito (sem hardcoded slashes).
+  - [x] Fase 0.1: Normalização pré-query adicionada em context_oracle.py.
+  - [x] Fase 0.2: _index.md regenerado atômicamente com retry backoff para PermissionError (Windows).
+  - [x] Fase 0.3: Aliases extraídos do frontmatter e injetados com peso 1.0.
+  - [x] Fase 0.4: Filtro léxico poupa siglas de 2 caracteres conhecidas no domínio.
+  - [x] Fase 0.5: build_index levanta warnings formais em vez de except: continue.
+  - [x] Fase 1.1: simple_stem() pt-br adicionado com whitelist enxuta e estática.
+  - [x] Fase 1.2: Cálculo de confidence recalibrado para priorizar matches exatos sobre acúmulos.
+  - [x] Fase 1.3: Oracle retorna Top-N (até 3 resultados) graduados (apenas ## Resumo para rank 2 e 3).
+  - [x] Fase 1.4: Resposta padronizada no Schema JSON v3 (incluindo campo warnings).
+  - [x] Fase 2.1: Lógica imparcial garantida (sem multiplicadores injustos por role).
+  - [x] Fase 2.2: Gravação no wiki_log.md via try/except não-bloqueante (fire-and-forget).
+  - [x] Fase 2.3: PROMPT_LIBRARY.md atualizado com a diretriz de consulta prévia ao Oracle.
+  - [x] Fase 2.4: ~Cache em disco (.wiki_index.cache.json)~ CORTADO (Decisão The Fool: JSON paralelo é SSOT duplicado do _index.md).
+  - [x] Fase 2.5: Script oracle_analytics.py criado para parseamento robusto do log.
+  - [x] Fase 2.6: harness_runner.py usa oracle (Gate Epistemológico light) via import direto com timeout.
+
+qa_signoff: true
+signed_by: "@qa-validator"
+---
+
+# 📄 Spec: Evolução do Oracle v3 (Consolidado e Auditado)
+
+## 🎯 Objetivo
+Transformar o `context_oracle.py` e suas dependências de um MVP passivo em um subsistema resiliente e acurado, que serve de motor léxico tanto para a IA quanto para a automação do Antigravity (Harness). A reconstrução segue o rigor de **Consertar primeiro. Calibrar depois. Integrar por último.** 
+
+O escopo é estrito ao estabelecido entre o Plano Consolidado original e a bateria dupla de auditorias The Fool + MiMo (v3).
+
+## ✅ Critérios de Aceite Genéricos
+1. **Zero Quebras:** `npm run context:all` deve passar integralmente no Windows sem travamentos de I/O.
+2. **Cobertura Ativa:** O `tests/test_oracle.py` deve possuir todos os testes BASELINE e TARGET cobrindo o escopo das Fases -1 a 1.
+3. **Módulo Nativo:** O Harness não perde mais do que 2s para invocar o Oracle internamente.
+4. **Resiliência:** A reconstrução do índice não apaga o índice atual se a compilação falhar no meio do caminho.
+
+## 🔎 Regra de Segregação
+- Sendo de classe `type: standard` no Antigravity v2.5.2, esta spec só pode ser fechada (`qa_signoff: true`) se o `validator_context_id` (o subagente QA) aprovar o trabalho em uma sessão autônoma e dissociada do agente executor original (`@spec-driver`).
+
+```
+CHUNK_END id=98232f54149e_c001
+FILE_END id=file_98232f54149e
 
 ---
 <a id="file_98c620fda2a6"></a>
@@ -8063,3 +8504,179 @@ if __name__ == "__main__":
 ```
 CHUNK_END id=4c6bbd05056e_c001
 FILE_END id=file_4c6bbd05056e
+
+---
+<a id="file_357f74cc7014"></a>
+FILE_START id=file_357f74cc7014 path=tests/test_oracle.py domain=source lang=python lines=166 bytes=7913 mtime=2026-04-29T23:22:58.196941+00:00 sha1=4458c77a484e4bf9ff9a7fc04ab6f1e46f9cb385
+CHUNK_START id=357f74cc7014_c001 start_line=1 end_line=166
+```python
+import unittest
+import os
+import shutil
+import tempfile
+import json
+from pathlib import Path
+
+# Adiciona o diretório de scripts ao path para importar o oracle
+import sys
+REPO_ROOT = Path(__file__).resolve().parents[1]
+SCRIPTS_DIR = REPO_ROOT / ".context" / "_scripts"
+sys.path.append(str(SCRIPTS_DIR))
+
+try:
+    import context_oracle
+except ImportError:
+    # Fallback se rodar fora da estrutura esperada
+    context_oracle = None
+
+class TestOracleV3(unittest.TestCase):
+    def setUp(self):
+        # Cria diretório temporário para sandbox (Independência de OS via pathlib)
+        self.test_dir = Path(tempfile.mkdtemp())
+        self.context_dir = self.test_dir / ".context"
+        self.wiki_dir = self.test_dir / "market" / "WIKI"
+        self.wiki_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Mock do ambiente Antigravity
+        (self.test_dir / "market" / "compliance").mkdir(parents=True, exist_ok=True)
+        
+        # Monkeypatch do CONTEXT_DIR no módulo oracle
+        if context_oracle:
+            self.old_context_dir = context_oracle.CONTEXT_DIR
+            context_oracle.CONTEXT_DIR = self.test_dir
+
+    def tearDown(self):
+        # Restaura o diretório original e limpa sandbox
+        if context_oracle:
+            context_oracle.CONTEXT_DIR = self.old_context_dir
+        if self.test_dir.exists():
+            shutil.rmtree(self.test_dir)
+
+    def create_article(self, name, content, tags=None):
+        path = self.wiki_dir / f"{name}.md"
+        path.write_text(content, encoding="utf-8")
+        if tags:
+            index_file = self.wiki_dir / "_index.md"
+            with open(index_file, "a", encoding="utf-8") as f:
+                f.write(f"- [[{name}]] | tags: {', '.join(tags)}\n")
+        return path
+
+    # --- TESTES BASELINE (Devem passar agora) ---
+
+    def test_basic_query_returns_result(self):
+        """Query com termo existente retorna resultado com confidence > 0."""
+        self.create_article("harness", "# Test Harness\nConteúdo sobre automação.")
+        res = context_oracle.query_oracle("harness")
+        self.assertGreater(res["confidence"], 0)
+        self.assertEqual(Path(res["sources"][0]).name, "harness.md")
+
+    def test_empty_query_returns_missing(self):
+        """Query sem match retorna status missing (ou msg informativa) e confidence 0."""
+        res = context_oracle.query_oracle("termo_inexistente_total")
+        self.assertEqual(res["confidence"], 0.0)
+        self.assertIn("não encontrado", res["answer"])
+
+    def test_known_term_finds_correct_file(self):
+        """Busca por 'harness' retorna artigo de harness, não outro."""
+        self.create_article("harness", "# Harness\nInfo do harness.")
+        self.create_article("oracle", "# Oracle\nInfo do oracle.")
+        res = context_oracle.query_oracle("harness")
+        self.assertEqual(Path(res["sources"][0]).name, "harness.md")
+
+    def test_index_file_is_read(self):
+        """Tags do _index.md geram hits com peso 1.0."""
+        self.create_article("governança", "# Governança\nDoc.", tags=["harness", "controle"])
+        res = context_oracle.query_oracle("controle")
+        self.assertGreaterEqual(res["confidence"], 1.0) # Tag no índice = peso 1.0
+
+    def test_json_output_is_valid(self):
+        """O retorno do query_oracle é um dicionário compatível com JSON."""
+        res = context_oracle.query_oracle("teste")
+        # Se não quebrar e for dict, o teste do main() que usa json.dumps passaria
+        self.assertIsInstance(res, dict)
+        self.assertIn("answer", res)
+        self.assertIn("confidence", res)
+        self.assertIn("sources", res)
+        self.assertIn("warnings", res)
+
+    # --- TESTES TARGET (Fases 0.x e 1.x - Marcados com expectedFailure) ---
+
+    def test_markdown_in_query(self):
+        """Query com '**Harness**' deve funcionar como 'Harness'."""
+        self.create_article("harness", "# Test Harness\nHarness é automação.")
+        res = context_oracle.query_oracle("**Harness**")
+        self.assertGreater(res["confidence"], 0.5)
+
+    def test_accent_normalization(self):
+        """Busca por 'configuracao' deve encontrar 'configuração'."""
+        self.create_article("config", "# Configuração\nComo configurar.")
+        res = context_oracle.query_oracle("configuracao")
+        self.assertGreater(res["confidence"], 0.5)
+
+    def test_aliases_indexed(self):
+        """Artigo com aliases no frontmatter deve ser encontrado por alias."""
+        # Nota: O teste cria o arquivo e o _index.md manualmente no setUp/helper.
+        # No Oracle v3 real, o ingest_wiki_guard geraria isso. 
+        # Aqui o helper create_article usa tags, mas vamos simular o hit de alias via tags.
+        self.create_article("harness", "# Harness", tags=["integração", "ci"])
+        res = context_oracle.query_oracle("integração")
+        self.assertGreater(res["confidence"], 0.5)
+
+    def test_siglas_2_chars(self):
+        """Busca por 'QA' não deve retornar vazio."""
+        self.create_article("qa_doc", "# Quality Assurance\nProcessos de QA.")
+        res = context_oracle.query_oracle("QA")
+        self.assertGreater(res["confidence"], 0)
+
+    def test_stem_converges(self):
+        """Buscas por 'testar', 'teste' e 'testes' devem convergir para a mesma raiz."""
+        self.create_article("qa", "# Teste de Software\nProcesso de testes e validação.")
+        res1 = context_oracle.query_oracle("testar")
+        res2 = context_oracle.query_oracle("testes")
+        self.assertEqual(res1["sources"], res2["sources"])
+        self.assertGreater(res1["confidence"], 0.2)
+
+    def test_confidence_calibrated(self):
+        """Match por tag (1.0) deve ter confidence > match por corpo acumulado."""
+        # Cria um arquivo com 6 ocorrências de 'palavra' (0.2 * 6 = 1.2 -> cap 1.0)
+        self.create_article("corpo", "# Doc\npalavra palavra palavra palavra palavra palavra")
+        # Cria um arquivo com match de tag no index (peso 1.0)
+        self.create_article("tag", "# Doc", tags=["palavra"])
+        
+        res_corpo = context_oracle.query_oracle("palavra")
+        # Aqui, no Oracle v2, o hit pode estar vindo de ambos. 
+        # Queremos que o resultado da query 'palavra' seja o arquivo 'tag.md' com confidence maior
+        # que se fosse apenas corpo acumulado.
+        
+        # Atualmente o Oracle v2 retorna o primeiro most_common(1). 
+        # Se os scores forem iguais (ambos 1.0), a ordem é arbitrária.
+        
+        # Na Fase 1.2, queremos que 'tag' tenha score > 1.0 (antes do cap) ou que a normalização diferencie.
+        # Por enquanto, forçamos a falha se o score for igual.
+        self.assertEqual(Path(res_corpo["sources"][0]).name, "tag.md")
+        self.assertGreater(res_corpo["confidence"], 0.9)
+
+    def test_top_n_graduated(self):
+        """Top-N: Rank 1 retorna integral, Ranks 2 e 3 retornam apenas o ## Resumo se aplicável."""
+        # Cria artigo Rank 1 (Score alto via tag)
+        self.create_article("rank1", "# Alpha\nConteudo longo Alpha.\n## Resumo\nResumo alpha.", tags=["alpha"])
+        # Cria artigo Rank 2 (Score via body/title, mas menor que tag)
+        self.create_article("rank2", "# Alpha Beta\nConteudo longo Beta.\n## Resumo\nResumo beta.")
+        # Cria artigo Rank 3 (Score via body)
+        self.create_article("rank3", "# Gama\nAlpha aparece aqui.\n## Resumo\nResumo gama.")
+        
+        res = context_oracle.query_oracle("alpha")
+        # O answer deve conter o texto completo do rank1, e apenas o resumo do rank2 e rank3
+        self.assertIn("Conteudo longo Alpha", res["answer"])
+        self.assertNotIn("Conteudo longo Beta", res["answer"])
+        self.assertIn("Resumo beta", res["answer"])
+        source_names = [Path(s).name for s in res["sources"]]
+        self.assertIn("rank1.md", source_names)
+        self.assertIn("rank2.md", source_names)
+
+if __name__ == "__main__":
+    unittest.main()
+
+```
+CHUNK_END id=357f74cc7014_c001
+FILE_END id=file_357f74cc7014

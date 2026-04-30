@@ -2,12 +2,12 @@
 
 ---
 schema_version: 1
-generated_at: 2026-04-29T04:16:52.346046+00:00
+generated_at: 2026-04-30T01:27:50.699590+00:00
 root: template_inicío_de_projeto
 mode: full | TOC
 profile: ai-default
-file_count: 87
-byte_count: 327897
+file_count: 91
+byte_count: 358108
 ignored_dirs:
   - .cache
   - .cursor
@@ -27,6 +27,7 @@ ignored_dirs:
   - RAW
   - __pycache__
   - _archive_context
+  - _flash_report
   - bin
   - build
   - captura_projeto
@@ -103,6 +104,8 @@ sensitive_rules:
   - `.specs/features/meta-inception/spec.md` -> [file_9801af51c558](#file_9801af51c558)
   - `.specs/features/multi_agent_choreography/STATE.md` -> [file_452b2ed7917b](#file_452b2ed7917b)
   - `.specs/features/multi_agent_choreography/spec.md` -> [file_6aa9a4e78301](#file_6aa9a4e78301)
+  - `.specs/features/oracle_v3/STATE.md` -> [file_95d7e7d932e2](#file_95d7e7d932e2)
+  - `.specs/features/oracle_v3/spec.md` -> [file_98232f54149e](#file_98232f54149e)
   - `.specs/features/qa_subagent/STATE.md` -> [file_98c620fda2a6](#file_98c620fda2a6)
   - `.specs/features/qa_subagent/spec.md` -> [file_72cc9b3bbcc2](#file_72cc9b3bbcc2)
   - `.specs/features/sam_chronology_fix/STATE.md` -> [file_f288e14cea57](#file_f288e14cea57)
@@ -130,6 +133,7 @@ sensitive_rules:
   - `.context/_scripts/ingest_wiki_guard.py` -> [file_0731dcfd7873](#file_0731dcfd7873)
   - `.context/_scripts/lint_wiki.py` -> [file_ab41b07fb3fb](#file_ab41b07fb3fb)
   - `.context/_scripts/migration_registry.py` -> [file_d65b48a9d56c](#file_d65b48a9d56c)
+  - `.context/_scripts/oracle_analytics.py` -> [file_6e825c0bd6ad](#file_6e825c0bd6ad)
   - `.context/_scripts/project_bundler.py` -> [file_02d732116d93](#file_02d732116d93)
   - `.context/_scripts/purge_journal.py` -> [file_024b28a37d29](#file_024b28a37d29)
   - `.context/_scripts/secrets_scanner.py` -> [file_e98b95e5fb6d](#file_e98b95e5fb6d)
@@ -142,6 +146,7 @@ sensitive_rules:
   - `run_context.py` -> [file_350a79f8b829](#file_350a79f8b829)
   - `run_context.sh` -> [file_86bac54f32d7](#file_86bac54f32d7)
   - `tests/test_context.py` -> [file_4c6bbd05056e](#file_4c6bbd05056e)
+  - `tests/test_oracle.py` -> [file_357f74cc7014](#file_357f74cc7014)
 
 ## INDEX_BY_PATH
 - `.agent/subagents/qa-validator.md` -> [file_5a0c0f1b1bd0](#file_5a0c0f1b1bd0)
@@ -157,6 +162,7 @@ sensitive_rules:
 - `.context/_scripts/ingest_wiki_guard.py` -> [file_0731dcfd7873](#file_0731dcfd7873)
 - `.context/_scripts/lint_wiki.py` -> [file_ab41b07fb3fb](#file_ab41b07fb3fb)
 - `.context/_scripts/migration_registry.py` -> [file_d65b48a9d56c](#file_d65b48a9d56c)
+- `.context/_scripts/oracle_analytics.py` -> [file_6e825c0bd6ad](#file_6e825c0bd6ad)
 - `.context/_scripts/project_bundler.py` -> [file_02d732116d93](#file_02d732116d93)
 - `.context/_scripts/purge_journal.py` -> [file_024b28a37d29](#file_024b28a37d29)
 - `.context/_scripts/secrets_scanner.py` -> [file_e98b95e5fb6d](#file_e98b95e5fb6d)
@@ -211,6 +217,8 @@ sensitive_rules:
 - `.specs/features/meta-inception/spec.md` -> [file_9801af51c558](#file_9801af51c558)
 - `.specs/features/multi_agent_choreography/STATE.md` -> [file_452b2ed7917b](#file_452b2ed7917b)
 - `.specs/features/multi_agent_choreography/spec.md` -> [file_6aa9a4e78301](#file_6aa9a4e78301)
+- `.specs/features/oracle_v3/STATE.md` -> [file_95d7e7d932e2](#file_95d7e7d932e2)
+- `.specs/features/oracle_v3/spec.md` -> [file_98232f54149e](#file_98232f54149e)
 - `.specs/features/qa_subagent/STATE.md` -> [file_98c620fda2a6](#file_98c620fda2a6)
 - `.specs/features/qa_subagent/spec.md` -> [file_72cc9b3bbcc2](#file_72cc9b3bbcc2)
 - `.specs/features/sam_chronology_fix/STATE.md` -> [file_f288e14cea57](#file_f288e14cea57)
@@ -231,6 +239,7 @@ sensitive_rules:
 - `run_context.py` -> [file_350a79f8b829](#file_350a79f8b829)
 - `run_context.sh` -> [file_86bac54f32d7](#file_86bac54f32d7)
 - `tests/test_context.py` -> [file_4c6bbd05056e](#file_4c6bbd05056e)
+- `tests/test_oracle.py` -> [file_357f74cc7014](#file_357f74cc7014)
 
 ---
 <a id="file_5a0c0f1b1bd0"></a>
@@ -252,7 +261,7 @@ FILE_END id=file_dbef1acce0d4
 
 ---
 <a id="file_9ee5d49278ad"></a>
-FILE_START id=file_9ee5d49278ad path=.context/_scripts/_wiki_log_utils.py domain=source lang=python lines=66 bytes=2541 mtime=2026-04-22T23:47:25.409048+00:00 sha1=eb8650ba121fe8cc8aaabaca70de01214509937e
+FILE_START id=file_9ee5d49278ad path=.context/_scripts/_wiki_log_utils.py domain=source lang=python lines=66 bytes=2586 mtime=2026-04-29T23:25:43.168444+00:00 sha1=9eee06f81a5d98bdda3ce503a7ddc2b3b3d64b86
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_9ee5d49278ad
 
@@ -270,7 +279,7 @@ FILE_END id=file_82cd6bde54ff
 
 ---
 <a id="file_10081abf87e1"></a>
-FILE_START id=file_10081abf87e1 path=.context/_scripts/context_oracle.py domain=source lang=python lines=133 bytes=5290 mtime=2026-04-22T23:34:52.248624+00:00 sha1=61d7e4d041f8821d2240f83a9ad8b5c26baa9cb9
+FILE_START id=file_10081abf87e1 path=.context/_scripts/context_oracle.py domain=source lang=python lines=200 bytes=8477 mtime=2026-04-29T23:44:35.875177+00:00 sha1=be9c070b99c0a242757843d869e9ef38d1410613
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_10081abf87e1
 
@@ -282,7 +291,7 @@ FILE_END id=file_e94b4e40315c
 
 ---
 <a id="file_1edef35c2f56"></a>
-FILE_START id=file_1edef35c2f56 path=.context/_scripts/harness_runner.py domain=source lang=python lines=479 bytes=17284 mtime=2026-04-29T02:55:27.749753+00:00 sha1=fd8870cf8653c9876e580d9e9ddc1cfa158ac1e4
+FILE_START id=file_1edef35c2f56 path=.context/_scripts/harness_runner.py domain=source lang=python lines=489 bytes=18442 mtime=2026-04-29T23:57:24.240107+00:00 sha1=1e255917bdd15074e0d2f2a339fdb9a0e672bf65
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_1edef35c2f56
 
@@ -294,7 +303,7 @@ FILE_END id=file_a642d240b9ab
 
 ---
 <a id="file_0731dcfd7873"></a>
-FILE_START id=file_0731dcfd7873 path=.context/_scripts/ingest_wiki_guard.py domain=source lang=python lines=88 bytes=3112 mtime=2026-04-22T23:34:30.558813+00:00 sha1=8cf96a678ced2d689deb51608c115dcd75a632a8
+FILE_START id=file_0731dcfd7873 path=.context/_scripts/ingest_wiki_guard.py domain=source lang=python lines=131 bytes=4932 mtime=2026-04-29T23:05:09.652881+00:00 sha1=40b8732e20e069a48afd820b2c56a395e27a5c26
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_0731dcfd7873
 
@@ -311,8 +320,14 @@ CONTENT_OMITTED toc_only=true
 FILE_END id=file_d65b48a9d56c
 
 ---
+<a id="file_6e825c0bd6ad"></a>
+FILE_START id=file_6e825c0bd6ad path=.context/_scripts/oracle_analytics.py domain=source lang=python lines=60 bytes=2162 mtime=2026-04-29T23:37:15.393689+00:00 sha1=7d8c8c35739ed1ff63529220af41f1f2204753fa
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_6e825c0bd6ad
+
+---
 <a id="file_02d732116d93"></a>
-FILE_START id=file_02d732116d93 path=.context/_scripts/project_bundler.py domain=source lang=python lines=429 bytes=17844 mtime=2026-04-23T18:31:18.210183+00:00 sha1=6108c27d0315281c1f40bec72da49685422fdcc9
+FILE_START id=file_02d732116d93 path=.context/_scripts/project_bundler.py domain=source lang=python lines=429 bytes=17861 mtime=2026-04-30T01:25:29.689806+00:00 sha1=9567f0399ca22a577183619b877e92abd8c6c5df
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_02d732116d93
 
@@ -384,7 +399,7 @@ FILE_END id=file_d124f6374cab
 
 ---
 <a id="file_9fe16e5591f0"></a>
-FILE_START id=file_9fe16e5591f0 path=.context/brain/PROMPT_LIBRARY.md domain=docs lang=markdown lines=217 bytes=10358 mtime=2026-04-24T17:46:37.088580+00:00 sha1=56b9f148574701998a0ee05b31d1b53899db422c
+FILE_START id=file_9fe16e5591f0 path=.context/brain/PROMPT_LIBRARY.md domain=docs lang=markdown lines=237 bytes=11426 mtime=2026-04-29T23:26:19.472088+00:00 sha1=9724dced356a0ffd1d4a1cd1c471e1aa26370e1b
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_9fe16e5591f0
 
@@ -432,13 +447,13 @@ FILE_END id=file_9b6470da8849
 
 ---
 <a id="file_41c3d3da4381"></a>
-FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=139 bytes=5197 mtime=2026-04-29T02:59:35.362116+00:00 sha1=00b955e92792a01442a7e6f9cfbd27f4cfbda892
+FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=186 bytes=7651 mtime=2026-04-30T00:49:33.332606+00:00 sha1=aee0f0274c62f872c18e787e00c42ed44f3b920c
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_41c3d3da4381
 
 ---
 <a id="file_019509328844"></a>
-FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=363 bytes=21778 mtime=2026-04-29T02:56:34.181685+00:00 sha1=1ecfd01db9a2efac9242def067104a64f52191e6
+FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=409 bytes=24853 mtime=2026-04-30T00:49:26.254476+00:00 sha1=4971afe48ac581b579c4b9b17b298898578cd2b6
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_019509328844
 
@@ -456,7 +471,7 @@ FILE_END id=file_ef714e7c8162
 
 ---
 <a id="file_d069d4f2ebef"></a>
-FILE_START id=file_d069d4f2ebef path=.context/maintenance/TECHNICAL_REQUIREMENTS.md domain=docs lang=markdown lines=147 bytes=1008 mtime=2026-04-26T20:26:17.349689+00:00 sha1=0dc2c1c3915637de740ae591fc6f3a22c1460a90
+FILE_START id=file_d069d4f2ebef path=.context/maintenance/TECHNICAL_REQUIREMENTS.md domain=docs lang=markdown lines=149 bytes=1010 mtime=2026-04-29T04:34:53.625388+00:00 sha1=b094637e9fa390ab5587964baff5244f35fd89c5
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_d069d4f2ebef
 
@@ -516,7 +531,7 @@ FILE_END id=file_65a089176b85
 
 ---
 <a id="file_578d56cac1a4"></a>
-FILE_START id=file_578d56cac1a4 path=.context/market/WIKI/_index.md domain=docs lang=markdown lines=5 bytes=100 mtime=2026-04-22T23:08:43.528195+00:00 sha1=49feb4c64bb2f3a2838a667b4e78b5afb009b2e4
+FILE_START id=file_578d56cac1a4 path=.context/market/WIKI/_index.md domain=docs lang=markdown lines=8 bytes=683 mtime=2026-04-29T22:57:40.778023+00:00 sha1=88e95b638c8214ffe557e70ecbf62f5201d72323
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_578d56cac1a4
 
@@ -558,13 +573,13 @@ FILE_END id=file_b5d38697335e
 
 ---
 <a id="file_c255058b56fe"></a>
-FILE_START id=file_c255058b56fe path=.context/market/wiki_log.md domain=docs lang=markdown lines=48 bytes=4459 mtime=2026-04-26T20:26:19.074046+00:00 sha1=7864b00902b327247363c96a409db38e5158c990
+FILE_START id=file_c255058b56fe path=.context/market/wiki_log.md domain=docs lang=markdown lines=53 bytes=5131 mtime=2026-04-29T23:30:56.879877+00:00 sha1=2d421e2d6672672b17f7eee82146c1504748252f
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_c255058b56fe
 
 ---
 <a id="file_068a21d64bec"></a>
-FILE_START id=file_068a21d64bec path=.context/monitoring/CONTEXT_HEALTH.md domain=docs lang=markdown lines=38 bytes=1503 mtime=2026-04-26T20:26:20.058803+00:00 sha1=bb96eb87e415c899a1f56f9f1f97d4a9ab231dc3
+FILE_START id=file_068a21d64bec path=.context/monitoring/CONTEXT_HEALTH.md domain=docs lang=markdown lines=38 bytes=1503 mtime=2026-04-29T04:34:54.863691+00:00 sha1=6b946c25c3816a3d043008c21610cc1c9ff51ada
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_068a21d64bec
 
@@ -576,7 +591,7 @@ FILE_END id=file_c6d44cc7da35
 
 ---
 <a id="file_3667001850eb"></a>
-FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=755 bytes=40976 mtime=2026-04-29T04:14:36.746312+00:00 sha1=a51cdfdb500dc7e0623491dae20aef882a09fffa
+FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=803 bytes=43746 mtime=2026-04-30T01:22:24.940825+00:00 sha1=6070d3dc0c4e7e56d32fa73a389b584dc4ffdddd
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_3667001850eb
 
@@ -624,15 +639,27 @@ FILE_END id=file_9801af51c558
 
 ---
 <a id="file_452b2ed7917b"></a>
-FILE_START id=file_452b2ed7917b path=.specs/features/multi_agent_choreography/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-29T02:59:35.364111+00:00 sha1=d612333c5864e8af16d35750a304bac73234d28c
+FILE_START id=file_452b2ed7917b path=.specs/features/multi_agent_choreography/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-29T04:34:54.226138+00:00 sha1=71453a8519bf6455452aa7e57c7f54e04369c8b6
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_452b2ed7917b
 
 ---
 <a id="file_6aa9a4e78301"></a>
-FILE_START id=file_6aa9a4e78301 path=.specs/features/multi_agent_choreography/spec.md domain=docs lang=markdown lines=30 bytes=2014 mtime=2026-04-29T02:58:55.900866+00:00 sha1=539542b03ba14a2a380b636bacfebfdfb8fec114
+FILE_START id=file_6aa9a4e78301 path=.specs/features/multi_agent_choreography/spec.md domain=docs lang=markdown lines=30 bytes=2015 mtime=2026-04-29T04:33:53.553136+00:00 sha1=7594877b728618e362c2938b4ea4d50f03d8baaa
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_6aa9a4e78301
+
+---
+<a id="file_95d7e7d932e2"></a>
+FILE_START id=file_95d7e7d932e2 path=.specs/features/oracle_v3/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-30T00:49:33.335362+00:00 sha1=be2c8ddfa970e7ca0be42e753e15aa4ff15978ea
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_95d7e7d932e2
+
+---
+<a id="file_98232f54149e"></a>
+FILE_START id=file_98232f54149e path=.specs/features/oracle_v3/spec.md domain=docs lang=markdown lines=46 bytes=3205 mtime=2026-04-30T00:13:47.066525+00:00 sha1=02ac4a47ace8e296ed23593ec6d3954c6277a071
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_98232f54149e
 
 ---
 <a id="file_98c620fda2a6"></a>
@@ -753,3 +780,9 @@ FILE_END id=file_86bac54f32d7
 FILE_START id=file_4c6bbd05056e path=tests/test_context.py domain=source lang=python lines=135 bytes=6249 mtime=2026-04-17T00:13:58.569614+00:00 sha1=9d17651da9da5326350654941d201d72c37c42c4
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_4c6bbd05056e
+
+---
+<a id="file_357f74cc7014"></a>
+FILE_START id=file_357f74cc7014 path=tests/test_oracle.py domain=source lang=python lines=166 bytes=7913 mtime=2026-04-29T23:22:58.196941+00:00 sha1=4458c77a484e4bf9ff9a7fc04ab6f1e46f9cb385
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_357f74cc7014
