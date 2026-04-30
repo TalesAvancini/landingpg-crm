@@ -1,32 +1,57 @@
 ---
-Criado em: 2026-04-10 23:29
-Ultima Atualizacao: 2026-04-10 23:29
-Status: Ativo
+Ultima Atualizacao: 2026-04-30 02:45
+Status: 🔥 HARDENED (v2.5.2) - Agnóstico e Técnico
 ---
 
-# 🔗 TLC_INTEGRATION.md
-> Ponte entre Governança de Longo Prazo (`.context/`) e Execução Atômica (`.specs/`).  
-> 💡 *Insight Humano: O PRD diz O QUÊ e POR QUÊ. A SPEC diz COMO e QUANDO. O TLC orquestra a transição.*
+# skill mãe: tlc-spec-driven
 
-## 🔄 Ciclo de Vida Híbrido
-1. **INTENT** → `PRD.md` ativo define escopo e critérios de aceite.
-2. **SPECIFY** → IA cria `.specs/features/[nome]/spec.md` com passos atômicos, contratos de API/DB e testes.
-3. **IMPLEMENT** → Geração de código baseada na spec. Handoffs registrados no `JOURNAL.md`.
-4. **VERIFY** → Testes passam → `STATE.md` marcado como `✅ PASSED`.
-5. **SYNC** → Decisões arquiteturais e lições → `JOURNAL.md`. Spec arquivada ou deletada.
-
-## 📏 Regras de Ouro
-- 🔒 **Soberania do Contexto:** `.specs/` nunca sobrescreve `.context/`. Apenas alimenta a memória de longo prazo.
-- 🧹 **Efemeridade:** Spec inativa >48h ou pós-merge → mover para `_archive_context/specs/` ou deletar.
-- 🤝 **Handoff:** Handoff obrigatório no `JOURNAL.md` se a spec cruzar domínios (ex: `@backend` → `@qa`).
-- ⚠️ **Divergência:** Se `spec.md` divergir de `schema.sql` ou `PRD.md` → parar e solicitar correção de contexto.
-
-## 🤖 Fluxo de Ativação
-`"Inicie a fase de SPECIFY para o PRD #[ID]"` → 
-1. IA lê `PRD.md` + `schema.sql` + `JOURNAL.md` (últimas 30).
-2. Cria `.specs/features/[nome]/` com `spec.md` e `STATE.md: draft`.
-3. Executa passos atômicos → atualiza `STATE.md`.
-4. Ao concluir: `✅ Spec passed. Deseja arquivar a spec e sincronizar o JOURNAL.md?`
+# 🔗 TLC_INTEGRATION.md: O Córtex de Execução
+> Ponte definitiva entre Governança (`.context/`) e Execução Atômica (`.specs/`).
+> 💡 *A Fonte de Intenção (Plano/PRD) diz O QUÊ. A Spec TLC diz COMO. O Flash-Harness prova que FOI FEITO.*
 
 ---
-> *Este documento garante que o "Cérebro" (Contexto) e o "Músculo" (TLC) operem em harmonia.*
+
+"Nova estrutura para pasta .specs que vai entrar em operação, ainda não é oficial
+
+.specs/features/[feature]/     <-- O "CANTEIRO DE OBRAS" (O que eu gero para executar)
+├── spec.md                    <-- O CONTRATO: Extraído do plano, ou prdzinho, qualquer nome que remeta o arquivo de planejamento que embasa a spec.md .
+├── design.md                  <-- O DESENHO: Diagramas/Arquitetura (Se for complexo).
+├── tasks.md                   <-- O PASSO-A-PASSO: Checklist atômica com 'Verify'.
+└── STATE.md                   <-- A MEMÓRIA VIVA: Decisões, logs e estado da sessão."
+
+
+## 🔄 Ciclo de Vida Híbrido (v2.5.2)
+1. **INTENT:** Documento ativo define a intenção.
+2. **SPECIFY:** Hub gera `spec.md` via `specify.md`.
+3. **SPRINT PLANNING:** Organização no `tasks.md` via `tasks.md`. **Foco: TDD**.
+4. **IMPLEMENT:** Execução mecânica via `@spec-driver` usando `implement.md`.
+5. **VERIFY:** Validação técnica via `validate.md`.
+6. **SYNC:** Sincronização final via `session-handoff.md`.
+
+## 📏 Regras de Ouro (Zero Migué)
+- 🧪 **TDD e Verificação:** Proibido codar sem critério de prova técnica.
+- ⚡ **Flash-Harness Mandatório:** Diário de Bordo estruturado visível ANTES de cada ação.
+- 📦 **Single-Spec / Multi-Sprint:** Uma Spec por feature, progresso fatiado no `tasks.md`.
+
+---
+
+## 📖 Glossário de Referências (Pasta: `C:\Users\User\.gemini\skills\tlc-spec-driven`)
+Abaixo estão as 16 sub-skills que podem ser utilizadas, com base no conteúdo real do diretório global:
+
+1.  **project-init.md:** Protocolo de inicialização e definição de objetivos do projeto.
+2.  **roadmap.md:** Criação e gestão do `ROADMAP.md` (Milestones e Capabilites).
+3.  **brownfield-mapping.md:** Análise de código existente e mapeamento de stack tecnológica.
+4.  **concerns.md:** Registro de dívidas técnicas, riscos e áreas de atenção.
+5.  **specify.md:** Transformação de intenção em requisitos atômicos com IDs.
+6.  **discuss.md:** Protocolo de conversa para resolução de ambiguidades.
+7.  **design.md:** Definição de arquitetura, componentes e lógica técnica.
+8.  **tasks.md:** Criação de checklists atômicos com critérios de `Verify`.
+9.  **implement.md:** Protocolo de execução técnica e incremento de código.
+10. **quick-mode.md:** Modo de execução rápida para tarefas de baixa complexidade (≤3 arquivos).
+11. **state-management.md:** Gestão do arquivo `STATE.md` (Estado, decisões e bloqueios).
+12. **validate.md:** Protocolo de testes, UAT e verificação de critérios de aceite.
+13. **code-analysis.md:** Métodos para auditoria e análise estrutural de código.
+14. **session-handoff.md:** Protocolo para pausar e retomar sessões de trabalho.
+15. **context-limits.md:** Gestão de limites de contexto e tokens.
+16. **coding-principles.md:** Princípios fundamentais de codificação aplicados ao TLC.
+> *Este documento garante que o "Cérebro" e o "Músculo" operem em harmonia.*

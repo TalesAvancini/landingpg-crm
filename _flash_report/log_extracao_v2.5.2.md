@@ -9,195 +9,178 @@
 > **Gatilho Humano:** "Vá em `flash_report/log_extracao_v2.5.2.md` e execute o CONTRATO."
 ---
 
-# 🪵 Log de Extração: contexto_v2.5.2.md
-
-
----
-
-## 🏗️ Bloco 1: Indexação e Subagentes (Linhas 0001 - 1000)
-- [Linhas 0001-0050]: O bloco `sensitive_rules` define padrões de exclusão para arquivos de segredo, incluindo extensões `*.cert`, `*.key`, `*.pem`, e prefixos como `credentials*.json`.
-- [Linhas 0051-0100]: O mapa `INDEX_BY_DOMAIN` categoriza arquivos em domínios lógicos, alocando os subagentes `qa-validator.md` e `spec-driver.md` ao domínio `docs`.
-- [Linhas 0101-0150]: O arquivo lista especificações de funcionalidades ativas, incluindo `harness_fail_closed`, `meta-inception` e `multi_agent_choreography`.
-- [Linhas 0151-0200]: O mapeamento `INDEX_BY_PATH` identifica `.context/_scripts/harness_runner.py` como um componente central da camada de execução.
-- [Linhas 0201-0250]: O arquivo `qa-validator.md` (id=file_5a0c0f1b1bd0) possui 29 linhas e é utilizado para auditoria técnica independente antes de commits.
-- [Linhas 0251-0300]: O protocolo de validação do `qa-validator` exige a atualização do `spec.md` com `qa_signoff: true` em caso de sucesso.
-- [Linhas 0301-0350]: O subagente `spec-driver.md` (id=file_a412f1bb7017) impõe obrigatoriedade da skill `flash-harness` e do sistema de "Points Game".
-- [Linhas 0351-0400]: O script `_tz_utils.py` utiliza a constante `TZ_MAP` para definir o offset de `America/Sao_Paulo` como `-3` horas em relação ao UTC.
-- [Linhas 0401-0450]: O utilitário `_wiki_log_utils.py` implementa um spin-lock atômico via `os.open(LOCK_FILE, os.O_CREAT | os.O_EXCL)` para evitar condições de corrida.
-- [Linhas 0451-0500]: O motor de consistência de versão utiliza a regex `r"^\s*v?(\d+)\.(\d+)(?:\.(\d+))?\s*$"` para normalizar tags em `VERSION.md`.
-- [Linhas 0501-0550]: O script `check_version_consistency.py` retorna código de saída `1` ao detectar "drift" entre o SSOT e os alvos declarados em `version_targets.json`.
-- [Linhas 0551-0600]: O utilitário `cleanup_specs.py` automatiza o arquivamento de specs inativas por mais de 48 horas ou que excedam o limite de 3 unidades ativas.
-- [Linhas 0601-0650]: O `context_oracle.py` (v2.5) aplica o Princípio do Menor Privilégio, restringindo buscas léxicas às pastas `market/WIKI` e `market/compliance`.
-- [Linhas 0651-0700]: A heurística de matching do Oráculo atribui peso `0.8` para títulos de documentos e `0.6` para palavras-chave contidas no título.
-- [Linhas 0701-0750]: O sistema de busca utiliza `collections.Counter` para agregar e ranquear a relevância de múltiplos arquivos baseados em hits de palavras-chave.
-- [Linhas 0751-0800]: O script `enrich_context.py` realiza o re-encoding de `sys.stdout` para `utf-8` especificamente para compatibilidade com o runtime Windows.
-- [Linhas 0801-0850]: A lógica de `update_inbox` em `enrich_context.py` verifica duplicatas no `MARKET_INBOX.md` antes de registrar novos gaps de mercado.
-- [Linhas 0851-0900]: O `harness_runner.py` (v2) atua como validador reativo de contratos, verificando a integridade de handoffs no `JOURNAL.md`.
-- [Linhas 0901-0950]: O validador de schema em `harness_runner.py` utiliza regex case-insensitive para capturar definições `CREATE TABLE` no `schema.sql`.
-- [Linhas 0951-1000]: O mecanismo de auditoria de handoff identifica falhas estruturais caso o caractere pipe (`|`) apareça menos de duas vezes em uma entrada de log.
-
-## 🔧 Bloco 2: Validação e Bundling (Linhas 1001 - 2000)
-- [Linhas 1001-1050]: A função `check_enrichment_integrity` em `harness_runner.py` exige que dependências críticas em PRDs possuam lastro em `market/`.
-- [Linhas 1051-1100]: O `harness_runner.py` valida contratos de Sprint, exigindo blocos YAML com `qa_signoff: true` e a assinatura `@qa-validator`.
-- [Linhas 1101-1150]: A verificação de `max_impact_radius` utiliza `git diff --name-only HEAD` para bloquear implementações que modifiquem arquivos além do limite da spec.
-- [Linhas 1151-1200]: O Auditor SAM (Sistema Anti-Migué) opera nos modos `strict` (bloqueante) e `assist` (informativo) para garantir a veracidade dos logs.
-- [Linhas 1201-1250]: O sistema de log do Harness utiliza a extensão `.tmp` e `replace()` para garantir atomicidade na atualização de relatórios técnicos.
-- [Linhas 1251-1300]: O modo "Bypass de Governança" é permitido apenas se `INCEPTION.md` estiver em `DRAFT` e não houver atividade real de código ou spec.
-- [Linhas 1301-1350]: O script `harness_runner.py` identifica automaticamente a especificação ativa ordenando as pastas de funcionalidade por data de modificação.
-- [Linhas 1351-1400]: O utilitário `health_sync.py` (Fase 2) gera tabelas de métricas para o dashboard `CONTEXT_HEALTH.md` baseado na telemetria física do repositório.
-- [Linhas 1401-1450]: A estimativa de tokens em `health_sync.py` é calculada pela razão de um quarto do total de caracteres dos arquivos de texto.
-- [Linhas 1451-1500]: O dashboard de saúde define o limite de 100k tokens como o limiar de alerta para "Context Bloat" (excesso de contexto cognitivo).
-- [Linhas 1501-1550]: O `ingest_wiki_guard.py` impõe a validação de seis campos frontmatter obrigatórios para qualquer novo artigo na Wiki de Mercado.
-- [Linhas 1551-1600]: O Guardião de Ingestão Wiki exige que citações de fonte utilizem o prefixo `> Fonte: RAW/` seguindo a "Karpathy Rule".
-- [Linhas 1601-1650]: O script `lint_wiki.py` (v2.5) utiliza a regex `CLAIM_REGEX` para detectar afirmações técnicas sem lastro epistemológico.
-- [Linhas 1651-1700]: Violações de citação na Wiki de Mercado são classificadas como `[FATAL]`, travando a pipeline de integração independentemente de flags.
-- [Linhas 1701-1750]: O `migration_registry.py` garante a integridade DB-First validando a ordem incremental (ex: `001_`, `002_`) dos arquivos SQL.
-- [Linhas 1751-1800]: O `project_bundler.py` (v2.5.2) possui uma lista de exclusão `PASTAS_IGNORAR` que remove diretórios de cache e build (ex: `.ruff_cache`, `.tox`).
-- [Linhas 1801-1850]: O Bundler permite a definição de `PASTAS_CORE`, identificando diretórios arquiteturalmente essenciais para a compreensão da IA.
-- [Linhas 1851-1900]: A função `mask_sensitive` em `project_bundler.py` utiliza regex para detectar e ofuscar chaves de API e strings de conexão no bundle final.
-- [Linhas 1901-1950]: O extrator de símbolos do Bundler captura metadados de até 80 funções ou classes únicas por arquivo para indexação rápida.
-- [Linhas 1951-2000]: A função `chunk_content` fragmenta arquivos extensos em pedaços (Chunks) menores para respeitar limites de janela de contexto.
-
-## 🧠 Bloco 3: Gestão de Memória e Agentes (Linhas 2001 - 3000)
-- [Linhas 2001-2050]: O `project_bundler.py` realiza uma tentativa de decodificação `latin-1` caso a leitura em `utf-8` falhe, garantindo a captura de arquivos com encodings legados.
-- [Linhas 2051-2100]: Os registros de arquivos no Bundler armazenam o hash `sha1` original do conteúdo bruto antes de qualquer máscara de segredos ser aplicada.
-- [Linhas 2101-2150]: O Bundler gera automaticamente metadados de `file_count` e `byte_count` no frontmatter do bundle para auditoria de tamanho.
-- [Linhas 2151-2200]: O sistema de empacotamento renderiza dois índices principais: `INDEX_BY_DOMAIN` (hierárquico) e `INDEX_BY_PATH` (flat com âncoras HTML).
-- [Linhas 2201-2250]: O script `purge_journal.py` aplica uma política de retenção de 30% (KEEP_RATIO), arquivando os 70% das entradas mais antigas do Journal.
-- [Linhas 2251-2300]: A rotina de expurgo de memória utiliza o cabeçalho markdown `## ` como delimitador para isolar entradas cronológicas e realizar backups atômicos.
-- [Linhas 2301-2350]: O `secrets_scanner.py` utiliza `git ls-files` para varredura de alta performance, restringindo o escopo a arquivos rastreados pelo versionamento.
-- [Linhas 2351-2400]: O scanner de segredos permite a definição de uma `.secrets-allowlist` para ignorar falsos positivos conhecidos em arquivos de configuração.
-- [Linhas 2401-2450]: O `sync_project.py` automatiza a atualização de requisitos técnicos utilizando marcadores HTML (`<!-- AUTO-SYNC -->`) para blindar edições manuais.
-- [Linhas 2451-2500]: A sincronização de requisitos extrai dependências do `package.json` e nomes de tabelas do `schema.sql` para manter o `TECHNICAL_REQUIREMENTS.md` atualizado.
-- [Linhas 2501-2550]: O validador de contexto define sete arquivos obrigatórios (ex: `RULES.md`, `MASTER_FLOW.md`) para considerar o ambiente de governança como saudável.
-- [Linhas 2551-2600]: O `validate_context.py` impõe o limite `JOURNAL_MAX_LINES = 600` para forçar a execução periódica do script de expurgo de memória (purge).
-- [Linhas 2601-2650]: O sistema de integridade verifica se o índice mestre da Wiki (`market/WIKI/_index.md`) possui um tamanho mínimo de 50 bytes para evitar arquivos corrompidos.
-- [Linhas 2651-2700]: O validador detecta o estado de "Tradução Pendente" caso um `VISION.md` exista enquanto o status do Inception permanece em `DRAFT`.
-- [Linhas 2701-2750]: O `validate_context.py` retorna o exit code `2` para sinalizar pendências estratégicas que exigem intervenção de roles de arquitetura ou produto.
-- [Linhas 2751-2800]: O Sistema Anti-Migué (SAM) inicia a auditoria capturando o estado do Git via `git status --porcelain` para comparação com as promessas do Journal.
-- [Linhas 2801-2850]: O SAM Auditor extrai regras de compliance do `JOURNAL_SYNAPSE.md` utilizando blocos JSON delimitados por comentários específicos de início e fim.
-- [Linhas 2851-2900]: As regras do SAM são disparadas por mudanças em padrões de arquivos (`when_any_changed`) ou criação de novos diretórios (`when_new_path_under`).
-- [Linhas 2901-2950]: O SAM valida a segregação de contexto exigindo que o `executor_context_id` seja diferente do `validator_context_id` no log da tarefa.
-- [Linhas 2951-3000]: O `AGENT_REGISTRY.md` define protocolos de Handoff obrigatórios para qualquer tarefa que exija o cruzamento de domínios entre agentes.
-
-## 📜 Bloco 4: Glossários e Regras de Ouro (Linhas 3001 - 4000)
-- [Linhas 3001-3050]: A política de isolamento define cinco camadas de contexto (Global, Strategic, Role-Specific, Task-Ephemeral e Deep Archive) para mitigar o Token Bloat.
-- [Linhas 3051-3100]: O `FILE_GLOSSARY.md` estabelece o `@context-keeper` como o guardião responsável pela integridade dos documentos core de governança.
-- [Linhas 3101-3150]: O glossário de arquivos distingue `rx-anatomy.md` (mapeamento físico de pastas) de `rx-biology.md` (mapeamento lógico de fluxos de dados).
-- [Linhas 3151-3200]: O `HARNESS_REGISTRY.md` rastreia quatro tipos de validadores ativos (H01 a H04), cobrindo de schemas de banco a scanner de segredos.
-- [Linhas 3201-3250]: A equação fundamental do framework é definida como `Agente = Modelo + Harness`, visando transformar a IA em um motor determinístico.
-- [Linhas 3251-3300]: O `INCEPTION.md` proíbe explicitamente o uso de infraestruturas MLOps pesadas, priorizando a indexação leve e focada na realidade financeira do projeto.
-- [Linhas 3301-3350]: O ciclo de vida TLC Autobuilder é composto por cinco atos (Semente, Engenharia, Ingestão, Execução e Rito) com gatilhos de saída obrigatórios.
-- [Linhas 3351-3400]: O modelo Hub & Spoke isola o Planner (Hub) de Executores e Validadores (Spokes) localizados fisicamente em `.agent/subagents/`.
-- [Linhas 3401-3450]: O PRD exige a decomposição total de requisitos em specs atômicas no workshop (`.specs/`), proibindo violações das fronteiras do Inception.
-- [Linhas 3451-3500]: O template do `@db-architect` exige que a inclusão de índices no banco de dados seja estritamente justificada por padrões de consulta (query patterns).
-- [Linhas 3501-3550]: O protocolo do `@qa-validator` impõe o "Veto Objetivo" em caso de omissão de diffs ou falha nos validadores determinísticos do SAM.
-- [Linhas 3551-3600]: O `@spec-enricher` possui um protocolo determinístico que encerra a execução com `EXIT 2` caso lacunas de pesquisa de mercado não sejam resolvidas.
-- [Linhas 3601-3650]: O `ROADMAP.md` define quatro fases de maturidade (Discovery, Contratos, Features e Scale) com critérios de entrada e saída imutáveis.
-- [Linhas 3651-3700]: O `RULES.md` estabelece três modos de projeto (`BOOTSTRAP`, `HARDENING`, `PRODUCTION`), cujas transições devem ser registradas no Journal.
-- [Linhas 3701-3750]: O "Pre-flight Gate" exige o mapeamento obrigatório de impacto via `grep` antes de qualquer modificação em interfaces ou contratos cross-layer.
-- [Linhas 3751-3800]: O "Ralph Wiggum Loop" é instituído como defesa contra alucinações, forçando o reset da memória sintética após cada execução de spec atômica.
-- [Linhas 3801-3850]: O `run_context.py` atua como cérebro motor, abstraindo o sistema operacional para todos os comandos de orquestração do framework.
-- [Linhas 3851-3900]: O `harness_runner.py` é classificado como o "Coração" do sistema, fiscalizando specs e garantindo a segregação de contexto.
-- [Linhas 3901-3950]: O guia de onboarding proíbe a escrita de código em `src/` caso o status do `INCEPTION.md` não esteja marcado como `ACTIVE`.
-- [Linhas 3951-4000]: O `TLC_INTEGRATION.md` exige parada imediata e correção de contexto caso a `spec.md` divirja do `schema.sql` ou do `PRD.md`.
-
-## 🏗️ Bloco 5: Filosofia H.O.K. e Registros (Linhas 4001 - 5000)
-- [Linhas 4001-4050]: O framework v2.5.2 rompe com o "Vibe Coding" em favor da Harness Engineering, definida pela equação `Agente = Modelo + Harness`.
-- [Linhas 4051-4100]: A "Regra Karpathy" (Linter Epistemológico) bloqueia qualquer alteração que não possua prova criptográfica de procedência no sistema de arquivos.
-- [Linhas 4101-4150]: O "Ralph Wiggum Loop" aniquila a memória do chat a cada iteração para combater a "Ansiedade de Contexto" e truncamento de tarefas.
-- [Linhas 4151-4200]: O kit prioriza governança leve usando arquivos `.md`, `.json` e `.sql` como banco de estado, evitando dependências externas complexas.
-- [Linhas 4201-4250]: A `ARCHITECTURE.md` impõe uma regra de Mock rígida: se o DB não estiver disponível, o mock deve seguir o exato formato do `schema.sql`.
-- [Linhas 4251-4300]: O `HARNESS_LOG.md` registra violações de SAM, como a ausência de checkboxes obrigatórios no Journal para arquivos propagados.
-- [Linhas 4301-4350]: O `JOURNAL.md` utiliza Ordem Cronológica Reversa e registra a criação de specs com controle de impacto (`max_impact_radius`).
-- [Linhas 4351-4400]: O sistema de governança define o "Way Point" como um marco de sincronização total entre realidade física (Git) e promessa (Journal).
-- [Linhas 4401-4450]: A integração nativa do Bundler permite gerar mapas arquiteturais que consomem apenas ~9k tokens em vez de 300k+ do bundle completo.
-- [Linhas 4451-4500]: O subagente de QA (`qa-validator`) opera sob o "Padrão B", realizando auditorias autônomas de confiança zero sem gargalo humano.
-- [Linhas 4501-4550]: O `rx-biology.md` v2.5.2 mapeia os scripts como "órgãos" e o pipeline como o "processo digestivo e imunológico" do framework.
-- [Linhas 4551-4600]: A política de "Context Sanitation" exige a exclusão de entulho cognitivo (diretórios legados) para manter o carregamento lean.
-- [Linhas 4601-4650]: O `JOURNAL_SYNAPSE.md` define a regra `sql_change`, que exige atualização obrigatória do `TECHNICAL_REQUIREMENTS.md` em caso de alteração no schema.
-- [Linhas 4651-4700]: O protocolo SAM classifica a mudança de regras (`rules_change`) como severidade `CRITICAL`, exigindo bump de versão no `VERSION.md`.
-- [Linhas 4701-4750]: O `RX_REPOSITORIO.md` estabelece a hierarquia funcional de verdade, onde o Nível 0 (Leis) governa o Nível 2 (Ação Tática).
-- [Linhas 4751-4800]: O kit proíbe expressamente a introdução de orquestradores complexos (Kubernetes) ou infraestruturas MLOps pesadas no core.
-- [Linhas 4801-4850]: O `TECHNICAL_REQUIREMENTS.md` utiliza blocos de auto-sincronização para detectar automaticamente tabelas do schema como a tabela `orders`.
-- [Linhas 4851-4900]: O `TESTS.md` proíbe a operação de qualquer caso de negócio sem que a cobertura e o edge case estejam declarados na matriz de testes.
-- [Linhas 4901-4950]: Toda nova funcionalidade de banco de dados deve nascer em uma migração incremental (ex: `002_*.sql`) detectável pela governança H.O.K.
-- [Linhas 4951-5000]: O manual de reconstrução oferece interfaces via NPM, Make e Bash para garantir resiliência universal na execução da governança.
-
-## 🧬 Bloco 6: Anatomia, Biologia e o Mapa (Linhas 5001 - 6000)
-- [Linhas 5001-5050]: O protocolo de restauração exige que documentos arquivados em `_archive_context/` sejam movidos manualmente de volta para suas camadas originais.
-- [Linhas 5051-5100]: A `rx-anatomy.md` proíbe a inclusão de lógica de negócio, restringindo-se exclusivamente ao mapeamento das pastas físicas no disco.
-- [Linhas 5101-5150]: A biologia do framework define uma "esteira digestiva" em quatro fases: Validação, Sincronia, Harness e Linter Epistemológico.
-- [Linhas 5151-5200]: O `harness_runner.py` é o "Sistema Imunológico" que interrompe o commit (Exit 1) se detectar violações estratégicas ou de papéis.
-- [Linhas 5201-5250]: O `version_targets.json` exige que a versão declarada no `VERSION.md` seja idêntica nos arquivos `package.json`, `INCEPTION.md` e `VISION.md`.
-- [Linhas 5251-5300]: O `MARKET_INBOX.md` centraliza o rastreamento de gaps de pesquisa (ex: conformidade LGPD) com fontes obrigatórias da pasta `raw/`.
-- [Linhas 5301-5350]: Após o clone do template, é obrigatório criar um novo Notebook no NotebookLM e atualizar o `oracle_mcp_id` no `SSOT_MAP.md`.
-- [Linhas 5351-5400]: A Hierarquia da Verdade Local prioriza o Oráculo Externo (Nível 1) sobre as Wiki Concepts (Nível 2) e Regras de Negócio (Nível 3).
-- [Linhas 5401-5450]: O Architecture Fitness Harness atua como "leão de chácara" estrutural, impedindo que a IA crie atalhos que violem fronteiras de módulos.
-- [Linhas 5451-5500]: O Behaviour Harness cura o "Viés de Leniência" da IA ao separar obrigatoriamente o agente que constrói (Maker) do agente que julga (Checker).
-- [Linhas 5501-5550]: O Maintainability Harness utiliza regras determinísticas de AST para impedir que a base de software apodreça com código duplicado.
-- [Linhas 5551-5600]: O Ralph Wiggum Loop aniquila a memória do chat periodicamente para garantir que a IA renasça com estado limpo a cada tarefa.
-- [Linhas 5601-5650]: O `wiki_log.md` é um registro append-only que audita cada tentativa de ingestão e validação epistemológica de novos artigos.
-- [Linhas 5651-5700]: O dashboard de saúde propõe o "Reset de Sessão" (Snapshot) caso o número de interações (Turns) no chat ultrapasse o limite de 18.
-- [Linhas 5701-5750]: O odômetro de execução em `EXECUTION_BUFFER.md` exige um Checkpoint de Sanidade a cada 5 ticks de uso de ferramentas executivas pela IA.
-- [Linhas 5751-5800]: O `PROJECT_INDEX.md` ignora pastas como `.venv` e `node_modules` para garantir um mapa arquitetural de baixíssimo consumo de tokens.
-- [Linhas 5801-5850]: O índice do projeto provê o mapeamento de caminhos absolutos para todos os subagentes nativos localizados em `.agent/subagents/`.
-- [Linhas 5851-5900]: Todos os arquivos de governança são rastreados no índice com hashes SHA1 para garantir a integridade contra modificações não autorizadas.
-- [Linhas 5901-5950]: O bundle utiliza marcadores `CONTENT_OMITTED toc_only=true` para scripts pesados, otimizando a janela de contexto para orquestração.
-- [Linhas 5951-6000]: O `project_bundler.py` é documentado como tendo 429 linhas de lógica, consolidando sua posição como um dos órgãos vitais mais complexos.
-
-## 🧪 Bloco 7: Bancada de Specs e Implementação SAM (Linhas 6001 - 7000)
-- [Linhas 6001-6050]: O script `validate_context.py` v2.5.2 dedica 253 linhas de lógica para a verificação de frontmatter e cálculo de "Token Bloat" por turnos.
-- [Linhas 6051-6100]: O `RULES.md` atua como a constituição do projeto em 137 linhas, definindo comportamentos estritos para humanos e agentes.
-- [Linhas 6101-6150]: O `JOURNAL.md` rastreia o histórico contínuo de decisões e handoffs em 363 linhas organizadas por ordem cronológica reversa.
-- [Linhas 6151-6200]: O `SSOT_MAP.md` é estabelecido como o roteador primário para a hierarquia de conhecimento, definindo a precedência do Oráculo.
-- [Linhas 6201-6250]: O artefato `ralph_wiggum_loop.md` codifica o padrão de "Loop Atômico" para garantir resets cognitivos e evitar degradação de raciocínio.
-- [Linhas 6251-6300]: A governança é reforçada via GitHub Actions (`context-health.yml`), que automatiza o scan de segredos a cada push na branch master.
-- [Linhas 6301-6350]: A spec `multi_agent_choreography` materializa fisicamente a arquitetura Hub & Spoke no sistema de arquivos.
-- [Linhas 6351-6400]: O script `init_ai_project.sh` atua como o bootstrapper supremo, injetando as ferramentas Python no ecossistema NPM.
-- [Linhas 6401-6450]: O `run_context.py` centraliza a orquestração em 5694 bytes, encapsulando comandos complexos em interfaces simplificadas.
-- [Linhas 6451-6500]: O pipeline de CI executa sequencialmente a validação de contexto e o scanner de segredos em runners `ubuntu-latest`.
-- [Linhas 6501-6550]: Toda nova especificação em `.specs/features/` deve declarar obrigatoriamente um bloco `impact_control` no seu frontmatter.
-- [Linhas 6551-6600]: A spec `harness_fail_closed` valida que o sistema de segurança bloqueia o commit caso nenhum contrato de spec ativo seja detectado.
-- [Linhas 6601-6650]: A camada `meta-inception` introduz um gate no Harness que falha a execução se o código quebrar restrições estratégicas do Inception.
-- [Linhas 6651-6700]: O `harness_runner.py` deve implementar a lógica `check_impact_radius` cruzando o `git diff` com o limite definido na spec.
-- [Linhas 6701-6750]: A spec `qa_subagent` visa consolidar o Zero Trust ao instanciar um auditor autônomo para signoffs de código.
-- [Linhas 6751-6800]: A correção da cronologia do SAM sincroniza o auditor com o topo do Journal, alterando o índice de parsing de `[-1]` para `[1]`.
-- [Linhas 6801-6850]: O `synapse_workflow` impõe o `journal_mode: strict`, exigindo prova física de propagação para liberar o pipeline.
-- [Linhas 6851-6900]: O Sistema Anti-Migué (SAM) fecha o circuito entre Intenção (Journal), Obrigação (Synapse) e Realidade (Git).
-- [Linhas 6901-6950]: A Wiki Level 2 implementa uma cascata de busca determinística: `SSOT_MAP.md` -> `WIKI/_index.md` -> Fallback Lexical.
-- [Linhas 6951-7000]: O utilitário `wiki_log.md` garante escritas atômicas e proteção contra corrupção de log durante o processo de ingestão.
-
-## 🔧 Bloco 8: Estabilização, Bootstrapping e Testes (Linhas 7001 - 8000)
-- [Linhas 7001-7050]: A estabilização do servidor MCP no Windows exige a flag `$env:PYTHONUTF8=1` para evitar erros de caracteres no PowerShell.
-- [Linhas 7051-7100]: O login do NotebookLM persiste localmente na pasta `chrome_profile_notebooklm`, que nunca deve ser deletada pelo usuário.
-- [Linhas 7101-7150]: A Tríade H.O.K. (Harness, Oracle, Karpathy) é definida como a fundação para governança de Nível 3 no README principal.
-- [Linhas 7151-7200]: O `init_ai_project.sh` automatiza a injeção de scripts NPM para conectar ferramentas Python ao fluxo de trabalho do desenvolvedor.
-- [Linhas 7201-7250]: O framework opera nativamente no fuso de Brasília (-3h), permitindo sobrescrita global via variável `CONTEXT_TIMEZONE`.
-- [Linhas 7251-7300]: O ritual de "Sunrise" (Início de Sessão) exige a leitura obrigatória das últimas 30 linhas do `JOURNAL.md` para evitar drift cognitivo.
-- [Linhas 7301-7350]: O hook `pre-commit` (Husky) bloqueia preventivamente o código se o pipeline `context:all` detectar violações de contrato.
-- [Linhas 7351-7400]: O protocolo de migração exige a remoção do histórico `.git` original para iniciar um novo projeto a partir do template semente.
-- [Linhas 7401-7450]: A versão 2.5.2 introduz a segregação obrigatória entre Executor e Validador para todas as especificações de tipo "standard".
-- [Linhas 7451-7500]: O `Modo Light` é ativado por uma flag física (`MODE: LIGHT`), instruindo a IA a ignorar camadas e scripts pesados.
-- [Linhas 7501-7550]: No Modo Light, o sistema ativa automaticamente a role `@fullstack-generalist` e desativa o registro multi-agente.
-- [Linhas 7551-7600]: O bootstrapper `init_ai_project.sh` é projetado para falhar se detectar uma pasta `.context/` pré-existente, evitando perda de dados.
-- [Linhas 7601-7650]: O sistema cria um diretório de manutenção (`_archive_context/`) para versionar journals e schemas antigos de forma organizada.
-- [Linhas 7651-7700]: O instalador utiliza Node.js para injetar mais de 10 comandos de governança diretamente no `package.json` do projeto alvo.
-- [Linhas 7701-7750]: O script `context:capture` utiliza o `captura_projeto.py` para gerar índices de símbolos e mapas de importação para a IA.
-- [Linhas 7751-7800]: O `run_context.py` implementa um bloqueio estratégico (Exit 2) quando detecta tarefas de ratificação pendentes (Tradução Pendente).
-- [Linhas 7801-7850]: O projeto entra em `TRANSLATION_LOCK` global se um `INCEPTION.proposed.md` estiver aguardando aprovação humana.
-- [Linhas 7851-7900]: O comando `bundle` permite que a IA gere a sua própria "Fonte da Verdade" consolidada em um único arquivo de contexto.
-- [Linhas 7901-7950]: O arquivo `run_context.sh` é oficialmente depreciado na v2.4.1, servindo apenas como wrapper para a engine Python.
-- [Linhas 7951-8000]: O sandbox de testes permite que projetos em estado `DRAFT` ignorem certas validações estruturais durante o onboarding inicial.
-
-## 🏁 Bloco 9: Encerramento e Trava Atômica (Linhas 8001 - 8066)
-- [Linhas 8001-8066]: O teste unitário `test_dirty_draft` garante que o framework bloqueie qualquer projeto que tente conter código fonte sem uma spec ativa.
-
----
-**CONTRATO DE EXTRAÇÃO CONCLUÍDO (Antigravity Kit v2.5.2)**
-Auditado em: 2026-04-29
-Status: ✅ DETERMINÍSTICO & IMUNIZADO
-Total de Linhas Processadas: 8.066
-Total de Fatos Extraídos: 161
-──────────────────────────────────────
-
+[Linhas 0001-0050]: Bundle gerado com schema_version 1 em 2026-04-30 contendo 91 arquivos e 362.035 bytes.
+[Linhas 0051-0100]: O mapeamento INDEX_BY_DOMAIN categoriza o repositório em domínios técnicos (config, db, docs, source).
+[Linhas 0101-0150]: A estrutura .specs/features/ armazena arquivos STATE.md e spec.md para controle de ciclo de vida de funcionalidades.
+[Linhas 0151-0200]: O diretório .context/_scripts/ centraliza lógica de validação, limpeza, oráculo e sincronização de saúde do projeto.
+[Linhas 0201-0250]: O subagent qa-validator (.agent/subagents/) é definido para auditoria técnica independente e autorização de commits.
+[Linhas 0251-0300]: O QA Validator opera sob a filosofia Zero Trust, verificando Git Diff e Specs independentemente do agente executor.
+[Linhas 0301-0350]: O spec-driver é obrigado a executar o Pre-flight Gate para validar o raio de impacto antes de qualquer escrita.
+[Linhas 0351-0400]: O script _tz_utils.py implementa um TZ_MAP para suportar múltiplos offsets de fuso horário, com foco em Brasília (UTC-3).
+[Linhas 0401-0450]: O utilitário _wiki_log_utils.py utiliza escape de pipes e spin locks para garantir escritas atômicas em tabelas Markdown.
+[Linhas 0451-0500]: O sistema de consistência de versão normaliza padrões vX.Y ou vX.Y.Z para o formato SSOT X.Y.Z.
+[Linhas 0501-0550]: O validador de versões encerra o processo com erro fatal se detectar drift entre o VERSION.md e os arquivos-alvo.
+[Linhas 0551-0600]: O script cleanup_specs.py remove a spec mais antiga (baseado em mtime) quando o limite de 3 specs ativas é excedido.
+[Linhas 0601-0650]: O context_oracle.py utiliza uma STEM_WHITELIST interna para processar termos técnicos sem dependências externas de NLP.
+[Linhas 0651-0700]: O oráculo de contexto implementa um sistema de pesos onde tags explícitas no _index.md recebem peso massivo (10.0).
+[Linhas 0701-0750]: A lógica de busca do oráculo utiliza Counter para agregar scores de hits determinísticos e léxicos por arquivo.
+[Linhas 0751-0800]: O oráculo de contexto retorna 'baixa confiança' se o score do Top 1 for < 0.6, sugerindo refinamento da pesquisa.
+[Linhas 0801-0850]: O script context_oracle.py registra cada consulta no wiki_log.md com o respectivo status (OK ou FAIL) e nível de confiança.
+[Linhas 0851-0900]: O script enrich_context.py identifica entidades críticas (Stripe, AWS, LGPD, etc.) via regex no arquivo INCEPTION.md.
+[Linhas 0901-0950]: Gaps de conformidade detectados pelo enrich_context.py são registrados automaticamente no MARKET_INBOX.md para pesquisa futura.
+[Linhas 0951-1000]: O harness_runner.py valida a integridade de contratos técnicos entre specs e o arquivo de definição de banco de dados schema.sql.
+[Linhas 1001-1050]: O validador de contratos de banco de dados ignora prefixos como IF NOT EXISTS ao extrair nomes de tabelas do schema.sql.
+[Linhas 1051-1100]: O harness_runner valida handoffs modernos (🔄 Handoff:) exigindo pelo menos dois pipes para garantir dados completos de transferência.
+[Linhas 1101-1150]: Violações estratégicas são detectadas se o PRD.md incluir termos explicitamente proibidos (seção NUNCA) no arquivo INCEPTION.md.
+[Linhas 1151-1200]: A seção Critical Dependencies no PRD torna-se obrigatória e deve ter lastro em market/ se houver menção a integrações externas.
+[Linhas 1201-1250]: Specs classificadas como 'standard' exigem segregação de contexto (IDs distintos para executor e validador) para serem autorizadas.
+[Linhas 1251-1300]: No modo ASSIST, o SAM Auditor reporta violações no JOURNAL.md mas permite a continuidade do pipeline com aviso.
+[Linhas 1301-1350]: O harness_runner.py atualiza arquivos STATE.md com timestamps e utiliza o Oráculo como gate epistemológico pré-execução.
+[Linhas 1351-1400]: O Gate Epistemológico permite bypass automático caso a consulta ao Oráculo de Contexto exceda o timeout de 2 segundos.
+[Linhas 1401-1450]: O pipeline de governança bloqueia execuções se detectar atividade de código real enquanto o INCEPTION.md estiver em DRAFT.
+[Linhas 1451-1500]: O health_sync.py quantifica o volume do JOURNAL.md e rastreia o último status (FAIL/PASS) para o dashboard de saúde.
+[Linhas 1501-1550]: A estimativa de tokens no health_sync.py é calculada dividindo o total de caracteres por 4 para as principais extensões de texto.
+[Linhas 1551-1600]: O dashboard CONTEXT_HEALTH.md emite avisos de 'Context Bloat' quando a estimativa de tokens do repositório ultrapassa 100k.
+[Linhas 1601-1650]: O script ingest_wiki_guard.py utiliza substituição atômica de arquivos e retry backoff para evitar corrupção do índice da Wiki.
+[Linhas 1651-1700]: Para ser aceito na Wiki, um artigo deve possuir frontmatter YAML completo e uma seção de 'Key Takeaways'.
+[Linhas 1701-1750]: O sistema Karpathy Layer impõe rastreabilidade mandatória, exigindo que claims técnicos apontem para fontes em market/RAW/.
+[Linhas 1751-1800]: O linter da Wiki Karpathy bloqueia o pipeline caso artigos em market/WIKI não possuam citacão RAW obrigatória.
+[Linhas 1801-1850]: Erros fatais são emitidos pelo linter se houver ausência de Frontmatter, Key Takeaways ou conectividade (links) na Wiki.
+[Linhas 1851-1900]: O migration_registry.py impõe a convenção de nomenclatura 003d (001_*.sql) para garantir a ordem incremental de esquemas.
+[Linhas 1901-1950]: O script oracle_analytics.py analisa a telemetria do wiki_log.md para identificar termos com baixa confiança de resposta.
+[Linhas 1951-2000]: O project_bundler.py (v2.5.2) utiliza padrões universais de exclusão para filtrar diretórios de build, caches e ambientes virtuais.
+[Linhas 2001-2050]: O bundler classifica semanticamente os arquivos (api, ui, lib, db, etc.) através de regras baseadas em regex no caminho do arquivo.
+[Linhas 2051-2100]: A configuração do bundle é gerenciada via dataclasses, permitindo controle sobre o limite de linhas por arquivo e máscara de segredos.
+[Linhas 2101-2150]: O project_bundler.py possui extratores de símbolos e importações para otimizar o entendimento da estrutura de dependências do código.
+[Linhas 2151-2200]: O sistema de coleta de arquivos utiliza chunking determinístico para garantir que blocos de texto não sejam truncados de forma arbitrária.
+[Linhas 2201-2250]: Um mecanismo de 'Isolamento Cirúrgico' é aplicado para ignorar pastas volumosas de conformidade (market/compliance) no bundle final.
+[Linhas 2251-2300]: O project_bundler.py gera registros de arquivo (FileRecord) contendo hashes SHA1 e timestamps de modificação em formato ISO.
+[Linhas 2301-2350]: O bundle markdown inclui índices automáticos INDEX_BY_DOMAIN e INDEX_BY_PATH com âncoras para navegação rápida entre arquivos.
+[Linhas 2351-2400]: O sistema de geração utiliza delimitadores FILE_START e CHUNK_START para organizar o conteúdo de forma legível para modelos de IA.
+[Linhas 2401-2450]: O script purge_journal.py executa a limpeza do JOURNAL.md, arquivando 70% das entradas e mantendo 30% como memória curta.
+[Linhas 2451-2500]: O processo de purga do Journal utiliza substituição atômica de arquivos para garantir a integridade dos dados em caso de falha.
+[Linhas 2501-2550]: O secrets_scanner.py utiliza 'git ls-files' para realizar uma varredura de segredos com performance otimizada O(N).
+[Linhas 2551-2600]: O scanner de segredos suporta uma lista de exceções legítimas via arquivo .secrets-allowlist para evitar falsos positivos.
+[Linhas 2601-2650]: O script sync_project.py utiliza comentários HTML de 'AUTO-SYNC' para preservar edições humanas em documentos técnicos.
+[Linhas 2651-2700]: A sincronização do projeto consolida dependências de software e tabelas de banco de dados no TECHNICAL_REQUIREMENTS.md.
+[Linhas 2701-2750]: O validador de contexto impõe a existência mandatória de arquivos como RULES.md, MASTER_FLOW.md e AGENT_REGISTRY.md.
+[Linhas 2751-2800]: O validate_context.py verifica a presença de tabelas de papéis (roles) no arquivo AGENT_REGISTRY.md para governança.
+[Linhas 2801-2850]: A infraestrutura da Wiki é validada pela presença mandatória do índice mestre (_index.md) e do log de transações.
+[Linhas 2851-2900]: O validador detecta inconsistências se o projeto estiver em modo Onboarding (DRAFT) mas já possuir código ativo em src/ ou .specs/.
+[Linhas 2901-2950]: O validate_context.py emite status PENDING (Exit 2) se houver um VISION.md aguardando tradução para o formato INCEPTION.md.
+[Linhas 2951-3000]: O Auditor SAM utiliza o comando git status para obter a realidade física do repositório (arquivos novos e modificados).
+[Linhas 3001-3050]: O auditor SAM extrai regras de conformidade em formato JSON a partir de marcadores no arquivo JOURNAL_SYNAPSE.md.
+[Linhas 3051-3100]: O sistema SAM valida se tags obrigatórias e arquivos modificados foram devidamente reportados no Journal da sessão.
+[Linhas 3101-3150]: A auditoria bloqueia o pipeline (Exit 1 em modo STRICT) se houver colisão entre os IDs de executor e validador no contrato.
+[Linhas 3151-3200]: O AGENT_REGISTRY.md atua como o 'DNS cognitivo', proibindo a execução de qualquer agente ou role não registrado oficialmente.
+[Linhas 3201-3250]: Cada role no AGENT_REGISTRY possui permissões de escrita explícitas e gatilhos de ativação para reduzir alucinações.
+[Linhas 3251-3300]: O FILE_GLOSSARY.md define o README.md como a apresentação comercial externa e o README_CONTEXT.md como o manual de operação para IAs.
+[Linhas 3301-3350]: O arquivo rx-anatomy.md mapeia a hierarquia física das pastas, enquanto o rx-biology.md mapeia o fluxo lógico de dados da aplicação.
+[Linhas 3351-3400]: O HARNESS_REGISTRY.md cataloga validadores ativos (ex: H01 para Schema, H04 para Secrets) e define regras de fallback para falhas consecutivas.
+[Linhas 3401-3450]: O INCEPTION.md estabelece limites inegociáveis (NUNCA), como a proibição de infraestruturas MLOps pesadas e a obrigatoriedade de citações Karpathy.
+[Linhas 3451-3500]: O MASTER_FLOW.md exige que todos os arquivos em .context/ possuam metadados obrigatórios de criação, atualização e status no cabeçalho.
+[Linhas 3501-3550]: O Ciclo de Vida TLC (4 Atos) proíbe a geração de código sem qa_signoff e exige IDs de contexto distintos para executor e validador.
+[Linhas 3551-3600]: O MASTER_FLOW.md impõe o 'Radar Arquitetural', exigindo a inspeção do PROJECT_INDEX.md antes da criação de novos arquivos para evitar duplicidade.
+[Linhas 3601-3650]: O PRD.md exige que todas as dependências críticas (externas ou de compliance) possuam lastro validado na camada market/.
+[Linhas 3651-3700]: O prompt padrão para @frontend-specialist exige conformidade mínima WCAG 2.1 AA e proibição de dados hardcoded em componentes UI.
+[Linhas 3701-3750]: O protocolo de auditoria SAM para @qa-validator exige a execução de 'git diff --name-only' para comprovar a realidade física das alterações.
+[Linhas 3751-3800]: O @spec-enricher interrompe o processo (Exit 2) se identificar gaps de mercado não documentados em market/MARKET_INBOX.md.
+[Linhas 3801-3850]: O prompt do @oracle-searcher instrui a IA a tratar informações com confiança (confidence) inferior a 0.6 apenas como sugestões.
+[Linhas 3851-3900]: O ROADMAP.md define 4 fases (Discovery, Contratos, Features, Scale) e proíbe o salto de etapas sem cumprir os critérios de saída.
+[Linhas 3901-3950]: O RULES.md define o status DRAFT no INCEPTION.md como um bloqueador global que permite apenas leitura e criação do VISION.md.
+[Linhas 3951-4000]: O Ralph Wiggum Loop foca na execução absoluta e efêmera de specs atômicas, com aniquilação periódica da memória sintética da IA.
+[Linhas 4001-4050]: Scripts de governança em Python devem forçar I/O em UTF-8 para garantir compatibilidade com consoles Windows.
+[Linhas 4051-4100]: O script run_context.py encapsula chamadas CLI e abstrai o sistema operacional para os comandos do framework.
+[Linhas 4101-4150]: Scripts de manutenção como purge_journal.py garantem a eficiência de tokens ao arquivar logs e limpar specs antigas.
+[Linhas 4151-4200]: O framework bloqueia a escrita de código em src/ caso o Inception estratégico esteja em status DRAFT.
+[Linhas 4201-4250]: O Ciclo de Vida Híbrido exige a transformação de intenções (PRD) em specs técnicas via sub-skill specify.md.
+[Linhas 4251-4300]: A filosofia do kit define a equação Agente = Modelo + Harness para combater a dívida técnica gerada por IAs.
+[Linhas 4301-4350]: O sistema adota a 'Divulgação Progressiva' para evitar o inchaço de contexto na janela de tokens do modelo.
+[Linhas 4351-4400]: A arquitetura é estritamente DB-First, proibindo a construção de lógica sem a prévia validação do schema.sql.
+[Linhas 4401-4450]: Caso o banco de dados esteja offline, o framework exige o uso de mocks fiéis ao formato declarado no schema.sql.
+[Linhas 4451-4500]: O HARNESS_LOG.md registra falhas de conformidade que bloqueiam o pipeline de commit em modo STRICT.
+[Linhas 4501-4550]: O JOURNAL.md mantém o histórico de longo prazo e aponta para arquivos mortos de entradas purgadas.
+[Linhas 4551-4600]: O motor Oracle v3.0 utiliza Stemming pt-BR e suporte a siglas para aumentar a precisão das buscas de domínio.
+[Linhas 4601-4650]: O waypoint de 'Consciência Sistêmica' marca o momento em que a IA concluiu a leitura física e auditada do contexto integral.
+[Linhas 4651-4700]: O 'Circuit Breaker' de impacto (max_impact_radius) é usado para forçar a re-fragmentação de tarefas excessivamente complexas.
+[Linhas 4701-4750]: O PROJECT_INDEX.md é regenerado autonomamente a cada commit para servir como radar arquitetural contra duplicidades.
+[Linhas 4751-4800]: O FILE_GLOSSARY.md atua como o dicionário definitivo de responsabilidades, mapeando cada arquivo .md para seu respectivo agente guardião.
+[Linhas 4801-4850]: O subagente @qa-validator assume o ID CTX_QA_VALIDATOR para realizar auditorias isoladas, eliminando o humano como gargalo mecânico.
+[Linhas 4851-4900]: O script workflow_journal_auditor.py foi corrigido para suportar a Ordem Cronológica Reversa, focando na entrada do topo do JOURNAL.md.
+[Linhas 4901-4950]: A implementação do Sistema Anti-Migué (SAM) bloqueia commits caso a propagação de mudanças não seja comprovada via Reality Check (Git Diff).
+[Linhas 4951-5000]: O JOURNAL_SYNAPSE.md define regras de severidade (critical/warning) para mudanças em arquivos sensíveis como schema.sql e RULES.md.
+[Linhas 5001-5050]: Mudanças no arquivo RULES.md exigem obrigatoriamente um bump de metadados no VERSION.md conforme a regra rules_change do Synapse.
+[Linhas 5051-5100]: O RX_REPOSITORIO.md mapeia as 4 camadas de RX (Geral, Framework, Negócio, Produto) e define o estado Hardened com Zero Trust.
+[Linhas 5101-5150]: A hierarquia de verdade do repositório coloca RULES.md, INCEPTION.md e AGENT_REGISTRY.md no Nível 0 (Leis Fundamentais).
+[Linhas 5151-5200]: O framework proíbe expressamente o uso de Kubernetes (K8s) e Bancos Vetoriais no core para limitar a dívida técnica e custos.
+[Linhas 5201-5250]: A seção AUTO-SYNC do TECHNICAL_REQUIREMENTS.md é populada automaticamente para refletir as dependências reais de desenvolvimento.
+[Linhas 5251-5300]: O TESTS.md declara que nenhum caso de negócio pode operar sem cobertura declarada e validada pelo sistema de governança.
+[Linhas 5301-5350]: A regra DB-First exige que todo novo campo de banco de dados nasça em uma nova migration numerada (ex: 002_*.sql).
+[Linhas 5351-5400]: O manual de reconstrução oferece três opções de automação: NPM (recomendado para web), Make (Unix/CI) e Bash (universal).
+[Linhas 5401-5450]: O rx-anatomy.md é um harness preventivo que proíbe a inserção de regras de negócio ou fluxos lógicos em sua estrutura.
+[Linhas 5451-5500]: O rx-biology.md descreve o metabolismo funcional do framework através de um diagrama de fluxo que transforma intenções em código imunizado.
+[Linhas 5501-5550]: O script harness_runner.py atua como o sistema imunológico, 'matando' processos que tentam burlar a segregação de papéis ou limites estratégicos.
+[Linhas 5551-5600]: O snapshot real da tabela de pedidos (schema.sql) define campos críticos como stripe_session_id e total_amount para a lógica financeira.
+[Linhas 5601-5650]: O version_targets.json estabelece que o VERSION.md é o SSOT, exigindo que package.json e INCEPTION.md mantenham paridade de versão.
+[Linhas 5651-5700]: O SSOT_MAP.md instrui o humano a atualizar o oracle_mcp_id (NotebookLM) imediatamente após clonar o template do projeto.
+[Linhas 5701-5750]: Na Hierarquia da Verdade, o Oráculo Externo (NotebookLM) possui precedência máxima, seguido pelas pílulas de conhecimento na Wiki local.
+[Linhas 5751-5800]: O Architecture Fitness Harness protege as fronteiras modulares e direções de dependência, impedindo atalhos arquiteturais da IA.
+[Linhas 5801-5850]: A integração do Architecture Harness no kit utiliza o script harness_runner.py como juiz definitivo contra o drift estratégico do DB.
+[Linhas 5851-5900]: O Behaviour Harness combate o 'Viés de Leniência' através da separação obrigatória entre o agente que constrói e o agente que julga.
+[Linhas 5901-5950]: O pipeline de segurança bloqueia o avanço se os IDs de contexto de executor e validador forem idênticos em especificações standard.
+[Linhas 5951-6000]: O Maintainability Harness utiliza linters e formatadores como sensores computacionais determinísticos para bloquear códigos de baixa qualidade.
+[Linhas 6001-6050]: O script lint_wiki.py garante que cada afirmação técnica na documentação possua uma fonte rastreável na pasta market/RAW/.
+[Linhas 6051-6100]: O Ralph Wiggum Loop aniquila a memória de chat a cada tarefa para evitar o Context Rot e manter a sanidade cognitiva da IA.
+[Linhas 6101-6150]: O Ralph Wiggum Loop é exclusivo para execução determinística, sendo proibido seu uso em fases de descoberta ou brainstorming.
+[Linhas 6151-6200]: O wiki_log.md registra todas as transações de ingestão e linting da Wiki, permitindo a rastreabilidade da linhagem de conhecimento.
+[Linhas 6201-6250]: O dashboard de saúde monitora o Token Bloat e a carga do Journal, disparando alertas se o limite de 50k caracteres for atingido.
+[Linhas 6251-6300]: O PROJECT_INDEX.md organiza arquivos por domínio (config, db, docs, source), provendo IDs únicos para ancoragem de contexto.
+[Linhas 6301-6350]: O mapeamento INDEX_BY_PATH permite que agentes localizem rapidamente metadados de arquivos críticos como validate_context.py e RULES.md.
+[Linhas 6351-6400]: Os prompts dos subagentes (qa-validator, spec-driver) são omitidos do bundle TOC para economizar tokens em varreduras globais.
+[Linhas 6401-6450]: O script _tz_utils.py centraliza a gestão de fusos horários, garantindo a consistência temporal dos logs em Brasília (-3h).
+[Linhas 6451-6500]: O MASTER_FLOW.md v2.5.2 documenta o fluxo SAM de validação determinística entre o Diário e o Git Diff.
+[Linhas 6501-6550]: O PROMPT_LIBRARY.md centraliza os artefatos cognitivos necessários para a execução fiel de papéis pelo Arquiteto e Executor.
+[Linhas 6551-6600]: O HARNESS_LOG.md registra as evidências físicas de cada execução do Oráculo e do Bundler, servindo como trilha de auditoria.
+[Linhas 6601-6650]: O rebuild_guide.md estabelece o protocolo de restauração do contexto a partir de snapshots arquivados por timestamp.
+[Linhas 6651-6700]: A WIKI centraliza conceitos como Karpathy Protocol e Ralph Wiggum Loop para unificar a linguagem técnica entre humanos e IAs.
+[Linhas 6701-6750]: O dashboard CONTEXT_HEALTH.md monitora a 'Carga do Journal' em caracteres para evitar a saturação da memória operativa.
+[Linhas 6751-6800]: O workflow context-health.yml executa automaticamente o validate_context.py e o secrets_scanner.py a cada push/PR.
+[Linhas 6801-6850]: A configuração legada do husky.sh em .husky/_/ foi depreciada em favor da integração nativa via scripts Python do framework.
+[Linhas 6851-6900]: O template de specs exige o controle de impacto (max_impact_radius) para limitar o rastro de alteração em arquivos críticos.
+[Linhas 6901-6950]: A feature 'harness_fail_closed' exige que o script runner trave o commit (Exit 1) se não localizar uma spec ativa assinada.
+[Linhas 6951-7000]: O protocolo meta-inception exige que o agente execute a própria alteração que tranca o repositório sob uma spec atômica.
+[Linhas 7001-7050]: A feature meta-inception exige a criação de templates-base para INCEPTION.md e SSOT_MAP.md, além do registro da role @vision-architect.
+[Linhas 7051-7100]: A arquitetura Hub & Spoke exige que o script harness_runner.py implemente o check_impact_radius contra o limite max_impact_radius.
+[Linhas 7101-7150]: O Oracle v3.0 calibra o cálculo de confidence para priorizar matches exatos e retorna o Top-N de resultados graduados.
+[Linhas 7151-7200]: A implementação do subagente de QA utiliza o gatilho cognitivo 'Automatically delegate' para forçar a auditoria autônoma.
+[Linhas 7201-7250]: O parser get_latest_journal_entry foi modificado para extrair o primeiro bloco válido (índice 1) após o cabeçalho do arquivo.
+[Linhas 7251-7300]: O modo STRICT do pipeline SAM bloqueia commits se detectar contratos incompletos ou status de validação inválidos no Journal.
+[Linhas 7301-7350]: O Sistema Anti-Migué exige que o JOURNAL_SYNAPSE.md utilize um bloco JSON nativo embutido entre tags de comentário HTML.
+[Linhas 7351-7400]: A especificação da Wiki Nível 2 exige o roteamento determinístico: SSOT_MAP.md -> WIKI/_index.md -> Fallback Lexical.
+[Linhas 7401-7450]: O cronograma da Wiki Nível 2 inclui a criação do utilitário _wiki_log_utils.py para escrita atômica e segura de logs.
+[Linhas 7451-7500]: O guia de estabilização do NotebookLM exige o uso de undetected-chromedriver para evitar a detecção de robôs pelo Google.
+[Linhas 7501-7550]: Em caso de falha de autenticação, o ritual exige mudar headless para false no config e logar manualmente na janela do navegador.
+[Linhas 7551-7600]: O pilar Karpathy de governança v2.5.2 atua como um linter epistemológico que exige fontes para todo claim técnico.
+[Linhas 7601-7650]: O script init_ai_project.sh aborta a execução se a pasta .context/ estruturada já existir no diretório de destino.
+[Linhas 7651-7700]: O fuso horário global pode ser alterado via variável de ambiente CONTEXT_TIMEZONE ou no arquivo .env do projeto.
+[Linhas 7701-7750]: O ritual de Sunrise exige que a IA execute npm run context:validate e leia as últimas 30 linhas do JOURNAL.md antes de agir.
+[Linhas 7751-7800]: O comando npm run context:all orquestra o pipeline completo: validação, sincronização, limpeza, harness e lint em modo estrito.
+[Linhas 7801-7850]: O onboarding de novos projetos exige a criação do VISION.md e a ratificação do INCEPTION.proposed.md gerado pela IA.
+[Linhas 7851-7900]: O guia de migração instrui o usuário a realizar um reset do Git para romper o vínculo com o template e iniciar um novo histórico.
+[Linhas 7901-7950]: A versão 2.5.2 do Antigravity Kit introduziu a segregação independente de QA e o radar arquitetural via PROJECT_INDEX.md.
+[Linhas 7951-8000]: O Modo Light é recomendado para MVPs com duração inferior a 2 semanas e equipes reduzidas, priorizando velocidade sobre governança pesada.
+[Linhas 8001-8050]: A ativação do Modo Light é feita através do arquivo MODE.md na raiz de .context/, instruindo a IA a ignorar camadas e scripts complexos.
+[Linhas 8051-8100]: O script de bootstrap verifica a existência de Git e Python (3.x) como requisitos mínimos antes de inicializar a estrutura Antigravity.
+[Linhas 8101-8150]: O bootstrapper cria automaticamente a estrutura de camadas (brain, maintenance, monitoring, _scripts) e o diretório efêmero .specs/.
+[Linhas 8151-8200]: O script de inicialização utiliza Node.js para injetar dinamicamente os comandos context:* no package.json do projeto.
+[Linhas 8201-8250]: O package.json v2.5.2 inclui scripts especializados como context:wiki-health, context:workflow-journal e context:bundle.
+[Linhas 8251-8300]: O run_context.py trata o código de saída 2 como um 'Strategic Block', sinalizando pendências que travam o pipeline local.
+[Linhas 8301-8350]: O projeto entra em TRANSLATION_LOCK caso o INCEPTION.md não esteja ratificado, bloqueando todos os comandos exceto 'enrich' e 'help'.
+[Linhas 8351-8400]: A sequência do pipeline 'all' é: version -> validate -> secrets -> sync -> migrations -> harness -> ingest -> lint -> health -> map.
+[Linhas 8401-8450]: O uso do run_context.sh foi depreciado na v2.4.1+, servindo apenas como redirecionador para a engine unificada em Python.
+[Linhas 8451-8500]: A suíte de testes de governança utiliza diretórios temporários (tempfile) como sandboxes para validar os scripts sem afetar o repositório real.
+[Linhas 8501-8550]: O validador de contexto retorna 0 para onboarding, 2 para tradução pendente/lock e 1 para violações estratégicas (código em DRAFT).
+[Linhas 8551-8600]: Testes de purge do Journal garantem que entradas antigas sejam movidas para _archive_context/journals preservando a integridade do arquivo principal.
+[Linhas 8601-8650]: A suíte de testes do Oráculo v3 utiliza Pathlib e diretórios temporários para garantir a independência de sistema operacional (Windows/Unix).
+[Linhas 8651-8700]: O test_oracle.py valida a normalização de acentos e markdown em queries, garantindo que buscas por 'configuracao' encontrem 'Configuração'.
+[Linhas 8701-8753]: A calibração de confiança do Oráculo garante que matches por tags no índice tenham precedência sobre matches por corpo de texto acumulado.

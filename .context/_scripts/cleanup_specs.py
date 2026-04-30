@@ -24,7 +24,7 @@ MAX_ACTIVE_SPECS = 3
 def get_specs():
     if not SPECS_DIR.exists():
         return []
-    return [d for d in SPECS_DIR.iterdir() if d.is_dir()]
+    return [d for d in SPECS_DIR.iterdir() if d.is_dir() and not d.name.startswith("_")]
 
 def archive_spec(spec_path):
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)

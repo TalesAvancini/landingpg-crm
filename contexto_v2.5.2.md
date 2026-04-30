@@ -2,12 +2,12 @@
 
 ---
 schema_version: 1
-generated_at: 2026-04-30T01:27:50.295304+00:00
+generated_at: 2026-04-30T05:41:51.084870+00:00
 root: template_inicío_de_projeto
 mode: full
 profile: ai-default
 file_count: 91
-byte_count: 358108
+byte_count: 362035
 ignored_dirs:
   - .cache
   - .cursor
@@ -4165,41 +4165,65 @@ FILE_END id=file_e11d89201917
 
 ---
 <a id="file_450d7ec70909"></a>
-FILE_START id=file_450d7ec70909 path=.context/brain/TLC_INTEGRATION.md domain=docs lang=markdown lines=32 bytes=1739 mtime=2026-04-11T02:29:02.337886+00:00 sha1=35e6506fdaaa427e4d5795b83709f4f9da37fc2d
-CHUNK_START id=450d7ec70909_c001 start_line=1 end_line=32
+FILE_START id=file_450d7ec70909 path=.context/brain/TLC_INTEGRATION.md domain=docs lang=markdown lines=56 bytes=3417 mtime=2026-04-30T05:41:11.362972+00:00 sha1=2557c8fc7d9cf2c65e7344ba6c628539abbb8e21
+CHUNK_START id=450d7ec70909_c001 start_line=1 end_line=56
 ```markdown
 ---
-Criado em: 2026-04-10 23:29
-Ultima Atualizacao: 2026-04-10 23:29
-Status: Ativo
+Ultima Atualizacao: 2026-04-30 02:43
+Status: 🔥 HARDENED (v2.5.2) - Agnóstico e Técnico
 ---
 
-# 🔗 TLC_INTEGRATION.md
-> Ponte entre Governança de Longo Prazo (`.context/`) e Execução Atômica (`.specs/`).  
-> 💡 *Insight Humano: O PRD diz O QUÊ e POR QUÊ. A SPEC diz COMO e QUANDO. O TLC orquestra a transição.*
+# skill mãe: tlc-spec-driven
 
-## 🔄 Ciclo de Vida Híbrido
-1. **INTENT** → `PRD.md` ativo define escopo e critérios de aceite.
-2. **SPECIFY** → IA cria `.specs/features/[nome]/spec.md` com passos atômicos, contratos de API/DB e testes.
-3. **IMPLEMENT** → Geração de código baseada na spec. Handoffs registrados no `JOURNAL.md`.
-4. **VERIFY** → Testes passam → `STATE.md` marcado como `✅ PASSED`.
-5. **SYNC** → Decisões arquiteturais e lições → `JOURNAL.md`. Spec arquivada ou deletada.
+# 🔗 TLC_INTEGRATION.md: O Córtex de Execução
+> Ponte definitiva entre Governança (`.context/`) e Execução Atômica (`.specs/`).
+> 💡 *A Fonte de Intenção (Plano/PRD) diz O QUÊ. A Spec TLC diz COMO. O Flash-Harness prova que FOI FEITO.*
 
-## 📏 Regras de Ouro
-- 🔒 **Soberania do Contexto:** `.specs/` nunca sobrescreve `.context/`. Apenas alimenta a memória de longo prazo.
-- 🧹 **Efemeridade:** Spec inativa >48h ou pós-merge → mover para `_archive_context/specs/` ou deletar.
-- 🤝 **Handoff:** Handoff obrigatório no `JOURNAL.md` se a spec cruzar domínios (ex: `@backend` → `@qa`).
-- ⚠️ **Divergência:** Se `spec.md` divergir de `schema.sql` ou `PRD.md` → parar e solicitar correção de contexto.
+## 📖 Glossário de Sub-Skills (Motor Interno TLC)
 
-## 🤖 Fluxo de Ativação
-`"Inicie a fase de SPECIFY para o PRD #[ID]"` → 
-1. IA lê `PRD.md` + `schema.sql` + `JOURNAL.md` (últimas 30).
-2. Cria `.specs/features/[nome]/` com `spec.md` e `STATE.md: draft`.
-3. Executa passos atômicos → atualiza `STATE.md`.
-4. Ao concluir: `✅ Spec passed. Deseja arquivar a spec e sincronizar o JOURNAL.md?`
+Este sumário descreve as 16 inteligências modulares disponíveis dentro da pasta da skill `tlc-spec-driven`:
+
+### 🛠️ Camada de Mapeamento e Setup
+- **project-init.md:** Inicialização de novos projetos, visão e objetivos estratégicos.
+- **roadmap.md:** Gestão de Milestones e Sprints (Onde o tempo e os entregáveis são organizados).
+- **brownfield-mapping.md:** Mapeamento de bases de código existentes e análise de stack técnica.
+- **concerns.md:** Identificação de dívidas técnicas, riscos arquiteturais e áreas frágeis.
+
+### 📝 Camada de Especificação (O "O QUE")
+- **specify.md:** Transforma intenções em requisitos técnicos rastreáveis com IDs (O Coração da Spec).
+- **discuss.md:** Protocolo para resolver áreas cinzentas, ambiguidades e capturar decisões do usuário.
+- **design.md:** Definição de arquitetura, fluxos e componentes (O "COMO" técnico).
+
+### 🔨 Camada de Execução (O "COMO")
+- **tasks.md:** Checklist atômico com critérios de verificação técnica (`Verify`). Essencial para TDD.
+- **implement.md:** Regras para codificação incremental, uso de logs estruturados e prevenção de drift.
+- **quick-mode.md:** "Express Lane" para tarefas triviais (≤3 arquivos) sem necessidade de pipeline completo.
+- **state-management.md:** Controle do arquivo `STATE.md` (decisões, bloqueios, telemetria e memória).
+
+### ✅ Camada de Verificação e Encerramento
+- **validate.md:** Protocolo de teste, UAT e demonstração. Garante que o entregável satisfaz a spec.
+- **code-analysis.md:** Ferramentas e métodos para auditoria de código e checagem de padrões.
+- **session-handoff.md:** Protocolo para pausar, encerrar e retomar sessões sem perda de contexto operacional.
+- **context-limits.md:** Monitoramento e gestão do uso de tokens/contexto para evitar degradação da IA.
+- **coding-principles.md:** Leis fundacionais de engenharia aplicadas durante a implementação.
 
 ---
-> *Este documento garante que o "Cérebro" (Contexto) e o "Músculo" (TLC) operem em harmonia.*
+
+## 🔄 Ciclo de Vida Híbrido (v2.5.2)
+1. **INTENT:** Qualquer documento ativo (Plano, PRD, Estudo) define a intenção aprovada.
+2. **SPECIFY:** O Hub transforma a intenção em requisitos `spec.md` usando a sub-skill **specify.md**.
+3. **SPRINT PLANNING:** Organização no `tasks.md` via sub-skill **tasks.md**. **Prioridade: TDD**.
+4. **IMPLEMENT:** Execução mecânica via `@spec-driver` usando **implement.md**.
+5. **VERIFY:** Validação técnica via **validate.md**. Só marca `[x]` com evidência técnica.
+6. **SYNC:** Conclusão da Sprint → Atualização do `JOURNAL.md` via **session-handoff.md**.
+
+## 📏 Regras de Ouro (Zero Migué)
+- 🧪 **TDD e Verificação:** Proibido codar sem critério de prova. Se o teste falhar, a task não termina.
+- ⚡ **Flash-Harness Mandatório:** Diário de Bordo estruturado visível ANTES de cada ação.
+- 📦 **Single-Spec / Multi-Sprint:** Uma Spec por feature, progresso fatiado no `tasks.md`.
+
+---
+> *Este documento garante que o "Cérebro" e o "Músculo" operem em harmonia.*
 
 ```
 CHUNK_END id=450d7ec70909_c001
@@ -4288,8 +4312,8 @@ FILE_END id=file_9b6470da8849
 
 ---
 <a id="file_41c3d3da4381"></a>
-FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=186 bytes=7651 mtime=2026-04-30T00:49:33.332606+00:00 sha1=aee0f0274c62f872c18e787e00c42ed44f3b920c
-CHUNK_START id=41c3d3da4381_c001 start_line=1 end_line=186
+FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=206 bytes=8234 mtime=2026-04-30T04:33:59.461900+00:00 sha1=2c137bc5cb494d25fb0f0b18e68251b009fba3e6
+CHUNK_START id=41c3d3da4381_c001 start_line=1 end_line=206
 ```markdown
 ---
 Criado em: 2026-04-24 15:20
@@ -4478,13 +4502,33 @@ Status: Ativo
 ## [HARNESS-PASS] Report | spec:oracle_v3
 - **Detalhe:** All contracts valid
 
+## [HARNESS-PASS] Report | spec:oracle_v3
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:oracle_v3
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Contrato incompleto. Detectado: executor='', validator=''.
+  - Status de validação inválido: ''. Esperado 'READY TO COMMIT'.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-PASS] Report | spec:oracle_v3
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:oracle_v3
+- **Detalhe:** All contracts valid
+
 ```
 CHUNK_END id=41c3d3da4381_c001
 FILE_END id=file_41c3d3da4381
 
 ---
 <a id="file_019509328844"></a>
-FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=409 bytes=24853 mtime=2026-04-30T00:49:26.254476+00:00 sha1=4971afe48ac581b579c4b9b17b298898578cd2b6
+FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=450 bytes=27448 mtime=2026-04-30T04:39:49.243963+00:00 sha1=8e9168568d0ffeff68156fc9c8006d84f62343dc
 CHUNK_START id=019509328844_c001 start_line=1 end_line=300
 ```markdown
 ---
@@ -4496,6 +4540,47 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 
 # JOURNAL.md (Memoria Contínua)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-04-30 03:40 | 🚩 WAY POINT: Plano Definitivo LEARNINGS v2.6 Consolidado e Auditado
+**Decisão/Bug:** 🚩 WAY POINT: Finalização e selagem do Plano de Memória LEARNINGS. [Governança] [H2I]
+**Ação:**
+1. Finalizado o `planos/MiMo_Learnings_Consolidado.md` como versão **FINAL/SSOT** da memória de longo prazo.
+2. Incorporadas todas as camadas de auditoria (Flash, Codex, Qwen, MiMo) e correções de resiliência.
+3. Estabelecidas proteções mecânicas: **Cap de 5 scars**, **Scoring de Relevância** e **.enriched.md** temporário para evitar context rot e poluição de git.
+4. Definido o Roadmap H2I (Harness-to-Intelligence) com o subagente `@memory-distiller` (F-LRN-005).
+
+### Matriz de Propagação (Sinapse)
+- [x] `planos/MiMo_Learnings_Consolidado.md` -> [Plano Definitivo v2.6]
+- [x] `.context/maintenance/JOURNAL.md` -> [Way Point Registrado]
+
+### Contrato de Validação
+- executor_context_id: `CTX_LEARNINGS_FINAL_0430`
+- validator_context_id: `CTX_QA_AUDIT_FINAL`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Plano definitivo auditado e aprovado. Governança de memória institucionalizada sob o framework H.O.K Forge v2.6.`
+
+**Handoff:** @flash -> @user | Estado: Planejamento encerrado. Arquitetura selada. | Próximo: Git Commit e encerramento de sessão.
+
+## 📅 2026-04-30 02:45 | 🧠 Planejamento: Memória de Longo Prazo (LEARNINGS)
+**Decisão/Bug:** Refinamento técnico do Plano LEARNINGS v2.6 (H2I) com cap de injeção e resiliência de logs. [Governança] [H2I]
+**Ação:**
+1. Criado `planos/MiMo_Learnings_Consolidado.md` (substituindo a versão preliminar).
+2. Implementado **Cap de Injeção (5 scars)** com lógica de scoring por relevância (Feature > Check > Keywords).
+3. Adicionado subagente **@memory-distiller** ao Roadmap Futuro (F-LRN-005).
+4. Especificada função `safe_parse_log` com **validação de sanidade** para evitar falhas silenciosas por drift de formato.
+5. Sincronizado `log_planos.md` com a nova linhagem consolidada.
+
+### Matriz de Propagação (Sinapse)
+- [x] `planos/MiMo_Learnings_Consolidado.md` -> [Plano Refinado]
+- [x] `planos/log_planos.md` -> [Indexado]
+
+### Contrato de Validação
+- executor_context_id: `CTX_PLAN_REFINEMENT_0430`
+- validator_context_id: `CTX_FLASH_AUDITOR`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Refinamentos técnicos aplicados conforme auditoria. Sistema de memória blindado contra context-bloat e drift de logs. Pronto para commit.`
+
+**Handoff:** @flash -> @user | Estado: Plano LEARNINGS v2.6 consolidado e auditado. | Próximo: Implementação da Fase 1.
 
 ## 📅 2026-04-30 00:15 | 🚩 WAY POINT: Oracle v3.0 Hardened & Integrated
 **Decisão/Bug:** Entrega final do motor de busca e governança epistemológica. [Oracle] [Harness] [Governança]
@@ -4746,6 +4831,11 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 **Handoff:** @antigravity-agent -> Pipeline | Estado: Infraestrutura de subagentes iniciada | Próximo: Validação SAM e Commit.
 
 ## 📅 2026-04-26 14:20
+
+```
+CHUNK_END id=019509328844_c001
+CHUNK_START id=019509328844_c002 start_line=301 end_line=450
+```markdown
 **Decisão/Bug:** 🛠️ Fix: SAM Chronology (Reverse Order).
 **Ação:**
 1. Modificada a função `get_latest_journal_entry` no script `workflow_journal_auditor.py`.
@@ -4787,11 +4877,6 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 **Handoff:** @antigravity-agent -> @user | Estado: Casa limpa, motor revisado e mapa traçado. | Próximo: Execução de Feature.
 
 ## 📅 2026-04-26 01:18
-
-```
-CHUNK_END id=019509328844_c001
-CHUNK_START id=019509328844_c002 start_line=301 end_line=409
-```markdown
 **Decisão/Bug:** 🗺️ Implementação do RX_REPOSITORIO (Mapa Funcional).
 **Ação:**
 1. Criado o arquivo `.context/maintenance/RX_REPOSITORIO.md` baseado no modelo de sucesso do projeto `aline-insta`.
@@ -5978,19 +6063,19 @@ FILE_END id=file_c6d44cc7da35
 
 ---
 <a id="file_3667001850eb"></a>
-FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=803 bytes=43746 mtime=2026-04-30T01:22:24.940825+00:00 sha1=6070d3dc0c4e7e56d32fa73a389b584dc4ffdddd
+FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=788 bytes=42817 mtime=2026-04-30T01:27:51.106455+00:00 sha1=2696f291a60390cf7408fa1265814f82b5527fb0
 CHUNK_START id=3667001850eb_c001 start_line=1 end_line=300
 ```markdown
 # Project Context Bundle
 
 ---
 schema_version: 1
-generated_at: 2026-04-30T01:22:24.937833+00:00
+generated_at: 2026-04-30T01:27:51.104017+00:00
 root: template_inicío_de_projeto
 mode: full | TOC
 profile: ai-default
-file_count: 93
-byte_count: 386034
+file_count: 91
+byte_count: 358108
 ignored_dirs:
   - .cache
   - .cursor
@@ -6010,6 +6095,7 @@ ignored_dirs:
   - RAW
   - __pycache__
   - _archive_context
+  - _flash_report
   - bin
   - build
   - captura_projeto
@@ -6102,8 +6188,6 @@ sensitive_rules:
   - `README_CONTEXT.md` -> [file_4efb6293109d](#file_4efb6293109d)
   - `TEMPLATE_MIGRATION.md` -> [file_19e76e009f38](#file_19e76e009f38)
   - `VERSION.md` -> [file_f6f7100f063b](#file_f6f7100f063b)
-  - `_flash_report/audit_v2.5.2_summary.md` -> [file_9c875f865e3c](#file_9c875f865e3c)
-  - `_flash_report/log_extracao_v2.5.2.md` -> [file_87da85453659](#file_87da85453659)
   - `_modoLight/Modo_Light.md` -> [file_1f98938d3cd9](#file_1f98938d3cd9)
 - `source`:
   - `.context/_scripts/_tz_utils.py` -> [file_dbef1acce0d4](#file_dbef1acce0d4)
@@ -6217,8 +6301,6 @@ sensitive_rules:
 - `README_CONTEXT.md` -> [file_4efb6293109d](#file_4efb6293109d)
 - `TEMPLATE_MIGRATION.md` -> [file_19e76e009f38](#file_19e76e009f38)
 - `VERSION.md` -> [file_f6f7100f063b](#file_f6f7100f063b)
-- `_flash_report/audit_v2.5.2_summary.md` -> [file_9c875f865e3c](#file_9c875f865e3c)
-- `_flash_report/log_extracao_v2.5.2.md` -> [file_87da85453659](#file_87da85453659)
 - `_modoLight/Modo_Light.md` -> [file_1f98938d3cd9](#file_1f98938d3cd9)
 - `init_ai_project.sh` -> [file_c59135753d26](#file_c59135753d26)
 - `package.json` -> [file_7030d0b2f71b](#file_7030d0b2f71b)
@@ -6281,14 +6363,14 @@ FILE_START id=file_1edef35c2f56 path=.context/_scripts/harness_runner.py domain=
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_1edef35c2f56
 
+---
+<a id="file_a642d240b9ab"></a>
+FILE_START id=file_a642d240b9ab path=.context/_scripts/health_sync.py domain=source lang=python lines=111 bytes=4132 mtime=2026-04-12T03:40:11.302253+00:00 sha1=1f23d31d0c88fe19ee916b4d6dd9676fb2f0018b
 
 ```
 CHUNK_END id=3667001850eb_c001
 CHUNK_START id=3667001850eb_c002 start_line=301 end_line=600
 ```markdown
----
-<a id="file_a642d240b9ab"></a>
-FILE_START id=file_a642d240b9ab path=.context/_scripts/health_sync.py domain=source lang=python lines=111 bytes=4132 mtime=2026-04-12T03:40:11.302253+00:00 sha1=1f23d31d0c88fe19ee916b4d6dd9676fb2f0018b
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_a642d240b9ab
 
@@ -6318,7 +6400,7 @@ FILE_END id=file_6e825c0bd6ad
 
 ---
 <a id="file_02d732116d93"></a>
-FILE_START id=file_02d732116d93 path=.context/_scripts/project_bundler.py domain=source lang=python lines=429 bytes=17844 mtime=2026-04-23T18:31:18.210183+00:00 sha1=6108c27d0315281c1f40bec72da49685422fdcc9
+FILE_START id=file_02d732116d93 path=.context/_scripts/project_bundler.py domain=source lang=python lines=429 bytes=17861 mtime=2026-04-30T01:25:29.689806+00:00 sha1=9567f0399ca22a577183619b877e92abd8c6c5df
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_02d732116d93
 
@@ -6582,18 +6664,18 @@ FILE_END id=file_c6d44cc7da35
 
 ---
 <a id="file_3667001850eb"></a>
-FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=755 bytes=40976 mtime=2026-04-29T04:34:55.788055+00:00 sha1=03af55384bcfd3630a54d8010e88d79a67df15f2
+FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=803 bytes=43746 mtime=2026-04-30T01:22:24.940825+00:00 sha1=6070d3dc0c4e7e56d32fa73a389b584dc4ffdddd
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_3667001850eb
 
-
-```
-CHUNK_END id=3667001850eb_c002
-CHUNK_START id=3667001850eb_c003 start_line=601 end_line=803
-```markdown
 ---
 <a id="file_e477c4c5a96c"></a>
 FILE_START id=file_e477c4c5a96c path=.github/workflows/context-health.yml domain=config lang=yaml lines=25 bytes=569 mtime=2026-04-14T12:47:48.321567+00:00 sha1=7c7488139d3c3c4327aa9889700f683ee1f47be1
+
+```
+CHUNK_END id=3667001850eb_c002
+CHUNK_START id=3667001850eb_c003 start_line=601 end_line=788
+```markdown
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_e477c4c5a96c
 
@@ -6740,18 +6822,6 @@ FILE_END id=file_19e76e009f38
 FILE_START id=file_f6f7100f063b path=VERSION.md domain=docs lang=markdown lines=11 bytes=673 mtime=2026-04-26T20:25:19.735804+00:00 sha1=c262bc32870ead58b83fddaf73a89b7eb4d532be
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_f6f7100f063b
-
----
-<a id="file_9c875f865e3c"></a>
-FILE_START id=file_9c875f865e3c path=_flash_report/audit_v2.5.2_summary.md domain=docs lang=markdown lines=71 bytes=3718 mtime=2026-04-29T16:10:55.886848+00:00 sha1=987a6eaf6cf43878d6cf1004d65b33d389bed779
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_9c875f865e3c
-
----
-<a id="file_87da85453659"></a>
-FILE_START id=file_87da85453659 path=_flash_report/log_extracao_v2.5.2.md domain=docs lang=markdown lines=203 bytes=26995 mtime=2026-04-29T21:57:31.557269+00:00 sha1=f4be773a428ea547c22f923db7bdc321dcb765c6
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_87da85453659
 
 ---
 <a id="file_1f98938d3cd9"></a>
@@ -7041,12 +7111,12 @@ FILE_END id=file_6aa9a4e78301
 
 ---
 <a id="file_95d7e7d932e2"></a>
-FILE_START id=file_95d7e7d932e2 path=.specs/features/oracle_v3/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-30T00:49:33.335362+00:00 sha1=be2c8ddfa970e7ca0be42e753e15aa4ff15978ea
+FILE_START id=file_95d7e7d932e2 path=.specs/features/oracle_v3/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-30T04:33:59.463898+00:00 sha1=f72117a55a53bae3739d4583cb6cbacf74930ae5
 CHUNK_START id=95d7e7d932e2_c001 start_line=1 end_line=5
 ```markdown
 ---
 status: ✅ PASSED
-updated: 2026-04-29 21:49
+updated: 2026-04-30 01:33
 detail: All checks passed
 ---
 

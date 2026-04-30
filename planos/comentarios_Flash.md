@@ -4,6 +4,20 @@ Este documento consolida reflexões estratégicas, post-mortems e propostas de e
 
 ---
 
+## 📅 2026-04-30 | 📑 Estratégia de Implementação: LEARNINGS v2.6 (H2I)
+
+Após a selagem do Plano Definitivo, os especialistas estimam que a operacionalização deve ser dividida em **3 Specs principais** para garantir o controle de Raio de Impacto e a precisão técnica.
+
+### 🏛️ War Room de Estimativa:
+*   **Spec 1: Fundação & Guardiões (Fase 1).** Foco em garantir a integridade dos dados de entrada (Husky, Rules, template do LEARNINGS.md).
+*   **Spec 2: O Motor (Fase 2).** Implementação do `learnings_aggregator.py`. É a peça de maior complexidade algorítmica (parsing, diffs, vinculação FAIL/SUCCESS).
+*   **Spec 3: A Injeção & Gate (Fase 3).** Implementação do `inject_learnings.py` e ativação do gate no Harness. É a fase que altera o comportamento dinâmico do agente.
+
+### ⏱️ Veredito Técnico:
+Tentar uma "Big Bang Implementation" (Spec única) causaria um **Scope Blowout** e aumentaria o risco de regressões. O fatiamento em 3 etapas garante que cada "órgão" do sistema seja testado antes da integração total.
+
+---
+
 ## 📅 2026-04-30 | 🚀 Proposta: Sistema H2I (Harness-to-Intelligence) / @harness-sentinel
 
 Após incidentes de bloqueio no Harness durante o encerramento do Oracle v3, propõe-se a criação de um sistema de "Sentinela" para transformar logs de erro em inteligência evolutiva.
