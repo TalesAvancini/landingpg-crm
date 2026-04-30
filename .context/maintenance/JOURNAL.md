@@ -8,6 +8,32 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 # JOURNAL.md (Memoria Contínua)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-04-30 00:15 | 🚩 WAY POINT: Oracle v3.0 Hardened & Integrated
+**Decisão/Bug:** Entrega final do motor de busca e governança epistemológica. [Oracle] [Harness] [Governança]
+**Ação:**
+1. Motor `context_oracle.py` recalibrado para **Imparcialidade Técnica** (remoção de pesos por Role).
+2. Implementado **Stemming pt-BR** com whitelist estática e suporte a siglas de domínio (Fase 1.1).
+3. Padronização de saída **JSON v3** com campo `warnings` e Top-N graduado (Fase 1.3/1.4).
+4. Infraestrutura de log **Fire-and-Forget** com timeout de 0.5s para evitar locks no Windows (Fase 2.2).
+5. Criado `oracle_analytics.py` para telemetria de confiança e detecção de gaps no mercado (Fase 2.5).
+6. Implementado **Epistemological Gate** no `harness_runner.py` via import modular direto (zero boot overhead) e timeout de 2s (Fase 2.6).
+7. Saneamento físico: Removido `.wiki_index.cache.json` para manter o `_index.md` como SSOT único (Fase 2.4).
+8. Validação final: **12/12 testes passaram** no `tests/test_oracle.py`.
+
+### Matriz de Propagação (Sinapse)
+- [x] `.context/_scripts/context_oracle.py` -> [Motor v3.0]
+- [x] `.context/_scripts/harness_runner.py` -> [Gate Epistemológico]
+- [x] `.context/brain/PROMPT_LIBRARY.md` -> [Protocolo @oracle-searcher]
+- [x] `.specs/features/oracle_v3/spec.md` -> [Signed & Closed]
+
+### Contrato de Validação
+- executor_context_id: `CTX_ORACLE_V3_DEV`
+- validator_context_id: `CTX_QA_VALIDATOR`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Auditoria SAM concluída. Motor Oracle v3.0 validado e integrado com sucesso. Portão de commit liberado.`
+
+**Handoff:** @flash -> @user | Estado: Sistema auditado, documentado e pronto para o commit final.
+
 ## 📅 2026-04-29 01:35 | 🚩 WAY POINT: Consciência Sistêmica Hardened
 **Decisão/Bug:** 🧠 Sincronia Total: Conclusão da Ingestão de Bundle v2.5.2. [Governança] [Regras]
 **Ação:**

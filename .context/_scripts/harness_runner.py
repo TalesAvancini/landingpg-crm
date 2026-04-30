@@ -353,6 +353,40 @@ def get_inception_status():
         return "ERROR"
     return "UNKNOWN"
 
+def check_epistemological_gate(spec_path: Path):
+    """Fase 2.6: Gate Epistemológico (Oracle como Pré-Gate do Harness)"""
+    if not spec_path.exists():
+        return True, "Spec ausente (skip oracle check)"
+    
+    try:
+        from context_oracle import query_oracle
+    except ImportError:
+        return True, "context_oracle indisponível (skip oracle check)"
+        
+    text = spec_path.read_text(encoding="utf-8")
+    title_match = re.search(r'^#\s+(.+)$', text, re.MULTILINE)
+    query = title_match.group(1) if title_match else spec_path.parent.name
+    
+    import concurrent.futures
+    try:
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            future = executor.submit(query_oracle, query)
+            res = future.result(timeout=2.0)
+            
+        conf = res.get("confidence", 0)
+        if conf < 0.4:
+            print(f"[WARN] Gate Epistemológico: Baixa confiança ({conf:.2f}) no oráculo para o termo '{query}'. Considere refinar o conhecimento.")
+            return True, f"Gate Epistemológico avisado (conf: {conf:.2f})"
+            
+        return True, f"Gate Epistemológico OK (conf: {conf:.2f})"
+        
+    except concurrent.futures.TimeoutError:
+        print("[WARN] Gate Epistemológico: Timeout ao consultar o Oráculo (> 2s). Bypass permitido.")
+        return True, "Gate Epistemológico Timeout"
+    except Exception as e:
+        print(f"[WARN] Gate Epistemológico falhou: {e}")
+        return True, "Gate Epistemológico Erro"
+
 
 def main():
     # 0. Verificação de Estado (Hybrid Discovery)
@@ -360,17 +394,7 @@ def main():
     if status == "DRAFT":
         root = CONTEXT_DIR.parent
         code_exts = {
-            ".py",
-            ".js",
-            ".jsx",
-            ".ts",
-            ".tsx",
-            ".go",
-            ".rs",
-            ".java",
-            ".kt",
-            ".cs",
-            ".php",
+            ".py", ".js", ".jsx", ".ts", ".tsx", ".go", ".rs", ".java", ".kt", ".cs", ".php",
         }
         ignore_names = {".gitkeep", ".keep"}
         ignore_prefixes = ("README",)
@@ -384,10 +408,8 @@ def main():
                 for cur, dirs, files in os.walk(base):
                     dirs[:] = [d for d in dirs if d not in ignore_dirs]
                     for fname in files:
-                        if fname in ignore_names:
-                            continue
-                        if fname.startswith(ignore_prefixes):
-                            continue
+                        if fname in ignore_names: continue
+                        if fname.startswith(ignore_prefixes): continue
                         path = Path(cur) / fname
                         if path.suffix.lower() in code_exts and path.stat().st_size > 0:
                             return True
@@ -398,25 +420,16 @@ def main():
             if not specs_dir.exists() or not specs_dir.is_dir():
                 return False
             for spec in specs_dir.iterdir():
-                if not spec.is_dir() or spec.name.startswith("_"):
-                    continue
+                if not spec.is_dir() or spec.name.startswith("_"): continue
                 spec_file = spec / "spec.md"
                 state_file = spec / "STATE.md"
-                if (
-                    spec_file.exists()
-                    and state_file.exists()
-                    and spec_file.stat().st_size > 0
-                ):
+                if spec_file.exists() and state_file.exists() and spec_file.stat().st_size > 0:
                     return True
             return False
 
         if has_real_code_activity() or has_real_spec_activity():
-            print(
-                "[FATAL] Projeto possui atividade real (código/specs) mas INCEPTION.md está em DRAFT."
-            )
-            print(
-                "[DICA] Ative a governança: altere status para ACTIVE em INCEPTION.md."
-            )
+            print("[FATAL] Projeto possui atividade real (código/specs) mas INCEPTION.md está em DRAFT.")
+            print("[DICA] Ative a governança: altere status para ACTIVE em INCEPTION.md.")
             sys.exit(1)
 
         print("[INFO] Modo Onboarding (DRAFT). Bypass permitido até ativação.")
@@ -432,11 +445,7 @@ def main():
         # Fallback: spec modificada mais recentemente
         if features_dir.exists():
             active = sorted(
-                [
-                    d
-                    for d in features_dir.iterdir()
-                    if d.is_dir() and not d.name.startswith("_")
-                ],
+                [d for d in features_dir.iterdir() if d.is_dir() and not d.name.startswith("_")],
                 key=os.path.getmtime,
                 reverse=True,
             )
@@ -456,6 +465,7 @@ def main():
         "enrichment": check_enrichment_integrity(PRD),
         "sprint_contract": check_sprint_contract(spec_path),
         "impact_radius": check_impact_radius(spec_path),
+        "epistemological": check_epistemological_gate(spec_path),
         "journal_sam": check_journal_sam(),
     }
 

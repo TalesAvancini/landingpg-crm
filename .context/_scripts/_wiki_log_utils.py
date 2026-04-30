@@ -27,7 +27,7 @@ def append_to_wiki_log(mode, description, files, status):
     line = f"| [{timestamp}] | {mode} | {safe_desc} | {safe_files} | {status} |\n"
     
     # Sincronização Simples (Spin Lock) para evitar concorrência
-    timeout = 5 # 5 segundos de timeout
+    timeout = 0.5 # Fire-and-forget: Timeout agressivo para não bloquear o usuário
     start_time = time.time()
     
     while True:

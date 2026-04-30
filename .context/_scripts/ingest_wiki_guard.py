@@ -3,11 +3,11 @@
 🛡️ ingest_wiki_guard.py — Guardião de Ingestão Wiki (H.O.K v2.5)
 Valida conformidade Karpathy antes de permitir a entrada de novos artigos.
 """
-import re, sys, os
+import re, sys, os, time
 from pathlib import Path
 
 CONTEXT_DIR = Path(__file__).resolve().parents[1]
-WIKI_DIR = CONTEXT_DIR / "market/WIKI"
+WIKI_DIR = CONTEXT_DIR / "market" / "WIKI"
 
 # Import utilitário de log
 sys.path.append(str(CONTEXT_DIR / "_scripts"))
@@ -44,6 +44,48 @@ def validate_article(path):
 
     return errors
 
+def rebuild_index_atomic(articles):
+    """Reconstrói o _index.md de forma atômica para evitar corrupção de leitura."""
+    header = "# WIKI Index Raiz\n> Fonte: SSOT_MAP.md\n\n## Topicos\n"
+    lines = []
+    for art in articles:
+        content = art.read_text(encoding="utf-8")
+        match = re.search(r'^---\s*\n(.*?)\n---\s*\n', content, re.DOTALL)
+        tag_list = []
+        if match:
+            fields = match.group(1)
+            for line in fields.split('\n'):
+                # Captura tags: e aliases:
+                if line.strip().startswith('tags:') or line.strip().startswith('aliases:'):
+                    # Limpa o prefixo, espaços e colchetes
+                    val = re.sub(r'^(tags|aliases):\s*', '', line.strip()).strip('[]')
+                    if val:
+                        tag_list.extend([t.strip() for t in val.split(',')])
+        
+        # Consolida tudo em uma string separada por vírgula para o _index.md
+        tags_str = ", ".join(sorted(set(tag_list)))
+        lines.append(f"- [[{art.stem}]] | tags: {tags_str}\n")
+    
+    # Ordem alfabética para determinismo
+    lines.sort()
+    index_content = header + "".join(lines)
+    
+    index_path = WIKI_DIR / "_index.md"
+    tmp_path = WIKI_DIR / "_index.md.tmp"
+    
+    tmp_path.write_text(index_content, encoding="utf-8")
+    
+    # Retry Backoff para contornar travamentos de I/O no Windows (PermissionError)
+    for attempt in range(3):
+        try:
+            os.replace(tmp_path, index_path)
+            break
+        except PermissionError:
+            if attempt == 2:
+                print("⚠️ Falha ao regenerar o _index.md (Arquivo travado por outro processo).")
+                raise
+            time.sleep(0.5 * (attempt + 1))
+
 def main():
     if not WIKI_DIR.exists():
         print("[OK] Diretório WIKI não encontrado. Ignorando.")
@@ -75,7 +117,8 @@ def main():
         append_to_wiki_log("INGEST", "Falha de conformidade Karpathy", ", ".join(paths), "FAIL")
         sys.exit(1)
 
-    print(f"✅ Todos os {len(articles)} artigos WIKI estão em conformidade.")
+    rebuild_index_atomic(articles)
+    print(f"✅ Todos os {len(articles)} artigos WIKI estão em conformidade e o índice foi regenerado.")
     filenames = [a.name for a in articles]
     append_to_wiki_log("INGEST", f"Ingestão de {len(articles)} artigos", ", ".join(filenames), "OK")
     sys.exit(0)

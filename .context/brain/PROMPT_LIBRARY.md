@@ -215,3 +215,23 @@ Ao gerar o PRD.md, inclua EXATAMENTE esta seção no final:
 💡 *Insight IA: Este prompt transforma intenção em plano executável. A spec é o "compilador" entre PRD e código. Mantenha-a enxuta e verificável.*
 
 💡 *Insight IA: Estes templates sao contratos de execucao. Eles reduzem ruido e transformam a IA em um engenheiro previsivel.*
+
+### 🔮 `@oracle-searcher`
+**Gatilho:** Pesquisa de domínio, busca em WIKI, validação de conceitos de mercado, busca de compliance  
+**Contexto Obrigatório:** `.context/market/WIKI/_index.md`, `.context/_scripts/context_oracle.py`
+```text
+🤖 Ativando @oracle-searcher | Tarefa: Consulta de Domínio
+🎯 Objetivo: Localizar informações precisas na base de conhecimento local.
+🚧 Protocolo Oracle v3:
+1. Executar query via `python .context/_scripts/context_oracle.py "{{termo_de_busca}}"`
+2. Analisar o campo `confidence`:
+   - Confidence >= 0.8: Aceitar como verdade absoluta (SSOT).
+   - Confidence < 0.6: Tratar como sugestão; buscar confirmação em outros documentos.
+3. Analisar `warnings`: Se houver avisos de resumos amputados, ler o arquivo original se necessário.
+📤 Saída Esperada:
+1. Resumo da informação encontrada.
+2. Lista de fontes (`sources`) utilizadas.
+3. Nota sobre a confiança da informação.
+```
+
+💡 *Insight IA: O Oráculo é a memória de longo prazo do projeto. Use-o antes de assumir qualquer verdade sobre o negócio.*

@@ -151,3 +151,27 @@ Status: Ativo
 
 ## [HARNESS-PASS] Report | spec:multi_agent_choreography
 - **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:oracle_v3
+- **Detalhe:** sprint_contract: Contrato não assinado pelo @qa-validator (qa_signoff: false) | impact_radius: Raio de impacto excedido! (Modificados: 8 > Limite: 6). Re-fragmente a SPEC ou aumente o limite se justificado. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'new_context_path' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'new_context_path': Arquivo '.context/maintenance/rx-anatomy.md' não foi propagado (ausente no diff).
+  - Regra 'new_context_path': Checkbox [x] para '.context/maintenance/rx-anatomy.md' ausente ou desmarcado no Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:oracle_v3
+- **Detalhe:** sprint_contract: Contrato não assinado pelo @qa-validator (qa_signoff: false) | impact_radius: Raio de impacto excedido! (Modificados: 9 > Limite: 6). Re-fragmente a SPEC ou aumente o limite se justificado. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'new_context_path' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'new_context_path': Arquivo '.context/maintenance/rx-anatomy.md' não foi propagado (ausente no diff).
+  - Regra 'new_context_path': Checkbox [x] para '.context/maintenance/rx-anatomy.md' ausente ou desmarcado no Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+

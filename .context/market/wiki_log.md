@@ -48,3 +48,6 @@
 | [2026-04-26 17:26] | LINT | Integridade epistemológica validada | - | OK |
 | [2026-04-29 01:34] | INGEST | Ingestão de 4 artigos | harness_architecture.md, harness_behavior.md, harness_maintainability.md, ralph_wiggum_loop.md | OK |
 | [2026-04-29 01:34] | LINT | Integridade epistemológica validada | - | OK |
+| [2026-04-29 19:49] | INGEST | Ingestão de 4 artigos | harness_architecture.md, harness_behavior.md, harness_maintainability.md, ralph_wiggum_loop.md | OK |
+| [2026-04-29 19:57] | INGEST | Ingestão de 4 artigos | harness_architecture.md, harness_behavior.md, harness_maintainability.md, ralph_wiggum_loop.md | OK |
+| [2026-04-29 20:30] | QUERY | Busca: testar sigla QA (conf: 1.00) | market/WIKI/concepts/harness_behavior.md | OK |
