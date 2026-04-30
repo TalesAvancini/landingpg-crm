@@ -1,6 +1,6 @@
 ---
 status: ✅ PASSED
-updated: 2026-04-30 18:42
+updated: 2026-04-30 18:43
 detail: All checks passed
 ---
 
@@ -58,8 +58,8 @@ status: PASSED
 policy_profile: hybrid
 impact_snapshot:
   files_changed: 5
-  churn_added: 104
-  churn_removed: 19
+  churn_added: 106
+  churn_removed: 18
 impact_score: 2.5
 gates:
   hard_failed: []
