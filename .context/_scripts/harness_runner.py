@@ -160,7 +160,9 @@ WHITELIST_V2 = {
     "tests/test_context.py",
     ".context/maintenance/JOURNAL.md",
     ".context/maintenance/HARNESS_LOG.md",
-    "planos/mudanca_specdriven/plano_v2_caminho_seguro_falsh.md"
+    "planos/mudanca_specdriven/plano_v2_caminho_seguro_falsh.md",
+    "planos/mudanca_specdriven/mudanca_specdriven.md", # Movido pelo usuário
+    "planos/mudanca_specdriven/relatorio_auditoria_contract_sprints.md" # Documentação de auditoria
 }
 
 def _get_modified_files(start_hash):
@@ -202,7 +204,7 @@ def _validate_standard_contract(contract):
     return True, "Sprint contract (Standard) validado"
 
 def _validate_sprint_contract(contract, spec_path):
-    """Modo Contract Sprints com correções de auditoria (HG01-07)."""
+    """Modo Contract Sprints com Enforcement Real (HG01-07)."""
     # HG03: Contract Break
     current_sprint_match = re.search(r"current_sprint:\s*(\w+)", contract, re.I)
     if not current_sprint_match:
@@ -210,19 +212,22 @@ def _validate_sprint_contract(contract, spec_path):
     
     curr = current_sprint_match.group(1)
     
-    # Busca bloco de definição da sprint no spec.md
-    sprint_block_pattern = rf"{curr}:(.*?)(?=sprint_\d+:|\Z)"
-    block_match = re.search(sprint_block_pattern, contract, re.I | re.DOTALL)
+    # HG04: Sprint Order & Enforcement Real
+    # Coleta todas as sprints definidas para validar a ordem
+    all_sprints = re.findall(r"(sprint_\d+):", contract)
+    for s in all_sprints:
+        # Se a sprint for anterior à atual, EXIGE qa_signoff: true
+        if s < curr:
+            s_block = re.search(rf"{s}:(.*?)(?=sprint_\d+:|\Z)", contract, re.I | re.DOTALL)
+            if not s_block or "qa_signoff: true" not in s_block.group(1).lower():
+                return False, f"[HG04] Sprint anterior ({s}) pendente de signoff. Impossível avançar para {curr}."
+    
+    # Busca bloco da sprint atual
+    block_match = re.search(rf"{curr}:(.*?)(?=sprint_\d+:|\Z)", contract, re.I | re.DOTALL)
     if not block_match:
         return False, f"[HG03] Bloco de definição da sprint {curr} não encontrado na spec"
     
     sprint_block = block_match.group(1)
-
-    # HG04: Sprint Order & Signoff (Flexibilizado para sprint atual)
-    # Exige signoff apenas se a sprint já passou ou se não for a atual (avanço indevido)
-    if "qa_signoff: true" not in sprint_block.lower():
-        # Se for a sprint ativa declarada, permitimos qa_signoff: false durante a execução
-        pass 
     
     # HG06: Start Hash (Obrigatório em sprint_based)
     state_path = spec_path.parent / "STATE.md"

@@ -244,3 +244,21 @@ Status: Ativo
 
 ## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
 - **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist Operacional: Arquivo 'planos/mudanca_specdriven.md' proibido nesta missão.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist Operacional: Arquivo 'planos/mudanca_specdriven/mudanca_specdriven.md' proibido nesta missão.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist Operacional: Arquivo 'planos/mudanca_specdriven/relatorio_auditoria_contract_sprints.md' proibido nesta missão.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo 'planos/mudanca_specdriven/mudanca_specdriven.md' fora do planejado para sprint_01.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo 'planos/mudanca_specdriven/mudanca_specdriven.md' fora do planejado para sprint_01.
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
