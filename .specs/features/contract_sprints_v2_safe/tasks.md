@@ -25,9 +25,9 @@
 - [x] **Verify C**: Teste de migué e assinatura parcial validado.
 
 ## 📊 Onda 4: Impacto Incremental (Fase D)
-- [ ] **TASK-09 (D1)**: Captura de `start_hash` no início da sprint.
-- [ ] **TASK-10 (D2)**: Implementar diff incremental (`start_hash..HEAD`).
-- [ ] **Verify D**: Teste de Scope Blowout por fase.
+- [x] **TASK-09 (D1)**: Captura de `start_hash` no início da sprint.
+- [x] **TASK-10 (D2)**: Implementar diff incremental (`start_hash..HEAD`).
+- [x] **Verify D**: Teste de métricas de churn por sprint validado.
 
 ## 🧹 Onda 5: Higiene & SAM (Fase E)
 - [ ] **TASK-11 (E1)**: Adaptar `cleanup_specs.py` (proteger sprint ativa).

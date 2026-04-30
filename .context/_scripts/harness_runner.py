@@ -166,7 +166,7 @@ WHITELIST_V2 = {
 }
 
 def _get_modified_files(start_hash):
-    """Retorna lista de arquivos modificados desde o start_hash."""
+    """Retorna lista de arquivos modificados desde o start_hash (inclui working tree)."""
     try:
         res = subprocess.run(
             ["git", "diff", "--name-only", start_hash],
@@ -175,6 +175,17 @@ def _get_modified_files(start_hash):
         return [f.strip() for f in res.stdout.splitlines() if f.strip()]
     except:
         return []
+
+def _get_diff_stats(start_hash):
+    """Calcula estatísticas de churn (linhas +/-) desde o start_hash."""
+    try:
+        res = subprocess.run(
+            ["git", "diff", "--shortstat", start_hash],
+            capture_output=True, text=True, encoding="utf-8"
+        )
+        return res.stdout.strip()
+    except:
+        return "Nenhuma alteração detectada"
 
 def _validate_standard_contract(contract):
     """Lógica original v2.5.2 para contratos standard binários."""
@@ -266,6 +277,13 @@ def _validate_sprint_contract(contract, spec_path):
             for f in modified:
                 if not any(f.startswith(a) or a in f for a in allowed):
                     return False, f"[HG01] Violação de Escopo Sprint: Arquivo '{f}' fora do planejado para {curr}."
+
+    # Exibe impacto incremental (D1/D2)
+    stats = _get_diff_stats(start_hash)
+    print(f"[IMPACTO] {curr}: {stats}")
+    
+    # D1 Real: Persiste métricas no STATE.md
+    _update_sprint_state(state_path, curr, stats)
 
     # C2: Bloqueio de feature_done global
     global_signoff = re.search(r"^qa_signoff:\s*true", contract, re.I | re.M)
@@ -418,6 +436,38 @@ def log_harness(status, detail, spec_name="unknown"):
     except Exception as e:
         print(f"[WARN] Falha ao logar harness: {e}")
 
+
+def _update_sprint_state(state_path: Path, sprint_name: str, stats: str):
+    """Injeta estatísticas de impacto diretamente no bloco da sprint no STATE.md."""
+    if not state_path.exists(): return
+    try:
+        content = state_path.read_text(encoding="utf-8")
+        
+        file_match = re.search(r"(\d+)\s*files?\s*changed", stats)
+        add_match = re.search(r"(\d+)\s*insertions?", stats)
+        del_match = re.search(r"(\d+)\s*deletions?", stats)
+        
+        files = file_match.group(1) if file_match else "0"
+        adds = add_match.group(1) if add_match else "0"
+        dels = del_match.group(1) if del_match else "0"
+        
+        # Atualiza impact_snapshot (Seção 8 e D1)
+        impact_block = (
+            f"impact_snapshot:\n"
+            f"  files_changed: {files}\n"
+            f"  churn_added: {adds}\n"
+            f"  churn_removed: {dels}"
+        )
+        
+        # Procura o bloco da sprint e substitui o impact_snapshot
+        pattern = rf"(##\s*{sprint_name}.*?impact_snapshot:)\s*\n\s*files_changed:.*?\n\s*churn_added:.*?\n\s*churn_removed:.*?\d+"
+        new_content = re.sub(pattern, rf"## {sprint_name}\n{impact_block}", content, flags=re.DOTALL | re.I)
+        
+        if new_content != content:
+            state_path.write_text(new_content, encoding="utf-8")
+            print(f"[D1] STATE.md sincronizado com impacto real ({sprint_name})")
+    except Exception as e:
+        print(f"[WARN] Falha ao atualizar impacto no STATE.md: {e}")
 
 def update_state_md(spec_dir: Path, status: str, detail: str = ""):
     state_path = spec_dir / "STATE.md"

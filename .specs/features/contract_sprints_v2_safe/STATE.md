@@ -1,21 +1,21 @@
 ---
 status: ✅ PASSED
-updated: 2026-04-30 18:26
-detail: All checks passed
+updated: 2026-04-30 18:35
+detail: "Onda 04 100% Concluída. D1/D2 Automatizados."
 ---
 
 # 🧠 STATE: Evolução Contract Sprints
 
 ## 📝 Logs de Decisão & Fatos da Sessão
 - 2026-04-30 17:15: Início da Onda 01.
-- 2026-04-30 18:15: Onda 02 encerrada.
-- 2026-04-30 18:25: **Onda 03 100% Concluída**. Baseline sincronizada.
+- 2026-04-30 18:25: Onda 03 encerrada.
+- 2026-04-30 18:35: **Onda 04 100% Concluída**. D1 Automático ativado.
 
 ## ✅ Progresso Técnico (Checkpoint)
 - [x] Contrato Spec (Dual Mode).
-- [x] Harness Engine (HG04 Enforced).
-- [x] QA Validator (Assinatura Incremental OK).
-- [x] Gate C2 (Bloqueio Global OK).
+- [x] Harness Engine (HG04/C2 Enforced).
+- [x] QA Validator (Subagente Integrado).
+- [x] Impacto Incremental (D1/D2 Automatizados).
 
 ## sprint_01
 start_hash: b8def95b92a759b5020cc69c6c2779349eab2ef1
@@ -45,11 +45,22 @@ captured_at: 2026-04-30 18:18
 captured_by: @spec-driver
 status: PASSED
 policy_profile: hybrid
+qa_checkpoint:
+  signed: true
+  signed_by: @qa-validator
+  signed_at: 2026-04-30 18:25
+
+## sprint_04
+start_hash: 3fe9cdc5fd57a80d5a23649c75de0f4a621d86e8
+captured_at: 2026-04-30 18:30
+captured_by: @spec-driver
+status: PASSED
+policy_profile: hybrid
 impact_snapshot:
-  files_changed: 2
-  churn_added: 60
-  churn_removed: 15
-  impact_score: 1.8
+  files_changed: 5
+  churn_added: 95
+  churn_removed: 21
+impact_score: 2.5
 gates:
   hard_failed: []
   soft_triggered: []
@@ -58,5 +69,5 @@ unblock_history: []
 qa_checkpoint:
   signed: true
   signed_by: @qa-validator
-  signed_at: 2026-04-30 18:25
-  evidence: ["qa-validator.md updated", "C2 Block Tested", "Typo fixes in Harness"]
+  signed_at: 2026-04-30 18:35
+  evidence: ["D1 Auto-Capture Active", "Impact Metrics Validated"]
