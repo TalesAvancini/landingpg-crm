@@ -313,3 +313,29 @@ Status: Ativo
 
 ## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
 - **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist Operacional: Arquivo '.context/brain/RULES.md' proibido nesta missão. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'rules_change' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'rules_change': Tag 'Regras' ausente no Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo '.context/_scripts/harness_runner.py' fora do planejado para sprint_05.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo '.context/maintenance/JOURNAL.md' fora do planejado para sprint_05.
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG06] Start_hash inválido ou não resolvível: dece4ab578453483b8b152d1921f00a5d290744e
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid

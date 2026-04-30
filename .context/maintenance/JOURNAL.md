@@ -8,6 +8,29 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 # JOURNAL.md (Memoria Contínua)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-04-30 18:55 | 🛡️ ONDA 05: Institucionalização v2-Safe (Higiene & SSOT)
+**Decisão/Bug:** Finalização do Hardening de Contract Sprints com proteção de cleanup e atualização de regras mestras. [Governança] [Regras] [Harness]
+**Ação:**
+1. Atualizado `cleanup_specs.py` com a função `is_protected`, garantindo imunidade a specs com sprints ativas em modo `sprint_based`.
+2. Institucionalizada a **Regra 1.4: Protocolo Contract Sprints (v2-Safe)** no `RULES.md`.
+3. Atualizado o **MASTER_FLOW.md** para incluir o novo ciclo de vida v2-Safe (Ato 4/5) e a imunidade de rito.
+4. Expandida a `WHITELIST_V2` global no `harness_runner.py` para permitir a manutenção do core da governança.
+5. Sincronizados `spec.md` e `STATE.md` para a transição final da Onda 05.
+
+### Matriz de Propagação (Sinapse)
+- [x] `.context/_scripts/cleanup_specs.py` -> [Proteção de Sprint]
+- [x] `.context/brain/RULES.md` -> [Regra 1.4 Inserida]
+- [x] `.context/brain/MASTER_FLOW.md` -> [Ciclo v2-Safe Mapeado]
+- [x] `.context/_scripts/harness_runner.py` -> [Whitelist Atualizada]
+
+### Contrato de Validação
+- executor_context_id: `CTX_ONDA_05_SSOT`
+- validator_context_id: `CTX_QA_VALIDATOR`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Onda 05 validada. As regras mestras agora refletem o estado hardened do sistema. Proteção de cleanup testada e funcional.`
+
+**Handoff:** @spec-driver -> @user | Estado: Onda 05 em progresso avançado. | Próximo: Re-validação final do Harness.
+
 ## 📅 2026-04-30 03:40 | 🚩 WAY POINT: Plano Definitivo LEARNINGS v2.6 Consolidado e Auditado
 **Decisão/Bug:** 🚩 WAY POINT: Finalização e selagem do Plano de Memória LEARNINGS. [Governança] [H2I]
 **Ação:**

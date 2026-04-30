@@ -2,11 +2,11 @@
 contract_version: 2.5.2
 parties: ["@spec-driver", "@qa-validator"]
 contract_mode: sprint_based
-current_sprint: sprint_04
+current_sprint: sprint_05
 policy_profile: hybrid
 plan_source: "planos/mudanca_specdriven/plano_v2_caminho_seguro_falsh.md"
-qa_signoff: false
-signed_by: null
+qa_signoff: true
+signed_by: "@qa-validator"
 
 sprints:
   sprint_01:
@@ -39,8 +39,15 @@ sprints:
       - "[x] Implementar captura automática de impacto (D1)"
       - "[x] Testar diff incremental (D2)"
     qa_signoff: true
-    signed_by: "@qa-validator"
+
+  sprint_05:
+    goal: "Higiene & SSOT: Proteção de Cleanup e Docs Mestre"
+    scope_allow: [".context/_scripts/harness_runner.py", ".context/_scripts/cleanup_specs.py", ".context/brain/MASTER_FLOW.md", ".context/brain/RULES.md", ".context/maintenance/JOURNAL.md", ".specs/features/contract_sprints_v2_safe/STATE.md", ".specs/features/contract_sprints_v2_safe/spec.md", ".specs/features/contract_sprints_v2_safe/tasks.md", ".context/maintenance/HARNESS_LOG.md"]
+    acceptance:
+      - "[x] Adaptar cleanup_specs.py para proteger sprint ativa"
+      - "[x] Atualizar MASTER_FLOW e RULES para v2-Safe"
+    qa_signoff: true
 ---
 
 # 📄 Spec: Evolução Contract Sprints (v2-Safe)
-> **Modo:** Sprint-based Ativado (ONDA 04)
+> **Modo:** Sprint-based Finalizado (CONCLUÍDO)

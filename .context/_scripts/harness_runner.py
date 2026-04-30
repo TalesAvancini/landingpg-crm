@@ -162,7 +162,9 @@ WHITELIST_V2 = {
     ".context/maintenance/HARNESS_LOG.md",
     "planos/mudanca_specdriven/plano_v2_caminho_seguro_falsh.md",
     "planos/mudanca_specdriven/mudanca_specdriven.md", # Movido pelo usuário
-    "planos/mudanca_specdriven/relatorio_auditoria_contract_sprints.md" # Documentação de auditoria
+    "planos/mudanca_specdriven/relatorio_auditoria_contract_sprints.md", # Documentação de auditoria
+    ".context/brain/RULES.md", # Documentação mestre
+    ".context/brain/MASTER_FLOW.md" # Fluxo mestre
 }
 
 def _get_modified_files(start_hash):

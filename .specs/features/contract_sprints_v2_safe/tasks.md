@@ -30,6 +30,9 @@
 - [x] **Verify D**: Teste de métricas de churn por sprint validado.
 
 ## 🧹 Onda 5: Higiene & SAM (Fase E)
-- [ ] **TASK-11 (E1)**: Adaptar `cleanup_specs.py` (proteger sprint ativa).
-- [ ] **TASK-12 (E3)**: Atualizar documentação SSOT (MASTER_FLOW, RULES).
-- [ ] **Verify E**: Pipeline completo sem regressão.
+- [x] **TASK-11 (E1)**: Adaptar `cleanup_specs.py` (proteger sprint ativa).
+- [x] **TASK-12 (E3)**: Atualizar documentação SSOT (MASTER_FLOW, RULES).
+- [x] **Verify E**: Pipeline completo sem regressão.
+
+---
+**MISSÃO CONCLUÍDA: H.O.K FORGE v2.5.2 HARDENED**

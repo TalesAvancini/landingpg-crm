@@ -35,7 +35,29 @@ def archive_spec(spec_path):
     print(f"[INFO] Arquivando spec: {spec_path.name} -> {archive_name}")
     shutil.move(str(spec_path), str(dest_path))
 
+def is_protected(spec_path):
+    """Verifica se a spec está protegida (ex: sprint ativa em modo sprint_based)."""
+    spec_file = spec_path / "spec.md"
+    if not spec_file.exists(): return False
+    try:
+        content = spec_file.read_text(encoding="utf-8")
+        if "contract_mode: sprint_based" not in content:
+            return False
+        
+        # Se for modo sprint, verifica se a sprint atual está aberta
+        curr_match = re.search(r"current_sprint:\s*(\w+)", content)
+        if curr_match:
+            curr = curr_match.group(1)
+            # Busca bloco da sprint atual
+            s_block = re.search(rf"{curr}:(.*?)(?=sprint_\d+:|\Z)", content, re.I | re.DOTALL)
+            if s_block and "qa_signoff: false" in s_block.group(1).lower():
+                return True # PROTEGIDA: Sprint aberta
+    except:
+        pass
+    return False
+
 def cleanup():
+    import re
     specs = get_specs()
     if not specs:
         print("[OK] Nenhuma spec ativa encontrada.")
@@ -46,6 +68,11 @@ def cleanup():
 
     # 1. Limpeza por inatividade (48h)
     for spec in specs:
+        if is_protected(spec):
+            print(f"[SAFE] Spec imunizada (Sprint Ativa): {spec.name}")
+            active_specs.append(spec)
+            continue
+            
         last_mod = max(os.path.getmtime(root) for root, _, _ in os.walk(spec))
         if (now - last_mod) > MAX_INACTIVITY_SECONDS:
             print(f"[AUTO] Inatividade detectada (>48h) em: {spec.name}")
@@ -57,9 +84,13 @@ def cleanup():
     # Ordena por data de modificação (mais antiga primeiro)
     active_specs.sort(key=lambda s: max(os.path.getmtime(root) for root, _, _ in os.walk(s)))
     
-    while len(active_specs) > MAX_ACTIVE_SPECS:
-        oldest = active_specs.pop(0)
-        print(f"[AUTO] Limite de volume excedido (Max {MAX_ACTIVE_SPECS}). Removendo spec mais antiga: {oldest.name}")
+    # Filtra as protegidas para não serem removidas pelo limite de volume se possível
+    candidate_specs = [s for s in active_specs if not is_protected(s)]
+    
+    while len(active_specs) > MAX_ACTIVE_SPECS and candidate_specs:
+        oldest = candidate_specs.pop(0)
+        active_specs.remove(oldest)
+        print(f"[AUTO] Limite de volume excedido (Max {MAX_ACTIVE_SPECS}). Removendo spec mais antiga (Não Protegida): {oldest.name}")
         archive_spec(oldest)
 
     print(f"[OK] Manutencao de specs concluida. Specs ativas: {len(active_specs)}/{MAX_ACTIVE_SPECS}")

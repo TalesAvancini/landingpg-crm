@@ -59,6 +59,14 @@ Antes de gerar código de produção ou realizar refatorações, o Agente **DEVE
 3. **Feedback Loop:** O Hub (Planner) deve utilizar a telemetria do `SCOPE_BLOWOUT` para re-fragmentar a SPEC em unidades menores e atômicas.
 4. **Log Estruturado:** O resultado do Pre-flight deve ser registrado de forma parseável no `STATE.md` para auditoria do QA e do Harness.
 
+## 🔄 1.4 Protocolo Contract Sprints (v2-Safe)
+Padrão obrigatório para features de alta complexidade ou segurança crítica.
+1. **Modo Dual:** O Harness detecta `contract_mode: sprint_based` para ativar a fiscalização polimórfica.
+2. **Enforcement HG04 (Ordem de Sprint):** Bloqueio absoluto de avanço se qualquer sprint anterior estiver sem `qa_signoff: true`.
+3. **Imunidade de Cleanup (E1):** Sprints ativas com signoff pendente são imunes ao arquivamento automático do `cleanup_specs.py`.
+4. **Impacto Incremental (D1/D2):** Churn (linhas +/-) capturado automaticamente pelo Harness e persistido no `STATE.md` para auditoria passiva.
+5. **Bloqueio C2 (Global Signoff):** Proibido dar signoff global na feature se houver qualquer pendência nas sprints internas.
+
 ---
 
 ## 🔢 2. Ansiedade de Contexto & Ralph Wiggum Loop
