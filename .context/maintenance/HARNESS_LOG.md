@@ -204,3 +204,43 @@ Status: Ativo
 
 ## [HARNESS-PASS] Report | spec:oracle_v3
 - **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: Contrato standard não assinado pelo @qa-validator (qa_signoff: false)
+
+## [HARNESS-PASS] Report | spec:test_sprint
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:test_sprint
+- **Detalhe:** sprint_contract: [HG04] Sprint ativa (sprint_02) não possui signoff do @qa-validator no contrato
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist: Arquivo 'planos/mudanca_specdriven.md' não autorizado para esta missão.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo: Arquivo '.context/maintenance/HARNESS_LOG.md' fora da whitelist da sprint (sprint_01).
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo: Arquivo 'planos/mudanca_specdriven.md' fora da whitelist da sprint (sprint_01).
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist Operacional: Arquivo 'planos/mudanca_specdriven.md' proibido nesta missão.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG06] start_hash não encontrado para sprint_01 no STATE.md (Formato esperado: ## sprint_01 
+ start_hash: ...)
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo '.specs/features/contract_sprints_v2_safe/STATE.md' fora do planejado para sprint_01.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo '.specs/features/contract_sprints_v2_safe/spec.md' fora do planejado para sprint_01.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo '.specs/features/contract_sprints_v2_safe/tasks.md' fora do planejado para sprint_01.
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
