@@ -477,7 +477,8 @@ Governança, Regras, Market
 **Contexto:** Transição para governança determinística e anti-fraude narrativa.
 **Dados de Arranque:**
 - **Feature:** `.specs/features/governance_rules_hardening/`
-- **Start Hash:** `79f83a738600d8677c7f3b3924f0687593da1a42`
+- **Start Hash:** `1e25643820d2fa47109de58a1c5a41e32c284682` (Recalibrado)
 - **Status:** `🚧 IN_PROGRESS`
 - **Executor:** `@antigravity-agent`
+**Nota:** Baseline ajustado após auditoria de bootstrap para garantir integridade total.
 **Objetivo Imediato:** Sprint 01 — Regras Canônicas em `RULES.md`.
