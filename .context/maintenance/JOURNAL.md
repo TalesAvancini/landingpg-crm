@@ -496,6 +496,13 @@ Governança, Regras, Market
 **Handoff:** `@spec-driver` ⮕ `@qa-validator`.
 **Estado:** Aguardando signoff para Sprint 03.
 
+## 📅 2026-05-01 01:25
+**Ação:** ✅ Conclusão Técnica Sprint 03.
+**Entrega:** Modo Advisory (Journal Chronology & State Freshness), Checklist Anti-Reincidência e padrão `GOVERNANCE-FRICTION`.
+**Harness Check:** `5291491` (PASS).
+**Handoff:** `@spec-driver` ⮕ `@qa-validator`.
+**Estado:** Aguardando signoff para Sprint 04.
+
 ## 📅 2026-04-30 21:49
 **Ação:** ✅ QA Signoff Sprint 01 (Governance Rules Hardening).
 **Auditor:** `@qa-validator` (Codex)
