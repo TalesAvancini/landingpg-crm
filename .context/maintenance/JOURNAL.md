@@ -471,3 +471,13 @@ Governança, Regras, Market
   - `harness_runner.py` ⮕ Poda real de arquivos e fail-closed para `DRAFT` quando há atividade.
 - **Status:** [CONSISTENT & HARDENED]
 - **Próximo:** Iniciar ciclo de desenvolvimento de features sobre fundação v2.5.0.
+
+## 📅 2026-04-30 21:00
+**Ação:** 🛡️ Rito de Início: Governance Rules Hardening (v5).
+**Contexto:** Transição para governança determinística e anti-fraude narrativa.
+**Dados de Arranque:**
+- **Feature:** `.specs/features/governance_rules_hardening/`
+- **Start Hash:** `79f83a738600d8677c7f3b3924f0687593da1a42`
+- **Status:** `🚧 IN_PROGRESS`
+- **Executor:** `@antigravity-agent`
+**Objetivo Imediato:** Sprint 01 — Regras Canônicas em `RULES.md`.
