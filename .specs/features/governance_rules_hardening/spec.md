@@ -1,30 +1,46 @@
 ---
 contract_version: 2.5.2
+parties: ["@spec-driver", "@qa-validator"]
 contract_mode: sprint_based
 current_sprint: sprint_01
-plan_source: planos/governance_rules_hardening/plano_governance_rules_hardening.md
-parties: ["@spec-driver", "@qa-validator"]
-executor_context_id: "ctx-dev-20260430-2111"
-validator_context_id: "ctx-qa-20260430-2111"
 policy_profile: hybrid
-impact_control:
-  max_impact_radius: 5
-  pre_flight_grep_terms: ["CLOSE_WAVE", "ANTI_FALSE_PASS", "start_hash"]
+plan_source: planos/governance_rules_hardening/plano_governance_rules_hardening.md
+qa_signoff: false
+signed_by: null
 
 sprints:
   sprint_01:
-    name: "Regras Canônicas & Self-Audit"
-    status: IN_PROGRESS
-    qa_signoff: false
+    goal: "Implementar Regras Canônicas (CLOSE_WAVE, ANTI_FALSE_PASS) e rito de Pre-Close Audit."
     scope_allow:
-      - .context/brain/RULES.md
-      - .context/brain/MASTER_FLOW.md
-      - .specs/features/governance_rules_hardening/spec.md
-      - .specs/features/governance_rules_hardening/tasks.md
-      - .specs/features/governance_rules_hardening/STATE.md
-      - .context/maintenance/JOURNAL.md
-      - .context/maintenance/HARNESS_LOG.md
+      - ".context/brain/RULES.md"
+      - ".context/brain/MASTER_FLOW.md"
+      - ".specs/features/governance_rules_hardening/spec.md"
+      - ".specs/features/governance_rules_hardening/tasks.md"
+      - ".specs/features/governance_rules_hardening/STATE.md"
+      - ".context/maintenance/JOURNAL.md"
+      - ".context/maintenance/HARNESS_LOG.md"
+    scope_deny: []
+    acceptance:
+      - "[ ] Regras CLOSE_WAVE e ANTI_FALSE_PASS publicadas no RULES.md"
+      - "[ ] Rito Pre-Close Audit inserido no MASTER_FLOW.md"
+      - "[ ] Passo Pre-close Self-Audit adicionado ao workflow do spec-driver"
+      - "[ ] Exemplos PASS/FAIL incluídos no RULES.md"
+    qa_signoff: false
+
+  sprint_02:
+    goal: "Integridade SSOT (MIMO_STATE_INTEGRITY) e Sanidade de Script (CRITICAL_SCRIPT_SANITY)."
+    scope_allow: []
+    scope_deny: []
+    acceptance: []
+    qa_signoff: false
 ---
 
 # Spec: Governance Rules Hardening
-> Contrato de implementação da governança determinística e anti-fraude narrativa.
+> Modo: Sprint-based (Hardened)
+
+## Objetivo
+Transformar aprendizados do pós-missão em governança executável end-to-end, eliminando fraudes narrativas e incoerências de fechamento.
+
+## Regras de Execução
+- Fechamento de sprint exige `qa_signoff: true` no bloco da sprint.
+- Fechamento global exige consistência entre `spec.md`, `tasks.md`, `STATE.md` e árvore Git limpa.

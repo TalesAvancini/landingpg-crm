@@ -1,6 +1,7 @@
 ---
 contract_version: 2.5.2
 parties: ["@spec-driver", "@qa-validator"]
+# TEMPLATE MODE: STANDARD ONLY
 type: standard
 executor_context_id: "ctx-dev-YYYYMMDD-HHMM"
 validator_context_id: "ctx-qa-YYYYMMDD-HHMM"
