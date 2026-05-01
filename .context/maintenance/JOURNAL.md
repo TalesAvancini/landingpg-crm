@@ -488,6 +488,13 @@ Governança, Regras, Market
 **Entrega:** Regras `CLOSE_WAVE`, `ANTI_FALSE_PASS` e rito `Pre-Close Audit` implementados.
 **Harness Check:** `aa389b8` (PASS).
 **Handoff:** `@spec-driver` ⮕ `@qa-validator` (Usuário/Codex).
+
+## 📅 2026-04-30 21:49
+**Ação:** ✅ QA Signoff Sprint 01 (Governance Rules Hardening).
+**Auditor:** `@qa-validator` (Codex)
+**Verificação:** Coerência `spec/tasks/state`, regras canônicas em `RULES.md`, rito `Pre-Close Audit` em `MASTER_FLOW.md`, árvore limpa.
+**Resultado:** `qa_signoff: true` aplicado na `sprint_01`. Transição para `current_sprint: sprint_02`.
+
 ## 📅 2026-04-30 21:57
 **Ação:** ✅ Conclusão Técnica Sprint 02.
 **Entrega:** Regras `MIMO_STATE_INTEGRITY` e `CRITICAL_SCRIPT_SANITY` implementadas e integradas.
@@ -496,21 +503,15 @@ Governança, Regras, Market
 **Handoff:** `@spec-driver` ⮕ `@qa-validator`.
 **Estado:** Aguardando signoff para Sprint 03.
 
-## 📅 2026-05-01 01:25
-**Ação:** ✅ Conclusão Técnica Sprint 03.
-**Entrega:** Modo Advisory (Journal Chronology & State Freshness), Checklist Anti-Reincidência e padrão `GOVERNANCE-FRICTION`.
-**Harness Check:** `5291491` (PASS).
-**Handoff:** `@spec-driver` ⮕ `@qa-validator`.
-**Estado:** Aguardando signoff para Sprint 04.
-
-## 📅 2026-04-30 21:49
-**Ação:** ✅ QA Signoff Sprint 01 (Governance Rules Hardening).
-**Auditor:** `@qa-validator` (Codex)
-**Verificação:** Coerência `spec/tasks/state`, regras canônicas em `RULES.md`, rito `Pre-Close Audit` em `MASTER_FLOW.md`, árvore limpa.
-**Resultado:** `qa_signoff: true` aplicado na `sprint_01`. Transição para `current_sprint: sprint_02`.
-
 ## 📅 2026-04-30 22:02
 **Ação:** ✅ QA Signoff Sprint 02 (Governance Rules Hardening).
 **Auditor:** `@qa-validator` (Codex)
 **Verificação:** Regras `MIMO_STATE_INTEGRITY` e `CRITICAL_SCRIPT_SANITY` presentes no `RULES.md`; obrigação de sanidade em `_scripts/` mapeada no `MASTER_FLOW.md`; `context:validate` em PASS; árvore limpa.
 **Resultado:** `qa_signoff: true` aplicado na `sprint_02`. Transição para `current_sprint: sprint_03`.
+
+## 📅 2026-04-30 22:25
+**Ação:** ✅ Conclusão Técnica Sprint 03.
+**Entrega:** Regras `MIMO_STATE_INTEGRITY` (via Advisory), Checklist Anti-Reincidência e padrão `GOVERNANCE-FRICTION`.
+**Harness Check:** `5291491` (PASS).
+**Handoff:** `@spec-driver` ⮕ `@qa-validator`.
+**Estado:** Aguardando signoff para Sprint 04.

@@ -138,6 +138,19 @@ def check_sprint_acceptance_sync():
     return True, "OK"
 
 
+def log_friction(event_code, detail):
+    """Registra fricção de governança no HARNESS_LOG.md."""
+    log_path = CONTEXT_DIR / "maintenance/HARNESS_LOG.md"
+    if not log_path.exists():
+        return
+    
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
+    entry = f"\n## [GOVERNANCE-FRICTION] {event_code} | {timestamp}\n- **Detalhe:** {detail}\n"
+    
+    with open(log_path, "a", encoding="utf-8") as f:
+        f.write(entry)
+
+
 def check_journal_chronology():
     """Modo Advisory: Avisa se as datas no JOURNAL.md não estão em ordem crescente."""
     journal = CONTEXT_DIR / "maintenance/JOURNAL.md"
@@ -156,7 +169,9 @@ def check_journal_chronology():
         prev = date_patterns[i-1]
         curr = date_patterns[i]
         if curr < prev:
-            warnings.append(f"Inversão detectada: {curr} aparece após {prev}")
+            msg = f"Inversão detectada: {curr} aparece após {prev}"
+            warnings.append(msg)
+            log_friction("GF-JOURNAL-ORDER", msg)
 
     if warnings:
         return False, " | ".join(warnings)
@@ -164,13 +179,13 @@ def check_journal_chronology():
 
 
 def check_state_freshness():
-    """Modo Advisory: Avisa se o campo 'updated' no STATE.md está defasado."""
+    """Modo Advisory: Avisa se o campo 'updated' no STATE.md está defasado (datetime completo)."""
     specs_dir = CONTEXT_DIR.parent / ".specs" / "features"
     if not specs_dir.exists():
         return True, "Sem specs"
 
     warnings = []
-    today = datetime.now().strftime("%Y-%m-%d")
+    now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
     
     for spec_dir in [d for d in specs_dir.iterdir() if d.is_dir() and not d.name.startswith("_")]:
         state_path = spec_dir / "STATE.md"
@@ -178,14 +193,29 @@ def check_state_freshness():
             continue
         
         content = state_path.read_text(encoding="utf-8", errors="ignore")
-        match = re.search(r"updated:\s*(\d{4}-\d{2}-\d{2})", content)
+        # Captura updated: YYYY-MM-DD HH:MM
+        match = re.search(r"updated:\s*(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})", content)
         if not match:
-            warnings.append(f"{spec_dir.name}: campo 'updated' ausente")
-            continue
+            # Tenta capturar apenas data se hora estiver ausente
+            match_date = re.search(r"updated:\s*(\d{4}-\d{2}-\d{2})", content)
+            if not match_date:
+                warnings.append(f"{spec_dir.name}: campo 'updated' ausente ou malformado")
+                continue
+            updated_val = match_date.group(1)
+        else:
+            updated_val = match.group(1)
             
-        updated_date = match.group(1)
-        if updated_date < today:
-            warnings.append(f"{spec_dir.name}: status defasado ({updated_date} < {today})")
+        # Consideramos 'stale' se for anterior ao início da hora atual (tolerância simples)
+        if updated_val < now_str[:10]: # Check de data simples primeiro
+             msg = f"{spec_dir.name}: status defasado ({updated_val} < {now_str[:10]})"
+             warnings.append(msg)
+             log_friction("GF-STATE-FRESHNESS", msg)
+        elif " " in updated_val and updated_val < now_str: # Check de hora se presente
+             # Advisory apenas se a diferença for significativa (>1h)? 
+             # Por enquanto, qualquer atraso gera advisory conforme pedido do QA.
+             msg = f"{spec_dir.name}: status desatualizado ({updated_val} < {now_str})"
+             warnings.append(msg)
+             log_friction("GF-STATE-FRESHNESS", msg)
 
     if warnings:
         return False, " | ".join(warnings)

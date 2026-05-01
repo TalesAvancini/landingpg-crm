@@ -339,3 +339,72 @@ Status: Ativo
 
 ## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
 - **Detalhe:** All contracts valid
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-30 03:40 aparece após 2026-04-30 18:55
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-30 02:45 aparece após 2026-04-30 03:40
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-30 00:15 aparece após 2026-04-30 02:45
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-29 01:35 aparece após 2026-04-30 00:15
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-28 23:55 aparece após 2026-04-29 01:35
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-28 23:45 aparece após 2026-04-28 23:55
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-28 23:00 aparece após 2026-04-28 23:45
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 23:58 aparece após 2026-04-28 23:00
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 17:30 aparece após 2026-04-26 23:58
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 17:20 aparece após 2026-04-26 17:30
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 17:00 aparece após 2026-04-26 17:20
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 16:30 aparece após 2026-04-26 17:00
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 15:30 aparece após 2026-04-26 16:30
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 14:20 aparece após 2026-04-26 15:30
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 01:32 aparece após 2026-04-26 14:20
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 01:18 aparece após 2026-04-26 01:32
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 00:54 aparece após 2026-04-26 01:18
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 00:08 aparece após 2026-04-26 00:54
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-24 15:20 aparece após 2026-04-26 00:08
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-24 13:52 aparece após 2026-04-24 15:20
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-23 22:20 aparece após 2026-04-24 13:52
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-22 09:50 aparece após 2026-04-23 22:20
+
+## [GOVERNANCE-FRICTION] GF-STATE-FRESHNESS | 2026-04-30 22:34
+- **Detalhe:** contract_sprints_v2_safe: status desatualizado (2026-04-30 18:57 < 2026-04-30 22:34)

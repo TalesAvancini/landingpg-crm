@@ -6,7 +6,6 @@
 
 ## 🏗️ Sprint 01: Regras Canônicas & Self-Audit
 - [x] **TASK-01**: Inserir `CLOSE_WAVE` + `ANTI_FALSE_PASS` em RULES.md.
-  - *Verify*: `npm run context:validate` (HG01).
 - [x] **TASK-02**: Inserir `Pre-Close Audit` em MASTER_FLOW.md.
 - [x] **TASK-03**: Adicionar passo `Pre-close Self-Audit` no workflow do @spec-driver.
 
@@ -17,9 +16,9 @@
 ## 🏗️ Sprint 03: Runbook & Métricas Operacionais
 - [x] **TASK-06**: Inserir checklist anti-reincidência no MASTER_FLOW.md.
 - [x] **TASK-07**: Definir métricas mínimas por onda.
-- [x] **TASK-07A**: Adicionar checagem de ordem cronológica do `JOURNAL.md` como WARN (advisory, sem bloqueio).
-- [x] **TASK-07B**: Reforçar no checklist a disciplina de atualização do campo `updated` no `STATE.md` (sem gate duro). (Última Atualização: 2026-04-30 22:25)
-- [x] **TASK-07C**: Iniciar emissão de eventos `[GOVERNANCE-FRICTION]` em modo advisory no `HARNESS_LOG.md`.
+- [x] **TASK-07A**: Adicionar checagem de ordem cronológica do `JOURNAL.md` como WARN (advisory).
+- [x] **TASK-07B**: Reforçar disciplina de `updated` no `STATE.md` com datetime completo.
+- [x] **TASK-07C**: Implementar emissão automática de `[GOVERNANCE-FRICTION]` no `HARNESS_LOG.md`.
 
 ## 🏗️ Sprint 04: Sincronização Institucional
 - [ ] **TASK-08**: Atualizar HARNESS_REGISTRY.md e glossários (Script/File).

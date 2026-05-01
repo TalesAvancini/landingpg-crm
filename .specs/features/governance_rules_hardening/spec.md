@@ -60,8 +60,8 @@ sprints:
     scope_deny: []
     acceptance:
       - "[x] Ordem cronológica do JOURNAL tratada como WARN (não bloqueante)"
-      - "[x] Disciplina de `STATE.updated` reforçada no checklist (sem gate duro)"
-      - "[x] Eventos `[GOVERNANCE-FRICTION]` iniciados em modo advisory"
+      - "[x] Disciplina de `STATE.updated` reforçada no checklist (datetime completo)"
+      - "[x] Eventos `[GOVERNANCE-FRICTION]` automatizados no HARNESS_LOG.md"
     qa_signoff: false
     signed_by: null
 ---
