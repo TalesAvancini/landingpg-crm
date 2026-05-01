@@ -1,8 +1,9 @@
 ---
 Criado em: 2026-04-10 20:50
-Ultima Atualizacao: 2026-04-30 23:16
+Ultima Atualizacao: 2026-04-30 23:22
 Status: Ativo
 Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_144021.md.
+Ordem Cronológica: REVERSA (O mais recente fica sempre no TOPO) !!!
 ---
 
 # JOURNAL.md (Memoria Contínua)
