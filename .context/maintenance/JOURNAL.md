@@ -514,4 +514,11 @@ Governança, Regras, Market
 **Entrega:** Regras `MIMO_STATE_INTEGRITY` (via Advisory), Checklist Anti-Reincidência e padrão `GOVERNANCE-FRICTION`.
 **Harness Check:** `5291491` (PASS).
 **Handoff:** `@spec-driver` ⮕ `@qa-validator`.
-**Estado:** Aguardando signoff para Sprint 04.
+
+## 📅 2026-04-30 22:35
+**Ação:** 🔧 Refinamento Auditoria Sprint 03.
+**Ajustes:** Automação de log `[GOVERNANCE-FRICTION]` no `HARNESS_LOG.md`, refinamento de check de `STATE.updated` (datetime completo) e correção de cronologia/timezone.
+**Evidência:** Eventos GF-JOURNAL-ORDER e GF-STATE-FRESHNESS emitidos no log operacional.
+**Harness Check:** `78968dd` (PASS).
+**Handoff:** `@spec-driver` ⮕ `@qa-validator`.
+**Estado:** Aguardando signoff definitivo da Sprint 03.
