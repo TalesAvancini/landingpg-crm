@@ -1,85 +1,97 @@
 ---
-Criado em: 2026-05-01 00:18
-Ultima Atualizacao: 2026-05-01 00:18
+Criado em: 2026-05-01 00:51
+Ultima Atualizacao: 2026-05-01 00:51
 Status: Ativo
 ---
 
-# 📡 RX-COMMUNICATIONS: Mapa de Conectividade do Ecossistema
+# 📡 RX-COMMUNICATIONS: Mapa de Conectividade Global (v2)
 
-Este documento é o SSOT de conectividade técnica. Ele mapeia como os artefatos de governança se "comunicam" entre si através de gatilhos, dependências e fluxos de validação.
+Este documento é o SSOT da topologia técnica do projeto. Ele descreve o "sistema nervoso" do ecossistema, mapeando como os artefatos de governança e execução se comunicam através de sinais, dependências e gatilhos.
 
 ---
 
-## 🕸️ 1. Mapa de Conectividade (Nós e Arestas)
+## 🌌 1. Mapa Mestre de Conectividade (Visão Holística)
 
 ```mermaid
 graph TD
-    %% Nós (Artefatos)
-    RULES["RULES.md<br/>(A Lei)"]
-    MF["MASTER_FLOW.md<br/>(O Processo)"]
-    SPEC["spec.md<br/>(O Contrato)"]
-    STATE["STATE.md<br/>(O Gatekeeper)"]
-    TASK["tasks.md<br/>(A Checklist)"]
-    JOURNAL["JOURNAL.md<br/>(A Memória)"]
-    LOG["HARNESS_LOG.md<br/>(A Telemetria)"]
-    VAL["validate_context.py<br/>(O Validador)"]
+    %% ESTILOS (Dark/Technical)
+    classDef strategic fill:#1a1a1a,stroke:#333,color:#fff,stroke-width:2px
+    classDef tactical fill:#2a2a2a,stroke:#444,color:#fff,stroke-width:2px
+    classDef immune fill:#000,stroke:#555,color:#fff,stroke-dasharray: 5 5
+    classDef metabolic fill:#111,stroke:#444,color:#aaa
+    classDef process fill:#1a1a1a,stroke:#666,color:#fff,stroke-width:3px
 
-    %% Arestas (Linhas de Contato)
-    RULES -.->|Define Restrições| MF
-    MF -->|Instancia| SPEC
-    SPEC -->|Governa| TASK
-    TASK -->|Atualiza| STATE
-    
-    STATE -->|Baseline Check| VAL
-    SPEC -->|Acceptance Sync| VAL
-    VAL -->|Registra Fricção| LOG
-    
-    STATE -->|Handoff/Fechamento| JOURNAL
-    JOURNAL -->|Histórico| RULES
-    
-    LOG -.->|Alimenta Auditoria| VAL
-    
-    subgraph "Loop de Execução (Hardened)"
-        SPEC
-        STATE
-        TASK
-        VAL
+    subgraph "CAMADA ESTRATÉGICA (O Porquê)"
+        VIS["VISION.md"]:::strategic
+        INC["INCEPTION.md"]:::strategic
+        PRD["PRD.md"]:::strategic
+        VIS --> INC --> PRD
     end
 
-    style RULES fill:#1a1a1a,stroke:#333,stroke-width:2px,color:#fff
-    style VAL fill:#2a2a2a,stroke:#444,stroke-width:2px,color:#fff
-    style JOURNAL fill:#1a1a1a,stroke:#333,stroke-width:1px,color:#fff
-    style LOG fill:#000,stroke:#222,stroke-width:1px,color:#fff
-    style MF fill:#222,stroke:#444,color:#fff
-    style SPEC fill:#222,stroke:#444,color:#fff
-    style STATE fill:#222,stroke:#444,color:#fff
-    style TASK fill:#222,stroke:#444,color:#fff
+    subgraph "CAMADA CONSTITUCIONAL (A Lei)"
+        RUL["RULES.md"]:::process
+        MF["MASTER_FLOW.md"]:::process
+        RUL --> MF
+    end
+
+    subgraph "CAMADA TÁTICA (O Como)"
+        SPEC["spec.md"]:::tactical
+        TASK["tasks.md"]:::tactical
+        STATE["STATE.md"]:::tactical
+        SPEC --> TASK --> STATE
+    end
+
+    subgraph "SISTEMA IMUNOLÓGICO (A Governança)"
+        VAL{{validate_context.py}}:::immune
+        LOG["HARNESS_LOG.md"]:::immune
+        HEALTH["CONTEXT_HEALTH.md"]:::immune
+        VAL --> LOG --> HEALTH
+    end
+
+    subgraph "SISTEMA METABÓLICO (A Memória)"
+        JOU["JOURNAL.md"]:::metabolic
+        SYN{{JOURNAL_SYNAPSE.md}}:::metabolic
+        ARC["_archive_context/"]:::metabolic
+        JOU <--> SYN --> ARC
+    end
+
+    %% CONEXÕES DE FLUXO (As Linhas de Contato)
+    
+    %% Intenção para Tático
+    PRD -.->|Diretriz| SPEC
+    
+    %% Constituição para todos
+    MF -->|Orquestra| SPEC
+    RUL -->|Restringe| MF
+    RUL -->|Lógica de Validação| VAL
+    
+    %% Tático para Governança
+    STATE -- "Baseline Hash" --> VAL
+    SPEC -- "Acceptance Sync" --> VAL
+    
+    %% Execução para Memória
+    STATE -- "Handoff/Registro" --> JOU
+    VAL -- "Fricção/Sucesso" --> JOU
+    
+    %% Feedback Loop
+    JOU -.->|Scars / Lições| RUL
+    HEALTH -.->|Alerta de Saúde| MF
 ```
 
 ---
 
-## 🔗 2. Tabela de Sinais (Interação de Artefatos)
+## 🔗 2. Tabela de Sinais de Conectividade
 
-| Nó Emissor | Nó Receptor | Sinal / Linha de Contato | Natureza |
+| Origem | Destino | Natureza do Sinal | Propósito |
 | :--- | :--- | :--- | :--- |
-| `spec.md` | `tasks.md` | Definição de Escopo | Diretiva |
-| `tasks.md` | `STATE.md` | Progresso Atômico | Estado |
-| `STATE.md` | `validate_context.py` | `start_hash` (Baseline) | Validação Crítica |
-| `spec.md` | `validate_context.py` | `acceptance_sync` | Validação Crítica |
-| `validate_context.py` | `HARNESS_LOG.md` | `[GOVERNANCE-FRICTION]` | Telemetria |
-| `STATE.md` | `JOURNAL.md` | Handoff e Signoff | Memória |
+| `PRD.md` | `spec.md` | **Diretriz** | Garante que o código atende ao requisito de negócio. |
+| `RULES.md` | `validate_context.py` | **Protocolo** | Alimenta o "DNA" do que deve ser fiscalizado. |
+| `MASTER_FLOW.md` | `spec.md` | **Orquestração** | Gatilho de nascimento de uma nova tarefa. |
+| `STATE.md` | `validate_context.py` | **Evidência** | Foto física (hash) para garantir que não há drift. |
+| `JOURNAL_SYNAPSE.md` | `JOURNAL.md` | **Metabólica** | Limpeza e compressão de memória para evitar bloat. |
+| `JOURNAL.md` | `RULES.md` | **Aprendizado** | Cicatrizes (Scars) de erros passados viram novas leis. |
 
 ---
 
-## 🛡️ 3. Bloqueios Fail-Closed (Circuit Breakers)
-
-As linhas de contato acima não são apenas informativas; elas possuem travas mecânicas:
-
-1.  **GF-ATOMIC-DESYNC**: Se a linha `STATE.md` ⮕ `Git History` falhar (hash inexistente), o pipeline morre.
-2.  **GF-ACCEPTANCE-DESYNC**: Se a linha `tasks.md` ⮕ `spec.md` estiver em descompasso (tarefas [x] vs acceptance [ ]), o commit é bloqueado.
-3.  **GF-NARRATIVE-FRAUD**: Se a linha `JOURNAL.md` ⮕ `Git Diff` alegar uma modificação não detectada fisicamente, o processo é abortado.
-
----
-
-## 📈 4. Telemetria de Conectividade
-O monitoramento da saúde destas conexões é feito através do `[GOVERNANCE-FRICTION]`, registrando a "resistência" (atrito) que o sistema encontra ao tentar manter a coerência entre os nós.
+## 🛡️ 3. Governança da Conectividade
+Qualquer alteração na responsabilidade de um arquivo (Glossário) ou na forma como eles se tocam deve ser refletida neste Mapa. Este documento é o guia definitivo para agentes de IA entenderem seu papel dentro do organismo H.O.K Forge.
