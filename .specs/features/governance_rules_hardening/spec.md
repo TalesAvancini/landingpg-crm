@@ -2,7 +2,7 @@
 contract_version: 2.5.2
 parties: ["@spec-driver", "@qa-validator"]
 contract_mode: sprint_based
-current_sprint: sprint_02
+current_sprint: sprint_03
 policy_profile: hybrid
 plan_source: planos/governance_rules_hardening/plano_governance_rules_hardening.md
 qa_signoff: false
@@ -44,6 +44,24 @@ sprints:
       - "[x] Regra CRITICAL_SCRIPT_SANITY (Sanidade de Scripts) formalizada no RULES.md"
       - "[x] Mapeamento de sanidade de scripts inserido no MASTER_FLOW.md"
       - "[x] Metadados de freshness atualizados em ambos os arquivos normais"
+    qa_signoff: true
+    signed_by: "@qa-validator"
+
+  sprint_03:
+    goal: "Runbook & Métricas Operacionais com modo advisory para fricção de governança."
+    scope_allow:
+      - ".context/brain/MASTER_FLOW.md"
+      - ".context/_scripts/validate_context.py"
+      - ".context/maintenance/HARNESS_LOG.md"
+      - ".specs/features/governance_rules_hardening/spec.md"
+      - ".specs/features/governance_rules_hardening/tasks.md"
+      - ".specs/features/governance_rules_hardening/STATE.md"
+      - ".context/maintenance/JOURNAL.md"
+    scope_deny: []
+    acceptance:
+      - "[ ] Ordem cronológica do JOURNAL tratada como WARN (não bloqueante)"
+      - "[ ] Disciplina de `STATE.updated` reforçada no checklist (sem gate duro)"
+      - "[ ] Eventos `[GOVERNANCE-FRICTION]` iniciados em modo advisory"
     qa_signoff: false
 ---
 

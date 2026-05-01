@@ -17,6 +17,9 @@
 ## 🏗️ Sprint 03: Runbook & Métricas Operacionais
 - [ ] **TASK-06**: Inserir checklist anti-reincidência no MASTER_FLOW.md.
 - [ ] **TASK-07**: Definir métricas mínimas por onda.
+- [ ] **TASK-07A**: Adicionar checagem de ordem cronológica do `JOURNAL.md` como WARN (advisory, sem bloqueio).
+- [ ] **TASK-07B**: Reforçar no checklist a disciplina de atualização do campo `updated` no `STATE.md` (sem gate duro).
+- [ ] **TASK-07C**: Iniciar emissão de eventos `[GOVERNANCE-FRICTION]` em modo advisory no `HARNESS_LOG.md`.
 
 ## 🏗️ Sprint 04: Sincronização Institucional
 - [ ] **TASK-08**: Atualizar HARNESS_REGISTRY.md e glossários (Script/File).

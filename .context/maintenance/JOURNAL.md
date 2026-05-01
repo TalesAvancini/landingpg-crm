@@ -501,3 +501,9 @@ Governança, Regras, Market
 **Auditor:** `@qa-validator` (Codex)
 **Verificação:** Coerência `spec/tasks/state`, regras canônicas em `RULES.md`, rito `Pre-Close Audit` em `MASTER_FLOW.md`, árvore limpa.
 **Resultado:** `qa_signoff: true` aplicado na `sprint_01`. Transição para `current_sprint: sprint_02`.
+
+## 📅 2026-04-30 22:02
+**Ação:** ✅ QA Signoff Sprint 02 (Governance Rules Hardening).
+**Auditor:** `@qa-validator` (Codex)
+**Verificação:** Regras `MIMO_STATE_INTEGRITY` e `CRITICAL_SCRIPT_SANITY` presentes no `RULES.md`; obrigação de sanidade em `_scripts/` mapeada no `MASTER_FLOW.md`; `context:validate` em PASS; árvore limpa.
+**Resultado:** `qa_signoff: true` aplicado na `sprint_02`. Transição para `current_sprint: sprint_03`.
