@@ -1,51 +1,76 @@
 ---
-Criado em: 2026-04-30 23:30
-Ultima Atualizacao: 2026-04-30 23:30
+Criado em: 2026-05-01 00:18
+Ultima Atualizacao: 2026-05-01 00:18
 Status: Ativo
 ---
 
-# 📡 RX-COMMUNICATIONS: Protocolos de Transparência Narrativa
+# 📡 RX-COMMUNICATIONS: Mapa de Conectividade do Ecossistema
 
-Este documento define os ritos de comunicação externa e interna para garantir que a execução autônoma seja auditável, transparente e livre de "caixas pretas".
-
----
-
-## 🗣️ 1. Comunicação Agente-Humano (Interface)
-
-### 1.1 Rito de Transparência Total
-- O Agente deve reportar falhas de governança (SAM) de forma imediata e honesta, sem tentar "esconder" erros técnicos sob narrativas de sucesso.
-- **Protocolo de Erro:** Se o Husky ou o validador bloquear um commit, o Agente deve explicar o motivo técnico exato (ex: hash inválido, desync de tarefas).
-
-### 1.2 Uso de Emojis de Status
-- `🛡️` : Rito de Governança/Início.
-- `✅` : Conclusão técnica com evidência.
-- `🚧` : Em progresso (bloqueios ou desafios).
-- `❌` : Violação de regra ou erro fatal.
-- `🟢` : Pronto para auditoria/signoff.
+Este documento é o SSOT de conectividade técnica. Ele mapeia como os artefatos de governança se "comunicam" entre si através de gatilhos, dependências e fluxos de validação.
 
 ---
 
-## 🧠 2. Comunicação Inter-Agente (Nervos)
+## 🕸️ 1. Mapa de Conectividade (Nós e Arestas)
 
-### 2.1 Handoff Atômico
-- Toda transição entre `@spec-driver` e `@qa-validator` deve ser registrada no `JOURNAL.md` com o ID do contexto.
-- O `@spec-driver` não pode apenas "parar"; ele deve convocar explicitamente o auditor.
+```mermaid
+graph TD
+    %% Nós (Artefatos)
+    RULES["RULES.md<br/>(A Lei)"]
+    MF["MASTER_FLOW.md<br/>(O Processo)"]
+    SPEC["spec.md<br/>(O Contrato)"]
+    STATE["STATE.md<br/>(O Gatekeeper)"]
+    TASK["tasks.md<br/>(A Checklist)"]
+    JOURNAL["JOURNAL.md<br/>(A Memória)"]
+    LOG["HARNESS_LOG.md<br/>(A Telemetria)"]
+    VAL["validate_context.py<br/>(O Validador)"]
 
-### 2.2 Sincronia de Contrato
-- O `spec.md` é a única fonte de verdade para a aceitação de uma feature. 
-- Se um agente detecta que o contrato está defasado vs `tasks.md`, ele deve interromper a execução e realizar a **Sincronização de Contrato** antes de prosseguir.
+    %% Arestas (Linhas de Contato)
+    RULES -.->|Define Restrições| MF
+    MF -->|Instancia| SPEC
+    SPEC -->|Governa| TASK
+    TASK -->|Atualiza| STATE
+    
+    STATE -->|Baseline Check| VAL
+    SPEC -->|Acceptance Sync| VAL
+    VAL -->|Registra Fricção| LOG
+    
+    STATE -->|Handoff/Fechamento| JOURNAL
+    JOURNAL -->|Histórico| RULES
+    
+    LOG -.->|Alimenta Auditoria| VAL
+    
+    subgraph "Loop de Execução (Hardened)"
+        SPEC
+        STATE
+        TASK
+        VAL
+    end
+```
 
 ---
 
-## 🛡️ 3. Ritos de Conflito (Escalonamento)
+## 🔗 2. Tabela de Sinais (Interação de Artefatos)
 
-### 3.1 Detecção de Drift
-- Se o SAM detectar uma **Fraude Narrativa**, o agente executor deve realizar um rito de **"Autocrítica Técnica"** no Journal, corrigindo a narrativa antes de tentar um novo commit.
-
-### 3.2 Bloqueio de Pipeline
-- Em caso de bloqueio por `GF-ATOMIC-DESYNC`, é proibido "chutar" hashes. O agente deve executar `git log` para recuperar a âncora física real.
+| Nó Emissor | Nó Receptor | Sinal / Linha de Contato | Natureza |
+| :--- | :--- | :--- | :--- |
+| `spec.md` | `tasks.md` | Definição de Escopo | Diretiva |
+| `tasks.md` | `STATE.md` | Progresso Atômico | Estado |
+| `STATE.md` | `validate_context.py` | `start_hash` (Baseline) | Validação Crítica |
+| `spec.md` | `validate_context.py` | `acceptance_sync` | Validação Crítica |
+| `validate_context.py` | `HARNESS_LOG.md` | `[GOVERNANCE-FRICTION]` | Telemetria |
+| `STATE.md` | `JOURNAL.md` | Handoff e Signoff | Memória |
 
 ---
 
-## 📈 4. Telemetria de Fricção
-- Toda fricção registrada no `HARNESS_LOG.md` deve ser sumarizada no rito de fechamento da Sprint para visibilidade do Usuário.
+## 🛡️ 3. Bloqueios Fail-Closed (Circuit Breakers)
+
+As linhas de contato acima não são apenas informativas; elas possuem travas mecânicas:
+
+1.  **GF-ATOMIC-DESYNC**: Se a linha `STATE.md` ⮕ `Git History` falhar (hash inexistente), o pipeline morre.
+2.  **GF-ACCEPTANCE-DESYNC**: Se a linha `tasks.md` ⮕ `spec.md` estiver em descompasso (tarefas [x] vs acceptance [ ]), o commit é bloqueado.
+3.  **GF-NARRATIVE-FRAUD**: Se a linha `JOURNAL.md` ⮕ `Git Diff` alegar uma modificação não detectada fisicamente, o processo é abortado.
+
+---
+
+## 📈 4. Telemetria de Conectividade
+O monitoramento da saúde destas conexões é feito através do `[GOVERNANCE-FRICTION]`, registrando a "resistência" (atrito) que o sistema encontra ao tentar manter a coerência entre os nós.
