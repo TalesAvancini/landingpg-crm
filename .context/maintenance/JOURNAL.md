@@ -537,4 +537,15 @@ Governança, Regras, Market
 **Entrega:** Sincronização institucional completa. `HARNESS_REGISTRY.md` (H05), `SCRIPT_GLOSSARY.md` (validate_context), `PROMPT_LIBRARY.md` (Protocolo Hardened) e `FILE_GLOSSARY.md` atualizados.
 **Harness Check:** `a4fa31c` (PASS).
 **Handoff:** `@spec-driver` ⮕ `@qa-validator`.
-**Estado:** Aguardando signoff para Sprint 04.
+## 📅 2026-04-30 22:56
+**Ação:** ✅ QA Signoff Sprint 04 (Governance Rules Hardening).
+**Auditor:** `@qa-validator` (Codex)
+**Verificação:** Todos os registros institucionais (Harness, Glossários, Prompts) sincronizados com a governança V5. Higiene de árvore 100%.
+**Resultado:** `qa_signoff: true` aplicado na `sprint_04`. Transição para `current_sprint: sprint_05`.
+
+## 📅 2026-04-30 22:56
+**Ação:** 🛡️ Rito de Abertura: Sprint 05 (Enforcement Automático).
+**Contexto:** Transição da "casca" (documentação) para o "músculo" (enforcement técnico).
+**Handoff:** `@qa-validator` ⮕ `@spec-driver`.
+**Objetivo:** Implementar validações bloqueantes (Fail-Closed) em `validate_context.py`.
+**Estado:** `🚧 IN_PROGRESS` (Sprint 05).

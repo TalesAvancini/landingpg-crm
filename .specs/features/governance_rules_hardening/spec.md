@@ -2,7 +2,7 @@
 contract_version: 2.5.2
 parties: ["@spec-driver", "@qa-validator"]
 contract_mode: sprint_based
-current_sprint: sprint_04
+current_sprint: sprint_05
 policy_profile: hybrid
 plan_source: planos/governance_rules_hardening/plano_governance_rules_hardening.md
 qa_signoff: false
@@ -78,6 +78,21 @@ sprints:
     acceptance:
       - "[x] HARNESS_REGISTRY.md e glossários atualizados"
       - "[x] PROMPT_LIBRARY.md atualizada com padrões de hardening"
+    qa_signoff: true
+    signed_by: "@qa-validator"
+
+  sprint_05:
+    goal: "Enforcement Automático (Músculos): Implementar validações automáticas em validate_context.py."
+    scope_allow:
+      - ".context/_scripts/validate_context.py"
+      - ".specs/features/governance_rules_hardening/spec.md"
+      - ".specs/features/governance_rules_hardening/tasks.md"
+      - ".specs/features/governance_rules_hardening/STATE.md"
+      - ".context/maintenance/JOURNAL.md"
+    scope_deny: []
+    acceptance:
+      - "[ ] Validação de meta-data freshness bloqueante (Fail-Closed)"
+      - "[ ] Validação de sync de acceptance/tasks bloqueante"
     qa_signoff: false
     signed_by: null
 ---
