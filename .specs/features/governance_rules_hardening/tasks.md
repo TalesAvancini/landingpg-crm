@@ -25,8 +25,8 @@
 - [x] **TASK-09**: Atualizar PROMPT_LIBRARY.md.
 
 ## 🏗️ Sprint 05: Enforcement Automático (Músculos)
-- [ ] **TASK-10**: Implementar validação automática em `validate_context.py`.
-- [ ] **TASK-11**: Adicionar testes de não regressão em `tests/test_context.py`.
+- [x] **TASK-10**: Implementar validação automática de meta-data freshness bloqueante.
+- [x] **TASK-11**: Implementar `check_sprint_acceptance_sync` como erro bloqueante.
 
 ## 🏗️ Sprint 06: Hardening de Agenciamento (Nervos)
 - [ ] **TASK-12**: Atualizar papéis spec-driver e qa-validator com protocolo Hardened Closing.

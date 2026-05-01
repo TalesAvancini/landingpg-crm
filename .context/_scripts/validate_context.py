@@ -382,9 +382,9 @@ def validate():
 
     acceptance_ok, acceptance_msg = check_sprint_acceptance_sync()
     if not acceptance_ok:
-        issues.append(f"[WARN] Sprint Acceptance Sync: {acceptance_msg}")
-        if exit_code == 0:
-            exit_code = 1
+        issues.append(f"[ERROR] Sprint Acceptance Sync: {acceptance_msg}")
+        exit_code = 1
+        log_friction("GF-ACCEPTANCE-DESYNC", acceptance_msg)
     else:
         print(f"[OK] Sprint Acceptance Sync: {acceptance_msg}")
 
@@ -413,25 +413,23 @@ def validate():
 
     reg_ok, reg_msg = check_registry_structure()
     if not reg_ok:
-        issues.append(f"[WARN] AGENT_REGISTRY.md: {reg_msg}")
-        if exit_code == 0:
-            exit_code = 1
+        issues.append(f"[ERROR] AGENT_REGISTRY.md: {reg_msg}")
+        exit_code = 1
     else:
         print("[OK] AGENT_REGISTRY.md estrutura válida.")
 
     meta_ok, meta_msg = check_metadata_freshness()
     if not meta_ok:
-        issues.append(f"[WARN] Metadata freshness: {meta_msg}")
-        if exit_code == 0:
-            exit_code = 1
+        issues.append(f"[ERROR] Metadata freshness: {meta_msg}")
+        exit_code = 1
+        log_friction("GF-METADATA-STALE", meta_msg)
     else:
         print(f"[OK] Metadata freshness: {meta_msg}")
 
     wiki_ok, wiki_msg = check_wiki_integrity()
     if not wiki_ok:
-        issues.append(f"[WARN] WIKI: {wiki_msg}")
-        if exit_code == 0:
-            exit_code = 1
+        issues.append(f"[ERROR] WIKI: {wiki_msg}")
+        exit_code = 1
     else:
         print(f"[OK] WIKI: {wiki_msg}")
 

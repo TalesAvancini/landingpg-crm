@@ -91,8 +91,8 @@ sprints:
       - ".context/maintenance/JOURNAL.md"
     scope_deny: []
     acceptance:
-      - "[ ] Validação de meta-data freshness bloqueante (Fail-Closed)"
-      - "[ ] Validação de sync de acceptance/tasks bloqueante"
+      - "[x] Validação de meta-data freshness bloqueante (Fail-Closed)"
+      - "[x] Validação de sync de acceptance/tasks bloqueante"
     qa_signoff: false
     signed_by: null
 ---
