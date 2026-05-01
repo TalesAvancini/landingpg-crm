@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-10 20:50
-Última Atualização: 2026-04-30 21:48
+Última Atualização: 2026-04-30 21:55
 Status: Ativo
 ---
 
@@ -87,6 +87,17 @@ Uma onda/sprint só pode ser declarada **concluída** se **todas** as condiçõe
    - **PASS:** Árvore limpa + Signoff OK + Harness OK ⮕ Conclusão Autorizada.
    - **FAIL:** "Tudo pronto" no Journal + 2 arquivos untracked ⮕ **BLOQUEIO** (Fraude Detectada).
    - **FAIL:** "Sprint finalizada" + `qa_signoff: false` ⮕ **BLOQUEIO** (Inconsistência).
+
+## 🛡️ 1.7 Regra `MIMO_STATE_INTEGRITY` (Integridade de Estado)
+Toda automação que altere o `STATE.md` deve garantir:
+1. **Preservação:** Não deletar campos obrigatórios (`start_hash`, `qa_signoff`, `status`, etc).
+2. **Edição Cirúrgica:** Alterar apenas o bloco de metadados ou logs específicos.
+3. **Fail-Closed:** Se a escrita falhar ou corromper a estrutura YAML, o arquivo deve ser restaurado ao estado anterior.
+
+## 🛡️ 1.8 Regra `CRITICAL_SCRIPT_SANITY` (Sanidade de Scripts)
+Mudanças em scripts de governança (`validate_context.py`, `harness_runner.py`, etc) exigem:
+1. **Sanity Check:** Execução mínima do script após a alteração para validar que não há erros de import ou sintaxe.
+2. **Non-Regression:** Evidência de que os gates de segurança continuam ativos.
 
 ---
 

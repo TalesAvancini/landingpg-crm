@@ -30,9 +30,20 @@ sprints:
 
   sprint_02:
     goal: "Integridade SSOT (MIMO_STATE_INTEGRITY) e Sanidade de Script (CRITICAL_SCRIPT_SANITY)."
-    scope_allow: []
+    scope_allow:
+      - ".context/brain/RULES.md"
+      - ".context/brain/MASTER_FLOW.md"
+      - ".specs/features/governance_rules_hardening/spec.md"
+      - ".specs/features/governance_rules_hardening/tasks.md"
+      - ".specs/features/governance_rules_hardening/STATE.md"
+      - ".context/maintenance/JOURNAL.md"
+      - ".context/maintenance/HARNESS_LOG.md"
     scope_deny: []
-    acceptance: []
+    acceptance:
+      - "[x] Regra MIMO_STATE_INTEGRITY (Integridade de Estado) formalizada no RULES.md"
+      - "[x] Regra CRITICAL_SCRIPT_SANITY (Sanidade de Scripts) formalizada no RULES.md"
+      - "[x] Mapeamento de sanidade de scripts inserido no MASTER_FLOW.md"
+      - "[x] Metadados de freshness atualizados em ambos os arquivos normais"
     qa_signoff: false
 ---
 

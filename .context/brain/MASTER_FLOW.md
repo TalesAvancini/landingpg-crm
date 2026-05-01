@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-10 23:28
-Ultima Atualizacao: 2026-04-30 21:48
+Ultima Atualizacao: 2026-04-30 21:55
 Status: Ativo
 ---
 
@@ -71,6 +71,8 @@ Status: [Ativo | Arquivado | Depreciado]
         ├── cleanup_specs.py           # Gerenciador de efemeridade (.specs)
         ├── sync_project.py            # Sincronizador de requisitos
         └── workflow_journal_auditor.py # Auditor do Sistema Anti-Migué (SAM)
+
+> ⚠️ **Script Sanity:** Qualquer alteração nos scripts da camada `_scripts/` exige execução de sanidade imediata e registro de não-regressão conforme Regra 1.8.
 
 ---
 

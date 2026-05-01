@@ -11,8 +11,8 @@
 - [x] **TASK-03**: Adicionar passo `Pre-close Self-Audit` no workflow do @spec-driver.
 
 ## 🏗️ Sprint 02: Integridade SSOT & Scripts Críticos
-- [ ] **TASK-04**: Formalizar `MIMO_STATE_INTEGRITY` e `CRITICAL_SCRIPT_SANITY` no RULES.md.
-- [ ] **TASK-05**: Implementar política de edição cirúrgica obrigatória.
+- [x] **TASK-04**: Formalizar `MIMO_STATE_INTEGRITY` e `CRITICAL_SCRIPT_SANITY` no RULES.md.
+- [x] **TASK-05**: Implementar política de edição cirúrgica obrigatória.
 
 ## 🏗️ Sprint 03: Runbook & Métricas Operacionais
 - [ ] **TASK-06**: Inserir checklist anti-reincidência no MASTER_FLOW.md.
