@@ -1,11 +1,11 @@
 ---
 status: 🚧 IN_PROGRESS
 updated: 2026-04-30 21:20
-detail: "Microajuste de consistência concluído. start_hash recapturado para baseline 1e256438."
+detail: "Ponto-zero estabilizado pós-auditoria. start_hash fixado em fd21dac9."
 policy_profile: hybrid
 current_sprint: sprint_01
-start_hash: "1e25643820d2fa47109de58a1c5a41e32c284682"
-captured_at: "2026-04-30 21:20:00 (BRT)"
+start_hash: "fd21dac9e7c7aeb9a4b1d9fe40d4ff64905655e6"
+captured_at: "2026-04-30 21:25:00 (BRT)"
 captured_by: "@antigravity-agent"
 qa_checkpoint: false
 qa_signoff: false
@@ -14,9 +14,9 @@ qa_signoff: false
 # 🧠 STATE: Governance Rules Hardening
 
 ## 📝 Logs de Decisão & Fatos da Sessão
-- [2026-04-30 20:59]: Baseline de arranque inicial capturada (obsoleta após recalibragem).
 - [2026-04-30 21:11]: Ajuste de bootstrap e contrato sprint-based conforme auditoria.
-- [2026-04-30 21:20]: Recaptura oficial de start_hash para baseline 1e256438. Ponto-zero estabilizado.
+- [2026-04-30 21:20]: Recaptura de start_hash para baseline 1e256438.
+- [2026-04-30 21:25]: Estabilização final do ponto-zero em fd21dac9 para telemetria limpa da Sprint 01.
 
 ## 📊 Telemetria de Impacto (Pre-flight)
 - **Arquivos Identificados:** 12
