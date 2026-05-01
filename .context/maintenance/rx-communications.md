@@ -45,6 +45,15 @@ graph TD
         TASK
         VAL
     end
+
+    style RULES fill:#1a1a1a,stroke:#333,stroke-width:2px,color:#fff
+    style VAL fill:#2a2a2a,stroke:#444,stroke-width:2px,color:#fff
+    style JOURNAL fill:#1a1a1a,stroke:#333,stroke-width:1px,color:#fff
+    style LOG fill:#000,stroke:#222,stroke-width:1px,color:#fff
+    style MF fill:#222,stroke:#444,color:#fff
+    style SPEC fill:#222,stroke:#444,color:#fff
+    style STATE fill:#222,stroke:#444,color:#fff
+    style TASK fill:#222,stroke:#444,color:#fff
 ```
 
 ---
