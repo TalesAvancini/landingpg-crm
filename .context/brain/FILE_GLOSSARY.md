@@ -84,8 +84,8 @@ Status: Ativo
 
 | Arquivo | Responsabilidade Principal | Agente Guardião |
 | :--- | :--- | :--- |
-| `features/<nome>/spec.md` | **Contrato de Código.** Define os `definition_of_done` da tarefa atômica. Contém as assinaturas do executor e do QA Validator (Zero Trust). | `@spec-driver` / `@qa-validator` |
-| `features/<nome>/STATE.md` | **Gatekeeper de Estado.** Define se a spec está `WIP`, `WAITING_SIGNOFF` ou `DONE`. Lido diretamente pelo Pipeline SAM. | `@qa-validator` |
+| `features/<nome>/spec.md` | **Contrato de Código.** Define os `definition_of_done`. Exige rito de assinatura formal `@spec-driver` / `@qa-validator` sob protocolo V5. | `@spec-driver` / `@qa-validator` |
+| `features/<nome>/STATE.md` | **Gatekeeper de Estado.** Define status (`WIP`, `DONE`). Sob V5, é a âncora de `start_hash` (baseline) para telemetria de diff. | `@qa-validator` |
 | `_template.md` | **Molde de Contrato.** O template que deve ser clonado para iniciar qualquer nova funcionalidade. | `@spec-driver` |
 
 ---

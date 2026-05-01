@@ -5,8 +5,8 @@ contract_mode: sprint_based
 current_sprint: sprint_04
 policy_profile: hybrid
 plan_source: planos/governance_rules_hardening/plano_governance_rules_hardening.md
-qa_signoff: true
-signed_by: "@qa-validator"
+qa_signoff: false
+signed_by: null
 
 sprints:
   sprint_01:
@@ -76,8 +76,8 @@ sprints:
       - ".specs/features/governance_rules_hardening/STATE.md"
     scope_deny: []
     acceptance:
-      - "[ ] HARNESS_REGISTRY.md e glossários atualizados"
-      - "[ ] PROMPT_LIBRARY.md atualizada com padrões de hardening"
+      - "[x] HARNESS_REGISTRY.md e glossários atualizados"
+      - "[x] PROMPT_LIBRARY.md atualizada com padrões de hardening"
     qa_signoff: false
     signed_by: null
 ---

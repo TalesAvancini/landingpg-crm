@@ -21,8 +21,8 @@
 - [x] **TASK-07C**: Implementar emissão automática de `[GOVERNANCE-FRICTION]` no `HARNESS_LOG.md`.
 
 ## 🏗️ Sprint 04: Sincronização Institucional
-- [ ] **TASK-08**: Atualizar HARNESS_REGISTRY.md e glossários (Script/File).
-- [ ] **TASK-09**: Atualizar PROMPT_LIBRARY.md.
+- [x] **TASK-08**: Atualizar HARNESS_REGISTRY.md e glossários (Script/File).
+- [x] **TASK-09**: Atualizar PROMPT_LIBRARY.md.
 
 ## 🏗️ Sprint 05: Enforcement Automático (Músculos)
 - [ ] **TASK-10**: Implementar validação automática em `validate_context.py`.

@@ -33,7 +33,7 @@ Status: Ativo
 | :--- | :--- | :--- | :--- |
 | `harness_runner.py` | **Coração** | O Validador de Contratos. Verifica se as specs em `.specs/features/` possuem `definition_of_done`, valida o uso do banco de dados vs `schema.sql` e exige a assinatura formal de QA (Segregação de Contexto). | Roda via Husky no `pre-commit` ou `npm run context:harness` |
 | `workflow_journal_auditor.py` | **SAM (Anti-Migué)** | Auditor H.O.K. Verifica se as decisões ou resoluções logadas no `JOURNAL.md` realmente correspondem à verdade física verificando o Git Diff. Se a IA mentir no Journal, o commit falha. | Roda no pipeline `context:all` |
-| `validate_context.py` | **Sistema Imunológico** | Faz um "Check-up" geral. Verifica se os metadados de Frontmatter dos arquivos `.md` estão corretos e calcula a estimativa de "Token Bloat" da janela ativa. | `npm run context:validate` |
+| `validate_context.py` | **Sistema Imunológico** | **Radar de Fricção e Integridade.** Faz o check-up de metadados, estima Token Bloat e monitora a ordem cronológica do Journal e o frescor dos estados das specs (Modo Advisory). | `npm run context:validate` |
 | `check_version_consistency.py` | **Medula Espinhal** | Analisa se a versão oficial declarada no `VERSION.md` está coerente no `package.json`, `INCEPTION.md` e em `version_targets.json`. Impede "Drifting" de versões. | Roda no pipeline `context:all` |
 | `secrets_scanner.py` | **Leucócito** | Varre ativamente o código e arquivos markdown atrás de chaves de API, senhas ou tokens que o desenvolvedor/IA possa ter "hardcoded" por acidente. | Roda no pipeline `context:all` |
 

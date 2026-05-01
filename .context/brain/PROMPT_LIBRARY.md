@@ -211,6 +211,11 @@ Ao gerar o PRD.md, inclua EXATAMENTE esta seção no final:
    definition_of_done: [...]
    ```
 3. STATE.md: draft → aguardando qa_signoff.
+
+🔒 **PROTOCOLO HARDENED (V5):**
+- **MIMO (Minimum Impact, Maximum Order):** Proibido reescrever arquivos inteiros. Realizar edições cirúrgicas linha a linha.
+- **PRE-CLOSE SELF-AUDIT:** Antes de entregar para QA, validar: Árvore limpa, Journal sincronizado e Metadados atualizados.
+- **GOVERNANCE FRICTION:** Qualquer desvio técnico deve ser logado como `[GOVERNANCE-FRICTION]`.
 ```
 💡 *Insight IA: Este prompt transforma intenção em plano executável. A spec é o "compilador" entre PRD e código. Mantenha-a enxuta e verificável.*
 
