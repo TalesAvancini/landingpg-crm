@@ -5,10 +5,10 @@
   - *Verify*: Registro no STATE.md e JOURNAL.md.
 
 ## 🏗️ Sprint 01: Regras Canônicas & Self-Audit
-- [ ] **TASK-01**: Inserir `CLOSE_WAVE` + `ANTI_FALSE_PASS` em RULES.md.
+- [x] **TASK-01**: Inserir `CLOSE_WAVE` + `ANTI_FALSE_PASS` em RULES.md.
   - *Verify*: `npm run context:validate` (HG01).
-- [ ] **TASK-02**: Inserir `Pre-Close Audit` em MASTER_FLOW.md.
-- [ ] **TASK-03**: Adicionar passo `Pre-close Self-Audit` no workflow do @spec-driver.
+- [x] **TASK-02**: Inserir `Pre-Close Audit` em MASTER_FLOW.md.
+- [x] **TASK-03**: Adicionar passo `Pre-close Self-Audit` no workflow do @spec-driver.
 
 ## 🏗️ Sprint 02: Integridade SSOT & Scripts Críticos
 - [ ] **TASK-04**: Formalizar `MIMO_STATE_INTEGRITY` e `CRITICAL_SCRIPT_SANITY` no RULES.md.

@@ -97,9 +97,22 @@ Para projetos de complexidade média/alta, o Antigravity utiliza a segregação 
 
 1.  **[Planner - Hub]**: IA Principal desenha a SPEC na janela atual, define `max_impact_radius` e emite o comando de Spawn (`/spec-driver`).
 2.  **[Pre-flight - Executor]**: Novo processo limpo nasce e roda `grep` (Pre-flight Gate). Se impacto > Limite → `SCOPE_BLOWOUT` (Telemetria no `STATE.md`).
-3.  **[Execution - Executor]**: Subagente coda sob rigor do `flash-harness` (Log sequencial). Ao terminar, emite `/qa-validator`.
-4.  **[Auditoria - Validador]**: Novo processo cego nasce. Valida Semântica (Lógica) + Telemetria (Impacto resolvido). Assina o `spec.md` se correto.
-5.  **[Finalização - Hub]**: IA Principal (Humano aciona o Hub) verifica a SPEC assinada, valida o SAM e comita/arquiva.
+3.  **[Execution - Executor]**: Subagente coda sob rigor do `flash-harness`. Ao terminar, deve obrigatoriamente executar o **Pre-close Self-Audit** (validar árvore limpa, coerência spec/state e signoff). Se passar, emite `/qa-validator`.
+4.  **[Auditoria - Validador]**: Novo processo cego nasce. Realiza a auditoria final de fechamento (Pre-Close Audit). Valida Semântica (Lógica) + Telemetria (Impacto resolvido). Assina o `spec.md` se correto.
+5.  **[Finalização - Hub]**: IA Principal (Humano aciona o Hub) verifica a SPEC assinada, valida o SAM, emite o rito final e comita/arquiva.
+
+---
+
+## 🛡️ 2.3 Rito de Pre-Close Audit (Anti-Drift)
+Protocolo obrigatório para transição de `IN_PROGRESS` para `PASSED` ou `COMPLETED`.
+
+1. **Validação de Harness:** Executar checks automáticos (`npm run context:validate`).
+2. **Coerência de Artefatos:** Cruzar `spec.md` (objetivo) vs `tasks.md` (check) vs `STATE.md` (estado real).
+3. **Check de Higiene:** `git status --short` **DEVE** ser vazio. Sujeira na árvore bloqueia o fechamento.
+4. **Evidência de Fechamento:** Registrar hash final, data e signoff do auditor no `STATE.md`.
+5. **Registro de Legado:** Migrar decisões críticas para o `JOURNAL.md`.
+
+> ⚠️ **Bloqueio Fail-Closed:** Se qualquer item da auditoria falhar, a onda permanece aberta. A declaração de conclusão sem este rito é classificada como **Fraude Narrativa**.
 
 ---
 

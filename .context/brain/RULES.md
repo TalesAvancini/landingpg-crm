@@ -67,6 +67,27 @@ Padrão obrigatório para features de alta complexidade ou segurança crítica.
 4. **Impacto Incremental (D1/D2):** Churn (linhas +/-) capturado automaticamente pelo Harness e persistido no `STATE.md` para auditoria passiva.
 5. **Bloqueio C2 (Global Signoff):** Proibido dar signoff global na feature se houver qualquer pendência nas sprints internas.
 
+## 🛡️ 1.5 Regra `CLOSE_WAVE` (Rigor de Fechamento)
+Uma onda/sprint só pode ser declarada **concluída** se **todas** as condições forem verdadeiras:
+1. **Harness PASS:** Pipeline de validação sem erros.
+2. **Coerência:** Artefatos (`spec.md`, `STATE.md`, `tasks.md`) em sincronia total.
+3. **Higiene:** `git status --short` sem saída (árvore 100% limpa).
+4. **Signoff:** `qa_signoff: true` registrado no bloco da sprint/onda.
+
+**Falha em qualquer critério:**
+- O status **deve** permanecer `🚧 IN_PROGRESS`.
+- É proibido declarar conclusão ou mover para `PASSED`.
+- Emissão obrigatória de evento `[GOVERNANCE-FRICTION]`.
+
+## 🛡️ 1.6 Regra `ANTI_FALSE_PASS` (Integridade Narrativa)
+É proibido forçar estados narrativos de conclusão sem evidência técnica objetiva.
+1. **Claims Reais:** Afirmações como "100% concluído" ou "baseline limpa" devem ser verificáveis via Git/Harness.
+2. **Fraude Narrativa:** Declarar conclusão no `JOURNAL.md` enquanto o `qa_signoff` é `false` é classificado como fraude crítica.
+3. **Exemplos Binários:**
+   - **PASS:** Árvore limpa + Signoff OK + Harness OK ⮕ Conclusão Autorizada.
+   - **FAIL:** "Tudo pronto" no Journal + 2 arquivos untracked ⮕ **BLOQUEIO** (Fraude Detectada).
+   - **FAIL:** "Sprint finalizada" + `qa_signoff: false` ⮕ **BLOQUEIO** (Inconsistência).
+
 ---
 
 ## 🔢 2. Ansiedade de Contexto & Ralph Wiggum Loop
