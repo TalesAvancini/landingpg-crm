@@ -138,6 +138,60 @@ def check_sprint_acceptance_sync():
     return True, "OK"
 
 
+def check_journal_chronology():
+    """Modo Advisory: Avisa se as datas no JOURNAL.md não estão em ordem crescente."""
+    journal = CONTEXT_DIR / "maintenance/JOURNAL.md"
+    if not journal.exists():
+        return True, "Sem Journal"
+
+    content = journal.read_text(encoding="utf-8", errors="ignore")
+    # Captura datas nos formatos ## 📅 YYYY-MM-DD HH:MM ou ## [YYYY-MM-DD HH:MM]
+    date_patterns = re.findall(r"##\s+(?:📅\s+)?\[?(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})\]?", content)
+    
+    if len(date_patterns) < 2:
+        return True, "OK (Registros insuficientes para check)"
+
+    warnings = []
+    for i in range(1, len(date_patterns)):
+        prev = date_patterns[i-1]
+        curr = date_patterns[i]
+        if curr < prev:
+            warnings.append(f"Inversão detectada: {curr} aparece após {prev}")
+
+    if warnings:
+        return False, " | ".join(warnings)
+    return True, "OK"
+
+
+def check_state_freshness():
+    """Modo Advisory: Avisa se o campo 'updated' no STATE.md está defasado."""
+    specs_dir = CONTEXT_DIR.parent / ".specs" / "features"
+    if not specs_dir.exists():
+        return True, "Sem specs"
+
+    warnings = []
+    today = datetime.now().strftime("%Y-%m-%d")
+    
+    for spec_dir in [d for d in specs_dir.iterdir() if d.is_dir() and not d.name.startswith("_")]:
+        state_path = spec_dir / "STATE.md"
+        if not state_path.exists():
+            continue
+        
+        content = state_path.read_text(encoding="utf-8", errors="ignore")
+        match = re.search(r"updated:\s*(\d{4}-\d{2}-\d{2})", content)
+        if not match:
+            warnings.append(f"{spec_dir.name}: campo 'updated' ausente")
+            continue
+            
+        updated_date = match.group(1)
+        if updated_date < today:
+            warnings.append(f"{spec_dir.name}: status defasado ({updated_date} < {today})")
+
+    if warnings:
+        return False, " | ".join(warnings)
+    return True, "OK"
+
+
 def _extract_header_update(md_text: str):
     for line in md_text.splitlines()[:25]:
         if line.lower().startswith("última atualização:") or line.lower().startswith("ultima atualizacao:"):
@@ -347,6 +401,19 @@ def validate():
             exit_code = 1
     else:
         print(f"[OK] WIKI: {wiki_msg}")
+
+    # --- Camada ADVISORY (Sprint 03) ---
+    j_chron_ok, j_chron_msg = check_journal_chronology()
+    if not j_chron_ok:
+        print(f"[ADVISORY] Journal Chronology: {j_chron_msg}")
+    else:
+        print(f"[OK] Journal Chronology: OK")
+
+    s_fresh_ok, s_fresh_msg = check_state_freshness()
+    if not s_fresh_ok:
+        print(f"[ADVISORY] State Freshness: {s_fresh_msg}")
+    else:
+        print(f"[OK] State Freshness: OK")
 
     print("\n--- Relatório Final ---")
     if not issues:

@@ -59,10 +59,11 @@ sprints:
       - ".context/maintenance/JOURNAL.md"
     scope_deny: []
     acceptance:
-      - "[ ] Ordem cronológica do JOURNAL tratada como WARN (não bloqueante)"
-      - "[ ] Disciplina de `STATE.updated` reforçada no checklist (sem gate duro)"
-      - "[ ] Eventos `[GOVERNANCE-FRICTION]` iniciados em modo advisory"
+      - "[x] Ordem cronológica do JOURNAL tratada como WARN (não bloqueante)"
+      - "[x] Disciplina de `STATE.updated` reforçada no checklist (sem gate duro)"
+      - "[x] Eventos `[GOVERNANCE-FRICTION]` iniciados em modo advisory"
     qa_signoff: false
+    signed_by: null
 ---
 
 # Spec: Governance Rules Hardening

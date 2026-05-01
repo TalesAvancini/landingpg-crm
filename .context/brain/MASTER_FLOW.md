@@ -118,6 +118,22 @@ Protocolo obrigatório para transição de `IN_PROGRESS` para `PASSED` ou `COMPL
 
 ---
 
+## 🛡️ 2.4 Checklist Anti-Reincidência (Runbook)
+Para evitar a repetição de erros operacionais detectados em auditorias anteriores:
+
+1. **[ ] Git Status Check:** Rodar `git status --short` antes de qualquer claim de "árvore limpa".
+2. **[ ] Hash Anchor:** Usar o commit estável imediatamente anterior como `start_hash`, nunca o commit em formação.
+3. **[ ] Metadata Freshness:** Atualizar `Ultima Atualizacao` em arquivos normais a cada modificação.
+4. **[ ] Acceptance Sync:** Garantir que `acceptance: [x]` no `spec.md` reflita as tarefas concluídas no `tasks.md`.
+5. **[ ] Chronology Radar:** Verificar se novos logs no `JOURNAL.md` mantêm a ordem cronológica do projeto.
+
+### 📊 Log de Fricção `[GOVERNANCE-FRICTION]`
+Sempre que uma regra advisory for violada (ex: cronologia do Journal ou Metadata Freshness), o Agente deve registrar o evento no `maintenance/HARNESS_LOG.md`:
+- `[GOVERNANCE-FRICTION] <data> | <arquivo> | <descrição do desvio>`
+- *Nota:* Este log não bloqueia o commit, mas serve para métricas de "Dívida de Governança" na próxima auditoria.
+
+---
+
 ## ⚙️ 3. Regras de Manutenção & Ciclo de Vida
 
 ### 🔄 Ciclo de Vida de PRD e Schema
