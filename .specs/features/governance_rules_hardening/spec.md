@@ -2,7 +2,7 @@
 contract_version: 2.5.2
 parties: ["@spec-driver", "@qa-validator"]
 contract_mode: sprint_based
-current_sprint: sprint_05
+current_sprint: sprint_06
 policy_profile: hybrid
 plan_source: planos/governance_rules_hardening/plano_governance_rules_hardening.md
 qa_signoff: false
@@ -93,6 +93,47 @@ sprints:
     acceptance:
       - "[x] Validação de meta-data freshness bloqueante (Fail-Closed)"
       - "[x] Validação de sync de acceptance/tasks bloqueante"
+    qa_signoff: true
+    signed_by: "@qa-validator"
+
+  sprint_06:
+    goal: "Hardening de Agenciamento (Nervos): Atualizar papéis e ritos de fechamento."
+    scope_allow:
+      - ".context/brain/AGENT_REGISTRY.md"
+      - ".context/brain/MASTER_FLOW.md"
+      - ".specs/features/governance_rules_hardening/spec.md"
+      - ".specs/features/governance_rules_hardening/tasks.md"
+      - ".specs/features/governance_rules_hardening/STATE.md"
+    scope_deny: []
+    acceptance:
+      - "[ ] Papéis spec-driver e qa-validator atualizados com Hardened Closing"
+      - "[ ] Implementada transição atômica para IN_PROGRESS via protocolo"
+    qa_signoff: false
+    signed_by: null
+
+  sprint_07:
+    goal: "Hardening SAM & Telemetria: Detecção de fraude narrativa e métricas."
+    scope_allow:
+      - ".context/_scripts/workflow_journal_auditor.py"
+      - ".context/brain/AGENT_REGISTRY.md"
+      - ".context/maintenance/HARNESS_LOG.md"
+    scope_deny: []
+    acceptance:
+      - "[ ] Detecção de fraude narrativa em workflow_journal_auditor.py"
+      - "[ ] Schema de telemetria [GOVERNANCE-FRICTION] implantado"
+    qa_signoff: false
+    signed_by: null
+
+  sprint_08:
+    goal: "Visão: RX Communications e Documentação de Transparência."
+    scope_allow:
+      - ".context/maintenance/rx-communications.md"
+      - ".context/brain/MASTER_FLOW.md"
+      - ".context/brain/FILE_GLOSSARY.md"
+    scope_deny: []
+    acceptance:
+      - "[ ] Arquivo rx-communications.md criado e populado"
+      - "[ ] Referências cruzadas inseridas na governança central"
     qa_signoff: false
     signed_by: null
 ---

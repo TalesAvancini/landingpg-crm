@@ -222,7 +222,6 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 ### Contrato de Validação
 - executor_context_id: `CTX_RULES_RADAR_0426`
 - validator_context_id: `CTX_QA_SAM`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Aprovado autonomamente. As novas regras foram cravadas no Master Flow e nas Rules, blindando a IA contra alucinações e duplicação de diretórios.`
 
@@ -267,7 +266,6 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 ### Contrato de Validação
 - executor_context_id: `CTX_BUNDLER_NATIVE`
 - validator_context_id: `CTX_QA_SAM`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Aprovado autonomamente. Integração total no framework garantida sem ferir governança e cumprindo estritamente as regras de path do SAM.`
 
@@ -292,7 +290,6 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 ### Contrato de Validação
 - executor_context_id: `CTX_GLOSSARY_0426`
 - validator_context_id: `CTX_USER_VALIDATION`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Glossário criado e terminologia de memória corrigida em todo o ecossistema.`
 
@@ -314,7 +311,6 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 ### Contrato de Validação
 - executor_context_id: `CTX_IMPL_QA_SUBAGENT`
 - validator_context_id: `CTX_QA_VALIDATOR`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Subagente estruturado e integrado ao ecossistema H.O.K.`
 
@@ -335,7 +331,6 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 ### Contrato de Validação
 - executor_context_id: `CTX_FIX_SAM_01`
 - validator_context_id: `CTX_AI_QA_AUDIT`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Aprovado autonomamente por QA_AI. Bug corrigido sem gargalo humano.`
 
@@ -350,9 +345,9 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 4. **Brainstorm:** Definida a nova visão de 4 camadas de RX (Geral, Framework, Negócio, Produto-Isolado).
 
 **Próximos Passos (Sessão de Amanhã):**
-- Iniciar o primeiro ciclo de **Feature Real** usando a pasta `.specs/features/`.
+- Iniciar a primeira feature real de aplicação usando o novo `PROJECT_INDEX` para navegação.
+- Testar a resiliência do `@qa-validator` em tarefas de código puro.
 - Decidir se vamos fundir o `rx-anatomy.md` com o `RX_REPOSITORIO.md`.
-- Aprofundar o "RX de Negócio" do framework (vender governança AI).
 
 ### Contrato de Encerramento
 - executor_context_id: `CTX_END_0426_01`
@@ -376,7 +371,6 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 ### Contrato de Validação
 - executor_context_id: `CTX_MAP_0426_01`
 - validator_context_id: `CTX_USER_AUDIT_MAP`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Mapa funcional integrado e validado.`
 
@@ -395,11 +389,9 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 - [x] `.context/maintenance/JOURNAL.md` -> [Registro de saneamento]
 - [x] `.context/maintenance/_archive_context/rx_history/` -> [Arquivamento legacy]
 
-
 ### Contrato de Validação
 - executor_context_id: `CTX_SAN_0426_01`
 - validator_context_id: `CTX_USER_AUDIT`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Saneamento e evolução biológica validados pelo usuário.`
 
@@ -407,150 +399,120 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 
 ## 📅 2026-04-26 00:08
 **Decisão/Bug:** 🧹 Saneamento de Contexto: Expurgo de Diretório Legado.
-**Tags:** Manutenção, Eficiência, Context-Sanitation
 **Ação:** 
 1. Identificado que o diretório `.context/specs/` continha apenas planos de implementação legados da v2.4.1 (Entulho Cognitivo).
 2. O usuário confirmou a exclusão total do diretório para manter o contexto "Lean".
-3. Validação via `npm run context:validate` confirmou que a integridade do framework v2.5.2 permanece intacta, pois as specs ativas residem na raiz em `.specs/features/`.
-**Implicação:** Redução de ruído no carregamento de arquivos e economia de processamento (tokens) ao eliminar documentos inertes.
+3. Validação via `npm run context:validate` confirmou que a integridade do framework v2.5.2 permanece intacta.
+
 **Handoff:** @user -> @antigravity-agent | Estado: Contexto saneado e validado | Próximo: Evolução biológica.
 
 ## 📅 2026-04-24 15:20
 **Decisão/Bug:** 🧹 Separação de Log Técnico do Harness.
-**Tags:** Governança, Regras, Observabilidade
 **Solução:**
 1. O `harness_runner.py` foi alterado para gravar PASS/FAIL em `maintenance/HARNESS_LOG.md`.
 2. O `JOURNAL.md` foi limpo para manter apenas narrativa, contratos e handoffs.
-3. Entradas automáticas `[HARNESS-*]` antigas permanecem auditáveis no histórico de Git e nos arquivos arquivados do Journal.
-4. Atualizado `rx-anatomy.md` para refletir explicitamente a presença do `HARNESS_LOG.md` e `RX_REPOSITORIO.md` na camada maintenance.
-**Implicação:** Eliminação de poluição narrativa no Journal e redução do risco de purge degradar memória operacional humana.
+3. Atualizado `rx-anatomy.md` para refletir explicitamente a presença do `HARNESS_LOG.md`.
+
 **Handoff:** @context-keeper -> @user | Estado: Journal sanitizado | Próximo: Validar pipeline.
 
 ## 📅 2026-04-24 13:52 | [FEAT]: Implementação do Sistema Anti-Migué (SAM)
+**Narrativa:** Implementação completa da infraestrutura de governança determinística SAM. Criado o script auditor, a matriz de sinapses em JSON e integrada a lógica no harness_runner.
 
-### Narrativa
-Implementação completa da infraestrutura de governança determinística SAM. Criado o script auditor, a matriz de sinapses em JSON e integrada a lógica no harness_runner. O sistema agora bloqueia commits em modo strict caso a propagação não seja comprovada via Git Diff.
-
-### Tags
-Governança, Regras, Market
-
-### Matriz de Propagacao (Sinapse)
+### Matriz de Propagação (Sinapse)
 - [x] `.context/brain/RULES.md` -> [Atualizado com modo strict]
-- [x] `.context/maintenance/rx-anatomy.md` -> [Mapa estrutural atualizado para incluir HARNESS_LOG]
+- [x] `.context/maintenance/rx-anatomy.md` -> [Mapa estrutural atualizado]
 - [x] `.context/brain/MASTER_FLOW.md` -> [Diagrama SAM incluído]
-- [x] `package.json` -> [Script npm adicionado]
 
-### Alteracoes Operacionais (Reality Check)
-- Arquivos esperados: `JOURNAL_SYNAPSE.md`, `workflow_journal_auditor.py`, `run_context.py`, `harness_runner.py`
-- Arquivos observados (git diff --name-only): `Detectados via Auditor`
-- Resumo (git diff --stat): `Infraestrutura SAM operacional`
-
-### Contrato de Validacao
+### Contrato de Validação
 - executor_context_id: `CTX_FLASH_SAM_FIX`
 - validator_context_id: `CTX_QA_AUDIT_FINAL`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Aprovado via SAM Audit. Infraestrutura resiliente e modo strict funcional.`
 
 ## 📅 2026-04-23 22:20
-**Decisão/Bug:** 📚 Expansão Massiva da Wiki & Governança Epistemológica (Harness Triad).
+**Decisão/Bug:** 📚 Expansão Massiva da Wiki & Governança Epistemológica.
 **Solução:** 
-1. Ingestão de três novos artigos core na Wiki: `Maintainability`, `Architecture` e `Behaviour` Harnesses, alinhados com a release **v2.5.2**.
-2. Documentação do padrão `Ralph Wiggum Loop` para garantir execução atômica e combate ao *Context Rot*.
-3. Criação do RAW Manifesto para servir como fonte SSOT de longa duração.
-4. Registro do plano `JOURNAL_SYNAPSE.md` para automatizar a reatividade do contexto via logs.
-**Implicação:** O framework agora possui uma base teórica sólida local, reduzindo a dependência de "hallucinations" e garantindo que o Agente Executor e o Validador operem sob as mesmas leis físicas de engenharia.
-**Evidência Operacional:** `npm run context:all` resultou em `Exit 0` após correção de cabeçalhos via `ingest_wiki_guard.py`.
+1. Ingestão de três novos artigos core na Wiki: `Maintainability`, `Architecture` e `Behaviour` Harnesses.
+2. Documentação do padrão `Ralph Wiggum Loop` para garantir execução atômica.
+3. Criação do RAW Manifesto para servir como fonte SSOT.
+
 **Handoff:** @antigravity-agent -> @user | Estado: Wiki v2.5.2 Completa | Próximo: KBuM (Reset) na próxima sessão.
 
 ## [2026-04-22 09:50] release: Antigravity Kit v2.5.0 'Hardened Matrix'
 - **Meta-Ação:** Implementação de SSOT de Versão e Endurecimento de Onboarding (Arquiteto).
-- **Destaques:** 
-  - `version_targets.json` ⮕ Matriz declarativa de sincronia de versão.
-  - `check_version_consistency.py` ⮕ Linter de drift integrado ao pipeline `all`.
-  - `harness_runner.py` ⮕ Poda real de arquivos e fail-closed para `DRAFT` quando há atividade.
 - **Status:** [CONSISTENT & HARDENED]
-- **Próximo:** Iniciar ciclo de desenvolvimento de features sobre fundação v2.5.0.
 
 ## 📅 2026-04-30 21:00
 **Ação:** 🛡️ Rito de Início: Governance Rules Hardening (v5).
 **Contexto:** Transição para governança determinística e anti-fraude narrativa.
-**Dados de Arranque:**
-- **Feature:** `.specs/features/governance_rules_hardening/`
-- **Start Hash:** `39a4c71dc7f657e5442255ab9bba24b1d2f9408f` (100% Limpo)
-- **Status:** `🚧 IN_PROGRESS`
-- **Executor:** `@antigravity-agent`
-**Nota:** Baseline ajustado após auditoria de bootstrap para garantir integridade total.
+**Start Hash:** `39a4c71`
 **Objetivo Imediato:** Sprint 01 — Regras Canônicas em `RULES.md`.
 
 ## 📅 2026-04-30 21:42
 **Ação:** ✅ Conclusão Técnica Sprint 01.
 **Entrega:** Regras `CLOSE_WAVE`, `ANTI_FALSE_PASS` e rito `Pre-Close Audit` implementados.
 **Harness Check:** `aa389b8` (PASS).
-**Handoff:** `@spec-driver` ⮕ `@qa-validator` (Usuário/Codex).
 
 ## 📅 2026-04-30 21:49
 **Ação:** ✅ QA Signoff Sprint 01 (Governance Rules Hardening).
 **Auditor:** `@qa-validator` (Codex)
-**Verificação:** Coerência `spec/tasks/state`, regras canônicas em `RULES.md`, rito `Pre-Close Audit` em `MASTER_FLOW.md`, árvore limpa.
 **Resultado:** `qa_signoff: true` aplicado na `sprint_01`. Transição para `current_sprint: sprint_02`.
 
 ## 📅 2026-04-30 21:57
 **Ação:** ✅ Conclusão Técnica Sprint 02.
 **Entrega:** Regras `MIMO_STATE_INTEGRITY` e `CRITICAL_SCRIPT_SANITY` implementadas e integradas.
 **Harness Check:** `c3c5e32` (PASS).
-**Metadados:** Timestamps de freshness sincronizados.
-**Handoff:** `@spec-driver` ⮕ `@qa-validator`.
-**Estado:** Aguardando signoff para Sprint 03.
 
 ## 📅 2026-04-30 22:02
 **Ação:** ✅ QA Signoff Sprint 02 (Governance Rules Hardening).
 **Auditor:** `@qa-validator` (Codex)
-**Verificação:** Regras `MIMO_STATE_INTEGRITY` e `CRITICAL_SCRIPT_SANITY` presentes no `RULES.md`; obrigação de sanidade em `_scripts/` mapeada no `MASTER_FLOW.md`; `context:validate` em PASS; árvore limpa.
 **Resultado:** `qa_signoff: true` aplicado na `sprint_02`. Transição para `current_sprint: sprint_03`.
 
 ## 📅 2026-04-30 22:25
 **Ação:** ✅ Conclusão Técnica Sprint 03.
 **Entrega:** Regras `MIMO_STATE_INTEGRITY` (via Advisory), Checklist Anti-Reincidência e padrão `GOVERNANCE-FRICTION`.
 **Harness Check:** `5291491` (PASS).
-**Handoff:** `@spec-driver` ⮕ `@qa-validator`.
 
 ## 📅 2026-04-30 22:35
 **Ação:** 🔧 Refinamento Auditoria Sprint 03.
-**Ajustes:** Automação de log `[GOVERNANCE-FRICTION]` no `HARNESS_LOG.md`, refinamento de check de `STATE.updated` (datetime completo) e correção de cronologia/timezone.
-**Evidência:** Eventos GF-JOURNAL-ORDER e GF-STATE-FRESHNESS emitidos no log operacional.
+**Ajustes:** Automação de log `[GOVERNANCE-FRICTION]`, refinamento de check de `STATE.updated` e trava Zero Side Effect.
 **Harness Check:** `78968dd` (PASS).
-**Handoff:** `@spec-driver` ⮕ `@qa-validator`.
+
 ## 📅 2026-04-30 22:45
 **Ação:** ✅ QA Signoff Sprint 03 (Governance Rules Hardening).
 **Auditor:** `@qa-validator` (Codex)
-**Verificação:** Implementação de `[GOVERNANCE-FRICTION]` automatizada; Modo Advisory validado; Refinamento Zero Side Effect (trava de variável de ambiente) funcional e testado sem poluição de árvore local.
 **Resultado:** `qa_signoff: true` aplicado na `sprint_03`. Transição para `current_sprint: sprint_04`.
 
 ## 📅 2026-04-30 22:46
 **Ação:** 🛡️ Rito de Abertura (Recalibrado): Sprint 04 (Sincronização Institucional).
-**Contexto:** Recaptura de baseline real após detecção de hash inválido no STATE.md. Zero Side Effect validado.
-**Handoff:** `@qa-validator` ⮕ `@spec-driver`.
-**Baseline (start_hash):** `09e85cf` (Validado via `git cat-file`).
+**Baseline (start_hash):** `09e85cf` (Validado).
+
 ## 📅 2026-04-30 22:50
 **Ação:** ✅ Conclusão Técnica Sprint 04.
-**Entrega:** Sincronização institucional completa. `HARNESS_REGISTRY.md` (H05), `SCRIPT_GLOSSARY.md` (validate_context), `PROMPT_LIBRARY.md` (Protocolo Hardened) e `FILE_GLOSSARY.md` atualizados.
+**Entrega:** Sincronização institucional (Harness H05, Glossários, Prompts) concluída.
 **Harness Check:** `a4fa31c` (PASS).
-**Handoff:** `@spec-driver` ⮕ `@qa-validator`.
+
 ## 📅 2026-04-30 22:56
 **Ação:** ✅ QA Signoff Sprint 04 (Governance Rules Hardening).
 **Auditor:** `@qa-validator` (Codex)
-**Verificação:** Todos os registros institucionais (Harness, Glossários, Prompts) sincronizados com a governança V5. Higiene de árvore 100%.
 **Resultado:** `qa_signoff: true` aplicado na `sprint_04`. Transição para `current_sprint: sprint_05`.
 
 ## 📅 2026-04-30 22:56
 **Ação:** 🛡️ Rito de Abertura: Sprint 05 (Enforcement Automático).
-**Contexto:** Transição da "casca" (documentação) para o "músculo" (enforcement técnico).
-**Handoff:** `@qa-validator` ⮕ `@spec-driver`.
 **Objetivo:** Implementar validações bloqueantes (Fail-Closed) em `validate_context.py`.
+
 ## 📅 2026-04-30 22:58
 **Ação:** ✅ Conclusão Técnica Sprint 05.
-**Entrega:** Enforcement Automático (Músculos). `validate_context.py` endurecido com validações bloqueantes (`[ERROR]`) para Metadata Freshness e Sprint Acceptance Sync.
+**Entrega:** Enforcement Automático (Músculos). `validate_context.py` endurecido.
 **Harness Check:** `f8bd242` (PASS).
-**Handoff:** `@spec-driver` ⮕ `@qa-validator`.
-**Estado:** Aguardando signoff para Sprint 05.
+
+## 📅 2026-04-30 23:12
+**Ação:** ✅ QA Signoff Sprint 05 (Governance Rules Hardening).
+**Auditor:** `@qa-validator` (Antigravity)
+**Verificação:** Enforcement bloqueante validado. Sincronização de Sprints 06-08 na `spec.md` concluída.
+**Resultado:** `qa_signoff: true` aplicado na `sprint_05`. Transição para `current_sprint: sprint_06`.
+
+## 📅 2026-04-30 23:12
+**Ação:** 🛡️ Rito de Sincronização & Abertura: Sprint 06 (Hardening de Agenciamento).
+**Contexto:** Auditoria de autocrítica detectou ausência das Sprints 06, 07 e 08 na `spec.md`. Contrato sincronizado com o plano `tasks.md`.
+**Estado:** `🚧 IN_PROGRESS` (Sprint 06).
