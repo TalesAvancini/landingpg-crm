@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-10 20:50
-Última Atualização: 2026-04-30 23:15
+Última Atualização: 2026-04-30 23:25
 Status: Ativo
 ---
 
@@ -68,6 +68,25 @@ Status: Ativo
 - [ ] **Baseline:** Validar que o `start_hash` no `STATE.md` existe no histórico Git.
 - [ ] **Truthfulness:** Confrontar `git diff --stat` com a narrativa do `JOURNAL.md`.
 - [ ] **Veredito:** Apenas após aprovação física, setar `qa_signoff: true` e assinar o contrato.
+
+---
+
+## 📊 Camada de Telemetria [GOVERNANCE-FRICTION]
+> **Códigos oficiais para registro de desvios técnicos e narrativos:**
+
+| Código | Severidade | Descrição |
+|--------|------------|-----------|
+| `GF-METADATA-STALE` | Advisory | Metadado `Ultima Atualizacao` < Data real do commit. |
+| `GF-JOURNAL-ORDER` | Advisory | Inversão cronológica detectada no `JOURNAL.md`. |
+| `GF-STATE-FRESHNESS` | Advisory | Campo `updated` do `STATE.md` defasado (> 1h). |
+| `GF-ACCEPTANCE-DESYNC`| **FATAL** | Tarefas concluídas mas aceitação na spec pendente. |
+| `GF-ATOMIC-DESYNC` | **FATAL** | Sprint em progresso sem `start_hash` válido no Git. |
+| `GF-NARRATIVE-FRAUD` | **FATAL** | Alegação de propagação no Journal sem diff real no Git. |
+| `GF-SILENT-MOD` | **FATAL** | Modificação física no Git sem registro na Matriz de Propagação. |
+
+> **Uso:** Inserir em `maintenance/HARNESS_LOG.md` no formato:
+> `## [GOVERNANCE-FRICTION] <CODIGO> | <YYYY-MM-DD HH:MM>`
+> `- **Detalhe:** <Explicação do desvio>`
 
 ---
 

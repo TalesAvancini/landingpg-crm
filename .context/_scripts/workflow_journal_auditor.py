@@ -128,6 +128,32 @@ def audit():
         if not any(x in status for x in ["READY TO COMMIT", "🟢"]):
             violations.append(f"Status de validação inválido: '{status}'. Esperado 'READY TO COMMIT'.")
 
+    # --- Detecção de Fraude Narrativa & Modificação Silenciosa (Sprint 07) ---
+    # Extrai arquivos marcados como propagados no Journal: - [x] `path`
+    journal_propagated = set()
+    propagation_matches = re.findall(r"-\s*\[x\]\s*`?(.*?)`?\s*->", entry, re.I)
+    for p in propagation_matches:
+        journal_propagated.add(p.strip())
+
+    # 1. Fraude Narrativa: Alegar que mudou algo que o Git não viu.
+    for p_file in journal_propagated:
+        # Se o arquivo não está no Git e não é um diretório/padrão genérico
+        if not any(f.endswith(p_file) or p_file in f for f in git["all"]):
+            violations.append(f"Fraude Narrativa: Arquivo '{p_file}' marcado como [x] no Journal, mas não há alterações no Git.")
+
+    # 2. Modificação Silenciosa: Mudar algo no Git e não avisar no Journal.
+    # Ignora arquivos de contexto que são atualizados automaticamente e diretórios de sistema
+    ignore_silent = [".context/maintenance/JOURNAL.md", ".context/maintenance/HARNESS_LOG.md", ".context/maintenance/STATE.md"]
+    for g_file in git["all"]:
+        if any(g_file.endswith(ex) for ex in ignore_silent):
+            continue
+        
+        # Se o arquivo Git não foi mencionado no Journal como [x]
+        if not any(g_file.endswith(p) or p in g_file for p in journal_propagated):
+            # Verifica se está em alguma regra de obrigatoriedade (require_files_touched) para evitar erro duplo
+            # Mas aqui o foco é: se mudou, tem que estar na Matriz de Propagação.
+            violations.append(f"Modificação Silenciosa: Arquivo '{g_file}' alterado no Git mas ausente na Matriz de Propagação do Journal.")
+
     if violations:
         print("\n❌ VIOLAÇÕES DETECTADAS:")
         for v in violations:

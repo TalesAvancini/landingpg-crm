@@ -2,7 +2,7 @@
 contract_version: 2.5.2
 parties: ["@spec-driver", "@qa-validator"]
 contract_mode: sprint_based
-current_sprint: sprint_06
+current_sprint: sprint_07
 policy_profile: hybrid
 plan_source: planos/governance_rules_hardening/plano_governance_rules_hardening.md
 qa_signoff: false
@@ -119,8 +119,8 @@ sprints:
       - ".context/maintenance/HARNESS_LOG.md"
     scope_deny: []
     acceptance:
-      - "[ ] Detecção de fraude narrativa em workflow_journal_auditor.py"
-      - "[ ] Schema de telemetria [GOVERNANCE-FRICTION] implantado"
+      - "[x] Detecção de Fraude Narrativa implementada no auditor"
+      - "[x] Schema de telemetria [GOVERNANCE-FRICTION] integrado"
     qa_signoff: false
     signed_by: null
 

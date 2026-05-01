@@ -33,9 +33,9 @@
 - [x] **TASK-13**: Implementar transição atômica para `IN_PROGRESS` via código.
 
 ## 🏗️ Sprint 07: Hardening SAM & Telemetria
-- [ ] **TASK-14**: Implementar detecção de fraude narrativa no `workflow_journal_auditor.py`.
-- [ ] **TASK-15**: Implantar schema de telemetria `[GOVERNANCE-FRICTION]`.
-- [ ] **TASK-16**: Atualizar AGENT_REGISTRY.md.
+- [x] **TASK-14**: Implementar detecção de fraude narrativa no `workflow_journal_auditor.py`.
+- [x] **TASK-15**: Implantar schema de telemetria `[GOVERNANCE-FRICTION]`.
+- [x] **TASK-16**: Atualizar AGENT_REGISTRY.md.
 
 ## 🏗️ Sprint 08: Visão: RX Communications
 - [ ] **TASK-17**: Criar `.context/maintenance/rx-communications.md`.
