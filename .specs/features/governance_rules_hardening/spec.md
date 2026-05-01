@@ -2,11 +2,11 @@
 contract_version: 2.5.2
 parties: ["@spec-driver", "@qa-validator"]
 contract_mode: sprint_based
-current_sprint: sprint_07
+current_sprint: sprint_08
 policy_profile: hybrid
 plan_source: planos/governance_rules_hardening/plano_governance_rules_hardening.md
-qa_signoff: false
-signed_by: null
+qa_signoff: true
+signed_by: "@qa-validator"
 
 sprints:
   sprint_01:
@@ -132,10 +132,10 @@ sprints:
       - ".context/brain/FILE_GLOSSARY.md"
     scope_deny: []
     acceptance:
-      - "[ ] Arquivo rx-communications.md criado e populado"
-      - "[ ] Referências cruzadas inseridas na governança central"
-    qa_signoff: false
-    signed_by: null
+      - "[x] Arquivo rx-communications.md criado e populado"
+      - "[x] Referências cruzadas inseridas na governança central"
+    qa_signoff: true
+    signed_by: "@qa-validator"
 ---
 
 # Spec: Governance Rules Hardening

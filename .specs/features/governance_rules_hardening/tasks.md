@@ -38,5 +38,5 @@
 - [x] **TASK-16**: Atualizar AGENT_REGISTRY.md.
 
 ## 🏗️ Sprint 08: Visão: RX Communications
-- [ ] **TASK-17**: Criar `.context/maintenance/rx-communications.md`.
-- [ ] **TASK-18**: Referenciar explicitamente no MASTER_FLOW.md e FILE_GLOSSARY.md.
+- [x] **TASK-17**: Criar `.context/maintenance/rx-communications.md`.
+- [x] **TASK-18**: Referenciar explicitamente no MASTER_FLOW.md e FILE_GLOSSARY.md.

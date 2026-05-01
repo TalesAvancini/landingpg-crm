@@ -57,6 +57,7 @@ Status: [Ativo | Arquivado | Depreciado]
     │   ├── TESTS.md                   # Ledger de padrões e TDDs
     │   ├── rx-anatomy.md              # Raio-X de pastas (Anatomia do Repositório)
     │   ├── rx-biology.md              # Raio-X de fluxos (Biologia do Negócio)
+    │   ├── rx-communications.md       # Log de transparência narrativa (Transversal)
     │   └── _archive_context/          # Histórico imutável (A Biblioteca)
     │
     ├── monitoring/             # CAMADA DE MONITORAMENTO (The Guardian)
