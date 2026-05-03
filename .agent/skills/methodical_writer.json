@@ -1,0 +1,21 @@
+{
+  "name": "methodical_writer",
+  "description": "Escreve codigo com validacao obrigatoria via write_with_validation.py.\nAntes de cada escrita, o script valida task_id, scope, tier e strategy.\nSe o script retorna exit 1, a escrita e BLOQUEADA.\nNUNCA escreva diretamente. SEMPRE use esta skill.",
+  "parameters": {
+    "task_id": {
+      "type": "string",
+      "required": true,
+      "description": "ID da task conforme listado no tasks.md (ex: TASK-04)"
+    },
+    "file_path": {
+      "type": "string",
+      "required": true,
+      "description": "Caminho relativo do arquivo a ser modificado"
+    },
+    "content": {
+      "type": "string",
+      "required": true,
+      "description": "Conteudo a ser escrito (maximo 15 linhas no Tier 1)"
+    }
+  }
+}
