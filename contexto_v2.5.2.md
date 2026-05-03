@@ -2,12 +2,12 @@
 
 ---
 schema_version: 1
-generated_at: 2026-04-30T05:41:51.084870+00:00
+generated_at: 2026-05-02T21:40:46.618955+00:00
 root: template_inicío_de_projeto
 mode: full
 profile: ai-default
-file_count: 91
-byte_count: 362035
+file_count: 111
+byte_count: 445538
 ignored_dirs:
   - .cache
   - .cursor
@@ -84,6 +84,7 @@ sensitive_rules:
   - `.context/maintenance/rebuild_guide.md` -> [file_a5c71962029a](#file_a5c71962029a)
   - `.context/maintenance/rx-anatomy.md` -> [file_54a6a553d34b](#file_54a6a553d34b)
   - `.context/maintenance/rx-biology.md` -> [file_ca8da4f87431](#file_ca8da4f87431)
+  - `.context/maintenance/rx-communications.md` -> [file_4f9504df2efc](#file_4f9504df2efc)
   - `.context/market/MARKET_INBOX.md` -> [file_81ef387da7b7](#file_81ef387da7b7)
   - `.context/market/SSOT_MAP.md` -> [file_65a089176b85](#file_65a089176b85)
   - `.context/market/WIKI/_index.md` -> [file_578d56cac1a4](#file_578d56cac1a4)
@@ -98,23 +99,42 @@ sensitive_rules:
   - `.context/monitoring/EXECUTION_BUFFER.md` -> [file_c6d44cc7da35](#file_c6d44cc7da35)
   - `.context/monitoring/PROJECT_INDEX.md` -> [file_3667001850eb](#file_3667001850eb)
   - `.specs/_template.md` -> [file_b838611f038c](#file_b838611f038c)
-  - `.specs/features/harness_fail_closed/STATE.md` -> [file_d4f64fc3b549](#file_d4f64fc3b549)
-  - `.specs/features/harness_fail_closed/spec.md` -> [file_a32e3bf74e3d](#file_a32e3bf74e3d)
-  - `.specs/features/meta-inception/STATE.md` -> [file_238a0e1da225](#file_238a0e1da225)
-  - `.specs/features/meta-inception/spec.md` -> [file_9801af51c558](#file_9801af51c558)
-  - `.specs/features/multi_agent_choreography/STATE.md` -> [file_452b2ed7917b](#file_452b2ed7917b)
-  - `.specs/features/multi_agent_choreography/spec.md` -> [file_6aa9a4e78301](#file_6aa9a4e78301)
-  - `.specs/features/oracle_v3/STATE.md` -> [file_95d7e7d932e2](#file_95d7e7d932e2)
-  - `.specs/features/oracle_v3/spec.md` -> [file_98232f54149e](#file_98232f54149e)
-  - `.specs/features/qa_subagent/STATE.md` -> [file_98c620fda2a6](#file_98c620fda2a6)
-  - `.specs/features/qa_subagent/spec.md` -> [file_72cc9b3bbcc2](#file_72cc9b3bbcc2)
-  - `.specs/features/sam_chronology_fix/STATE.md` -> [file_f288e14cea57](#file_f288e14cea57)
-  - `.specs/features/sam_chronology_fix/spec.md` -> [file_87c0e9fe1bbb](#file_87c0e9fe1bbb)
-  - `.specs/features/synapse_workflow/STATE.md` -> [file_6d46ab399ea3](#file_6d46ab399ea3)
-  - `.specs/features/synapse_workflow/spec.md` -> [file_4f4d02adad4d](#file_4f4d02adad4d)
-  - `.specs/features/wiki_level2/STATE.md` -> [file_638d6695a3f1](#file_638d6695a3f1)
-  - `.specs/features/wiki_level2/spec.md` -> [file_86778e912e18](#file_86778e912e18)
-  - `.specs/features/wiki_level2/tasks.md` -> [file_fafce66dc671](#file_fafce66dc671)
+  - `.specs/features/SDD_ERRORS_LEDGER.md` -> [file_cec7fa80a0cf](#file_cec7fa80a0cf)
+  - `.specs/features/SDD_PLAYBOOK.md` -> [file_b33d2a2116cd](#file_b33d2a2116cd)
+  - `.specs/features/_arquive_features/harness_fail_closed/STATE.md` -> [file_5353fbc27cc1](#file_5353fbc27cc1)
+  - `.specs/features/_arquive_features/harness_fail_closed/spec.md` -> [file_e56f737897cf](#file_e56f737897cf)
+  - `.specs/features/_arquive_features/log_old_features.md` -> [file_f7b3adad01fe](#file_f7b3adad01fe)
+  - `.specs/features/_arquive_features/meta-inception/STATE.md` -> [file_0fa0b6b078a5](#file_0fa0b6b078a5)
+  - `.specs/features/_arquive_features/meta-inception/spec.md` -> [file_b544f5358fb0](#file_b544f5358fb0)
+  - `.specs/features/_arquive_features/multi_agent_choreography/STATE.md` -> [file_976dca62e5de](#file_976dca62e5de)
+  - `.specs/features/_arquive_features/multi_agent_choreography/spec.md` -> [file_dcdf7269aabc](#file_dcdf7269aabc)
+  - `.specs/features/_arquive_features/oracle_v3/STATE.md` -> [file_3377cfe00b2d](#file_3377cfe00b2d)
+  - `.specs/features/_arquive_features/oracle_v3/spec.md` -> [file_96f9097dbbd2](#file_96f9097dbbd2)
+  - `.specs/features/_arquive_features/qa_subagent/STATE.md` -> [file_96a2bcfd8479](#file_96a2bcfd8479)
+  - `.specs/features/_arquive_features/qa_subagent/spec.md` -> [file_07e43f982f2d](#file_07e43f982f2d)
+  - `.specs/features/_arquive_features/sam_chronology_fix/STATE.md` -> [file_2bad8249610a](#file_2bad8249610a)
+  - `.specs/features/_arquive_features/sam_chronology_fix/spec.md` -> [file_a969b2604ea8](#file_a969b2604ea8)
+  - `.specs/features/_arquive_features/synapse_workflow/STATE.md` -> [file_a47ad3f11faa](#file_a47ad3f11faa)
+  - `.specs/features/_arquive_features/synapse_workflow/spec.md` -> [file_08d15183b50c](#file_08d15183b50c)
+  - `.specs/features/_arquive_features/wiki_level2/STATE.md` -> [file_26b5471905f2](#file_26b5471905f2)
+  - `.specs/features/_arquive_features/wiki_level2/spec.md` -> [file_25a85d147e2a](#file_25a85d147e2a)
+  - `.specs/features/_arquive_features/wiki_level2/tasks.md` -> [file_df9a30cacfaa](#file_df9a30cacfaa)
+  - `.specs/features/_template_operacional/STATE.md` -> [file_1a22b8bd3423](#file_1a22b8bd3423)
+  - `.specs/features/_template_operacional/design.md` -> [file_c26edabf0ec4](#file_c26edabf0ec4)
+  - `.specs/features/_template_operacional/spec.md` -> [file_b3ffa4b3b701](#file_b3ffa4b3b701)
+  - `.specs/features/_template_operacional/tasks.md` -> [file_7cde61057f28](#file_7cde61057f28)
+  - `.specs/features/_template_operacional_sprint/CHECKLIST.md` -> [file_df91d6111d17](#file_df91d6111d17)
+  - `.specs/features/_template_operacional_sprint/STATE.md` -> [file_dea2c04e539b](#file_dea2c04e539b)
+  - `.specs/features/_template_operacional_sprint/design.md` -> [file_e8d353f63af3](#file_e8d353f63af3)
+  - `.specs/features/_template_operacional_sprint/spec.md` -> [file_6c7ec05b2f9e](#file_6c7ec05b2f9e)
+  - `.specs/features/_template_operacional_sprint/tasks.md` -> [file_f623b71a536c](#file_f623b71a536c)
+  - `.specs/features/contract_sprints_v2_safe/STATE.md` -> [file_c6539441c702](#file_c6539441c702)
+  - `.specs/features/contract_sprints_v2_safe/spec.md` -> [file_f26b9f244534](#file_f26b9f244534)
+  - `.specs/features/contract_sprints_v2_safe/tasks.md` -> [file_4f8d9b00b4a4](#file_4f8d9b00b4a4)
+  - `.specs/features/governance_rules_hardening/STATE.md` -> [file_c1d55217ac2a](#file_c1d55217ac2a)
+  - `.specs/features/governance_rules_hardening/design.md` -> [file_99c81edef6ff](#file_99c81edef6ff)
+  - `.specs/features/governance_rules_hardening/spec.md` -> [file_58b215a340da](#file_58b215a340da)
+  - `.specs/features/governance_rules_hardening/tasks.md` -> [file_4f9bb146f536](#file_4f9bb146f536)
   - `GUIA_ESTABILIZACAO_NOTEBOOKLM.md` -> [file_95dabcdf3543](#file_95dabcdf3543)
   - `README.md` -> [file_8ec9a00bfd09](#file_8ec9a00bfd09)
   - `README_CONTEXT.md` -> [file_4efb6293109d](#file_4efb6293109d)
@@ -193,6 +213,7 @@ sensitive_rules:
 - `.context/maintenance/rebuild_guide.md` -> [file_a5c71962029a](#file_a5c71962029a)
 - `.context/maintenance/rx-anatomy.md` -> [file_54a6a553d34b](#file_54a6a553d34b)
 - `.context/maintenance/rx-biology.md` -> [file_ca8da4f87431](#file_ca8da4f87431)
+- `.context/maintenance/rx-communications.md` -> [file_4f9504df2efc](#file_4f9504df2efc)
 - `.context/maintenance/schema.sql` -> [file_91d5627a725e](#file_91d5627a725e)
 - `.context/maintenance/version_targets.json` -> [file_51ed93c9d8ab](#file_51ed93c9d8ab)
 - `.context/market/MARKET_INBOX.md` -> [file_81ef387da7b7](#file_81ef387da7b7)
@@ -211,23 +232,42 @@ sensitive_rules:
 - `.github/workflows/context-health.yml` -> [file_e477c4c5a96c](#file_e477c4c5a96c)
 - `.husky/_/husky.sh` -> [file_3adfd36c1559](#file_3adfd36c1559)
 - `.specs/_template.md` -> [file_b838611f038c](#file_b838611f038c)
-- `.specs/features/harness_fail_closed/STATE.md` -> [file_d4f64fc3b549](#file_d4f64fc3b549)
-- `.specs/features/harness_fail_closed/spec.md` -> [file_a32e3bf74e3d](#file_a32e3bf74e3d)
-- `.specs/features/meta-inception/STATE.md` -> [file_238a0e1da225](#file_238a0e1da225)
-- `.specs/features/meta-inception/spec.md` -> [file_9801af51c558](#file_9801af51c558)
-- `.specs/features/multi_agent_choreography/STATE.md` -> [file_452b2ed7917b](#file_452b2ed7917b)
-- `.specs/features/multi_agent_choreography/spec.md` -> [file_6aa9a4e78301](#file_6aa9a4e78301)
-- `.specs/features/oracle_v3/STATE.md` -> [file_95d7e7d932e2](#file_95d7e7d932e2)
-- `.specs/features/oracle_v3/spec.md` -> [file_98232f54149e](#file_98232f54149e)
-- `.specs/features/qa_subagent/STATE.md` -> [file_98c620fda2a6](#file_98c620fda2a6)
-- `.specs/features/qa_subagent/spec.md` -> [file_72cc9b3bbcc2](#file_72cc9b3bbcc2)
-- `.specs/features/sam_chronology_fix/STATE.md` -> [file_f288e14cea57](#file_f288e14cea57)
-- `.specs/features/sam_chronology_fix/spec.md` -> [file_87c0e9fe1bbb](#file_87c0e9fe1bbb)
-- `.specs/features/synapse_workflow/STATE.md` -> [file_6d46ab399ea3](#file_6d46ab399ea3)
-- `.specs/features/synapse_workflow/spec.md` -> [file_4f4d02adad4d](#file_4f4d02adad4d)
-- `.specs/features/wiki_level2/STATE.md` -> [file_638d6695a3f1](#file_638d6695a3f1)
-- `.specs/features/wiki_level2/spec.md` -> [file_86778e912e18](#file_86778e912e18)
-- `.specs/features/wiki_level2/tasks.md` -> [file_fafce66dc671](#file_fafce66dc671)
+- `.specs/features/SDD_ERRORS_LEDGER.md` -> [file_cec7fa80a0cf](#file_cec7fa80a0cf)
+- `.specs/features/SDD_PLAYBOOK.md` -> [file_b33d2a2116cd](#file_b33d2a2116cd)
+- `.specs/features/_arquive_features/harness_fail_closed/STATE.md` -> [file_5353fbc27cc1](#file_5353fbc27cc1)
+- `.specs/features/_arquive_features/harness_fail_closed/spec.md` -> [file_e56f737897cf](#file_e56f737897cf)
+- `.specs/features/_arquive_features/log_old_features.md` -> [file_f7b3adad01fe](#file_f7b3adad01fe)
+- `.specs/features/_arquive_features/meta-inception/STATE.md` -> [file_0fa0b6b078a5](#file_0fa0b6b078a5)
+- `.specs/features/_arquive_features/meta-inception/spec.md` -> [file_b544f5358fb0](#file_b544f5358fb0)
+- `.specs/features/_arquive_features/multi_agent_choreography/STATE.md` -> [file_976dca62e5de](#file_976dca62e5de)
+- `.specs/features/_arquive_features/multi_agent_choreography/spec.md` -> [file_dcdf7269aabc](#file_dcdf7269aabc)
+- `.specs/features/_arquive_features/oracle_v3/STATE.md` -> [file_3377cfe00b2d](#file_3377cfe00b2d)
+- `.specs/features/_arquive_features/oracle_v3/spec.md` -> [file_96f9097dbbd2](#file_96f9097dbbd2)
+- `.specs/features/_arquive_features/qa_subagent/STATE.md` -> [file_96a2bcfd8479](#file_96a2bcfd8479)
+- `.specs/features/_arquive_features/qa_subagent/spec.md` -> [file_07e43f982f2d](#file_07e43f982f2d)
+- `.specs/features/_arquive_features/sam_chronology_fix/STATE.md` -> [file_2bad8249610a](#file_2bad8249610a)
+- `.specs/features/_arquive_features/sam_chronology_fix/spec.md` -> [file_a969b2604ea8](#file_a969b2604ea8)
+- `.specs/features/_arquive_features/synapse_workflow/STATE.md` -> [file_a47ad3f11faa](#file_a47ad3f11faa)
+- `.specs/features/_arquive_features/synapse_workflow/spec.md` -> [file_08d15183b50c](#file_08d15183b50c)
+- `.specs/features/_arquive_features/wiki_level2/STATE.md` -> [file_26b5471905f2](#file_26b5471905f2)
+- `.specs/features/_arquive_features/wiki_level2/spec.md` -> [file_25a85d147e2a](#file_25a85d147e2a)
+- `.specs/features/_arquive_features/wiki_level2/tasks.md` -> [file_df9a30cacfaa](#file_df9a30cacfaa)
+- `.specs/features/_template_operacional/STATE.md` -> [file_1a22b8bd3423](#file_1a22b8bd3423)
+- `.specs/features/_template_operacional/design.md` -> [file_c26edabf0ec4](#file_c26edabf0ec4)
+- `.specs/features/_template_operacional/spec.md` -> [file_b3ffa4b3b701](#file_b3ffa4b3b701)
+- `.specs/features/_template_operacional/tasks.md` -> [file_7cde61057f28](#file_7cde61057f28)
+- `.specs/features/_template_operacional_sprint/CHECKLIST.md` -> [file_df91d6111d17](#file_df91d6111d17)
+- `.specs/features/_template_operacional_sprint/STATE.md` -> [file_dea2c04e539b](#file_dea2c04e539b)
+- `.specs/features/_template_operacional_sprint/design.md` -> [file_e8d353f63af3](#file_e8d353f63af3)
+- `.specs/features/_template_operacional_sprint/spec.md` -> [file_6c7ec05b2f9e](#file_6c7ec05b2f9e)
+- `.specs/features/_template_operacional_sprint/tasks.md` -> [file_f623b71a536c](#file_f623b71a536c)
+- `.specs/features/contract_sprints_v2_safe/STATE.md` -> [file_c6539441c702](#file_c6539441c702)
+- `.specs/features/contract_sprints_v2_safe/spec.md` -> [file_f26b9f244534](#file_f26b9f244534)
+- `.specs/features/contract_sprints_v2_safe/tasks.md` -> [file_4f8d9b00b4a4](#file_4f8d9b00b4a4)
+- `.specs/features/governance_rules_hardening/STATE.md` -> [file_c1d55217ac2a](#file_c1d55217ac2a)
+- `.specs/features/governance_rules_hardening/design.md` -> [file_99c81edef6ff](#file_99c81edef6ff)
+- `.specs/features/governance_rules_hardening/spec.md` -> [file_58b215a340da](#file_58b215a340da)
+- `.specs/features/governance_rules_hardening/tasks.md` -> [file_4f9bb146f536](#file_4f9bb146f536)
 - `GUIA_ESTABILIZACAO_NOTEBOOKLM.md` -> [file_95dabcdf3543](#file_95dabcdf3543)
 - `README.md` -> [file_8ec9a00bfd09](#file_8ec9a00bfd09)
 - `README_CONTEXT.md` -> [file_4efb6293109d](#file_4efb6293109d)
@@ -243,38 +283,43 @@ sensitive_rules:
 
 ---
 <a id="file_5a0c0f1b1bd0"></a>
-FILE_START id=file_5a0c0f1b1bd0 path=.agent/subagents/qa-validator.md domain=docs lang=markdown lines=29 bytes=1675 mtime=2026-04-26T18:26:55.104551+00:00 sha1=dd112ed2df4f38fdc7660f08788077a843b89921
-CHUNK_START id=5a0c0f1b1bd0_c001 start_line=1 end_line=29
+FILE_START id=file_5a0c0f1b1bd0 path=.agent/subagents/qa-validator.md domain=docs lang=markdown lines=34 bytes=1910 mtime=2026-04-30T21:18:30.151867+00:00 sha1=a48e251779eb5cf186a998851e4d02704db7dcdf
+CHUNK_START id=5a0c0f1b1bd0_c001 start_line=1 end_line=34
 ```markdown
 ---
 name: qa-validator
-description: Automatically delegate to this subagent when a task or feature implementation is complete and ready for QA validation before committing. It evaluates the implementation against the spec.md and definition of done, then autonomously signs off if correct. Use proactively to prevent the human from being the QA bottleneck.
+description: Automatically delegate to this subagent when a task or feature implementation is complete and ready for QA validation before committing. It evaluates the implementation against the spec.md and definition of done, then autonomously signs off if correct. Supports Standard and Sprint-based modes.
 model: fast
 readonly: false
 ---
 
 You are a strict QA Validator and Technical Auditor for the H.O.K Forge framework.
-Your sole purpose is to independently verify that a completed task matches its specification exactly, and if so, authorize the commit.
+Your sole purpose is to independently verify that a completed task matches its specification exactly, and if so, authorize the checkpoint or commit.
 
 When invoked:
-1. Identify the active specification file (`.specs/features/<feature>/spec.md`) and read its `definition_of_done`.
-2. Analyze the current repository state (Git Diff) to verify that the implementation exactly matches the requirements.
-3. Check for architectural compliance (no hardcoded secrets, no violation of `RULES.md`).
+1. Identify the active specification file (`.specs/features/<feature>/spec.md`) and check its `contract_mode`.
+2. **If [MODO A] STANDARD:**
+   - Read the global `definition_of_done`.
+   - Analyze Git Diff against the baseline.
+   - If PASS: Update global `qa_signoff: true` and `signed_by: "@qa-validator"`.
+3. **If [MODO B] SPRINT_BASED:**
+   - Identify the `current_sprint` (e.g., sprint_01).
+   - Read the `acceptance` criteria within that specific sprint block.
+   - Analyze Git Diff starting from the `start_hash` defined for that sprint in `STATE.md`.
+   - If PASS: Update `qa_signoff: true` **ONLY within the sprint block**. 
+   - DO NOT sign the global feature as done unless it's the final sprint.
+4. Check for architectural compliance (no hardcoded secrets, no violation of `RULES.md`, Whitelist HG07).
 
-If the implementation PASSES all criteria:
-- Use file editing tools to update the `spec.md` file:
-  - Check all `[ ]` boxes in the `definition_of_done` that were met.
-  - Set `qa_signoff: true`.
-  - Set `validator_context_id: "CTX_QA_VALIDATOR"`.
-  - Set `signed_by: "@qa-validator"`.
-- Update the `STATE.md` file to `status: 🟢 DONE` with a detail message.
-- Report SUCCESS to the orchestrator agent and inform them the SAM gate is open.
+If the implementation PASSES:
+- Use file editing tools to update `spec.md` and `STATE.md`.
+- For Sprints: Update `qa_checkpoint` in `STATE.md` with your signature and evidence.
+- Report SUCCESS and inform the SAM gate is ready for the current phase.
 
-If the implementation FAILS any criteria:
-- Identify the exact failure.
-- Report the specific error back to the orchestrator agent so it can fix the code. Do NOT modify the spec to true.
+If the implementation FAILS:
+- Identify the exact failure (Requirement mismatch or Gate Violation).
+- Report specifically so the executor can correct.
 
-Philosophy: Zero Trust. You do not trust the executor agent. You trust the Git Diff and the Spec.
+Philosophy: Zero Trust. You trust the Git Diff, the start_hash, and the Contract.
 
 ```
 CHUNK_END id=5a0c0f1b1bd0_c001
@@ -529,8 +574,8 @@ FILE_END id=file_4ffe1a34765a
 
 ---
 <a id="file_82cd6bde54ff"></a>
-FILE_START id=file_82cd6bde54ff path=.context/_scripts/cleanup_specs.py domain=source lang=python lines=71 bytes=2335 mtime=2026-04-11T02:29:19.704104+00:00 sha1=8567b3ea9b8c513859bab8793632e38aef509fd5
-CHUNK_START id=82cd6bde54ff_c001 start_line=1 end_line=71
+FILE_START id=file_82cd6bde54ff path=.context/_scripts/cleanup_specs.py domain=source lang=python lines=102 bytes=3655 mtime=2026-04-30T22:03:01.202091+00:00 sha1=362bd063cb5f099b6d28f99c135093ce4c3559ce
+CHUNK_START id=82cd6bde54ff_c001 start_line=1 end_line=102
 ```python
 #!/usr/bin/env python3
 """
@@ -540,6 +585,7 @@ Aplica a regra de 48h de inatividade e limite de 3 specs ativas simultâneas.
 Arquiva specs excedentes ou obsoletas em _archive_context/specs/.
 """
 import os
+import re
 import shutil
 import time
 from pathlib import Path
@@ -558,7 +604,7 @@ MAX_ACTIVE_SPECS = 3
 def get_specs():
     if not SPECS_DIR.exists():
         return []
-    return [d for d in SPECS_DIR.iterdir() if d.is_dir()]
+    return [d for d in SPECS_DIR.iterdir() if d.is_dir() and not d.name.startswith("_")]
 
 def archive_spec(spec_path):
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
@@ -568,6 +614,27 @@ def archive_spec(spec_path):
     
     print(f"[INFO] Arquivando spec: {spec_path.name} -> {archive_name}")
     shutil.move(str(spec_path), str(dest_path))
+
+def is_protected(spec_path):
+    """Verifica se a spec está protegida (ex: sprint ativa em modo sprint_based)."""
+    spec_file = spec_path / "spec.md"
+    if not spec_file.exists(): return False
+    try:
+        content = spec_file.read_text(encoding="utf-8")
+        if "contract_mode: sprint_based" not in content:
+            return False
+        
+        # Se for modo sprint, verifica se a sprint atual está aberta
+        curr_match = re.search(r"current_sprint:\s*(\w+)", content)
+        if curr_match:
+            curr = curr_match.group(1)
+            # Busca bloco da sprint atual
+            s_block = re.search(rf"{curr}:(.*?)(?=sprint_\d+:|\Z)", content, re.I | re.DOTALL)
+            if s_block and "qa_signoff: false" in s_block.group(1).lower():
+                return True # PROTEGIDA: Sprint aberta
+    except:
+        pass
+    return False
 
 def cleanup():
     specs = get_specs()
@@ -580,6 +647,11 @@ def cleanup():
 
     # 1. Limpeza por inatividade (48h)
     for spec in specs:
+        if is_protected(spec):
+            print(f"[SAFE] Spec imunizada (Sprint Ativa): {spec.name}")
+            active_specs.append(spec)
+            continue
+            
         last_mod = max(os.path.getmtime(root) for root, _, _ in os.walk(spec))
         if (now - last_mod) > MAX_INACTIVITY_SECONDS:
             print(f"[AUTO] Inatividade detectada (>48h) em: {spec.name}")
@@ -591,9 +663,13 @@ def cleanup():
     # Ordena por data de modificação (mais antiga primeiro)
     active_specs.sort(key=lambda s: max(os.path.getmtime(root) for root, _, _ in os.walk(s)))
     
-    while len(active_specs) > MAX_ACTIVE_SPECS:
-        oldest = active_specs.pop(0)
-        print(f"[AUTO] Limite de volume excedido (Max {MAX_ACTIVE_SPECS}). Removendo spec mais antiga: {oldest.name}")
+    # Filtra as protegidas para não serem removidas pelo limite de volume se possível
+    candidate_specs = [s for s in active_specs if not is_protected(s)]
+    
+    while len(active_specs) > MAX_ACTIVE_SPECS and candidate_specs:
+        oldest = candidate_specs.pop(0)
+        active_specs.remove(oldest)
+        print(f"[AUTO] Limite de volume excedido (Max {MAX_ACTIVE_SPECS}). Removendo spec mais antiga (Não Protegida): {oldest.name}")
         archive_spec(oldest)
 
     print(f"[OK] Manutencao de specs concluida. Specs ativas: {len(active_specs)}/{MAX_ACTIVE_SPECS}")
@@ -955,7 +1031,7 @@ FILE_END id=file_e94b4e40315c
 
 ---
 <a id="file_1edef35c2f56"></a>
-FILE_START id=file_1edef35c2f56 path=.context/_scripts/harness_runner.py domain=source lang=python lines=489 bytes=18442 mtime=2026-04-29T23:57:24.240107+00:00 sha1=1e255917bdd15074e0d2f2a339fdb9a0e672bf65
+FILE_START id=file_1edef35c2f56 path=.context/_scripts/harness_runner.py domain=source lang=python lines=647 bytes=26097 mtime=2026-04-30T21:55:22.603573+00:00 sha1=6ee3838b43644369ac98d779ca33c1e134c3970b
 CHUNK_START id=1edef35c2f56_c001 start_line=1 end_line=300
 ```python
 #!/usr/bin/env python3
@@ -1106,23 +1182,51 @@ def check_enrichment_integrity(prd_path: Path):
     return True, "Enrichment contract OK"
 
 
-def check_sprint_contract(spec_path: Path):
-    """Valida se a spec possui contrato explícito e assinatura do QA."""
-    if not spec_path.exists():
-        return (
-            False,
-            "Nenhuma Spec ativa detectada. Commits sem Spec validada no The Workshop estão PROIBIDOS.",
+# Whitelist Operacional para Plano V2-Safe (Seção 15)
+WHITELIST_V2 = {
+    ".context/_scripts/harness_runner.py",
+    ".agent/subagents/qa-validator.md",
+    ".agent/subagents/spec-driver.md",
+    ".specs/_template.md",
+    ".context/_scripts/cleanup_specs.py",
+    ".context/brain/MASTER_FLOW.md",
+    ".context/brain/SCRIPT_GLOSSARY.md",
+    ".context/brain/FILE_GLOSSARY.md",
+    ".context/brain/HARNESS_REGISTRY.md",
+    "tests/test_context.py",
+    ".context/maintenance/JOURNAL.md",
+    ".context/maintenance/HARNESS_LOG.md",
+    "planos/mudanca_specdriven/plano_v2_caminho_seguro_falsh.md",
+    "planos/mudanca_specdriven/mudanca_specdriven.md", # Movido pelo usuário
+    "planos/mudanca_specdriven/relatorio_auditoria_contract_sprints.md", # Documentação de auditoria
+    ".context/brain/RULES.md", # Documentação mestre
+    ".context/brain/MASTER_FLOW.md" # Fluxo mestre
+}
+
+def _get_modified_files(start_hash):
+    """Retorna lista de arquivos modificados desde o start_hash (inclui working tree)."""
+    try:
+        res = subprocess.run(
+            ["git", "diff", "--name-only", start_hash],
+            capture_output=True, text=True, encoding="utf-8"
         )
+        return [f.strip() for f in res.stdout.splitlines() if f.strip()]
+    except:
+        return []
 
-    text = spec_path.read_text(encoding="utf-8")
-    # Extrai bloco YAML entre --- e ---
-    yaml_match = re.match(r"^---\n(.*?)\n---", text, re.DOTALL)
-    if not yaml_match:
-        return False, "Bloco de contrato (---) ausente no topo da spec"
+def _get_diff_stats(start_hash):
+    """Calcula estatísticas de churn (linhas +/-) desde o start_hash."""
+    try:
+        res = subprocess.run(
+            ["git", "diff", "--shortstat", start_hash],
+            capture_output=True, text=True, encoding="utf-8"
+        )
+        return res.stdout.strip()
+    except:
+        return "Nenhuma alteração detectada"
 
-    contract = yaml_match.group(1)
-
-    # Validação semântica leve (stdlib-only)
+def _validate_standard_contract(contract):
+    """Lógica original v2.5.2 para contratos standard binários."""
     has_dod = "definition_of_done:" in contract
     has_signoff = re.search(r"qa_signoff:\s*true", contract, re.I)
     has_signed_by = re.search(r'signed_by:\s*["\']?@qa-validator["\']?', contract, re.I)
@@ -1130,46 +1234,135 @@ def check_sprint_contract(spec_path: Path):
     if not has_dod:
         return False, "Campo definition_of_done obrigatório"
     if not has_signoff:
-        return False, "Contrato não assinado pelo @qa-validator (qa_signoff: false)"
+        return False, "Contrato standard não assinado pelo @qa-validator (qa_signoff: false)"
     if not has_signed_by:
         return False, "Campo signed_by inválido ou ausente"
 
-    # Regra v2.5.2: segregação de contexto para specs standard
+    # Verificação de segregação
+    exec_match = re.search(r"^\s*executor_context_id:\s*(.+?)\s*$", contract, re.I | re.M)
+    valid_match = re.search(r"^\s*validator_context_id:\s*(.+?)\s*$", contract, re.I | re.M)
+
+    executor_id = exec_match.group(1).strip().strip('"').strip("'") if exec_match else ""
+    validator_id = valid_match.group(1).strip().strip('"').strip("'") if valid_match else ""
+
+    if not executor_id or not validator_id or executor_id.lower() in {"null", "none"}:
+        return False, "Spec standard requer context_ids preenchidos"
+    if executor_id == validator_id:
+        return False, "Spec standard requer segregação de contextos (dev != qa)"
+    
+    return True, "Sprint contract (Standard) validado"
+
+def _validate_sprint_contract(contract, spec_path):
+    """Modo Contract Sprints com Enforcement Real (HG01-07)."""
+    # HG03: Contract Break
+    current_sprint_match = re.search(r"current_sprint:\s*(\w+)", contract, re.I)
+    if not current_sprint_match:
+        return False, "[HG03] Modo sprint_based exige campo current_sprint"
+    
+    curr = current_sprint_match.group(1)
+    
+    # HG04: Sprint Order & Enforcement Real
+    # Coleta todas as sprints definidas para validar a ordem
+    all_sprints = re.findall(r"(sprint_\d+):", contract)
+    for s in all_sprints:
+        # Se a sprint for anterior à atual, EXIGE qa_signoff: true
+        if s < curr:
+            s_block = re.search(rf"{s}:(.*?)(?=sprint_\d+:|\Z)", contract, re.I | re.DOTALL)
+            if not s_block or "qa_signoff: true" not in s_block.group(1).lower():
+                return False, f"[HG04] Sprint anterior ({s}) pendente de signoff. Impossível avançar para {curr}."
+    
+    # Busca bloco da sprint atual
+    block_match = re.search(rf"{curr}:(.*?)(?=sprint_\d+:|\Z)", contract, re.I | re.DOTALL)
+    if not block_match:
+        return False, f"[HG03] Bloco de definição da sprint {curr} não encontrado na spec"
+    
+    sprint_block = block_match.group(1)
+    
+    # HG06: Start Hash (Obrigatório em sprint_based)
+    state_path = spec_path.parent / "STATE.md"
+    if not state_path.exists():
+        return False, "[HG06] STATE.md ausente. Impossível validar baseline de sprint."
+    
+    state_text = state_path.read_text(encoding="utf-8")
+    # Regex refinado para Markdown Headings (Seção 8)
+    hash_match = re.search(rf"##\s*{curr}.*?start_hash:\s*([a-f0-9]+)", state_text, re.I | re.DOTALL)
+    
+    if not hash_match:
+        return False, f"[HG06] start_hash não encontrado para {curr} no STATE.md (Formato esperado: ## {curr} \n start_hash: ...)"
+    
+    start_hash = hash_match.group(1)
+    # Valida se o hash existe no git
+    check_hash = subprocess.run(["git", "cat-file", "-t", start_hash], capture_output=True)
+    if check_hash.returncode != 0:
+        return False, f"[HG06] Start_hash inválido ou não resolvível: {start_hash}"
+
+    # Coleta arquivos modificados desde o início da sprint
+    modified = _get_modified_files(start_hash)
+    
+    # HG07: Outside Whitelist (Para tarefas de framework)
+    if "contract_sprints_v2_safe" in str(spec_path):
+        for f in modified:
+            f_clean = f.replace("\\", "/")
+            if f_clean.startswith(".specs/features/"): continue 
+            if f_clean not in WHITELIST_V2:
+                return False, f"[HG07] Violação de Whitelist Operacional: Arquivo '{f}' proibido nesta missão."
+
+    # HG01: Scope Violation
+    allow_match = re.search(r"scope_allow:\s*\[(.*?)\]", sprint_block)
+    if allow_match:
+        allowed = [s.strip().strip('"').strip("'") for s in allow_match.group(1).split(",") if s.strip()]
+        if allowed:
+            for f in modified:
+                if not any(f.startswith(a) or a in f for a in allowed):
+                    return False, f"[HG01] Violação de Escopo Sprint: Arquivo '{f}' fora do planejado para {curr}."
+
+    # Exibe impacto incremental (D1/D2)
+    stats = _get_diff_stats(start_hash)
+    print(f"[IMPACTO] {curr}: {stats}")
+    
+    # D1 Real: Persiste métricas no STATE.md
+    _update_sprint_state(state_path, curr, stats)
+
+    # C2: Bloqueio de feature_done global
+    global_signoff = re.search(r"^qa_signoff:\s*true", contract, re.I | re.M)
+    if global_signoff:
+        # Se tentou fechar a feature, a sprint atual DEVE ser a última e DEVE estar assinada
+        last_sprint = all_sprints[-1] if all_sprints else None
+        if curr != last_sprint:
+            return False, f"[HG04] Bloqueio Final: Não é possível dar signoff global se a sprint atual ({curr}) não é a última ({last_sprint})."
+        if "qa_signoff: true" not in sprint_block.lower():
+            return False, "[HG04] Bloqueio Final: A última sprint deve ter signoff interno antes do signoff global."
+
+    return True, f"Sprint contract ({curr}) validado com Hardening Pass (C2 Enforced)"
+
+```
+CHUNK_END id=1edef35c2f56_c001
+CHUNK_START id=1edef35c2f56_c002 start_line=301 end_line=600
+```python
+
+def check_sprint_contract(spec_path: Path):
+    """Valida o contrato da spec detectando o modo de operação (Dual Mode)."""
+    if not spec_path.exists():
+        return False, "Nenhuma Spec ativa detectada."
+
+    text = spec_path.read_text(encoding="utf-8")
+    yaml_match = re.match(r"^---\n(.*?)\n---", text, re.DOTALL)
+    if not yaml_match:
+        return False, "Bloco de contrato (---) ausente no topo da spec"
+
+    contract = yaml_match.group(1)
+    
+    # Detector de Modo
+    is_sprint_mode = "contract_mode: sprint_based" in contract
     type_match = re.search(r'^\s*type:\s*["\']?(\w+)["\']?\s*$', contract, re.I | re.M)
     spec_type = type_match.group(1).strip().lower() if type_match else None
 
-    if spec_type == "standard":
-        exec_match = re.search(
-            r"^\s*executor_context_id:\s*(.+?)\s*$", contract, re.I | re.M
-        )
-        valid_match = re.search(
-            r"^\s*validator_context_id:\s*(.+?)\s*$", contract, re.I | re.M
-        )
-
-        executor_id = (
-            exec_match.group(1).strip().strip('"').strip("'") if exec_match else ""
-        )
-        validator_id = (
-            valid_match.group(1).strip().strip('"').strip("'") if valid_match else ""
-        )
-
-        missing_tokens = {"", "null", "none"}
-        if (
-            executor_id.lower() in missing_tokens
-            or validator_id.lower() in missing_tokens
-        ):
-            return (
-                False,
-                "Spec standard requer executor_context_id e validator_context_id preenchidos",
-            )
-
-        if executor_id == validator_id:
-            return (
-                False,
-                "Spec standard requer segregação: executor_context_id deve ser diferente de validator_context_id",
-            )
-
-    return True, "Sprint contract validado e assinado"
+    if is_sprint_mode:
+        return _validate_sprint_contract(contract, spec_path)
+    elif spec_type == "standard" or "definition_of_done:" in contract:
+        return _validate_standard_contract(contract)
+    
+    return False, "Modo de contrato não identificado ou malformado"
 
 
 def check_impact_radius(spec_path: Path):
@@ -1258,11 +1451,6 @@ def check_journal_sam():
         return True, "SAM Audit OK"
     except Exception as e:
         msg = f"Erro crítico ao executar SAM Auditor: {e}"
-
-```
-CHUNK_END id=1edef35c2f56_c001
-CHUNK_START id=1edef35c2f56_c002 start_line=301 end_line=489
-```python
         if mode == "strict":
             return False, msg
         print(f"[WARN] {msg} (skip em assist)")
@@ -1292,14 +1480,60 @@ def log_harness(status, detail, spec_name="unknown"):
         print(f"[WARN] Falha ao logar harness: {e}")
 
 
+def _update_sprint_state(state_path: Path, sprint_name: str, stats: str):
+    """Injeta estatísticas de impacto diretamente no bloco da sprint no STATE.md."""
+    if not state_path.exists(): return
+    try:
+        content = state_path.read_text(encoding="utf-8")
+        
+        file_match = re.search(r"(\d+)\s*files?\s*changed", stats)
+        add_match = re.search(r"(\d+)\s*insertions?", stats)
+        del_match = re.search(r"(\d+)\s*deletions?", stats)
+        
+        files = file_match.group(1) if file_match else "0"
+        adds = add_match.group(1) if add_match else "0"
+        dels = del_match.group(1) if del_match else "0"
+        
+        # Atualiza impact_snapshot (Seção 8 e D1)
+        impact_block = (
+            f"impact_snapshot:\n"
+            f"  files_changed: {files}\n"
+            f"  churn_added: {adds}\n"
+            f"  churn_removed: {dels}"
+        )
+        
+        # Procura o bloco da sprint e substitui APENAS o impact_snapshot
+        # O regex busca a seção da sprint e captura o bloco impact_snapshot para substituição
+        pattern = rf"(##\s*{sprint_name}.*?)(impact_snapshot:.*?\n\s*churn_removed:\s*\d+)"
+        
+        # O grupo 1 (\1) contém o heading e campos anteriores (start_hash, etc)
+        # Substituímos o grupo 2 (impact_snapshot) pelo novo bloco
+        new_content = re.sub(pattern, rf"\1{impact_block}", content, flags=re.DOTALL | re.I)
+        
+        if new_content != content:
+            state_path.write_text(new_content, encoding="utf-8")
+            print(f"[D1] STATE.md sincronizado com impacto real ({sprint_name})")
+    except Exception as e:
+        print(f"[WARN] Falha ao atualizar impacto no STATE.md: {e}")
+
 def update_state_md(spec_dir: Path, status: str, detail: str = ""):
-    state = spec_dir / "STATE.md"
-    if not state.exists():
+    state_path = spec_dir / "STATE.md"
+    if not state_path.exists():
         return
-    content = f"---\nstatus: {status}\nupdated: {format_ts()}\ndetail: {detail}\n---\n"
-    tmp = state.with_suffix(".tmp")
-    tmp.write_text(content, encoding="utf-8")
-    tmp.replace(state)
+    
+    current_content = state_path.read_text(encoding="utf-8")
+    # Tenta separar o YAML do corpo
+    parts = re.split(r"^---\s*$", current_content, maxsplit=2, flags=re.MULTILINE)
+    
+    body = ""
+    if len(parts) >= 3:
+        body = parts[2]
+    else:
+        body = current_content # Fallback se não houver YAML claro
+        
+    new_yaml = f"---\nstatus: {status}\nupdated: {format_ts()}\ndetail: {detail}\n---\n"
+    state_path.write_text(new_yaml + body, encoding="utf-8")
+    
     status_print = status.replace("✅", "[OK]").replace("❌", "[FAIL]")
     print(f"[STATE.md] -> {status_print} na spec {spec_dir.name}")
 
@@ -1405,6 +1639,11 @@ def main():
     spec_dir_env = os.environ.get("ACTIVE_SPEC")
 
     if spec_dir_env and (features_dir / spec_dir_env).exists():
+
+```
+CHUNK_END id=1edef35c2f56_c002
+CHUNK_START id=1edef35c2f56_c003 start_line=601 end_line=647
+```python
         spec_dir = features_dir / spec_dir_env
     else:
         # Fallback: spec modificada mais recentemente
@@ -1454,7 +1693,7 @@ if __name__ == "__main__":
     main()
 
 ```
-CHUNK_END id=1edef35c2f56_c002
+CHUNK_END id=1edef35c2f56_c003
 FILE_END id=file_1edef35c2f56
 
 ---
@@ -2697,8 +2936,8 @@ FILE_END id=file_f122711ba9e1
 
 ---
 <a id="file_1077e9084ea1"></a>
-FILE_START id=file_1077e9084ea1 path=.context/_scripts/validate_context.py domain=source lang=python lines=253 bytes=8091 mtime=2026-04-22T23:17:08.680799+00:00 sha1=c24e8617c984749da6e65e550b43cf786c4c913c
-CHUNK_START id=1077e9084ea1_c001 start_line=1 end_line=253
+FILE_START id=file_1077e9084ea1 path=.context/_scripts/validate_context.py domain=source lang=python lines=517 bytes=18055 mtime=2026-05-01T02:16:16.212265+00:00 sha1=3e592b584a869dc0b3ad8cb07a5905a624c29c3e
+CHUNK_START id=1077e9084ea1_c001 start_line=1 end_line=300
 ```python
 #!/usr/bin/env python3
 """
@@ -2709,6 +2948,9 @@ Retorna exit 1 se houver qualquer alerta ou erro.
 
 import os
 import sys
+import re
+import subprocess
+from datetime import datetime
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent
@@ -2784,6 +3026,237 @@ def check_specs_structure():
         if not (spec / "STATE.md").exists():
             return False, f"Falha de integridade: {spec.name}/STATE.md ausente"
     return True, f"OK ({len(active_specs)} specs ativas)"
+
+
+def _normalize_sprint_label(sprint_key: str):
+    m = re.search(r"(\d+)$", sprint_key)
+    if not m:
+        return sprint_key
+    return f"Sprint {int(m.group(1)):02d}"
+
+
+def check_sprint_acceptance_sync():
+    """Falha se tasks da sprint atual estao concluídas, mas acceptance da sprint segue pendente."""
+    specs_dir = CONTEXT_DIR.parent / ".specs" / "features"
+    if not specs_dir.exists():
+        return True, "Sem specs ativas"
+
+    issues = []
+    for spec_dir in [d for d in specs_dir.iterdir() if d.is_dir() and not d.name.startswith("_")]:
+        spec_path = spec_dir / "spec.md"
+        tasks_path = spec_dir / "tasks.md"
+        if not spec_path.exists() or not tasks_path.exists():
+            continue
+
+        spec_text = spec_path.read_text(encoding="utf-8", errors="ignore")
+        if "contract_mode: sprint_based" not in spec_text:
+            continue
+
+        curr_match = re.search(r"current_sprint:\s*(sprint_\d+)", spec_text, re.I)
+        if not curr_match:
+            continue
+        curr = curr_match.group(1).lower()
+
+        sprint_block = re.search(rf"{curr}:(.*?)(?=\n\s*sprint_\d+:|\Z)", spec_text, re.I | re.DOTALL)
+        if not sprint_block:
+            continue
+
+        acceptance_pending = "[ ]" in sprint_block.group(1)
+        sprint_label = _normalize_sprint_label(curr)
+        tasks_text = tasks_path.read_text(encoding="utf-8", errors="ignore")
+        section = re.search(rf"##\s+.*{re.escape(sprint_label)}.*?(?=\n##\s+|\Z)", tasks_text, re.I | re.DOTALL)
+        if not section:
+            continue
+
+        unchecked_tasks = re.search(r"^-\s*\[\s\]", section.group(0), re.M)
+        tasks_completed = unchecked_tasks is None
+
+        if tasks_completed and acceptance_pending:
+            issues.append(f"{spec_dir.name}: tasks de {curr} concluídas, mas acceptance no spec permanece pendente")
+
+    if issues:
+        return False, " | ".join(issues)
+    return True, "OK"
+
+
+def log_friction(event_code, detail):
+    """Registra fricção de governança no HARNESS_LOG.md se a flag estiver ativa."""
+    if os.environ.get("CONTEXT_WRITE_ADVISORY_LOG") != "1":
+        return
+        
+    log_path = CONTEXT_DIR / "maintenance/HARNESS_LOG.md"
+    if not log_path.exists():
+        return
+    
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
+    entry = f"\n## [GOVERNANCE-FRICTION] {event_code} | {timestamp}\n- **Detalhe:** {detail}\n"
+    
+    with open(log_path, "a", encoding="utf-8") as f:
+        f.write(entry)
+
+
+def check_journal_chronology():
+    """Modo Advisory: Avisa se as datas no JOURNAL.md não estão em Ordem Reversa (Novo no Topo)."""
+    journal = CONTEXT_DIR / "maintenance/JOURNAL.md"
+    if not journal.exists():
+        return True, "Sem Journal"
+
+    content = journal.read_text(encoding="utf-8", errors="ignore")
+    # Captura datas nos formatos ## 📅 YYYY-MM-DD HH:MM ou ## [YYYY-MM-DD HH:MM]
+    date_patterns = re.findall(r"##\s+(?:📅\s+)?\[?(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})\]?", content)
+    
+    if len(date_patterns) < 2:
+        return True, "OK (Registros insuficientes para check)"
+
+    warnings = []
+    for i in range(1, len(date_patterns)):
+        prev = date_patterns[i-1]
+        curr = date_patterns[i]
+        # Em ordem reversa, curr (item de baixo) deve ser <= prev (item de cima)
+        if curr > prev:
+            msg = f"Inversão detectada (Ordem Reversa): {curr} aparece abaixo de {prev}"
+            warnings.append(msg)
+            log_friction("GF-JOURNAL-ORDER", msg)
+
+    if warnings:
+        return False, " | ".join(warnings)
+    return True, "OK"
+
+
+def check_state_freshness():
+    """Modo Advisory: Avisa se o campo 'updated' no STATE.md está defasado (datetime completo)."""
+    specs_dir = CONTEXT_DIR.parent / ".specs" / "features"
+    if not specs_dir.exists():
+        return True, "Sem specs"
+
+    warnings = []
+    now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
+    
+    for spec_dir in [d for d in specs_dir.iterdir() if d.is_dir() and not d.name.startswith("_")]:
+        state_path = spec_dir / "STATE.md"
+        if not state_path.exists():
+            continue
+        
+        content = state_path.read_text(encoding="utf-8", errors="ignore")
+        # Captura updated: YYYY-MM-DD HH:MM
+        match = re.search(r"updated:\s*(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})", content)
+        if not match:
+            # Tenta capturar apenas data se hora estiver ausente
+            match_date = re.search(r"updated:\s*(\d{4}-\d{2}-\d{2})", content)
+            if not match_date:
+                warnings.append(f"{spec_dir.name}: campo 'updated' ausente ou malformado")
+                continue
+            updated_val = match_date.group(1)
+        else:
+            updated_val = match.group(1)
+            
+        # Consideramos 'stale' se for anterior ao início da hora atual (tolerância simples)
+        if updated_val < now_str[:10]: # Check de data simples primeiro
+             msg = f"{spec_dir.name}: status defasado ({updated_val} < {now_str[:10]})"
+             warnings.append(msg)
+             log_friction("GF-STATE-FRESHNESS", msg)
+        elif " " in updated_val and updated_val < now_str: # Check de hora se presente
+             # Advisory apenas se a diferença for significativa (>1h)? 
+             # Por enquanto, qualquer atraso gera advisory conforme pedido do QA.
+             msg = f"{spec_dir.name}: status desatualizado ({updated_val} < {now_str})"
+             warnings.append(msg)
+             log_friction("GF-STATE-FRESHNESS", msg)
+
+    if warnings:
+        return False, " | ".join(warnings)
+    return True, "OK"
+
+
+def check_atomic_transition():
+    """Valida se o start_hash de uma spec IN_PROGRESS existe no histórico Git."""
+    specs_dir = CONTEXT_DIR.parent / ".specs" / "features"
+    if not specs_dir.exists():
+        return True, "Sem specs"
+
+    issues = []
+    for spec_dir in [d for d in specs_dir.iterdir() if d.is_dir() and not d.name.startswith("_")]:
+        state_path = spec_dir / "STATE.md"
+        if not state_path.exists():
+            continue
+
+        content = state_path.read_text(encoding="utf-8", errors="ignore")
+        status_match = re.search(r"status:\s*.*IN_PROGRESS", content, re.I)
+        if not status_match:
+            continue
+
+        hash_match = re.search(r"start_hash:\s*[\"']?([a-f0-9]{7,40})[\"']?", content, re.I)
+        if not hash_match:
+            issues.append(f"{spec_dir.name}: status IN_PROGRESS mas start_hash ausente")
+            continue
+
+        start_hash = hash_match.group(1)
+        # Verifica se o hash existe no Git
+        check_git = subprocess.run(
+            ["git", "cat-file", "-t", start_hash],
+            capture_output=True,
+            text=True
+        )
+        if check_git.returncode != 0:
+            issues.append(f"{spec_dir.name}: start_hash inválido ou inexistente ({start_hash})")
+
+    if issues:
+        return False, " | ".join(issues)
+    return True, "OK"
+
+
+def _extract_header_update(md_text: str):
+    for line in md_text.splitlines()[:25]:
+        if line.lower().startswith("última atualização:") or line.lower().startswith("ultima atualizacao:"):
+            return line.split(":", 1)[1].strip()
+    return None
+
+
+def check_metadata_freshness():
+    """Alerta se metadados de atualização parecem defasados vs ultimo commit do arquivo."""
+    targets = [
+        CONTEXT_DIR / "brain" / "RULES.md",
+        CONTEXT_DIR / "brain" / "MASTER_FLOW.md",
+    ]
+    stale = []
+
+    for path in targets:
+        if not path.exists():
+            continue
+        text = path.read_text(encoding="utf-8", errors="ignore")
+        header = _extract_header_update(text)
+        if not header:
+            stale.append(f"{path.name}: metadado 'Ultima Atualizacao' ausente")
+            continue
+
+        try:
+            git_dt = subprocess.run(
+                ["git", "log", "-1", "--format=%ci", "--", str(path)],
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+            )
+            if git_dt.returncode != 0 or not git_dt.stdout.strip():
+                continue
+            commit_date = git_dt.stdout.strip().split(" ")[0]
+
+
+```
+CHUNK_END id=1077e9084ea1_c001
+CHUNK_START id=1077e9084ea1_c002 start_line=301 end_line=517
+```python
+            m = re.search(r"(\d{4}-\d{2}-\d{2})", header)
+            if not m:
+                stale.append(f"{path.name}: metadado de data invalido ({header})")
+                continue
+            header_date = m.group(1)
+            if header_date < commit_date:
+                stale.append(f"{path.name}: metadado desatualizado ({header_date} < {commit_date})")
+        except Exception:
+            continue
+
+    if stale:
+        return False, " | ".join(stale)
+    return True, "OK"
 
 
 def get_inception_metadata():
@@ -2891,6 +3364,14 @@ def validate():
     else:
         print(f"[OK] .specs/: {spec_msg}")
 
+    acceptance_ok, acceptance_msg = check_sprint_acceptance_sync()
+    if not acceptance_ok:
+        issues.append(f"[ERROR] Sprint Acceptance Sync: {acceptance_msg}")
+        exit_code = 1
+        log_friction("GF-ACCEPTANCE-DESYNC", acceptance_msg)
+    else:
+        print(f"[OK] Sprint Acceptance Sync: {acceptance_msg}")
+
     journal_lines, journal_ok = check_journal_lines()
     if not journal_ok:
         issues.append(
@@ -2916,19 +3397,46 @@ def validate():
 
     reg_ok, reg_msg = check_registry_structure()
     if not reg_ok:
-        issues.append(f"[WARN] AGENT_REGISTRY.md: {reg_msg}")
-        if exit_code == 0:
-            exit_code = 1
+        issues.append(f"[ERROR] AGENT_REGISTRY.md: {reg_msg}")
+        exit_code = 1
     else:
         print("[OK] AGENT_REGISTRY.md estrutura válida.")
 
+    meta_ok, meta_msg = check_metadata_freshness()
+    if not meta_ok:
+        issues.append(f"[ERROR] Metadata freshness: {meta_msg}")
+        exit_code = 1
+        log_friction("GF-METADATA-STALE", meta_msg)
+    else:
+        print(f"[OK] Metadata freshness: {meta_msg}")
+
     wiki_ok, wiki_msg = check_wiki_integrity()
     if not wiki_ok:
-        issues.append(f"[WARN] WIKI: {wiki_msg}")
-        if exit_code == 0:
-            exit_code = 1
+        issues.append(f"[ERROR] WIKI: {wiki_msg}")
+        exit_code = 1
     else:
         print(f"[OK] WIKI: {wiki_msg}")
+
+    atomic_ok, atomic_msg = check_atomic_transition()
+    if not atomic_ok:
+        issues.append(f"[ERROR] Atomic Transition: {atomic_msg}")
+        exit_code = 1
+        log_friction("GF-ATOMIC-DESYNC", atomic_msg)
+    else:
+        print(f"[OK] Atomic Transition: {atomic_msg}")
+
+    # --- Camada ADVISORY (Sprint 03) ---
+    j_chron_ok, j_chron_msg = check_journal_chronology()
+    if not j_chron_ok:
+        print(f"[ADVISORY] Journal Chronology: {j_chron_msg}")
+    else:
+        print(f"[OK] Journal Chronology: OK")
+
+    s_fresh_ok, s_fresh_msg = check_state_freshness()
+    if not s_fresh_ok:
+        print(f"[ADVISORY] State Freshness: {s_fresh_msg}")
+    else:
+        print(f"[OK] State Freshness: OK")
 
     print("\n--- Relatório Final ---")
     if not issues:
@@ -2955,13 +3463,13 @@ if __name__ == "__main__":
         sys.exit(1)
 
 ```
-CHUNK_END id=1077e9084ea1_c001
+CHUNK_END id=1077e9084ea1_c002
 FILE_END id=file_1077e9084ea1
 
 ---
 <a id="file_8f42e61c8a29"></a>
-FILE_START id=file_8f42e61c8a29 path=.context/_scripts/workflow_journal_auditor.py domain=source lang=python lines=147 bytes=6064 mtime=2026-04-26T17:16:36.783743+00:00 sha1=4a1f0828ece007facb973b64d22e2907b6fb5b3b
-CHUNK_START id=8f42e61c8a29_c001 start_line=1 end_line=147
+FILE_START id=file_8f42e61c8a29 path=.context/_scripts/workflow_journal_auditor.py domain=source lang=python lines=173 bytes=7728 mtime=2026-05-01T02:24:27.604653+00:00 sha1=25d482d6d9667483e2df6d8027779bca9ec86234
+CHUNK_START id=8f42e61c8a29_c001 start_line=1 end_line=173
 ```python
 #!/usr/bin/env python3
 """
@@ -3093,6 +3601,32 @@ def audit():
         if not any(x in status for x in ["READY TO COMMIT", "🟢"]):
             violations.append(f"Status de validação inválido: '{status}'. Esperado 'READY TO COMMIT'.")
 
+    # --- Detecção de Fraude Narrativa & Modificação Silenciosa (Sprint 07) ---
+    # Extrai arquivos marcados como propagados no Journal: - [x] `path`
+    journal_propagated = set()
+    propagation_matches = re.findall(r"-\s*\[x\]\s*`?(.*?)`?\s*->", entry, re.I)
+    for p in propagation_matches:
+        journal_propagated.add(p.strip())
+
+    # 1. Fraude Narrativa: Alegar que mudou algo que o Git não viu.
+    for p_file in journal_propagated:
+        # Se o arquivo não está no Git e não é um diretório/padrão genérico
+        if not any(f.endswith(p_file) or p_file in f for f in git["all"]):
+            violations.append(f"Fraude Narrativa: Arquivo '{p_file}' marcado como [x] no Journal, mas não há alterações no Git.")
+
+    # 2. Modificação Silenciosa: Mudar algo no Git e não avisar no Journal.
+    # Ignora arquivos de contexto que são atualizados automaticamente e diretórios de sistema
+    ignore_silent = [".context/maintenance/JOURNAL.md", ".context/maintenance/HARNESS_LOG.md", ".context/maintenance/STATE.md"]
+    for g_file in git["all"]:
+        if any(g_file.endswith(ex) for ex in ignore_silent):
+            continue
+        
+        # Se o arquivo Git não foi mencionado no Journal como [x]
+        if not any(g_file.endswith(p) or p in g_file for p in journal_propagated):
+            # Verifica se está em alguma regra de obrigatoriedade (require_files_touched) para evitar erro duplo
+            # Mas aqui o foco é: se mudou, tem que estar na Matriz de Propagação.
+            violations.append(f"Modificação Silenciosa: Arquivo '{g_file}' alterado no Git mas ausente na Matriz de Propagação do Journal.")
+
     if violations:
         print("\n❌ VIOLAÇÕES DETECTADAS:")
         for v in violations:
@@ -3117,12 +3651,12 @@ FILE_END id=file_8f42e61c8a29
 
 ---
 <a id="file_e7c17acb71ff"></a>
-FILE_START id=file_e7c17acb71ff path=.context/brain/AGENT_REGISTRY.md domain=docs lang=markdown lines=112 bytes=8938 mtime=2026-04-29T03:29:36.977108+00:00 sha1=90a533e37b7760555f53d254c25ed27c37218812
-CHUNK_START id=e7c17acb71ff_c001 start_line=1 end_line=112
+FILE_START id=file_e7c17acb71ff path=.context/brain/AGENT_REGISTRY.md domain=docs lang=markdown lines=149 bytes=11038 mtime=2026-05-01T02:25:33.691912+00:00 sha1=1c59c742e176cf3574f563648161585c7b171493
+CHUNK_START id=e7c17acb71ff_c001 start_line=1 end_line=149
 ````markdown
 ---
 Criado em: 2026-04-10 20:50
-Última Atualização: 2026-04-10 20:50
+Última Atualização: 2026-04-30 23:25
 Status: Ativo
 ---
 
@@ -3154,11 +3688,11 @@ Status: Ativo
 | `@db-architect` | Migrations, índices, normalização, otimização de queries | `maintenance/schema.sql`, `migrations/`, `maintenance/TECHNICAL_REQUIREMENTS.md` (seção DB) | `maintenance/schema.sql`, `maintenance/TECHNICAL_REQUIREMENTS.md`, `maintenance/JOURNAL.md` (bugs de performance) | "criar tabela", "migration", "otimizar query", "índice", "normalizar", "ERD" |
 | `@frontend-specialist` | UI/UX, componentes, estado, acessibilidade, CSS, responsividade | `src/components/`, `src/pages/`, `src/styles/`, `maintenance/rx-anatomy.md` | `maintenance/rx-anatomy.md`, `maintenance/ARCHITECTURE.md` (UI Layer), `brain/PRD.md` (fluxos visuais) | "tela", "componente", "layout", "responsivo", "acessibilidade", "CSS", "estado" |
 | `@backend-engineer` | APIs, auth, lógica de negócio, webhooks, cache, filas | `src/api/`, `src/services/`, `src/utils/`, `src/config/` | `maintenance/rx-biology.md`, `brain/PRD.md`, `maintenance/schema.sql`, `maintenance/TECHNICAL_REQUIREMENTS.md` (APIs) | "endpoint", "rota", "validação", "webhook", "auth", "serviço", "cache" |
-| `@qa-validator` | Auditor do circuito SAM, revisor de DoD, validação física de evidências (git diff vs journal) | `contract` (frontmatter `qa_signoff`), `tests/`, `maintenance/JOURNAL.md`, `STATE.md` | `spec.md`, `maintenance/JOURNAL_SYNAPSE.md`, `maintenance/JOURNAL.md` | `"assine contrato"`, `"valide DoD"`, `"rode testes"`, "testar", "auditoria SAM" |
+| `@qa-validator` | Auditor do circuito SAM, revisor de DoD, validação física de evidências (git diff vs journal), **Gatekeeper de Cronologia V5** | `contract` (frontmatter `qa_signoff`), `tests/`, `maintenance/JOURNAL.md`, `STATE.md`, `HARNESS_LOG.md` | `spec.md`, `STATE.md`, `maintenance/JOURNAL.md` | `"assine contrato"`, `"valide DoD"`, `"auditoria SAM"`, `"veredito QA"` |
 | `@devops-guardian` | CI/CD, deploy, env vars, monitoramento, segurança infra | `.github/workflows/`, `Dockerfile`, `maintenance/rebuild_guide.md`, `.env.example` | `maintenance/rebuild_guide.md`, `maintenance/TECHNICAL_REQUIREMENTS.md` (infra), `brain/ROADMAP.md` (deploys) | "deploy", "CI/CD", "docker", "variável de ambiente", "monitoramento", "rollback" |
 | `@vision-architect` | Estratégia, validação de market fit, definição de boundaries | `.context/brain/INCEPTION.md`, `.context/market/MARKET_INBOX.md` | `.context/brain/INCEPTION.md`, `.context/market/SSOT_MAP.md` | "definir boundary", "validar gap de mercado", "revisar inception" |
 | `@spec-enricher` | Tradução estratégica em PRD, tradução cognitiva VISION -> INCEPTION, validação de gaps de mercado | `.context/brain/PRD.md`, `.context/brain/INCEPTION.proposed.md`, `maintenance/JOURNAL.md` | `.context/brain/INCEPTION.md`, `.context/brain/VISION.md`, `.context/market/SSOT_MAP.md` | "enriquecer spec", "gerar PRD", "traduzir visão", "propor inception", `npm run context:enrich` |
-| `@spec-driver` | Execução técnica atômica (Spoke), geração de contrato DoD (Execution Log) | `.specs/`, `src/`, `tests/`, `contract` (frontmatter) | `spec.md`, `schema.sql`, `STATE.md`, `JOURNAL.md` (tail 30) | `"inicie execução"`, `"autopilot"`, "execute a spec" |
+| `@spec-driver` | Execução técnica atômica (Spoke), geração de contrato DoD (Execution Log), **Executor MIMO (Surgical Edits)** | `.specs/`, `src/`, `tests/`, `contract` (frontmatter) | `spec.md`, `STATE.md`, `JOURNAL.md`, `brain/RULES.md` | `"inicie execução"`, `"autopilot"`, `"execute a spec"`, `"MIMO close"` |
 | `@context-keeper` | Sync, purge, validação de consistência, saúde do contexto | `.context/` (exceto `_archive/`), `maintenance/JOURNAL.md`, `brain/RULES.md` | `brain/RULES.md`, `brain/MASTER_FLOW.md`, `maintenance/JOURNAL.md`, `monitoring/CONTEXT_HEALTH.md` | "atualize contexto", "purge", "health check", "validar consistência", "sincronizar" |
 | `@fullstack-generalist` | Modo fallback para tarefas transversais ou projetos light | Leitura em todo o projeto; Escrita apenas com confirmação explícita | `brain/PRD.md`, `maintenance/schema.sql`, `maintenance/JOURNAL.md` (últimas 30 linhas) + Global | "modo light", "tarefa rápida", "projeto pequeno", "não especificado" |
 
@@ -3172,6 +3706,43 @@ Status: Ativo
 > 2. **Pre-flight Gate:** Obrigatório rodar `grep` de impacto antes de editar código.
 > 3. **Skills Obrigatórias:** `codenavi` (Mapeamento) e `flash-harness` (Log Sequencial).
 > 4. **Backpressure:** Acionar `SCOPE_BLOWOUT` se o impacto real > `max_impact_radius`.
+> 5. **Hardened Closing:** Proibido fechar tarefa sem rito de `Pre-close Self-Audit` e verificação de árvore git limpa.
+
+---
+
+## 🛡️ Protocolo Hardened Closing (V5)
+> **Rito Obrigatório para fechamento de Sprints e Features:**
+
+### 1. @spec-driver (Pre-close Self-Audit)
+- [ ] **Higiene:** `git status --short` deve estar vazio (ou apenas arquivos da spec).
+- [ ] **MIMO:** Validar que as edições foram cirúrgicas e não reescreveram arquivos desnecessariamente.
+- [ ] **Evidência:** Registrar `Harness Check (hash)` e `Impact Radius` no `JOURNAL.md`.
+- [ ] **Handoff:** Invocação explícita do `@qa-validator`.
+
+### 2. @qa-validator (Audit & Signoff)
+- [ ] **Cronologia:** Validar ordem crescente estrita no `JOURNAL.md`.
+- [ ] **Baseline:** Validar que o `start_hash` no `STATE.md` existe no histórico Git.
+- [ ] **Truthfulness:** Confrontar `git diff --stat` com a narrativa do `JOURNAL.md`.
+- [ ] **Veredito:** Apenas após aprovação física, setar `qa_signoff: true` e assinar o contrato.
+
+---
+
+## 📊 Camada de Telemetria [GOVERNANCE-FRICTION]
+> **Códigos oficiais para registro de desvios técnicos e narrativos:**
+
+| Código | Severidade | Descrição |
+|--------|------------|-----------|
+| `GF-METADATA-STALE` | Advisory | Metadado `Ultima Atualizacao` < Data real do commit. |
+| `GF-JOURNAL-ORDER` | Advisory | Inversão cronológica detectada no `JOURNAL.md`. |
+| `GF-STATE-FRESHNESS` | Advisory | Campo `updated` do `STATE.md` defasado (> 1h). |
+| `GF-ACCEPTANCE-DESYNC`| **FATAL** | Tarefas concluídas mas aceitação na spec pendente. |
+| `GF-ATOMIC-DESYNC` | **FATAL** | Sprint em progresso sem `start_hash` válido no Git. |
+| `GF-NARRATIVE-FRAUD` | **FATAL** | Alegação de propagação no Journal sem diff real no Git. |
+| `GF-SILENT-MOD` | **FATAL** | Modificação física no Git sem registro na Matriz de Propagação. |
+
+> **Uso:** Inserir em `maintenance/HARNESS_LOG.md` no formato:
+> `## [GOVERNANCE-FRICTION] <CODIGO> | <YYYY-MM-DD HH:MM>`
+> `- **Detalhe:** <Explicação do desvio>`
 
 ---
 
@@ -3239,12 +3810,12 @@ FILE_END id=file_e7c17acb71ff
 
 ---
 <a id="file_14666768162a"></a>
-FILE_START id=file_14666768162a path=.context/brain/FILE_GLOSSARY.md domain=docs lang=markdown lines=97 bytes=7231 mtime=2026-04-26T19:35:54.227178+00:00 sha1=3eea81425fe38f5c98dda4f71725e72028aab5c4
-CHUNK_START id=14666768162a_c001 start_line=1 end_line=97
+FILE_START id=file_14666768162a path=.context/brain/FILE_GLOSSARY.md domain=docs lang=markdown lines=98 bytes=7394 mtime=2026-05-01T03:54:28.688421+00:00 sha1=edb91217402d03f000b08ce01192f00bd1b536ed
+CHUNK_START id=14666768162a_c001 start_line=1 end_line=98
 ```markdown
 ---
 Criado em: 2026-04-26
-Ultima Atualizacao: 2026-04-26
+Ultima Atualizacao: 2026-05-01 00:20
 Status: Ativo
 ---
 
@@ -3298,6 +3869,7 @@ Status: Ativo
 | `TESTS.md` | **Regras de Qualidade.** Como os testes unitários e de integração devem ser escritos. | `@qa-validator` |
 | `rx-anatomy.md` | **Raio-X Físico.** Mapeia a hierarquia física das pastas do projeto (onde as coisas moram no disco). | `@context-keeper` |
 | `rx-biology.md` | **Raio-X Lógico.** Mapeia como os dados fluem pela aplicação (sistemas conectando-se a outros sistemas). | `@backend-engineer` |
+| `rx-communications.md` | **Mapa de Conectividade Global.** SSOT da topologia técnica e "fiação" entre artefatos do sistema. | `@context-keeper` |
 | `RX_REPOSITORIO.md` | **Raio-X de Governança.** Mapeia o ecossistema Antigravity, explicando os motores lógicos (SAM, Harness, Zero Trust). | `@context-keeper` |
 | `JOURNAL_SYNAPSE.md` | **Regras de Expurgos.** Configurações de quando e como o Journal deve arquivar dados antigos para economizar tokens. | `@context-keeper` |
 | `rebuild_guide.md` | **Recuperação de Desastres.** Instruções passo a passo para um desenvolvedor recriar a máquina do zero e rodar a aplicação. | `@devops-guardian` |
@@ -3328,8 +3900,8 @@ Status: Ativo
 
 | Arquivo | Responsabilidade Principal | Agente Guardião |
 | :--- | :--- | :--- |
-| `features/<nome>/spec.md` | **Contrato de Código.** Define os `definition_of_done` da tarefa atômica. Contém as assinaturas do executor e do QA Validator (Zero Trust). | `@spec-driver` / `@qa-validator` |
-| `features/<nome>/STATE.md` | **Gatekeeper de Estado.** Define se a spec está `WIP`, `WAITING_SIGNOFF` ou `DONE`. Lido diretamente pelo Pipeline SAM. | `@qa-validator` |
+| `features/<nome>/spec.md` | **Contrato de Código.** Define os `definition_of_done`. Exige rito de assinatura formal `@spec-driver` / `@qa-validator` sob protocolo V5. | `@spec-driver` / `@qa-validator` |
+| `features/<nome>/STATE.md` | **Gatekeeper de Estado.** Define status (`WIP`, `DONE`). Sob V5, é a âncora de `start_hash` (baseline) para telemetria de diff. | `@qa-validator` |
 | `_template.md` | **Molde de Contrato.** O template que deve ser clonado para iniciar qualquer nova funcionalidade. | `@spec-driver` |
 
 ---
@@ -3346,8 +3918,8 @@ FILE_END id=file_14666768162a
 
 ---
 <a id="file_4b29e274836e"></a>
-FILE_START id=file_4b29e274836e path=.context/brain/HARNESS_REGISTRY.md domain=docs lang=markdown lines=20 bytes=1180 mtime=2026-04-11T23:46:58.142679+00:00 sha1=5a29edb2d353e3117e7e904191ef4dadfd322309
-CHUNK_START id=4b29e274836e_c001 start_line=1 end_line=20
+FILE_START id=file_4b29e274836e path=.context/brain/HARNESS_REGISTRY.md domain=docs lang=markdown lines=21 bytes=1331 mtime=2026-05-01T01:49:50.086418+00:00 sha1=ef00f95720c4a3a5def076c77dc1ab64ad4c37dc
+CHUNK_START id=4b29e274836e_c001 start_line=1 end_line=21
 ```markdown
 ---
 Criado em: 2026-04-11
@@ -3364,6 +3936,7 @@ Status: Ativo
 | `H02` | AI/LLM | Outputs/Specs | `spec.md` + `PRD.md` | `@spec-driver`, `@frontend` | JSON válido? Critérios cobertos? | `@qa` revalida |
 | `H03` | Handoff | Cross-Role | `JOURNAL.md` tags | Troca de domínio | Handoff registrado? Estado limpo? | Pausa + alerta |
 | `H04` | Secrets | Segurança | Regex + `.env.example` | Commit/Spec | Zero chaves hardcoded | Rejeita + scrub |
+| `H05` | Friction | Governança | `validate_context.py` | Execução Contínua | Journal Chronology & State Freshness | Log `[GOVERNANCE-FRICTION]` |
 
 ## ⚙️ Regras de Execução
 - ✅ `harness_runner.py` deve rodar antes de qualquer merge ou geração de código produtivo.
@@ -3429,12 +4002,12 @@ FILE_END id=file_de9ef20db2be
 
 ---
 <a id="file_d833c436f547"></a>
-FILE_START id=file_d833c436f547 path=.context/brain/MASTER_FLOW.md domain=docs lang=markdown lines=129 bytes=7891 mtime=2026-04-29T03:51:37.524644+00:00 sha1=8480a6ca8cdf37745b8ca6ddd8fc1df4b0073cad
-CHUNK_START id=d833c436f547_c001 start_line=1 end_line=129
+FILE_START id=file_d833c436f547 path=.context/brain/MASTER_FLOW.md domain=docs lang=markdown lines=161 bytes=10288 mtime=2026-05-01T03:17:59.846263+00:00 sha1=237ed0670b66bc5daea1b5113dc8ab1fdc50c038
+CHUNK_START id=d833c436f547_c001 start_line=1 end_line=161
 ````markdown
 ---
 Criado em: 2026-04-10 23:28
-Ultima Atualizacao: 2026-04-24 13:51
+Ultima Atualizacao: 2026-05-01 00:20
 Status: Ativo
 ---
 
@@ -3491,6 +4064,7 @@ Status: [Ativo | Arquivado | Depreciado]
     │   ├── TESTS.md                   # Ledger de padrões e TDDs
     │   ├── rx-anatomy.md              # Raio-X de pastas (Anatomia do Repositório)
     │   ├── rx-biology.md              # Raio-X de fluxos (Biologia do Negócio)
+    │   ├── rx-communications.md       # Log de transparência narrativa (Transversal)
     │   └── _archive_context/          # Histórico imutável (A Biblioteca)
     │
     ├── monitoring/             # CAMADA DE MONITORAMENTO (The Guardian)
@@ -3506,6 +4080,8 @@ Status: [Ativo | Arquivado | Depreciado]
         ├── sync_project.py            # Sincronizador de requisitos
         └── workflow_journal_auditor.py # Auditor do Sistema Anti-Migué (SAM)
 
+> ⚠️ **Script Sanity:** Qualquer alteração nos scripts da camada `_scripts/` exige execução de sanidade imediata e registro de não-regressão conforme Regra 1.8.
+
 ---
 
 ## 🔄 2.1 Ciclo de Vida TLC Autobuilder (4 Atos)
@@ -3514,10 +4090,10 @@ Status: [Ativo | Arquivado | Depreciado]
 | **1. [Semente]** | `INCEPTION.md` ativo + gaps | `npm run context:enrich` | `PRD.md` lastreado + `market/` populado |
 | **2. [Engenharia]** | Criação de `.specs/features/X/` | `qa_signoff: true` no frontmatter | Contrato assinado; se `type: standard`, validador em contexto distinto |
 | **3. [Ingestão]** | `RAW/` novo ou `WIKI/` modificado | `npm run context:ingest-guard` | Artigo validado + `wiki_log.md` |
-| **4. [Execução]** | `npm run context:harness` + SAM | `harness_runner.py` + `SAM Auditor` | Código validado + `STATE.md: ✅ PASSED` |
-| **5. [Rito]** | Merge ou >48h inativo | `npm run context:cleanup` | Spec arquivada + `JOURNAL.md` atualizado |
+| **4. [Execução]** | `npm run context:harness` + SAM | `harness_runner.py` + `SAM Auditor` | Código validado + `STATE.md: ✅ PASSED` (Suporta **v2-Safe**) |
+| **5. [Rito]** | Merge ou >48h inativo | `npm run context:cleanup` | Spec arquivada (Respeita Imunidade Sprint) |
 
-> 🤖 [SYSTEM HOOK] IA: Este fluxo é imutável. Não pule o Ato 2. Não gere código sem `qa_signoff`. Em `type: standard`, `executor_context_id` e `validator_context_id` devem ser diferentes. Toda entrada no Journal deve passar pelo Reality Check (SAM).
+> 🤖 [SYSTEM HOOK] IA: Este fluxo é imutável. Não pule o Ato 2. Não gere código sem `qa_signoff`. Em `type: standard`, `executor_context_id` e `validator_context_id` devem ser diferentes. Em features complexas, use o **Protocolo v2-Safe** (Contract Sprints).
 
 ---
 
@@ -3531,9 +4107,38 @@ Para projetos de complexidade média/alta, o Antigravity utiliza a segregação 
 
 1.  **[Planner - Hub]**: IA Principal desenha a SPEC na janela atual, define `max_impact_radius` e emite o comando de Spawn (`/spec-driver`).
 2.  **[Pre-flight - Executor]**: Novo processo limpo nasce e roda `grep` (Pre-flight Gate). Se impacto > Limite → `SCOPE_BLOWOUT` (Telemetria no `STATE.md`).
-3.  **[Execution - Executor]**: Subagente coda sob rigor do `flash-harness` (Log sequencial). Ao terminar, emite `/qa-validator`.
-4.  **[Auditoria - Validador]**: Novo processo cego nasce. Valida Semântica (Lógica) + Telemetria (Impacto resolvido). Assina o `spec.md` se correto.
-5.  **[Finalização - Hub]**: IA Principal (Humano aciona o Hub) verifica a SPEC assinada, valida o SAM e comita/arquiva.
+3.  **[Execution - Executor]**: Subagente coda sob rigor do `flash-harness`. Ao terminar, deve obrigatoriamente executar o **Pre-close Self-Audit** (validar árvore limpa, coerência spec/state e signoff). Se passar, emite `/qa-validator`.
+4.  **[Auditoria - Validador]**: Novo processo cego nasce. Realiza a auditoria final de fechamento (Pre-Close Audit). Valida Semântica (Lógica) + Telemetria (Impacto resolvido). Assina o `spec.md` se correto.
+5.  **[Finalização - Hub]**: IA Principal (Humano aciona o Hub) verifica a SPEC assinada, valida o SAM, emite o rito final e comita/arquiva.
+
+---
+
+## 🛡️ 2.3 Rito de Pre-Close Audit (Anti-Drift)
+Protocolo obrigatório para transição de `IN_PROGRESS` para `PASSED` ou `COMPLETED`.
+
+1. **Validação de Harness:** Executar checks automáticos (`npm run context:validate`).
+2. **Coerência de Artefatos:** Cruzar `spec.md` (objetivo) vs `tasks.md` (check) vs `STATE.md` (estado real).
+3. **Check de Higiene:** `git status --short` **DEVE** ser vazio. Sujeira na árvore bloqueia o fechamento.
+4. **Evidência de Fechamento:** Registrar hash final, data e signoff do auditor no `STATE.md`.
+5. **Registro de Legado:** Migrar decisões críticas para o `JOURNAL.md`.
+
+> ⚠️ **Bloqueio Fail-Closed:** Se qualquer item da auditoria falhar, a onda permanece aberta. A declaração de conclusão sem este rito é classificada como **Fraude Narrativa**.
+
+---
+
+## 🛡️ 2.4 Checklist Anti-Reincidência (Runbook)
+Para evitar a repetição de erros operacionais detectados em auditorias anteriores:
+
+1. **[ ] Git Status Check:** Rodar `git status --short` antes de qualquer claim de "árvore limpa".
+2. **[ ] Hash Anchor:** Usar o commit estável imediatamente anterior como `start_hash`, nunca o commit em formação.
+3. **[ ] Metadata Freshness:** Atualizar `Ultima Atualizacao` em arquivos normais a cada modificação.
+4. **[ ] Acceptance Sync:** Garantir que `acceptance: [x]` no `spec.md` reflita as tarefas concluídas no `tasks.md`.
+5. **[ ] Chronology Radar:** Verificar se novos logs no `JOURNAL.md` mantêm a ordem cronológica do projeto.
+
+### 📊 Log de Fricção `[GOVERNANCE-FRICTION]`
+Sempre que uma regra advisory for violada (ex: cronologia do Journal ou Metadata Freshness), o Agente deve registrar o evento no `maintenance/HARNESS_LOG.md`:
+- `[GOVERNANCE-FRICTION] <data> | <arquivo> | <descrição do desvio>`
+- *Nota:* Este log não bloqueia o commit, mas serve para métricas de "Dívida de Governança" na próxima auditoria.
 
 ---
 
@@ -3607,8 +4212,8 @@ FILE_END id=file_d124f6374cab
 
 ---
 <a id="file_9fe16e5591f0"></a>
-FILE_START id=file_9fe16e5591f0 path=.context/brain/PROMPT_LIBRARY.md domain=docs lang=markdown lines=237 bytes=11426 mtime=2026-04-29T23:26:19.472088+00:00 sha1=9724dced356a0ffd1d4a1cd1c471e1aa26370e1b
-CHUNK_START id=9fe16e5591f0_c001 start_line=1 end_line=237
+FILE_START id=file_9fe16e5591f0 path=.context/brain/PROMPT_LIBRARY.md domain=docs lang=markdown lines=242 bytes=11813 mtime=2026-05-01T01:50:10.792730+00:00 sha1=5cd3fb95cf8da526073a048446b9ce2ae94e9a8d
+CHUNK_START id=9fe16e5591f0_c001 start_line=1 end_line=242
 ````markdown
 ---
 Criado em: 2026-04-10 21:35
@@ -3823,6 +4428,11 @@ Ao gerar o PRD.md, inclua EXATAMENTE esta seção no final:
    definition_of_done: [...]
    ```
 3. STATE.md: draft → aguardando qa_signoff.
+
+🔒 **PROTOCOLO HARDENED (V5):**
+- **MIMO (Minimum Impact, Maximum Order):** Proibido reescrever arquivos inteiros. Realizar edições cirúrgicas linha a linha.
+- **PRE-CLOSE SELF-AUDIT:** Antes de entregar para QA, validar: Árvore limpa, Journal sincronizado e Metadados atualizados.
+- **GOVERNANCE FRICTION:** Qualquer desvio técnico deve ser logado como `[GOVERNANCE-FRICTION]`.
 ```
 💡 *Insight IA: Este prompt transforma intenção em plano executável. A spec é o "compilador" entre PRD e código. Mantenha-a enxuta e verificável.*
 
@@ -3879,12 +4489,12 @@ FILE_END id=file_c94f001202db
 
 ---
 <a id="file_cd6526d17218"></a>
-FILE_START id=file_cd6526d17218 path=.context/brain/RULES.md domain=docs lang=markdown lines=137 bytes=10107 mtime=2026-04-29T04:02:21.700448+00:00 sha1=761c4861f680ba761139bd769b587d41adf3b417
-CHUNK_START id=cd6526d17218_c001 start_line=1 end_line=137
+FILE_START id=file_cd6526d17218 path=.context/brain/RULES.md domain=docs lang=markdown lines=177 bytes=13033 mtime=2026-05-01T00:55:32.442355+00:00 sha1=4cf24140ce9676d5b60b30d5037164e72bd67128
+CHUNK_START id=cd6526d17218_c001 start_line=1 end_line=177
 ```markdown
 ---
 Criado em: 2026-04-10 20:50
-Última Atualização: 2026-04-24 13:51
+Última Atualização: 2026-04-30 21:55
 Status: Ativo
 ---
 
@@ -3942,6 +4552,46 @@ Antes de gerar código de produção ou realizar refatorações, o Agente **DEVE
    - Listar a telemetria (arquivos/referências) e abortar.
 3. **Feedback Loop:** O Hub (Planner) deve utilizar a telemetria do `SCOPE_BLOWOUT` para re-fragmentar a SPEC em unidades menores e atômicas.
 4. **Log Estruturado:** O resultado do Pre-flight deve ser registrado de forma parseável no `STATE.md` para auditoria do QA e do Harness.
+
+## 🔄 1.4 Protocolo Contract Sprints (v2-Safe)
+Padrão obrigatório para features de alta complexidade ou segurança crítica.
+1. **Modo Dual:** O Harness detecta `contract_mode: sprint_based` para ativar a fiscalização polimórfica.
+2. **Enforcement HG04 (Ordem de Sprint):** Bloqueio absoluto de avanço se qualquer sprint anterior estiver sem `qa_signoff: true`.
+3. **Imunidade de Cleanup (E1):** Sprints ativas com signoff pendente são imunes ao arquivamento automático do `cleanup_specs.py`.
+4. **Impacto Incremental (D1/D2):** Churn (linhas +/-) capturado automaticamente pelo Harness e persistido no `STATE.md` para auditoria passiva.
+5. **Bloqueio C2 (Global Signoff):** Proibido dar signoff global na feature se houver qualquer pendência nas sprints internas.
+
+## 🛡️ 1.5 Regra `CLOSE_WAVE` (Rigor de Fechamento)
+Uma onda/sprint só pode ser declarada **concluída** se **todas** as condições forem verdadeiras:
+1. **Harness PASS:** Pipeline de validação sem erros.
+2. **Coerência:** Artefatos (`spec.md`, `STATE.md`, `tasks.md`) em sincronia total.
+3. **Higiene:** `git status --short` sem saída (árvore 100% limpa).
+4. **Signoff:** `qa_signoff: true` registrado no bloco da sprint/onda.
+
+**Falha em qualquer critério:**
+- O status **deve** permanecer `🚧 IN_PROGRESS`.
+- É proibido declarar conclusão ou mover para `PASSED`.
+- Emissão obrigatória de evento `[GOVERNANCE-FRICTION]`.
+
+## 🛡️ 1.6 Regra `ANTI_FALSE_PASS` (Integridade Narrativa)
+É proibido forçar estados narrativos de conclusão sem evidência técnica objetiva.
+1. **Claims Reais:** Afirmações como "100% concluído" ou "baseline limpa" devem ser verificáveis via Git/Harness.
+2. **Fraude Narrativa:** Declarar conclusão no `JOURNAL.md` enquanto o `qa_signoff` é `false` é classificado como fraude crítica.
+3. **Exemplos Binários:**
+   - **PASS:** Árvore limpa + Signoff OK + Harness OK ⮕ Conclusão Autorizada.
+   - **FAIL:** "Tudo pronto" no Journal + 2 arquivos untracked ⮕ **BLOQUEIO** (Fraude Detectada).
+   - **FAIL:** "Sprint finalizada" + `qa_signoff: false` ⮕ **BLOQUEIO** (Inconsistência).
+
+## 🛡️ 1.7 Regra `MIMO_STATE_INTEGRITY` (Integridade de Estado)
+Toda automação que altere o `STATE.md` deve garantir:
+1. **Preservação:** Não deletar campos obrigatórios (`start_hash`, `qa_signoff`, `status`, etc).
+2. **Edição Cirúrgica:** Alterar apenas o bloco de metadados ou logs específicos.
+3. **Fail-Closed:** Se a escrita falhar ou corromper a estrutura YAML, o arquivo deve ser restaurado ao estado anterior.
+
+## 🛡️ 1.8 Regra `CRITICAL_SCRIPT_SANITY` (Sanidade de Scripts)
+Mudanças em scripts de governança (`validate_context.py`, `harness_runner.py`, etc) exigem:
+1. **Sanity Check:** Execução mínima do script após a alteração para validar que não há erros de import ou sintaxe.
+2. **Non-Regression:** Evidência de que os gates de segurança continuam ativos.
 
 ---
 
@@ -4026,7 +4676,7 @@ FILE_END id=file_cd6526d17218
 
 ---
 <a id="file_aa59d3515582"></a>
-FILE_START id=file_aa59d3515582 path=.context/brain/SCRIPT_GLOSSARY.md domain=docs lang=markdown lines=77 bytes=6567 mtime=2026-04-26T20:03:37.862155+00:00 sha1=ea7546e41f4ff30d9a85ef476b6e332bee869198
+FILE_START id=file_aa59d3515582 path=.context/brain/SCRIPT_GLOSSARY.md domain=docs lang=markdown lines=77 bytes=6590 mtime=2026-05-01T01:49:57.046373+00:00 sha1=71ddc55326f96abc82d0b7bda46e6e47f9bdeb2f
 CHUNK_START id=aa59d3515582_c001 start_line=1 end_line=77
 ```markdown
 ---
@@ -4064,7 +4714,7 @@ Status: Ativo
 | :--- | :--- | :--- | :--- |
 | `harness_runner.py` | **Coração** | O Validador de Contratos. Verifica se as specs em `.specs/features/` possuem `definition_of_done`, valida o uso do banco de dados vs `schema.sql` e exige a assinatura formal de QA (Segregação de Contexto). | Roda via Husky no `pre-commit` ou `npm run context:harness` |
 | `workflow_journal_auditor.py` | **SAM (Anti-Migué)** | Auditor H.O.K. Verifica se as decisões ou resoluções logadas no `JOURNAL.md` realmente correspondem à verdade física verificando o Git Diff. Se a IA mentir no Journal, o commit falha. | Roda no pipeline `context:all` |
-| `validate_context.py` | **Sistema Imunológico** | Faz um "Check-up" geral. Verifica se os metadados de Frontmatter dos arquivos `.md` estão corretos e calcula a estimativa de "Token Bloat" da janela ativa. | `npm run context:validate` |
+| `validate_context.py` | **Sistema Imunológico** | **Radar de Fricção e Integridade.** Faz o check-up de metadados, estima Token Bloat e monitora a ordem cronológica do Journal e o frescor dos estados das specs (Modo Advisory). | `npm run context:validate` |
 | `check_version_consistency.py` | **Medula Espinhal** | Analisa se a versão oficial declarada no `VERSION.md` está coerente no `package.json`, `INCEPTION.md` e em `version_targets.json`. Impede "Drifting" de versões. | Roda no pipeline `context:all` |
 | `secrets_scanner.py` | **Leucócito** | Varre ativamente o código e arquivos markdown atrás de chaves de API, senhas ou tokens que o desenvolvedor/IA possa ter "hardcoded" por acidente. | Roda no pipeline `context:all` |
 
@@ -4165,11 +4815,11 @@ FILE_END id=file_e11d89201917
 
 ---
 <a id="file_450d7ec70909"></a>
-FILE_START id=file_450d7ec70909 path=.context/brain/TLC_INTEGRATION.md domain=docs lang=markdown lines=56 bytes=3417 mtime=2026-04-30T05:41:11.362972+00:00 sha1=2557c8fc7d9cf2c65e7344ba6c628539abbb8e21
-CHUNK_START id=450d7ec70909_c001 start_line=1 end_line=56
+FILE_START id=file_450d7ec70909 path=.context/brain/TLC_INTEGRATION.md domain=docs lang=markdown lines=57 bytes=3381 mtime=2026-04-30T17:10:44.443731+00:00 sha1=62eea4d3afa318562bae15b2adf6f87a056c7553
+CHUNK_START id=450d7ec70909_c001 start_line=1 end_line=57
 ```markdown
 ---
-Ultima Atualizacao: 2026-04-30 02:43
+Ultima Atualizacao: 2026-04-30 02:45
 Status: 🔥 HARDENED (v2.5.2) - Agnóstico e Técnico
 ---
 
@@ -4179,50 +4829,51 @@ Status: 🔥 HARDENED (v2.5.2) - Agnóstico e Técnico
 > Ponte definitiva entre Governança (`.context/`) e Execução Atômica (`.specs/`).
 > 💡 *A Fonte de Intenção (Plano/PRD) diz O QUÊ. A Spec TLC diz COMO. O Flash-Harness prova que FOI FEITO.*
 
-## 📖 Glossário de Sub-Skills (Motor Interno TLC)
-
-Este sumário descreve as 16 inteligências modulares disponíveis dentro da pasta da skill `tlc-spec-driven`:
-
-### 🛠️ Camada de Mapeamento e Setup
-- **project-init.md:** Inicialização de novos projetos, visão e objetivos estratégicos.
-- **roadmap.md:** Gestão de Milestones e Sprints (Onde o tempo e os entregáveis são organizados).
-- **brownfield-mapping.md:** Mapeamento de bases de código existentes e análise de stack técnica.
-- **concerns.md:** Identificação de dívidas técnicas, riscos arquiteturais e áreas frágeis.
-
-### 📝 Camada de Especificação (O "O QUE")
-- **specify.md:** Transforma intenções em requisitos técnicos rastreáveis com IDs (O Coração da Spec).
-- **discuss.md:** Protocolo para resolver áreas cinzentas, ambiguidades e capturar decisões do usuário.
-- **design.md:** Definição de arquitetura, fluxos e componentes (O "COMO" técnico).
-
-### 🔨 Camada de Execução (O "COMO")
-- **tasks.md:** Checklist atômico com critérios de verificação técnica (`Verify`). Essencial para TDD.
-- **implement.md:** Regras para codificação incremental, uso de logs estruturados e prevenção de drift.
-- **quick-mode.md:** "Express Lane" para tarefas triviais (≤3 arquivos) sem necessidade de pipeline completo.
-- **state-management.md:** Controle do arquivo `STATE.md` (decisões, bloqueios, telemetria e memória).
-
-### ✅ Camada de Verificação e Encerramento
-- **validate.md:** Protocolo de teste, UAT e demonstração. Garante que o entregável satisfaz a spec.
-- **code-analysis.md:** Ferramentas e métodos para auditoria de código e checagem de padrões.
-- **session-handoff.md:** Protocolo para pausar, encerrar e retomar sessões sem perda de contexto operacional.
-- **context-limits.md:** Monitoramento e gestão do uso de tokens/contexto para evitar degradação da IA.
-- **coding-principles.md:** Leis fundacionais de engenharia aplicadas durante a implementação.
-
 ---
 
+"Nova estrutura para pasta .specs que vai entrar em operação, ainda não é oficial
+
+.specs/features/[feature]/     <-- O "CANTEIRO DE OBRAS" (O que eu gero para executar)
+├── spec.md                    <-- O CONTRATO: Extraído do plano, ou prdzinho, qualquer nome que remeta o arquivo de planejamento que embasa a spec.md .
+├── design.md                  <-- O DESENHO: Diagramas/Arquitetura (Se for complexo).
+├── tasks.md                   <-- O PASSO-A-PASSO: Checklist atômica com 'Verify'.
+└── STATE.md                   <-- A MEMÓRIA VIVA: Decisões, logs e estado da sessão."
+
+
 ## 🔄 Ciclo de Vida Híbrido (v2.5.2)
-1. **INTENT:** Qualquer documento ativo (Plano, PRD, Estudo) define a intenção aprovada.
-2. **SPECIFY:** O Hub transforma a intenção em requisitos `spec.md` usando a sub-skill **specify.md**.
-3. **SPRINT PLANNING:** Organização no `tasks.md` via sub-skill **tasks.md**. **Prioridade: TDD**.
-4. **IMPLEMENT:** Execução mecânica via `@spec-driver` usando **implement.md**.
-5. **VERIFY:** Validação técnica via **validate.md**. Só marca `[x]` com evidência técnica.
-6. **SYNC:** Conclusão da Sprint → Atualização do `JOURNAL.md` via **session-handoff.md**.
+1. **INTENT:** Documento ativo define a intenção.
+2. **SPECIFY:** Hub gera `spec.md` via `specify.md`.
+3. **SPRINT PLANNING:** Organização no `tasks.md` via `tasks.md`. **Foco: TDD**.
+4. **IMPLEMENT:** Execução mecânica via `@spec-driver` usando `implement.md`.
+5. **VERIFY:** Validação técnica via `validate.md`.
+6. **SYNC:** Sincronização final via `session-handoff.md`.
 
 ## 📏 Regras de Ouro (Zero Migué)
-- 🧪 **TDD e Verificação:** Proibido codar sem critério de prova. Se o teste falhar, a task não termina.
+- 🧪 **TDD e Verificação:** Proibido codar sem critério de prova técnica.
 - ⚡ **Flash-Harness Mandatório:** Diário de Bordo estruturado visível ANTES de cada ação.
 - 📦 **Single-Spec / Multi-Sprint:** Uma Spec por feature, progresso fatiado no `tasks.md`.
 
 ---
+
+## 📖 Glossário de Referências (Pasta: `C:\Users\User\.gemini\skills\tlc-spec-driven`)
+Abaixo estão as 16 sub-skills que podem ser utilizadas, com base no conteúdo real do diretório global:
+
+1.  **project-init.md:** Protocolo de inicialização e definição de objetivos do projeto.
+2.  **roadmap.md:** Criação e gestão do `ROADMAP.md` (Milestones e Capabilites).
+3.  **brownfield-mapping.md:** Análise de código existente e mapeamento de stack tecnológica.
+4.  **concerns.md:** Registro de dívidas técnicas, riscos e áreas de atenção.
+5.  **specify.md:** Transformação de intenção em requisitos atômicos com IDs.
+6.  **discuss.md:** Protocolo de conversa para resolução de ambiguidades.
+7.  **design.md:** Definição de arquitetura, componentes e lógica técnica.
+8.  **tasks.md:** Criação de checklists atômicos com critérios de `Verify`.
+9.  **implement.md:** Protocolo de execução técnica e incremento de código.
+10. **quick-mode.md:** Modo de execução rápida para tarefas de baixa complexidade (≤3 arquivos).
+11. **state-management.md:** Gestão do arquivo `STATE.md` (Estado, decisões e bloqueios).
+12. **validate.md:** Protocolo de testes, UAT e verificação de critérios de aceite.
+13. **code-analysis.md:** Métodos para auditoria e análise estrutural de código.
+14. **session-handoff.md:** Protocolo para pausar e retomar sessões de trabalho.
+15. **context-limits.md:** Gestão de limites de contexto e tokens.
+16. **coding-principles.md:** Princípios fundamentais de codificação aplicados ao TLC.
 > *Este documento garante que o "Cérebro" e o "Músculo" operem em harmonia.*
 
 ```
@@ -4312,8 +4963,8 @@ FILE_END id=file_9b6470da8849
 
 ---
 <a id="file_41c3d3da4381"></a>
-FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=206 bytes=8234 mtime=2026-04-30T04:33:59.461900+00:00 sha1=2c137bc5cb494d25fb0f0b18e68251b009fba3e6
-CHUNK_START id=41c3d3da4381_c001 start_line=1 end_line=206
+FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=479 bytes=21804 mtime=2026-05-01T01:40:52.353780+00:00 sha1=52fa8f0e2d876dc0bc4bbe2722d7db2234c0a785
+CHUNK_START id=41c3d3da4381_c001 start_line=1 end_line=300
 ```markdown
 ---
 Criado em: 2026-04-24 15:20
@@ -4522,24 +5173,455 @@ Status: Ativo
 ## [HARNESS-PASS] Report | spec:oracle_v3
 - **Detalhe:** All contracts valid
 
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: Contrato standard não assinado pelo @qa-validator (qa_signoff: false)
+
+## [HARNESS-PASS] Report | spec:test_sprint
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:test_sprint
+- **Detalhe:** sprint_contract: [HG04] Sprint ativa (sprint_02) não possui signoff do @qa-validator no contrato
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist: Arquivo 'planos/mudanca_specdriven.md' não autorizado para esta missão.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo: Arquivo '.context/maintenance/HARNESS_LOG.md' fora da whitelist da sprint (sprint_01).
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo: Arquivo 'planos/mudanca_specdriven.md' fora da whitelist da sprint (sprint_01).
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist Operacional: Arquivo 'planos/mudanca_specdriven.md' proibido nesta missão.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG06] start_hash não encontrado para sprint_01 no STATE.md (Formato esperado: ## sprint_01 
+ start_hash: ...)
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo '.specs/features/contract_sprints_v2_safe/STATE.md' fora do planejado para sprint_01.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo '.specs/features/contract_sprints_v2_safe/spec.md' fora do planejado para sprint_01.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo '.specs/features/contract_sprints_v2_safe/tasks.md' fora do planejado para sprint_01.
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist Operacional: Arquivo 'planos/mudanca_specdriven.md' proibido nesta missão.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist Operacional: Arquivo 'planos/mudanca_specdriven/mudanca_specdriven.md' proibido nesta missão.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist Operacional: Arquivo 'planos/mudanca_specdriven/relatorio_auditoria_contract_sprints.md' proibido nesta missão.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo 'planos/mudanca_specdriven/mudanca_specdriven.md' fora do planejado para sprint_01.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo 'planos/mudanca_specdriven/mudanca_specdriven.md' fora do planejado para sprint_01.
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist Operacional: Arquivo 'planos/mudanca_specdriven.md' proibido nesta missão.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG06] Start_hash inválido ou não resolvível: d9225d61486791e813f019a552805ef96e1a49f5
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG06] Start_hash inválido ou não resolvível: ca3e14811f0627e942a49c8ffbcd0aec71e04ea2a
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo '.context/maintenance/HARNESS_LOG.md' fora do planejado para sprint_03.
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo '.context/_scripts/harness_runner.py' fora do planejado para sprint_03.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG04] Bloqueio Final: A última sprint deve ter signoff interno antes do signoff global.
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
 ```
 CHUNK_END id=41c3d3da4381_c001
+CHUNK_START id=41c3d3da4381_c002 start_line=301 end_line=479
+```markdown
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist Operacional: Arquivo '.context/brain/RULES.md' proibido nesta missão. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'rules_change' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'rules_change': Tag 'Regras' ausente no Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo '.context/_scripts/harness_runner.py' fora do planejado para sprint_05.
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo '.context/maintenance/JOURNAL.md' fora do planejado para sprint_05.
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG06] Start_hash inválido ou não resolvível: dece4ab578453483b8b152d1921f00a5d290744e
+
+## [HARNESS-PASS] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** All contracts valid
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-30 03:40 aparece após 2026-04-30 18:55
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-30 02:45 aparece após 2026-04-30 03:40
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-30 00:15 aparece após 2026-04-30 02:45
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-29 01:35 aparece após 2026-04-30 00:15
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-28 23:55 aparece após 2026-04-29 01:35
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-28 23:45 aparece após 2026-04-28 23:55
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-28 23:00 aparece após 2026-04-28 23:45
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 23:58 aparece após 2026-04-28 23:00
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 17:30 aparece após 2026-04-26 23:58
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 17:20 aparece após 2026-04-26 17:30
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 17:00 aparece após 2026-04-26 17:20
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 16:30 aparece após 2026-04-26 17:00
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 15:30 aparece após 2026-04-26 16:30
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 14:20 aparece após 2026-04-26 15:30
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 01:32 aparece após 2026-04-26 14:20
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 01:18 aparece após 2026-04-26 01:32
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 00:54 aparece após 2026-04-26 01:18
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-26 00:08 aparece após 2026-04-26 00:54
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-24 15:20 aparece após 2026-04-26 00:08
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-24 13:52 aparece após 2026-04-24 15:20
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-23 22:20 aparece após 2026-04-24 13:52
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:34
+- **Detalhe:** Inversão detectada: 2026-04-22 09:50 aparece após 2026-04-23 22:20
+
+## [GOVERNANCE-FRICTION] GF-STATE-FRESHNESS | 2026-04-30 22:34
+- **Detalhe:** contract_sprints_v2_safe: status desatualizado (2026-04-30 18:57 < 2026-04-30 22:34)
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-30 03:40 aparece após 2026-04-30 18:55
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-30 02:45 aparece após 2026-04-30 03:40
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-30 00:15 aparece após 2026-04-30 02:45
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-29 01:35 aparece após 2026-04-30 00:15
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-28 23:55 aparece após 2026-04-29 01:35
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-28 23:45 aparece após 2026-04-28 23:55
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-28 23:00 aparece após 2026-04-28 23:45
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-26 23:58 aparece após 2026-04-28 23:00
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-26 17:30 aparece após 2026-04-26 23:58
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-26 17:20 aparece após 2026-04-26 17:30
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-26 17:00 aparece após 2026-04-26 17:20
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-26 16:30 aparece após 2026-04-26 17:00
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-26 15:30 aparece após 2026-04-26 16:30
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-26 14:20 aparece após 2026-04-26 15:30
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-26 01:32 aparece após 2026-04-26 14:20
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-26 01:18 aparece após 2026-04-26 01:32
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-26 00:54 aparece após 2026-04-26 01:18
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-26 00:08 aparece após 2026-04-26 00:54
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-24 15:20 aparece após 2026-04-26 00:08
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-24 13:52 aparece após 2026-04-24 15:20
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-23 22:20 aparece após 2026-04-24 13:52
+
+## [GOVERNANCE-FRICTION] GF-JOURNAL-ORDER | 2026-04-30 22:35
+- **Detalhe:** Inversão detectada: 2026-04-22 09:50 aparece após 2026-04-23 22:20
+
+## [GOVERNANCE-FRICTION] GF-STATE-FRESHNESS | 2026-04-30 22:35
+- **Detalhe:** contract_sprints_v2_safe: status desatualizado (2026-04-30 18:57 < 2026-04-30 22:35)
+
+```
+CHUNK_END id=41c3d3da4381_c002
 FILE_END id=file_41c3d3da4381
 
 ---
 <a id="file_019509328844"></a>
-FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=450 bytes=27448 mtime=2026-04-30T04:39:49.243963+00:00 sha1=8e9168568d0ffeff68156fc9c8006d84f62343dc
+FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=573 bytes=33183 mtime=2026-05-01T03:54:46.464985+00:00 sha1=0dec8995a89398f02b4eb807eabb2c0db57f5a7a
 CHUNK_START id=019509328844_c001 start_line=1 end_line=300
 ```markdown
 ---
 Criado em: 2026-04-10 20:50
-Ultima Atualizacao: 2026-04-28 23:45
+Ultima Atualizacao: 2026-05-01 01:00
 Status: Ativo
 Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_144021.md.
+Ordem Cronológica: REVERSA (O mais recente fica sempre no TOPO) !!!
 ---
 
 # JOURNAL.md (Memoria Contínua)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+## 📅 2026-05-01 01:00
+**Ação:** 🛡️ RITO DE SELAGEM: Auditoria de Hardening e Mapa RX Global v2.
+**Destaques:**
+1.  **Auditoria S05-S08**: Realizada auditoria profunda via `@qa-validator`. 
+    - Identificada e corrigida dívida de Git (S08 não commitada).
+    - Detectado e mitigado desync de metadados em `MASTER_FLOW.md` e `FILE_GLOSSARY.md`.
+2.  **RX-COMMUNICATIONS v2**: Refatorado para o modelo de **Mapa de Conectividade Global**.
+    - Transição da "narrativa de agentes" para "fiação de artefatos" (Nós e Arestas).
+    - Inclusão do **Nicho Constitucional** (Rules/Master Flow) e **Nicho Metabólico** (Synapse).
+3.  **Integridade Sistêmica**: Framework 100% estabilizado no modelo V5 Hardened.
+**Estado Final:** 🟢 GREEN - PRONTO PARA NOVAS FEATURES.
+**Harness Check:** `bf02a42` (Master RX Sealed).
+
+
+## 📅 2026-05-01 00:01
+**Ação:** ✅ CONCLUSÃO FINAL: Governance Rules Hardening (Feature Closed).
+**Entrega:** 
+1. Finalização da Sprint 08: Criação e integração do `rx-communications.md`.
+2. Governança centralizada atualizada (`MASTER_FLOW.md`, `FILE_GLOSSARY.md`).
+3. Auditoria de encerramento aprovada: Coerência entre `spec.md`, `tasks.md` e `STATE.md`.
+**Veredito:** O ecossistema Antigravity agora possui um framework de governança "Fail-Closed" completo, com transparência narrativa transversal e proteção contra fraudes.
+**Harness Check:** `4b16b4c` (Signoff Final).
+
+## 📅 2026-04-30 23:28
+**Ação:** 🛡️ Rito de Abertura: Sprint 08 (RX Communications).
+**Objetivo:** Formalizar ritos de comunicação externa e criar o artefato `rx-communications.md`.
+**Baseline (start_hash):** `4b16b4c` (Validado).
+
+## 📅 2026-04-30 23:24
+**Ação:** ✅ Conclusão Técnica Sprint 07 (Hardening SAM & Telemetria).
+**Entrega:** 
+1. Implementada detecção de **Fraude Narrativa** e **Modificação Silenciosa** no `workflow_journal_auditor.py`.
+2. O sistema agora bloqueia (Exit 1) qualquer discrepância entre os arquivos listados no Journal e o `git status` real.
+**Harness Check:** `4541cf2` (PASS).
+
+### Matriz de Propagação (Sinapse)
+- [x] `.context/_scripts/workflow_journal_auditor.py` -> [Detecção de Fraude/Silêncio]
+- [x] `.specs/features/governance_rules_hardening/spec.md` -> [Avanço current_sprint]
+- [x] `.specs/features/governance_rules_hardening/STATE.md` -> [Update baseline]
+
+### Contrato de Validação
+- executor_context_id: `@antigravity-agent`
+- validator_context_id: `@qa-validator`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Auditoria SAM endurecida. A detecção de fraude narrativa impede que o agente minta sobre o que propagou. Validado com erro forçado com sucesso.`
+
+## 📅 2026-04-30 23:16
+**Ação:** ✅ Conclusão Técnica Sprint 06 (Hardening de Agenciamento).
+**Entrega:** 
+1. Papéis `@spec-driver` e `@qa-validator` endurecidos no `AGENT_REGISTRY.md` com o Protocolo Hardened Closing (V5).
+2. Implementada validação de baseline atômica em `validate_context.py` (check de `start_hash` no Git).
+3. Corrigida lógica de cronologia reversa no validador para eliminar falso-positivos.
+**Harness Check:** `21c28b1` (PASS).
+**Handoff:** `@spec-driver` ⮕ `@qa-validator`.
+
+## 📅 2026-04-30 23:12
+**Ação:** 🛡️ Rito de Sincronização & Abertura: Sprint 06 (Hardening de Agenciamento).
+**Contexto:** Auditoria de autocrítica detectou ausência das Sprints 06, 07 e 08 na `spec.md`. Contrato sincronizado com o plano `tasks.md`.
+**Estado:** `🚧 IN_PROGRESS` (Sprint 06).
+
+## 📅 2026-04-30 23:12
+**Ação:** ✅ QA Signoff Sprint 05 (Governance Rules Hardening).
+**Auditor:** `@qa-validator` (Antigravity)
+**Verificação:** Enforcement bloqueante validado. Sincronização de Sprints 06-08 na `spec.md` concluída.
+**Resultado:** `qa_signoff: true` aplicado na `sprint_05`. Transição para `current_sprint: sprint_06`.
+
+## 📅 2026-04-30 22:58
+**Ação:** ✅ Conclusão Técnica Sprint 05.
+**Entrega:** Enforcement Automático (Músculos). `validate_context.py` endurecido.
+**Harness Check:** `f8bd242` (PASS).
+
+## 📅 2026-04-30 22:56
+**Ação:** 🛡️ Rito de Abertura: Sprint 05 (Enforcement Automático).
+**Objetivo:** Implementar validações bloqueantes (Fail-Closed) em `validate_context.py`.
+
+## 📅 2026-04-30 22:56
+**Ação:** ✅ QA Signoff Sprint 04 (Governance Rules Hardening).
+**Auditor:** `@qa-validator` (Codex)
+**Resultado:** `qa_signoff: true` aplicado na `sprint_04`. Transição para `current_sprint: sprint_05`.
+
+## 📅 2026-04-30 22:50
+**Ação:** ✅ Conclusão Técnica Sprint 04.
+**Entrega:** Sincronização institucional (Harness H05, Glossários, Prompts) concluída.
+**Harness Check:** `a4fa31c` (PASS).
+
+## 📅 2026-04-30 22:46
+**Ação:** 🛡️ Rito de Abertura (Recalibrado): Sprint 04 (Sincronização Institucional).
+**Baseline (start_hash):** `09e85cf` (Validado).
+
+## 📅 2026-04-30 22:45
+**Ação:** ✅ QA Signoff Sprint 03 (Governance Rules Hardening).
+**Auditor:** `@qa-validator` (Codex)
+**Resultado:** `qa_signoff: true` aplicado na `sprint_03`. Transição para `current_sprint: sprint_04`.
+
+## 📅 2026-04-30 22:35
+**Ação:** 🔧 Refinamento Auditoria Sprint 03.
+**Ajustes:** Automação de log `[GOVERNANCE-FRICTION]`, refinamento de check de `STATE.updated` e trava Zero Side Effect.
+**Harness Check:** `78968dd` (PASS).
+
+## 📅 2026-04-30 22:25
+**Ação:** ✅ Conclusão Técnica Sprint 03.
+**Entrega:** Regras `MIMO_STATE_INTEGRITY` (via Advisory), Checklist Anti-Reincidência e padrão `GOVERNANCE-FRICTION`.
+**Harness Check:** `5291491` (PASS).
+
+## 📅 2026-04-30 22:02
+**Ação:** ✅ QA Signoff Sprint 02 (Governance Rules Hardening).
+**Auditor:** `@qa-validator` (Codex)
+**Resultado:** `qa_signoff: true` aplicado na `sprint_02`. Transição para `current_sprint: sprint_03`.
+
+## 📅 2026-04-30 21:57
+**Ação:** ✅ Conclusão Técnica Sprint 02.
+**Entrega:** Regras `MIMO_STATE_INTEGRITY` e `CRITICAL_SCRIPT_SANITY` implementadas e integradas.
+**Harness Check:** `c3c5e32` (PASS).
+
+## 📅 2026-04-30 21:49
+**Ação:** ✅ QA Signoff Sprint 01 (Governance Rules Hardening).
+**Auditor:** `@qa-validator` (Codex)
+**Resultado:** `qa_signoff: true` aplicado na `sprint_01`. Transição para `current_sprint: sprint_02`.
+
+## 📅 2026-04-30 21:42
+**Ação:** ✅ Conclusão Técnica Sprint 01.
+**Entrega:** Regras `CLOSE_WAVE`, `ANTI_FALSE_PASS` e rito `Pre-Close Audit` implementados.
+**Harness Check:** `aa389b8` (PASS).
+
+## 📅 2026-04-30 21:00
+**Ação:** 🛡️ Rito de Início: Governance Rules Hardening (v5).
+**Contexto:** Transição para governança determinística e anti-fraude narrativa.
+**Start Hash:** `39a4c71`
+**Objetivo Imediato:** Sprint 01 — Regras Canônicas em `RULES.md`.
+
+## 📅 2026-04-30 18:55 | 🛡️ ONDA 05: Institucionalização v2-Safe (Higiene & SSOT)
+**Decisão/Bug:** Finalização do Hardening de Contract Sprints com proteção de cleanup e atualização de regras mestras. [Governança] [Regras] [Harness]
+**Ação:**
+1. Atualizado `cleanup_specs.py` com a função `is_protected`, garantindo imunidade a specs com sprints ativas em modo `sprint_based`.
+2. Institucionalizada a **Regra 1.4: Protocolo Contract Sprints (v2-Safe)** no `RULES.md`.
+3. Atualizado o **MASTER_FLOW.md** para incluir o novo ciclo de vida v2-Safe (Ato 4/5) e a imunidade de rito.
+4. Expandida a `WHITELIST_V2` global no `harness_runner.py` para permitir a manutenção do core da governança.
+5. Sincronizados `spec.md` e `STATE.md` para a transição final da Onda 05.
+
+### Matriz de Propagação (Sinapse)
+- [x] `.context/_scripts/cleanup_specs.py` -> [Proteção de Sprint]
+- [x] `.context/brain/RULES.md` -> [Regra 1.4 Inserida]
+- [x] `.context/brain/MASTER_FLOW.md` -> [Ciclo v2-Safe Mapeado]
+- [x] `.context/_scripts/harness_runner.py` -> [Whitelist Atualizada]
+
+### Contrato de Validação
+- executor_context_id: `CTX_ONDA_05_SSOT`
+- validator_context_id: `CTX_QA_VALIDATOR`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Onda 05 validada. As regras mestras agora refletem o estado hardened do sistema. Proteção de cleanup testada e funcional.`
+
+**Handoff:** @spec-driver -> @user | Estado: Onda 05 em progresso avançado. | Próximo: Re-validação final do Harness.
 
 ## 📅 2026-04-30 03:40 | 🚩 WAY POINT: Plano Definitivo LEARNINGS v2.6 Consolidado e Auditado
 **Decisão/Bug:** 🚩 WAY POINT: Finalização e selagem do Plano de Memória LEARNINGS. [Governança] [H2I]
@@ -4678,6 +5760,11 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
    - Refinamentos técnicos (Stemming seguro, Cache em disco, Escrita Atômica).
    - Governança epistemológica integrada ao Harness (Modo Light).
 3. Atualizado o `log_planos.md` para rastreabilidade completa de 18 documentos de planejamento.
+
+```
+CHUNK_END id=019509328844_c001
+CHUNK_START id=019509328844_c002 start_line=301 end_line=573
+```markdown
 4. Salva a auditoria cirúrgica filtrada pelo MiMo em `auditoria_Qwen_cirurgica.md`.
 5. Injetada a ideia "Impact-Aware Harness" (MiMo) no relatório de insights contextuais.
 
@@ -4732,7 +5819,6 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 ### Contrato de Validação
 - executor_context_id: `CTX_RULES_RADAR_0426`
 - validator_context_id: `CTX_QA_SAM`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Aprovado autonomamente. As novas regras foram cravadas no Master Flow e nas Rules, blindando a IA contra alucinações e duplicação de diretórios.`
 
@@ -4777,7 +5863,6 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 ### Contrato de Validação
 - executor_context_id: `CTX_BUNDLER_NATIVE`
 - validator_context_id: `CTX_QA_SAM`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Aprovado autonomamente. Integração total no framework garantida sem ferir governança e cumprindo estritamente as regras de path do SAM.`
 
@@ -4802,7 +5887,6 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 ### Contrato de Validação
 - executor_context_id: `CTX_GLOSSARY_0426`
 - validator_context_id: `CTX_USER_VALIDATION`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Glossário criado e terminologia de memória corrigida em todo o ecossistema.`
 
@@ -4824,18 +5908,12 @@ Nota: Semente pos-purge. 98 entradas arquivadas em journal_archive_20260424_1440
 ### Contrato de Validação
 - executor_context_id: `CTX_IMPL_QA_SUBAGENT`
 - validator_context_id: `CTX_QA_VALIDATOR`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Subagente estruturado e integrado ao ecossistema H.O.K.`
 
 **Handoff:** @antigravity-agent -> Pipeline | Estado: Infraestrutura de subagentes iniciada | Próximo: Validação SAM e Commit.
 
 ## 📅 2026-04-26 14:20
-
-```
-CHUNK_END id=019509328844_c001
-CHUNK_START id=019509328844_c002 start_line=301 end_line=450
-```markdown
 **Decisão/Bug:** 🛠️ Fix: SAM Chronology (Reverse Order).
 **Ação:**
 1. Modificada a função `get_latest_journal_entry` no script `workflow_journal_auditor.py`.
@@ -4850,7 +5928,6 @@ CHUNK_START id=019509328844_c002 start_line=301 end_line=450
 ### Contrato de Validação
 - executor_context_id: `CTX_FIX_SAM_01`
 - validator_context_id: `CTX_AI_QA_AUDIT`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Aprovado autonomamente por QA_AI. Bug corrigido sem gargalo humano.`
 
@@ -4865,9 +5942,9 @@ CHUNK_START id=019509328844_c002 start_line=301 end_line=450
 4. **Brainstorm:** Definida a nova visão de 4 camadas de RX (Geral, Framework, Negócio, Produto-Isolado).
 
 **Próximos Passos (Sessão de Amanhã):**
-- Iniciar o primeiro ciclo de **Feature Real** usando a pasta `.specs/features/`.
+- Iniciar a primeira feature real de aplicação usando o novo `PROJECT_INDEX` para navegação.
+- Testar a resiliência do `@qa-validator` em tarefas de código puro.
 - Decidir se vamos fundir o `rx-anatomy.md` com o `RX_REPOSITORIO.md`.
-- Aprofundar o "RX de Negócio" do framework (vender governança AI).
 
 ### Contrato de Encerramento
 - executor_context_id: `CTX_END_0426_01`
@@ -4891,7 +5968,6 @@ CHUNK_START id=019509328844_c002 start_line=301 end_line=450
 ### Contrato de Validação
 - executor_context_id: `CTX_MAP_0426_01`
 - validator_context_id: `CTX_USER_AUDIT_MAP`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Mapa funcional integrado e validado.`
 
@@ -4910,11 +5986,9 @@ CHUNK_START id=019509328844_c002 start_line=301 end_line=450
 - [x] `.context/maintenance/JOURNAL.md` -> [Registro de saneamento]
 - [x] `.context/maintenance/_archive_context/rx_history/` -> [Arquivamento legacy]
 
-
 ### Contrato de Validação
 - executor_context_id: `CTX_SAN_0426_01`
 - validator_context_id: `CTX_USER_AUDIT`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Saneamento e evolução biológica validados pelo usuário.`
 
@@ -4922,70 +5996,48 @@ CHUNK_START id=019509328844_c002 start_line=301 end_line=450
 
 ## 📅 2026-04-26 00:08
 **Decisão/Bug:** 🧹 Saneamento de Contexto: Expurgo de Diretório Legado.
-**Tags:** Manutenção, Eficiência, Context-Sanitation
 **Ação:** 
 1. Identificado que o diretório `.context/specs/` continha apenas planos de implementação legados da v2.4.1 (Entulho Cognitivo).
 2. O usuário confirmou a exclusão total do diretório para manter o contexto "Lean".
-3. Validação via `npm run context:validate` confirmou que a integridade do framework v2.5.2 permanece intacta, pois as specs ativas residem na raiz em `.specs/features/`.
-**Implicação:** Redução de ruído no carregamento de arquivos e economia de processamento (tokens) ao eliminar documentos inertes.
+3. Validação via `npm run context:validate` confirmou que a integridade do framework v2.5.2 permanece intacta.
+
 **Handoff:** @user -> @antigravity-agent | Estado: Contexto saneado e validado | Próximo: Evolução biológica.
 
 ## 📅 2026-04-24 15:20
 **Decisão/Bug:** 🧹 Separação de Log Técnico do Harness.
-**Tags:** Governança, Regras, Observabilidade
 **Solução:**
 1. O `harness_runner.py` foi alterado para gravar PASS/FAIL em `maintenance/HARNESS_LOG.md`.
 2. O `JOURNAL.md` foi limpo para manter apenas narrativa, contratos e handoffs.
-3. Entradas automáticas `[HARNESS-*]` antigas permanecem auditáveis no histórico de Git e nos arquivos arquivados do Journal.
-4. Atualizado `rx-anatomy.md` para refletir explicitamente a presença do `HARNESS_LOG.md` e `RX_REPOSITORIO.md` na camada maintenance.
-**Implicação:** Eliminação de poluição narrativa no Journal e redução do risco de purge degradar memória operacional humana.
+3. Atualizado `rx-anatomy.md` para refletir explicitamente a presença do `HARNESS_LOG.md`.
+
 **Handoff:** @context-keeper -> @user | Estado: Journal sanitizado | Próximo: Validar pipeline.
 
 ## 📅 2026-04-24 13:52 | [FEAT]: Implementação do Sistema Anti-Migué (SAM)
+**Narrativa:** Implementação completa da infraestrutura de governança determinística SAM. Criado o script auditor, a matriz de sinapses em JSON e integrada a lógica no harness_runner.
 
-### Narrativa
-Implementação completa da infraestrutura de governança determinística SAM. Criado o script auditor, a matriz de sinapses em JSON e integrada a lógica no harness_runner. O sistema agora bloqueia commits em modo strict caso a propagação não seja comprovada via Git Diff.
-
-### Tags
-Governança, Regras, Market
-
-### Matriz de Propagacao (Sinapse)
+### Matriz de Propagação (Sinapse)
 - [x] `.context/brain/RULES.md` -> [Atualizado com modo strict]
-- [x] `.context/maintenance/rx-anatomy.md` -> [Mapa estrutural atualizado para incluir HARNESS_LOG]
+- [x] `.context/maintenance/rx-anatomy.md` -> [Mapa estrutural atualizado]
 - [x] `.context/brain/MASTER_FLOW.md` -> [Diagrama SAM incluído]
-- [x] `package.json` -> [Script npm adicionado]
 
-### Alteracoes Operacionais (Reality Check)
-- Arquivos esperados: `JOURNAL_SYNAPSE.md`, `workflow_journal_auditor.py`, `run_context.py`, `harness_runner.py`
-- Arquivos observados (git diff --name-only): `Detectados via Auditor`
-- Resumo (git diff --stat): `Infraestrutura SAM operacional`
-
-### Contrato de Validacao
+### Contrato de Validação
 - executor_context_id: `CTX_FLASH_SAM_FIX`
 - validator_context_id: `CTX_QA_AUDIT_FINAL`
-- segregation_check: `executor_context_id != validator_context_id`
 - status: `🟢 READY TO COMMIT`
 - validator_verdict: `Aprovado via SAM Audit. Infraestrutura resiliente e modo strict funcional.`
 
 ## 📅 2026-04-23 22:20
-**Decisão/Bug:** 📚 Expansão Massiva da Wiki & Governança Epistemológica (Harness Triad).
+**Decisão/Bug:** 📚 Expansão Massiva da Wiki & Governança Epistemológica.
 **Solução:** 
-1. Ingestão de três novos artigos core na Wiki: `Maintainability`, `Architecture` e `Behaviour` Harnesses, alinhados com a release **v2.5.2**.
-2. Documentação do padrão `Ralph Wiggum Loop` para garantir execução atômica e combate ao *Context Rot*.
-3. Criação do RAW Manifesto para servir como fonte SSOT de longa duração.
-4. Registro do plano `JOURNAL_SYNAPSE.md` para automatizar a reatividade do contexto via logs.
-**Implicação:** O framework agora possui uma base teórica sólida local, reduzindo a dependência de "hallucinations" e garantindo que o Agente Executor e o Validador operem sob as mesmas leis físicas de engenharia.
-**Evidência Operacional:** `npm run context:all` resultou em `Exit 0` após correção de cabeçalhos via `ingest_wiki_guard.py`.
+1. Ingestão de três novos artigos core na Wiki: `Maintainability`, `Architecture` e `Behaviour` Harnesses.
+2. Documentação do padrão `Ralph Wiggum Loop` para garantir execução atômica.
+3. Criação do RAW Manifesto para servir como fonte SSOT.
+
 **Handoff:** @antigravity-agent -> @user | Estado: Wiki v2.5.2 Completa | Próximo: KBuM (Reset) na próxima sessão.
 
 ## [2026-04-22 09:50] release: Antigravity Kit v2.5.0 'Hardened Matrix'
 - **Meta-Ação:** Implementação de SSOT de Versão e Endurecimento de Onboarding (Arquiteto).
-- **Destaques:** 
-  - `version_targets.json` ⮕ Matriz declarativa de sincronia de versão.
-  - `check_version_consistency.py` ⮕ Linter de drift integrado ao pipeline `all`.
-  - `harness_runner.py` ⮕ Poda real de arquivos e fail-closed para `DRAFT` quando há atividade.
 - **Status:** [CONSISTENT & HARDENED]
-- **Próximo:** Iniciar ciclo de desenvolvimento de features sobre fundação v2.5.0.
 
 ```
 CHUNK_END id=019509328844_c002
@@ -5540,6 +6592,113 @@ Quando o **Autobuilder** terminar de consolidar o framework, esta "Biologia" pas
 ````
 CHUNK_END id=ca8da4f87431_c001
 FILE_END id=file_ca8da4f87431
+
+---
+<a id="file_4f9504df2efc"></a>
+FILE_START id=file_4f9504df2efc path=.context/maintenance/rx-communications.md domain=docs lang=markdown lines=97 bytes=3437 mtime=2026-05-01T03:51:00.422129+00:00 sha1=546539fe3ab0161ef5bdee5f7c741f976c805fca
+CHUNK_START id=4f9504df2efc_c001 start_line=1 end_line=97
+````markdown
+---
+Criado em: 2026-05-01 00:51
+Ultima Atualizacao: 2026-05-01 00:51
+Status: Ativo
+---
+
+# 📡 RX-COMMUNICATIONS: Mapa de Conectividade Global (v2)
+
+Este documento é o SSOT da topologia técnica do projeto. Ele descreve o "sistema nervoso" do ecossistema, mapeando como os artefatos de governança e execução se comunicam através de sinais, dependências e gatilhos.
+
+---
+
+## 🌌 1. Mapa Mestre de Conectividade (Visão Holística)
+
+```mermaid
+graph TD
+    %% ESTILOS (Dark/Technical)
+    classDef strategic fill:#1a1a1a,stroke:#333,color:#fff,stroke-width:2px
+    classDef tactical fill:#2a2a2a,stroke:#444,color:#fff,stroke-width:2px
+    classDef immune fill:#000,stroke:#555,color:#fff,stroke-dasharray: 5 5
+    classDef metabolic fill:#111,stroke:#444,color:#aaa
+    classDef process fill:#1a1a1a,stroke:#666,color:#fff,stroke-width:3px
+
+    subgraph "CAMADA ESTRATÉGICA (O Porquê)"
+        VIS["VISION.md"]:::strategic
+        INC["INCEPTION.md"]:::strategic
+        PRD["PRD.md"]:::strategic
+        VIS --> INC --> PRD
+    end
+
+    subgraph "CAMADA CONSTITUCIONAL (A Lei)"
+        RUL["RULES.md"]:::process
+        MF["MASTER_FLOW.md"]:::process
+        RUL --> MF
+    end
+
+    subgraph "CAMADA TÁTICA (O Como)"
+        SPEC["spec.md"]:::tactical
+        TASK["tasks.md"]:::tactical
+        STATE["STATE.md"]:::tactical
+        SPEC --> TASK --> STATE
+    end
+
+    subgraph "SISTEMA IMUNOLÓGICO (A Governança)"
+        VAL{{validate_context.py}}:::immune
+        LOG["HARNESS_LOG.md"]:::immune
+        HEALTH["CONTEXT_HEALTH.md"]:::immune
+        VAL --> LOG --> HEALTH
+    end
+
+    subgraph "SISTEMA METABÓLICO (A Memória)"
+        JOU["JOURNAL.md"]:::metabolic
+        SYN{{JOURNAL_SYNAPSE.md}}:::metabolic
+        ARC["_archive_context/"]:::metabolic
+        JOU <--> SYN --> ARC
+    end
+
+    %% CONEXÕES DE FLUXO (As Linhas de Contato)
+    
+    %% Intenção para Tático
+    PRD -.->|Diretriz| SPEC
+    
+    %% Constituição para todos
+    MF -->|Orquestra| SPEC
+    RUL -->|Restringe| MF
+    RUL -->|Lógica de Validação| VAL
+    
+    %% Tático para Governança
+    STATE -- "Baseline Hash" --> VAL
+    SPEC -- "Acceptance Sync" --> VAL
+    
+    %% Execução para Memória
+    STATE -- "Handoff/Registro" --> JOU
+    VAL -- "Fricção/Sucesso" --> JOU
+    
+    %% Feedback Loop
+    JOU -.->|Scars / Lições| RUL
+    HEALTH -.->|Alerta de Saúde| MF
+```
+
+---
+
+## 🔗 2. Tabela de Sinais de Conectividade
+
+| Origem | Destino | Natureza do Sinal | Propósito |
+| :--- | :--- | :--- | :--- |
+| `PRD.md` | `spec.md` | **Diretriz** | Garante que o código atende ao requisito de negócio. |
+| `RULES.md` | `validate_context.py` | **Protocolo** | Alimenta o "DNA" do que deve ser fiscalizado. |
+| `MASTER_FLOW.md` | `spec.md` | **Orquestração** | Gatilho de nascimento de uma nova tarefa. |
+| `STATE.md` | `validate_context.py` | **Evidência** | Foto física (hash) para garantir que não há drift. |
+| `JOURNAL_SYNAPSE.md` | `JOURNAL.md` | **Metabólica** | Limpeza e compressão de memória para evitar bloat. |
+| `JOURNAL.md` | `RULES.md` | **Aprendizado** | Cicatrizes (Scars) de erros passados viram novas leis. |
+
+---
+
+## 🛡️ 3. Governança da Conectividade
+Qualquer alteração na responsabilidade de um arquivo (Glossário) ou na forma como eles se tocam deve ser refletida neste Mapa. Este documento é o guia definitivo para agentes de IA entenderem seu papel dentro do organismo H.O.K Forge.
+
+````
+CHUNK_END id=4f9504df2efc_c001
+FILE_END id=file_4f9504df2efc
 
 ---
 <a id="file_91d5627a725e"></a>
@@ -6924,46 +8083,242 @@ FILE_END id=file_3adfd36c1559
 
 ---
 <a id="file_b838611f038c"></a>
-FILE_START id=file_b838611f038c path=.specs/_template.md domain=docs lang=markdown lines=28 bytes=756 mtime=2026-04-29T02:55:07.556588+00:00 sha1=3fdc285c2e6f2dc34ba13316c90fe841276d3ad7
-CHUNK_START id=b838611f038c_c001 start_line=1 end_line=28
+FILE_START id=file_b838611f038c path=.specs/_template.md domain=docs lang=markdown lines=65 bytes=2402 mtime=2026-04-30T20:28:38.924724+00:00 sha1=7526208de9157806c4685e14b981fdf5ae7f4b4a
+CHUNK_START id=b838611f038c_c001 start_line=1 end_line=65
 ```markdown
 ---
+# ==============================================================================
+# H.O.K FORGE - CONTRATO DE ESPECIFICAÇÃO (TLC)
+# ==============================================================================
 contract_version: 2.5.2
 parties: ["@spec-driver", "@qa-validator"]
+
+# MODO DE OPERAÇÃO: Escolha um dos blocos abaixo
+# ------------------------------------------------------------------------------
+
+# [MODO A] STANDARD: Para funcionalidades atômicas e rápidas (padrão)
 type: standard
 executor_context_id: "ctx-dev-YYYYMMDD-HHMM"
 validator_context_id: "ctx-qa-YYYYMMDD-HHMM"
 impact_control:
   max_impact_radius: 3
-  pre_flight_grep_terms: ["termo1", "termo2"]
+  pre_flight_grep_terms: []
 definition_of_done:
   - [ ] Requisito 1
   - [ ] Requisito 2
 qa_signoff: false
 signed_by: null
+
+# [MODO B] SPRINT_BASED: Para planos complexos (Contratos Evolutivos MiMo)
+# contract_mode: sprint_based
+# current_sprint: sprint_01
+# plan_source: "caminho/do/plano_original.md"
+# policy_profile: hybrid  # [strict | advisory | hybrid]
+# sprints:
+#   sprint_01:
+#     goal: "Objetivo da Fase"
+#     captured_at: "YYYY-MM-DD HH:MM" # Data de início da sprint
+#     captured_by: "@spec-driver"     # Agente que iniciou a sprint
+#     scope_allow: ["caminho/permitido/*"] # HG01: Whitelist obrigatória
+#     scope_deny: []                       # HG01: Blacklist preventiva
+#     acceptance: ["- [ ] Critério A"]
+#     unblock_history: []                  # Justificativas para Soft Gates
+#     qa_signoff: false
+#   sprint_02:
+#     goal: "..."
+#     captured_at: "..."
+#     captured_by: "..."
+#     scope_allow: []
+#     acceptance: []
+#     qa_signoff: false
 ---
 
 # 📄 Spec: [Nome da Feature]
+> **Baseado em:** [Link/Referência do Plano se houver]
 
 ## 🎯 Objetivo
-[Descreva o que sera construido.]
+[Descreva o objetivo técnico e o impacto esperado no sistema.]
 
-## ✅ Criterios de aceite
-- [ ] O requisito principal foi implementado.
-- [ ] Testes e/ou validacoes manuais executadas.
-- [ ] Resultado registrado no STATE.md.
+## 🛠️ Solução Proposta
+[Visão geral da implementação.]
 
-## 🔎 Regra de segregacao
-- Se `type: standard`, o `validator_context_id` deve ser diferente do `executor_context_id` antes de `qa_signoff: true`.
+## ✅ Critérios de Aceite (Global)
+- [ ] Funcionalidade reflete os requisitos do plano.
+- [ ] Código validado e sem violações de governança.
+- [ ] Histórico de execução registrado no STATE.md seguindo Seção 8.
+
+## 🔎 Regras de Governança
+1. **Segregação:** O validator_context_id deve ser diferente do executor_context_id.
+2. **Impacto:** Alterações fora do `max_impact_radius` ou `scope_allow` exigem justificativa e unblock record.
+3. **Checkpoints:** Cada sprint exige signoff do @qa-validator para transição de fase.
 
 ```
 CHUNK_END id=b838611f038c_c001
 FILE_END id=file_b838611f038c
 
 ---
-<a id="file_d4f64fc3b549"></a>
-FILE_START id=file_d4f64fc3b549 path=.specs/features/harness_fail_closed/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-22T23:02:55.455444+00:00 sha1=a627e9b0e39cebcd966bff38fff2869fb72544c9
-CHUNK_START id=d4f64fc3b549_c001 start_line=1 end_line=5
+<a id="file_cec7fa80a0cf"></a>
+FILE_START id=file_cec7fa80a0cf path=.specs/features/SDD_ERRORS_LEDGER.md domain=docs lang=markdown lines=62 bytes=2999 mtime=2026-05-01T00:48:12.356318+00:00 sha1=6d8037e0a1d268508bc7bb75642e309b2fa44388
+CHUNK_START id=cec7fa80a0cf_c001 start_line=1 end_line=62
+```markdown
+# SDD Errors Ledger
+
+Registro continuo de erros recorrentes em execucao spec-driven.
+
+## Como usar
+- Adicionar uma entrada por incidente.
+- Nao apagar historico.
+- Vincular correcoes a regras do playbook quando aplicavel.
+
+---
+
+## Template de Entrada
+- Data:
+- Feature:
+- Sprint:
+- Erro:
+- Sintoma observado:
+- Causa raiz:
+- Como foi detectado:
+- Correcao aplicada:
+- Regra adicionada/ajustada:
+- Evidencia (arquivo/commit/log):
+
+---
+
+## Entradas Iniciais
+
+### 2026-04-30 | governance_rules_hardening | bootstrap
+- Erro: Mistura de `type: standard` com `contract_mode: sprint_based`.
+- Sintoma observado: spec inconsistente para harness de sprint.
+- Causa raiz: Uso de template inadequado (`_template_operacional` standard-only).
+- Como foi detectado: Auditoria de contrato no bootstrap.
+- Correcao aplicada: Criacao de `_template_operacional_sprint` separado e ajuste da spec.
+- Regra adicionada/ajustada: Rito 0 do `SDD_PLAYBOOK.md` (proibicao de mistura de modos).
+- Evidencia (arquivo/commit/log): `.specs/features/_template_operacional_sprint/spec.md`.
+
+### 2026-04-30 | governance_rules_hardening | baseline
+- Erro: `start_hash` desatualizado apos novos commits de ajuste.
+- Sintoma observado: diff de sprint poluido e telemetria imprecisa.
+- Causa raiz: Recaptura de baseline nao executada apos mudanca de HEAD.
+- Como foi detectado: Auditoria de coerencia Git vs STATE.
+- Correcao aplicada: Recaptura oficial de `start_hash` e registro no JOURNAL.
+- Regra adicionada/ajustada: Rito 1 do `SDD_PLAYBOOK.md` (baseline e recaptura quando necessario).
+- Evidencia (arquivo/commit/log): `.specs/features/governance_rules_hardening/STATE.md`, `.context/maintenance/JOURNAL.md`.
+
+### 2026-04-30 | contract_sprints_v2_safe | onda_04
+- Erro: Atualizacao destrutiva de `STATE.md` por regex agressivo.
+- Sintoma observado: Perda de campos obrigatorios da sprint.
+- Causa raiz: Substituicao ampla de bloco sem preservacao estrutural.
+- Como foi detectado: Auditoria tecnica em diff + leitura de estado.
+- Correcao aplicada: Parser cirurgico focado em `impact_snapshot`.
+- Regra adicionada/ajustada: `MIMO_STATE_INTEGRITY` e politica de edicao cirurgica.
+- Evidencia (arquivo/commit/log): `.context/_scripts/harness_runner.py`.
+
+### 2026-04-30 | governance_rules_hardening | sprint_01_close
+- Erro: tasks marcadas como concluidas com `acceptance` ainda pendente no `spec.md`.
+- Sintoma observado: narrativa de conclusao adiantada sem espelhamento total no contrato.
+- Causa raiz: fechamento focado em checklist de tasks sem sincronizar bloco de aceite da sprint.
+- Como foi detectado: auditoria cruzada spec/tasks/state.
+- Correcao aplicada: regra de sincronizacao adicionada no playbook/checklist e check automatizado no `validate_context.py`.
+- Regra adicionada/ajustada: Rito 4 (self-audit) e validação "Sprint Acceptance Sync".
+- Evidencia (arquivo/commit/log): `.specs/features/SDD_PLAYBOOK.md`, `.specs/features/_template_operacional_sprint/CHECKLIST.md`, `.context/_scripts/validate_context.py`.
+
+```
+CHUNK_END id=cec7fa80a0cf_c001
+FILE_END id=file_cec7fa80a0cf
+
+---
+<a id="file_b33d2a2116cd"></a>
+FILE_START id=file_b33d2a2116cd path=.specs/features/SDD_PLAYBOOK.md domain=docs lang=markdown lines=77 bytes=2967 mtime=2026-05-01T00:47:51.926370+00:00 sha1=74d175bb8255fd3c1549d2d3a1cbebbe787925fc
+CHUNK_START id=b33d2a2116cd_c001 start_line=1 end_line=77
+```markdown
+# SDD Playbook (Spec-Driven Discipline)
+
+## Objetivo
+Este manual define o procedimento padrao para execucao de features `sprint_based` com governanca fail-closed.
+
+## Escopo
+Aplica-se a todas as features em `.specs/features/*` que usam `contract_mode: sprint_based`.
+
+## Rito 0: Bootstrap Obrigatorio
+1. Criar pasta da feature em `.specs/features/[feature_id]/`.
+2. Criar arquivos: `spec.md`, `tasks.md`, `STATE.md`, `design.md`.
+3. Garantir que `spec.md` esteja em modo sprint:
+   - `contract_mode: sprint_based`
+   - `current_sprint: sprint_01`
+   - `policy_profile`
+   - bloco `sprints:` com `sprint_01` definido
+4. Proibido misturar `type: standard` com `contract_mode: sprint_based`.
+
+## Rito 1: Start Hash e Baseline
+1. Confirmar `git status --short` sem saida.
+2. Capturar `start_hash` (HEAD atual) no `STATE.md`.
+3. Registrar `captured_at` e `captured_by`.
+4. Registrar baseline no `JOURNAL.md` com:
+   - feature
+   - start_hash
+   - status inicial
+
+## Rito 2: Escopo da Sprint
+1. Definir `scope_allow` da sprint atual no `spec.md`.
+2. Definir `scope_deny` quando necessario.
+3. `tasks.md` deve refletir apenas tarefas da sprint ativa e proximas sprints planejadas.
+4. Qualquer expansao de escopo exige justificativa + registro formal no `STATE.md`.
+
+## Rito 3: Execucao
+1. Implementar apenas dentro do `scope_allow`.
+2. Atualizar `tasks.md` em tempo real.
+3. Atualizar `STATE.md` com fatos e checkpoints.
+4. Evitar edicoes destrutivas em SSOT (`STATE.md`, `spec.md`, `tasks.md`).
+
+## Rito 4: Pre-close Self-Audit (Executor)
+Antes de pedir QA:
+1. `git status --short` limpo.
+2. Coerencia entre `spec.md`, `tasks.md`, `STATE.md`.
+3. Sprint atual com criterios de aceite objetivos e sincronizados.
+4. Evidencia em `JOURNAL.md` e/ou `HARNESS_LOG.md`.
+5. Rodar validacao aplicavel (`context:validate` ou equivalente).
+6. Se `tasks` da sprint estiverem 100% concluidas, os itens de `acceptance` no `spec.md` nao podem ficar `[ ]`.
+
+## Rito 5: QA Signoff
+1. `qa-validator` verifica requisitos da sprint atual.
+2. Se aprovado:
+   - `qa_signoff: true` no bloco da sprint
+   - evidencias no `STATE.md`
+3. Se reprovado:
+   - registrar motivo objetivo
+   - manter sprint em `IN_PROGRESS` ou `BLOCKED`
+
+## Rito 6: Fechamento de Onda
+Somente permitido se:
+1. Harness PASS
+2. Coerencia `spec/tasks/state`
+3. Arvore Git limpa
+4. Evidencias registradas
+5. `qa_signoff` da sprint atual = true
+6. Metadados de cabecalho de `RULES.md` e `MASTER_FLOW.md` atualizados (campo de ultima atualizacao consistente).
+
+Se qualquer item falhar: status obrigatorio `IN_PROGRESS`.
+
+## Erros Recorrentes (Nao Repetir)
+1. Declarar concluido com `git status` sujo.
+2. Capturar `start_hash` e depois mudar baseline sem recaptura.
+3. Misturar contrato `standard` com `sprint_based`.
+4. Atualizar `STATE.md` com regex agressivo e perder campos obrigatorios.
+5. Narrativa dizer "concluido" sem `qa_signoff` real.
+
+## Regra de Ouro
+Contrato escrito vence memoria de chat. Sempre decidir pelo SSOT.
+
+```
+CHUNK_END id=b33d2a2116cd_c001
+FILE_END id=file_b33d2a2116cd
+
+---
+<a id="file_5353fbc27cc1"></a>
+FILE_START id=file_5353fbc27cc1 path=.specs/features/_arquive_features/harness_fail_closed/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-22T23:02:55.455444+00:00 sha1=a627e9b0e39cebcd966bff38fff2869fb72544c9
+CHUNK_START id=5353fbc27cc1_c001 start_line=1 end_line=5
 ```markdown
 ---
 status: ✅ PASSED
@@ -6972,13 +8327,13 @@ detail: All checks passed
 ---
 
 ```
-CHUNK_END id=d4f64fc3b549_c001
-FILE_END id=file_d4f64fc3b549
+CHUNK_END id=5353fbc27cc1_c001
+FILE_END id=file_5353fbc27cc1
 
 ---
-<a id="file_a32e3bf74e3d"></a>
-FILE_START id=file_a32e3bf74e3d path=.specs/features/harness_fail_closed/spec.md domain=docs lang=markdown lines=14 bytes=630 mtime=2026-04-21T22:16:15.283651+00:00 sha1=32ea04febe6e93d0fa8959cc525575f3bd2bb3eb
-CHUNK_START id=a32e3bf74e3d_c001 start_line=1 end_line=14
+<a id="file_e56f737897cf"></a>
+FILE_START id=file_e56f737897cf path=.specs/features/_arquive_features/harness_fail_closed/spec.md domain=docs lang=markdown lines=14 bytes=630 mtime=2026-04-21T22:16:15.283651+00:00 sha1=32ea04febe6e93d0fa8959cc525575f3bd2bb3eb
+CHUNK_START id=e56f737897cf_c001 start_line=1 end_line=14
 ```markdown
 ---
 status: ATIVO
@@ -6996,13 +8351,39 @@ Esta spec é exigida pela nova física do repositório. Para conseguir submeter 
 - [x] Validar que o commit prossegue apenas devido à existência deste documento assinado.
 
 ```
-CHUNK_END id=a32e3bf74e3d_c001
-FILE_END id=file_a32e3bf74e3d
+CHUNK_END id=e56f737897cf_c001
+FILE_END id=file_e56f737897cf
 
 ---
-<a id="file_238a0e1da225"></a>
-FILE_START id=file_238a0e1da225 path=.specs/features/meta-inception/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-21T22:01:44.285888+00:00 sha1=4647d09b6cba8ee228ab2e51d8c647537a9c41a5
-CHUNK_START id=238a0e1da225_c001 start_line=1 end_line=5
+<a id="file_f7b3adad01fe"></a>
+FILE_START id=file_f7b3adad01fe path=.specs/features/_arquive_features/log_old_features.md domain=docs lang=markdown lines=16 bytes=1320 mtime=2026-04-30T16:29:51.864349+00:00 sha1=5a3dec8453cc6c11eb0ad1f510ee5be33aca9f4e
+CHUNK_START id=f7b3adad01fe_c001 start_line=1 end_line=16
+```markdown
+# 📜 Log de Aposentadoria de Features (The Retirement Ledger)
+> Registro cronológico das funcionalidades implementadas, validadas e movidas para o arquivo.
+
+| Data (Fim) | Feature | Status | Detalhe Técnico |
+| :--- | :--- | :--- | :--- |
+| 2026-04-30 01:33 | **Oracle v3** | ✅ PASSED | Evolução para subsistema resiliente e acurado (Top-N + Confidence). |
+| 2026-04-29 01:34 | **Multi-Agent Choreography** | ✅ PASSED | Implementação da Arquitetura Hub & Spoke e controle de Impact Radius. |
+| 2026-04-26 17:26 | **QA Subagent** | ✅ PASSED | Orquestração autônoma para validação Zero Trust via persona de auditor. |
+| 2026-04-26 15:20 | **SAM Chronology Fix** | ✅ PASSED | Sincronização do auditor com a ordem cronológica reversa do JOURNAL.md. |
+| 2026-04-26 01:39 | **Synapse Workflow** | ❌ FAILED | Sistema Anti-Migué bloqueado por violações de contrato e status. |
+| 2026-04-23 22:03 | **Wiki Level 2** | ✅ PASSED | Implantação do paradigma Karpathy Wiki com roteamento determinístico. |
+| 2026-04-22 20:02 | **Harness Fail-Closed** | ✅ PASSED | Bloqueio de commits sem especificação validada no workshop. |
+| 2026-04-21 19:01 | **Meta-Inception** | ✅ PASSED | Fundação estrutural de governança (Role Vision/Inception). |
+
+---
+*Atualizado em: 2026-04-30 13:30 (Brasília)*
+
+```
+CHUNK_END id=f7b3adad01fe_c001
+FILE_END id=file_f7b3adad01fe
+
+---
+<a id="file_0fa0b6b078a5"></a>
+FILE_START id=file_0fa0b6b078a5 path=.specs/features/_arquive_features/meta-inception/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-21T22:01:44.285888+00:00 sha1=4647d09b6cba8ee228ab2e51d8c647537a9c41a5
+CHUNK_START id=0fa0b6b078a5_c001 start_line=1 end_line=5
 ```markdown
 ---
 status: ✅ PASSED
@@ -7011,13 +8392,13 @@ detail: All checks passed
 ---
 
 ```
-CHUNK_END id=238a0e1da225_c001
-FILE_END id=file_238a0e1da225
+CHUNK_END id=0fa0b6b078a5_c001
+FILE_END id=file_0fa0b6b078a5
 
 ---
-<a id="file_9801af51c558"></a>
-FILE_START id=file_9801af51c558 path=.specs/features/meta-inception/spec.md domain=docs lang=markdown lines=30 bytes=1389 mtime=2026-04-17T14:33:18.003175+00:00 sha1=0cd48f6f6251020721a35d1efcec750576473d60
-CHUNK_START id=9801af51c558_c001 start_line=1 end_line=30
+<a id="file_b544f5358fb0"></a>
+FILE_START id=file_b544f5358fb0 path=.specs/features/_arquive_features/meta-inception/spec.md domain=docs lang=markdown lines=30 bytes=1389 mtime=2026-04-17T14:33:18.003175+00:00 sha1=0cd48f6f6251020721a35d1efcec750576473d60
+CHUNK_START id=b544f5358fb0_c001 start_line=1 end_line=30
 ```markdown
 ---
 contract_version: 1.0
@@ -7051,13 +8432,13 @@ Implementar a fundação estrutural e de governança para injetar as restriçõe
 - Acesso explícito: O agente `@vision-architect` deve ter seus privilégios formatados aplicando Mínimo Privilégio (apenas Inception e Market).
 
 ```
-CHUNK_END id=9801af51c558_c001
-FILE_END id=file_9801af51c558
+CHUNK_END id=b544f5358fb0_c001
+FILE_END id=file_b544f5358fb0
 
 ---
-<a id="file_452b2ed7917b"></a>
-FILE_START id=file_452b2ed7917b path=.specs/features/multi_agent_choreography/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-29T04:34:54.226138+00:00 sha1=71453a8519bf6455452aa7e57c7f54e04369c8b6
-CHUNK_START id=452b2ed7917b_c001 start_line=1 end_line=5
+<a id="file_976dca62e5de"></a>
+FILE_START id=file_976dca62e5de path=.specs/features/_arquive_features/multi_agent_choreography/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-29T04:34:54.226138+00:00 sha1=71453a8519bf6455452aa7e57c7f54e04369c8b6
+CHUNK_START id=976dca62e5de_c001 start_line=1 end_line=5
 ```markdown
 ---
 status: ✅ PASSED
@@ -7066,13 +8447,13 @@ detail: All checks passed
 ---
 
 ```
-CHUNK_END id=452b2ed7917b_c001
-FILE_END id=file_452b2ed7917b
+CHUNK_END id=976dca62e5de_c001
+FILE_END id=file_976dca62e5de
 
 ---
-<a id="file_6aa9a4e78301"></a>
-FILE_START id=file_6aa9a4e78301 path=.specs/features/multi_agent_choreography/spec.md domain=docs lang=markdown lines=30 bytes=2015 mtime=2026-04-29T04:33:53.553136+00:00 sha1=7594877b728618e362c2938b4ea4d50f03d8baaa
-CHUNK_START id=6aa9a4e78301_c001 start_line=1 end_line=30
+<a id="file_dcdf7269aabc"></a>
+FILE_START id=file_dcdf7269aabc path=.specs/features/_arquive_features/multi_agent_choreography/spec.md domain=docs lang=markdown lines=30 bytes=2015 mtime=2026-04-29T04:33:53.553136+00:00 sha1=7594877b728618e362c2938b4ea4d50f03d8baaa
+CHUNK_START id=dcdf7269aabc_c001 start_line=1 end_line=30
 ```markdown
 ---
 contract_version: 2.5.2
@@ -7106,13 +8487,13 @@ O Executor (`@spec-driver`) deve usar `codenavi`/grep para os termos listados em
 - Sendo `type: standard`, o Validador (`@qa-validator`) DEVE possuir um contexto isolado e o `validator_context_id` deve ser diferente do `executor_context_id`. O QA só poderá assinar `qa_signoff: true` se o formato do log e a telemetria estiverem presentes no `STATE.md`.
 
 ```
-CHUNK_END id=6aa9a4e78301_c001
-FILE_END id=file_6aa9a4e78301
+CHUNK_END id=dcdf7269aabc_c001
+FILE_END id=file_dcdf7269aabc
 
 ---
-<a id="file_95d7e7d932e2"></a>
-FILE_START id=file_95d7e7d932e2 path=.specs/features/oracle_v3/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-30T04:33:59.463898+00:00 sha1=f72117a55a53bae3739d4583cb6cbacf74930ae5
-CHUNK_START id=95d7e7d932e2_c001 start_line=1 end_line=5
+<a id="file_3377cfe00b2d"></a>
+FILE_START id=file_3377cfe00b2d path=.specs/features/_arquive_features/oracle_v3/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-30T04:33:59.463898+00:00 sha1=f72117a55a53bae3739d4583cb6cbacf74930ae5
+CHUNK_START id=3377cfe00b2d_c001 start_line=1 end_line=5
 ```markdown
 ---
 status: ✅ PASSED
@@ -7121,13 +8502,13 @@ detail: All checks passed
 ---
 
 ```
-CHUNK_END id=95d7e7d932e2_c001
-FILE_END id=file_95d7e7d932e2
+CHUNK_END id=3377cfe00b2d_c001
+FILE_END id=file_3377cfe00b2d
 
 ---
-<a id="file_98232f54149e"></a>
-FILE_START id=file_98232f54149e path=.specs/features/oracle_v3/spec.md domain=docs lang=markdown lines=46 bytes=3205 mtime=2026-04-30T00:13:47.066525+00:00 sha1=02ac4a47ace8e296ed23593ec6d3954c6277a071
-CHUNK_START id=98232f54149e_c001 start_line=1 end_line=46
+<a id="file_96f9097dbbd2"></a>
+FILE_START id=file_96f9097dbbd2 path=.specs/features/_arquive_features/oracle_v3/spec.md domain=docs lang=markdown lines=46 bytes=3205 mtime=2026-04-30T00:13:47.066525+00:00 sha1=02ac4a47ace8e296ed23593ec6d3954c6277a071
+CHUNK_START id=96f9097dbbd2_c001 start_line=1 end_line=46
 ```markdown
 ---
 contract_version: 2.5.2
@@ -7177,13 +8558,13 @@ O escopo é estrito ao estabelecido entre o Plano Consolidado original e a bater
 - Sendo de classe `type: standard` no Antigravity v2.5.2, esta spec só pode ser fechada (`qa_signoff: true`) se o `validator_context_id` (o subagente QA) aprovar o trabalho em uma sessão autônoma e dissociada do agente executor original (`@spec-driver`).
 
 ```
-CHUNK_END id=98232f54149e_c001
-FILE_END id=file_98232f54149e
+CHUNK_END id=96f9097dbbd2_c001
+FILE_END id=file_96f9097dbbd2
 
 ---
-<a id="file_98c620fda2a6"></a>
-FILE_START id=file_98c620fda2a6 path=.specs/features/qa_subagent/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-26T20:26:18.109414+00:00 sha1=0ad50dd6b8c1506fc32bc6c97cad870207d47765
-CHUNK_START id=98c620fda2a6_c001 start_line=1 end_line=5
+<a id="file_96a2bcfd8479"></a>
+FILE_START id=file_96a2bcfd8479 path=.specs/features/_arquive_features/qa_subagent/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-26T20:26:18.109414+00:00 sha1=0ad50dd6b8c1506fc32bc6c97cad870207d47765
+CHUNK_START id=96a2bcfd8479_c001 start_line=1 end_line=5
 ```markdown
 ---
 status: ✅ PASSED
@@ -7192,13 +8573,13 @@ detail: All checks passed
 ---
 
 ```
-CHUNK_END id=98c620fda2a6_c001
-FILE_END id=file_98c620fda2a6
+CHUNK_END id=96a2bcfd8479_c001
+FILE_END id=file_96a2bcfd8479
 
 ---
-<a id="file_72cc9b3bbcc2"></a>
-FILE_START id=file_72cc9b3bbcc2 path=.specs/features/qa_subagent/spec.md domain=docs lang=markdown lines=22 bytes=1169 mtime=2026-04-26T18:27:10.870230+00:00 sha1=7474b521b7b686ed11fae0943c58b8f07110f069
-CHUNK_START id=72cc9b3bbcc2_c001 start_line=1 end_line=22
+<a id="file_07e43f982f2d"></a>
+FILE_START id=file_07e43f982f2d path=.specs/features/_arquive_features/qa_subagent/spec.md domain=docs lang=markdown lines=22 bytes=1169 mtime=2026-04-26T18:27:10.870230+00:00 sha1=7474b521b7b686ed11fae0943c58b8f07110f069
+CHUNK_START id=07e43f982f2d_c001 start_line=1 end_line=22
 ```markdown
 ---
 contract_version: 2.5.2
@@ -7224,13 +8605,13 @@ Baseado no Padrão de Subagents, a pasta `.agent/subagents/` receberá o modelo 
 A descrição do subagente foi forjada com gatilhos cognitivos ("Automatically delegate...", "Use proactively...") para que a IA orquestradora (eu, no chat) sempre delegue para ele a responsabilidade de auditar a spec e o código e liberar o commit de forma isolada.
 
 ```
-CHUNK_END id=72cc9b3bbcc2_c001
-FILE_END id=file_72cc9b3bbcc2
+CHUNK_END id=07e43f982f2d_c001
+FILE_END id=file_07e43f982f2d
 
 ---
-<a id="file_f288e14cea57"></a>
-FILE_START id=file_f288e14cea57 path=.specs/features/sam_chronology_fix/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-26T18:20:04.784593+00:00 sha1=6a534b07b054bbbcc966dade113b0a3c87ab3b8f
-CHUNK_START id=f288e14cea57_c001 start_line=1 end_line=5
+<a id="file_2bad8249610a"></a>
+FILE_START id=file_2bad8249610a path=.specs/features/_arquive_features/sam_chronology_fix/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-26T18:20:04.784593+00:00 sha1=6a534b07b054bbbcc966dade113b0a3c87ab3b8f
+CHUNK_START id=2bad8249610a_c001 start_line=1 end_line=5
 ```markdown
 ---
 status: ✅ PASSED
@@ -7239,13 +8620,13 @@ detail: All checks passed
 ---
 
 ```
-CHUNK_END id=f288e14cea57_c001
-FILE_END id=file_f288e14cea57
+CHUNK_END id=2bad8249610a_c001
+FILE_END id=file_2bad8249610a
 
 ---
-<a id="file_87c0e9fe1bbb"></a>
-FILE_START id=file_87c0e9fe1bbb path=.specs/features/sam_chronology_fix/spec.md domain=docs lang=markdown lines=51 bytes=2550 mtime=2026-04-26T18:19:47.789302+00:00 sha1=8468ef12308baca668fabdfc41aca8206ad13f70
-CHUNK_START id=87c0e9fe1bbb_c001 start_line=1 end_line=51
+<a id="file_a969b2604ea8"></a>
+FILE_START id=file_a969b2604ea8 path=.specs/features/_arquive_features/sam_chronology_fix/spec.md domain=docs lang=markdown lines=51 bytes=2550 mtime=2026-04-26T18:19:47.789302+00:00 sha1=8468ef12308baca668fabdfc41aca8206ad13f70
+CHUNK_START id=a969b2604ea8_c001 start_line=1 end_line=51
 ````markdown
 ---
 contract_version: 2.5.2
@@ -7300,13 +8681,13 @@ return "## 📅" + valid_entries[1] if len(valid_entries) > 1 else ("## 📅" + 
 - Sendo `type: standard`, a correção precisará ser revisada pelo `@user` (como validator) antes do fechamento do contrato, comprovando o rigor do Zero Trust.
 
 ````
-CHUNK_END id=87c0e9fe1bbb_c001
-FILE_END id=file_87c0e9fe1bbb
+CHUNK_END id=a969b2604ea8_c001
+FILE_END id=file_a969b2604ea8
 
 ---
-<a id="file_6d46ab399ea3"></a>
-FILE_START id=file_6d46ab399ea3 path=.specs/features/synapse_workflow/STATE.md domain=docs lang=markdown lines=13 bytes=378 mtime=2026-04-26T04:39:21.446038+00:00 sha1=bb9cde9c3c43964ea1c8017a0117423a079aab4c
-CHUNK_START id=6d46ab399ea3_c001 start_line=1 end_line=13
+<a id="file_a47ad3f11faa"></a>
+FILE_START id=file_a47ad3f11faa path=.specs/features/_arquive_features/synapse_workflow/STATE.md domain=docs lang=markdown lines=13 bytes=378 mtime=2026-04-26T04:39:21.446038+00:00 sha1=bb9cde9c3c43964ea1c8017a0117423a079aab4c
+CHUNK_START id=a47ad3f11faa_c001 start_line=1 end_line=13
 ```markdown
 ---
 status: ❌ FAILED
@@ -7323,13 +8704,13 @@ detail: journal_sam: Violações SAM detectadas.
 ---
 
 ```
-CHUNK_END id=6d46ab399ea3_c001
-FILE_END id=file_6d46ab399ea3
+CHUNK_END id=a47ad3f11faa_c001
+FILE_END id=file_a47ad3f11faa
 
 ---
-<a id="file_4f4d02adad4d"></a>
-FILE_START id=file_4f4d02adad4d path=.specs/features/synapse_workflow/spec.md domain=docs lang=markdown lines=38 bytes=1890 mtime=2026-04-24T18:07:53.542998+00:00 sha1=bc5ea2e2ad98d39f870c7512a4cc4ae416741041
-CHUNK_START id=4f4d02adad4d_c001 start_line=1 end_line=38
+<a id="file_08d15183b50c"></a>
+FILE_START id=file_08d15183b50c path=.specs/features/_arquive_features/synapse_workflow/spec.md domain=docs lang=markdown lines=38 bytes=1890 mtime=2026-04-24T18:07:53.542998+00:00 sha1=bc5ea2e2ad98d39f870c7512a4cc4ae416741041
+CHUNK_START id=08d15183b50c_c001 start_line=1 end_line=38
 ```markdown
 ---
 type: standard
@@ -7371,13 +8752,13 @@ definition_of_done:
 - `package.json`
 
 ```
-CHUNK_END id=4f4d02adad4d_c001
-FILE_END id=file_4f4d02adad4d
+CHUNK_END id=08d15183b50c_c001
+FILE_END id=file_08d15183b50c
 
 ---
-<a id="file_638d6695a3f1"></a>
-FILE_START id=file_638d6695a3f1 path=.specs/features/wiki_level2/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-24T01:03:39.917219+00:00 sha1=cc017238b0e6ff18156502ec8d318a50c984646d
-CHUNK_START id=638d6695a3f1_c001 start_line=1 end_line=5
+<a id="file_26b5471905f2"></a>
+FILE_START id=file_26b5471905f2 path=.specs/features/_arquive_features/wiki_level2/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-24T01:03:39.917219+00:00 sha1=cc017238b0e6ff18156502ec8d318a50c984646d
+CHUNK_START id=26b5471905f2_c001 start_line=1 end_line=5
 ```markdown
 ---
 status: ✅ PASSED
@@ -7386,13 +8767,13 @@ detail: All checks passed
 ---
 
 ```
-CHUNK_END id=638d6695a3f1_c001
-FILE_END id=file_638d6695a3f1
+CHUNK_END id=26b5471905f2_c001
+FILE_END id=file_26b5471905f2
 
 ---
-<a id="file_86778e912e18"></a>
-FILE_START id=file_86778e912e18 path=.specs/features/wiki_level2/spec.md domain=docs lang=markdown lines=43 bytes=1834 mtime=2026-04-22T23:11:15.675831+00:00 sha1=71be78a7b5b40a5dd98bb2d0f899312d14766a6d
-CHUNK_START id=86778e912e18_c001 start_line=1 end_line=43
+<a id="file_25a85d147e2a"></a>
+FILE_START id=file_25a85d147e2a path=.specs/features/_arquive_features/wiki_level2/spec.md domain=docs lang=markdown lines=43 bytes=1834 mtime=2026-04-22T23:11:15.675831+00:00 sha1=71be78a7b5b40a5dd98bb2d0f899312d14766a6d
+CHUNK_START id=25a85d147e2a_c001 start_line=1 end_line=43
 ```markdown
 ---
 id: wiki_level2
@@ -7439,13 +8820,13 @@ Implantar o Nível 2 da Wiki de Mercado (Karpathy Paradigm) focado em roteamento
 3. Artigo sem `> Fonte: RAW/...` deve ser bloqueado pelo lint.
 
 ```
-CHUNK_END id=86778e912e18_c001
-FILE_END id=file_86778e912e18
+CHUNK_END id=25a85d147e2a_c001
+FILE_END id=file_25a85d147e2a
 
 ---
-<a id="file_fafce66dc671"></a>
-FILE_START id=file_fafce66dc671 path=.specs/features/wiki_level2/tasks.md domain=docs lang=markdown lines=55 bytes=2460 mtime=2026-04-22T23:32:40.379948+00:00 sha1=161c580635c9ecd7ba0d68aa9fab0db1d788b1af
-CHUNK_START id=fafce66dc671_c001 start_line=1 end_line=55
+<a id="file_df9a30cacfaa"></a>
+FILE_START id=file_df9a30cacfaa path=.specs/features/_arquive_features/wiki_level2/tasks.md domain=docs lang=markdown lines=55 bytes=2460 mtime=2026-04-22T23:32:40.379948+00:00 sha1=161c580635c9ecd7ba0d68aa9fab0db1d788b1af
+CHUNK_START id=df9a30cacfaa_c001 start_line=1 end_line=55
 ```markdown
 # Tasks: Wiki Level 2
 
@@ -7504,8 +8885,794 @@ Rifa de tarefas atômicas para implementação do paradigma Karpathy Wiki.
   - *Verify*: Leitura final do artefato.
 
 ```
-CHUNK_END id=fafce66dc671_c001
-FILE_END id=file_fafce66dc671
+CHUNK_END id=df9a30cacfaa_c001
+FILE_END id=file_df9a30cacfaa
+
+---
+<a id="file_1a22b8bd3423"></a>
+FILE_START id=file_1a22b8bd3423 path=.specs/features/_template_operacional/STATE.md domain=docs lang=markdown lines=22 bytes=587 mtime=2026-04-30T16:46:37.439099+00:00 sha1=29500753c8dd6de693e724c5cb7b66cd666359d0
+CHUNK_START id=1a22b8bd3423_c001 start_line=1 end_line=22
+```markdown
+---
+status: 🚧 IN_PROGRESS
+updated: YYYY-MM-DD HH:MM
+detail: "Canteiro de obras inicializado."
+---
+
+# 🧠 STATE: [NOME_DA_FEATURE]
+
+## 📝 Logs de Decisão & Fatos da Sessão
+> Registro sequencial de descobertas e mudanças de curso durante a implementação.
+- [Data/Hora]: Início da execução da feature.
+
+## ✅ Progresso Técnico (Checkpoint)
+- [ ] Contrato Spec validado.
+- [ ] Pre-flight de impacto concluído.
+
+## 📊 Telemetria de Impacto (Pre-flight)
+- **Arquivos Identificados:** 0
+- **Status:** [OK | SCOPE_BLOWOUT]
+
+## ⚠️ Impedimentos
+- [ ] Nenhum até o momento.
+
+```
+CHUNK_END id=1a22b8bd3423_c001
+FILE_END id=file_1a22b8bd3423
+
+---
+<a id="file_c26edabf0ec4"></a>
+FILE_START id=file_c26edabf0ec4 path=.specs/features/_template_operacional/design.md domain=docs lang=markdown lines=13 bytes=268 mtime=2026-04-30T16:43:01.443053+00:00 sha1=757fdbf8cd47b545f182a0abf5b37e39969c1f30
+CHUNK_START id=c26edabf0ec4_c001 start_line=1 end_line=13
+````markdown
+# 🎨 Design & Arquitetura
+
+## 📐 Diagramas (Mermaid)
+```mermaid
+graph TD
+    A[Componente A] --> B[Componente B]
+```
+
+## 🏗️ Decisões Técnicas
+- **Abordagem:** [Explicação da escolha técnica]
+
+## 🧩 Modificações Estruturais
+- [ ] [Arquivo/Componente]
+
+````
+CHUNK_END id=c26edabf0ec4_c001
+FILE_END id=file_c26edabf0ec4
+
+---
+<a id="file_b3ffa4b3b701"></a>
+FILE_START id=file_b3ffa4b3b701 path=.specs/features/_template_operacional/spec.md domain=docs lang=markdown lines=27 bytes=740 mtime=2026-05-01T00:14:35.831268+00:00 sha1=7c76b40388e21d17becf2fbc1c762fcda054fa6a
+CHUNK_START id=b3ffa4b3b701_c001 start_line=1 end_line=27
+```markdown
+---
+contract_version: 2.5.2
+parties: ["@spec-driver", "@qa-validator"]
+# TEMPLATE MODE: STANDARD ONLY
+type: standard
+executor_context_id: "ctx-dev-YYYYMMDD-HHMM"
+validator_context_id: "ctx-qa-YYYYMMDD-HHMM"
+impact_control:
+  max_impact_radius: 3
+  pre_flight_grep_terms: []
+plan_source: "[NOME_DO_PLANO_ORIGINAL]"
+definition_of_done:
+  - [ ] Implementação reflete o plano original.
+  - [ ] Código validado pelo @qa-validator.
+  - [ ] Sem violações de governança detectadas pelo Harness.
+qa_signoff: false
+signed_by: ""
+---
+
+# 📄 Spec: [NOME_DA_FEATURE]
+> **Origem:** [Plano Original / PRD]
+
+## 🎯 Objetivo
+[Breve descrição do objetivo técnico]
+
+## 🏗️ Escopo Técnico
+[Detalhes da implementação baseados no planejamento]
+
+```
+CHUNK_END id=b3ffa4b3b701_c001
+FILE_END id=file_b3ffa4b3b701
+
+---
+<a id="file_7cde61057f28"></a>
+FILE_START id=file_7cde61057f28 path=.specs/features/_template_operacional/tasks.md domain=docs lang=markdown lines=13 bytes=361 mtime=2026-04-30T16:43:07.984885+00:00 sha1=68f88914d970b2461ea50e1cea3c677bcbc462e3
+CHUNK_START id=7cde61057f28_c001 start_line=1 end_line=13
+```markdown
+# ✅ Tasks Atômicas
+
+## 🏗️ Fase 1: Fundação
+- [ ] **TASK-01**: [Descrição]
+  - *Verify*: [Comando ou teste de validação]
+
+## 💻 Fase 2: Implementação
+- [ ] **TASK-02**: [Descrição]
+  - *Verify*: [Comando ou teste de validação]
+
+## 🧪 Fase 3: Hardening & QA
+- [ ] **TASK-03**: [Descrição]
+  - *Verify*: [Comando ou teste de validação]
+
+```
+CHUNK_END id=7cde61057f28_c001
+FILE_END id=file_7cde61057f28
+
+---
+<a id="file_df91d6111d17"></a>
+FILE_START id=file_df91d6111d17 path=.specs/features/_template_operacional_sprint/CHECKLIST.md domain=docs lang=markdown lines=36 bytes=1263 mtime=2026-05-01T00:48:01.126371+00:00 sha1=d36d7bd338af53b67530c2039e43f08f10056984
+CHUNK_START id=df91d6111d17_c001 start_line=1 end_line=36
+```markdown
+# CHECKLIST Sprint-Based (Execucao)
+
+## A. Bootstrap
+- [ ] Pasta da feature criada em `.specs/features/[feature_id]/`
+- [ ] `spec.md`, `tasks.md`, `STATE.md`, `design.md` criados
+- [ ] `contract_mode: sprint_based` definido
+- [ ] `current_sprint: sprint_01` definido
+- [ ] Bloco `sprints.sprint_01` presente
+- [ ] `type: standard` ausente
+
+## B. Rito de Inicio
+- [ ] `git status --short` sem saida
+- [ ] `start_hash` registrado no `STATE.md`
+- [ ] `captured_at` e `captured_by` preenchidos
+- [ ] baseline registrado no `JOURNAL.md`
+
+## C. Escopo
+- [ ] `scope_allow` da sprint atual definido
+- [ ] `scope_deny` definido quando necessario
+- [ ] sem alteracoes fora do escopo
+
+## D. Pre-close Self-Audit
+- [ ] `spec.md`, `tasks.md`, `STATE.md` coerentes
+- [ ] criterios de aceite atualizados
+- [ ] se tasks da sprint atual estao concluidas, `acceptance` no `spec.md` esta marcado (`[x]`)
+- [ ] evidencia no `JOURNAL.md` ou `HARNESS_LOG.md`
+- [ ] validacao executada (`context:validate` ou equivalente)
+
+## E. Fechamento
+- [ ] `qa_signoff: true` na sprint atual
+- [ ] harness PASS
+- [ ] arvore Git limpa
+- [ ] nenhum conflito entre narrativa e estado
+- [ ] metadados de `RULES.md` e `MASTER_FLOW.md` atualizados
+
+Se qualquer item falhar, manter status `IN_PROGRESS`.
+
+```
+CHUNK_END id=df91d6111d17_c001
+FILE_END id=file_df91d6111d17
+
+---
+<a id="file_dea2c04e539b"></a>
+FILE_START id=file_dea2c04e539b path=.specs/features/_template_operacional_sprint/STATE.md domain=docs lang=markdown lines=39 bytes=759 mtime=2026-05-01T00:15:03.531344+00:00 sha1=f07e02dcdff8057056c9f8429aaa394c4268e709
+CHUNK_START id=dea2c04e539b_c001 start_line=1 end_line=39
+```markdown
+---
+status: 🚧 IN_PROGRESS
+updated: YYYY-MM-DD HH:MM
+detail: "Rito de inicio executado."
+policy_profile: hybrid
+current_sprint: sprint_01
+start_hash: "<git-hash>"
+captured_at: "YYYY-MM-DD HH:MM:SS"
+captured_by: "@spec-driver"
+qa_checkpoint: false
+qa_signoff: false
+---
+
+# STATE: [NOME_DA_FEATURE]
+
+## Logs de Decisao
+- [YYYY-MM-DD HH:MM] Bootstrap inicial da feature.
+
+## sprint_01
+start_hash: <git-hash>
+captured_at: YYYY-MM-DD HH:MM
+captured_by: @spec-driver
+status: IN_PROGRESS
+policy_profile: hybrid
+impact_snapshot:
+  files_changed: 0
+  churn_added: 0
+  churn_removed: 0
+  impact_score: 0
+gates:
+  hard_failed: []
+  soft_triggered: []
+exceptions: []
+unblock_history: []
+qa_checkpoint:
+  signed: false
+  signed_by: null
+  signed_at: null
+  evidence: []
+
+```
+CHUNK_END id=dea2c04e539b_c001
+FILE_END id=file_dea2c04e539b
+
+---
+<a id="file_e8d353f63af3"></a>
+FILE_START id=file_e8d353f63af3 path=.specs/features/_template_operacional_sprint/design.md domain=docs lang=markdown lines=14 bytes=217 mtime=2026-05-01T00:15:23.052977+00:00 sha1=7e45caa834e18925a08b6b30210051be577ddf0b
+CHUNK_START id=e8d353f63af3_c001 start_line=1 end_line=14
+```markdown
+# Design: [NOME_DA_FEATURE]
+
+## Contexto
+[Contexto tecnico da feature]
+
+## Decisao Tecnica
+- [Decisao principal]
+
+## Trade-offs
+- [Trade-off 1]
+- [Trade-off 2]
+
+## Compatibilidade
+- [Impacto em fluxo standard/sprint]
+
+```
+CHUNK_END id=e8d353f63af3_c001
+FILE_END id=file_e8d353f63af3
+
+---
+<a id="file_6c7ec05b2f9e"></a>
+FILE_START id=file_6c7ec05b2f9e path=.specs/features/_template_operacional_sprint/spec.md domain=docs lang=markdown lines=44 bytes=1136 mtime=2026-05-01T00:14:50.952844+00:00 sha1=257cb5f264589b348ea67d4669db37d71866919d
+CHUNK_START id=6c7ec05b2f9e_c001 start_line=1 end_line=44
+```markdown
+---
+contract_version: 2.5.2
+parties: ["@spec-driver", "@qa-validator"]
+contract_mode: sprint_based
+current_sprint: sprint_01
+policy_profile: hybrid
+plan_source: "[CAMINHO_DO_PLANO]"
+qa_signoff: false
+signed_by: null
+
+sprints:
+  sprint_01:
+    goal: "[Objetivo da Sprint 01]"
+    scope_allow:
+      - ".context/brain/RULES.md"
+      - ".context/brain/MASTER_FLOW.md"
+      - ".specs/features/[NOME_DA_FEATURE]/spec.md"
+      - ".specs/features/[NOME_DA_FEATURE]/tasks.md"
+      - ".specs/features/[NOME_DA_FEATURE]/STATE.md"
+      - ".context/maintenance/JOURNAL.md"
+      - ".context/maintenance/HARNESS_LOG.md"
+    scope_deny: []
+    acceptance:
+      - "[ ] Criterio 1"
+      - "[ ] Criterio 2"
+    qa_signoff: false
+
+  sprint_02:
+    goal: "[Objetivo da Sprint 02]"
+    scope_allow: []
+    scope_deny: []
+    acceptance: []
+    qa_signoff: false
+---
+
+# Spec: [NOME_DA_FEATURE]
+> Modo: Sprint-based
+
+## Objetivo
+[Descricao objetiva da feature]
+
+## Regras de Execucao
+- Fechamento de sprint exige `qa_signoff: true` no bloco da sprint.
+- Fechamento global exige consistencia entre `spec.md`, `tasks.md`, `STATE.md` e arvore Git limpa.
+
+```
+CHUNK_END id=6c7ec05b2f9e_c001
+FILE_END id=file_6c7ec05b2f9e
+
+---
+<a id="file_f623b71a536c"></a>
+FILE_START id=file_f623b71a536c path=.specs/features/_template_operacional_sprint/tasks.md domain=docs lang=markdown lines=17 bytes=504 mtime=2026-05-01T00:15:14.384020+00:00 sha1=9c1094e39b643e8b08f4e048038502dd0bed6bab
+CHUNK_START id=f623b71a536c_c001 start_line=1 end_line=17
+```markdown
+# Tasks: [NOME_DA_FEATURE]
+
+## Fase 0: Rito de Inicio
+- [ ] TASK-00: Capturar baseline (`start_hash`, `captured_at`, `captured_by`).
+  - Verify: Estado registrado em `STATE.md` e `JOURNAL.md`.
+- [ ] TASK-00B: Confirmar `git status --short` limpo.
+  - Verify: Sem saida no comando.
+
+## Sprint 01
+- [ ] TASK-01: [Descricao da tarefa]
+  - Verify: [Comando/teste]
+- [ ] TASK-02: [Descricao da tarefa]
+  - Verify: [Comando/teste]
+
+## Sprint 02
+- [ ] TASK-03: [Descricao da tarefa]
+  - Verify: [Comando/teste]
+
+```
+CHUNK_END id=f623b71a536c_c001
+FILE_END id=file_f623b71a536c
+
+---
+<a id="file_c6539441c702"></a>
+FILE_START id=file_c6539441c702 path=.specs/features/contract_sprints_v2_safe/STATE.md domain=docs lang=markdown lines=71 bytes=1747 mtime=2026-04-30T21:57:56.298068+00:00 sha1=3bdcbf4d866633bf8ea154e3f4a604b1d8b4d973
+CHUNK_START id=c6539441c702_c001 start_line=1 end_line=71
+```markdown
+---
+status: ✅ PASSED
+updated: 2026-04-30 18:57
+detail: All checks passed
+---
+
+# 🧠 STATE: Evolução Contract Sprints
+
+## 📝 Logs de Decisão & Fatos da Sessão
+- 2026-04-30 17:15: Início da Onda 01.
+- 2026-04-30 18:25: Onda 03 encerrada.
+- 2026-04-30 18:51: Início da Onda 05.
+- 2026-04-30 18:56: **Missão Concluída**. Framework polimórfico institucionalizado.
+
+## ✅ Progresso Técnico (Checkpoint)
+- [x] Contrato Spec (Dual Mode).
+- [x] Harness Engine (HG04/C2 Enforced).
+- [x] QA Validator (Subagente Integrado).
+- [x] Impacto Incremental (D1/D2 Automatizados).
+- [x] Proteção de Cleanup (E1).
+- [x] Documentação SSOT (E3).
+
+## sprint_01
+start_hash: b8def95b92a759b5020cc69c6c2779349eab2ef1
+status: PASSED
+qa_checkpoint:
+  signed: true
+  signed_by: @qa-validator
+  signed_at: 2026-04-30 17:20
+
+## sprint_02
+start_hash: ca3e14876b052d9a9f939e6a88b56f5c88b5e9f5
+status: PASSED
+qa_checkpoint:
+  signed: true
+  signed_by: @qa-validator
+  signed_at: 2026-04-30 17:58
+
+## sprint_03
+start_hash: ce4ac299dd7704f24e7f086ac1bf842450a741ff
+status: PASSED
+qa_checkpoint:
+  signed: true
+  signed_by: @qa-validator
+  signed_at: 2026-04-30 18:25
+
+## sprint_04
+start_hash: 3fe9cdc5fd57a80d5a23649c75de0f4a621d86e8
+status: PASSED
+impact_snapshot:
+  files_changed: 5
+  churn_added: 106
+  churn_removed: 18
+qa_checkpoint:
+  signed: true
+  signed_by: @qa-validator
+  signed_at: 2026-04-30 18:43
+
+## sprint_05
+start_hash: f3b2ec1a2d490459c215bddbf6c252d919543854
+status: PASSED
+impact_snapshot:
+  files_changed: 9
+  churn_added: 135
+  churn_removed: 40
+impact_score: 3.5
+qa_checkpoint:
+  signed: true
+  signed_by: @qa-validator
+  signed_at: 2026-04-30 18:56
+  evidence: ["Cleanup Protection Active", "SSOT Docs Updated", "Whitelist Core Enforced"]
+
+```
+CHUNK_END id=c6539441c702_c001
+FILE_END id=file_c6539441c702
+
+---
+<a id="file_f26b9f244534"></a>
+FILE_START id=file_f26b9f244534 path=.specs/features/contract_sprints_v2_safe/spec.md domain=docs lang=markdown lines=53 bytes=2924 mtime=2026-04-30T21:56:40.332350+00:00 sha1=6181df8f9bf6e547f14de144d58d7e35484c7ab8
+CHUNK_START id=f26b9f244534_c001 start_line=1 end_line=53
+```markdown
+---
+contract_version: 2.5.2
+parties: ["@spec-driver", "@qa-validator"]
+contract_mode: sprint_based
+current_sprint: sprint_05
+policy_profile: hybrid
+plan_source: "planos/mudanca_specdriven/plano_v2_caminho_seguro_falsh.md"
+qa_signoff: true
+signed_by: "@qa-validator"
+
+sprints:
+  sprint_01:
+    goal: "Fundação: Contrato e Template"
+    scope_allow: [".context/_scripts/harness_runner.py", ".specs/_template.md", ".context/maintenance/HARNESS_LOG.md", "planos/mudanca_specdriven/", ".specs/features/contract_sprints_v2_safe/STATE.md", ".specs/features/contract_sprints_v2_safe/spec.md", ".specs/features/contract_sprints_v2_safe/tasks.md"]
+    acceptance:
+      - "[x] Template atualizado"
+    qa_signoff: true
+
+  sprint_02:
+    goal: "Harness Runner: Dual Mode & Hard Gates"
+    scope_allow: [".context/_scripts/harness_runner.py", ".specs/_template.md", ".context/maintenance/HARNESS_LOG.md", "planos/mudanca_specdriven/", ".specs/features/contract_sprints_v2_safe/STATE.md", ".specs/features/contract_sprints_v2_safe/spec.md", ".specs/features/contract_sprints_v2_safe/tasks.md"]
+    acceptance:
+      - "[x] Harness polimórfico e hardened"
+      - "[x] Enforcement real HG04"
+    qa_signoff: true
+
+  sprint_03:
+    goal: "QA Validator: Assinatura Incremental & Bloqueio Final"
+    scope_allow: [".agent/subagents/qa-validator.md", ".context/_scripts/harness_runner.py", ".specs/features/contract_sprints_v2_safe/STATE.md", ".specs/features/contract_sprints_v2_safe/spec.md", ".specs/features/contract_sprints_v2_safe/tasks.md", ".context/maintenance/HARNESS_LOG.md"]
+    acceptance:
+      - "[x] Subagente QA instruído sobre modo sprint"
+      - "[x] Bloqueio de feature_done implementado"
+    qa_signoff: true
+
+  sprint_04:
+    goal: "Impacto Incremental: Captura Automática de start_hash"
+    scope_allow: [".context/_scripts/harness_runner.py", ".specs/features/contract_sprints_v2_safe/STATE.md", ".specs/features/contract_sprints_v2_safe/spec.md", ".specs/features/contract_sprints_v2_safe/tasks.md", ".context/maintenance/HARNESS_LOG.md"]
+    acceptance:
+      - "[x] Implementar captura automática de impacto (D1)"
+      - "[x] Testar diff incremental (D2)"
+    qa_signoff: true
+
+  sprint_05:
+    goal: "Higiene & SSOT: Proteção de Cleanup e Docs Mestre"
+    scope_allow: [".context/_scripts/harness_runner.py", ".context/_scripts/cleanup_specs.py", ".context/brain/MASTER_FLOW.md", ".context/brain/RULES.md", ".context/maintenance/JOURNAL.md", ".specs/features/contract_sprints_v2_safe/STATE.md", ".specs/features/contract_sprints_v2_safe/spec.md", ".specs/features/contract_sprints_v2_safe/tasks.md", ".context/maintenance/HARNESS_LOG.md"]
+    acceptance:
+      - "[x] Adaptar cleanup_specs.py para proteger sprint ativa"
+      - "[x] Atualizar MASTER_FLOW e RULES para v2-Safe"
+    qa_signoff: true
+---
+
+# 📄 Spec: Evolução Contract Sprints (v2-Safe)
+> **Modo:** Sprint-based Finalizado (CONCLUÍDO)
+
+```
+CHUNK_END id=f26b9f244534_c001
+FILE_END id=file_f26b9f244534
+
+---
+<a id="file_4f8d9b00b4a4"></a>
+FILE_START id=file_4f8d9b00b4a4 path=.specs/features/contract_sprints_v2_safe/tasks.md domain=docs lang=markdown lines=38 bytes=1984 mtime=2026-04-30T21:56:59.898711+00:00 sha1=29ee1fadffa2a76afa592781631ffcde707d7af6
+CHUNK_START id=4f8d9b00b4a4_c001 start_line=1 end_line=38
+```markdown
+# ✅ Tasks: Evolução Contract Sprints
+
+## 🏗️ Onda 1: Contrato e Template (Fase A)
+- [x] **TASK-01 (A1)**: Atualizar `.specs/_template.md` para suportar dual mode (Standard/Sprint-based).
+- [x] **TASK-02 (A2)**: Incluir exemplo sprint-based mínimo válido no template.
+- [x] **TASK-03 (A3)**: Documentar obrigatoriedade de `scope_allow/scope_deny` no template.
+- [x] **Verify A**: Validar que o parser atual do framework não quebra com o novo template.
+
+## 💻 Onda 2: Harness Runner (Fase B)
+- [x] **TASK-04 (B1)**: Implementar detector de modo no `harness_runner.py`.
+- [x] **TASK-05 (B2)**: Encapsular validação `standard` em função dedicada.
+- [x] **TASK-06 (B3)**: Criar validador estrutural sprint-based.
+- [x] **TASK-07 (B4)**: Implementar engine de Hard/Soft gates (HG01-07, SG01-05).
+- [x] **HARDENING (B-Pass)**: 
+  - [x] Corrigir parser de start_hash para headings Markdown.
+  - [x] Flexibilizar HG04 para sprint ativa.
+  - [x] Sincronizar Whitelist (Remover legado).
+  - [x] Normalização total MiMo no STATE.md.
+  - [x] Consolidação Git (Add baseline).
+- [x] **Verify B**: Auditoria Codex validada com sucesso.
+
+## 🧪 Onda 3: QA Validator (Fase C)
+- [x] **TASK-08 (C1)**: Revisar prompt do subagente para checkpoint incremental.
+- [x] **TASK-C2**: Implementar bloqueio de `feature_done` global sem signoff de sprint (C2).
+- [x] **Verify C**: Teste de migué e assinatura parcial validado.
+
+## 📊 Onda 4: Impacto Incremental (Fase D)
+- [x] **TASK-09 (D1)**: Captura de `start_hash` no início da sprint.
+- [x] **TASK-10 (D2)**: Implementar diff incremental (`start_hash..HEAD`).
+- [x] **Verify D**: Teste de métricas de churn por sprint validado.
+
+## 🧹 Onda 5: Higiene & SAM (Fase E)
+- [x] **TASK-11 (E1)**: Adaptar `cleanup_specs.py` (proteger sprint ativa).
+- [x] **TASK-12 (E3)**: Atualizar documentação SSOT (MASTER_FLOW, RULES).
+- [x] **Verify E**: Pipeline completo sem regressão.
+
+---
+**MISSÃO CONCLUÍDA: H.O.K FORGE v2.5.2 HARDENED**
+
+```
+CHUNK_END id=4f8d9b00b4a4_c001
+FILE_END id=file_4f8d9b00b4a4
+
+---
+<a id="file_c1d55217ac2a"></a>
+FILE_START id=file_c1d55217ac2a path=.specs/features/governance_rules_hardening/STATE.md domain=docs lang=markdown lines=35 bytes=1713 mtime=2026-05-01T03:55:07.386875+00:00 sha1=dace4851d4f3fc90a6c18fefd9c98c0936ffddf9
+CHUNK_START id=c1d55217ac2a_c001 start_line=1 end_line=35
+```markdown
+---
+status: ✅ COMPLETED
+updated: 2026-05-01 01:00
+detail: "Hardening V5 concluído. Auditoria finalizada. Mapa RX Global v2 institutionalizado."
+policy_profile: hybrid
+current_sprint: sprint_08
+start_hash: "4b16b4c935ee57633e76d91f42289c026021200a"
+final_hash: "bf02a42"
+captured_at: "2026-05-01 01:00:00 (BRT)"
+captured_by: "@qa-validator"
+qa_checkpoint: true
+qa_signoff: true
+---
+
+# 🧠 STATE: Governance Rules Hardening
+
+## 📝 Logs de Decisão & Fatos da Sessão
+- [2026-05-01 01:00]: Feature selada. Auditoria das Sprints 05-08 concluída. Mapa RX V2 integrado.
+- [2026-04-30 23:26]: Sprint 07 Concluída. Auditoria SAM endurecida com detecção de Fraude Narrativa e Modificação Silenciosa.
+- [2026-04-30 23:14]: Sprint 06 Concluída. Protocolo Hardened Closing (V5) e Transição Atômica implementados.
+- [2026-04-30 22:56]: Sprint 05 Concluída. Enforcement de Metadata Freshness e Acceptance Sync ativos.
+- [2026-04-30 21:50]: Sprint 04 Concluída. Sincronização institucional (Harness, Glossários, Prompts) finalizada.
+- [2026-04-30 19:10]: Sprint 03 Concluída. Runbook, Advisory Mode e log de fricção integrados.
+- [2026-04-30 02:40]: Sprint 02 Concluída. Integridade SSOT e sanidade de scripts validados.
+- [2026-04-30 00:05]: Sprint 01 Concluída. Regras canônicas e rito de pre-close estabelecidos.
+
+## 🚀 Progresso Atual
+- `[x]` Sprint 01: Regras Canônicas
+- `[x]` Sprint 02: Sanidade de Scripts
+- `[x]` Sprint 03: Telemetria de Fricção
+- `[x]` Sprint 04: Sincronização Institucional
+- `[x]` Sprint 05: Enforcement Automático (Músculos)
+- `[x]` Sprint 06: Hardening de Agenciamento (Nervos)
+- `[x]` Sprint 07: Hardening SAM & Telemetria
+- `[x]` Sprint 08: RX Communications
+
+```
+CHUNK_END id=c1d55217ac2a_c001
+FILE_END id=file_c1d55217ac2a
+
+---
+<a id="file_99c81edef6ff"></a>
+FILE_START id=file_99c81edef6ff path=.specs/features/governance_rules_hardening/design.md domain=docs lang=markdown lines=13 bytes=268 mtime=2026-04-30T16:43:01.443053+00:00 sha1=757fdbf8cd47b545f182a0abf5b37e39969c1f30
+CHUNK_START id=99c81edef6ff_c001 start_line=1 end_line=13
+````markdown
+# 🎨 Design & Arquitetura
+
+## 📐 Diagramas (Mermaid)
+```mermaid
+graph TD
+    A[Componente A] --> B[Componente B]
+```
+
+## 🏗️ Decisões Técnicas
+- **Abordagem:** [Explicação da escolha técnica]
+
+## 🧩 Modificações Estruturais
+- [ ] [Arquivo/Componente]
+
+````
+CHUNK_END id=99c81edef6ff_c001
+FILE_END id=file_99c81edef6ff
+
+---
+<a id="file_58b215a340da"></a>
+FILE_START id=file_58b215a340da path=.specs/features/governance_rules_hardening/spec.md domain=docs lang=markdown lines=149 bytes=6085 mtime=2026-05-01T03:00:10.790352+00:00 sha1=47b62ce4c991aa8d8cbd2932ebea9510402059d0
+CHUNK_START id=58b215a340da_c001 start_line=1 end_line=149
+```markdown
+---
+contract_version: 2.5.2
+parties: ["@spec-driver", "@qa-validator"]
+contract_mode: sprint_based
+current_sprint: sprint_08
+policy_profile: hybrid
+plan_source: planos/governance_rules_hardening/plano_governance_rules_hardening.md
+qa_signoff: true
+signed_by: "@qa-validator"
+
+sprints:
+  sprint_01:
+    goal: "Implementar Regras Canônicas (CLOSE_WAVE, ANTI_FALSE_PASS) e rito de Pre-Close Audit."
+    scope_allow:
+      - ".context/brain/RULES.md"
+      - ".context/brain/MASTER_FLOW.md"
+      - ".specs/features/governance_rules_hardening/spec.md"
+      - ".specs/features/governance_rules_hardening/tasks.md"
+      - ".specs/features/governance_rules_hardening/STATE.md"
+      - ".context/maintenance/JOURNAL.md"
+      - ".context/maintenance/HARNESS_LOG.md"
+    scope_deny: []
+    acceptance:
+      - "[x] Regras CLOSE_WAVE e ANTI_FALSE_PASS publicadas no RULES.md"
+      - "[x] Rito Pre-Close Audit inserido no MASTER_FLOW.md"
+      - "[x] Passo Pre-close Self-Audit adicionado ao workflow do spec-driver"
+      - "[x] Exemplos PASS/FAIL incluídos no RULES.md"
+    qa_signoff: true
+    signed_by: "@qa-validator"
+
+  sprint_02:
+    goal: "Integridade SSOT (MIMO_STATE_INTEGRITY) e Sanidade de Script (CRITICAL_SCRIPT_SANITY)."
+    scope_allow:
+      - ".context/brain/RULES.md"
+      - ".context/brain/MASTER_FLOW.md"
+      - ".specs/features/governance_rules_hardening/spec.md"
+      - ".specs/features/governance_rules_hardening/tasks.md"
+      - ".specs/features/governance_rules_hardening/STATE.md"
+      - ".context/maintenance/JOURNAL.md"
+      - ".context/maintenance/HARNESS_LOG.md"
+    scope_deny: []
+    acceptance:
+      - "[x] Regra MIMO_STATE_INTEGRITY (Integridade de Estado) formalizada no RULES.md"
+      - "[x] Regra CRITICAL_SCRIPT_SANITY (Sanidade de Scripts) formalizada no RULES.md"
+      - "[x] Mapeamento de sanidade de scripts inserido no MASTER_FLOW.md"
+      - "[x] Metadados de freshness atualizados em ambos os arquivos normais"
+    qa_signoff: true
+    signed_by: "@qa-validator"
+
+  sprint_03:
+    goal: "Runbook & Métricas Operacionais com modo advisory para fricção de governança."
+    scope_allow:
+      - ".context/brain/MASTER_FLOW.md"
+      - ".context/_scripts/validate_context.py"
+      - ".context/maintenance/HARNESS_LOG.md"
+      - ".specs/features/governance_rules_hardening/spec.md"
+      - ".specs/features/governance_rules_hardening/tasks.md"
+      - ".specs/features/governance_rules_hardening/STATE.md"
+      - ".context/maintenance/JOURNAL.md"
+    scope_deny: []
+    acceptance:
+      - "[x] Ordem cronológica do JOURNAL tratada como WARN (não bloqueante)"
+      - "[x] Disciplina de `STATE.updated` reforçada no checklist (datetime completo)"
+      - "[x] Eventos `[GOVERNANCE-FRICTION]` automatizados no HARNESS_LOG.md"
+    qa_signoff: true
+    signed_by: "@qa-validator"
+
+  sprint_04:
+    goal: "Sincronização Institucional: Glossários, Bibliotecas e Runbooks finais."
+    scope_allow:
+      - ".context/brain/MASTER_FLOW.md"
+      - ".context/brain/RULES.md"
+      - ".context/maintenance/JOURNAL.md"
+      - ".specs/features/governance_rules_hardening/spec.md"
+      - ".specs/features/governance_rules_hardening/tasks.md"
+      - ".specs/features/governance_rules_hardening/STATE.md"
+    scope_deny: []
+    acceptance:
+      - "[x] HARNESS_REGISTRY.md e glossários atualizados"
+      - "[x] PROMPT_LIBRARY.md atualizada com padrões de hardening"
+    qa_signoff: true
+    signed_by: "@qa-validator"
+
+  sprint_05:
+    goal: "Enforcement Automático (Músculos): Implementar validações automáticas em validate_context.py."
+    scope_allow:
+      - ".context/_scripts/validate_context.py"
+      - ".specs/features/governance_rules_hardening/spec.md"
+      - ".specs/features/governance_rules_hardening/tasks.md"
+      - ".specs/features/governance_rules_hardening/STATE.md"
+      - ".context/maintenance/JOURNAL.md"
+    scope_deny: []
+    acceptance:
+      - "[x] Validação de meta-data freshness bloqueante (Fail-Closed)"
+      - "[x] Validação de sync de acceptance/tasks bloqueante"
+    qa_signoff: true
+    signed_by: "@qa-validator"
+
+  sprint_06:
+    goal: "Hardening de Agenciamento (Nervos): Atualizar papéis e ritos de fechamento."
+    scope_allow:
+      - ".context/brain/AGENT_REGISTRY.md"
+      - ".context/brain/MASTER_FLOW.md"
+      - ".specs/features/governance_rules_hardening/spec.md"
+      - ".specs/features/governance_rules_hardening/tasks.md"
+      - ".specs/features/governance_rules_hardening/STATE.md"
+    scope_deny: []
+    acceptance:
+      - "[x] Papéis spec-driver e qa-validator atualizados com Hardened Closing"
+      - "[x] Implementada transição atômica para IN_PROGRESS via protocolo"
+    qa_signoff: false
+    signed_by: null
+
+  sprint_07:
+    goal: "Hardening SAM & Telemetria: Detecção de fraude narrativa e métricas."
+    scope_allow:
+      - ".context/_scripts/workflow_journal_auditor.py"
+      - ".context/brain/AGENT_REGISTRY.md"
+      - ".context/maintenance/HARNESS_LOG.md"
+    scope_deny: []
+    acceptance:
+      - "[x] Detecção de Fraude Narrativa implementada no auditor"
+      - "[x] Schema de telemetria [GOVERNANCE-FRICTION] integrado"
+    qa_signoff: false
+    signed_by: null
+
+  sprint_08:
+    goal: "Visão: RX Communications e Documentação de Transparência."
+    scope_allow:
+      - ".context/maintenance/rx-communications.md"
+      - ".context/brain/MASTER_FLOW.md"
+      - ".context/brain/FILE_GLOSSARY.md"
+    scope_deny: []
+    acceptance:
+      - "[x] Arquivo rx-communications.md criado e populado"
+      - "[x] Referências cruzadas inseridas na governança central"
+    qa_signoff: true
+    signed_by: "@qa-validator"
+---
+
+# Spec: Governance Rules Hardening
+> Modo: Sprint-based (Hardened)
+
+## Objetivo
+Transformar aprendizados do pós-missão em governança executável end-to-end, eliminando fraudes narrativas e incoerências de fechamento.
+
+## Regras de Execução
+- Fechamento de sprint exige `qa_signoff: true` no bloco da sprint.
+- Fechamento global exige consistência entre `spec.md`, `tasks.md`, `STATE.md` e árvore Git limpa.
+
+```
+CHUNK_END id=58b215a340da_c001
+FILE_END id=file_58b215a340da
+
+---
+<a id="file_4f9bb146f536"></a>
+FILE_START id=file_4f9bb146f536 path=.specs/features/governance_rules_hardening/tasks.md domain=docs lang=markdown lines=42 bytes=2324 mtime=2026-05-01T02:59:57.318603+00:00 sha1=6233cec933839e53214f90017aeefeddba9c2ba3
+CHUNK_START id=4f9bb146f536_c001 start_line=1 end_line=42
+```markdown
+# ✅ Tasks: Governance Rules Hardening
+
+## 🏗️ Fase 0: Rito de Início (Ovo)
+- [x] **TASK-00**: Executar rito de início (start_hash, captured_at, captured_by).
+  - *Verify*: Registro no STATE.md e JOURNAL.md.
+
+## 🏗️ Sprint 01: Regras Canônicas & Self-Audit
+- [x] **TASK-01**: Inserir `CLOSE_WAVE` + `ANTI_FALSE_PASS` em RULES.md.
+- [x] **TASK-02**: Inserir `Pre-Close Audit` em MASTER_FLOW.md.
+- [x] **TASK-03**: Adicionar passo `Pre-close Self-Audit` no workflow do @spec-driver.
+
+## 🏗️ Sprint 02: Integridade SSOT & Scripts Críticos
+- [x] **TASK-04**: Formalizar `MIMO_STATE_INTEGRITY` e `CRITICAL_SCRIPT_SANITY` no RULES.md.
+- [x] **TASK-05**: Implementar política de edição cirúrgica obrigatória.
+
+## 🏗️ Sprint 03: Runbook & Métricas Operacionais
+- [x] **TASK-06**: Inserir checklist anti-reincidência no MASTER_FLOW.md.
+- [x] **TASK-07**: Definir métricas mínimas por onda.
+- [x] **TASK-07A**: Adicionar checagem de ordem cronológica do `JOURNAL.md` como WARN (advisory).
+- [x] **TASK-07B**: Reforçar disciplina de `updated` no `STATE.md` com datetime completo.
+- [x] **TASK-07C**: Implementar emissão automática de `[GOVERNANCE-FRICTION]` no `HARNESS_LOG.md`.
+
+## 🏗️ Sprint 04: Sincronização Institucional
+- [x] **TASK-08**: Atualizar HARNESS_REGISTRY.md e glossários (Script/File).
+- [x] **TASK-09**: Atualizar PROMPT_LIBRARY.md.
+
+## 🏗️ Sprint 05: Enforcement Automático (Músculos)
+- [x] **TASK-10**: Implementar validação automática de meta-data freshness bloqueante.
+- [x] **TASK-11**: Implementar `check_sprint_acceptance_sync` como erro bloqueante.
+
+## 🏗️ Sprint 06: Hardening de Agenciamento (Nervos)
+- [x] **TASK-12**: Atualizar papéis spec-driver e qa-validator com protocolo Hardened Closing.
+- [x] **TASK-13**: Implementar transição atômica para `IN_PROGRESS` via código.
+
+## 🏗️ Sprint 07: Hardening SAM & Telemetria
+- [x] **TASK-14**: Implementar detecção de fraude narrativa no `workflow_journal_auditor.py`.
+- [x] **TASK-15**: Implantar schema de telemetria `[GOVERNANCE-FRICTION]`.
+- [x] **TASK-16**: Atualizar AGENT_REGISTRY.md.
+
+## 🏗️ Sprint 08: Visão: RX Communications
+- [x] **TASK-17**: Criar `.context/maintenance/rx-communications.md`.
+- [x] **TASK-18**: Referenciar explicitamente no MASTER_FLOW.md e FILE_GLOSSARY.md.
+
+```
+CHUNK_END id=4f9bb146f536_c001
+FILE_END id=file_4f9bb146f536
 
 ---
 <a id="file_95dabcdf3543"></a>

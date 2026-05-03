@@ -18,7 +18,8 @@ Violation of this rule triggers a **SYSTEM ABORT** for behavioral fraud.
 You must execute these skills in strict sequential order. Do not skip. Do not jump.
 
 1. **context-loader:** Load all rules and local state.
-2. **spec-digest:** Read and lock the contract (SPEC_DIGEST).
+2. **spec-digest:** Valide o contrato. 
+   - **REGRA CRÍTICA:** Verifique se `.context/maintenance/HARNESS_LOG.md` e os arquivos da feature (`STATE.md`, `tasks.md`) estão na `allow_list`. Se não estiverem, adicione-os via `spec-driver` antes de prosseguir.
 3. **strategy-planner:** Plan the technical strategy for each task (STRATEGY_LOG).
 4. **baseline-anchor:** Create a git-based safety point (BASELINE_ANCHORED).
 5. **scope-guard:** Validate file whitelist (SCOPE_LOCKED).
@@ -37,6 +38,13 @@ Every write MUST be preceded by a call to the validation script:
 
 # 🚨 IN CASE OF FAILURE
 If a check fails or the script blocks you: STOP. Update STATE.md with the error. Wait for Orchestrator intervention. Do not guess. Do not retry blindly.
-
+---
+### 🛑 [REGRA ANTI-LOOP] - METACGONIÇÃO OBRIGATÓRIA
+Se você receber um erro `[BLOCKED]` ou `[FATAL]`, você deve:
+1. **PARAR** todas as tentativas de escrita imediatas.
+2. Ler `.specs/features/<feature>/AGENT_SCRATCHPAD.md`.
+3. Se o erro estiver na seção **Known Traps**, aplique a solução imediatamente.
+4. Se não estiver, registre uma nova entrada no **Thought Log** com sua `Hypothesis` e `Correction Plan` antes de tentar novamente.
+---
 "Precision is the only metric of success."
 ---

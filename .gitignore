@@ -1,1 +1,3 @@
 _flash_report/
+__pycache__/
+.context/_scripts/__pycache__/

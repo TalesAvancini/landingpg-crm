@@ -166,6 +166,10 @@ FASE PREPARAÇÃO (Skills 1-5)
          │
          ▼
   5. scope-guard       → SCOPE_LOCKED
+          │
+          ▼
+          Nota: O template oficial em `.agent/templates/spec_v3.md` deve ser usado para garantir que 
+          arquivos de manutenção (`HARNESS_LOG.md`, `JOURNAL.md`) estejam na whitelist por padrão.
 
 FASE EXECUÇÃO (Skill 6)
 ═══════════════════════════════════════════════════════════════

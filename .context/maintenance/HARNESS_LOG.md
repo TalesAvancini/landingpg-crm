@@ -477,3 +477,166 @@ Status: Ativo
 
 ## [GOVERNANCE-FRICTION] GF-STATE-FRESHNESS | 2026-04-30 22:35
 - **Detalhe:** contract_sprints_v2_safe: status desatualizado (2026-04-30 18:57 < 2026-04-30 22:35)
+
+## [HARNESS-FAIL] Report | spec:gov_chain_v3_phase2_dryrun
+- **Detalhe:** handoff: Handoffs malformados: ['Handoff incompleto: ** `@spec-driver` ⮕ `@qa-valid'] | sprint_contract: [HG03] Modo sprint_based exige campo current_sprint | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'new_context_path' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'new_context_path': Arquivo '.context/maintenance/rx-anatomy.md' não foi propagado (ausente no diff).
+  - Regra 'new_context_path': Checkbox [x] para '.context/maintenance/rx-anatomy.md' ausente ou desmarcado no Journal.
+  - Contrato incompleto. Detectado: executor='', validator=''.
+  - Status de validação inválido: ''. Esperado 'READY TO COMMIT'.
+  - Modificação Silenciosa: Arquivo 'SDD_Report.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/monitoring/PROJECT_INDEX.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'contexto_v2.5.2.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '_flash_report/log_extracao_v2.5.2.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'contexto_v2.5.2_toc.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'planos/SSD-Chain/chain_specdriver.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/_scripts/__pycache__/write_with_validation.cpython-314.pyc' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'planos/SSD-Chain/RAW_SSD-Chain.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/gov_chain_v3_phase2_dryrun/STATE.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:gov_chain_v3_phase2_dryrun
+- **Detalhe:** handoff: Handoffs malformados: ['Handoff incompleto: ** `@spec-driver` ⮕ `@qa-valid'] | sprint_contract: [HG03] Modo sprint_based exige campo current_sprint | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'new_context_path' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'new_context_path': Arquivo '.context/maintenance/rx-anatomy.md' não foi propagado (ausente no diff).
+  - Regra 'new_context_path': Checkbox [x] para '.context/maintenance/rx-anatomy.md' ausente ou desmarcado no Journal.
+  - Contrato incompleto. Detectado: executor='', validator=''.
+  - Fraude Narrativa: Arquivo 'scratch/dummy_test.txt' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/gov_chain_v3_phase2_dryrun/tasks.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Modificação Silenciosa: Arquivo '.context/monitoring/PROJECT_INDEX.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'contexto_v2.5.2_toc.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'planos/SSD-Chain/RAW_SSD-Chain.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'planos/SSD-Chain/chain_specdriver.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'SDD_Report.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'contexto_v2.5.2.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/_scripts/__pycache__/write_with_validation.cpython-314.pyc' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '_flash_report/log_extracao_v2.5.2.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:gov_chain_v3_phase2_dryrun
+- **Detalhe:** handoff: Handoffs malformados: ['Handoff incompleto: ** `@spec-driver` ⮕ `@qa-valid'] | sprint_contract: [HG03] Modo sprint_based exige campo current_sprint | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'new_context_path' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'new_context_path': Arquivo '.context/maintenance/rx-anatomy.md' não foi propagado (ausente no diff).
+  - Regra 'new_context_path': Checkbox [x] para '.context/maintenance/rx-anatomy.md' ausente ou desmarcado no Journal.
+  - Contrato incompleto. Detectado: executor='', validator=''.
+  - Fraude Narrativa: Arquivo 'scratch/dummy_test.txt' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/gov_chain_v3_phase2_dryrun/tasks.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Modificação Silenciosa: Arquivo '.context/_scripts/__pycache__/write_with_validation.cpython-314.pyc' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:gov_chain_v3_phase2_dryrun
+- **Detalhe:** handoff: Handoffs malformados: ['Handoff incompleto: ** `@spec-driver` ⮕ `@qa-valid'] | sprint_contract: [HG03] Modo sprint_based exige campo current_sprint | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'new_context_path' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'new_context_path': Arquivo '.context/maintenance/rx-anatomy.md' não foi propagado (ausente no diff).
+  - Regra 'new_context_path': Checkbox [x] para '.context/maintenance/rx-anatomy.md' ausente ou desmarcado no Journal.
+  - Contrato incompleto. Detectado: executor='', validator=''.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:gov_chain_v3_phase2_dryrun
+- **Detalhe:** handoff: Handoffs malformados: ['Handoff incompleto: ** `@spec-driver` ⮕ `@qa-valid'] | sprint_contract: Contrato standard não assinado pelo @qa-validator (qa_signoff: false) | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'new_context_path' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'new_context_path': Arquivo '.context/maintenance/rx-anatomy.md' não foi propagado (ausente no diff).
+  - Regra 'new_context_path': Checkbox [x] para '.context/maintenance/rx-anatomy.md' ausente ou desmarcado no Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/gov_chain_v3_phase2_dryrun/spec.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/_scripts/__pycache__/write_with_validation.cpython-314.pyc' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:gov_chain_v3_phase2_dryrun
+- **Detalhe:** handoff: Handoffs malformados: ['Handoff incompleto: ** `@spec-driver` ⮕ `@qa-valid'] | sprint_contract: Contrato standard não assinado pelo @qa-validator (qa_signoff: false)
+
+## [HARNESS-FAIL] Report | spec:gov_chain_v3_phase2_dryrun
+- **Detalhe:** handoff: Handoffs malformados: ['Handoff incompleto: ** `@spec-driver` ⮕ `@qa-valid'] | sprint_contract: Contrato standard não assinado pelo @qa-validator (qa_signoff: false)
+
+## [HARNESS-FAIL] Report | spec:gov_chain_v3_phase2_dryrun
+- **Detalhe:** sprint_contract: Contrato standard não assinado pelo @qa-validator (qa_signoff: false)
+
+## [HARNESS-FAIL] Report | spec:gov_chain_v3_phase2_dryrun
+- **Detalhe:** sprint_contract: Modo de contrato não identificado ou malformado
+
+## [HARNESS-FAIL] Report | spec:gov_chain_v3_phase2_dryrun
+- **Detalhe:** sprint_contract: [HG03] Modo sprint_based exige campo current_sprint
+
+## [HARNESS-FAIL] Report | spec:gov_chain_v3_phase2_dryrun
+- **Detalhe:** sprint_contract: [HG06] start_hash não encontrado para sprint_01 no STATE.md (Formato esperado: ## sprint_01 
+ start_hash: ...)
+
+## [HARNESS-FAIL] Report | spec:gov_chain_v3_phase2_dryrun
+- **Detalhe:** sprint_contract: [HG01] Violação de Escopo Sprint: Arquivo '.context/maintenance/HARNESS_LOG.md' fora do planejado para sprint_01.
+
+## [HARNESS-PASS] Report | spec:gov_chain_v3_phase2_dryrun
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:gov_chain_v3_phase2_dryrun
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:gov_v3_stress_test
+- **Detalhe:** sprint_contract: [HG06] start_hash não encontrado para sprint_01 no STATE.md (Formato esperado: ## sprint_01 
+ start_hash: ...) | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Fraude Narrativa: Arquivo '.specs/features/gov_v3_stress_test/spec.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/gov_v3_stress_test/STATE.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/gov_v3_stress_test/tasks.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Modificação Silenciosa: Arquivo 'planos/SSD-Chain/RAW_SSD-Chain.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/gov_v3_stress_test/' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/monitoring/PROJECT_INDEX.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.gitignore' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'contexto_v2.5.2.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.agent/subagents/spec-driver.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/_scripts/write_with_validation.py' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'contexto_v2.5.2_toc.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'planos/SSD-Chain/chain_specdriver.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.agent/templates/' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'SDD_Report.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/gov_chain_v3_phase2_dryrun/STATE.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '"planos/SSD-Chain/Chain-Skills V3.md"' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'scratch/dummy_test.txt' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '_flash_report/log_extracao_v2.5.2.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/gov_chain_v3_phase2_dryrun/spec.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:gov_v3_stress_test
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Modificação Silenciosa: Arquivo '.context/_scripts/write_with_validation.py' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:gov_v3_stress_test
+- **Detalhe:** sprint_contract: [HG06] start_hash não encontrado para sprint_01 no STATE.md (Formato esperado: ## sprint_01 
+ start_hash: ...)
+
+## [HARNESS-PASS] Report | spec:gov_v3_stress_test
+- **Detalhe:** All contracts valid

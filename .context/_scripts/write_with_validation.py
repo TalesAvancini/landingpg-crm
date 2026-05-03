@@ -60,7 +60,10 @@ def validate_write(feature_id, task_id, file_path, line_count):
     
     file_normalized = str(Path(file_path).as_posix())
     if file_normalized not in [str(Path(p).as_posix()) for p in allowed_files]:
-        return False, f"Arquivo '{file_path}' FORA DO ESCOPO. Nao esta na allow_list."
+        hint = ""
+        if any(x in file_normalized for x in [".context/maintenance", "STATE.md", "tasks.md"]):
+            hint = " | HINT: Arquivos de governança/logs DEVEM estar explicitamente na allow_list da spec V3."
+        return False, f"Arquivo '{file_path}' FORA DO ESCOPO. Nao esta na allow_list.{hint}"
         
     # ── 6. Estrategia existe? ──
     if "## CHAIN_STRATEGY_LOG" not in state_content:
