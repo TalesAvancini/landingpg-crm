@@ -23,7 +23,8 @@ PASTAS_IGNORAR = {
     ".next", ".nuxt", ".vercel", ".netlify", ".vite", ".cache",
     ".vscode", ".idea", ".cursor", "coverage", ".pytest_cache",
     "captura_projeto", # 📝 Ignorar a própria pasta do utilitário
-    "_archive_context", "planos", "RAW", "_flash_report",
+    "_archive_context", "planos", "RAW", "_flash_report", "_arquive_features",
+    "scratch", "learnings_phase_1", "_modoLight",
 }
 
 ARQUIVOS_IGNORAR = {
