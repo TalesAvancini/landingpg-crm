@@ -694,3 +694,27 @@ Status: Ativo
 
 [FATAL] Modo STRICT: Pipeline bloqueado.
 
+
+## [HARNESS-FAIL] Report | spec:manual
+- **Detalhe:** sprint_contract: Nenhuma Spec ativa detectada. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Fraude Narrativa: Arquivo 'init_ai_project.sh' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/governance_rules_hardening/spec.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/brain/FILE_GLOSSARY.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo 'README_CONTEXT.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/brain/AGENT_REGISTRY.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/SSD_ERRORS_LEDGER.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/governance_rules_hardening/STATE.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/SDD_ERRORS_LEDGER.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/governance_rules_hardening/design.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/governance_rules_hardening/tasks.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/SDD_PLAYBOOK.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/SSD_PLAYBOOK.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/_template_operacional_sprint/CHECKLIST.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/maintenance/rx-anatomy.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Modificação Silenciosa: Arquivo '.context/maintenance/TECHNICAL_REQUIREMENTS.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+

@@ -87,6 +87,8 @@ Status: Ativo
 | :--- | :--- | :--- |
 | `features/<nome>/spec.md` | **Contrato de Código.** Define os `definition_of_done`. Exige rito de assinatura formal `@spec-driver` / `@qa-validator` sob protocolo Chain-Skills V3. | `@spec-driver` / `@qa-validator` |
 | `features/<nome>/STATE.md` | **Gatekeeper de Estado.** Define status (`WIP`, `DONE`). Na V3, é a âncora das 9 Skills e telemetria de diff. | `@qa-validator` |
+| `features/SSD_PLAYBOOK.md` | **Manual de Disciplina.** Regras de ouro para evitar afobação e loops de erro. | `@context-keeper` |
+| `features/SSD_ERRORS_LEDGER.md` | **Memória de Erros.** Registro de falhas sistêmicas para evitar reincidência. | `@context-keeper` |
 
 ---
 

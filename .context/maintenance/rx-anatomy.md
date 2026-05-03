@@ -22,6 +22,8 @@ Status: Ativo
 │   └── _scripts/           # Motor de Validação em Python (Oráculo, Bundler, Harness)
 ├── .specs/                  # 🧪 BANCADA DE EXECUÇÃO (Workshop Efêmero)
 │   └── features/            # Specs atômicas ativas (max 3)
+│       ├── SSD_PLAYBOOK.md  # Manual de Disciplina V3
+│       └── SSD_ERRORS_LEDGER.md # Ledger de Erros Recorrentes
 ├── .agent/                  # 🤖 CAMADA DE AGENCIAMENTO (Templates/Subagentes)
 │   ├── templates/           # Molde de Spec V3 e Scratchpads
 │   └── subagents/           # Persona de QA-Validator e Prompts Especializados
