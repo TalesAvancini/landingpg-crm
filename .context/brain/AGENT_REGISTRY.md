@@ -36,7 +36,7 @@ Status: Ativo
 | `@devops-guardian` | CI/CD, deploy, env vars, monitoramento, segurança infra | `.github/workflows/`, `Dockerfile`, `maintenance/rebuild_guide.md`, `.env.example` | `maintenance/rebuild_guide.md`, `maintenance/TECHNICAL_REQUIREMENTS.md` (infra), `brain/ROADMAP.md` (deploys) | "deploy", "CI/CD", "docker", "variável de ambiente", "monitoramento", "rollback" |
 | `@vision-architect` | Estratégia, validação de market fit, definição de boundaries | `.context/brain/INCEPTION.md`, `.context/market/MARKET_INBOX.md` | `.context/brain/INCEPTION.md`, `.context/market/SSOT_MAP.md` | "definir boundary", "validar gap de mercado", "revisar inception" |
 | `@spec-enricher` | Tradução estratégica em PRD, tradução cognitiva VISION -> INCEPTION, validação de gaps de mercado | `.context/brain/PRD.md`, `.context/brain/INCEPTION.proposed.md`, `maintenance/JOURNAL.md` | `.context/brain/INCEPTION.md`, `.context/brain/VISION.md`, `.context/market/SSOT_MAP.md` | "enriquecer spec", "gerar PRD", "traduzir visão", "propor inception", `npm run context:enrich` |
-| `@spec-driver` | Execução técnica atômica (Spoke), geração de contrato DoD (Execution Log), **Executor MIMO (Surgical Edits)** | `.specs/`, `src/`, `tests/`, `contract` (frontmatter) | `spec.md`, `STATE.md`, `JOURNAL.md`, `brain/RULES.md` | `"inicie execução"`, `"autopilot"`, `"execute a spec"`, `"MIMO close"` |
+| `@spec-driver` | Executor Chain-Skills V3 (9 Skills), Gatekeeper Compliance, Anti-Loop Remediation | `.specs/`, `src/`, `tests/`, `contract` (frontmatter) | `spec.md`, `STATE.md`, `JOURNAL.md`, `brain/RULES.md`, `AGENT_SCRATCHPAD.md` | `"inicie execução"`, `"autopilot"`, `"execute a spec"`, `"MIMO close"` |
 | `@context-keeper` | Sync, purge, validação de consistência, saúde do contexto | `.context/` (exceto `_archive/`), `maintenance/JOURNAL.md`, `brain/RULES.md` | `brain/RULES.md`, `brain/MASTER_FLOW.md`, `maintenance/JOURNAL.md`, `monitoring/CONTEXT_HEALTH.md` | "atualize contexto", "purge", "health check", "validar consistência", "sincronizar" |
 | `@fullstack-generalist` | Modo fallback para tarefas transversais ou projetos light | Leitura em todo o projeto; Escrita apenas com confirmação explícita | `brain/PRD.md`, `maintenance/schema.sql`, `maintenance/JOURNAL.md` (últimas 30 linhas) + Global | "modo light", "tarefa rápida", "projeto pequeno", "não especificado" |
 
@@ -44,13 +44,13 @@ Status: Ativo
 
 ---
 
-## 🛡️ Blindagem de Subagente (Zero-Trust Spoke)
-> **Invariante de Segurança:** Agentes em modo Executor (`@spec-driver` / `@autopilot`) operam sob restrições físicas:
-> 1. **Zero Escrita Estratégica:** Proibido alterar arquivos em `brain/` ou `market/` sem autorização explícita do Hub e `qa_signoff`.
-> 2. **Pre-flight Gate:** Obrigatório rodar `grep` de impacto antes de editar código.
-> 3. **Skills Obrigatórias:** `codenavi` (Mapeamento) e `flash-harness` (Log Sequencial).
+## 🛡️ Blindagem de Subagente (Chain-Skills V3)
+> **Invariante de Segurança:** Agentes em modo Executor (`@spec-driver` / `@autopilot`) operam sob restrições físicas (Zero-Trust):
+> 1. **Gatekeeper Físico:** Obrigatório usar `write_with_validation.py` para escrever código. Edição direta é bloqueada.
+> 2. **Cadeia de 9 Skills:** A execução DEVE fluir linearmente da Skill 1 (Context Loaded) até a Skill 9 (Handoff).
+> 3. **Anti-Loop:** Erros `[BLOCKED]` ou `[FATAL]` exigem documentação imediata no `AGENT_SCRATCHPAD.md` antes de nova tentativa.
 > 4. **Backpressure:** Acionar `SCOPE_BLOWOUT` se o impacto real > `max_impact_radius`.
-> 5. **Hardened Closing:** Proibido fechar tarefa sem rito de `Pre-close Self-Audit` e verificação de árvore git limpa.
+> 5. **SAM Compliance:** Proibido fechar tarefa se a "Matriz de Propagação" do Journal não for idêntica ao Git Diff.
 
 ---
 

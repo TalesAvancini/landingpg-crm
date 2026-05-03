@@ -1,36 +1,22 @@
-# CHECKLIST Sprint-Based (Execucao)
+# CHECKLIST Chain-Skills V3 (The 9 Skills)
 
-## A. Bootstrap
-- [ ] Pasta da feature criada em `.specs/features/[feature_id]/`
-- [ ] `spec.md`, `tasks.md`, `STATE.md`, `design.md` criados
-- [ ] `contract_mode: sprint_based` definido
-- [ ] `current_sprint: sprint_01` definido
-- [ ] Bloco `sprints.sprint_01` presente
-- [ ] `type: standard` ausente
+## Fase A: Preparação (Skills 1-3)
+- [ ] **Skill 1 (Context Loader):** `RULES.md` lido e regras citadas no `STATE.md`.
+- [ ] **Skill 2 (Spec Reader):** Contrato da sprint atual validado sem ambiguidades.
+- [ ] **Skill 3 (Strategy Planner):** `AGENT_SCRATCHPAD.md` inicializado com a estratégia técnica.
 
-## B. Rito de Inicio
-- [ ] `git status --short` sem saida
-- [ ] `start_hash` registrado no `STATE.md`
-- [ ] `captured_at` e `captured_by` preenchidos
-- [ ] baseline registrado no `JOURNAL.md`
+## Fase B: Blindagem (Skills 4-5)
+- [ ] **Skill 4 (Baseline Anchor):** `git status` limpo e `start_hash` capturado.
+- [ ] **Skill 5 (Scope Guard):** `allow_list` trancada na Spec e copiada para o `STATE.md`.
 
-## C. Escopo
-- [ ] `scope_allow` da sprint atual definido
-- [ ] `scope_deny` definido quando necessario
-- [ ] sem alteracoes fora do escopo
+## Fase C: Execução (Skill 6)
+- [ ] **Skill 6 (Evidence Generation):** Código escrito exclusivamente via `write_with_validation.py`.
+- [ ] Nenhuma edição fora do escopo (`SCOPE_BLOWOUT` evitado).
+- [ ] Tasks atualizadas imediatamente após cada alteração.
 
-## D. Pre-close Self-Audit
-- [ ] `spec.md`, `tasks.md`, `STATE.md` coerentes
-- [ ] criterios de aceite atualizados
-- [ ] se tasks da sprint atual estao concluidas, `acceptance` no `spec.md` esta marcado (`[x]`)
-- [ ] evidencia no `JOURNAL.md` ou `HARNESS_LOG.md`
-- [ ] validacao executada (`context:validate` ou equivalente)
+## Fase D: Fechamento (Skills 7-9)
+- [ ] **Skill 7 (Self Audit):** Cópia exata entre `Git Diff` e `Matriz de Propagação` do Journal.
+- [ ] **Skill 8 (Remediation):** Erros bloqueados foram corrigidos e logados no Scratchpad.
+- [ ] **Skill 9 (Handoff):** `npm run context:harness` rodado com sucesso (PASS).
 
-## E. Fechamento
-- [ ] `qa_signoff: true` na sprint atual
-- [ ] harness PASS
-- [ ] arvore Git limpa
-- [ ] nenhum conflito entre narrativa e estado
-- [ ] metadados de `RULES.md` e `MASTER_FLOW.md` atualizados
-
-Se qualquer item falhar, manter status `IN_PROGRESS`.
+Se o Harness falhar, volte para a Skill 8 e corrija no Scratchpad antes de tentar novamente.

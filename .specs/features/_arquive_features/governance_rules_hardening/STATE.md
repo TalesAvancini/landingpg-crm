@@ -1,15 +1,15 @@
 ---
-status: ✅ COMPLETED
-updated: 2026-05-01 01:00
-detail: "Hardening V5 concluído. Auditoria finalizada. Mapa RX Global v2 institutionalizado."
-policy_profile: hybrid
-current_sprint: sprint_08
-start_hash: "4b16b4c935ee57633e76d91f42289c026021200a"
-final_hash: "bf02a42"
-captured_at: "2026-05-01 01:00:00 (BRT)"
-captured_by: "@qa-validator"
-qa_checkpoint: true
-qa_signoff: true
+status: ❌ FAILED
+updated: 2026-05-03 02:01
+detail: sprint_contract: [HG04] Sprint anterior (sprint_06) pendente de signoff. Impossível avançar para sprint_08. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Modificação Silenciosa: Arquivo '.specs/features/SDD_ERRORS_LEDGER.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/governance_rules_hardening/STATE.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
 ---
 
 # 🧠 STATE: Governance Rules Hardening

@@ -640,3 +640,57 @@ Status: Ativo
 
 ## [HARNESS-PASS] Report | spec:gov_v3_stress_test
 - **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:governance_rules_hardening
+- **Detalhe:** sprint_contract: [HG04] Sprint anterior (sprint_06) pendente de signoff. Impossível avançar para sprint_08. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Fraude Narrativa: Arquivo '.context/maintenance/JOURNAL.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/brain/MASTER_FLOW.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/brain/RULES.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo 'VERSION.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Modificação Silenciosa: Arquivo 'README_CONTEXT.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/SDD_ERRORS_LEDGER.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/SSD_PLAYBOOK.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/SSD_ERRORS_LEDGER.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/_template_operacional_sprint/CHECKLIST.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/brain/AGENT_REGISTRY.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'init_ai_project.sh' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/SDD_PLAYBOOK.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:governance_rules_hardening
+- **Detalhe:** sprint_contract: [HG04] Sprint anterior (sprint_06) pendente de signoff. Impossível avançar para sprint_08. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Modificação Silenciosa: Arquivo '.specs/features/SDD_ERRORS_LEDGER.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/governance_rules_hardening/STATE.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist Operacional: Arquivo '.agent/skills/methodical_writer.json' proibido nesta missão. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Modificação Silenciosa: Arquivo '.specs/features/governance_rules_hardening/tasks.md -> .specs/features/_arquive_features/governance_rules_hardening/tasks.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/governance_rules_hardening/design.md -> .specs/features/_arquive_features/governance_rules_hardening/design.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/governance_rules_hardening/spec.md -> .specs/features/_arquive_features/governance_rules_hardening/spec.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:contract_sprints_v2_safe
+- **Detalhe:** sprint_contract: [HG07] Violação de Whitelist Operacional: Arquivo '.agent/skills/methodical_writer.json' proibido nesta missão. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Modificação Silenciosa: Arquivo '.specs/features/contract_sprints_v2_safe/STATE.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+

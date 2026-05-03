@@ -1,7 +1,14 @@
 ---
-status: ✅ PASSED
-updated: 2026-04-30 18:57
-detail: All checks passed
+status: ❌ FAILED
+updated: 2026-05-03 02:02
+detail: sprint_contract: [HG07] Violação de Whitelist Operacional: Arquivo '.agent/skills/methodical_writer.json' proibido nesta missão. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Modificação Silenciosa: Arquivo '.specs/features/contract_sprints_v2_safe/STATE.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
 ---
 
 # 🧠 STATE: Evolução Contract Sprints

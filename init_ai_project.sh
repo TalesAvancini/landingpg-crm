@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # -----------------------------------------------------------------------------
-# 🚀 init_ai_project.sh - Antigravity Kit Bootstrapper (v2.4.1 Hardened)
+# 🚀 init_ai_project.sh - Antigravity Kit Bootstrapper (v3.0.0 Chain-Skills)
 # -----------------------------------------------------------------------------
-# Versão Suprema: Fusão Antigravity + TLC Spec-Driven.
+# Versão Suprema: Governança Blindada V3 com Chain-Skills & Anti-Loop.
 # Com detecção automática de gerenciador e motores de manutenção completos.
 # -----------------------------------------------------------------------------
 set -euo pipefail
@@ -45,58 +45,42 @@ fi
 check_deps
 PKG_MGR=$(detect_pkg_mgr)
 log "Gerenciador detectado: $PKG_MGR"
-log "Inicializando Antigravity AI-Ready Framework v2.4.1 Hardened..."
+log "Inicializando Antigravity Chain-Skills Framework v3.0.0..."
 
 # 📂 Estrutura de Diretorios
-log "Criando estrutura de camadas e workshop TLC..."
+log "Criando estrutura de camadas e workshop V3..."
 mkdir -p .context/{brain,maintenance,monitoring,_scripts}
 mkdir -p .context/maintenance/_archive_context/{prds,schemas,journals,specs}
-mkdir -p .specs/features
+mkdir -p .specs/features/_arquive_features
+mkdir -p .agent/{subagents,templates}
 mkdir -p tests .husky
 
 NOW=$(date +%Y-%m-%d\ %H:%M)
 
 # 📄 Geração de Documentos de Governança
-log "Gerando documentos de governança e integração TLC..."
+log "Gerando documentos de governança V3..."
 
 cat > .context/brain/RULES.md << EOF
 ---
 Criado em: $NOW
 Status: Ativo
+Versão: 3.0.0 (Chain-Skills)
 ---
-# 📜 RULES.md — Template Universal de Contexto & Governança
-Projeto: [NOME DO PROJETO]
-Arquitetura: AI-Agent Driven (Antigravity Kit + TLC Fusion)
+# 📜 RULES.md — DNA de Governança V3
 
-Conceito Central: A pasta \`.context\` e a fonte da verdade (SSOT). O workshop \`.specs\` e o espaco de execucao efemera.
+## 🧠 1. Protocolo Chain-Skills (Obrigatório)
+Qualquer execução de feature DEVE seguir as 9 Skills definidas no SSD-Chain:
+1. CONTEXT_LOADED | 2. CONSTRAINTS_EXTRACTED | 3. TECHNICAL_APPROACH
+4. SCRATCHPAD_SYNCED | 5. SCOPE_LOCKED | 6. EVIDENCE_GENERATION
+7. SELF_AUDIT | 8. REMEDIATION | 9. HANDOFF
 
-🧠 1. Protocolo de Manutencao
-- JOURNAL.md: Memoria de longo prazo e handoffs.
-- .specs/: Workbench atômico (Regra de 48h/Max 3).
+## 🛡️ 2. Zero-Trust & Anti-Loop
+- **AGENT_SCRATCHPAD.md**: Todo erro [BLOCKED] ou [FATAL] deve ser registrado no Scratchpad com Hipótese e Plano de Correção ANTES da nova tentativa.
+- **Gatekeeper Físico**: Modificações de arquivos DEVEM usar 'write_with_validation.py'. Escrita direta em arquivos de regras é PROIBIDA.
 
-🔄 4. Gatilhos Operacionais
-- "Inicie a fase de SPECIFY para o PRD #[ID]": IA cria spec atômica no .specs/.
-- "Atualize contexto": Sincronizacao proativa via sync_project.py.
+## 🔄 3. Gatilhos Operacionais
+- "Inicie a feature [NOME]": IA cria spec baseada no template .agent/templates/spec_v3.md.
 EOF
-
-cat > .context/brain/TLC_INTEGRATION.md << EOF
----
-Criado em: $NOW
-Status: Ativo
----
-# 🔗 TLC_INTEGRATION.md
-Ponte entre Governança (.context/) e Execução Atômica (.specs/).
-
-## 🔄 Ciclo de Vida Híbrido
-1. INTENT -> PRD.md ativo define escopo.
-2. SPECIFY -> IA cria .specs/features/[nome]/spec.md.
-3. IMPLEMENT -> Geração de código baseada na spec.
-4. VERIFY -> STATE.md marcado como ✅ PASSED.
-5. SYNC -> Lições para o JOURNAL.md e limpeza da spec.
-EOF
-
-# Os Motores Reais v2.4.1 Hardened já residem na pasta .context/_scripts do template.
-# Diferente de versões anteriores, este bootstrapper NÃO sobrescreve os motores Python nativos com cat.
 
 # Injeta scripts no package.json via Node
 [ -f package.json ] || npm init -y > /dev/null 2>&1
@@ -120,10 +104,10 @@ Object.assign(pkg.scripts, {
 fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2));
 "
 
-log "Instalando Husky e configurando Hooks..."
+log "Instalando Husky e configurando Hooks (SAM Enforcement)..."
 npx husky init > /dev/null 2>&1
 echo "$PKG_MGR run context:all" > .husky/pre-commit
 chmod +x .context/_scripts/*.py .husky/pre-commit
 
-success "Antigravity + TLC Fusion inicializado com sucesso!"
-warn "Acesse README_CONTEXT.md para o manual de operacao."
+success "Antigravity Chain-Skills V3 inicializado com sucesso!"
+warn "Use os templates em .agent/templates/ para garantir conformidade."
