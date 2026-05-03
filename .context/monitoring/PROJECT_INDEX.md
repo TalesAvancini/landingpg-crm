@@ -2,12 +2,12 @@
 
 ---
 schema_version: 1
-generated_at: 2026-05-03T05:11:59.947553+00:00
+generated_at: 2026-05-03T05:14:23.208740+00:00
 root: template_inicío_de_projeto
 mode: full | TOC
 profile: ai-default
 file_count: 127
-byte_count: 503566
+byte_count: 513096
 ignored_dirs:
   - .cache
   - .cursor
@@ -465,7 +465,7 @@ FILE_END id=file_e7c17acb71ff
 
 ---
 <a id="file_14666768162a"></a>
-FILE_START id=file_14666768162a path=.context/brain/FILE_GLOSSARY.md domain=docs lang=markdown lines=99 bytes=7548 mtime=2026-05-03T05:07:58.543561+00:00 sha1=b4c6c2dc869807a853a12c192e90b5a8c0cc675c
+FILE_START id=file_14666768162a path=.context/brain/FILE_GLOSSARY.md domain=docs lang=markdown lines=101 bytes=7821 mtime=2026-05-03T05:14:01.929124+00:00 sha1=625a0f6df8c5b94255246e7e6b304d314d36f370
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_14666768162a
 
@@ -591,7 +591,7 @@ FILE_END id=file_a5c71962029a
 
 ---
 <a id="file_54a6a553d34b"></a>
-FILE_START id=file_54a6a553d34b path=.context/maintenance/rx-anatomy.md domain=docs lang=markdown lines=37 bytes=2427 mtime=2026-05-03T05:08:09.927443+00:00 sha1=b18dd043643f3dda02e54820f1843a4bb5de7e15
+FILE_START id=file_54a6a553d34b path=.context/maintenance/rx-anatomy.md domain=docs lang=markdown lines=39 bytes=2561 mtime=2026-05-03T05:14:09.314782+00:00 sha1=a5aa786ad03b5d15f3973fe7967e279f65408891
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_54a6a553d34b
 
@@ -693,7 +693,7 @@ FILE_END id=file_c6d44cc7da35
 
 ---
 <a id="file_3667001850eb"></a>
-FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=948 bytes=53887 mtime=2026-05-02T21:40:56.744404+00:00 sha1=c179e06ae171489e01c2e190c400089f8deab5d7
+FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=1076 bytes=63010 mtime=2026-05-03T05:11:59.949327+00:00 sha1=f0289bd42e064b77615f0376eab2b1f8f251d2c4
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_3667001850eb
 

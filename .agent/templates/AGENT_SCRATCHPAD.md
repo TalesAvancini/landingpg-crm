@@ -20,11 +20,19 @@ Se você recebeu um erro e parou aqui, verifique se a solução já está abaixo
 
 ---
 
-## 📝 Thought Log (Anti-Loop Memory)
-
-Use esta seção para registrar falhas que NÃO estão nos Known Traps acima:
+## 📥 INBOX (Escalation & Dúvidas)
+> **Uso Exclusivo do Subagente.** Se você travou ou não sabe como seguir, preencha o card abaixo e pare. Lance o gatilho `[HANDOFF: ESCALATION]` no terminal.
 
 ### 🛑 [Task ID] - [Timestamp]
-- **Erro:** [Descreva o erro exato]
-- **Hipótese:** [Por que falhou?]
-- **Novo Plano:** [O que vai tentar de diferente?]
+- **Ação Desejada:** [O que você queria fazer?]
+- **Ação Executada:** [O que você tentou na prática?]
+- **Bloqueio (Fato):** [Qual foi o erro exato do Gatekeeper/Harness?]
+- **Hipótese:** [Por que você acha que falhou?]
+
+---
+
+## 📤 DIRECTIVES (Resoluções do Orquestrador)
+> **Uso Exclusivo do Orquestrador.** Injetar soluções aqui para destravar o subagente.
+
+- **[Timestamp] | Solução para [Task ID]:** 
+  - [Escreva a diretriz clara, ex: "Ignore o erro X e adicione o arquivo Y na allow_list."]

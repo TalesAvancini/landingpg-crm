@@ -121,4 +121,8 @@ if __name__ == "__main__":
         sys.exit(0)
     else:
         print(f"[BLOCKED] {reason}")
+        print("\n🚨 GATILHO ANTI-LOOP ATIVADO:")
+        print("Voce esta PROIBIDO de tentar a mesma acao cegamente.")
+        print("Abra o AGENT_SCRATCHPAD.md da sua feature agora mesmo.")
+        print("Se a solucao nao for obvia (Known Traps), preencha a secao INBOX e declare [HANDOFF: ESCALATION].")
         sys.exit(1)
