@@ -2,12 +2,12 @@
 
 ---
 schema_version: 1
-generated_at: 2026-05-03T16:47:40.826731+00:00
+generated_at: 2026-05-03T16:55:44.933239+00:00
 root: template_inicío_de_projeto
 mode: full
 profile: ai-default
 file_count: 127
-byte_count: 513878
+byte_count: 514780
 ignored_dirs:
   - .cache
   - .cursor
@@ -390,8 +390,8 @@ FILE_END id=file_5a0c0f1b1bd0
 
 ---
 <a id="file_a412f1bb7017"></a>
-FILE_START id=file_a412f1bb7017 path=.agent/subagents/spec-driver.md domain=docs lang=markdown lines=50 bytes=2882 mtime=2026-05-03T04:30:20.311321+00:00 sha1=d22f9764e886324d31066a97ec6ffbccb9c25de6
-CHUNK_START id=a412f1bb7017_c001 start_line=1 end_line=50
+FILE_START id=file_a412f1bb7017 path=.agent/subagents/spec-driver.md domain=docs lang=markdown lines=49 bytes=2933 mtime=2026-05-03T16:53:10.775490+00:00 sha1=4b86ea73de5cca1aaab5ed421dd15c7d5b458e90
+CHUNK_START id=a412f1bb7017_c001 start_line=1 end_line=49
 ```markdown
 ---
 name: spec-driver
@@ -434,13 +434,12 @@ Every write MUST be preceded by a call to the validation script:
 # 🚨 IN CASE OF FAILURE
 If a check fails or the script blocks you: STOP. Update STATE.md with the error. Wait for Orchestrator intervention. Do not guess. Do not retry blindly.
 ---
-### 🛑 [REGRA ANTI-LOOP] - METACGONIÇÃO OBRIGATÓRIA
+### 🛑 [REGRA ANTI-LOOP] - HANDOFF OBRIGATÓRIO
 Se você receber um erro `[BLOCKED]` ou `[FATAL]`, você deve:
 1. **PARAR** todas as tentativas de escrita imediatas.
-2. Ler `.specs/features/<feature>/AGENT_SCRATCHPAD.md`.
-3. Se o erro estiver na seção **Known Traps**, aplique a solução imediatamente.
-4. Se não estiver, registre uma nova entrada no **Thought Log** com sua `Hypothesis` e `Correction Plan` antes de tentar novamente.
----
+2. Ler a seção **Known Traps** do `AGENT_SCRATCHPAD.md`. Se o erro estiver lá, aplique a solução.
+3. Se o erro não for óbvio, preencha a seção **INBOX** detalhando a falha.
+4. Emita o comando `[HANDOFF: ESCALATION]` no terminal e **PARE** a execução. Aguarde a injeção da diretiva pelo Orquestrador na seção DIRECTIVES.
 "Precision is the only metric of success."
 ---
 
@@ -8720,8 +8719,8 @@ FILE_END id=file_5346932740b3
 
 ---
 <a id="file_d801613c0c41"></a>
-FILE_START id=file_d801613c0c41 path=.specs/features/SSD_PLAYBOOK.md domain=docs lang=markdown lines=47 bytes=2163 mtime=2026-05-03T04:53:51.282489+00:00 sha1=8cbbf2d9d4f273f1a3a4f9aa3b808ce17a3f47b6
-CHUNK_START id=d801613c0c41_c001 start_line=1 end_line=47
+FILE_START id=file_d801613c0c41 path=.specs/features/SSD_PLAYBOOK.md domain=docs lang=markdown lines=52 bytes=3014 mtime=2026-05-03T16:53:24.104105+00:00 sha1=98fabd1566a64f45773c5630c2891a79ef8504e8
+CHUNK_START id=d801613c0c41_c001 start_line=1 end_line=52
 ```markdown
 # 📜 SSD-Chain Playbook (Spec-Driven Discipline Chain) - V3.0
 > Manual definitivo para execução de features com Governança Blindada e Anti-Loop.
@@ -8751,13 +8750,18 @@ Toda feature deve progredir através destas skills no `STATE.md`:
 
 ---
 
-## 🛡️ Protocolo Anti-Loop (Metacognição)
-Sempre que o Gatekeeper ou o Harness retornar um erro `[BLOCKED]` ou `[FATAL]`:
-1.  **Não repita a ação.**
-2.  Documente no **Scratchpad**:
-    - **Erro exato**: O que o console disse.
-    - **Hipótese**: Por que o sistema barrou?
-    - **Correção**: Qual o ajuste na Spec ou no código?
+## 🛡️ Protocolo Anti-Loop e Escalation
+Sempre que o Gatekeeper ou o Harness retornar um erro `[BLOCKED]` ou `[FATAL]`, a IA (Executor) entrará em bloqueio cognitivo:
+1.  Ela **NÃO** repetirá a ação.
+2.  Ela documentará o erro na seção `INBOX` do `AGENT_SCRATCHPAD.md`.
+3.  Ela ejetará o controle com o comando `[HANDOFF: ESCALATION]`.
+
+## 👑 O Papel do Orquestrador (Desbloqueio e Sistema Imunológico)
+O Orquestrador (Humano ou IA Master) é o único autorizado a destravar o Executor após um Escalation.
+1. **Resolução de Diretiva:** Abra o Scratchpad, leia o INBOX e escreva a solução na seção `DIRECTIVES`.
+2. **Gatilho de Despertar (Invocação Explícita):** Não responda com comandos genéricos. Para evitar a Amnésia de Persona, invoque o agente explicitamente:
+   > `@spec-driver [RESUME] Diretiva injetada no Scratchpad. Leia a seção DIRECTIVES e retome a execução de onde parou no STATE.md.`
+3. **O Sistema Imunológico (Faxina Cognitiva):** Se o mesmo erro for escalado em múltiplas sprints, o Orquestrador deve limpar o Scratchpad e **promover a regra permanentemente** adicionando-a ao `SSD_ERRORS_LEDGER.md` ou atualizando as restrições da Spec.
 
 ## 🚫 Regras Proibidas (Zero-Trust)
 - Proibido editar arquivos de regras (`RULES.md`, `MASTER_FLOW.md`) sem autorização de intervenção nível 3.
