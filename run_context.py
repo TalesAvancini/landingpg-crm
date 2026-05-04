@@ -109,6 +109,10 @@ def main():
 
     elif cmd == "enrich":
         run_script("enrich_context.py", extra_args)
+    elif cmd == "learnings":
+        run_script("learnings_aggregator.py", extra_args)
+    elif cmd == "inject":
+        run_script("inject_learnings.py", extra_args)
     elif cmd == "wiki-health":
         run_script("validate_context.py", ["check_wiki_integrity"] + extra_args)
     elif cmd == "workflow-journal":
@@ -125,6 +129,7 @@ def main():
         run_script("secrets_scanner.py")
         run_script("sync_project.py")
         run_script("migration_registry.py")
+        run_script("learnings_aggregator.py") # Adicionado ao pipeline ALL
         run_script("harness_runner.py")
         run_script("ingest_wiki_guard.py")
         print("[RUN] Executando lint_wiki.py (Strict)...")
@@ -134,12 +139,12 @@ def main():
         print("[RUN] Gerando Mapa de Arquivos Atualizado (PROJECT_INDEX)...")
         run_script("project_bundler.py", ["--toc-only", "-o", ".context/monitoring/PROJECT_INDEX.md"])
         print(
-            "[DONE] Pipeline H.O.K. + Security + Migrations + Health + Index concluído com sucesso."
+            "[DONE] Pipeline H.O.K. + Security + Migrations + Health + Index + Learnings concluído com sucesso."
         )
 
     elif cmd in ["help", "--help", "-h"]:
         print(
-            "Comandos: validate | purge | sync | cleanup | harness | lint | lint-strict | oracle | health | scan-secrets | check-migrations | check-version | enrich | workflow-journal | map | bundle | all"
+            "Comandos: validate | purge | sync | cleanup | harness | lint | lint-strict | oracle | health | scan-secrets | check-migrations | check-version | enrich | learnings | inject | workflow-journal | map | bundle | all"
         )
     else:
         print(f"❌ Comando desconhecido: {cmd}")

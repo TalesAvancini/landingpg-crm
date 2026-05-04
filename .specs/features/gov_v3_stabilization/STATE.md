@@ -1,7 +1,30 @@
 ---
-status: ✅ PASSED
-updated: 2026-05-03 21:06
-detail: All checks passed
+status: ❌ FAILED
+updated: 2026-05-04 00:09
+detail: journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'new_context_path' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'new_context_path': Arquivo '.context/maintenance/rx-anatomy.md' não foi propagado (ausente no diff).
+  - Regra 'new_context_path': Checkbox [x] para '.context/maintenance/rx-anatomy.md' ausente ou desmarcado no Journal.
+  - Contrato incompleto. Detectado: executor='', validator=''.
+  - Status de validação inválido: ''. Esperado 'READY TO COMMIT'.
+  - Fraude Narrativa: Arquivo 'planos/Learnnings/Learnings_MiMo_v2.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Modificação Silenciosa: Arquivo '.context/brain/SCRIPT_GLOSSARY.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/_scripts/validate_commit_msg.py' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/brain/FILE_GLOSSARY.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'run_context.py' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'planos/Learnnings/' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/SSD_ERRORS_LEDGER.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/gov_v3_stabilization/STATE.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.husky/commit-msg' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/SSD_PLAYBOOK.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'package.json' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/maintenance/TECHNICAL_REQUIREMENTS.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
 ---
 
 # State: gov_v3_stabilization

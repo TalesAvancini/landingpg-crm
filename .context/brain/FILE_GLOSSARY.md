@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-26
-Ultima Atualizacao: 2026-05-01 00:20
+Ultima Atualizacao: 2026-05-04 00:00
 Status: Ativo
 ---
 
@@ -41,6 +41,7 @@ Status: Ativo
 | `SCRIPT_GLOSSARY.md` | **O Dicionário de Automação.** Mapeia a função, responsabilidade e modo de invocação de todos os scripts Python da pasta `_scripts/`. | `@context-keeper` |
 | `HARNESS_REGISTRY.md` | **Registro de Validação.** Dicionário dos gates de validação, critérios e escopos que o Harness verifica durante a CI. | `@qa-validator` |
 | `TLC_INTEGRATION.md` | **Metodologia.** Guia de alinhamento entre as práticas do TLC (Think Like a Coder / Specify, Design, Tasks, Execute) e o motor H.O.K. | Humano |
+| `LEARNINGS.md` | **Memória Estratégica.** Consolida cicatrizes de execuções passadas, recorrências e propostas de novas regras. | `@context-keeper` |
 
 ---
 

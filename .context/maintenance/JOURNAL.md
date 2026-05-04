@@ -1,12 +1,53 @@
 ---
 Criado em: 2026-05-03 01:51
-Ultima Atualizacao: 2026-05-03 01:51
+Ultima Atualizacao: 2026-05-03 23:55
 Status: Ativo
 Nota: Semente pos-purge. 33 entradas arquivadas em journal_archive_20260503_015104.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-04 00:08
+**Decisão/Bug:** 🧠 Codificação do Motor de Memória (MiMo v2 - Fase 1).
+**Ação:**
+1. Codificado `learnings_aggregator.py` com parser focado no Formato B (Scars) e sistema de extração resiliente.
+2. Codificado `inject_learnings.py` para injetar Scars ativas em arquivos `.enriched.md` nas features ativas.
+3. Adicionado modo fallback/triage para o agregador.
+4. Testado o ciclo `context:learnings` e `context:inject` com sucesso.
+
+### Matriz de Propagação (Sinapse)
+- [x] `.context/_scripts/learnings_aggregator.py` -> [NOVO: Script de agregação MiMo]
+- [x] `.context/_scripts/inject_learnings.py` -> [NOVO: Script de injeção MiMo]
+- [x] `.context/brain/LEARNINGS.md` -> [NOVO: Saída do agregador]
+- [x] `.specs/features/gov_v3_stabilization/.enriched.md` -> [NOVO: Spec enriquecida]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de Atividades]
+- [x] `planos/Learnnings/Learnings_MiMo_v2.md` -> [Acesso em tempo de Execução]
+- [x] `planos/MiMo_Learnings_Consolidado.md` -> [Acesso em tempo de Execução]
+
+## 📅 2026-05-03 23:55
+**Decisão/Bug:** 🛡️ Fundações do Sistema LEARNINGS (MiMo v2) e Padronização.
+**Ação:**
+1. Normalizado o `SSD_ERRORS_LEDGER.md` convertendo entradas táticas antigas para o padrão "Scar" (Format B).
+2. Ajustado o `SSD_PLAYBOOK.md` para mover a injeção de memória (MIMO_MEMORY) para a Fase A (Preparação).
+3. Implementado o validador de commits Python (`validate_commit_msg.py`) e configurado o Husky (`commit-msg`) para garantir Conventional Commits de forma cross-platform.
+4. Atualizado `run_context.py` e `package.json` para rotear os novos comandos de memória estratégica.
+
+### Matriz de Propagação (Sinapse)
+- [x] `.specs/features/SSD_ERRORS_LEDGER.md` -> [Normalização de Formato concluída]
+- [x] `.specs/features/SSD_PLAYBOOK.md` -> [Ajuste de Ponto de Injeção (Skill 0)]
+- [x] `package.json` -> [Novos scripts context:learnings e context:inject]
+- [x] `run_context.py` -> [Roteamento de novos comandos registrado]
+- [x] `.context/_scripts/validate_commit_msg.py` -> [Validador Python criado]
+- [x] `.husky/commit-msg` -> [Hook atualizado para chamar Python]
+- [x] `.context/brain/FILE_GLOSSARY.md` -> [Mapeamento do LEARNINGS.md]
+- [x] `.context/brain/SCRIPT_GLOSSARY.md` -> [Mapeamento dos scripts de memória]
+
+### Contrato de Validação
+- executor_context_id: `CTX_LEARNINGS_FOUNDATION`
+- validator_context_id: `CTX_QA_SAM`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Aprovado. As fundações estão sólidas. A normalização do Ledger e o ajuste do Playbook removem os riscos apontados pela auditoria técnica.`
 
 ## 📅 2026-05-03 20:50
 **Decisão/Bug:** 🛡️ Hardening v3.5: Codificação Mecânica do Protocolo [RESUME].

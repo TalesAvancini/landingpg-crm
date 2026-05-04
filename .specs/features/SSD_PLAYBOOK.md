@@ -8,7 +8,8 @@ Eliminar a afobação do executor e garantir que toda mudança de código seja p
 Toda feature deve progredir através destas skills no `STATE.md`:
 
 ### Fase A: Preparação (Skills 1-3)
-1.  **CONTEXT_LOADED**: Ler as regras mestras (`RULES.md`) e a Spec.
+*   **MIMO_MEMORY**: (Automático) Injeção de cicatrizes estratégicas via `inject_learnings.py` para prevenir reincidência de erros.
+1.  **CONTEXT_LOADED**: Ler as regras mestras (`RULES.md`) e a Spec enriquecida (`.enriched.md`).
 2.  **CONSTRAINTS_EXTRACTED**: Identificar o que NÃO pode ser feito (escopo negativo).
 3.  **TECHNICAL_APPROACH**: Definir o plano de implementação ANTES de tocar no código.
 

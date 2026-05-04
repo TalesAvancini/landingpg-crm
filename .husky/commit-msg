@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "📝 [Husky] Validando mensagem de commit..."
+python .context/_scripts/validate_commit_msg.py "$1"
