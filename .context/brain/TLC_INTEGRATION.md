@@ -11,7 +11,7 @@ Status: 🔥 HARDENED (v2.5.2) - Agnóstico e Técnico
 
 ---
 
-"Nova estrutura para pasta .specs que vai entrar em operação, ainda não é oficial
+> **Estrutura Oficial V3.5** para a pasta `.specs`:
 
 .specs/features/[feature]/     <-- O "CANTEIRO DE OBRAS" (O que eu gero para executar)
 ├── spec.md                    <-- O CONTRATO: Extraído do plano, ou prdzinho, qualquer nome que remeta o arquivo de planejamento que embasa a spec.md .
@@ -32,6 +32,7 @@ Status: 🔥 HARDENED (v2.5.2) - Agnóstico e Técnico
 - 🧪 **TDD e Verificação:** Proibido codar sem critério de prova técnica.
 - ⚡ **Flash-Harness Mandatório:** Diário de Bordo estruturado visível ANTES de cada ação.
 - 📦 **Single-Spec / Multi-Sprint:** Uma Spec por feature, progresso fatiado no `tasks.md`.
+- 🛡️ **Execution Gatekeeper:** O `STATE.md` dita fisicamente se você pode ou não escrever no disco (Skill 6 - `write_with_validation.py`). Se bloqueado, exija a vacina `RESUME_DIRECTIVE:` do humano.
 
 ---
 

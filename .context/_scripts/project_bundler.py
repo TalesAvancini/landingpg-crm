@@ -86,7 +86,7 @@ class BundleConfig:
     exclude_core: bool = False
     profile: str = "ai-default"
     toc_only: bool = False
-    max_lines_per_file: int = 300
+    max_lines_per_file: int = 1000
     emit_symbol_index: bool = False
     emit_import_map: bool = False
     mask_secrets: bool = False

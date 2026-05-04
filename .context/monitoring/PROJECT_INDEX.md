@@ -2,12 +2,12 @@
 
 ---
 schema_version: 1
-generated_at: 2026-05-03T05:14:23.208740+00:00
+generated_at: 2026-05-04T00:06:07.904132+00:00
 root: template_inicío_de_projeto
 mode: full | TOC
 profile: ai-default
-file_count: 127
-byte_count: 513096
+file_count: 83
+byte_count: 417630
 ignored_dirs:
   - .cache
   - .cursor
@@ -27,16 +27,20 @@ ignored_dirs:
   - RAW
   - __pycache__
   - _archive_context
+  - _arquive_features
   - _flash_report
+  - _modoLight
   - bin
   - build
   - captura_projeto
   - coverage
   - dist
+  - learnings_phase_1
   - node_modules
   - obj
   - out
   - planos
+  - scratch
   - target
   - venv
 sensitive_rules:
@@ -61,6 +65,7 @@ sensitive_rules:
   - `.context/maintenance/migrations/001_init.sql` -> [file_3707c3aa3239](#file_3707c3aa3239)
 - `docs`:
   - `.agent/subagents/qa-validator.md` -> [file_5a0c0f1b1bd0](#file_5a0c0f1b1bd0)
+  - `.agent/subagents/readme_chain_SDD.md` -> [file_651ea7e00792](#file_651ea7e00792)
   - `.agent/subagents/spec-driver.md` -> [file_a412f1bb7017](#file_a412f1bb7017)
   - `.agent/templates/AGENT_SCRATCHPAD.md` -> [file_4047da35f994](#file_4047da35f994)
   - `.agent/templates/spec_v3.md` -> [file_856590ab70be](#file_856590ab70be)
@@ -103,59 +108,14 @@ sensitive_rules:
   - `.context/monitoring/PROJECT_INDEX.md` -> [file_3667001850eb](#file_3667001850eb)
   - `.specs/features/SSD_ERRORS_LEDGER.md` -> [file_5346932740b3](#file_5346932740b3)
   - `.specs/features/SSD_PLAYBOOK.md` -> [file_d801613c0c41](#file_d801613c0c41)
-  - `.specs/features/_arquive_features/_template_operacional/STATE.md` -> [file_1b35d911eaf8](#file_1b35d911eaf8)
-  - `.specs/features/_arquive_features/_template_operacional/design.md` -> [file_7eb05724efde](#file_7eb05724efde)
-  - `.specs/features/_arquive_features/_template_operacional/spec.md` -> [file_1e6c975bc2ba](#file_1e6c975bc2ba)
-  - `.specs/features/_arquive_features/_template_operacional/tasks.md` -> [file_1740220c092d](#file_1740220c092d)
-  - `.specs/features/_arquive_features/_template_operacional_sprint/CHECKLIST.md` -> [file_e8be99b1aa73](#file_e8be99b1aa73)
-  - `.specs/features/_arquive_features/_template_operacional_sprint/STATE.md` -> [file_5fd27bc75d27](#file_5fd27bc75d27)
-  - `.specs/features/_arquive_features/_template_operacional_sprint/design.md` -> [file_4506f2a23287](#file_4506f2a23287)
-  - `.specs/features/_arquive_features/_template_operacional_sprint/spec.md` -> [file_35177dcb6d83](#file_35177dcb6d83)
-  - `.specs/features/_arquive_features/_template_operacional_sprint/tasks.md` -> [file_4a23e78471f0](#file_4a23e78471f0)
-  - `.specs/features/_arquive_features/contract_sprints_v2_safe/STATE.md` -> [file_692cca925760](#file_692cca925760)
-  - `.specs/features/_arquive_features/contract_sprints_v2_safe/spec.md` -> [file_6512a7b09ddc](#file_6512a7b09ddc)
-  - `.specs/features/_arquive_features/contract_sprints_v2_safe/tasks.md` -> [file_286dc158caf0](#file_286dc158caf0)
-  - `.specs/features/_arquive_features/gov_chain_v3_phase1/STATE.md` -> [file_58aea4a1eb98](#file_58aea4a1eb98)
-  - `.specs/features/_arquive_features/gov_chain_v3_phase1/spec.md` -> [file_b833f4b4901b](#file_b833f4b4901b)
-  - `.specs/features/_arquive_features/gov_chain_v3_phase1/tasks.md` -> [file_fbe42905f2f7](#file_fbe42905f2f7)
-  - `.specs/features/_arquive_features/gov_chain_v3_phase2_dryrun/STATE.md` -> [file_f9d9e26f4839](#file_f9d9e26f4839)
-  - `.specs/features/_arquive_features/gov_chain_v3_phase2_dryrun/spec.md` -> [file_c77e39121099](#file_c77e39121099)
-  - `.specs/features/_arquive_features/gov_chain_v3_phase2_dryrun/tasks.md` -> [file_b1d79a093268](#file_b1d79a093268)
-  - `.specs/features/_arquive_features/gov_v3_stress_test/AGENT_SCRATCHPAD.md` -> [file_933e7c1fc5f1](#file_933e7c1fc5f1)
-  - `.specs/features/_arquive_features/gov_v3_stress_test/STATE.md` -> [file_86cec7fbca83](#file_86cec7fbca83)
-  - `.specs/features/_arquive_features/gov_v3_stress_test/spec.md` -> [file_0418dc1c8b4c](#file_0418dc1c8b4c)
-  - `.specs/features/_arquive_features/gov_v3_stress_test/tasks.md` -> [file_01855b2ee2f4](#file_01855b2ee2f4)
-  - `.specs/features/_arquive_features/governance_rules_hardening/STATE.md` -> [file_9edc7697eac6](#file_9edc7697eac6)
-  - `.specs/features/_arquive_features/governance_rules_hardening/design.md` -> [file_d98184a90445](#file_d98184a90445)
-  - `.specs/features/_arquive_features/governance_rules_hardening/spec.md` -> [file_86997152c15a](#file_86997152c15a)
-  - `.specs/features/_arquive_features/governance_rules_hardening/tasks.md` -> [file_64dd6fec9bd4](#file_64dd6fec9bd4)
-  - `.specs/features/_arquive_features/harness_fail_closed/STATE.md` -> [file_5353fbc27cc1](#file_5353fbc27cc1)
-  - `.specs/features/_arquive_features/harness_fail_closed/spec.md` -> [file_e56f737897cf](#file_e56f737897cf)
-  - `.specs/features/_arquive_features/log_old_features.md` -> [file_f7b3adad01fe](#file_f7b3adad01fe)
-  - `.specs/features/_arquive_features/meta-inception/STATE.md` -> [file_0fa0b6b078a5](#file_0fa0b6b078a5)
-  - `.specs/features/_arquive_features/meta-inception/spec.md` -> [file_b544f5358fb0](#file_b544f5358fb0)
-  - `.specs/features/_arquive_features/multi_agent_choreography/STATE.md` -> [file_976dca62e5de](#file_976dca62e5de)
-  - `.specs/features/_arquive_features/multi_agent_choreography/spec.md` -> [file_dcdf7269aabc](#file_dcdf7269aabc)
-  - `.specs/features/_arquive_features/oracle_v3/STATE.md` -> [file_3377cfe00b2d](#file_3377cfe00b2d)
-  - `.specs/features/_arquive_features/oracle_v3/spec.md` -> [file_96f9097dbbd2](#file_96f9097dbbd2)
-  - `.specs/features/_arquive_features/qa_subagent/STATE.md` -> [file_96a2bcfd8479](#file_96a2bcfd8479)
-  - `.specs/features/_arquive_features/qa_subagent/spec.md` -> [file_07e43f982f2d](#file_07e43f982f2d)
-  - `.specs/features/_arquive_features/sam_chronology_fix/STATE.md` -> [file_2bad8249610a](#file_2bad8249610a)
-  - `.specs/features/_arquive_features/sam_chronology_fix/spec.md` -> [file_a969b2604ea8](#file_a969b2604ea8)
-  - `.specs/features/_arquive_features/synapse_workflow/STATE.md` -> [file_a47ad3f11faa](#file_a47ad3f11faa)
-  - `.specs/features/_arquive_features/synapse_workflow/spec.md` -> [file_08d15183b50c](#file_08d15183b50c)
-  - `.specs/features/_arquive_features/wiki_level2/STATE.md` -> [file_26b5471905f2](#file_26b5471905f2)
-  - `.specs/features/_arquive_features/wiki_level2/spec.md` -> [file_25a85d147e2a](#file_25a85d147e2a)
-  - `.specs/features/_arquive_features/wiki_level2/tasks.md` -> [file_df9a30cacfaa](#file_df9a30cacfaa)
+  - `.specs/features/gov_v3_stabilization/STATE.md` -> [file_637f531e2ec6](#file_637f531e2ec6)
+  - `.specs/features/gov_v3_stabilization/spec.md` -> [file_2a9d95da0f06](#file_2a9d95da0f06)
+  - `.specs/features/gov_v3_stabilization/tasks.md` -> [file_d9035e9c3862](#file_d9035e9c3862)
   - `GUIA_ESTABILIZACAO_NOTEBOOKLM.md` -> [file_95dabcdf3543](#file_95dabcdf3543)
   - `README.md` -> [file_8ec9a00bfd09](#file_8ec9a00bfd09)
   - `README_CONTEXT.md` -> [file_4efb6293109d](#file_4efb6293109d)
-  - `SDD_Report.md` -> [file_2e62584e6982](#file_2e62584e6982)
   - `TEMPLATE_MIGRATION.md` -> [file_19e76e009f38](#file_19e76e009f38)
   - `VERSION.md` -> [file_f6f7100f063b](#file_f6f7100f063b)
-  - `_modoLight/Modo_Light.md` -> [file_1f98938d3cd9](#file_1f98938d3cd9)
-  - `scratch/dummy_test.txt` -> [file_87783f297dc1](#file_87783f297dc1)
-  - `scratch/stress_log.txt` -> [file_1a62ac6d306d](#file_1a62ac6d306d)
 - `source`:
   - `.context/_scripts/_tz_utils.py` -> [file_dbef1acce0d4](#file_dbef1acce0d4)
   - `.context/_scripts/_wiki_log_utils.py` -> [file_9ee5d49278ad](#file_9ee5d49278ad)
@@ -187,6 +147,7 @@ sensitive_rules:
 ## INDEX_BY_PATH
 - `.agent/skills/methodical_writer.json` -> [file_31c8b76d8265](#file_31c8b76d8265)
 - `.agent/subagents/qa-validator.md` -> [file_5a0c0f1b1bd0](#file_5a0c0f1b1bd0)
+- `.agent/subagents/readme_chain_SDD.md` -> [file_651ea7e00792](#file_651ea7e00792)
 - `.agent/subagents/spec-driver.md` -> [file_a412f1bb7017](#file_a412f1bb7017)
 - `.agent/templates/AGENT_SCRATCHPAD.md` -> [file_4047da35f994](#file_4047da35f994)
 - `.agent/templates/spec_v3.md` -> [file_856590ab70be](#file_856590ab70be)
@@ -253,63 +214,18 @@ sensitive_rules:
 - `.husky/_/husky.sh` -> [file_3adfd36c1559](#file_3adfd36c1559)
 - `.specs/features/SSD_ERRORS_LEDGER.md` -> [file_5346932740b3](#file_5346932740b3)
 - `.specs/features/SSD_PLAYBOOK.md` -> [file_d801613c0c41](#file_d801613c0c41)
-- `.specs/features/_arquive_features/_template_operacional/STATE.md` -> [file_1b35d911eaf8](#file_1b35d911eaf8)
-- `.specs/features/_arquive_features/_template_operacional/design.md` -> [file_7eb05724efde](#file_7eb05724efde)
-- `.specs/features/_arquive_features/_template_operacional/spec.md` -> [file_1e6c975bc2ba](#file_1e6c975bc2ba)
-- `.specs/features/_arquive_features/_template_operacional/tasks.md` -> [file_1740220c092d](#file_1740220c092d)
-- `.specs/features/_arquive_features/_template_operacional_sprint/CHECKLIST.md` -> [file_e8be99b1aa73](#file_e8be99b1aa73)
-- `.specs/features/_arquive_features/_template_operacional_sprint/STATE.md` -> [file_5fd27bc75d27](#file_5fd27bc75d27)
-- `.specs/features/_arquive_features/_template_operacional_sprint/design.md` -> [file_4506f2a23287](#file_4506f2a23287)
-- `.specs/features/_arquive_features/_template_operacional_sprint/spec.md` -> [file_35177dcb6d83](#file_35177dcb6d83)
-- `.specs/features/_arquive_features/_template_operacional_sprint/tasks.md` -> [file_4a23e78471f0](#file_4a23e78471f0)
-- `.specs/features/_arquive_features/contract_sprints_v2_safe/STATE.md` -> [file_692cca925760](#file_692cca925760)
-- `.specs/features/_arquive_features/contract_sprints_v2_safe/spec.md` -> [file_6512a7b09ddc](#file_6512a7b09ddc)
-- `.specs/features/_arquive_features/contract_sprints_v2_safe/tasks.md` -> [file_286dc158caf0](#file_286dc158caf0)
-- `.specs/features/_arquive_features/gov_chain_v3_phase1/STATE.md` -> [file_58aea4a1eb98](#file_58aea4a1eb98)
-- `.specs/features/_arquive_features/gov_chain_v3_phase1/spec.md` -> [file_b833f4b4901b](#file_b833f4b4901b)
-- `.specs/features/_arquive_features/gov_chain_v3_phase1/tasks.md` -> [file_fbe42905f2f7](#file_fbe42905f2f7)
-- `.specs/features/_arquive_features/gov_chain_v3_phase2_dryrun/STATE.md` -> [file_f9d9e26f4839](#file_f9d9e26f4839)
-- `.specs/features/_arquive_features/gov_chain_v3_phase2_dryrun/spec.md` -> [file_c77e39121099](#file_c77e39121099)
-- `.specs/features/_arquive_features/gov_chain_v3_phase2_dryrun/tasks.md` -> [file_b1d79a093268](#file_b1d79a093268)
-- `.specs/features/_arquive_features/gov_v3_stress_test/AGENT_SCRATCHPAD.md` -> [file_933e7c1fc5f1](#file_933e7c1fc5f1)
-- `.specs/features/_arquive_features/gov_v3_stress_test/STATE.md` -> [file_86cec7fbca83](#file_86cec7fbca83)
-- `.specs/features/_arquive_features/gov_v3_stress_test/spec.md` -> [file_0418dc1c8b4c](#file_0418dc1c8b4c)
-- `.specs/features/_arquive_features/gov_v3_stress_test/tasks.md` -> [file_01855b2ee2f4](#file_01855b2ee2f4)
-- `.specs/features/_arquive_features/governance_rules_hardening/STATE.md` -> [file_9edc7697eac6](#file_9edc7697eac6)
-- `.specs/features/_arquive_features/governance_rules_hardening/design.md` -> [file_d98184a90445](#file_d98184a90445)
-- `.specs/features/_arquive_features/governance_rules_hardening/spec.md` -> [file_86997152c15a](#file_86997152c15a)
-- `.specs/features/_arquive_features/governance_rules_hardening/tasks.md` -> [file_64dd6fec9bd4](#file_64dd6fec9bd4)
-- `.specs/features/_arquive_features/harness_fail_closed/STATE.md` -> [file_5353fbc27cc1](#file_5353fbc27cc1)
-- `.specs/features/_arquive_features/harness_fail_closed/spec.md` -> [file_e56f737897cf](#file_e56f737897cf)
-- `.specs/features/_arquive_features/log_old_features.md` -> [file_f7b3adad01fe](#file_f7b3adad01fe)
-- `.specs/features/_arquive_features/meta-inception/STATE.md` -> [file_0fa0b6b078a5](#file_0fa0b6b078a5)
-- `.specs/features/_arquive_features/meta-inception/spec.md` -> [file_b544f5358fb0](#file_b544f5358fb0)
-- `.specs/features/_arquive_features/multi_agent_choreography/STATE.md` -> [file_976dca62e5de](#file_976dca62e5de)
-- `.specs/features/_arquive_features/multi_agent_choreography/spec.md` -> [file_dcdf7269aabc](#file_dcdf7269aabc)
-- `.specs/features/_arquive_features/oracle_v3/STATE.md` -> [file_3377cfe00b2d](#file_3377cfe00b2d)
-- `.specs/features/_arquive_features/oracle_v3/spec.md` -> [file_96f9097dbbd2](#file_96f9097dbbd2)
-- `.specs/features/_arquive_features/qa_subagent/STATE.md` -> [file_96a2bcfd8479](#file_96a2bcfd8479)
-- `.specs/features/_arquive_features/qa_subagent/spec.md` -> [file_07e43f982f2d](#file_07e43f982f2d)
-- `.specs/features/_arquive_features/sam_chronology_fix/STATE.md` -> [file_2bad8249610a](#file_2bad8249610a)
-- `.specs/features/_arquive_features/sam_chronology_fix/spec.md` -> [file_a969b2604ea8](#file_a969b2604ea8)
-- `.specs/features/_arquive_features/synapse_workflow/STATE.md` -> [file_a47ad3f11faa](#file_a47ad3f11faa)
-- `.specs/features/_arquive_features/synapse_workflow/spec.md` -> [file_08d15183b50c](#file_08d15183b50c)
-- `.specs/features/_arquive_features/wiki_level2/STATE.md` -> [file_26b5471905f2](#file_26b5471905f2)
-- `.specs/features/_arquive_features/wiki_level2/spec.md` -> [file_25a85d147e2a](#file_25a85d147e2a)
-- `.specs/features/_arquive_features/wiki_level2/tasks.md` -> [file_df9a30cacfaa](#file_df9a30cacfaa)
+- `.specs/features/gov_v3_stabilization/STATE.md` -> [file_637f531e2ec6](#file_637f531e2ec6)
+- `.specs/features/gov_v3_stabilization/spec.md` -> [file_2a9d95da0f06](#file_2a9d95da0f06)
+- `.specs/features/gov_v3_stabilization/tasks.md` -> [file_d9035e9c3862](#file_d9035e9c3862)
 - `GUIA_ESTABILIZACAO_NOTEBOOKLM.md` -> [file_95dabcdf3543](#file_95dabcdf3543)
 - `README.md` -> [file_8ec9a00bfd09](#file_8ec9a00bfd09)
 - `README_CONTEXT.md` -> [file_4efb6293109d](#file_4efb6293109d)
-- `SDD_Report.md` -> [file_2e62584e6982](#file_2e62584e6982)
 - `TEMPLATE_MIGRATION.md` -> [file_19e76e009f38](#file_19e76e009f38)
 - `VERSION.md` -> [file_f6f7100f063b](#file_f6f7100f063b)
-- `_modoLight/Modo_Light.md` -> [file_1f98938d3cd9](#file_1f98938d3cd9)
 - `init_ai_project.sh` -> [file_c59135753d26](#file_c59135753d26)
 - `package.json` -> [file_7030d0b2f71b](#file_7030d0b2f71b)
 - `run_context.py` -> [file_350a79f8b829](#file_350a79f8b829)
 - `run_context.sh` -> [file_86bac54f32d7](#file_86bac54f32d7)
-- `scratch/dummy_test.txt` -> [file_87783f297dc1](#file_87783f297dc1)
-- `scratch/stress_log.txt` -> [file_1a62ac6d306d](#file_1a62ac6d306d)
 - `tests/test_context.py` -> [file_4c6bbd05056e](#file_4c6bbd05056e)
 - `tests/test_oracle.py` -> [file_357f74cc7014](#file_357f74cc7014)
 
@@ -326,14 +242,20 @@ CONTENT_OMITTED toc_only=true
 FILE_END id=file_5a0c0f1b1bd0
 
 ---
+<a id="file_651ea7e00792"></a>
+FILE_START id=file_651ea7e00792 path=.agent/subagents/readme_chain_SDD.md domain=docs lang=markdown lines=81 bytes=6199 mtime=2026-05-03T22:45:54.973007+00:00 sha1=1c815a167a387447cb97df4e60c87a5047116f52
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_651ea7e00792
+
+---
 <a id="file_a412f1bb7017"></a>
-FILE_START id=file_a412f1bb7017 path=.agent/subagents/spec-driver.md domain=docs lang=markdown lines=50 bytes=2882 mtime=2026-05-03T04:30:20.311321+00:00 sha1=d22f9764e886324d31066a97ec6ffbccb9c25de6
+FILE_START id=file_a412f1bb7017 path=.agent/subagents/spec-driver.md domain=docs lang=markdown lines=57 bytes=3609 mtime=2026-05-03T23:46:46.493390+00:00 sha1=7ed0408c5a2787c82ba7cfce3c4068703a858800
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_a412f1bb7017
 
 ---
 <a id="file_4047da35f994"></a>
-FILE_START id=file_4047da35f994 path=.agent/templates/AGENT_SCRATCHPAD.md domain=docs lang=markdown lines=30 bytes=1380 mtime=2026-05-03T04:30:03.754671+00:00 sha1=06784a56e48ba74c70681fc500a205ab6e01da72
+FILE_START id=file_4047da35f994 path=.agent/templates/AGENT_SCRATCHPAD.md domain=docs lang=markdown lines=38 bytes=1852 mtime=2026-05-03T16:38:50.705209+00:00 sha1=019996c12bbdb7281122e59212fab4022fac4609
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_4047da35f994
 
@@ -417,7 +339,7 @@ FILE_END id=file_6e825c0bd6ad
 
 ---
 <a id="file_02d732116d93"></a>
-FILE_START id=file_02d732116d93 path=.context/_scripts/project_bundler.py domain=source lang=python lines=429 bytes=17861 mtime=2026-04-30T01:25:29.689806+00:00 sha1=9567f0399ca22a577183619b877e92abd8c6c5df
+FILE_START id=file_02d732116d93 path=.context/_scripts/project_bundler.py domain=source lang=python lines=430 bytes=17933 mtime=2026-05-04T00:00:54.850862+00:00 sha1=dc615b6328d10390fcc0ad3be1408645b160ab32
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_02d732116d93
 
@@ -453,7 +375,7 @@ FILE_END id=file_8f42e61c8a29
 
 ---
 <a id="file_89208fd921cb"></a>
-FILE_START id=file_89208fd921cb path=.context/_scripts/write_with_validation.py domain=source lang=python lines=124 bytes=5408 mtime=2026-05-03T04:21:17.743919+00:00 sha1=3049ede784bf3a10cb51b10c5472e6be5ff01a58
+FILE_START id=file_89208fd921cb path=.context/_scripts/write_with_validation.py domain=source lang=python lines=138 bytes=6229 mtime=2026-05-03T23:46:56.507762+00:00 sha1=b921200473783a66bdeb0e4d07412e674c05dc5e
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_89208fd921cb
 
@@ -543,13 +465,13 @@ FILE_END id=file_9b6470da8849
 
 ---
 <a id="file_41c3d3da4381"></a>
-FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=720 bytes=40561 mtime=2026-05-03T05:11:38.714294+00:00 sha1=76e4e8313a82cec314348be23972bda6798e6e50
+FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=805 bytes=46302 mtime=2026-05-04T00:06:06.183464+00:00 sha1=0b3ef21f60fd30a942414945118c27ed2eadaaa3
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_41c3d3da4381
 
 ---
 <a id="file_019509328844"></a>
-FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=275 bytes=16041 mtime=2026-05-03T05:08:17.353177+00:00 sha1=dae023484fd6f0b893a20a97901aedaf88968ca2
+FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=300 bytes=17662 mtime=2026-05-04T00:01:41.355163+00:00 sha1=dc553802147d6c328639c38acdb67e347a7815a7
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_019509328844
 
@@ -567,7 +489,7 @@ FILE_END id=file_ef714e7c8162
 
 ---
 <a id="file_d069d4f2ebef"></a>
-FILE_START id=file_d069d4f2ebef path=.context/maintenance/TECHNICAL_REQUIREMENTS.md domain=docs lang=markdown lines=150 bytes=1011 mtime=2026-05-03T05:11:38.138231+00:00 sha1=a2b7ca7d96c2ac9fc6786dcc5fc7764ed2dcde80
+FILE_START id=file_d069d4f2ebef path=.context/maintenance/TECHNICAL_REQUIREMENTS.md domain=docs lang=markdown lines=161 bytes=1022 mtime=2026-05-04T00:06:05.493378+00:00 sha1=9a3cc6982a84fafeca2638387f8543ed8a8d9cd6
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_d069d4f2ebef
 
@@ -633,7 +555,7 @@ FILE_END id=file_65a089176b85
 
 ---
 <a id="file_578d56cac1a4"></a>
-FILE_START id=file_578d56cac1a4 path=.context/market/WIKI/_index.md domain=docs lang=markdown lines=8 bytes=683 mtime=2026-04-29T22:57:40.778023+00:00 sha1=88e95b638c8214ffe557e70ecbf62f5201d72323
+FILE_START id=file_578d56cac1a4 path=.context/market/WIKI/_index.md domain=docs lang=markdown lines=8 bytes=683 mtime=2026-05-04T00:06:06.421746+00:00 sha1=88e95b638c8214ffe557e70ecbf62f5201d72323
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_578d56cac1a4
 
@@ -675,13 +597,13 @@ FILE_END id=file_b5d38697335e
 
 ---
 <a id="file_c255058b56fe"></a>
-FILE_START id=file_c255058b56fe path=.context/market/wiki_log.md domain=docs lang=markdown lines=53 bytes=5131 mtime=2026-04-29T23:30:56.879877+00:00 sha1=2d421e2d6672672b17f7eee82146c1504748252f
+FILE_START id=file_c255058b56fe path=.context/market/wiki_log.md domain=docs lang=markdown lines=55 bytes=5368 mtime=2026-05-04T00:06:07.147943+00:00 sha1=93fa75e650b840858724a57d65081cf6108a644b
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_c255058b56fe
 
 ---
 <a id="file_068a21d64bec"></a>
-FILE_START id=file_068a21d64bec path=.context/monitoring/CONTEXT_HEALTH.md domain=docs lang=markdown lines=38 bytes=1503 mtime=2026-04-29T04:34:54.863691+00:00 sha1=6b946c25c3816a3d043008c21610cc1c9ff51ada
+FILE_START id=file_068a21d64bec path=.context/monitoring/CONTEXT_HEALTH.md domain=docs lang=markdown lines=38 bytes=1520 mtime=2026-05-04T00:06:07.438448+00:00 sha1=21e5c1a5710846647082abf72b789087f296561a
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_068a21d64bec
 
@@ -693,7 +615,7 @@ FILE_END id=file_c6d44cc7da35
 
 ---
 <a id="file_3667001850eb"></a>
-FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=1076 bytes=63010 mtime=2026-05-03T05:11:59.949327+00:00 sha1=f0289bd42e064b77615f0376eab2b1f8f251d2c4
+FILE_START id=file_3667001850eb path=.context/monitoring/PROJECT_INDEX.md domain=docs lang=markdown lines=704 bytes=37632 mtime=2026-05-03T22:58:53.509979+00:00 sha1=895f9b39cde5a8924c1afccfc3aa808b1d79d18b
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_3667001850eb
 
@@ -711,279 +633,33 @@ FILE_END id=file_3adfd36c1559
 
 ---
 <a id="file_5346932740b3"></a>
-FILE_START id=file_5346932740b3 path=.specs/features/SSD_ERRORS_LEDGER.md domain=docs lang=markdown lines=62 bytes=2999 mtime=2026-05-01T00:48:12.356318+00:00 sha1=6d8037e0a1d268508bc7bb75642e309b2fa44388
+FILE_START id=file_5346932740b3 path=.specs/features/SSD_ERRORS_LEDGER.md domain=docs lang=markdown lines=75 bytes=3863 mtime=2026-05-03T23:58:26.819543+00:00 sha1=87b0588a7df0475ca2ec0d4f6b132315dc61b122
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_5346932740b3
 
 ---
 <a id="file_d801613c0c41"></a>
-FILE_START id=file_d801613c0c41 path=.specs/features/SSD_PLAYBOOK.md domain=docs lang=markdown lines=47 bytes=2163 mtime=2026-05-03T04:53:51.282489+00:00 sha1=8cbbf2d9d4f273f1a3a4f9aa3b808ce17a3f47b6
+FILE_START id=file_d801613c0c41 path=.specs/features/SSD_PLAYBOOK.md domain=docs lang=markdown lines=52 bytes=3014 mtime=2026-05-03T16:53:24.104105+00:00 sha1=98fabd1566a64f45773c5630c2891a79ef8504e8
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_d801613c0c41
 
 ---
-<a id="file_1b35d911eaf8"></a>
-FILE_START id=file_1b35d911eaf8 path=.specs/features/_arquive_features/_template_operacional/STATE.md domain=docs lang=markdown lines=22 bytes=587 mtime=2026-04-30T16:46:37.439099+00:00 sha1=29500753c8dd6de693e724c5cb7b66cd666359d0
+<a id="file_637f531e2ec6"></a>
+FILE_START id=file_637f531e2ec6 path=.specs/features/gov_v3_stabilization/STATE.md domain=docs lang=markdown lines=34 bytes=1078 mtime=2026-05-04T00:06:06.186606+00:00 sha1=94e1e02cdf9303c5ef0419984cb8ab39373fc03d
 CONTENT_OMITTED toc_only=true
-FILE_END id=file_1b35d911eaf8
+FILE_END id=file_637f531e2ec6
 
 ---
-<a id="file_7eb05724efde"></a>
-FILE_START id=file_7eb05724efde path=.specs/features/_arquive_features/_template_operacional/design.md domain=docs lang=markdown lines=13 bytes=268 mtime=2026-04-30T16:43:01.443053+00:00 sha1=757fdbf8cd47b545f182a0abf5b37e39969c1f30
+<a id="file_2a9d95da0f06"></a>
+FILE_START id=file_2a9d95da0f06 path=.specs/features/gov_v3_stabilization/spec.md domain=docs lang=markdown lines=34 bytes=1133 mtime=2026-05-04T00:05:13.492192+00:00 sha1=6d9054c77e833a61df624b7a6c231db0e4da74a1
 CONTENT_OMITTED toc_only=true
-FILE_END id=file_7eb05724efde
+FILE_END id=file_2a9d95da0f06
 
 ---
-<a id="file_1e6c975bc2ba"></a>
-FILE_START id=file_1e6c975bc2ba path=.specs/features/_arquive_features/_template_operacional/spec.md domain=docs lang=markdown lines=27 bytes=740 mtime=2026-05-01T00:14:35.831268+00:00 sha1=7c76b40388e21d17becf2fbc1c762fcda054fa6a
+<a id="file_d9035e9c3862"></a>
+FILE_START id=file_d9035e9c3862 path=.specs/features/gov_v3_stabilization/tasks.md domain=docs lang=markdown lines=8 bytes=306 mtime=2026-05-04T00:00:21.923644+00:00 sha1=9acf313c934af6cc33a0ae6fbf86d3e68ae2c12a
 CONTENT_OMITTED toc_only=true
-FILE_END id=file_1e6c975bc2ba
-
----
-<a id="file_1740220c092d"></a>
-FILE_START id=file_1740220c092d path=.specs/features/_arquive_features/_template_operacional/tasks.md domain=docs lang=markdown lines=13 bytes=361 mtime=2026-04-30T16:43:07.984885+00:00 sha1=68f88914d970b2461ea50e1cea3c677bcbc462e3
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_1740220c092d
-
----
-<a id="file_e8be99b1aa73"></a>
-FILE_START id=file_e8be99b1aa73 path=.specs/features/_arquive_features/_template_operacional_sprint/CHECKLIST.md domain=docs lang=markdown lines=22 bytes=1229 mtime=2026-05-03T05:00:19.772403+00:00 sha1=d7b773170d6624cb95caf782e088755ee99dc56a
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_e8be99b1aa73
-
----
-<a id="file_5fd27bc75d27"></a>
-FILE_START id=file_5fd27bc75d27 path=.specs/features/_arquive_features/_template_operacional_sprint/STATE.md domain=docs lang=markdown lines=39 bytes=759 mtime=2026-05-01T00:15:03.531344+00:00 sha1=f07e02dcdff8057056c9f8429aaa394c4268e709
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_5fd27bc75d27
-
----
-<a id="file_4506f2a23287"></a>
-FILE_START id=file_4506f2a23287 path=.specs/features/_arquive_features/_template_operacional_sprint/design.md domain=docs lang=markdown lines=14 bytes=217 mtime=2026-05-01T00:15:23.052977+00:00 sha1=7e45caa834e18925a08b6b30210051be577ddf0b
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_4506f2a23287
-
----
-<a id="file_35177dcb6d83"></a>
-FILE_START id=file_35177dcb6d83 path=.specs/features/_arquive_features/_template_operacional_sprint/spec.md domain=docs lang=markdown lines=44 bytes=1136 mtime=2026-05-01T00:14:50.952844+00:00 sha1=257cb5f264589b348ea67d4669db37d71866919d
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_35177dcb6d83
-
----
-<a id="file_4a23e78471f0"></a>
-FILE_START id=file_4a23e78471f0 path=.specs/features/_arquive_features/_template_operacional_sprint/tasks.md domain=docs lang=markdown lines=17 bytes=504 mtime=2026-05-01T00:15:14.384020+00:00 sha1=9c1094e39b643e8b08f4e048038502dd0bed6bab
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_4a23e78471f0
-
----
-<a id="file_692cca925760"></a>
-FILE_START id=file_692cca925760 path=.specs/features/_arquive_features/contract_sprints_v2_safe/STATE.md domain=docs lang=markdown lines=78 bytes=2178 mtime=2026-05-03T05:02:05.817737+00:00 sha1=d7938d4630d97ea552b44765ce1785bbc69907bc
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_692cca925760
-
----
-<a id="file_6512a7b09ddc"></a>
-FILE_START id=file_6512a7b09ddc path=.specs/features/_arquive_features/contract_sprints_v2_safe/spec.md domain=docs lang=markdown lines=53 bytes=2924 mtime=2026-04-30T21:56:40.332350+00:00 sha1=6181df8f9bf6e547f14de144d58d7e35484c7ab8
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_6512a7b09ddc
-
----
-<a id="file_286dc158caf0"></a>
-FILE_START id=file_286dc158caf0 path=.specs/features/_arquive_features/contract_sprints_v2_safe/tasks.md domain=docs lang=markdown lines=38 bytes=1984 mtime=2026-04-30T21:56:59.898711+00:00 sha1=29ee1fadffa2a76afa592781631ffcde707d7af6
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_286dc158caf0
-
----
-<a id="file_58aea4a1eb98"></a>
-FILE_START id=file_58aea4a1eb98 path=.specs/features/_arquive_features/gov_chain_v3_phase1/STATE.md domain=docs lang=markdown lines=112 bytes=3464 mtime=2026-05-03T03:22:51.168934+00:00 sha1=e9dcf45cebf3f382bad36b90865ad045b21c50f2
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_58aea4a1eb98
-
----
-<a id="file_b833f4b4901b"></a>
-FILE_START id=file_b833f4b4901b path=.specs/features/_arquive_features/gov_chain_v3_phase1/spec.md domain=docs lang=markdown lines=36 bytes=1962 mtime=2026-05-03T03:14:19.105864+00:00 sha1=220837eab60537f3953e1f9c9a1690f08a569de4
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_b833f4b4901b
-
----
-<a id="file_fbe42905f2f7"></a>
-FILE_START id=file_fbe42905f2f7 path=.specs/features/_arquive_features/gov_chain_v3_phase1/tasks.md domain=docs lang=markdown lines=7 bytes=477 mtime=2026-05-03T03:14:13.007280+00:00 sha1=57711e87fd2365697e82afd5e42f1cb062031927
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_fbe42905f2f7
-
----
-<a id="file_f9d9e26f4839"></a>
-FILE_START id=file_f9d9e26f4839 path=.specs/features/_arquive_features/gov_chain_v3_phase2_dryrun/STATE.md domain=docs lang=markdown lines=143 bytes=4825 mtime=2026-05-03T04:17:12.467431+00:00 sha1=a06142871efcd5c7b30f87044f76b7489ddbd63a
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_f9d9e26f4839
-
----
-<a id="file_c77e39121099"></a>
-FILE_START id=file_c77e39121099 path=.specs/features/_arquive_features/gov_chain_v3_phase2_dryrun/spec.md domain=docs lang=markdown lines=43 bytes=1737 mtime=2026-05-03T04:18:32.885576+00:00 sha1=88b938af604f536e572246227b9a72b909a5e4ad
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_c77e39121099
-
----
-<a id="file_b1d79a093268"></a>
-FILE_START id=file_b1d79a093268 path=.specs/features/_arquive_features/gov_chain_v3_phase2_dryrun/tasks.md domain=docs lang=markdown lines=4 bytes=186 mtime=2026-05-03T03:38:30.377017+00:00 sha1=6db13c9536b9c57f605c08b7a6402e7f35419d0c
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_b1d79a093268
-
----
-<a id="file_933e7c1fc5f1"></a>
-FILE_START id=file_933e7c1fc5f1 path=.specs/features/_arquive_features/gov_v3_stress_test/AGENT_SCRATCHPAD.md domain=docs lang=markdown lines=43 bytes=2125 mtime=2026-05-03T04:37:30.728011+00:00 sha1=a05954bccb1ce70756447be7bec878d96b5f1e32
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_933e7c1fc5f1
-
----
-<a id="file_86cec7fbca83"></a>
-FILE_START id=file_86cec7fbca83 path=.specs/features/_arquive_features/gov_v3_stress_test/STATE.md domain=docs lang=markdown lines=54 bytes=1765 mtime=2026-05-03T04:44:25.060749+00:00 sha1=e22a769ee467597bc6e697bdc4f643c827f0801b
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_86cec7fbca83
-
----
-<a id="file_0418dc1c8b4c"></a>
-FILE_START id=file_0418dc1c8b4c path=.specs/features/_arquive_features/gov_v3_stress_test/spec.md domain=docs lang=markdown lines=40 bytes=1739 mtime=2026-05-03T04:34:04.185230+00:00 sha1=1313d237a1fc8b0f5bb34d30ba79d109cf831d62
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_0418dc1c8b4c
-
----
-<a id="file_01855b2ee2f4"></a>
-FILE_START id=file_01855b2ee2f4 path=.specs/features/_arquive_features/gov_v3_stress_test/tasks.md domain=docs lang=markdown lines=6 bytes=268 mtime=2026-05-03T04:39:35.271793+00:00 sha1=fde7bc5047f204e1f95dd9d2716a6b65d7d6ccb0
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_01855b2ee2f4
-
----
-<a id="file_9edc7697eac6"></a>
-FILE_START id=file_9edc7697eac6 path=.specs/features/_arquive_features/governance_rules_hardening/STATE.md domain=docs lang=markdown lines=35 bytes=1962 mtime=2026-05-03T05:01:07.888132+00:00 sha1=958ec1cdac9b653aaad4bda133055d8f1a2d0c73
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_9edc7697eac6
-
----
-<a id="file_d98184a90445"></a>
-FILE_START id=file_d98184a90445 path=.specs/features/_arquive_features/governance_rules_hardening/design.md domain=docs lang=markdown lines=13 bytes=268 mtime=2026-04-30T16:43:01.443053+00:00 sha1=757fdbf8cd47b545f182a0abf5b37e39969c1f30
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_d98184a90445
-
----
-<a id="file_86997152c15a"></a>
-FILE_START id=file_86997152c15a path=.specs/features/_arquive_features/governance_rules_hardening/spec.md domain=docs lang=markdown lines=149 bytes=6085 mtime=2026-05-01T03:00:10.790352+00:00 sha1=47b62ce4c991aa8d8cbd2932ebea9510402059d0
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_86997152c15a
-
----
-<a id="file_64dd6fec9bd4"></a>
-FILE_START id=file_64dd6fec9bd4 path=.specs/features/_arquive_features/governance_rules_hardening/tasks.md domain=docs lang=markdown lines=42 bytes=2324 mtime=2026-05-01T02:59:57.318603+00:00 sha1=6233cec933839e53214f90017aeefeddba9c2ba3
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_64dd6fec9bd4
-
----
-<a id="file_5353fbc27cc1"></a>
-FILE_START id=file_5353fbc27cc1 path=.specs/features/_arquive_features/harness_fail_closed/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-22T23:02:55.455444+00:00 sha1=a627e9b0e39cebcd966bff38fff2869fb72544c9
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_5353fbc27cc1
-
----
-<a id="file_e56f737897cf"></a>
-FILE_START id=file_e56f737897cf path=.specs/features/_arquive_features/harness_fail_closed/spec.md domain=docs lang=markdown lines=14 bytes=630 mtime=2026-04-21T22:16:15.283651+00:00 sha1=32ea04febe6e93d0fa8959cc525575f3bd2bb3eb
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_e56f737897cf
-
----
-<a id="file_f7b3adad01fe"></a>
-FILE_START id=file_f7b3adad01fe path=.specs/features/_arquive_features/log_old_features.md domain=docs lang=markdown lines=19 bytes=1738 mtime=2026-05-03T04:51:19.553091+00:00 sha1=bb6eee0b6384444b0a865bd4f27c1f88c88d0730
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_f7b3adad01fe
-
----
-<a id="file_0fa0b6b078a5"></a>
-FILE_START id=file_0fa0b6b078a5 path=.specs/features/_arquive_features/meta-inception/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-21T22:01:44.285888+00:00 sha1=4647d09b6cba8ee228ab2e51d8c647537a9c41a5
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_0fa0b6b078a5
-
----
-<a id="file_b544f5358fb0"></a>
-FILE_START id=file_b544f5358fb0 path=.specs/features/_arquive_features/meta-inception/spec.md domain=docs lang=markdown lines=30 bytes=1389 mtime=2026-04-17T14:33:18.003175+00:00 sha1=0cd48f6f6251020721a35d1efcec750576473d60
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_b544f5358fb0
-
----
-<a id="file_976dca62e5de"></a>
-FILE_START id=file_976dca62e5de path=.specs/features/_arquive_features/multi_agent_choreography/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-29T04:34:54.226138+00:00 sha1=71453a8519bf6455452aa7e57c7f54e04369c8b6
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_976dca62e5de
-
----
-<a id="file_dcdf7269aabc"></a>
-FILE_START id=file_dcdf7269aabc path=.specs/features/_arquive_features/multi_agent_choreography/spec.md domain=docs lang=markdown lines=30 bytes=2015 mtime=2026-04-29T04:33:53.553136+00:00 sha1=7594877b728618e362c2938b4ea4d50f03d8baaa
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_dcdf7269aabc
-
----
-<a id="file_3377cfe00b2d"></a>
-FILE_START id=file_3377cfe00b2d path=.specs/features/_arquive_features/oracle_v3/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-30T04:33:59.463898+00:00 sha1=f72117a55a53bae3739d4583cb6cbacf74930ae5
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_3377cfe00b2d
-
----
-<a id="file_96f9097dbbd2"></a>
-FILE_START id=file_96f9097dbbd2 path=.specs/features/_arquive_features/oracle_v3/spec.md domain=docs lang=markdown lines=46 bytes=3205 mtime=2026-04-30T00:13:47.066525+00:00 sha1=02ac4a47ace8e296ed23593ec6d3954c6277a071
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_96f9097dbbd2
-
----
-<a id="file_96a2bcfd8479"></a>
-FILE_START id=file_96a2bcfd8479 path=.specs/features/_arquive_features/qa_subagent/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-26T20:26:18.109414+00:00 sha1=0ad50dd6b8c1506fc32bc6c97cad870207d47765
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_96a2bcfd8479
-
----
-<a id="file_07e43f982f2d"></a>
-FILE_START id=file_07e43f982f2d path=.specs/features/_arquive_features/qa_subagent/spec.md domain=docs lang=markdown lines=22 bytes=1169 mtime=2026-04-26T18:27:10.870230+00:00 sha1=7474b521b7b686ed11fae0943c58b8f07110f069
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_07e43f982f2d
-
----
-<a id="file_2bad8249610a"></a>
-FILE_START id=file_2bad8249610a path=.specs/features/_arquive_features/sam_chronology_fix/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-26T18:20:04.784593+00:00 sha1=6a534b07b054bbbcc966dade113b0a3c87ab3b8f
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_2bad8249610a
-
----
-<a id="file_a969b2604ea8"></a>
-FILE_START id=file_a969b2604ea8 path=.specs/features/_arquive_features/sam_chronology_fix/spec.md domain=docs lang=markdown lines=51 bytes=2550 mtime=2026-04-26T18:19:47.789302+00:00 sha1=8468ef12308baca668fabdfc41aca8206ad13f70
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_a969b2604ea8
-
----
-<a id="file_a47ad3f11faa"></a>
-FILE_START id=file_a47ad3f11faa path=.specs/features/_arquive_features/synapse_workflow/STATE.md domain=docs lang=markdown lines=13 bytes=378 mtime=2026-04-26T04:39:21.446038+00:00 sha1=bb9cde9c3c43964ea1c8017a0117423a079aab4c
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_a47ad3f11faa
-
----
-<a id="file_08d15183b50c"></a>
-FILE_START id=file_08d15183b50c path=.specs/features/_arquive_features/synapse_workflow/spec.md domain=docs lang=markdown lines=38 bytes=1890 mtime=2026-04-24T18:07:53.542998+00:00 sha1=bc5ea2e2ad98d39f870c7512a4cc4ae416741041
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_08d15183b50c
-
----
-<a id="file_26b5471905f2"></a>
-FILE_START id=file_26b5471905f2 path=.specs/features/_arquive_features/wiki_level2/STATE.md domain=docs lang=markdown lines=5 bytes=79 mtime=2026-04-24T01:03:39.917219+00:00 sha1=cc017238b0e6ff18156502ec8d318a50c984646d
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_26b5471905f2
-
----
-<a id="file_25a85d147e2a"></a>
-FILE_START id=file_25a85d147e2a path=.specs/features/_arquive_features/wiki_level2/spec.md domain=docs lang=markdown lines=43 bytes=1834 mtime=2026-04-22T23:11:15.675831+00:00 sha1=71be78a7b5b40a5dd98bb2d0f899312d14766a6d
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_25a85d147e2a
-
----
-<a id="file_df9a30cacfaa"></a>
-FILE_START id=file_df9a30cacfaa path=.specs/features/_arquive_features/wiki_level2/tasks.md domain=docs lang=markdown lines=55 bytes=2460 mtime=2026-04-22T23:32:40.379948+00:00 sha1=161c580635c9ecd7ba0d68aa9fab0db1d788b1af
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_df9a30cacfaa
+FILE_END id=file_d9035e9c3862
 
 ---
 <a id="file_95dabcdf3543"></a>
@@ -1004,12 +680,6 @@ CONTENT_OMITTED toc_only=true
 FILE_END id=file_4efb6293109d
 
 ---
-<a id="file_2e62584e6982"></a>
-FILE_START id=file_2e62584e6982 path=SDD_Report.md domain=docs lang=markdown lines=477 bytes=22333 mtime=2026-05-02T22:37:04.019153+00:00 sha1=49acaca4a27d3f5112b3d32742c9121bc2330581
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_2e62584e6982
-
----
 <a id="file_19e76e009f38"></a>
 FILE_START id=file_19e76e009f38 path=TEMPLATE_MIGRATION.md domain=docs lang=markdown lines=59 bytes=1930 mtime=2026-04-15T13:55:12.936320+00:00 sha1=a3590439f4c18d976ff928504760f8f35a29d25c
 CONTENT_OMITTED toc_only=true
@@ -1020,12 +690,6 @@ FILE_END id=file_19e76e009f38
 FILE_START id=file_f6f7100f063b path=VERSION.md domain=docs lang=markdown lines=11 bytes=673 mtime=2026-04-26T20:25:19.735804+00:00 sha1=c262bc32870ead58b83fddaf73a89b7eb4d532be
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_f6f7100f063b
-
----
-<a id="file_1f98938d3cd9"></a>
-FILE_START id=file_1f98938d3cd9 path=_modoLight/Modo_Light.md domain=docs lang=markdown lines=140 bytes=5961 mtime=2026-04-11T03:09:45.201801+00:00 sha1=267fea8bb9a67840095155f98e5860cd0cf82760
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_1f98938d3cd9
 
 ---
 <a id="file_c59135753d26"></a>
@@ -1050,18 +714,6 @@ FILE_END id=file_350a79f8b829
 FILE_START id=file_86bac54f32d7 path=run_context.sh domain=source lang=bash lines=17 bytes=798 mtime=2026-04-17T02:31:37.204327+00:00 sha1=a6c29d302d9d9c3f99917dd1da64da3d07f635ac
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_86bac54f32d7
-
----
-<a id="file_87783f297dc1"></a>
-FILE_START id=file_87783f297dc1 path=scratch/dummy_test.txt domain=docs lang=txt lines=2 bytes=34 mtime=2026-05-03T04:05:59.597969+00:00 sha1=f8ebdad48a4c595114c496c6d040c7ea4271131b
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_87783f297dc1
-
----
-<a id="file_1a62ac6d306d"></a>
-FILE_START id=file_1a62ac6d306d path=scratch/stress_log.txt domain=docs lang=txt lines=1 bytes=25 mtime=2026-05-03T04:39:17.252206+00:00 sha1=7937c87adba3a688f6246a536456917f236cedb2
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_1a62ac6d306d
 
 ---
 <a id="file_4c6bbd05056e"></a>

@@ -8,6 +8,31 @@ Nota: Semente pos-purge. 33 entradas arquivadas em journal_archive_20260503_0151
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-03 20:50
+**Decisão/Bug:** 🛡️ Hardening v3.5: Codificação Mecânica do Protocolo [RESUME].
+**Ação:**
+1. Endurecido o DNA do subagente (`spec-driver.md`) com o protocolo mandatório de re-ignição e sincronia de Skills.
+2. Implementada a trava física no `write_with_validation.py` que exige o registro textual de `RESUME_DIRECTIVE:` para desbloquear a Skill 6 (escrita) após falhas.
+3. Resolvida a lacuna de governança apontada pelo Auditor sobre a natureza determinística da retomada.
+
+### Matriz de Propagação (Sinapse)
+- [x] `.agent/subagents/spec-driver.md` -> [Skill Chain V3.5 Hardened]
+- [x] `.context/_scripts/write_with_validation.py` -> [Trava de Segurança [RESUME] Ativa]
+- [x] `.context/_scripts/project_bundler.py` -> [Aumento de limite para 1000 linhas - Fix Truncate]
+- [x] `.specs/features/SSD_ERRORS_LEDGER.md` -> [Vacina de Responsabilidade Injetada]
+- [x] `.specs/features/gov_v3_stabilization/` -> [Feature Spec de Prova Técnica]
+- [x] `.context/maintenance/TECHNICAL_REQUIREMENTS.md` -> [Auto-sync de requisitos]
+- [x] `.context/monitoring/PROJECT_INDEX.md` -> [Auto-sync de índice]
+- [x] `contexto_v2.5.2.md` -> [Auto-sync de bundle completo]
+- [x] `contexto_v2.5.2_toc.md` -> [Auto-sync de TOC]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de Hardening V3.5 e Estabilização]
+
+### Contrato de Validação
+- executor_context_id: `CTX_HARDENING_V3_5`
+- validator_context_id: `CTX_QA_SAM`
+- status: `🟢 READY TO COMMIT`
+- validator_verdict: `Aprovado. O sistema agora impede mecanicamente a retomada sem diretriz, fechando o loop de segurança técnica.`
+
 ## 📅 2026-05-03 02:00
 **Decisão/Bug:** 🛡️ V3 Bypass: Estabilização Final da Chain-Skills V3 (Hardening).
 **Ação:**

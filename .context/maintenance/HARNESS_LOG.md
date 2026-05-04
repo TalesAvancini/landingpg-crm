@@ -718,3 +718,88 @@ Status: Ativo
 
 [FATAL] Modo STRICT: Pipeline bloqueado.
 
+
+## [HARNESS-FAIL] Report | spec:manual
+- **Detalhe:** sprint_contract: Nenhuma Spec ativa detectada. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Fraude Narrativa: Arquivo '.specs/features/governance_rules_hardening/tasks.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/governance_rules_hardening/spec.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/governance_rules_hardening/STATE.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/SSD_PLAYBOOK.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/SDD_ERRORS_LEDGER.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/brain/FILE_GLOSSARY.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/SSD_ERRORS_LEDGER.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/brain/AGENT_REGISTRY.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/SDD_PLAYBOOK.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo 'README_CONTEXT.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/_template_operacional_sprint/CHECKLIST.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo 'init_ai_project.sh' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/maintenance/rx-anatomy.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.specs/features/governance_rules_hardening/design.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Modificação Silenciosa: Arquivo 'contexto_v2.5.2.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.agent/subagents/spec-driver.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'contexto_v2.5.2_toc.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/monitoring/PROJECT_INDEX.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/_scripts/write_with_validation.py' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/maintenance/TECHNICAL_REQUIREMENTS.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:manual
+- **Detalhe:** sprint_contract: Nenhuma Spec ativa detectada. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Modificação Silenciosa: Arquivo 'contexto_v2.5.2.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/maintenance/TECHNICAL_REQUIREMENTS.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/monitoring/PROJECT_INDEX.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'contexto_v2.5.2_toc.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:manual
+- **Detalhe:** sprint_contract: Nenhuma Spec ativa detectada. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Fraude Narrativa: Arquivo 'contexto_v2.5.2.md` / `contexto_v2.5.2_toc.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Modificação Silenciosa: Arquivo 'contexto_v2.5.2.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'contexto_v2.5.2_toc.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:manual
+- **Detalhe:** sprint_contract: Nenhuma Spec ativa detectada.
+
+## [HARNESS-FAIL] Report | spec:gov_v3_stabilization
+- **Detalhe:** sprint_contract: Bloco de contrato (---) ausente no topo da spec | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Modificação Silenciosa: Arquivo '.specs/features/SSD_ERRORS_LEDGER.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:gov_v3_stabilization
+- **Detalhe:** sprint_contract: Modo de contrato não identificado ou malformado
+
+## [HARNESS-FAIL] Report | spec:gov_v3_stabilization
+- **Detalhe:** sprint_contract: Campo definition_of_done obrigatório
+
+## [HARNESS-FAIL] Report | spec:gov_v3_stabilization
+- **Detalhe:** sprint_contract: Contrato standard não assinado pelo @qa-validator (qa_signoff: false)
+
+## [HARNESS-FAIL] Report | spec:gov_v3_stabilization
+- **Detalhe:** sprint_contract: Campo signed_by inválido ou ausente
+
+## [HARNESS-FAIL] Report | spec:gov_v3_stabilization
+- **Detalhe:** sprint_contract: Spec standard requer context_ids preenchidos
+
+## [HARNESS-PASS] Report | spec:gov_v3_stabilization
+- **Detalhe:** All contracts valid

@@ -99,6 +99,12 @@ Mudanças em scripts de governança (`validate_context.py`, `harness_runner.py`,
 1. **Sanity Check:** Execução mínima do script após a alteração para validar que não há erros de import ou sintaxe.
 2. **Non-Regression:** Evidência de que os gates de segurança continuam ativos.
 
+## 🛡️ 1.9 Regra `EXECUTION_GATEKEEPER` (Fail-Closed & Resume Protocol)
+A modificação de arquivos de código é um ato estritamente mecânico, governado fisicamente pelo `write_with_validation.py` (A Trava Física - Skill 6).
+1. **Bloqueio Inviolável:** Nenhuma ferramenta genérica de escrita deve contornar a validação formal deste script.
+2. **Condição de Bloqueio:** O script analisa dinamicamente o `STATE.md` buscando por estados de erro ativo (`[BLOCKED]` ou `[FATAL]`).
+3. **Protocolo `[RESUME]`:** Se o sistema estiver bloqueado, qualquer tentativa de escrita resultará em falha e aborto da operação. Para destravar a arquitetura e retomar a execução, a IA deve receber novas diretrizes do Orquestrador Humano e registrar obrigatoriamente a string `RESUME_DIRECTIVE:` dentro da seção de log do `STATE.md`.
+
 ---
 
 ## 🔢 2. Ansiedade de Contexto & Ralph Wiggum Loop

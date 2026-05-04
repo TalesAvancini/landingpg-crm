@@ -99,7 +99,17 @@ def validate_write(feature_id, task_id, file_path, line_count):
                 f"Registre 'tier_justification:' para {task_id} no log."
             )
             
-    # ── 8. Tudo certo ──
+    # ── 8. Checkpoint de Retomada (H.O.K Hardening V3.5) ──
+    # Se houver rastro de bloqueio, exige prova de diretiva de retomada
+    if "[BLOCKED]" in state_content or "[FATAL]" in state_content:
+        if "RESUME_DIRECTIVE:" not in state_content:
+            return False, (
+                "SISTEMA EM ESTADO DE BLOQUEIO. Escrita negada.\n"
+                "Voce deve registrar a 'RESUME_DIRECTIVE:' no STRATEGY_LOG do STATE.md "
+                "antes de tentar retomar a Skill 6."
+            )
+
+    # ── 9. Tudo certo ──
     tier = '1' if line_count <= TIER_1_LIMIT else '2' if line_count <= TIER_2_LIMIT else '3'
     return True, f"WRITE_AUTHORIZED | task={task_id} | file={file_path} | lines={line_count} | tier={tier}"
 

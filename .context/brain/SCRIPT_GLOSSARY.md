@@ -36,6 +36,7 @@ Status: Ativo
 | `validate_context.py` | **Sistema Imunológico** | **Radar de Fricção e Integridade.** Faz o check-up de metadados, estima Token Bloat e monitora a ordem cronológica do Journal e o frescor dos estados das specs (Modo Advisory). | `npm run context:validate` |
 | `check_version_consistency.py` | **Medula Espinhal** | Analisa se a versão oficial declarada no `VERSION.md` está coerente no `package.json`, `INCEPTION.md` e em `version_targets.json`. Impede "Drifting" de versões. | Roda no pipeline `context:all` |
 | `secrets_scanner.py` | **Leucócito** | Varre ativamente o código e arquivos markdown atrás de chaves de API, senhas ou tokens que o desenvolvedor/IA possa ter "hardcoded" por acidente. | Roda no pipeline `context:all` |
+| `write_with_validation.py` | **Músculo Esquelético** | Validador Físico de Escrita (Skill 6). Impede que o agente modifique arquivos se não houver um Plano de Implementação (Tier Justification) ou se houver um bloqueio (exigindo `RESUME_DIRECTIVE`). | Chamado pela IA no terminal (`methodical-writer`) |
 
 ---
 
@@ -48,6 +49,7 @@ Status: Ativo
 | `enrich_context.py` | **Córtex Pré-Frontal**| Analisa a narrativa livre do arquivo `VISION.md` e a traduz em limites técnicos estritos (`INCEPTION.md`). Detecta "gaps" de lógica antes do código ser escrito. | `npm run context:enrich` |
 | `ingest_wiki_guard.py` | **Sistema Digestório**| Consome arquivos pesados de PDFs ou pesquisas da pasta `RAW/` e os destila (resume e formata) em pequenas pílulas indexadas na pasta `WIKI/`. | `npm run context:ingest-guard` |
 | `lint_wiki.py` | **Linter Epistemológico**| A Regra Karpathy de código. Verifica se os documentos da Wiki contêm a citação de procedência (`> Fonte: raw/X`). Se for "achismo", o commit é bloqueado no modo Strict. | `npm run context:lint` |
+| `oracle_analytics.py` | **Lobo Temporal** | Analisa a qualidade da base de dados e do histórico RAG do projeto, emitindo relatórios de eficácia analítica e apontando inconsistências de domínio. | `npm run context:oracle-analytics` |
 
 ---
 

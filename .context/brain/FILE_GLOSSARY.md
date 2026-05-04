@@ -39,6 +39,8 @@ Status: Ativo
 | `START_HERE.md` | **Onboarding.** Guia passo a passo para novos desenvolvedores entenderem o pipeline de descoberta (Visão -> Inception -> Execução). | Humano |
 | `FILE_GLOSSARY.md` | **O Dicionário (Este arquivo).** Mapeia a responsabilidade estrita de cada `.md` dentro do ecossistema. | `@context-keeper` |
 | `SCRIPT_GLOSSARY.md` | **O Dicionário de Automação.** Mapeia a função, responsabilidade e modo de invocação de todos os scripts Python da pasta `_scripts/`. | `@context-keeper` |
+| `HARNESS_REGISTRY.md` | **Registro de Validação.** Dicionário dos gates de validação, critérios e escopos que o Harness verifica durante a CI. | `@qa-validator` |
+| `TLC_INTEGRATION.md` | **Metodologia.** Guia de alinhamento entre as práticas do TLC (Think Like a Coder / Specify, Design, Tasks, Execute) e o motor H.O.K. | Humano |
 
 ---
 
@@ -77,6 +79,7 @@ Status: Ativo
 | `SSOT_MAP.md` | **Single Source of Truth de Mercado.** Mapeia os links oficiais dos concorrentes, leis e referências absolutas. | `@spec-enricher` |
 | `MARKET_INBOX.md` | **Caixa de Entrada.** Área crua para depositar links soltos, artigos de blog e pesquisas antes de estruturar. | Humano |
 | `wiki_log.md` | **Histórico de Wiki.** Log das publicações na documentação externa / Confluence. | Scripts do Sistema |
+| `economics.md` | **Diretrizes Econômicas.** Regras e limites orçamentários, precificação ou restrições de custo para decisões arquiteturais de nuvem/APIs. | Humano |
 
 ---
 
@@ -98,4 +101,7 @@ Status: Ativo
 | :--- | :--- | :--- |
 | `templates/spec_v3.md` | **Molde de Contrato V3.** O template oficial para iniciar novas features com as 9 Skills integradas. | `@spec-driver` |
 | `templates/AGENT_SCRATCHPAD.md` | **Template de Metacognição.** Molde para a memória de trabalho anti-loop de cada feature. | `@spec-driver` |
+| `subagents/spec-driver.md` | **Executor Determinístico.** Subagente orquestrador da Chain-Skills V3. Executa as 9 skills em sequência rígida (Fail-Closed). | IA Orquestradora |
 | `subagents/qa-validator.md` | **Padrão B de Subagente.** Validador Físico. Subagente que é invocado de forma autônoma (Zero Trust) para ler Diffs, Specs e autorizar o commit. | IA Orquestradora |
+| `subagents/readme_chain_SDD.md` | **Padrão C de Subagente.** Especialista em documentação. Mantém os metadados externos e READMEs alinhados com o estado do sistema. | IA Orquestradora |
+| `skills/methodical_writer.json` | **Restrição de Ferramentas.** Configuração de permissões estritas e limites para a Skill 6 (Escrita Cirúrgica). | `@spec-driver` |

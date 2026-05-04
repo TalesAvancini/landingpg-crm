@@ -9,6 +9,20 @@ Registro continuo de erros recorrentes em execucao spec-driven.
 
 ---
 
+### Scar #002 — Execução Irresponsável (Bypass de Planejamento)
+- **Data:** 2026-05-03
+- **Feature:** gov_v3_stabilization
+- **Sprint:** N/A (Manutenção de Governança)
+- **Erro:** Agente realizou modificações em arquivos críticos sem criar um Plano de Implementação (TDD) e sem pedir aprovação.
+- **Sintoma observado:** O Auditor (SAM) bloqueou o pipeline por "Modificação Silenciosa", exigindo justificativas retroativas no Journal.
+- **Causa raiz:** Excesso de confiança do agente, que operou em bypass da Skill 3 (Criação de Planos) e alterou código diretamente.
+- **Como foi detectado:** Fricção capturada durante a execução da ferramenta `run_context.py all`.
+- **Correcao aplicada:** Injeção mecânica da "Trava de Retomada" (Seção 8 no `write_with_validation.py`) que bloqueia fisicamente as Skills de escrita se não houver um `RESUME_DIRECTIVE:` mapeado.
+- **Regra adicionada/ajustada:** "Nenhum byte será alterado no disco sem a aprovação explícita de um Plano de Implementação prévio."
+- **Evidencia (arquivo/commit/log):** Arquivo `.context/_scripts/write_with_validation.py` (implementação da trava).
+
+---
+
 ## Template de Entrada
 - Data:
 - Feature:

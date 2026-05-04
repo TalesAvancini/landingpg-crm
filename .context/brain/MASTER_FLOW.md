@@ -77,7 +77,7 @@ Status: [Ativo | Arquivado | Depreciado]
 
 ---
 
-## 🔄 2.1 Ciclo de Vida TLC Autobuilder (4 Atos)
+## 🔄 2.1 Ciclo de Vida TLC Autobuilder (5 Atos)
 | Ato | Gatilho | Ferramenta/Script | Saída Esperada |
 |-----|---------|-------------------|----------------|
 | **1. [Semente]** | `INCEPTION.md` ativo + gaps | `npm run context:enrich` | `PRD.md` lastreado + `market/` populado |
@@ -100,7 +100,9 @@ Para projetos de complexidade média/alta, o Antigravity utiliza a segregação 
 
 1.  **[Planner - Hub]**: IA Principal desenha a SPEC na janela atual, define `max_impact_radius` e emite o comando de Spawn (`/spec-driver`).
 2.  **[Pre-flight - Executor]**: Novo processo limpo nasce e roda `grep` (Pre-flight Gate). Se impacto > Limite → `SCOPE_BLOWOUT` (Telemetria no `STATE.md`).
-3.  **[Execution - Executor]**: Subagente coda sob rigor do `flash-harness`. Ao terminar, deve obrigatoriamente executar o **Pre-close Self-Audit** (validar árvore limpa, coerência spec/state e signoff). Se passar, emite `/qa-validator`.
+3.  **[Execution - Executor]**: O subagente (`spec-driver`) assume o controle operando sob a doutrina **Chain-Skills V3** (Uma corrente determinística de 9 skills).
+    - As edições físicas (Skill 6) são monitoradas de forma Fail-Closed pelo `write_with_validation.py`.
+    - Ao terminar as modificações, ele deve obrigatoriamente rodar o **Pre-close Self-Audit** (Skill 8). Se passar, emite `/qa-validator`.
 4.  **[Auditoria - Validador]**: Novo processo cego nasce. Realiza a auditoria final de fechamento (Pre-Close Audit). Valida Semântica (Lógica) + Telemetria (Impacto resolvido). Assina o `spec.md` se correto.
 5.  **[Finalização - Hub]**: IA Principal (Humano aciona o Hub) verifica a SPEC assinada, valida o SAM, emite o rito final e comita/arquiva.
 
