@@ -20,13 +20,12 @@ Status: 🔥 HARDENED (v2.5.2) - Agnóstico e Técnico
 └── STATE.md                   <-- A MEMÓRIA VIVA: Decisões, logs e estado da sessão."
 
 
-## 🔄 Ciclo de Vida Híbrido (v2.5.2)
-1. **INTENT:** Documento ativo define a intenção.
-2. **SPECIFY:** Hub gera `spec.md` via `specify.md`.
-3. **SPRINT PLANNING:** Organização no `tasks.md` via `tasks.md`. **Foco: TDD**.
-4. **IMPLEMENT:** Execução mecânica via `@spec-driver` usando `implement.md`.
-5. **VERIFY:** Validação técnica via `validate.md`.
-6. **SYNC:** Sincronização final via `session-handoff.md`.
+## 🔄 Ciclo de Vida TLC na Arquitetura V3.5 (A Prática)
+1. **INTENT:** O `INCEPTION.md` ou `PRD.md` (brain/) define a fronteira e a intenção de negócio.
+2. **SPECIFY:** O Hub (Humano ou IA Orquestradora) cria o `spec.md` e o `tasks.md` no canteiro `.specs/features/`.
+3. **IMPLEMENT:** O Subagente `@spec-driver` assume o volante. Ele roda mecanicamente a **Chain-Skills V3** (9 passos), onde toda a edição física de código é protegida de forma Fail-Closed pela Skill 6 (`write_with_validation.py`).
+4. **VERIFY:** O Subagente `@qa-validator` é invocado (Zero Trust). Ele audita o `STATE.md`, cruza com o `git diff` e assina a Spec se os critérios estiverem sanados.
+5. **SYNC (CLOSE WAVE):** O Hub avalia a assinatura do QA, submete ao escrutínio do Harness (`harness_runner.py`), registra o legado no `JOURNAL.md` e comita.
 
 ## 📏 Regras de Ouro (Zero Migué)
 - 🧪 **TDD e Verificação:** Proibido codar sem critério de prova técnica.
