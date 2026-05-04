@@ -1,12 +1,27 @@
 ---
 Criado em: 2026-05-03 01:51
-Ultima Atualizacao: 2026-05-03 23:55
+Ultima Atualizacao: 2026-05-04 01:18
 Status: Ativo
 Nota: Semente pos-purge. 33 entradas arquivadas em journal_archive_20260503_015104.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-04 01:18
+**Decisão/Bug:** 🛡️ Hardening Arquitetural e Learnings Framework (Selo de Qualidade).
+**Ação:**
+1. **Institucionalização de Learnings**: O sistema de memória foi espalhado por 7 arquivos de governança para garantir que IAs futuras não ignorem o histórico estratégico.
+2. **Placas de Aviso**: Adicionada "Matriz de Acoplamento" no topo do `spec-driver.md` para evitar drift arquitetural.
+3. **Persistência de Conhecimento**: Criado e indexado o `rx-learnings.md` no Glossário, consolidando o Raio-X do aprendizado do sistema.
+4. **Validado e Commited**: Executada auditoria final e realizado commit atômico das amarrações de governança.
+
+### Matriz de Propagação (Sinapse)
+- [x] `.agent/subagents/spec-driver.md` -> [Skill 2: Inject mandated]
+- [x] `.context/brain/AGENT_REGISTRY.md` -> [Context Priority: enriched.md]
+- [x] `.context/brain/RULES.md` -> [Rule 1.10: Active Memory]
+- [x] `.context/maintenance/rx-learnings.md` -> [Novo Artefato]
+- [x] `FILE_GLOSSARY.md` -> [Indexado]
 
 ## 📅 2026-05-04 00:37
 **Decisão/Bug:** 🧠 Governança Cognitiva Validada (MiMo v2.1 - Fim da Iniciativa).

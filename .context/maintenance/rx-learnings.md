@@ -1,9 +1,9 @@
-# 🧠 RX: MiMo Learnings (Governança Cognitiva)
+# 🧠 RX: H.O.K Learnings (Governança Cognitiva)
 
-## 1. O Que é o MiMo Learnings?
-No ecossistema H.O.K Forge, o **MiMo Learnings** é o sistema de memória estratégica. Enquanto outros sistemas (como o SAM ou o Harness) focam em validar o *presente*, o MiMo foca em aprender com o *passado* para proteger o *futuro*.
+## 1. O Que é o Learnings Framework?
+No ecossistema H.O.K Forge, o **Learnings Framework** é o sistema de memória estratégica. Enquanto outros sistemas (como o SAM ou o Harness) focam em validar o *presente*, o Learnings foca em aprender com o *passado* para proteger o *futuro*.
 
-Ele resolve o problema do "Agente Amnésico": IAs tendem a cometer os mesmos erros repetidamente se não forem lembradas explicitamente de falhas anteriores. O MiMo automatiza esse lembrete, transformando erros em "cicatrizes" (Scars) que servem de vacina para as próximas execuções.
+Ele resolve o problema do "Agente Amnésico": IAs tendem a cometer os mesmos erros repetidamente se não forem lembradas explicitamente de falhas anteriores. O sistema automatiza esse lembrete (via motor MiMo), transformando erros em "cicatrizes" (Scars) que servem de vacina para as próximas execuções.
 
 ---
 
