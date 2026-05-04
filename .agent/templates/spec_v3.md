@@ -11,6 +11,7 @@ sprint_01:
     # Global/Maintenance (Obrigatório para V3)
     - .specs/features/[feature_id]/STATE.md
     - .specs/features/[feature_id]/tasks.md
+    - .specs/features/[feature_id]/*.enriched.md
     - .context/maintenance/HARNESS_LOG.md
     - .context/maintenance/JOURNAL.md
     - .specs/features/[feature_id]/AGENT_SCRATCHPAD.md

@@ -27,6 +27,12 @@ Toda feature deve progredir através destas skills no `STATE.md`:
 
 ---
 
+## 🧠 O Rito do Córtex (MiMo)
+O MiMo (Memory Injection Module) insere *Scars* (Cicatrizes de erros passados) no topo do arquivo `.enriched.md`.
+- **Injeção Obrigatória:** A Spec só inicia após o comando `npm run context:inject`.
+- **Leitura Exclusiva:** Agentes executores devem ler **APENAS** o `.enriched.md` e ignorar o `spec.md` limpo.
+- **Score Elevado (>200):** Se uma Scar possuir pontuação acima de 200 (gravidade alta ou recorrência crônica), o Executor DEVE registrar no seu `STRATEGY_LOG` (Skill 3) o plano de mitigação específico para evitar a repetição daquele erro durante a sprint.
+
 ## 🛡️ Protocolo Anti-Loop e Escalation
 Sempre que o Gatekeeper ou o Harness retornar um erro `[BLOCKED]` ou `[FATAL]`, a IA (Executor) entrará em bloqueio cognitivo:
 1.  Ela **NÃO** repetirá a ação.

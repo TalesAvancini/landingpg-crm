@@ -105,6 +105,12 @@ A modificação de arquivos de código é um ato estritamente mecânico, governa
 2. **Condição de Bloqueio:** O script analisa dinamicamente o `STATE.md` buscando por estados de erro ativo (`[BLOCKED]` ou `[FATAL]`).
 3. **Protocolo `[RESUME]`:** Se o sistema estiver bloqueado, qualquer tentativa de escrita resultará em falha e aborto da operação. Para destravar a arquitetura e retomar a execução, a IA deve receber novas diretrizes do Orquestrador Humano e registrar obrigatoriamente a string `RESUME_DIRECTIVE:` dentro da seção de log do `STATE.md`.
 
+## 🛡️ 1.10 Regra `MIMO_MANDATORY_INJECTION` (Memória Ativa)
+O Agente orquestrador sofre de amnésia cibernética entre sessões. Para evitar o "Ralph Wiggum Loop":
+1. **Injeção Obrigatória:** Nenhuma spec pode ter sua execução iniciada sem que o comando `npm run context:inject` seja executado previamente.
+2. **Consumo da Vacina:** O Agente Executor **NÃO DEVE** ler a spec original virgem (`spec.md`). Ele **DEVE OBRIGATORIAMENTE** ler a versão `*.enriched.md`, que contém as *Scars* (Cicatrizes) injetadas no topo.
+3. **Fraude Comportamental:** Ignorar as *Scars* do topo da spec e cometer o mesmo erro reportado é considerado quebra de conduta, passível de bloqueio de commit.
+
 ---
 
 ## 🔢 2. Ansiedade de Contexto & Ralph Wiggum Loop

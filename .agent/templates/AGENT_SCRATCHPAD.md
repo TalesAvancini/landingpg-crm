@@ -18,6 +18,10 @@ Se você recebeu um erro e parou aqui, verifique se a solução já está abaixo
 - **Causa:** Você marcou a task como concluída no `tasks.md` ANTES de tentar escrever ou validar.
 - **Solução:** A marcação `[x]` deve ser o ÚLTIMO passo após a escrita e validação bem-sucedidas. Desmarque a task, faça o trabalho e marque novamente.
 
+### 4. 💉 Injeção de Contexto (MiMo)
+- **Causa:** Falhas contínuas e "Agent Amnesia".
+- **Solução:** O arquivo `*.enriched.md` contém a lista de *Scars* (Cicatrizes) do sistema. O MiMo injetou as regras que você DEVE seguir para não morrer nas armadilhas de ciclos passados. Consulte o topo da Spec!
+
 ---
 
 ## 📥 INBOX (Escalation & Dúvidas)

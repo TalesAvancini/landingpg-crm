@@ -83,8 +83,9 @@ Status: [Ativo | Arquivado | Depreciado]
 | **1. [Semente]** | `INCEPTION.md` ativo + gaps | `npm run context:enrich` | `PRD.md` lastreado + `market/` populado |
 | **2. [Engenharia]** | Criação de `.specs/features/X/` | `qa_signoff: true` no frontmatter | Contrato assinado; se `type: standard`, validador em contexto distinto |
 | **3. [Ingestão]** | `RAW/` novo ou `WIKI/` modificado | `npm run context:ingest-guard` | Artigo validado + `wiki_log.md` |
-| **4. [Execução]** | `npm run context:harness` + SAM | `harness_runner.py` + `SAM Auditor` | Código validado + `STATE.md: ✅ PASSED` (Suporta **v2-Safe**) |
-| **5. [Rito]** | Merge ou >48h inativo | `npm run context:cleanup` | Spec arquivada (Respeita Imunidade Sprint) |
+| **4. [Vacinação]** | Início da Atuação do Agente | `npm run context:inject` | `*.enriched.md` gerado com Scars |
+| **5. [Execução]** | `npm run context:harness` + SAM | `harness_runner.py` + `SAM Auditor` | Código validado + `STATE.md: ✅ PASSED` (Suporta **v2-Safe**) |
+| **6. [Rito]** | Merge ou >48h inativo | `npm run context:cleanup` | Spec arquivada (Respeita Imunidade Sprint) |
 
 > 🤖 [SYSTEM HOOK] IA: Este fluxo é imutável. Não pule o Ato 2. Não gere código sem `qa_signoff`. Em `type: standard`, `executor_context_id` e `validator_context_id` devem ser diferentes. Em features complexas, use o **Protocolo v2-Safe** (Contract Sprints).
 
@@ -101,6 +102,7 @@ Para projetos de complexidade média/alta, o Antigravity utiliza a segregação 
 1.  **[Planner - Hub]**: IA Principal desenha a SPEC na janela atual, define `max_impact_radius` e emite o comando de Spawn (`/spec-driver`).
 2.  **[Pre-flight - Executor]**: Novo processo limpo nasce e roda `grep` (Pre-flight Gate). Se impacto > Limite → `SCOPE_BLOWOUT` (Telemetria no `STATE.md`).
 3.  **[Execution - Executor]**: O subagente (`spec-driver`) assume o controle operando sob a doutrina **Chain-Skills V3** (Uma corrente determinística de 9 skills).
+    - **A Vacina Cognitiva:** A primeira ação do agente é injetar a memória rodando `npm run context:inject` e carregar o `*.enriched.md`.
     - As edições físicas (Skill 6) são monitoradas de forma Fail-Closed pelo `write_with_validation.py`.
     - Ao terminar as modificações, ele deve obrigatoriamente rodar o **Pre-close Self-Audit** (Skill 8). Se passar, emite `/qa-validator`.
 4.  **[Auditoria - Validador]**: Novo processo cego nasce. Realiza a auditoria final de fechamento (Pre-Close Audit). Valida Semântica (Lógica) + Telemetria (Impacto resolvido). Assina o `spec.md` se correto.

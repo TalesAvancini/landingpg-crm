@@ -58,6 +58,7 @@ Status: Ativo
 | `rx-anatomy.md` | **Raio-X Físico.** Mapeia a hierarquia física das pastas do projeto (onde as coisas moram no disco). | `@context-keeper` |
 | `rx-biology.md` | **Raio-X Lógico.** Mapeia como os dados fluem pela aplicação (sistemas conectando-se a outros sistemas). | `@backend-engineer` |
 | `rx-communications.md` | **Mapa de Conectividade Global.** SSOT da topologia técnica e "fiação" entre artefatos do sistema. | `@context-keeper` |
+| `rx-mimo-learnings.md` | **Memória Estratégica.** Raio-X da Governança Cognitiva (MiMo v2.1). | `@context-keeper` |
 | `RX_REPOSITORIO.md` | **Raio-X de Governança.** Mapeia o ecossistema Antigravity, explicando os motores lógicos (SAM, Harness, Zero Trust). | `@context-keeper` |
 | `JOURNAL_SYNAPSE.md` | **Regras de Expurgos.** Configurações de quando e como o Journal deve arquivar dados antigos para economizar tokens. | `@context-keeper` |
 | `rebuild_guide.md` | **Recuperação de Desastres.** Instruções passo a passo para um desenvolvedor recriar a máquina do zero e rodar a aplicação. | `@devops-guardian` |
