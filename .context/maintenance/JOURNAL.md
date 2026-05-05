@@ -8,6 +8,29 @@ Nota: Semente pos-purge. 33 entradas arquivadas em journal_archive_20260503_0151
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-04 22:43 | ⚖️ Reforma Legislativa SAM & Ativação Husky Gate
+**Estado Atual:**
+1. **Reforma Legislativa:** O `JOURNAL_SYNAPSE.md` foi atualizado para proteger o `spec-driver.md` e os glossários técnicos, endurecendo a Matriz de Propagação (Nível 1).
+2. **Husky Hardening:** O SAM (`workflow_journal_auditor.py`) foi ativado no gate de `pre-commit` do Husky, garantindo que nenhuma alteração de governança seja feita sem as devidas propagações e tags.
+3. **Fail-Closed Verified:** Realizado teste de falha real, onde o commit foi bloqueado ao tentar alterar o `spec-driver` sem atualizar o `AGENT_REGISTRY`, provando a eficácia do sistema.
+
+**Matriz de Propagação:**
+- [x] `.husky/pre-commit` -> Ativação do SAM no gate oficial do Husky.
+- [x] `.context/maintenance/JOURNAL_SYNAPSE.md` -> Novas leis de acoplamento injetadas.
+- [x] `.agent/subagents/spec-driver.md` -> Reversão de testes e hardening.
+- [x] `.context/brain/AGENT_REGISTRY.md` -> Propagação (spec-driver coupling).
+- [x] `.context/brain/RULES.md` -> Propagação (spec-driver coupling).
+- [x] `.context/brain/MASTER_FLOW.md` -> Propagação (spec-driver coupling).
+- [x] `.context/brain/FILE_GLOSSARY.md` -> Propagação (roles registry change).
+- [x] `.context/brain/SCRIPT_GLOSSARY.md` -> Propagação (roles registry change).
+
+**Tags:** Firmware, Governance Core, Roles, Agents, Regras, Governança, ReformaLegislativa, SAM, Husky, Fail-Closed
+
+### Contrato de Validacao
+- executor_context_id: `EXECUTOR_REFORM_LAW`
+- validator_context_id: `VALIDATOR_HUSKY_BLOCK`
+- status: `READY TO COMMIT 🟢`
+
 ## 📅 2026-05-04 01:45 | 🚩 WAY POINT: Coupling Matrix & Grafo de Dependência
 **Estado Atual:**
 1. O ecossistema H.O.K Forge está com a memória estratégica (Learnings Framework) endurecida e os subagentes devidamente nomeados (`README_subagents.md`).

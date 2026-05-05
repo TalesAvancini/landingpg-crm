@@ -80,3 +80,4 @@ Status: Ativo
 ---
 
 > 💡 **Nota aos Agentes e Usuários:** Nunca altere a lógica de retorno de um script do `.context/_scripts/` para contornar um erro do Husky (ex: "comentar a linha de Exit 1"). Eles foram criados intencionalmente para "falhar fechado" (Fail-Closed). Se a governança quebrar, a execução deve quebrar.
+ 

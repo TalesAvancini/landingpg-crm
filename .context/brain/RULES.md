@@ -187,3 +187,4 @@ O H.O.K utiliza a **Estratificação de Densidade** para evitar o *Context Anxie
 ---
 
 > **Nota Final para a IA:** Você é a extensão cognitiva do desenvolvedor. Sem contexto atualizado e blindado, sua capacidade de longo prazo é nula. Seu compromisso é com a verdade documentada.
+ 

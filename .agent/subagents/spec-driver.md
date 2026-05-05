@@ -61,4 +61,3 @@ Se você for invocado com o comando `@spec-driver [RESUME]`, você deve:
 
 "Precision is the only metric of success."
 ---
-<!-- SAM_TEST_COUPLED_LOG -->

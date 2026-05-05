@@ -163,3 +163,4 @@ Sempre que uma regra advisory for violada (ex: cronologia do Journal ou Metadata
 ---
 
 > *Este template transforma um repositório comum em um ecossistema inteligível para IAs de alta performance.*
+ 
