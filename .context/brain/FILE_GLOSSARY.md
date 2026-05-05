@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-26
-Ultima Atualizacao: 2026-05-04 00:00
+Ultima Atualizacao: 2026-05-05 00:01
 Status: Ativo
 ---
 
@@ -72,6 +72,8 @@ Status: Ativo
 | :--- | :--- | :--- |
 | `CONTEXT_HEALTH.md` | **Dashboard Visual.** Gerado dinamicamente para exibir o nível de "Token Bloat" (peso do contexto), status de erros e saúde. | Scripts do Sistema |
 | `EXECUTION_BUFFER.md` | **Fila de Tarefas (HOK).** Buffer que força IAs aceleradas a pausarem e sincronizarem contexto periodicamente. | HOK Governor |
+| `PROJECT_INDEX_01.md` | **Mapa Topográfico (Parte 1).** Índice fragmentado do projeto para navegação rápida de arquivos e metadados. | Scripts do Sistema |
+| `PROJECT_INDEX_02.md` | **Mapa Topográfico (Parte 2).** Continuação do índice fragmentado. | Scripts do Sistema |
 
 ---
 
