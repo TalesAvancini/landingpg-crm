@@ -8,6 +8,22 @@ Nota: Semente pos-purge. 33 entradas arquivadas em journal_archive_20260503_0151
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-04 23:26 | 🕸️ Coupling Matrix Refinement (v2.0)
+**Estado Atual:**
+- A ideia da Matriz de Acoplamento foi elevada para uma especificação técnica formal.
+- Definida a arquitetura em 3 camadas (Enforcement, Wikinização, Auditoria de Drift).
+- Estabelecido o template Wiki (YAML + Rodapé) para metadados de dependência.
+
+**Matriz de Propagação:**
+- [x] `planos/IDEIAS/coupling_matrix_system.md` -> Refinamento total da visão técnica e operacional.
+
+**Tags:** Coupling Matrix, Blast Radius, Arquitetura, Governança, Wikinização
+
+### Contrato de Validacao
+- executor_context_id: `EXECUTOR_PLANNING_HARDENING`
+- validator_context_id: `VALIDATOR_USER_CONFIRMED`
+- status: `READY TO COMMIT 🟢`
+
 ## 📅 2026-05-04 22:49 | 🛡️ RX-SAM Hardening v1.1.0
 **Estado Atual:**
 - Documentação do SAM elevada para o nível "Hardened", incluindo os novos conceitos de Blast Radius Recursivo e Gatekeeper do Husky.
