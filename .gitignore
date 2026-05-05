@@ -1,3 +1,6 @@
 _flash_report/
 __pycache__/
 .context/_scripts/__pycache__/
+.context/bundle/
+*.md_old
+contexto_*.md

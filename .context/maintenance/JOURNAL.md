@@ -15,7 +15,10 @@ Nota: Semente pos-purge. 33 entradas arquivadas em journal_archive_20260503_0151
 - Otimização para evitar sobrecarga de contexto em LLMs com janelas limitadas.
 
 **Matriz de Propagação:**
-- [x] `.context/_scripts/project_bundler.py` -> Refatoração da lógica de escrita para suporte a múltiplos arquivos.
+- [x] `.context/_scripts/project_bundler.py` -> Refatoração da lógica de escrita para suporte a múltiplos arquivos e correção de pathing.
+- [x] `.gitignore` -> Inclusão de `.context/bundle/` e padrões de contexto para evitar poluição do repo.
+- [x] `contexto_v2.5.2.md` -> Remoção de artefatos legados na raiz em favor da nova estrutura fragmentada.
+- [x] `contexto_v2.5.2_toc.md` -> Remoção de artefatos legados na raiz em favor da nova estrutura fragmentada.
 
 **Tags:** Project Bundler, Fragmentation, Scalability, AI-First, Context Management
 

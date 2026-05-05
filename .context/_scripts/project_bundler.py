@@ -402,8 +402,10 @@ def write_output(config: BundleConfig) -> list[Path]:
     # Fragmentação (v2.6.0)
     output_files = []
     total_parts = (len(lines) + config.max_bundle_lines - 1) // config.max_bundle_lines
-    base_stem = Path(target_base_name).stem
-    base_ext = Path(target_base_name).suffix
+    target_path_obj = Path(target_base_name)
+    base_stem = target_path_obj.stem
+    base_ext = target_path_obj.suffix
+    base_parent = target_path_obj.parent
     
     for i in range(total_parts):
         start = i * config.max_bundle_lines
@@ -415,7 +417,11 @@ def write_output(config: BundleConfig) -> list[Path]:
         final_content = part_header + part_content
         
         part_name = f"{base_stem}_{i+1:02d}{base_ext}"
-        part_path = config.diretorio / part_name
+        part_path = config.diretorio / base_parent / part_name
+        
+        # Garantir que a pasta de destino existe
+        part_path.parent.mkdir(parents=True, exist_ok=True)
+        
         part_path.write_text(final_content, encoding="utf-8")
         output_files.append(part_path)
         
