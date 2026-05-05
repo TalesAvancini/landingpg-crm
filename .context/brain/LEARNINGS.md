@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-05-04
-Ultima Atualizacao: 2026-05-04 00:20
+Ultima Atualizacao: 2026-05-05 02:20
 Status: Ativo
 ---
 
@@ -36,6 +36,11 @@ Status: Ativo
 - **Última vez:** governance_rules_hardening (2026-04-30)
 - **O que aconteceu:** tasks marcadas como concluidas com `acceptance` ainda pendente no `spec.md`. -> fechamento focado em checklist de tasks sem sincronizar bloco de aceite da sprint.
 - **A Regra:** Rito 4 (self-audit) e validação "Sprint Acceptance Sync".
+
+### [SCAR-006] Bloat de Contexto por Matriz NxN (Score: 80)
+- **Última vez:** coupling_matrix_system (2026-05-05)
+- **O que aconteceu:** Tentativa de mapear 40+ arquivos em tabela Markdown NxN (1600+ células). -> Inviabilidade técnica de renderização, legibilidade e manutenção.
+- **A Regra:** Utilizar **Adjacency Lists** (Listas de Adjacência) estruturadas para mapear acoplamentos granulares acima de 10 nós, garantindo foco no *Blast Radius* imediato.
 
 ---
 

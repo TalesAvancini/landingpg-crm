@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-18
-Última Atualização: 2026-05-04
+Última Atualização: 2026-05-05
 Status: Ativo
 ---
 
@@ -128,6 +128,10 @@ A IA atua como bibliotecário chefe. Consistência entre Código e Contexto é o
 - **`maintenance/TECHNICAL_REQUIREMENTS.md`**: Atualizar sempre que houver mudança em `package.json`, alteração de Schema ou integração de novas APIs.
 - **`maintenance/rebuild_guide.md`**: Atualizar com hacks de ambiente local, CI/CD ou passos manuais de deploy.
 - **`.specs/` (Workshop Efêmero):** Specs são rascunhos de execução. Pós-merge ou >48h inativo → arquivar em `_archive_context/specs/`. Decisões técnicas devem migrar para o `JOURNAL.md` antes da limpeza.
+
+### 🔄 3.1 Mapeamento de Acoplamento (Adjacency Lists)
+1. **Regra de Escala:** Mapeamentos de dependência granulares acima de 10 nós devem obrigatoriamente utilizar **Listas de Adjacência** (conforme Seção 4 e 5 do `rx-communications.md`) em vez de tabelas Markdown NxN.
+2. **Sincronia Obrigatória:** Qualquer criação, remoção ou renomeação de arquivo ou script deve ser refletida imediatamente na matriz de acoplamento para garantir a integridade do protocolo de *Blast Radius*.
 
 ---
 

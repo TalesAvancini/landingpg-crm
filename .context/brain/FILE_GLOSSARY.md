@@ -112,4 +112,5 @@ Status: Ativo
 | `subagents/qa-validator.md` | **Padrão B de Subagente.** Validador Físico. Subagente que é invocado de forma autônoma (Zero Trust) para ler Diffs, Specs e autorizar o commit. | IA Orquestradora |
 | `subagents/readme_chain_SDD.md` | **Padrão C de Subagente.** Especialista em documentação. Mantém os metadados externos e READMEs alinhados com o estado do sistema. | IA Orquestradora |
 | `skills/methodical_writer.json` | **Restrição de Ferramentas.** Configuração de permissões estritas e limites para a Skill 6 (Escrita Cirúrgica). | `@spec-driver` |
+| `skills/journal-sync/SKILL.md` | **Orquestrador de Acoplamento.** Sincroniza o Journal e propaga alterações via Blast Radius autonômico. | `@antigravity` |
  

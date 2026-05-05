@@ -1,12 +1,34 @@
 ---
 Criado em: 2026-05-03 01:51
-Ultima Atualizacao: 2026-05-05 00:01
+Ultima Atualizacao: 2026-05-05 02:17
 Status: Ativo
 Nota: Semente pos-purge. 33 entradas arquivadas em journal_archive_20260503_015104.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-05 02:17 | 🕸️ Governance Coupling Matrix & Journal-Sync (v2.6.1)
+**Estado Atual:**
+- [x] **Matriz de Acoplamento Granular:** Implementação das Seções 4 (Markdown) e 5 (Scripts) no `rx-communications.md`. Mapeamento de 100% dos arquivos do framework e 21 scripts de automação.
+- [x] **Skill `journal-sync`:** Criação e deploy da skill em `.gemini/antigravity/skills/`. Ativado o "Power Mode" para propagação autonômica de Blast Radius.
+- [x] **Wiring Global:** Sincronização de timestamps e registros de conformidade SAM em todos os artefatos modificados.
+
+**Matriz de Propagação:**
+- [x] `.context/maintenance/rx-communications.md` -> Atualizado com a topologia completa de acoplamento.
+- [x] `.agent/skills/journal-sync/SKILL.md` -> Nova skill de governança ativa (Portabilidade OK).
+- [x] `.context/brain/RULES.md` -> Institucionalizada a regra 3.1 (Adjacency Lists).
+- [x] `.context/brain/LEARNINGS.md` -> Registro do SCAR-006.
+- [x] `.context/brain/FILE_GLOSSARY.md` -> Incluída a nova skill no inventário.
+- [x] `.context/maintenance/JOURNAL.md` -> Registro de v2.6.1 e contrato SAM.
+
+**Contrato de Validação (SAM):**
+- executor_context_id: `antigravity-v2-active`
+- validator_context_id: `user-forced-signoff`
+- status: `READY TO COMMIT` 🟢
+
+**Tags:** Governança, Regras, Coupling, Matrix, Automation, Journal-Sync, SAM
+
 
 ## 📅 2026-05-04 23:46 | 📦 Project Bundler Fragmentation (v2.6.0)
 **Estado Atual:**
@@ -19,6 +41,7 @@ Nota: Semente pos-purge. 33 entradas arquivadas em journal_archive_20260503_0151
 - [x] `.context/monitoring/PROJECT_INDEX_01.md` -> Novo índice topográfico fragmentado.
 - [x] `.context/monitoring/PROJECT_INDEX_02.md` -> Novo índice topográfico fragmentado.
 - [x] `.context/brain/FILE_GLOSSARY.md` -> Atualização do mapeamento de monitoramento.
+- [x] `.context/maintenance/rx-communications.md` -> Adição da Matriz de Acoplamento Granular (Seção 4: Markdown e Seção 5: Scripts).
 
 **Tags:** Project Bundler, Fragmentation, Scalability, AI-First, Context Management
 
