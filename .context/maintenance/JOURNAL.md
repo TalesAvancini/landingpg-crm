@@ -8,6 +8,20 @@ Nota: Semente pos-purge. 33 entradas arquivadas em journal_archive_20260503_0151
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-04 22:49 | 🛡️ RX-SAM Hardening v1.1.0
+**Estado Atual:**
+- Documentação do SAM elevada para o nível "Hardened", incluindo os novos conceitos de Blast Radius Recursivo e Gatekeeper do Husky.
+
+**Matriz de Propagação:**
+- [x] `.context/maintenance/rx-sam-audit.md` -> Robustecimento da documentação técnica.
+
+**Tags:** SAM, Hardening, Auditoria, Governança
+
+### Contrato de Validacao
+- executor_context_id: `EXECUTOR_DOC_HARDENING`
+- validator_context_id: `VALIDATOR_USER_EYES`
+- status: `READY TO COMMIT 🟢`
+
 ## 📅 2026-05-04 22:43 | ⚖️ Reforma Legislativa SAM & Ativação Husky Gate
 **Estado Atual:**
 1. **Reforma Legislativa:** O `JOURNAL_SYNAPSE.md` foi atualizado para proteger o `spec-driver.md` e os glossários técnicos, endurecendo a Matriz de Propagação (Nível 1).

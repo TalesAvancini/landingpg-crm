@@ -1,6 +1,6 @@
 # 🛡️ RX: SAM (Sistema Anti-Migué)
-> **Versão:** 1.0.0 (Hardened)  
-> **Status:** Ativo no Pipeline  
+> **Versão:** 1.1.0 (Hardened)  
+> **Status:** Ativo no Gatekeeper (Husky)  
 > **Gardião:** `@qa-validator`
 
 ---
@@ -11,13 +11,13 @@ O **SAM (Sistema Anti-Migué)** é o componente de integridade do H.O.K Forge en
 Ele atua como um detector de mentiras mecânico: se você (Agente) diz que fez algo no Journal, mas o Git não confirma, o SAM bloqueia a operação. Se você muda algo "escondido", o SAM te expõe.
 
 ### A Trindade da Auditoria:
-1.  **Promessa (JOURNAL.md):** O que o Agente alega ter feito.
-2.  **Obrigação (JOURNAL_SYNAPSE.md):** As regras de acoplamento e tags obrigatórias.
-3.  **Realidade (Git Status):** A evidência física dos arquivos modificados.
+1.  **Promessa (JOURNAL.md):** O que o Agente alega ter feito (Checkboxes `[x]`).
+2.  **Obrigação (JOURNAL_SYNAPSE.md):** As leis de acoplamento e tags obrigatórias.
+3.  **Realidade (Git Status):** A evidência física e inalterável dos arquivos modificados.
 
 ---
 
-## 2. Fluxograma de Execução
+## 2. Fluxograma de Execução (Husky Gate)
 
 ```mermaid
 graph TD
@@ -38,22 +38,21 @@ graph TD
 
 ---
 
-## 3. Componentes do Sistema
+## 3. Conceitos Avançados de Governança
 
-### 🧠 3.1 JOURNAL_SYNAPSE.md (O Cérebro/Leis)
-Contém o bloco JSON que define as regras de gatilho.
-- **`when_any_changed`**: Gatilho baseado em arquivos modificados.
-- **`require_journal_tags`**: Tags obrigatórias no Journal para este evento.
-- **`require_files_touched`**: Arquivos que DEVEM estar no mesmo commit (Acoplamento).
+### 🌪️ 3.1 Blast Radius Recursivo
+O SAM implementa o conceito de acoplamento em cascata. Uma mudança em um arquivo de "Firmware" (ex: `spec-driver.md`) pode disparar uma exigência de mudança em "Roles" (`AGENT_REGISTRY.md`), que por sua vez dispara a exigência de atualização nos Glossários. 
+**O SAM não permite commits parciais que quebrem essa cadeia de custódia.**
 
-### ⚙️ 3.2 workflow_journal_auditor.py (O Coração/Motor)
-O script Python que executa a lógica de comparação.
-- **Parser de Journal:** Extrai a última entrada e valida a Matriz de Propagação.
-- **Git Connector:** Consulta o estado real da árvore de trabalho.
-- **Enforcement:** Retorna `Exit 0` (Sucesso) ou `Exit 1` (Falha Crítica).
+### 👥 3.2 Segregação de Contexto (4-Eyes Principle)
+O SAM audita o `STATE.md` e a última entrada do `JOURNAL.md` em busca dos campos:
+- `executor_context_id`
+- `validator_context_id`
 
-### 🐶 3.3 Husky (O Gatekeeper/Físico)
-O mecanismo que impede que o Agente "ignore" as regras. O Husky intercepta o commit e força a execução do Auditor. Sem aprovação do SAM, o código não entra no histórico do Git.
+Se ambos os IDs forem iguais, o commit é bloqueado por violação de segregação. Isso garante que a IA que executou o código não seja a mesma que validou a entrega.
+
+### 🛑 3.3 Fail-Closed Gatekeeper
+Diferente de outros linters que apenas avisam, o SAM está injetado no `.husky/pre-commit`. Ele **aborta** o processo de commit fisicamente. Nenhuma "confabulação" de IA consegue penetrar o histórico do Git sem satisfazer as regras do `JOURNAL_SYNAPSE.md`.
 
 ---
 
@@ -61,15 +60,15 @@ O mecanismo que impede que o Agente "ignore" as regras. O Husky intercepta o com
 
 | Código | Nome | Descrição |
 | :--- | :--- | :--- |
-| `GF-NARRATIVE-FRAUD` | **Fraude Narrativa** | O Agente marcou `[x]` num arquivo no Journal, mas não há alterações físicas nele. |
-| `GF-SILENT-MOD` | **Modificação Silenciosa** | Arquivo alterado no Git que não consta na Matriz de Propagação do Journal. |
-| `GF-ACCEPTANCE-DESYNC` | **Desync de Aceitação** | Tasks concluídas no `tasks.md`, mas contrato `spec.md` não assinado. |
-| `GF-ID-SEGREGATION` | **Violação de Segregação** | O `executor_context_id` é igual ao `validator_context_id`. |
+| `GF-NARRATIVE-FRAUD` | **Fraude Narrativa** | Marcar `[x]` no Journal para um arquivo que não sofreu alteração no Git. |
+| `GF-SILENT-MOD` | **Modificação Silenciosa** | Alterar arquivos no Git sem mencioná-los na matriz de propagação do Journal. |
+| `GF-COUPLED-MISS` | **Falha de Acoplamento** | Mudar um arquivo-gatilho (ex: `spec-driver`) sem atualizar os dependentes (ex: `RULES`). |
+| `GF-ID-SEGREGATION` | **Violação de Segregação** | Tentativa de auto-validação (Executor == Validador). |
 
 ---
 
 ## 💡 Insight de Especialista
-O SAM é o que transforma o H.O.K Forge de uma simples pasta de arquivos em um **Sistema Operacional de Governança**. Ele elimina a "confabulação" (mentira acidental da IA) e garante que o Journal seja um log técnico 100% confiável, e não apenas um diário de intenções.
+O SAM transforma o `JOURNAL.md` de um simples "diário de bordo" em um **Log de Auditoria Forense**. Em um ambiente de Agentes AI, onde a velocidade de escrita é alta, o SAM é o único freio que garante que a documentação nunca fique para trás em relação ao código.
 
 ---
-> **"A verdade não está no que você diz, está no que o diff mostra."** — *Conselho de Arquitetura Antigravity*
+> **"No H.O.K Forge, a verdade é binária: ou está no diff, ou é ficção."** — *Conselho de Arquitetura*
