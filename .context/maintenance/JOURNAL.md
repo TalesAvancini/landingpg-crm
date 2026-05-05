@@ -8,6 +8,23 @@ Nota: Semente pos-purge. 33 entradas arquivadas em journal_archive_20260503_0151
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-04 01:45 | 🚩 WAY POINT: Coupling Matrix & Grafo de Dependência
+**Estado Atual:**
+1. O ecossistema H.O.K Forge está com a memória estratégica (Learnings Framework) endurecida e os subagentes devidamente nomeados (`README_subagents.md`).
+2. O "Blast Radius" de mudanças no `spec-driver` exigiu atualizações em 8 arquivos hoje, gerando um insight vital de governança.
+
+**Próximos Passos (Próxima Grande Meta):**
+- **Desenvolver a Matriz de Afinidade (Coupling Matrix):** 
+  - Nível 2: Script `context:affinity` para cuspir um RX com diagrama Mermaid.
+  - Nível 3: Metadados no frontmatter dos arquivos para o Husky validar o raio de impacto e bloquear se o acoplamento não for respeitado.
+  - *Fundação:* Inspirar a arquitetura na "skill de coupling" que já existe dentro do `tlc-spec-driven`.
+- Ideia salva fisicamente em `planos/IDEIAS/coupling_matrix_system.md`.
+
+### Contrato de Encerramento
+- executor_context_id: `CTX_END_HARDENING_0504`
+- validator_context_id: `CTX_USER_DONE`
+- status: `🟢 READY TO SLEEP`
+
 ## 📅 2026-05-04 01:18
 **Decisão/Bug:** 🛡️ Hardening Arquitetural e Learnings Framework (Selo de Qualidade).
 **Ação:**
