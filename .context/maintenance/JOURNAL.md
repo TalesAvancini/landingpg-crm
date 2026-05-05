@@ -8,6 +8,22 @@ Nota: Semente pos-purge. 33 entradas arquivadas em journal_archive_20260503_0151
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-04 23:46 | 📦 Project Bundler Fragmentation (v2.6.0)
+**Estado Atual:**
+- Implementada a capacidade de fragmentação automática do bundle final em múltiplos arquivos MD de no máximo 500 linhas cada.
+- Adicionada numeração sequencial aos nomes dos arquivos e indicadores de "Part X of Y" no topo de cada fragmento.
+- Otimização para evitar sobrecarga de contexto em LLMs com janelas limitadas.
+
+**Matriz de Propagação:**
+- [x] `.context/_scripts/project_bundler.py` -> Refatoração da lógica de escrita para suporte a múltiplos arquivos.
+
+**Tags:** Project Bundler, Fragmentation, Scalability, AI-First, Context Management
+
+### Contrato de Validacao
+- executor_context_id: `EXECUTOR_BUNDLER_FRAGMENT`
+- validator_context_id: `VALIDATOR_TEST_EXECUTION_50L`
+- status: `READY TO COMMIT 🟢`
+
 ## 📅 2026-05-04 23:26 | 🕸️ Coupling Matrix Refinement (v2.0)
 **Estado Atual:**
 - A ideia da Matriz de Acoplamento foi elevada para uma especificação técnica formal.

@@ -91,6 +91,7 @@ class BundleConfig:
     emit_import_map: bool = False
     mask_secrets: bool = False
     include_lockfiles: bool = False
+    max_bundle_lines: int = 500
 
 @dataclass(frozen=True)
 class Chunk:
@@ -388,12 +389,37 @@ def generate_context_markdown(config: BundleConfig) -> str:
         blocks.extend(["", render_file_record(r, toc_only=config.toc_only)])
     return "\n".join(blocks) + "\n"
 
-def write_output(config: BundleConfig) -> Path:
-    target_name = get_dynamic_filename(config)
-    output_path = config.diretorio / target_name
+def write_output(config: BundleConfig) -> list[Path]:
+    target_base_name = get_dynamic_filename(config)
     content = generate_context_markdown(config)
-    output_path.write_text(content, encoding="utf-8")
-    return output_path
+    lines = content.splitlines()
+    
+    if config.max_bundle_lines <= 0 or len(lines) <= config.max_bundle_lines:
+        output_path = config.diretorio / target_base_name
+        output_path.write_text(content, encoding="utf-8")
+        return [output_path]
+    
+    # Fragmentação (v2.6.0)
+    output_files = []
+    total_parts = (len(lines) + config.max_bundle_lines - 1) // config.max_bundle_lines
+    base_stem = Path(target_base_name).stem
+    base_ext = Path(target_base_name).suffix
+    
+    for i in range(total_parts):
+        start = i * config.max_bundle_lines
+        end = min(start + config.max_bundle_lines, len(lines))
+        part_content = "\n".join(lines[start:end]) + "\n"
+        
+        # Adicionar indicador de sequência no topo (exceto se já houver frontmatter na parte 1)
+        part_header = f"<!-- BUNDLE_PART {i+1} OF {total_parts} -->\n"
+        final_content = part_header + part_content
+        
+        part_name = f"{base_stem}_{i+1:02d}{base_ext}"
+        part_path = config.diretorio / part_name
+        part_path.write_text(final_content, encoding="utf-8")
+        output_files.append(part_path)
+        
+    return output_files
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="captura_projeto.py - Consolida repositorio em markdown AI-first")
@@ -409,6 +435,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--emit-import-map", action="store_true", help="Adiciona IMPORT_MAP_MIN")
     parser.add_argument("--mask-secrets", action="store_true", help="Ofusca segredos no conteudo")
     parser.add_argument("--include-lockfiles", action="store_true", help="Força a inclusão de package-lock.json e similares")
+    parser.add_argument("--max-bundle-lines", type=int, default=500, help="Limite de linhas por arquivo de bundle final (fragmentação)")
     return parser.parse_args()
 
 def main() -> None:
@@ -420,10 +447,12 @@ def main() -> None:
         max_lines_per_file=args.max_lines_per_file,
         emit_symbol_index=args.emit_symbol_index,
         emit_import_map=args.emit_import_map, mask_secrets=args.mask_secrets,
-        include_lockfiles=args.include_lockfiles
+        include_lockfiles=args.include_lockfiles,
+        max_bundle_lines=args.max_bundle_lines
     )
-    out = write_output(config)
-    print(f"\n[OK] Gerado: {out}")
+    outputs = write_output(config)
+    for out in outputs:
+        print(f"[OK] Gerado: {out}")
     print(f"   Mode: {mode_name(config)} | Profile: {config.profile}")
 
 if __name__ == "__main__":
