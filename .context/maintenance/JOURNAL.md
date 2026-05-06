@@ -1,12 +1,31 @@
 ---
 Criado em: 2026-05-03 01:51
-Ultima Atualizacao: 2026-05-05 21:05
+Ultima Atualizacao: 2026-05-05 21:26
 Status: Ativo
 Nota: Semente pos-purge. 33 entradas arquivadas em journal_archive_20260503_015104.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-05 21:26 | 🧠 Deterministic journal-sync v2.0 (Reality Check)
+**Estado Atual:**
+- [x] **Refatoração Lógica:** Skill `journal-sync` agora inicia com `git status` (Step 0) para identificar a Semente de Propagação física.
+- [x] **Idempotência:** Implementado curto-circuito (No-Op) caso o Git esteja limpo.
+- [x] **Self-Mapping:** A própria skill foi mapeada no `rx-communications.md` (Seção 5).
+
+**Matriz de Propagação:**
+- [x] `.agent/skills/journal-sync/SKILL.md` -> Refatorada para modo determinístico.
+- [x] `.context/maintenance/rx-communications.md` -> Mapeada a nova automação cognitiva.
+- [x] `.context/maintenance/JOURNAL.md` -> Registro de v2.7.0 e contrato SAM.
+
+**Contrato de Validação (SAM):**
+- executor_context_id: `antigravity-v2-active`
+- validator_context_id: `user-forced-signoff`
+- status: `READY TO COMMIT` 🟢
+
+**Tags:** Automação, Determinismo, Git-Status, Reality-Check, v2.7.0
+
 
 ## 📅 2026-05-05 21:05 | 🛡️ SAM Syntax Hardening (v2.6.2)
 **Estado Atual:**

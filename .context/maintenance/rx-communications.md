@@ -231,6 +231,12 @@ Esta seção mapeia os "músculos" do ecossistema definidos no `SCRIPT_GLOSSARY.
   - **Escreve em (Afeta):** Orquestra todos os demais scripts de `.context/_scripts/`.
   - **Gatilho:** `npm run context:*`
 
+### 🔧 Skills & Agentes (Automação Cognitiva)
+- **`journal-sync/SKILL.md`**
+  - **Lê (Depende de):** `git status`, `rx-communications.md`, `JOURNAL.md`.
+  - **Escreve em (Afeta):** `JOURNAL.md`, arquivos no Blast Radius (cascata).
+  - **Gatilho:** Invocado manualmente ou via rito de fechamento.
+
 ### 📡 Motores de Visão
 - **`project_bundler.py`**
   - **Lê (Depende de):** Estrutura de diretórios do repositório inteiro.
