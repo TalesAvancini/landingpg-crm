@@ -22,6 +22,10 @@ Se você recebeu um erro e parou aqui, verifique se a solução já está abaixo
 - **Causa:** Falhas contínuas e "Agent Amnesia".
 - **Solução:** O arquivo `*.enriched.md` contém a lista de *Scars* (Cicatrizes) do sistema. O MiMo injetou as regras que você DEVE seguir para não morrer nas armadilhas de ciclos passados. Consulte o topo da Spec!
 
+### 5. [FATAL] Falha no TargetContent (Surgical Edits)
+- **Causa:** Substituição de blocos grandes via `replace_file_content` falhou por inconsistência de whitespace ou caracteres especiais.
+- **Solução (Scar #006):** Reduza o tamanho do `TargetContent` para <10 linhas e use o `multi_replace_file_content` para edições não-contíguas. Garanta que o texto alvo seja único e contenha apenas o essencial.
+
 ---
 
 ## 📥 INBOX (Escalation & Dúvidas)

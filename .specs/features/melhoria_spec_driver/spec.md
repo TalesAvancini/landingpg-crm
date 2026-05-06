@@ -40,11 +40,12 @@ O executor subagente (`spec-driver`) tem sofrido com dores como "Deriva de Aten�
 Otimizar os artefatos de governança do Spec-Driven V3 (Templates, Prompts de Agente e Regras Globais) introduzindo regras de rito, blindagens cross-platform e fallback protocols, tudo dentro do escopo do Fail-Closed.
 
 ## 3. Requisitos Funcionais (Acceptance)
-- [ ] Injeção Atômica (Prevenção de Deriva de Atenção) configurada em `.agent/templates/spec_v3.md` e `.specs/features/SSD_PLAYBOOK.md`.
-- [ ] Sync Prévio (Mitigação de Scope Block) no `.agent/subagents/spec-driver.md`.
-- [ ] Protocolo Rígido de Tier (Prevenção de Anti-Loop) injetado no `.agent/templates/AGENT_SCRATCHPAD.md`.
-- [ ] Estagnação de Shell (Adaptação Cross-Platform) registrada em `.context/brain/RULES.md`.
-- [ ] Surgical Edits (Resiliência de Parser e Regex) ativado no `.specs/features/SSD_ERRORS_LEDGER.md` e `AGENT_SCRATCHPAD.md`.
+- [x] Injeção Atômica (Prevenção de Deriva de Atenção) configurada em `.agent/templates/spec_v3.md` e `.specs/features/SSD_PLAYBOOK.md`.
+- [x] Sync Prévio (Mitigação de Scope Block) no `.agent/subagents/spec-driver.md`.
+- [x] Protocolo Rígido de Tier (Prevenção de Anti-Loop) injetado no `.agent/templates/AGENT_SCRATCHPAD.md`.
+- [x] Estagnação de Shell (Adaptação Cross-Platform) registrada em `.context/brain/RULES.md`.
+- [x] Surgical Edits (Resiliência de Parser e Regex) ativado no `.specs/features/SSD_ERRORS_LEDGER.md` e `AGENT_SCRATCHPAD.md`.
+
 
 ## 4. Critérios de Integridade V3 (Não Negociáveis)
 Para que esta Spec seja considerada completa, o executor deve gerar um `STATE.md` contendo TODAS as 9 evidências da cadeia (CHAIN_CONTEXT_LOADED até CHAIN_HANDOFF).

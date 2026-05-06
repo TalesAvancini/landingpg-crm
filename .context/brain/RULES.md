@@ -160,6 +160,8 @@ A IA atua como bibliotecário chefe. Consistência entre Código e Contexto é o
 - **Context Gate (Pré-Código):** Validar antes de gerar:  
   `[ ] PRD ativo` | `[ ] schema contém estruturas` | `[ ] JOURNAL < 550 linhas` | `[ ] zero secrets hardcoded`
 - **Sistema Anti-Migué (SAM):** Toda entrada no Journal deve seguir o template de narrativa + checklist de propagação + contrato de validação com IDs segregados.
+- **Zero-Guessing (DB-First):** Proibido assumir schemas. Sempre execute `ls`, `view_file` ou `search_docs` antes de propor alterações em bancos ou tabelas MD.
+- **OS Baseline (Cross-Platform):** Se o Agente detectar que está operando em **Windows**, ele DEVE utilizar a sintaxe **PowerShell** nativa (ex: `;` em vez de `&&`) para evitar erros de parser de shell. Não assuma Bash.
 
 ---
 

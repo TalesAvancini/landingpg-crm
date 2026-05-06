@@ -22,6 +22,10 @@ Se você recebeu um erro e parou aqui, verifique se a solução já está abaixo
 - **Causa:** Falhas contínuas e "Agent Amnesia".
 - **Solução:** O arquivo `*.enriched.md` contém a lista de *Scars* (Cicatrizes) do sistema. O MiMo injetou as regras que você DEVE seguir para não morrer nas armadilhas de ciclos passados. Consulte o topo da Spec!
 
+### 5. [BLOCKED] Falta de Justificativa de Tier
+- **Causa:** Você tentou uma escrita de Tier 2 (16-50 linhas) ou Tier 3 (50+) sem registrar o campo `tier_justification:` no `STATE.md`.
+- **Solução:** Vá ao `STATE.md`, localize a `TASK ID` correspondente no `CHAIN_EXECUTION_LOG` e adicione a justificativa. Re-valide a escrita.
+
 ---
 
 ## 📥 INBOX (Escalation & Dúvidas)

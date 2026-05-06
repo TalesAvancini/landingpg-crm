@@ -35,3 +35,7 @@ sprint_01:
 
 ## 4. Critérios de Integridade V3 (Não Negociáveis)
 Para que esta Spec seja considerada completa, o executor deve gerar um `STATE.md` contendo TODAS as 9 evidências da cadeia (CHAIN_CONTEXT_LOADED até CHAIN_HANDOFF).
+
+## 5. Raw Payloads (Injeção Atômica)
+> **Instrução:** Se a Spec referenciar IDs de regras ou erros (ex: SCAR-XXX), o texto bruto DEVE ser injetado abaixo para evitar que o agente perca tempo caçando contextos externos.
+- [ID]: [Texto Bruto da Regra/Cicatriz]

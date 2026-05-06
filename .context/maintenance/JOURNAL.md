@@ -8,22 +8,32 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_1915
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
-## 📅 2026-05-06 19:35 | 🚀 Ativação: Otimização Spec-Driven V3
+## 📅 2026-05-06 20:02 | ✅ Concluído: Otimização Spec-Driven V3 #Firmware #Governance Core #Governança #Regras #Roles
 **Estado Atual:**
-- [x] **Spec Creation:** Inicialização da feature `melhoria_spec_driver` em `.specs/features/`.
-- [x] **MiMo Injection:** Geração da Spec Enriquecida com base no `LEARNINGS.md`.
-- [x] **Handoff:** Preparação para execução via `@spec-driver`.
+- [x] **Injeção Atômica:** Templates e Playbook atualizados para exigir o texto bruto das SCARs.
+- [x] **Cross-Platform:** `RULES.md` agora define PowerShell como baseline Windows.
+- [x] **Surgical Edits:** Instruções de fragmentação de escrita injetadas no Scratchpad e Ledger.
+- [x] **Physical Check:** Subagente instruído a validar existência de arquivos antes de processar escopo.
+- [x] **Core Sync:** Sincronização obrigatória com `MASTER_FLOW.md` e `AGENT_REGISTRY.md`.
+- [x] **Glossary Sync:** Atualização de `FILE_GLOSSARY.md` e `SCRIPT_GLOSSARY.md`.
 
 **Matriz de Propagação:**
-- [x] `.specs/features/melhoria_spec_driver/` -> [Folder da feature spec]
-- [x] `.specs/features/affinity-lite/.enriched.md` -> [Injeção MiMo]
-- [x] `.specs/features/governance-resiliency-fixes/.enriched.md` -> [Injeção MiMo]
+- [x] `.agent/subagents/spec-driver.md` -> [Hardening V3.1]
+- [x] `.agent/templates/spec_v3.md` -> [Raw Payloads]
+- [x] `.specs/features/SSD_PLAYBOOK.md` -> [Raw Payloads]
+- [x] `.agent/templates/AGENT_SCRATCHPAD.md` -> [Tier/Regex Traps]
+- [x] `.context/brain/RULES.md` -> [Windows Baseline]
+- [x] `.specs/features/SSD_ERRORS_LEDGER.md` -> [Scar #006]
+- [x] `.context/brain/AGENT_REGISTRY.md` -> [Version Sync]
+- [x] `.context/brain/MASTER_FLOW.md` -> [Protocol Sync]
+- [x] `.context/brain/FILE_GLOSSARY.md` -> [Glossary Update]
+- [x] `.context/brain/SCRIPT_GLOSSARY.md` -> [Glossary Update]
+- [x] `.specs/features/melhoria_spec_driver/` -> [Lifecycle Sync]
 
-
-
-executor_context_id: orchestrator_initialization
-validator_context_id: user_handoff
+executor_context_id: spec-driver-active
+validator_context_id: qa-validator-audit
 status: READY TO COMMIT
+
 
 
 

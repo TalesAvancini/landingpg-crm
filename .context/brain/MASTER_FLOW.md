@@ -84,12 +84,10 @@ Status: [Ativo | Arquivado | Depreciado]
 | **2. [Engenharia]** | Criação de `.specs/features/X/` | `qa_signoff: true` no frontmatter | Contrato assinado; se `type: standard`, validador em contexto distinto |
 | **3. [Ingestão]** | `RAW/` novo ou `WIKI/` modificado | `npm run context:ingest-guard` | Artigo validado + `wiki_log.md` |
 | **4. [Vacinação]** | Início da Atuação do Agente | `npm run context:inject` | `*.enriched.md` gerado com Scars |
-| **5. [Execução]** | `npm run context:harness` + SAM | `harness_runner.py` + `SAM Auditor` | Código validado + `STATE.md: ✅ PASSED` (Suporta **v2-Safe**) |
+| **5. [Execução]** | `npm run context:harness` + SAM | `harness_runner.py` + `SAM Auditor` | Código validado + **Physical Check (ls/dir)** realizado |
 | **6. [Rito]** | Merge ou >48h inativo | `npm run context:cleanup` | Spec arquivada (Respeita Imunidade Sprint) |
 
 > 🤖 [SYSTEM HOOK] IA: Este fluxo é imutável. Não pule o Ato 2. Não gere código sem `qa_signoff`. Em `type: standard`, `executor_context_id` e `validator_context_id` devem ser diferentes. Em features complexas, use o **Protocolo v2-Safe** (Contract Sprints).
-
----
 
 ---
 
@@ -99,10 +97,11 @@ Para projetos de complexidade média/alta, o Antigravity utiliza a segregação 
 > **Mecanismo de Spawn (Isolamento Físico):**
 > Os Spokes (Executores e Validadores) não são apenas personas da IA Principal. Eles residem fisicamente em `.agent/subagents/` (ex: `spec-driver.md`, `qa-validator.md`). Para invocá-los sem poluição de contexto, o Hub deve finalizar a execução usando a sintaxe de delegação explícita do Host: `/[nome-do-subagente] [instrução]`.
 
-1.  **[Planner - Hub]**: IA Principal desenha a SPEC na janela atual, define `max_impact_radius` e emite o comando de Spawn (`/spec-driver`).
+1.  **[Planner - Hub]**: IA Principal desenha a SPEC na janela atual, define `max_impact_radius` e emite o comando de Spawn (`/spec-driver`). O Hub OBRIGATORIAMENTE injeta os **Raw Payloads** (IDs e textos de regras) na Spec para evitar caça externa.
 2.  **[Pre-flight - Executor]**: Novo processo limpo nasce e roda `grep` (Pre-flight Gate). Se impacto > Limite → `SCOPE_BLOWOUT` (Telemetria no `STATE.md`).
 3.  **[Execution - Executor]**: O subagente (`spec-driver`) assume o controle operando sob a doutrina **Chain-Skills V3** (Uma corrente determinística de 9 skills).
     - **A Vacina Cognitiva:** A primeira ação do agente é injetar a memória rodando `npm run context:inject` e carregar o `*.enriched.md`.
+    - **Physical Check (Skill 5):** Validar fisicamente (`dir` ou `ls`) cada arquivo da `allow_list` antes de qualquer mutação.
     - As edições físicas (Skill 6) são monitoradas de forma Fail-Closed pelo `write_with_validation.py`.
     - Ao terminar as modificações, ele deve obrigatoriamente rodar o **Pre-close Self-Audit** (Skill 8). Se passar, emite `/qa-validator`.
 4.  **[Auditoria - Validador]**: Novo processo cego nasce. Realiza a auditoria final de fechamento (Pre-Close Audit). Valida Semântica (Lógica) + Telemetria (Impacto resolvido). Assina o `spec.md` se correto.

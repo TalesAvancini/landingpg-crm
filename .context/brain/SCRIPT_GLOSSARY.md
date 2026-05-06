@@ -1,7 +1,8 @@
 ---
 Criado em: 2026-04-26
-Ultima Atualizacao: 2026-05-05
+Ultima Atualizacao: 2026-05-06 20:02
 Status: Ativo
+
 ---
 
 # ⚙️ SCRIPT_GLOSSARY.md (Motores de Automação do Framework)

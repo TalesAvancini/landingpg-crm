@@ -77,6 +77,16 @@ Registro continuo de erros recorrentes em execucao spec-driven.
 - **Regra adicionada/ajustada:** "Nenhum byte será alterado no disco sem a aprovação explícita de um Plano de Implementação prévio."
 - **Evidencia (arquivo/commit/log):** Arquivo `.context/_scripts/write_with_validation.py` (implementação da trava).
 
+### Scar #006 — Deriva de Atenção e Falhas de Regex (Surgical Edits)
+- **Data:** 2026-05-06
+- **Feature:** systemic_vaccination
+- **Sprint:** sprint_01
+- **Erro:** O agente perdeu tempo procurando definições de SCAR-007/008 fora da spec e falhou em edições grandes via `replace_file_content`.
+- **Sintoma observado:** User frustration e múltiplas retentativas de escrita ("Mosca na Janela").
+- **Causa raiz:** Falta de Injeção Atômica na Spec e tentativa de substituir blocos grandes com caracteres especiais/quebras de linha variadas.
+- **Como foi detectado:** Interrupção manual do usuário e erros consecutivos do gatekeeper.
+- **Correcao aplicada:** Institucionalização da Injeção Atômica (Seção 5 da Spec) e regra de "Surgical Edits" (chunks de <10 linhas).
+
 ---
 
 ## Template de Entrada

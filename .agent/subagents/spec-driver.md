@@ -28,7 +28,7 @@ You must execute these skills in strict sequential order. Do not skip. Do not ju
    - **REGRA CRÍTICA:** Verifique se `.context/maintenance/HARNESS_LOG.md` e os arquivos da feature (`STATE.md`, `tasks.md`, `*.enriched.md`) estão na `allow_list`. Se não estiverem, adicione-os via `spec-driver` antes de prosseguir.
 3. **strategy-planner:** Plan the technical strategy for each task (STRATEGY_LOG).
 4. **baseline-anchor:** Create a git-based safety point (BASELINE_ANCHORED).
-5. **scope-guard:** Validate file whitelist (SCOPE_LOCKED).
+5. **scope-guard:** Validate file whitelist (SCOPE_LOCKED). **PHYSICAL CHECK:** Execute um comando `ls` ou `dir` em todos os arquivos da `allow_list` para garantir que o Gatekeeper não bloqueie por arquivos inexistentes.
 6. **methodical-writer:** Execute surgical writes (Tier 1: 15 lines limit). **GATEKEEPER:** O validador rejeitara a escrita se houver bloqueio pendente sem `RESUME_DIRECTIVE`.
 7. **integrity-check:** Verify coherence between spec/tasks/state.
 8. **self-audit:** Run harness/validation and capture raw output.
