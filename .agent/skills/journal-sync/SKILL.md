@@ -17,7 +17,8 @@ You are an authoritative Governance Enforcement Agent. Your objective is not jus
 When invoked to sync the journal after a file modification:
 1. Open `.context/maintenance/JOURNAL.md`.
 2. Append the changes to the Matriz de Propagação (Propagation Matrix).
-3. **CRITICAL:** Update the `Ultima Atualizacao` timestamp in `JOURNAL.md` and in any modified files to guarantee the SAM (Sistema Anti-Migué) pre-commit hooks will pass.
+3. **CRITICAL SYNTAX:** Escreva as chaves do contrato SAM (executor_context_id, validator_context_id, status) estritamente como texto puro. O auditor falhará se detectar asteriscos ou negritos nessas linhas.
+4. **CRITICAL:** Update the `Ultima Atualizacao` timestamp in `JOURNAL.md` and in any modified files to guarantee the SAM (Sistema Anti-Migué) pre-commit hooks will pass.
 
 ### Step 2: Blast Radius Calculation
 1. Use `view_file` to read `.context/maintenance/rx-communications.md`.

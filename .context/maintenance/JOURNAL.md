@@ -1,12 +1,31 @@
 ---
 Criado em: 2026-05-03 01:51
-Ultima Atualizacao: 2026-05-05 02:17
+Ultima Atualizacao: 2026-05-05 21:05
 Status: Ativo
 Nota: Semente pos-purge. 33 entradas arquivadas em journal_archive_20260503_015104.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-05 21:05 | 🛡️ SAM Syntax Hardening (v2.6.2)
+**Estado Atual:**
+- [x] **Endurecimento Textual:** Inserção da Regra 1.11 no `RULES.md` proibindo Markdown em chaves de contrato.
+- [x] **Update Skill:** Inserida nota "CRITICAL SYNTAX" na skill `journal-sync`.
+- [x] **Sincronia Global:** Timestamps atualizados para conformidade com o SAM.
+
+**Matriz de Propagação:**
+- [x] `.context/brain/RULES.md` -> Atualizado com a Regra 1.11.
+- [x] `.agent/skills/journal-sync/SKILL.md` -> Atualizado com restrição de sintaxe.
+- [x] `.context/maintenance/JOURNAL.md` -> Registro de v2.6.2 e contrato SAM.
+
+**Contrato de Validação (SAM):**
+- executor_context_id: `antigravity-v2-active`
+- validator_context_id: `user-forced-signoff`
+- status: `READY TO COMMIT` 🟢
+
+**Tags:** Governança, Regras, SAM, Hardening, Journal-Sync
+
 
 ## 📅 2026-05-05 02:17 | 🕸️ Governance Coupling Matrix & Journal-Sync (v2.6.1)
 **Estado Atual:**

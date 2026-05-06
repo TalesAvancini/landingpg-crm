@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-18
-Última Atualização: 2026-05-05
+Última Atualização: 2026-05-06
 Status: Ativo
 ---
 
@@ -110,6 +110,10 @@ O Agente orquestrador sofre de amnésia cibernética entre sessões. Para evitar
 1. **Injeção Obrigatória:** Nenhuma spec pode ter sua execução iniciada sem que o comando `npm run context:inject` seja executado previamente.
 2. **Consumo da Vacina:** O Agente Executor **NÃO DEVE** ler a spec original virgem (`spec.md`). Ele **DEVE OBRIGATORIAMENTE** ler a versão `*.enriched.md`, que contém as *Scars* (Cicatrizes) injetadas no topo.
 3. **Fraude Comportamental:** Ignorar as *Scars* do topo da spec e cometer o mesmo erro reportado é considerado quebra de conduta, passível de bloqueio de commit.
+
+## 🛡️ 1.11 Regra `SAM_SYNTAX_STRICTNESS` (Rigidez de Sintaxe)
+1. **Machine-First:** É terminantemente proibido o uso de qualquer formatação Markdown (negritos `**`, itálicos `_`, asteriscos) nas chaves do contrato do Journal (ex: `executor_context_id:`).
+2. **Standardization:** Use apenas texto puro para garantir a leitura do oráculo via Regex. A estética deve ser sacrificada em prol da funcionalidade determinística do Auditor.
 
 ---
 
