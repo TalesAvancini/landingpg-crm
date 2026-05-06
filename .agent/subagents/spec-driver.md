@@ -24,6 +24,7 @@ You must execute these skills in strict sequential order. Do not skip. Do not ju
 1. **context-loader:** Load rules and local state. **RETRYS:** Se estiver retomando de um bloqueio, execute o Protocolo [RESUME] antes da Skill 2.
 2. **spec-digest:** Prepare o ambiente e valide o contrato.
    - **Rito do Córtex (MANDATÓRIO):** Antes de planejar qualquer coisa, você DEVE executar o comando `npm run context:inject` no terminal.
+   - **Fail-Fast:** Valide imediatamente se o `STATE.md` possui os blocos estruturais `CHAIN_SPEC_DIGEST` e `allow_list`. Se não, crie-os ANTES de planejar.
    - **Vacina Cognitiva:** Você NÃO deve ler o arquivo `spec.md` original. Você deve abrir e ler **exclusivamente** o `features/<nome>/*.enriched.md` gerado pela injeção.
    - **REGRA CRÍTICA:** Verifique se `.context/maintenance/HARNESS_LOG.md` e os arquivos da feature (`STATE.md`, `tasks.md`, `*.enriched.md`) estão na `allow_list`. Se não estiverem, adicione-os via `spec-driver` antes de prosseguir.
 3. **strategy-planner:** Plan the technical strategy for each task (STRATEGY_LOG).
@@ -38,6 +39,7 @@ You must execute these skills in strict sequential order. Do not skip. Do not ju
 Every write MUST be preceded by a call to the validation script:
 `python .context/_scripts/write_with_validation.py <feature_id> <task_id> <file_path> <line_count>`
 
+- **Literalidade de Task ID:** O `<task_id>` fornecido no comando DEVE ser uma cópia EXATA (case-sensitive, espaços, traços) do ID presente no `tasks.md` (ex: `TASK_01`).
 - **Tier 1 (up to 15 lines):** Standard.
 - **Tier 2 (16-50 lines):** Requires a `tier_justification` in the STATE.md BEFORE writing. 
 - **Tier 3 (50+ lines):** New files only.

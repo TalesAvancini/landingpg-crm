@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-10 20:50
-Última Atualização: 2026-04-30 23:25
+Última Atualização: 2026-05-06 20:23
 Status: Ativo
 ---
 
@@ -36,7 +36,7 @@ Status: Ativo
 | `@devops-guardian` | CI/CD, deploy, env vars, monitoramento, segurança infra | `.github/workflows/`, `Dockerfile`, `maintenance/rebuild_guide.md`, `.env.example` | `maintenance/rebuild_guide.md`, `maintenance/TECHNICAL_REQUIREMENTS.md` (infra), `brain/ROADMAP.md` (deploys) | "deploy", "CI/CD", "docker", "variável de ambiente", "monitoramento", "rollback" |
 | `@vision-architect` | Estratégia, validação de market fit, definição de boundaries | `.context/brain/INCEPTION.md`, `.context/market/MARKET_INBOX.md` | `.context/brain/INCEPTION.md`, `.context/market/SSOT_MAP.md` | "definir boundary", "validar gap de mercado", "revisar inception" |
 | `@spec-enricher` | Tradução estratégica em PRD, tradução cognitiva VISION -> INCEPTION, validação de gaps de mercado | `.context/brain/PRD.md`, `.context/brain/INCEPTION.proposed.md`, `maintenance/JOURNAL.md` | `.context/brain/INCEPTION.md`, `.context/brain/VISION.md`, `.context/market/SSOT_MAP.md` | "enriquecer spec", "gerar PRD", "traduzir visão", "propor inception", `npm run context:enrich` |
-| `@spec-driver` | Executor Chain-Skills V3.1 (Hardened), Physical Check, Raw Payloads | `.specs/`, `src/`, `tests/`, `contract` (frontmatter) | `*.enriched.md`, `STATE.md`, `JOURNAL.md`, `brain/RULES.md`, `AGENT_SCRATCHPAD.md` | `"inicie execução"`, `"autopilot"`, `"execute a spec"`, `"MIMO close"` |
+| `@spec-driver` | Executor Chain-Skills V3.2 (Fail-Fast, Grep-First), Physical Check, Raw Payloads | `.specs/`, `src/`, `tests/`, `contract` (frontmatter) | `*.enriched.md`, `STATE.md`, `JOURNAL.md`, `brain/RULES.md`, `AGENT_SCRATCHPAD.md` | `"inicie execução"`, `"autopilot"`, `"execute a spec"`, `"MIMO close"` |
 | `@context-keeper` | Sync, purge, validação de consistência, saúde do contexto | `.context/` (exceto `_archive/`), `maintenance/JOURNAL.md`, `brain/RULES.md` | `brain/RULES.md`, `brain/MASTER_FLOW.md`, `maintenance/JOURNAL.md`, `monitoring/CONTEXT_HEALTH.md` | "atualize contexto", "purge", "health check", "validar consistência", "sincronizar" |
 | `@fullstack-generalist` | Modo fallback para tarefas transversais ou projetos light | Leitura em todo o projeto; Escrita apenas com confirmação explícita | `brain/PRD.md`, `maintenance/schema.sql`, `maintenance/JOURNAL.md` (últimas 30 linhas) + Global | "modo light", "tarefa rápida", "projeto pequeno", "não especificado" |
 

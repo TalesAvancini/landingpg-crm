@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-10 23:28
-Ultima Atualizacao: 2026-05-06 20:10
+Ultima Atualizacao: 2026-05-06 20:23
 Status: Ativo
 
 ---
@@ -100,10 +100,11 @@ Para projetos de complexidade média/alta, o Antigravity utiliza a segregação 
 
 1.  **[Planner - Hub]**: IA Principal desenha a SPEC na janela atual, define `max_impact_radius` e emite o comando de Spawn (`/spec-driver`). O Hub OBRIGATORIAMENTE injeta os **Raw Payloads** (IDs e textos de regras) na Spec para evitar caça externa.
 2.  **[Pre-flight - Executor]**: Novo processo limpo nasce e roda `grep` (Pre-flight Gate). Se impacto > Limite → `SCOPE_BLOWOUT` (Telemetria no `STATE.md`).
-3.  **[Execution - Executor]**: O subagente (`spec-driver`) assume o controle operando sob a doutrina **Chain-Skills V3** (Uma corrente determinística de 9 skills).
+3.  **[Execution - Executor]**: O subagente (`spec-driver`) assume o controle operando sob a doutrina **Chain-Skills V3.2** (Uma corrente determinística de 9 skills).
+    - **Skill 0 (Fail-Fast):** O agente auto-audita a presença do Digest e AllowList no `STATE.md` ANTES de planejar.
     - **A Vacina Cognitiva:** A primeira ação do agente é injetar a memória rodando `npm run context:inject` e carregar o `*.enriched.md`.
     - **Physical Check (Skill 5):** Validar fisicamente (`dir` ou `ls`) cada arquivo da `allow_list` antes de qualquer mutação.
-    - As edições físicas (Skill 6) são monitoradas de forma Fail-Closed pelo `write_with_validation.py`.
+    - As edições físicas (Skill 6) são monitoradas de forma Fail-Closed pelo `write_with_validation.py` (Exigindo Literalidade Absoluta).
     - Ao terminar as modificações, ele deve obrigatoriamente rodar o **Pre-close Self-Audit** (Skill 8). Se passar, emite `/qa-validator`.
 4.  **[Auditoria - Validador]**: Novo processo cego nasce. Realiza a auditoria final de fechamento (Pre-Close Audit). Valida Semântica (Lógica) + Telemetria (Impacto resolvido). Assina o `spec.md` se correto.
 5.  **[Finalização - Hub]**: IA Principal (Humano aciona o Hub) verifica a SPEC assinada, valida o SAM, emite o rito final e comita/arquiva.

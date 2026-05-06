@@ -26,6 +26,10 @@ Se você recebeu um erro e parou aqui, verifique se a solução já está abaixo
 - **Causa:** Você tentou uma escrita de Tier 2 (16-50 linhas) ou Tier 3 (50+) sem registrar o campo `tier_justification:` no `STATE.md`.
 - **Solução:** Vá ao `STATE.md`, localize a `TASK ID` correspondente no `CHAIN_EXECUTION_LOG` e adicione a justificativa. Re-valide a escrita.
 
+### 6. [FAIL] Substituição Vazia (Empty Diff)
+- **Causa:** Você tentou alterar um arquivo via "Search/Replace", mas o texto alvo não corresponde à realidade do arquivo. Ocorreu Drift de Memória.
+- **Solução:** NUNCA tente editar um arquivo baseando-se apenas na memória. OBRIGATÓRIO rodar `view_file` ou `grep` nas linhas que deseja alterar para capturar a literalidade exata antes de chamar a ferramenta de escrita.
+
 ---
 
 ## 📥 INBOX (Escalation & Dúvidas)

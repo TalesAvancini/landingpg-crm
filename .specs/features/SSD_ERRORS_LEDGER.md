@@ -87,6 +87,18 @@ Registro continuo de erros recorrentes em execucao spec-driven.
 - **Como foi detectado:** Interrupção manual do usuário e erros consecutivos do gatekeeper.
 - **Correcao aplicada:** Institucionalização da Injeção Atômica (Seção 5 da Spec) e regra de "Surgical Edits" (chunks de <10 linhas).
 
+### Scar #007 — Substituição Cega (Drift de Target Content)
+- **Data:** 2026-05-06
+- **Feature:** melhoria_spec_driver
+- **Sprint:** sprint_01
+- **Erro:** Tentativa de alteração de código ("Search/Replace") sem validação exata do bloco original, resultando em Empty Diff e loop de retentativas.
+- **Sintoma observado:** A ferramenta de edição falhava porque o conteúdo alvo não correspondia à realidade, atrasando a entrega.
+- **Causa raiz:** O Agente tentou realizar Surgical Edits usando memória volátil de contexto em vez de leitura atualizada do arquivo.
+- **Como foi detectado:** Relatório post-mortem do executor.
+- **Correcao aplicada:** Institucionalização da Regra "Grep-Before-Write" (Grep-First).
+- **Regra adicionada/ajustada:** É OBRIGATÓRIO executar `view_file` ou `grep` nas linhas que se deseja alterar imediatamente ANTES de chamar a ferramenta de escrita. NUNCA edite "de cabeça".
+- **Evidencia (arquivo/commit/log):** `.agent/templates/AGENT_SCRATCHPAD.md` (Trap #6).
+
 ---
 
 ## Template de Entrada

@@ -8,6 +8,26 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_1915
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-06 20:20 | 🛡️ Hardening V4 (Anti-Drift Cognitivo) #Firmware #Governance Core #Regras #Governança #Roles
+**Estado Atual:**
+- [x] **Slugs de Task:** Regra inserida no `RULES.md` obrigando sintaxe de Task IDs sem espaços para evitar falhas regex na trava física.
+- [x] **Fail-Fast (Skill 0):** `spec-driver.md` atualizado para checar a integridade do `STATE.md` (Digest/AllowList) *antes* do planejamento.
+- [x] **Grep-First (Scar #007):** Ledger de Erros atualizado e Trap #6 criada no `AGENT_SCRATCHPAD.md` exigindo leitura explícita (view/grep) antes de qualquer substituição para evitar Empty Diffs.
+
+**Matriz de Propagação:**
+- [x] `.context/brain/RULES.md` -> [Task Slug Syntax]
+- [x] `.agent/subagents/spec-driver.md` -> [Skill 0 e Literalidade]
+- [x] `.agent/templates/AGENT_SCRATCHPAD.md` -> [Trap 6: Empty Diff]
+- [x] `.specs/features/SSD_ERRORS_LEDGER.md` -> [Scar #007]
+- [x] `.context/brain/MASTER_FLOW.md` -> [Metadata sync e Chain-Skills V3.2]
+- [x] `.context/brain/AGENT_REGISTRY.md` -> [Version bump spec-driver]
+- [x] `.context/brain/FILE_GLOSSARY.md` -> [Metadata sync para acoplamento de Roles]
+- [x] `.context/brain/SCRIPT_GLOSSARY.md` -> [Metadata sync para acoplamento de Roles]
+
+executor_context_id: superpowers-plan
+validator_context_id: context-keeper
+status: READY TO COMMIT
+
 ## 📅 2026-05-06 20:10 | 🏁 Selagem Final: Limpeza de Bancada #Firmware #Governance Core #Selagem
 **Estado Atual:**
 - [x] **Rito de Selagem:** Arquivamento manual das features `affinity-lite`, `governance-resiliency-fixes` e `melhoria_spec_driver`.
