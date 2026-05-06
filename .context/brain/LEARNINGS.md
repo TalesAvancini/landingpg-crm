@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-05-04
-Ultima Atualizacao: 2026-05-05 02:20
+Ultima Atualizacao: 2026-05-06
 Status: Ativo
 ---
 
@@ -41,6 +41,16 @@ Status: Ativo
 - **Última vez:** coupling_matrix_system (2026-05-05)
 - **O que aconteceu:** Tentativa de mapear 40+ arquivos em tabela Markdown NxN (1600+ células). -> Inviabilidade técnica de renderização, legibilidade e manutenção.
 - **A Regra:** Utilizar **Adjacency Lists** (Listas de Adjacência) estruturadas para mapear acoplamentos granulares acima de 10 nós, garantindo foco no *Blast Radius* imediato.
+
+---
+
+## 💎 Gold Nuggets (Estratégias Vencedoras)
+*(Técnicas que economizam tokens e aceleram a descoberta)*
+
+### [GOLD-001] Git Log como Oráculo Epistemológico
+- **Contexto:** affinity-lite (2026-05-05)
+- **A Sacada:** Para detectar Acoplamento Fantasma (arquivos que mudam juntos mas não se citam), o histórico temporal do Git (`git log --name-only`) é superior à análise estática de código. O uso de Similaridade de Jaccard sobre janelas de commit revela a arquitetura "viva" do projeto que documentações manuais ignoram.
+- **Aplicação:** Sempre consultar o motor de afinidade temporal antes de grandes refatorações.
 
 ---
 

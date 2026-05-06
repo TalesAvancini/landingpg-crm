@@ -19,6 +19,9 @@ SYNAPSE_PATH = CONTEXT_DIR / "maintenance" / "JOURNAL_SYNAPSE.md"
 
 def get_git_state():
     """Retorna dicionário com arquivos modificados e novos."""
+    # Pastas ignoradas para auditoria SAM (Zona Segura de Rascunho)
+    IGNORED_PREFIXES = ("planos/", "scratch/", "temp/")
+    
     try:
         res = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True, check=True)
         lines = res.stdout.splitlines()
@@ -29,6 +32,11 @@ def get_git_state():
         for line in lines:
             status = line[:2]
             path = line[3:].strip()
+            
+            # Skip arquivos em pastas de rascunho
+            if path.startswith(IGNORED_PREFIXES):
+                continue
+                
             if "??" in status or "A" in status:
                 new_files.add(path)
             else:

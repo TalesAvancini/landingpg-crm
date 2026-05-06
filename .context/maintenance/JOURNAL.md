@@ -1,12 +1,29 @@
 ---
 Criado em: 2026-05-03 01:51
-Ultima Atualizacao: 2026-05-05 22:52
+Ultima Atualizacao: 2026-05-06
 Status: Ativo
 Nota: Semente pos-purge. 33 entradas arquivadas em journal_archive_20260503_015104.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-05 23:28 | 🛡️ Governance Resiliency (The \D* Strategy)
+**Estado Atual:**
+- [x] **Harness Resiliency:** Implementada estratégia `\D*` no `validate_context.py` para ignorar formatação Markdown em metadados de controle.
+- [x] **SAM Immunity:** Estabelecida "Zona Segura de Rascunho" para as pastas `planos/` e `scratch/` no `workflow_journal_auditor.py`.
+- [x] **Legislação:** Institucionalizada a Regra 1.9 (Governança > Estética) no `RULES.md` e Gold Nugget [GOLD-001] no `LEARNINGS.md`.
+
+**Matriz de Propagação:**
+- [x] `.context/_scripts/validate_context.py` -> Fix de resiliência estética (\D*).
+- [x] `.context/_scripts/workflow_journal_auditor.py` -> Inclusão de IGNORED_PREFIXES.
+- [x] `.context/brain/RULES.md` -> Adição da Regra 1.9 e 1.10. (Tags: Regras)
+- [x] `.context/brain/LEARNINGS.md` -> Registro da técnica "Git Log como Oráculo".
+- [x] `.specs/features/governance-resiliency-fixes/` -> Feature de blindagem selada.
+
+executor_context_id: spec-driver
+validator_context_id: harness
+status: READY TO COMMIT
 
 ## 📅 2026-05-05 22:40 | 📊 Affinity Lite v1.0 (SSD-Chain Hardened)
 **Estado Atual:**

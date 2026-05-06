@@ -1,0 +1,25 @@
+# Tasks: governance-resiliency-fixes
+
+- [x] **Skill 1: CONTEXT_LOADED**
+    - [x] Criar `spec.md` baseada no plano aprovado.
+    - [x] Inicializar `STATE.md` (Skills 1-9).
+- [x] **Skill 2: CONSTRAINTS_EXTRACTED**
+    - [x] Extrair proibições (Não quebrar retrocompatibilidade do SAM).
+- [x] **Skill 3: TECHNICAL_APPROACH**
+    - [x] Definir novos Regex para `validate_context.py`.
+    - [x] Definir `IGNORED_PREFIXES` para `workflow_journal_auditor.py`.
+- [x] **Skill 4: SCRATCHPAD_SYNCED**
+    - [x] Sincronizar diretivas anti-loop.
+- [x] **Skill 5: TDD_SHIELD**
+    - [x] Validar via manual dry-run os novos comportamentos dos scripts.
+- [x] **Skill 6: METHODICAL_WRITER**
+    - [x] Aplicar fix no `validate_context.py`.
+    - [x] Aplicar fix no `workflow_journal_auditor.py`.
+    - [x] Atualizar `RULES.md` com a lei "Governança > Estética".
+    - [x] Atualizar `LEARNINGS.md` com os aprendizados de afinidade.
+- [x] **Skill 7: QA_VALIDATION**
+    - [x] Rodar `context:validate` e `context:all`.
+- [x] **Skill 8: JOURNAL_SYNC**
+    - [x] Realizar `sync journal`.
+- [x] **Skill 9: HANDOFF**
+    - [x] Gerar walkthrough final.

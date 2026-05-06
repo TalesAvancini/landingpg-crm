@@ -197,11 +197,11 @@ def check_state_freshness():
             continue
         
         content = state_path.read_text(encoding="utf-8", errors="ignore")
-        # Captura updated: YYYY-MM-DD HH:MM
-        match = re.search(r"updated:\s*(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})", content)
+        # Captura updated: YYYY-MM-DD HH:MM (Resiliente a formatação Markdown via \D*)
+        match = re.search(r"updated:\D*(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})", content, re.IGNORECASE)
         if not match:
             # Tenta capturar apenas data se hora estiver ausente
-            match_date = re.search(r"updated:\s*(\d{4}-\d{2}-\d{2})", content)
+            match_date = re.search(r"updated:\D*(\d{4}-\d{2}-\d{2})", content, re.IGNORECASE)
             if not match_date:
                 warnings.append(f"{spec_dir.name}: campo 'updated' ausente ou malformado")
                 continue
@@ -239,11 +239,11 @@ def check_atomic_transition():
             continue
 
         content = state_path.read_text(encoding="utf-8", errors="ignore")
-        status_match = re.search(r"status:\s*.*IN_PROGRESS", content, re.I)
+        status_match = re.search(r"status:\D*IN_PROGRESS", content, re.I)
         if not status_match:
             continue
 
-        hash_match = re.search(r"start_hash:\s*[\"']?([a-f0-9]{7,40})[\"']?", content, re.I)
+        hash_match = re.search(r"start_hash:\D*([a-f0-9]{7,40})", content, re.I)
         if not hash_match:
             issues.append(f"{spec_dir.name}: status IN_PROGRESS mas start_hash ausente")
             continue

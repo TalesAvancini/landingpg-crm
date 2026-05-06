@@ -99,13 +99,18 @@ Mudanças em scripts de governança (`validate_context.py`, `harness_runner.py`,
 1. **Sanity Check:** Execução mínima do script após a alteração para validar que não há erros de import ou sintaxe.
 2. **Non-Regression:** Evidência de que os gates de segurança continuam ativos.
 
-## 🛡️ 1.9 Regra `EXECUTION_GATEKEEPER` (Fail-Closed & Resume Protocol)
+## 🛡️ 1.9 Regra `MECHANICAL_OVER_AESTHETICS` (Governança > Estética)
+A consistência de parsing dos metadados de controle tem prioridade absoluta sobre a estilização visual Markdown.
+1. **Plain Metadata:** Chaves de controle como `status:`, `updated:`, `start_hash:` e campos SAM devem ser mantidos como texto puro (sem negritos, crases ou itálicos) para garantir a resiliência dos parsers Regex.
+2. **Draft Immunity:** Pastas de ideação (`planos/`) e buffers temporários (`scratch/`, `temp/`) são zonas de baixa governança, isentas de auditoria estrita do SAM, permitindo iteração livre sem burocracia de registro no Journal.
+
+## 🛡️ 1.10 Regra `EXECUTION_GATEKEEPER` (Fail-Closed & Resume Protocol)
 A modificação de arquivos de código é um ato estritamente mecânico, governado fisicamente pelo `write_with_validation.py` (A Trava Física - Skill 6).
 1. **Bloqueio Inviolável:** Nenhuma ferramenta genérica de escrita deve contornar a validação formal deste script.
 2. **Condição de Bloqueio:** O script analisa dinamicamente o `STATE.md` buscando por estados de erro ativo (`[BLOCKED]` ou `[FATAL]`).
 3. **Protocolo `[RESUME]`:** Se o sistema estiver bloqueado, qualquer tentativa de escrita resultará em falha e aborto da operação. Para destravar a arquitetura e retomar a execução, a IA deve receber novas diretrizes do Orquestrador Humano e registrar obrigatoriamente a string `RESUME_DIRECTIVE:` dentro da seção de log do `STATE.md`.
 
-## 🛡️ 1.10 Regra `MIMO_MANDATORY_INJECTION` (Memória Ativa)
+## 🛡️ 1.11 Regra `MIMO_MANDATORY_INJECTION` (Memória Ativa)
 O Agente orquestrador sofre de amnésia cibernética entre sessões. Para evitar o "Ralph Wiggum Loop":
 1. **Injeção Obrigatória:** Nenhuma spec pode ter sua execução iniciada sem que o comando `npm run context:inject` seja executado previamente.
 2. **Consumo da Vacina:** O Agente Executor **NÃO DEVE** ler a spec original virgem (`spec.md`). Ele **DEVE OBRIGATORIAMENTE** ler a versão `*.enriched.md`, que contém as *Scars* (Cicatrizes) injetadas no topo.
