@@ -28,7 +28,8 @@ sprint_01:
     - AGENT_SCRATCHPAD.md enriquecido com as Traps de Tier Justification e Surgical Edits.
     - RULES.md atualizado com a regra Windows (PowerShell) baseline.
     - SSD_ERRORS_LEDGER.md enriquecido com a Scar #006.
-  qa_signoff: false
+  qa_signoff: true
+
 ---
 
 # Feature: Otimização Spec-Driven V3 (Cura de Dores do Executor)

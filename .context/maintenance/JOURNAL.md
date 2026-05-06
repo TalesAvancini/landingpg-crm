@@ -8,6 +8,23 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_1915
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-06 20:10 | 🏁 Selagem Final: Limpeza de Bancada #Firmware #Governance Core #Selagem
+**Estado Atual:**
+- [x] **Rito de Selagem:** Arquivamento manual das features `affinity-lite`, `governance-resiliency-fixes` e `melhoria_spec_driver`.
+- [x] **Bancada Limpa:** Pasta `.specs/features/` agora contém apenas os SSOTs (`SSD_PLAYBOOK.md`, `SSD_ERRORS_LEDGER.md`).
+
+**Matriz de Propagação:**
+- [x] `.specs/features/` -> [Remoção de features concluídas]
+- [x] `.context/maintenance/_archive_context/specs/` -> [Arquivamento imutável]
+- [x] `.context/brain/MASTER_FLOW.md` -> [Metadata sync]
+
+
+executor_context_id: context-keeper
+validator_context_id: user-request
+status: READY TO COMMIT
+
+
+
 ## 📅 2026-05-06 20:02 | ✅ Concluído: Otimização Spec-Driven V3 #Firmware #Governance Core #Governança #Regras #Roles
 **Estado Atual:**
 - [x] **Injeção Atômica:** Templates e Playbook atualizados para exigir o texto bruto das SCARs.

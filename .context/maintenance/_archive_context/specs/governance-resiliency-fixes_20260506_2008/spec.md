@@ -21,7 +21,8 @@ sprint_01:
     - Pasta 'planos/' ignorada no SAM auditor.
     - Regra 'Governança > Estética' em RULES.md.
     - Aprendizados de Afinidade em LEARNINGS.md.
-  qa_signoff: false
+  qa_signoff: true
+
 ---
 
 # Feature: Governance Resiliency Fixs (Gincana Debrief)
