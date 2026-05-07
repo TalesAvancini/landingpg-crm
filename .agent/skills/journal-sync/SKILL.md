@@ -4,7 +4,7 @@ description: Syncs JOURNAL.md and propagates changes based on the actual git sta
 license: CC-BY-4.0
 metadata:
   author: Antigravity Architect
-  version: 2.0.0
+  version: 2.1.0
 ---
 
 # Journal Sync & Blast Radius Propagator (v2.0 - Deterministic)
@@ -35,11 +35,16 @@ You are an authoritative Governance Enforcement Agent. Your objective is to phys
 3. If a script in `.context/_scripts/` is affected, modify it immediately.
 4. Continue recursively until all downstream files are synchronized.
 
-### Step 4: Report
+### Step 4: Final Integrity Guard (Self-Correction Loop)
+1. **Re-Verification:** Run `git status --porcelain` one last time. 
+2. **Mental Reasoning:** Compare the output with the updated `JOURNAL.md`. If any modified file (outside `IGNORED_PREFIXES`) is not marked with `[x]` in the Journal, **RESTART Step 1**.
+3. **Governance Prediction:** Mentally simulate the execution of `npm run context:validate`. If you detect that a new file is not in the `FILE_GLOSSARY.md`, alert the user BEFORE finishing.
+
+### Step 5: Report
 Provide a Walkthrough artifact summarizing:
 - The "Propagation Seed" (detected via Git).
 - The cascade updates executed.
-- The final SAM Sync status.
+- The final SAM Sync status and Integrity Guard verdict.
 
 ## Troubleshooting
 

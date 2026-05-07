@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-18
-Última Atualização: 2026-05-06
+Última Atualização: 2026-05-07 15:30
 Status: Ativo
 ---
 
@@ -118,9 +118,15 @@ O Agente orquestrador sofre de amnésia cibernética entre sessões. Para evitar
 2. **Consumo da Vacina:** O Agente Executor **NÃO DEVE** ler a spec original virgem (`spec.md`). Ele **DEVE OBRIGATORIAMENTE** ler a versão `*.enriched.md`, que contém as *Scars* (Cicatrizes) injetadas no topo.
 3. **Fraude Comportamental:** Ignorar as *Scars* do topo da spec e cometer o mesmo erro reportado é considerado quebra de conduta, passível de bloqueio de commit.
 
-## 🛡️ 1.11 Regra `SAM_SYNTAX_STRICTNESS` (Rigidez de Sintaxe)
+## 🛡️ 1.12 Regra `SAM_SYNTAX_STRICTNESS` (Rigidez de Sintaxe)
 1. **Machine-First:** É terminantemente proibido o uso de qualquer formatação Markdown (negritos `**`, itálicos `_`, asteriscos) nas chaves do contrato do Journal (ex: `executor_context_id:`).
 2. **Standardization:** Use apenas texto puro para garantir a leitura do oráculo via Regex. A estética deve ser sacrificada em prol da funcionalidade determinística do Auditor.
+
+## 🛡️ 1.13 Protocolo de Sincronia de Metadados (Metadata-Only Propagation)
+Caso uma propagação seja exigida pelo SAM ou pelo Raio de Impacto, mas **não haja alteração lógica necessária** no arquivo de destino:
+1. **Ação Única:** O Agente deve apenas atualizar o campo `Última Atualização` (ou `Ultima Atualizacao`) no frontmatter/cabeçalho do arquivo.
+2. **Proibição de Ruído:** É terminantemente proibido inserir comentários vazios, espaços, hífens ou qualquer caractere de "preenchimento" apenas para gerar diff.
+3. **Validação:** O carimbo de data serve como "Prova de Visita" e validação de integridade do contexto.
 
 ---
 

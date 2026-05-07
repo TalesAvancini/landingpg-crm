@@ -1,12 +1,56 @@
 ---
 Criado em: 2026-05-06 19:15
-Ultima Atualizacao: 2026-05-06 21:10
+Ultima Atualizacao: 2026-05-07 15:35
 Status: Ativo
 Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_191531.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-07 15:35 | 🛡️ Sincronia de Governança & Protocolo de Metadados #Governance #SAM #Hardening #Governança #Regras
+**Estado Atual:**
+- [x] **Protocolo de Metadados (Regra 1.13):** Institucionalizada a "Regra de Sincronia de Metadados" no `RULES.md` para evitar churn de código desnecessário.
+- [x] **Closed-Loop Validation:** Aplicada a primeira validação real com a skill `journal-sync v2.1.0`.
+- [x] **Integrity Guard Verdict:** OK. Todos os arquivos modificados no Git estão mapeados. O Raio de Impacto da Regra 1.13 foi propagado para o `MASTER_FLOW.md`.
+- [x] **Cleanup:** Sincronizados arquivos deletados da pasta depreciada detectados no Git.
+
+**Matriz de Propagação:**
+- [x] `.agent/skills/journal-sync/SKILL.md` -> [Evolução v2.1.0]
+- [x] `.context/_scripts/workflow_journal_auditor.py` -> [Exclusão de .agents/]
+- [x] `.context/brain/RULES.md` -> [Regra 1.13]
+- [x] `.context/brain/MASTER_FLOW.md` -> [Metadata Sync Protocol]
+- [x] `_DEPRECATED_flash_report/` -> [Sincronia de Deleção]
+
+executor_context_id: final-session-sync
+validator_context_id: user-request
+status: READY TO COMMIT
+
+## 📅 2026-05-07 15:20 | ⚙️ Evolução de Skill: journal-sync v2.1.0 (Closed-Loop) #Skills #Governance #Hardening
+**Estado Atual:**
+- [x] **Closed-Loop Implementation:** Adicionado o passo `Step 4: Integrity Guard` na skill de sincronização para prever falhas de Harness antes da finalização.
+- [x] **Auto-Validação:** O Agente agora é instruído a re-checar o `git status` e simular o `validate_context.py` mentalmente.
+
+**Matriz de Propagação:**
+- [x] `.agent/skills/journal-sync/SKILL.md` -> [Evolução v2.1.0]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de evolução]
+
+executor_context_id: journal-sync-evolution
+validator_context_id: user-request
+status: READY TO COMMIT
+
+## 📅 2026-05-07 14:55 | 🛡️ Diferenciação de Diretórios e Regra de Sobriedade #IDE #Governance #Rules
+**Estado Atual:**
+- [x] **Diferenciação Crítica:** Formalizada a distinção entre `.agent/` (Framework Operacional/Skills) e `.agents/` (Mecanismo Nativo da IDE Antigravity) para evitar corrupção do SSOT.
+- [x] **Regra de Sobriedade:** Implementação da regra `sobriedade-operacional.md` na IDE para forçar minimalismo semântico e estabilidade de versão (proibição de V4/V100 ad-hoc).
+
+**Matriz de Propagação:**
+- [x] `.agents/rules/sobriedade-operacional.md` -> [Nova regra sistêmica na IDE]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de diferenciação e regras]
+
+executor_context_id: ide-config-sync
+validator_context_id: user-request
+status: READY TO COMMIT
 
 ## 📅 2026-05-06 21:30 | 🛡️ Institucionalização de Diretriz: @gov-friction-analyst #Roles #Agents #Governance
 **Estado Atual:**
