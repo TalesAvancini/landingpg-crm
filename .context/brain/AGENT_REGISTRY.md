@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-10 20:50
-Última Atualização: 2026-05-06 20:23
+Última Atualização: 2026-05-06 21:10
 Status: Ativo
 ---
 
@@ -39,6 +39,8 @@ Status: Ativo
 | `@spec-driver` | Executor Chain-Skills V3.2 (Fail-Fast, Grep-First), Physical Check, Raw Payloads | `.specs/`, `src/`, `tests/`, `contract` (frontmatter) | `*.enriched.md`, `STATE.md`, `JOURNAL.md`, `brain/RULES.md`, `AGENT_SCRATCHPAD.md` | `"inicie execução"`, `"autopilot"`, `"execute a spec"`, `"MIMO close"` |
 | `@context-keeper` | Sync, purge, validação de consistência, saúde do contexto | `.context/` (exceto `_archive/`), `maintenance/JOURNAL.md`, `brain/RULES.md` | `brain/RULES.md`, `brain/MASTER_FLOW.md`, `maintenance/JOURNAL.md`, `monitoring/CONTEXT_HEALTH.md` | "atualize contexto", "purge", "health check", "validar consistência", "sincronizar" |
 | `@fullstack-generalist` | Modo fallback para tarefas transversais ou projetos light | Leitura em todo o projeto; Escrita apenas com confirmação explícita | `brain/PRD.md`, `maintenance/schema.sql`, `maintenance/JOURNAL.md` (últimas 30 linhas) + Global | "modo light", "tarefa rápida", "projeto pequeno", "não especificado" |
+| `@gov-friction-analyst` | Diagnóstico de atrito de governança e filtragem de overkill | `.agent/skills/gov-friction-analyst/`, `maintenance/JOURNAL.md` (Checklist de Propagação) | 9 arquivos core (MASTER_FLOW, RULES, etc.), `SSD_ERRORS_LEDGER.md`, `AGENT_SCRATCHPAD.md` | "analise as dores do executor", "resolva bloqueios do gatekeeper", "diagnostique falhas" |
+
 
 💡 *Insight Humano: A role `@fullstack-generalist` é sua válvula de escape para projetos simples ou tarefas rápidas. Use com moderação: ela carrega mais contexto e tem menos restrições, o que aumenta o risco de alucinação. Prefira sempre as roles especializadas.*
 

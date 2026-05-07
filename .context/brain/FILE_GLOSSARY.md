@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-10 21:00
-Ultima Atualizacao: 2026-05-06 20:25
+Ultima Atualizacao: 2026-05-06 21:10
 Status: Ativo
 ---
 
@@ -116,6 +116,8 @@ Status: Ativo
 | `skills/methodical_writer.json` | **Restrição de Ferramentas.** Configuração de permissões estritas e limites para a Skill 6 (Escrita Cirúrgica). | `@spec-driver` |
 | `skills/journal-sync/SKILL.md` | **Orquestrador de Acoplamento.** Sincroniza o Journal e propaga alterações via Blast Radius autonômico. | `@antigravity` |
 | `skills/hok-governor/SKILL.md` | **Governador de Conduta.** Baseline de senso comum e travas de segurança contra alucinações e loops. | `@antigravity` |
+| `skills/gov-friction-analyst/SKILL.md` | **Analista de Fricção.** Diagnostica atritos do executor e propaga planos de mitigação (Overkill Radar). | `@gov-friction-analyst` |
+
 
 ---
 

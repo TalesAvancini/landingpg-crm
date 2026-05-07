@@ -1,12 +1,30 @@
 ---
 Criado em: 2026-05-06 19:15
-Ultima Atualizacao: 2026-05-06 19:15
+Ultima Atualizacao: 2026-05-06 21:10
 Status: Ativo
 Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_191531.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-06 21:10 | 🛠️ Criação da Skill: gov-friction-analyst #Skill-Creator #Governance #Hardening #Roles #Agents
+**Estado Atual:**
+- [x] **Nova Skill Criada:** Implementação da skill `gov-friction-analyst` em `.agent/skills/` seguindo o template oficial do `skill-creator`.
+- [x] **Hardcoded Context:** Injeção dos caminhos absolutos dos 9 pilares da governança para análise determinística de atrito.
+- [x] **Overkill Radar:** Inclusão de instruções para filtrar soluções desnecessariamente complexas em prol da sobriedade arquitetural.
+
+**Matriz de Propagação:**
+- [x] `.agent/skills/gov-friction-analyst/SKILL.md` -> [Criação inicial da lógica]
+- [x] `.agent/skills/gov-friction-analyst/README.md` -> [Documentação de uso]
+- [x] `.context/brain/AGENT_REGISTRY.md` -> [Registro da role @gov-friction-analyst]
+- [x] `.context/brain/FILE_GLOSSARY.md` -> [Inclusão dos novos caminhos]
+- [x] `.context/brain/SCRIPT_GLOSSARY.md` -> [Sync de metadados para Auditor SAM]
+- [x] `.context/maintenance/rx-communications.md` -> [Mapeamento de conectividade]
+
+executor_context_id: skill-creator
+validator_context_id: user-request
+status: READY TO COMMIT
 
 ## 📅 2026-05-06 20:20 | 🛡️ Hardening V4 (Anti-Drift Cognitivo) #Firmware #Governance Core #Regras #Governança #Roles
 **Estado Atual:**

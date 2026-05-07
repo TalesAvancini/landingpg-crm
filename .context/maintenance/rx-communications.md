@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-05-01 00:51
-Ultima Atualizacao: 2026-05-05 01:56
+Ultima Atualizacao: 2026-05-06 21:10
 Status: Ativo
 ---
 
@@ -90,6 +90,8 @@ graph TD
 | `STATE.md` | `validate_context.py` | **Evidência** | Foto física (hash) para garantir que não há drift. |
 | `JOURNAL_SYNAPSE.md` | `JOURNAL.md` | **Metabólica** | Limpeza e compressão de memória para evitar bloat. |
 | `JOURNAL.md` | `RULES.md` | **Aprendizado** | Cicatrizes (Scars) de erros passados viram novas leis. |
+| `@gov-friction-analyst` | `JOURNAL.md` | **Mitigação** | Propaga planos de ação para resolver atritos de governança. |
+
 
 ---
 
