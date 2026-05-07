@@ -8,6 +8,19 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_1915
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-06 21:30 | 🛡️ Institucionalização de Diretriz: @gov-friction-analyst #Roles #Agents #Governance
+**Estado Atual:**
+- [x] **Metodologia Selada:** Adição da Diretriz Operacional (Resumo Executivo) no `AGENT_REGISTRY.md` para garantir diagnóstico determinístico.
+
+**Matriz de Propagação:**
+- [x] `.context/brain/AGENT_REGISTRY.md` -> [Adição da diretriz operacional]
+- [x] `.context/brain/FILE_GLOSSARY.md` -> [Sync de metadados 21:30]
+- [x] `.context/brain/SCRIPT_GLOSSARY.md` -> [Sync de metadados 21:30]
+
+executor_context_id: agent-registry-fix
+validator_context_id: user-request
+status: READY TO COMMIT
+
 ## 📅 2026-05-06 21:10 | 🛠️ Criação da Skill: gov-friction-analyst #Skill-Creator #Governance #Hardening #Roles #Agents
 **Estado Atual:**
 - [x] **Nova Skill Criada:** Implementação da skill `gov-friction-analyst` em `.agent/skills/` seguindo o template oficial do `skill-creator`.
@@ -17,14 +30,15 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_1915
 **Matriz de Propagação:**
 - [x] `.agent/skills/gov-friction-analyst/SKILL.md` -> [Criação inicial da lógica]
 - [x] `.agent/skills/gov-friction-analyst/README.md` -> [Documentação de uso]
-- [x] `.context/brain/AGENT_REGISTRY.md` -> [Registro da role @gov-friction-analyst]
+- [x] `.context/brain/AGENT_REGISTRY.md` -> [Registro inicial da role]
 - [x] `.context/brain/FILE_GLOSSARY.md` -> [Inclusão dos novos caminhos]
 - [x] `.context/brain/SCRIPT_GLOSSARY.md` -> [Sync de metadados para Auditor SAM]
 - [x] `.context/maintenance/rx-communications.md` -> [Mapeamento de conectividade]
 
 executor_context_id: skill-creator
 validator_context_id: user-request
-status: READY TO COMMIT
+status: DONE
+
 
 ## 📅 2026-05-06 20:20 | 🛡️ Hardening V4 (Anti-Drift Cognitivo) #Firmware #Governance Core #Regras #Governança #Roles
 **Estado Atual:**

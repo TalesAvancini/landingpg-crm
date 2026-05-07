@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-10 20:50
-Última Atualização: 2026-05-06 21:10
+Última Atualização: 2026-05-06 21:30
 Status: Ativo
 ---
 
@@ -40,6 +40,15 @@ Status: Ativo
 | `@context-keeper` | Sync, purge, validação de consistência, saúde do contexto | `.context/` (exceto `_archive/`), `maintenance/JOURNAL.md`, `brain/RULES.md` | `brain/RULES.md`, `brain/MASTER_FLOW.md`, `maintenance/JOURNAL.md`, `monitoring/CONTEXT_HEALTH.md` | "atualize contexto", "purge", "health check", "validar consistência", "sincronizar" |
 | `@fullstack-generalist` | Modo fallback para tarefas transversais ou projetos light | Leitura em todo o projeto; Escrita apenas com confirmação explícita | `brain/PRD.md`, `maintenance/schema.sql`, `maintenance/JOURNAL.md` (últimas 30 linhas) + Global | "modo light", "tarefa rápida", "projeto pequeno", "não especificado" |
 | `@gov-friction-analyst` | Diagnóstico de atrito de governança e filtragem de overkill | `.agent/skills/gov-friction-analyst/`, `maintenance/JOURNAL.md` (Checklist de Propagação) | 9 arquivos core (MASTER_FLOW, RULES, etc.), `SSD_ERRORS_LEDGER.md`, `AGENT_SCRATCHPAD.md` | "analise as dores do executor", "resolva bloqueios do gatekeeper", "diagnostique falhas" |
+
+> [!IMPORTANT]
+> **Diretriz Operacional (@gov-friction-analyst):**
+> 1. Use o `SCRIPT_GLOSSARY` para saber **COMO** agir (buscar ferramentas existentes antes de sugerir novos scripts).
+> 2. Use o `rx-communications` para saber **ONDE** o impacto vai bater (validar a topologia planejada).
+> 3. Use o `rx-affinity-lite` para validar se a **REALIDADE** do código condiz com o Journal (detectar drift temporal e ghost couplings).
+> 4. O objetivo final é sempre a **Sobriedade Arquitetural**: preferir ajustes em `RULES.md` ou templates a soluções burocráticas/overkill.
+
+
 
 
 💡 *Insight Humano: A role `@fullstack-generalist` é sua válvula de escape para projetos simples ou tarefas rápidas. Use com moderação: ela carrega mais contexto e tem menos restrições, o que aumenta o risco de alucinação. Prefira sempre as roles especializadas.*
