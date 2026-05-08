@@ -1,5 +1,6 @@
 ---
-trigger: always_on
+trigger: model_decision
+description: Se vc é o Gemmini Flash, USE!
 ---
 
 # Sobriedade Semântica, Operacional e de Versão

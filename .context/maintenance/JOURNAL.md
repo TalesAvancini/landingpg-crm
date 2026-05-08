@@ -1,12 +1,26 @@
 ---
 Criado em: 2026-05-06 19:15
-Ultima Atualizacao: 2026-05-07 15:35
+Ultima Atualizacao: 2026-05-07 21:43
 Status: Ativo
 Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_191531.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-07 21:43 | 📄 Criação do FLOW_SDD.md (Constituição dos 9 Arquivos) #Documentation #SDD #Governance
+**Estado Atual:**
+- [x] **Novo Artefato:** Criação do `FLOW_SDD.md` em `.context/brain/` documentando visualmente o Flow SDD — os 9 arquivos que compõem a "Constituição" do processo Spec-Driven Development.
+- [x] **Conteúdo:** Inclui diagrama de arquitetura Mermaid (4 camadas), perfil individual dos 9 arquivos, matriz de propagação de mudanças, sequência de execução das 9 skills, e classificação por volatilidade.
+
+**Matriz de Propagação:**
+- [x] `.context/brain/FLOW_SDD.md` -> [Novo arquivo: walkthrough do Flow SDD]
+- [x] `.context/brain/FILE_GLOSSARY.md` -> [Registro do novo arquivo]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de criação]
+
+executor_context_id: journal-sync-manual
+validator_context_id: user-request
+status: READY TO COMMIT
 
 ## 📅 2026-05-07 15:35 | 🛡️ Sincronia de Governança & Protocolo de Metadados #Governance #SAM #Hardening #Governança #Regras
 **Estado Atual:**

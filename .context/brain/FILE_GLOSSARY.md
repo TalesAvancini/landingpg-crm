@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-10 21:00
-Ultima Atualizacao: 2026-05-06 21:30
+Ultima Atualizacao: 2026-05-07 21:43
 Status: Ativo
 ---
 
@@ -42,6 +42,7 @@ Status: Ativo
 | `HARNESS_REGISTRY.md` | **Registro de Validação.** Dicionário dos gates de validação, critérios e escopos que o Harness verifica durante a CI. | `@qa-validator` |
 | `TLC_INTEGRATION.md` | **Metodologia.** Guia de alinhamento entre as práticas do TLC (Think Like a Coder / Specify, Design, Tasks, Execute) e o motor H.O.K. | Humano |
 | `LEARNINGS.md` | **Memória Estratégica.** Consolida cicatrizes de execuções passadas, recorrências e propostas de novas regras. | `@context-keeper` |
+| `FLOW_SDD.md` | **Constituição do SDD.** Walkthrough visual dos 9 arquivos que compõem o processo Spec-Driven Development: diagramas, perfis, matriz de propagação e cadeia de 9 skills. | `@context-keeper` |
 
 ---
 
