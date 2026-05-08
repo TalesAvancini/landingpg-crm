@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-10 23:28
-Ultima Atualizacao: 2026-05-07 15:32
+Ultima Atualizacao: 2026-05-07 23:25
 Status: Ativo
 
 ---
@@ -107,7 +107,7 @@ Para projetos de complexidade média/alta, o Antigravity utiliza a segregação 
     - As edições físicas (Skill 6) são monitoradas de forma Fail-Closed pelo `write_with_validation.py` (Exigindo Literalidade Absoluta).
     - Ao terminar as modificações, ele deve obrigatoriamente rodar o **Pre-close Self-Audit** (Skill 8). Se passar, emite `/qa-validator`.
 4.  **[Auditoria - Validador]**: Novo processo cego nasce. Realiza a auditoria final de fechamento (Pre-Close Audit). Valida Semântica (Lógica) + Telemetria (Impacto resolvido). Assina o `spec.md` se correto.
-5.  **[Finalização - Hub]**: IA Principal (Humano aciona o Hub) verifica a SPEC assinada, valida o SAM, emite o rito final e comita/arquiva.
+5.  **[Finalização - Hub]**: IA Principal (Humano aciona o Hub) verifica a SPEC assinada, valida o SAM, **gera o `CLOSURE.md` síntese** (se não gerado pelo executor), emite o rito final e comita/arquiva.
 
 ---
 
@@ -118,7 +118,7 @@ Protocolo obrigatório para transição de `IN_PROGRESS` para `PASSED` ou `COMPL
 2. **Coerência de Artefatos:** Cruzar `spec.md` (objetivo) vs `tasks.md` (check) vs `STATE.md` (estado real).
 3. **Check de Higiene:** `git status --short` **DEVE** ser vazio. Sujeira na árvore bloqueia o fechamento.
 4. **Evidência de Fechamento:** Registrar hash final, data e signoff do auditor no `STATE.md`.
-5. **Registro de Legado:** Migrar decisões críticas para o `JOURNAL.md`.
+5. **Registro de Legado:** Gerar o `CLOSURE.md` síntese (rastreabilidade de origem + plano vs entrega) e migrar decisões críticas para o `JOURNAL.md`.
 
 > ⚠️ **Bloqueio Fail-Closed:** Se qualquer item da auditoria falhar, a onda permanece aberta. A declaração de conclusão sem este rito é classificada como **Fraude Narrativa**.
 

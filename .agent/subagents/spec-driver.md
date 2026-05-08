@@ -25,7 +25,7 @@ You must execute these skills in strict sequential order. Do not skip. Do not ju
 2. **spec-digest:** Prepare o ambiente e valide o contrato.
    - **Rito do Córtex (MANDATÓRIO):** Antes de planejar qualquer coisa, você DEVE executar o comando `npm run context:inject` no terminal.
    - **Fail-Fast:** Valide imediatamente se o `STATE.md` possui os blocos estruturais `CHAIN_SPEC_DIGEST` e `allow_list`. Se não, crie-os ANTES de planejar.
-   - **Vacina Cognitiva:** Você NÃO deve ler o arquivo `spec.md` original. Você deve abrir e ler **exclusivamente** o `features/<nome>/*.enriched.md` gerado pela injeção.
+   - **Vacina Cognitiva:** Você NÃO deve ler o arquivo `spec.md` original. Você deve abrir e ler **exclusivamente** o `features/<nome>/*.enriched.md` gerado pela injeção. Verifique o campo `origin` para carregar o contexto da ideia original se necessário.
    - **REGRA CRÍTICA:** Verifique se `.context/maintenance/HARNESS_LOG.md` e os arquivos da feature (`STATE.md`, `tasks.md`, `*.enriched.md`) estão na `allow_list`. Se não estiverem, adicione-os via `spec-driver` antes de prosseguir.
 3. **strategy-planner:** Plan the technical strategy for each task (STRATEGY_LOG).
 4. **baseline-anchor:** Create a git-based safety point (BASELINE_ANCHORED).
@@ -33,7 +33,7 @@ You must execute these skills in strict sequential order. Do not skip. Do not ju
 6. **methodical-writer:** Execute surgical writes (Tier 1: 15 lines limit). **GATEKEEPER:** O validador rejeitara a escrita se houver bloqueio pendente sem `RESUME_DIRECTIVE`.
 7. **integrity-check:** Verify coherence between spec/tasks/state.
 8. **self-audit:** Run harness/validation and capture raw output.
-9. **handoff:** Deliver artifacts to the Orchestrator/QA.
+9. **handoff:** Deliver artifacts to the Orchestrator/QA e **GERE o `CLOSURE.md`** síntese (conforme `.agent/templates/CLOSURE.md`).
 
 # 🛠️ EXECUTION GATE (Skill 6)
 Every write MUST be preceded by a call to the validation script:

@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-05-01 00:51
-Ultima Atualizacao: 2026-05-06 21:10
+Ultima Atualizacao: 2026-05-07 23:30
 Status: Ativo
 ---
 
@@ -38,7 +38,8 @@ graph TD
         SPEC["spec.md"]:::tactical
         TASK["tasks.md"]:::tactical
         STATE["STATE.md"]:::tactical
-        SPEC --> TASK --> STATE
+        CLO["CLOSURE.md"]:::tactical
+        SPEC --> TASK --> STATE --> CLO
     end
 
     subgraph "SISTEMA IMUNOLÓGICO (A Governança)"
@@ -71,6 +72,7 @@ graph TD
     
     %% Execução para Memória
     STATE -- "Handoff/Registro" --> JOU
+    CLO -- "Narrativa de Fechamento" --> JOU
     VAL -- "Fricção/Sucesso" --> JOU
     
     %% Feedback Loop
@@ -91,6 +93,7 @@ graph TD
 | `JOURNAL_SYNAPSE.md` | `JOURNAL.md` | **Metabólica** | Limpeza e compressão de memória para evitar bloat. |
 | `JOURNAL.md` | `RULES.md` | **Aprendizado** | Cicatrizes (Scars) de erros passados viram novas leis. |
 | `@gov-friction-analyst` | `JOURNAL.md` | **Mitigação** | Propaga planos de ação para resolver atritos de governança. |
+| `closure-thinker` | `CLOSURE.md` | **Síntese** | Analisa a realidade factual do commit para gerar a narrativa de fechamento. |
 
 
 ---
@@ -204,8 +207,11 @@ Esta seção detalha o *blast radius* (raio de impacto) dos arquivos do ecossist
   - **Afeta:** **[CRÍTICO] Source Code.** É a única ponte oficial que altera o código de produção do projeto. Modifica `STATE.md` à medida que avança.
   - **É Afetado Por:** `PRD.md`, `ARCHITECTURE.md`, `RULES.md`, `spec_v3.md` (Template base).
 - **`STATE.md`**
-  - **Afeta:** `JOURNAL.md` (Dispara os Handoffs), SAM (Provê hashes criptográficas).
+  - **Afeta:** `JOURNAL.md` (Dispara os Handoffs), SAM (Provê hashes criptográficas), `CLOSURE.md` (Provê evidências).
   - **É Afetado Por:** Tarefas assinaladas como "Feitas" na `spec.md` ou `tasks.md`.
+- **`CLOSURE.md`**
+  - **Afeta:** `JOURNAL.md` (Consolida narrativa final), `LEARNINGS.md` (Gera sementes de SCARs).
+  - **É Afetado Por:** `spec.md`, `STATE.md`, `JOURNAL.md`, `Git history`.
 - **`SSD_PLAYBOOK.md` & `SSD_ERRORS_LEDGER.md`**
   - **Afeta:** Comportamento tático do `spec-driver`.
   - **É Afetado Por:** Reflexões em loop durante execuções.
@@ -234,6 +240,10 @@ Esta seção mapeia os "músculos" do ecossistema definidos no `SCRIPT_GLOSSARY.
   - **Gatilho:** `npm run context:*`
 
 ### 🔧 Skills & Agentes (Automação Cognitiva)
+- **`closure-thinker/SKILL.md`**
+  - **Lê (Depende de):** `spec.md`, `STATE.md`, `JOURNAL.md`, `.git/diff`.
+  - **Escreve em (Afeta):** `CLOSURE.md`.
+  - **Gatilho:** Invocado na Skill 9 (HANDOFF).
 - **`journal-sync/SKILL.md`**
   - **Lê (Depende de):** `git status`, `rx-communications.md`, `JOURNAL.md`.
   - **Escreve em (Afeta):** `JOURNAL.md`, arquivos no Blast Radius (cascata).

@@ -1,12 +1,38 @@
 ---
 Criado em: 2026-05-06 19:15
-Ultima Atualizacao: 2026-05-07 22:50
+Ultima Atualizacao: 2026-05-07 23:15
 Status: Ativo
 Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_191531.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-07 23:45 | 🏛️ Hardening: Protocolo de Closure & Rastreabilidade de Origem #Governance #Governance Core #Roles #Governança #Documentation #Spec-Driven
+**Estado Atual:**
+- [x] **Traceabilidade de Origem:** Adicionado campo `origin` ao template `spec_v3.md` para linkar features a documentos de ideação.
+- [x] **Relatório de Closure:** Institucionalizado o `CLOSURE.md` como artefato obrigatório na Skill 9 (HANDOFF).
+- [x] **Skill Cognitiva:** Implantada a skill `closure-thinker` para síntese analítica baseada em evidências.
+- [x] **Propagação Constitucional:** Firmware do `spec-driver.md` e regras do `MASTER_FLOW.md` atualizados.
+- [x] **Leis e Registro:** Nova regra 1.14 no `RULES.md` e registro da role no `AGENT_REGISTRY.md`.
+- [x] **Mapa Nervoso:** `rx-communications.md` atualizado com a topologia do protocolo de closure.
+
+**Matriz de Propagação:**
+- [x] `.agent/templates/spec_v3.md` -> [Add origin & closure requirements]
+- [x] `.specs/features/SSD_PLAYBOOK.md` -> [Formalize CLOSURE.md on Skill 9]
+- [x] `.agent/subagents/spec-driver.md` -> [Skill 2 origin-check & Skill 9 closure-gen]
+- [x] `.context/brain/MASTER_FLOW.md` -> [Update closure rite]
+- [x] `.context/brain/RULES.md` -> [Regra 1.14 - Closure Thinking]
+- [x] `.context/brain/AGENT_REGISTRY.md` -> [Role @closure-thinker]
+- [x] `.context/brain/SCRIPT_GLOSSARY.md` -> [Metadata sync for SAM compliance]
+- [x] `.context/maintenance/rx-communications.md` -> [New topology wires]
+- [x] `.agent/templates/CLOSURE.md` -> [Novo template]
+- [x] `.agent/skills/closure-thinker/SKILL.md` -> [Nova skill]
+- [x] `.context/brain/FILE_GLOSSARY.md` -> [Glossary sync]
+
+executor_context_id: closure-protocol-hardening
+validator_context_id: user-request
+status: READY TO COMMIT
 
 ## 📅 2026-05-07 22:50 | 🔄 Institutionalizing Journal-Sync Flow & Reasoning v2.2.0 #Governance #Skill #Documentation
 **Estado Atual:**

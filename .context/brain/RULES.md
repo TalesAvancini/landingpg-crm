@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-18
-Última Atualização: 2026-05-07 15:30
+Última Atualização: 2026-05-07 23:40
 Status: Ativo
 ---
 
@@ -127,6 +127,12 @@ Caso uma propagação seja exigida pelo SAM ou pelo Raio de Impacto, mas **não 
 1. **Ação Única:** O Agente deve apenas atualizar o campo `Última Atualização` (ou `Ultima Atualizacao`) no frontmatter/cabeçalho do arquivo.
 2. **Proibição de Ruído:** É terminantemente proibido inserir comentários vazios, espaços, hífens ou qualquer caractere de "preenchimento" apenas para gerar diff.
 3. **Validação:** O carimbo de data serve como "Prova de Visita" e validação de integridade do contexto.
+
+## 🛡️ 1.14 Protocolo de Fechamento de Feature (Closure Thinking)
+Para garantir que o conhecimento técnico não se perca no arquivamento:
+1. **Síntese Mandatória:** Toda feature concluída deve obrigatoriamente gerar um arquivo `CLOSURE.md` na pasta da feature.
+2. **Conteúdo:** O relatório deve conter o delta entre o plano original (`origin`) e a entrega, o Blast Radius real e as cicatrizes extraídas.
+3. **Auditabilidade:** O `@qa-validator` não deve assinar o contrato se o `CLOSURE.md` estiver ausente ou for meramente proforma (sem dados factuais do commit).
 
 ---
 

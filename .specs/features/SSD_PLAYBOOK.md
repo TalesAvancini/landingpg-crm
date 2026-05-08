@@ -23,7 +23,7 @@ Toda feature deve progredir através destas skills no `STATE.md`:
 
 ### Fase D: Fechamento (Skills 8-9)
 8.  **REMEDIATION**: Sincronizar o `JOURNAL.md` e limpar rastros de "Modificação Silenciosa".
-9.  **HANDOFF**: Gerar o relatório final para o QA-Validator.
+9.  **HANDOFF**: Gerar o relatório final para o QA-Validator e criar o arquivo `CLOSURE.md` (conforme template em `.agent/templates/CLOSURE.md`) para síntese histórica e rastreabilidade de propagação.
 
 ---
 

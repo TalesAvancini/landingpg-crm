@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-10 21:00
-Ultima Atualizacao: 2026-05-07 22:50
+Ultima Atualizacao: 2026-05-07 23:15
 Status: Ativo
 ---
 
@@ -110,7 +110,8 @@ Status: Ativo
 | Arquivo | Responsabilidade Principal | Agente Guardião |
 | :--- | :--- | :--- |
 | `README_subagents.md` | O manual de "Firmwares" do projeto. Explica a diferença entre Roles e Sub-Agents. | `@context-keeper` |
-| `templates/spec_v3.md` | **Molde de Contrato V3.** O template oficial para iniciar novas features com as 9 Skills integradas. | `@spec-driver` |
+| `templates/spec_v3.md` | **Molde de Contrato V3.** O template oficial para iniciar novas features com as 9 Skills integradas e rastreabilidade de origem. | `@spec-driver` |
+| `templates/CLOSURE.md` | **Molde de Síntese.** Template para o relatório de fechamento de feature (Skill 9). | IA Orquestradora |
 | `templates/AGENT_SCRATCHPAD.md` | **Template de Metacognição.** Molde para a memória de trabalho anti-loop de cada feature. | `@spec-driver` |
 | `subagents/spec-driver.md` | **Executor Determinístico.** Subagente orquestrador da Chain-Skills V3. Executa as 9 skills em sequência rígida (Fail-Closed). | IA Orquestradora |
 | `subagents/qa-validator.md` | **Padrão B de Subagente.** Validador Físico. Subagente que é invocado de forma autônoma (Zero Trust) para ler Diffs, Specs e autorizar o commit. | IA Orquestradora |
@@ -119,6 +120,7 @@ Status: Ativo
 | `skills/journal-sync/SKILL.md` | **Orquestrador de Acoplamento.** Sincroniza o Journal e propaga alterações via Blast Radius autonômico. | `@antigravity` |
 | `skills/hok-governor/SKILL.md` | **Governador de Conduta.** Baseline de senso comum e travas de segurança contra alucinações e loops. | `@antigravity` |
 | `skills/gov-friction-analyst/SKILL.md` | **Analista de Fricção.** Diagnostica atritos do executor e propaga planos de mitigação (Overkill Radar). | `@gov-friction-analyst` |
+| `skills/closure-thinker/SKILL.md` | **Analista de Fechamento.** Protocolo para gerar ou auditar o `CLOSURE.md` com base em evidências. | `@antigravity` |
 
 
 ---
