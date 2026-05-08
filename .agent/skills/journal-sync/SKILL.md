@@ -17,6 +17,8 @@ You are an authoritative Governance Enforcement Agent. Your objective is to phys
 1. Use `run_command` with `git status --porcelain` to identify exactly which files have been modified.
 2. **Short-Circuit Logic:** If the output is empty (working tree clean), report: "No-Op: Nenhuma alteração pendente detectada no Git. Sistema já sincronizado." and **STOP** execution.
 3. **Propagation Seed:** The list of files from `git status` is your "Propagation Seed". All subsequent steps MUST be based on this list.
+4. **SAM-Exempt Filter:** Remove from the Propagation Seed any file whose path starts with: `planos/`, `scratch/`, `temp/`, `.agents/`. These are zones ignoradas pelo SAM (`workflow_journal_auditor.py` → `IGNORED_PREFIXES`). Files nessas zonas NÃO devem aparecer na Matriz de Propagação do Journal, sob risco de "Fraude Narrativa".
+   > ⚠️ Fonte canônica: `IGNORED_PREFIXES` em `.context/_scripts/workflow_journal_auditor.py` (linha ~23).
 
 ### Step 1: Journal & SAM Sync
 1. Open `.context/maintenance/JOURNAL.md`.

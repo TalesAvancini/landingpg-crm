@@ -1,12 +1,24 @@
 ---
 Criado em: 2026-05-06 19:15
-Ultima Atualizacao: 2026-05-07 21:43
+Ultima Atualizacao: 2026-05-07 21:57
 Status: Ativo
 Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_191531.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-07 21:57 | 🛡️ Hardening: SAM-Exempt Filter no journal-sync #Skills #Governance #Hardening
+**Estado Atual:**
+- [x] **SAM-Exempt Filter:** Adicionado Step 0.4 na skill `journal-sync` que filtra do Propagation Seed os prefixos ignorados pelo SAM (`planos/`, `scratch/`, `temp/`, `.agents/`). Previne "Fraude Narrativa" ao registrar arquivos que o SAM não audita.
+
+**Matriz de Propagação:**
+- [x] `.agent/skills/journal-sync/SKILL.md` -> [Step 0.4: SAM-Exempt Filter]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de evolução]
+
+executor_context_id: journal-sync-hardening
+validator_context_id: user-request
+status: READY TO COMMIT
 
 ## 📅 2026-05-07 21:43 | 📄 Criação do FLOW_SDD.md (Constituição dos 9 Arquivos) #Documentation #SDD #Governance
 **Estado Atual:**
