@@ -1,12 +1,28 @@
 ---
 Criado em: 2026-05-06 19:15
-Ultima Atualizacao: 2026-05-07 21:57
+Ultima Atualizacao: 2026-05-07 22:50
 Status: Ativo
 Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_191531.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-07 22:50 | 🔄 Institutionalizing Journal-Sync Flow & Reasoning v2.2.0 #Governance #Skill #Documentation
+**Estado Atual:**
+- [x] **Skill Upgrade (v2.2.0):** Evolução da skill `journal-sync` para incluir o Protocolo de Raciocínio Recursivo. Agora exige análise de impacto cognitiva antes de cada propagação (anti-migué/anti-churn).
+- [x] **Novo Artefato:** Criação do `FLOW_JOURNAL_SYNC.md` em `.context/brain/` documentando as 4 camadas do pipeline de sincronia e os 11 elementos envolvidos (Husky Gates, Synapse Rules, etc).
+- [x] **Flash Guard:** Implementação de regra condicional para modelos Gemini Flash, forçando o uso de `superpowers-plan` para frear propagação cega.
+
+**Matriz de Propagação:**
+- [x] `.agent/skills/journal-sync/SKILL.md` -> [Upgrade para v2.2.0: Reasoning Protocol]
+- [x] `.context/brain/FLOW_JOURNAL_SYNC.md` -> [Walkthrough visual do Flow Journal-Sync]
+- [x] `.context/brain/FILE_GLOSSARY.md` -> [Registro do novo arquivo de flow]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de evolução do ecossistema]
+
+executor_context_id: journal-sync-v2-2-0
+validator_context_id: user-request
+status: READY TO COMMIT
 
 ## 📅 2026-05-07 21:57 | 🛡️ Hardening: SAM-Exempt Filter no journal-sync #Skills #Governance #Hardening
 **Estado Atual:**
