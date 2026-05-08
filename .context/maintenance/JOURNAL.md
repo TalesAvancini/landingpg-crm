@@ -8,6 +8,21 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_1915
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-08 17:25 | 🔍 Documentação: Mapeamento do Flow Wiki & Oracle #Governance #Documentation #Wiki #Oracle
+**Estado Atual:**
+- [x] **Novo Artefato:** Criação do `FLOW_WIKI_ORACLE.md` em `.context/brain/` documentando as 18 peças do ecossistema de conhecimento.
+- [x] **Mapeamento:** Diagrama Mermaid (5 fases), Checklist de Scripts e Matriz de Regras (§8/§9).
+- [x] **Sincronia:** Atualização do `FILE_GLOSSARY.md`.
+
+**Matriz de Propagação:**
+- [x] `.context/brain/FLOW_WIKI_ORACLE.md` -> [Novo arquivo de flow]
+- [x] `.context/brain/FILE_GLOSSARY.md` -> [Registro do novo artefato]
+- [x] `.context/maintenance/JOURNAL.md` -> [Registro de criação]
+
+executor_context_id: wiki-oracle-flow-mapping
+validator_context_id: user-request
+status: READY TO COMMIT
+
 ## 📅 2026-05-07 23:45 | 🏛️ Hardening: Protocolo de Closure & Rastreabilidade de Origem #Governance #Governance Core #Roles #Governança #Documentation #Spec-Driven
 **Estado Atual:**
 - [x] **Traceabilidade de Origem:** Adicionado campo `origin` ao template `spec_v3.md` para linkar features a documentos de ideação.

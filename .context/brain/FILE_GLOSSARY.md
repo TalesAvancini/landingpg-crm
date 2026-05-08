@@ -44,6 +44,7 @@ Status: Ativo
 | `LEARNINGS.md` | **Memória Estratégica.** Consolida cicatrizes de execuções passadas, recorrências e propostas de novas regras. | `@context-keeper` |
 | `FLOW_SDD.md` | **Constituição do SDD.** Walkthrough visual dos 9 arquivos que compõem o processo Spec-Driven Development: diagramas, perfis, matriz de propagação e cadeia de 9 skills. | `@context-keeper` |
 | `FLOW_JOURNAL_SYNC.md` | **Fluxo de Governança.** Walkthrough visual das 4 camadas (Orquestração, Registro, Topologia, Gate) e dos 11 elementos do pipeline de commit. | `@context-keeper` |
+| `FLOW_WIKI_ORACLE.md` | **Fluxo Epistemológico.** Walkthrough visual do pipeline de ingestão, validação e consulta do Oráculo e Wiki de Mercado. | `@context-keeper` |
 
 ---
 
