@@ -8,6 +8,24 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_1915
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-20 17:45 | 🚀 Instalação: Integração do Graphify no Repositório #Tooling #Installation #Graphify
+**Estado Atual:**
+- [x] **Instalação:** Instalado o utilitário Graphify (`graphifyy`) globalmente via `uv tool install`.
+- [x] **Integração:** Skill do Antigravity registrada com sucesso.
+- [x] **Roteamento de Regras:** Nova regra do Graphify instalada em `.agent/rules_pool/graphify.md` e roteada no `regras_roteadas.md` para evitar injeção desnecessária de tokens.
+- [x] **Hooks e Gitignore:** Ativados os hooks do Git (`graphify hook install`) e configurado o `.gitignore` para ignorar manifestos locais.
+- [x] **Isolamento SAM:** Adicionada a pasta `graphify-out/` nas exclusões do SAM Auditor para permitir commits e atualizações automáticas livres de fricção.
+
+**Matriz de Propagação:**
+- [x] .agent/rules_pool/graphify.md -> [Nova regra do Graphify no pool]
+- [x] .context/_scripts/workflow_journal_auditor.py -> [Adicionado graphify-out às exclusões do SAM]
+- [x] .gitignore -> [Ignorar arquivos locais do Graphify]
+- [x] .context/maintenance/JOURNAL.md -> [Registro de instalação]
+
+executor_context_id: graphify-installation-windows
+validator_context_id: user-request-wsl
+status: READY TO COMMIT
+
 ## 📅 2026-05-20 14:20 | 🏛️ Consolidação de Regras: Roteamento Ativo #Governance #Rules #Optimization
 **Estado Atual:**
 - [x] **Consolidação:** Removidos arquivos de regras individuais de `.agents/rules/` e movidos para `.agent/rules_pool/` para evitar carregamento automático no prompt de cada turno.

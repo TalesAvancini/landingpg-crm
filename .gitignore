@@ -4,3 +4,7 @@ __pycache__/
 .context/bundle/
 *.md_old
 contexto_*.md
+
+# Graphify
+graphify-out/manifest.json
+graphify-out/cost.json

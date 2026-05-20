@@ -41,5 +41,10 @@ Antes de prosseguir com qualquer ação de escrita, commit ou alteração no rep
 * **Ação:** Leia as regras de estratificação de densidade e linter Karpathy:
   -> [RULES.md#L202-L212](file:///c:/Users/User/Desktop/ProjetosAntigravity/TEMPLATES/template_inicío_de_projeto/.context/brain/RULES.md#L202-L212)
 
+### 8. Perguntas sobre Código e Arquitetura (Graphify)
+* **Condição:** Se você precisar responder a perguntas complexas sobre a arquitetura do projeto, fluxo de chamadas ou dependências, e a pasta `graphify-out/` contiver o grafo.
+* **Ação:** Leia as diretrizes de consulta ao Grafo de Conhecimento do Graphify:
+  -> [graphify.md](file:///c:/Users/User/Desktop/ProjetosAntigravity/TEMPLATES/template_inicío_de_projeto/.agent/rules_pool/graphify.md)
+
 ---
 *Nota: Este arquivo foi consolidado para otimização de tokens (evitando carregar múltiplos blocos de regras grandes a cada turno na thread principal).*
