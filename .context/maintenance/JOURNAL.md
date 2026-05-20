@@ -8,6 +8,21 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_1915
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-20 19:10 | 🛠️ Ajuste: Exclusão do Graphify do Bundle de Contexto #Tooling #Refactor #Graphify
+**Estado Atual:**
+- [x] **Exclusão de Diretório:** Adicionada a pasta `graphify-out` às pastas ignoradas (`PASTAS_IGNORAR`) em `project_bundler.py` para evitar token bloat nos bundles de contexto.
+- [x] **Regeração:** Regerados os arquivos de índice do projeto `PROJECT_INDEX_01.md` e `PROJECT_INDEX_02.md`.
+
+**Matriz de Propagação:**
+- [x] .context/_scripts/project_bundler.py -> [Adicionado graphify-out no PASTAS_IGNORAR]
+- [x] .context/monitoring/PROJECT_INDEX_01.md -> [Regerado]
+- [x] .context/monitoring/PROJECT_INDEX_02.md -> [Regerado]
+- [x] .context/maintenance/JOURNAL.md -> [Registro do ajuste]
+
+executor_context_id: graphify-bundler-exclusion
+validator_context_id: user-request-wsl
+status: READY TO COMMIT
+
 ## 📅 2026-05-20 17:45 | 🚀 Instalação: Integração do Graphify no Repositório #Tooling #Installation #Graphify
 **Estado Atual:**
 - [x] **Instalação:** Instalado o utilitário Graphify (`graphifyy`) globalmente via `uv tool install`.
