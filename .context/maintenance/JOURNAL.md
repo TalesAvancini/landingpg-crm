@@ -8,6 +8,19 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_1915
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-20 14:20 | 🏛️ Consolidação de Regras: Roteamento Ativo #Governance #Rules #Optimization
+**Estado Atual:**
+- [x] **Consolidação:** Removidos arquivos de regras individuais de `.agents/rules/` e movidos para `.agent/rules_pool/` para evitar carregamento automático no prompt de cada turno.
+- [x] **Roteador Ativo:** Criado o `regras_roteadas.md` em `.agents/rules/` como ponto único de entrada, usando roteamento dinâmico via links absolutos com âncoras de linhas.
+
+**Matriz de Propagação:**
+- [x] .agent/rules_pool/orquestrador.md -> [Nova localização da regra]
+- [x] .context/maintenance/JOURNAL.md -> [Registro de consolidação]
+
+executor_context_id: rules-consolidation-routing
+validator_context_id: user-request-wsl
+status: READY TO COMMIT
+
 ## 📅 2026-05-08 17:25 | 🔍 Documentação: Mapeamento do Flow Wiki & Oracle #Governance #Documentation #Wiki #Oracle
 **Estado Atual:**
 - [x] **Novo Artefato:** Criação do `FLOW_WIKI_ORACLE.md` em `.context/brain/` documentando as 18 peças do ecossistema de conhecimento.
