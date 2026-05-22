@@ -1,14 +1,14 @@
-<!-- BUNDLE_PART 1 OF 2 -->
+<!-- BUNDLE_PART 1 OF 3 -->
 # Project Context Bundle
 
 ---
 schema_version: 1
-generated_at: 2026-05-20T22:09:32.931531+00:00
+generated_at: 2026-05-22T16:50:55.709030+00:00
 root: template_inicío_de_projeto
 mode: full | TOC
 profile: ai-default
-file_count: 108
-byte_count: 740092
+file_count: 118
+byte_count: 806095
 ignored_dirs:
   - .cache
   - .cursor
@@ -73,10 +73,12 @@ sensitive_rules:
   - `.agent/rules_pool/orquestrador.md` -> [file_394b2d6e6ef6](#file_394b2d6e6ef6)
   - `.agent/rules_pool/sobriedade-operacional.md` -> [file_3fde4c4e9bc3](#file_3fde4c4e9bc3)
   - `.agent/skills/closure-thinker/SKILL.md` -> [file_53d488a00981](#file_53d488a00981)
+  - `.agent/skills/flow-auditor/SKILL.md` -> [file_d0c78dc4a998](#file_d0c78dc4a998)
   - `.agent/skills/gov-friction-analyst/README.md` -> [file_be3286745d59](#file_be3286745d59)
   - `.agent/skills/gov-friction-analyst/SKILL.md` -> [file_6838c4ed47bf](#file_6838c4ed47bf)
   - `.agent/skills/hok-governor/SKILL.md` -> [file_5f13170679aa](#file_5f13170679aa)
   - `.agent/skills/journal-sync/SKILL.md` -> [file_7ccf0899fce4](#file_7ccf0899fce4)
+  - `.agent/skills/sdd-orchestrator/SKILL.md` -> [file_979698c33068](#file_979698c33068)
   - `.agent/subagents/qa-validator.md` -> [file_5a0c0f1b1bd0](#file_5a0c0f1b1bd0)
   - `.agent/subagents/readme_chain_SDD.md` -> [file_651ea7e00792](#file_651ea7e00792)
   - `.agent/subagents/spec-driver.md` -> [file_a412f1bb7017](#file_a412f1bb7017)
@@ -88,6 +90,7 @@ sensitive_rules:
   - `.context/brain/AGENT_REGISTRY.md` -> [file_e7c17acb71ff](#file_e7c17acb71ff)
   - `.context/brain/FILE_GLOSSARY.md` -> [file_14666768162a](#file_14666768162a)
   - `.context/brain/FLOW_JOURNAL_SYNC.md` -> [file_f36bdd5e1568](#file_f36bdd5e1568)
+  - `.context/brain/FLOW_PROPAGATION.md` -> [file_14d606a6306f](#file_14d606a6306f)
   - `.context/brain/FLOW_SDD.md` -> [file_97519b9eb2f9](#file_97519b9eb2f9)
   - `.context/brain/FLOW_WIKI_ORACLE.md` -> [file_cba6b11d5263](#file_cba6b11d5263)
   - `.context/brain/HARNESS_REGISTRY.md` -> [file_4b29e274836e](#file_4b29e274836e)
@@ -132,6 +135,11 @@ sensitive_rules:
   - `.context/monitoring/PROJECT_INDEX_02.md` -> [file_a12d65ab4927](#file_a12d65ab4927)
   - `.specs/features/SSD_ERRORS_LEDGER.md` -> [file_5346932740b3](#file_5346932740b3)
   - `.specs/features/SSD_PLAYBOOK.md` -> [file_d801613c0c41](#file_d801613c0c41)
+  - `.specs/features/blast_radius_mvp/.enriched.md` -> [file_21733928ac15](#file_21733928ac15)
+  - `.specs/features/blast_radius_mvp/CLOSURE.md` -> [file_39f69c785894](#file_39f69c785894)
+  - `.specs/features/blast_radius_mvp/STATE.md` -> [file_e38a55334350](#file_e38a55334350)
+  - `.specs/features/blast_radius_mvp/spec.md` -> [file_80d354365e2c](#file_80d354365e2c)
+  - `.specs/features/blast_radius_mvp/tasks.md` -> [file_2aa412a22af5](#file_2aa412a22af5)
   - `GUIA_ESTABILIZACAO_NOTEBOOKLM.md` -> [file_95dabcdf3543](#file_95dabcdf3543)
   - `README.md` -> [file_8ec9a00bfd09](#file_8ec9a00bfd09)
   - `README_CONTEXT.md` -> [file_4efb6293109d](#file_4efb6293109d)
@@ -141,6 +149,7 @@ sensitive_rules:
   - `.context/_scripts/_tz_utils.py` -> [file_dbef1acce0d4](#file_dbef1acce0d4)
   - `.context/_scripts/_wiki_log_utils.py` -> [file_9ee5d49278ad](#file_9ee5d49278ad)
   - `.context/_scripts/affinity_lite.py` -> [file_30ac5cd021cf](#file_30ac5cd021cf)
+  - `.context/_scripts/blast_radius.py` -> [file_7924059d2ef7](#file_7924059d2ef7)
   - `.context/_scripts/check_version_consistency.py` -> [file_4ffe1a34765a](#file_4ffe1a34765a)
   - `.context/_scripts/cleanup_specs.py` -> [file_82cd6bde54ff](#file_82cd6bde54ff)
   - `.context/_scripts/context_oracle.py` -> [file_10081abf87e1](#file_10081abf87e1)
@@ -167,6 +176,7 @@ sensitive_rules:
   - `run_context.py` -> [file_350a79f8b829](#file_350a79f8b829)
   - `run_context.sh` -> [file_86bac54f32d7](#file_86bac54f32d7)
   - `tests/test_affinity_lite.py` -> [file_38ccbad5df5d](#file_38ccbad5df5d)
+  - `tests/test_blast_radius.py` -> [file_45a34090c024](#file_45a34090c024)
   - `tests/test_context.py` -> [file_4c6bbd05056e](#file_4c6bbd05056e)
   - `tests/test_learnings.py` -> [file_7f153ad8e27b](#file_7f153ad8e27b)
   - `tests/test_oracle.py` -> [file_357f74cc7014](#file_357f74cc7014)
@@ -178,11 +188,13 @@ sensitive_rules:
 - `.agent/rules_pool/orquestrador.md` -> [file_394b2d6e6ef6](#file_394b2d6e6ef6)
 - `.agent/rules_pool/sobriedade-operacional.md` -> [file_3fde4c4e9bc3](#file_3fde4c4e9bc3)
 - `.agent/skills/closure-thinker/SKILL.md` -> [file_53d488a00981](#file_53d488a00981)
+- `.agent/skills/flow-auditor/SKILL.md` -> [file_d0c78dc4a998](#file_d0c78dc4a998)
 - `.agent/skills/gov-friction-analyst/README.md` -> [file_be3286745d59](#file_be3286745d59)
 - `.agent/skills/gov-friction-analyst/SKILL.md` -> [file_6838c4ed47bf](#file_6838c4ed47bf)
 - `.agent/skills/hok-governor/SKILL.md` -> [file_5f13170679aa](#file_5f13170679aa)
 - `.agent/skills/journal-sync/SKILL.md` -> [file_7ccf0899fce4](#file_7ccf0899fce4)
 - `.agent/skills/methodical_writer.json` -> [file_31c8b76d8265](#file_31c8b76d8265)
+- `.agent/skills/sdd-orchestrator/SKILL.md` -> [file_979698c33068](#file_979698c33068)
 - `.agent/subagents/qa-validator.md` -> [file_5a0c0f1b1bd0](#file_5a0c0f1b1bd0)
 - `.agent/subagents/readme_chain_SDD.md` -> [file_651ea7e00792](#file_651ea7e00792)
 - `.agent/subagents/spec-driver.md` -> [file_a412f1bb7017](#file_a412f1bb7017)
@@ -194,6 +206,7 @@ sensitive_rules:
 - `.context/_scripts/_tz_utils.py` -> [file_dbef1acce0d4](#file_dbef1acce0d4)
 - `.context/_scripts/_wiki_log_utils.py` -> [file_9ee5d49278ad](#file_9ee5d49278ad)
 - `.context/_scripts/affinity_lite.py` -> [file_30ac5cd021cf](#file_30ac5cd021cf)
+- `.context/_scripts/blast_radius.py` -> [file_7924059d2ef7](#file_7924059d2ef7)
 - `.context/_scripts/check_version_consistency.py` -> [file_4ffe1a34765a](#file_4ffe1a34765a)
 - `.context/_scripts/cleanup_specs.py` -> [file_82cd6bde54ff](#file_82cd6bde54ff)
 - `.context/_scripts/context_oracle.py` -> [file_10081abf87e1](#file_10081abf87e1)
@@ -217,6 +230,7 @@ sensitive_rules:
 - `.context/brain/AGENT_REGISTRY.md` -> [file_e7c17acb71ff](#file_e7c17acb71ff)
 - `.context/brain/FILE_GLOSSARY.md` -> [file_14666768162a](#file_14666768162a)
 - `.context/brain/FLOW_JOURNAL_SYNC.md` -> [file_f36bdd5e1568](#file_f36bdd5e1568)
+- `.context/brain/FLOW_PROPAGATION.md` -> [file_14d606a6306f](#file_14d606a6306f)
 - `.context/brain/FLOW_SDD.md` -> [file_97519b9eb2f9](#file_97519b9eb2f9)
 - `.context/brain/FLOW_WIKI_ORACLE.md` -> [file_cba6b11d5263](#file_cba6b11d5263)
 - `.context/brain/HARNESS_REGISTRY.md` -> [file_4b29e274836e](#file_4b29e274836e)
@@ -267,6 +281,11 @@ sensitive_rules:
 - `.husky/_/husky.sh` -> [file_3adfd36c1559](#file_3adfd36c1559)
 - `.specs/features/SSD_ERRORS_LEDGER.md` -> [file_5346932740b3](#file_5346932740b3)
 - `.specs/features/SSD_PLAYBOOK.md` -> [file_d801613c0c41](#file_d801613c0c41)
+- `.specs/features/blast_radius_mvp/.enriched.md` -> [file_21733928ac15](#file_21733928ac15)
+- `.specs/features/blast_radius_mvp/CLOSURE.md` -> [file_39f69c785894](#file_39f69c785894)
+- `.specs/features/blast_radius_mvp/STATE.md` -> [file_e38a55334350](#file_e38a55334350)
+- `.specs/features/blast_radius_mvp/spec.md` -> [file_80d354365e2c](#file_80d354365e2c)
+- `.specs/features/blast_radius_mvp/tasks.md` -> [file_2aa412a22af5](#file_2aa412a22af5)
 - `GUIA_ESTABILIZACAO_NOTEBOOKLM.md` -> [file_95dabcdf3543](#file_95dabcdf3543)
 - `README.md` -> [file_8ec9a00bfd09](#file_8ec9a00bfd09)
 - `README_CONTEXT.md` -> [file_4efb6293109d](#file_4efb6293109d)
@@ -277,6 +296,7 @@ sensitive_rules:
 - `run_context.py` -> [file_350a79f8b829](#file_350a79f8b829)
 - `run_context.sh` -> [file_86bac54f32d7](#file_86bac54f32d7)
 - `tests/test_affinity_lite.py` -> [file_38ccbad5df5d](#file_38ccbad5df5d)
+- `tests/test_blast_radius.py` -> [file_45a34090c024](#file_45a34090c024)
 - `tests/test_context.py` -> [file_4c6bbd05056e](#file_4c6bbd05056e)
 - `tests/test_learnings.py` -> [file_7f153ad8e27b](#file_7f153ad8e27b)
 - `tests/test_oracle.py` -> [file_357f74cc7014](#file_357f74cc7014)
@@ -318,6 +338,12 @@ CONTENT_OMITTED toc_only=true
 FILE_END id=file_53d488a00981
 
 ---
+<a id="file_d0c78dc4a998"></a>
+FILE_START id=file_d0c78dc4a998 path=.agent/skills/flow-auditor/SKILL.md domain=docs lang=markdown lines=43 bytes=3116 mtime=2026-05-22T16:37:52.798353+00:00 sha1=7cca3b4b60a2955b47716171a9d6c2dcca01a2b6
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_d0c78dc4a998
+
+---
 <a id="file_be3286745d59"></a>
 FILE_START id=file_be3286745d59 path=.agent/skills/gov-friction-analyst/README.md domain=docs lang=markdown lines=14 bytes=1032 mtime=2026-05-07T00:00:07.091129+00:00 sha1=50568b8670a2fde4f62a6521dfc8adbfb46fd7ae
 CONTENT_OMITTED toc_only=true
@@ -337,7 +363,7 @@ FILE_END id=file_5f13170679aa
 
 ---
 <a id="file_7ccf0899fce4"></a>
-FILE_START id=file_7ccf0899fce4 path=.agent/skills/journal-sync/SKILL.md domain=docs lang=markdown lines=83 bytes=5942 mtime=2026-05-08T01:22:48.366566+00:00 sha1=fc11d1bc799308ca314f8c8ed740126fc4d848dd
+FILE_START id=file_7ccf0899fce4 path=.agent/skills/journal-sync/SKILL.md domain=docs lang=markdown lines=88 bytes=6327 mtime=2026-05-22T00:34:59.133361+00:00 sha1=ac29a657b823641d2d2620fb5eb58d9735bee264
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_7ccf0899fce4
 
@@ -346,6 +372,12 @@ FILE_END id=file_7ccf0899fce4
 FILE_START id=file_31c8b76d8265 path=.agent/skills/methodical_writer.json domain=config lang=json lines=21 bytes=761 mtime=2026-05-03T03:10:01.761508+00:00 sha1=4614fc4d0f56ea70a57ed53d5e4c96631c0cf067
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_31c8b76d8265
+
+---
+<a id="file_979698c33068"></a>
+FILE_START id=file_979698c33068 path=.agent/skills/sdd-orchestrator/SKILL.md domain=docs lang=markdown lines=87 bytes=6032 mtime=2026-05-22T02:18:59.804798+00:00 sha1=9182f83208af0a7a0b774ca63ed18bfc9073b9ae
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_979698c33068
 
 ---
 <a id="file_5a0c0f1b1bd0"></a>
@@ -414,6 +446,12 @@ CONTENT_OMITTED toc_only=true
 FILE_END id=file_30ac5cd021cf
 
 ---
+<a id="file_7924059d2ef7"></a>
+FILE_START id=file_7924059d2ef7 path=.context/_scripts/blast_radius.py domain=source lang=python lines=304 bytes=8709 mtime=2026-05-22T00:33:54.746700+00:00 sha1=de91c6438eaa6d5436cdd5ebfb5d5acd35b8d55a
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_7924059d2ef7
+
+---
 <a id="file_4ffe1a34765a"></a>
 FILE_START id=file_4ffe1a34765a path=.context/_scripts/check_version_consistency.py domain=source lang=python lines=80 bytes=2486 mtime=2026-04-22T12:37:52.914197+00:00 sha1=0f0bcd180ff803df099fc5f865ce6d3106e196d2
 CONTENT_OMITTED toc_only=true
@@ -461,41 +499,3 @@ FILE_START id=file_4d2d533509e3 path=.context/_scripts/inject_learnings.py domai
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_4d2d533509e3
 
----
-<a id="file_327e4ce89821"></a>
-FILE_START id=file_327e4ce89821 path=.context/_scripts/learnings_aggregator.py domain=source lang=python lines=193 bytes=6861 mtime=2026-05-04T03:18:15.620833+00:00 sha1=777f6d802836af8c692a16fe5d5966024f6bc65f
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_327e4ce89821
-
----
-<a id="file_ab41b07fb3fb"></a>
-FILE_START id=file_ab41b07fb3fb path=.context/_scripts/lint_wiki.py domain=source lang=python lines=116 bytes=4999 mtime=2026-04-22T23:34:42.090035+00:00 sha1=844cbc05474f73fa7addd3038fbbc60b86ab460a
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_ab41b07fb3fb
-
----
-<a id="file_d65b48a9d56c"></a>
-FILE_START id=file_d65b48a9d56c path=.context/_scripts/migration_registry.py domain=source lang=python lines=44 bytes=1700 mtime=2026-04-12T02:18:47.875961+00:00 sha1=a1e9beb894aba2b44931e9c41522a020b7359ebf
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_d65b48a9d56c
-
----
-<a id="file_6e825c0bd6ad"></a>
-FILE_START id=file_6e825c0bd6ad path=.context/_scripts/oracle_analytics.py domain=source lang=python lines=60 bytes=2162 mtime=2026-04-29T23:37:15.393689+00:00 sha1=7d8c8c35739ed1ff63529220af41f1f2204753fa
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_6e825c0bd6ad
-
----
-<a id="file_02d732116d93"></a>
-FILE_START id=file_02d732116d93 path=.context/_scripts/project_bundler.py domain=source lang=python lines=465 bytes=19470 mtime=2026-05-20T22:08:12.210766+00:00 sha1=99404367f5860c15f865384d3de92c89266a84ff
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_02d732116d93
-
----
-<a id="file_024b28a37d29"></a>
-FILE_START id=file_024b28a37d29 path=.context/_scripts/purge_journal.py domain=source lang=python lines=82 bytes=2761 mtime=2026-04-12T02:48:42.689091+00:00 sha1=8b12ecb77b7b91c035a2d7c9752910c71064d1e5
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_024b28a37d29
-
----
-<a id="file_e98b95e5fb6d"></a>

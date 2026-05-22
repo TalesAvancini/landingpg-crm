@@ -143,6 +143,9 @@ Esta seção detalha o *blast radius* (raio de impacto) dos arquivos do ecossist
 - **`MASTER_FLOW.md`**
   - **Afeta:** `spec-driver.md`, `qa-validator.md` (Guia o comportamento e a sequência de raciocínio lógico dos agentes).
   - **É Afetado Por:** `RULES.md`, `TLC_INTEGRATION.md`.
+- **`FLOW_PROPAGATION.md`**
+  - **Afeta:** Comportamento de qualquer Agente/Humano lidando com arquivos no repositório.
+  - **É Afetado Por:** `blast_radius.py`, `rx-communications.md`.
 - **`AGENT_REGISTRY.md`**
   - **Afeta:** O escopo de atuação de todas as IAs. Define quem pode editar qual arquivo.
   - **É Afetado Por:** Criação/Refatoração dos arquivos `.md` na pasta `.agent/`.

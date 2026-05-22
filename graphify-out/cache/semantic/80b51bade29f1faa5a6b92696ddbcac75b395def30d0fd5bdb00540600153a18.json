@@ -1,0 +1,1 @@
+{"nodes": [{"id": "flash_journal_sync_guard", "label": "Regra: Freio de Propaga\u00e7\u00e3o (Flash Guard)", "file_type": "rationale", "source_file": ".agent/rules_pool/flash-journal-sync-guard.md"}], "edges": [], "hyperedges": []}

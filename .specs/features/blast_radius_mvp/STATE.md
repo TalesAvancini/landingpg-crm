@@ -1,8 +1,9 @@
 ---
 status: ✅ PASSED
-updated: 2026-05-21 22:30
-detail: Auditoria de QA concluída com sucesso. Todas as tarefas TASK_01 a TASK_08 validadas e testadas.
+updated: 2026-05-22 13:50
+detail: All checks passed
 ---
+
 # STATE: Blast Radius MVP
 ## CHAIN_SPEC_DIGEST
 - status: ✅ PASSED
@@ -16,9 +17,9 @@ detail: Auditoria de QA concluída com sucesso. Todas as tarefas TASK_01 a TASK_
 start_hash: 6bf56fe16c6f5c0ee7b6b43ab196389825916917
 status: PASSED
 impact_snapshot:
-  files_changed: 0
-  churn_added: 0
-  churn_removed: 0
+  files_changed: 27
+  churn_added: 1499
+  churn_removed: 206
 qa_checkpoint:
   signed: true
   signed_by: "@qa-validator"

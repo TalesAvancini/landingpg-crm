@@ -1,0 +1,267 @@
+{
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\init_ai_project.sh": {
+    "mtime": 1777783992.7114148,
+    "ast_hash": "4757f7c555f48fa4c83147fec7bc8eb2",
+    "semantic_hash": "4757f7c555f48fa4c83147fec7bc8eb2"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\package.json": {
+    "mtime": 1778031078.7090042,
+    "ast_hash": "10a72d82fea594f6bd808dbf3586cb36",
+    "semantic_hash": "10a72d82fea594f6bd808dbf3586cb36"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\run_context.py": {
+    "mtime": 1777862976.4518087,
+    "ast_hash": "2717b4e859d05eebb819c816837c9cb4",
+    "semantic_hash": "2717b4e859d05eebb819c816837c9cb4"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\run_context.sh": {
+    "mtime": 1776393097.204327,
+    "ast_hash": "4d88dfbb3f87333d474cefaf5228000b",
+    "semantic_hash": "4d88dfbb3f87333d474cefaf5228000b"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\skills\\methodical_writer.json": {
+    "mtime": 1777777801.7615075,
+    "ast_hash": "bc2563d2c8efc341a583f6641d642bbb",
+    "semantic_hash": "bc2563d2c8efc341a583f6641d642bbb"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\rx-affinity-lite.json": {
+    "mtime": 1778031012.3149986,
+    "ast_hash": "769a7937381f7a5250f3bc3ec994aa65",
+    "semantic_hash": "769a7937381f7a5250f3bc3ec994aa65"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\schema.sql": {
+    "mtime": 1775870708.3446684,
+    "ast_hash": "7a841d95aa277c726baf92746e5e4598",
+    "semantic_hash": "7a841d95aa277c726baf92746e5e4598"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\version_targets.json": {
+    "mtime": 1776861454.6546943,
+    "ast_hash": "ad85ec863225ab8d8b94b4e61bd86705",
+    "semantic_hash": "ad85ec863225ab8d8b94b4e61bd86705"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\migrations\\001_init.sql": {
+    "mtime": 1775960055.429255,
+    "ast_hash": "b55f5746ab01190b5abab17deccbffba",
+    "semantic_hash": "b55f5746ab01190b5abab17deccbffba"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\affinity_lite.py": {
+    "mtime": 1778030692.229964,
+    "ast_hash": "eaec63bca0ac4e71b24f6223eb70cd21",
+    "semantic_hash": "eaec63bca0ac4e71b24f6223eb70cd21"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\check_version_consistency.py": {
+    "mtime": 1776861472.9141972,
+    "ast_hash": "70347ddd45282a4b3be652937da9c900",
+    "semantic_hash": "70347ddd45282a4b3be652937da9c900"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\cleanup_specs.py": {
+    "mtime": 1777586581.2020915,
+    "ast_hash": "d3bcfdc31b3c8f9a5bb316d752efd67a",
+    "semantic_hash": "d3bcfdc31b3c8f9a5bb316d752efd67a"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\context_oracle.py": {
+    "mtime": 1777506275.875177,
+    "ast_hash": "8a4c53d5375a0a892ffb1ec31f6d7c08",
+    "semantic_hash": "8a4c53d5375a0a892ffb1ec31f6d7c08"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\enrich_context.py": {
+    "mtime": 1776385037.3619628,
+    "ast_hash": "c6939660e0f219ba7afc11bc9a9a7571",
+    "semantic_hash": "c6939660e0f219ba7afc11bc9a9a7571"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\harness_runner.py": {
+    "mtime": 1777586122.6035726,
+    "ast_hash": "c113f79527ea9c9325219504916f5af7",
+    "semantic_hash": "c113f79527ea9c9325219504916f5af7"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\health_sync.py": {
+    "mtime": 1775965211.302253,
+    "ast_hash": "cdf5a0aa914624bdb669dd42eedd7c04",
+    "semantic_hash": "cdf5a0aa914624bdb669dd42eedd7c04"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\ingest_wiki_guard.py": {
+    "mtime": 1777503909.652881,
+    "ast_hash": "39a957159d9890d288db7842afd851cb",
+    "semantic_hash": "39a957159d9890d288db7842afd851cb"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\inject_learnings.py": {
+    "mtime": 1777864736.0866966,
+    "ast_hash": "f5e3f7933baef220155d99c0abe87110",
+    "semantic_hash": "f5e3f7933baef220155d99c0abe87110"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\learnings_aggregator.py": {
+    "mtime": 1777864695.620833,
+    "ast_hash": "7edd47b8fba61a6367463d5b2f3329a3",
+    "semantic_hash": "7edd47b8fba61a6367463d5b2f3329a3"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\lint_wiki.py": {
+    "mtime": 1776900882.090035,
+    "ast_hash": "3b25655eef24f4c8f911b9633c8ee188",
+    "semantic_hash": "3b25655eef24f4c8f911b9633c8ee188"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\migration_registry.py": {
+    "mtime": 1775960327.875961,
+    "ast_hash": "bdcf581f109a389a8c94d16537a953bc",
+    "semantic_hash": "bdcf581f109a389a8c94d16537a953bc"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\oracle_analytics.py": {
+    "mtime": 1777505835.3936887,
+    "ast_hash": "acd6fb5e939f36bd6049defb24b3b2ad",
+    "semantic_hash": "acd6fb5e939f36bd6049defb24b3b2ad"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\project_bundler.py": {
+    "mtime": 1777949352.2116725,
+    "ast_hash": "baa20dbc995fb2da6f0e36fa31a07d50",
+    "semantic_hash": "baa20dbc995fb2da6f0e36fa31a07d50"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\purge_journal.py": {
+    "mtime": 1775962122.6890912,
+    "ast_hash": "3c79ce77d26f5c3f9add968925ebd275",
+    "semantic_hash": "3c79ce77d26f5c3f9add968925ebd275"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\sync_project.py": {
+    "mtime": 1775962139.7551908,
+    "ast_hash": "a95a4010abb2b2e8da3aced83c6747eb",
+    "semantic_hash": "a95a4010abb2b2e8da3aced83c6747eb"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\validate_commit_msg.py": {
+    "mtime": 1777862989.2913918,
+    "ast_hash": "6a6aa399432c56a87e89b03b2bffcfb9",
+    "semantic_hash": "6a6aa399432c56a87e89b03b2bffcfb9"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\validate_context.py": {
+    "mtime": 1778034379.479024,
+    "ast_hash": "e0fac6b4fd3444587ccbc24a7ed61c4e",
+    "semantic_hash": "e0fac6b4fd3444587ccbc24a7ed61c4e"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\workflow_journal_auditor.py": {
+    "mtime": 1779310473.108282,
+    "ast_hash": "e8b51f26e44b07423ac39252449ae176",
+    "semantic_hash": "e8b51f26e44b07423ac39252449ae176"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\write_with_validation.py": {
+    "mtime": 1777852016.5077617,
+    "ast_hash": "9f0d9960478cde435a93c7bcbc1a04ad",
+    "semantic_hash": "9f0d9960478cde435a93c7bcbc1a04ad"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\_tz_utils.py": {
+    "mtime": 1775962045.1989574,
+    "ast_hash": "31d4e2aea0cea92e9c40a191736700bf",
+    "semantic_hash": "31d4e2aea0cea92e9c40a191736700bf"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\_wiki_log_utils.py": {
+    "mtime": 1777505143.1684437,
+    "ast_hash": "20994375f1a2469c881b63d63b60b081",
+    "semantic_hash": "20994375f1a2469c881b63d63b60b081"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\commit-msg": {
+    "mtime": 1777863006.2807455,
+    "ast_hash": "edf2f780e76e23e740e62d5dbaa7fe8b",
+    "semantic_hash": "edf2f780e76e23e740e62d5dbaa7fe8b"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\pre-commit": {
+    "mtime": 1777945334.5911236,
+    "ast_hash": "c90bf74927b1bb525cc1268304448e0d",
+    "semantic_hash": "c90bf74927b1bb525cc1268304448e0d"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\applypatch-msg": {
+    "mtime": 1775869926.6014464,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\commit-msg": {
+    "mtime": 1775869926.5994468,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\h": {
+    "mtime": 1775869923.170509,
+    "ast_hash": "15239a01c5554e56ff745570fb583a91",
+    "semantic_hash": "15239a01c5554e56ff745570fb583a91"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\husky.sh": {
+    "mtime": 1775869926.6104414,
+    "ast_hash": "13871d2ab13e8423790ecb2c01c78c18",
+    "semantic_hash": "13871d2ab13e8423790ecb2c01c78c18"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\post-applypatch": {
+    "mtime": 1775869926.603446,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\post-checkout": {
+    "mtime": 1779310230.455795,
+    "ast_hash": "b2c697689a25633baab654ec7eb3e2e6",
+    "semantic_hash": "b2c697689a25633baab654ec7eb3e2e6"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\post-commit": {
+    "mtime": 1779310230.4327862,
+    "ast_hash": "1bd9f050583a6761a09a6c00a39d61f7",
+    "semantic_hash": "1bd9f050583a6761a09a6c00a39d61f7"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\post-merge": {
+    "mtime": 1775869926.6074438,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\post-rewrite": {
+    "mtime": 1775869926.6054442,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\pre-applypatch": {
+    "mtime": 1775869926.6024463,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\pre-auto-gc": {
+    "mtime": 1775869926.6094422,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\pre-commit": {
+    "mtime": 1775869926.5964491,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\pre-merge-commit": {
+    "mtime": 1775869926.5974488,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\pre-push": {
+    "mtime": 1775869926.6084423,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\pre-rebase": {
+    "mtime": 1775869926.6044452,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\prepare-commit-msg": {
+    "mtime": 1775869926.5984488,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\tests\\test_affinity_lite.py": {
+    "mtime": 1778030659.244487,
+    "ast_hash": "20e8d8ca01c7a1296c3f2cc9e1ba7e06",
+    "semantic_hash": "20e8d8ca01c7a1296c3f2cc9e1ba7e06"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\tests\\test_context.py": {
+    "mtime": 1776384838.5696142,
+    "ast_hash": "37f996b8c53783b86b75418b17ddaa32",
+    "semantic_hash": "37f996b8c53783b86b75418b17ddaa32"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\tests\\test_learnings.py": {
+    "mtime": 1777864866.5430176,
+    "ast_hash": "469fd1e4382824af8ce5f17c1ae8cab6",
+    "semantic_hash": "469fd1e4382824af8ce5f17c1ae8cab6"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\tests\\test_oracle.py": {
+    "mtime": 1777504978.196941,
+    "ast_hash": "d45c5512917198abdaefcdbacac4a0ab",
+    "semantic_hash": "d45c5512917198abdaefcdbacac4a0ab"
+  }
+}

@@ -1,0 +1,1 @@
+{"nodes": [{"id": "write_with_validation_script", "label": "Write with Validation Script", "file_type": "code", "source_file": ".context/_scripts/write_with_validation.py"}, {"id": "write_with_validation_py", "label": "write_with_validation.py", "file_type": "code", "source_file": ".context/_scripts/write_with_validation.py"}], "edges": [], "hyperedges": []}

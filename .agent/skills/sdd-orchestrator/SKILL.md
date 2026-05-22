@@ -49,14 +49,15 @@ Analyze the output buckets (`must_update`, `likely_update`, `declared_only`).
 npm run context:inject
 ```
 3. Verify that the `*.enriched.md` file was generated.
-4. **Git Cleanliness Gate (Pre-Delegation):** Before spawning the executor subagent, you MUST commit the spec setup (the drafted `spec.md`, `STATE.md`, `tasks.md`, and the `*.enriched.md` files) to seal the feature setup in Git. Run:
+4. **Physical Scratchpad Instantiation:** You MUST copy the template `.agent/templates/AGENT_SCRATCHPAD.md` to `.specs/features/<feature_id>/AGENT_SCRATCHPAD.md` to ensure the executor has a physical escalation buffer.
+5. **Git Cleanliness Gate (Pre-Delegation):** Before spawning the executor subagent, you MUST commit the spec setup (the drafted `spec.md`, `STATE.md`, `tasks.md`, `AGENT_SCRATCHPAD.md`, and the `*.enriched.md` files) to seal the feature setup in Git. Run:
    - `git add .specs/features/<feature_id>/`
    - Create a corresponding setup entry at the top of `JOURNAL.md` for this setup commit.
-   - Run `git commit -m "chore(sprint): setup spec and STATE for <feature_id>"`.
+   - Run `git commit -m "chore(sprint): setup spec, STATE and SCRATCHPAD for <feature_id>"`
    - Run `git push` to sync the baseline.
    - Run `git status --short` to verify the tree is 100% clean.
-5. Hand off execution to the `spec-driver` subagent (e.g., via `/spec-driver [instrução]`), passing the path to the spec.
-6. Once delegated, **do not close the task**. Wait for execution.
+6. Hand off execution to the `spec-driver` subagent (e.g., via `/spec-driver [instrução]`), passing the path to the spec.
+7. Once delegated, **do not close the task**. Wait for execution.
 
 ### Step 4: Handle Escalations & The Immune System
 

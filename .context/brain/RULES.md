@@ -134,6 +134,11 @@ Para garantir que o conhecimento técnico não se perca no arquivamento:
 2. **Conteúdo:** O relatório deve conter o delta entre o plano original (`origin`) e a entrega, o Blast Radius real e as cicatrizes extraídas.
 3. **Auditabilidade:** O `@qa-validator` não deve assinar o contrato se o `CLOSURE.md` estiver ausente ou for meramente proforma (sem dados factuais do commit).
 
+## 🛡️ 1.15 Protocolo de Escalonamento (The Scratchpad Shield)
+Toda feature DEVE possuir uma instância física do arquivo `AGENT_SCRATCHPAD.md` (copiado de `.agent/templates/`) na sua pasta raiz durante o Setup.
+1. **Physical Buffer:** Este arquivo atua como o canal oficial de escalonamento Fail-Closed (INBOX/DIRECTIVES) para lidar com bloqueios `[FATAL]` ou `[BLOCKED]`.
+2. **Dependência do Gatekeeper:** Sem este arquivo físico, o subagente fica impossibilitado de reportar erros ao Orquestrador, causando deadlocks de governança.
+
 ---
 
 ## 🔢 2. Ansiedade de Contexto & Ralph Wiggum Loop

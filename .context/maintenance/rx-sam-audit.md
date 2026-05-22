@@ -1,5 +1,5 @@
 # 🛡️ RX: SAM (Sistema Anti-Migué)
-> **Versão:** 1.1.0 (Hardened)  
+> **Versão:** 1.1.0 (Hardened) (SSOT)
 > **Status:** Ativo no Gatekeeper (Husky)  
 > **Gardião:** `@qa-validator`
 

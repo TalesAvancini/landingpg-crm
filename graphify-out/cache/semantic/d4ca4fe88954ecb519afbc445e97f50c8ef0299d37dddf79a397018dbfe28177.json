@@ -1,0 +1,1 @@
+{"nodes": [{"id": "rules_rules", "label": "Rules", "file_type": "document", "source_file": ".context/brain/RULES.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}, {"id": "rules_brain", "label": "Global Rules", "file_type": "document", "source_file": ".context/brain/RULES.md"}], "edges": [], "hyperedges": []}
