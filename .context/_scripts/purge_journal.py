@@ -35,13 +35,16 @@ def purge_journal():
     content = JOURNAL_FILE.read_text(encoding="utf-8")
     entries = parse_entries(content)
 
-    if len(entries) <= 1:
+    if len(entries) <= 2:
         print("[INFO] Poucas entradas para purgar.")
         return
 
-    keep_count = max(1, int(len(entries) * KEEP_RATIO))
-    archive_entries = entries[:-keep_count]
-    keep_entries = entries[-keep_count:]
+    header = entries[0]
+    logs = entries[1:]
+
+    keep_count = max(1, int(len(logs) * KEEP_RATIO))
+    keep_entries = logs[:keep_count]
+    archive_entries = logs[keep_count:]
 
     # Garante diretório de arquivo
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)

@@ -931,3 +931,41 @@ Status: Ativo
 
 ## [HARNESS-PASS] Report | spec:blast_radius_mvp
 - **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:blast_radius_mvp
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+[INFO] Regra 'new_context_path' disparada.
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Regra 'new_context_path': Arquivo '.context/brain/FILE_GLOSSARY.md' não foi propagado (ausente no diff).
+  - Regra 'new_context_path': Checkbox [x] para '.context/brain/FILE_GLOSSARY.md' ausente ou desmarcado no Journal.
+  - Fraude Narrativa: Arquivo '.context/monitoring/CONTEXT_HEALTH.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/market/wiki_log.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/monitoring/PROJECT_INDEX_03.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/monitoring/PROJECT_INDEX_02.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/monitoring/PROJECT_INDEX_01.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Modificação Silenciosa: Arquivo '.context/brain/LEARNINGS.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/blast_radius_mvp/STATE.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/maintenance/TECHNICAL_REQUIREMENTS.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:blast_radius_mvp
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Fraude Narrativa: Arquivo '.context/monitoring/PROJECT_INDEX_02.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/maintenance/_archive_context/journals/journal_archive_20260522_143007.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/monitoring/PROJECT_INDEX_01.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/monitoring/CONTEXT_HEALTH.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/monitoring/PROJECT_INDEX_03.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.context/market/wiki_log.md' marcado como [x] no Journal, mas não há alterações no Git.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-PASS] Report | spec:blast_radius_mvp
+- **Detalhe:** All contracts valid

@@ -3,12 +3,12 @@
 
 ---
 schema_version: 1
-generated_at: 2026-05-22T16:50:55.709030+00:00
+generated_at: 2026-05-22T17:33:55.804099+00:00
 root: template_inicío_de_projeto
 mode: full | TOC
 profile: ai-default
-file_count: 118
-byte_count: 806095
+file_count: 120
+byte_count: 793208
 ignored_dirs:
   - .cache
   - .cursor
@@ -63,6 +63,7 @@ sensitive_rules:
   - `.context/maintenance/rx-affinity-lite.json` -> [file_976cb34ec1a1](#file_976cb34ec1a1)
   - `.context/maintenance/version_targets.json` -> [file_51ed93c9d8ab](#file_51ed93c9d8ab)
   - `.github/workflows/context-health.yml` -> [file_e477c4c5a96c](#file_e477c4c5a96c)
+  - `.kilo/package.json` -> [file_9848d7c90178](#file_9848d7c90178)
   - `package.json` -> [file_7030d0b2f71b](#file_7030d0b2f71b)
 - `db`:
   - `.context/maintenance/migrations/001_init.sql` -> [file_3707c3aa3239](#file_3707c3aa3239)
@@ -133,6 +134,7 @@ sensitive_rules:
   - `.context/monitoring/EXECUTION_BUFFER.md` -> [file_c6d44cc7da35](#file_c6d44cc7da35)
   - `.context/monitoring/PROJECT_INDEX_01.md` -> [file_b488072bb961](#file_b488072bb961)
   - `.context/monitoring/PROJECT_INDEX_02.md` -> [file_a12d65ab4927](#file_a12d65ab4927)
+  - `.context/monitoring/PROJECT_INDEX_03.md` -> [file_82687204d538](#file_82687204d538)
   - `.specs/features/SSD_ERRORS_LEDGER.md` -> [file_5346932740b3](#file_5346932740b3)
   - `.specs/features/SSD_PLAYBOOK.md` -> [file_d801613c0c41](#file_d801613c0c41)
   - `.specs/features/blast_radius_mvp/.enriched.md` -> [file_21733928ac15](#file_21733928ac15)
@@ -277,8 +279,10 @@ sensitive_rules:
 - `.context/monitoring/EXECUTION_BUFFER.md` -> [file_c6d44cc7da35](#file_c6d44cc7da35)
 - `.context/monitoring/PROJECT_INDEX_01.md` -> [file_b488072bb961](#file_b488072bb961)
 - `.context/monitoring/PROJECT_INDEX_02.md` -> [file_a12d65ab4927](#file_a12d65ab4927)
+- `.context/monitoring/PROJECT_INDEX_03.md` -> [file_82687204d538](#file_82687204d538)
 - `.github/workflows/context-health.yml` -> [file_e477c4c5a96c](#file_e477c4c5a96c)
 - `.husky/_/husky.sh` -> [file_3adfd36c1559](#file_3adfd36c1559)
+- `.kilo/package.json` -> [file_9848d7c90178](#file_9848d7c90178)
 - `.specs/features/SSD_ERRORS_LEDGER.md` -> [file_5346932740b3](#file_5346932740b3)
 - `.specs/features/SSD_PLAYBOOK.md` -> [file_d801613c0c41](#file_d801613c0c41)
 - `.specs/features/blast_radius_mvp/.enriched.md` -> [file_21733928ac15](#file_21733928ac15)
@@ -495,7 +499,3 @@ FILE_END id=file_0731dcfd7873
 
 ---
 <a id="file_4d2d533509e3"></a>
-FILE_START id=file_4d2d533509e3 path=.context/_scripts/inject_learnings.py domain=source lang=python lines=144 bytes=4763 mtime=2026-05-04T03:18:56.086697+00:00 sha1=2334dc2b0d40e1ab480245a058c0ba95cee4cfc3
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_4d2d533509e3
-

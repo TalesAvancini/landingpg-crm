@@ -1,6 +1,6 @@
 ---
 status: ✅ PASSED
-updated: 2026-05-22 13:50
+updated: 2026-05-22 14:33
 detail: All checks passed
 ---
 
@@ -17,9 +17,9 @@ detail: All checks passed
 start_hash: 6bf56fe16c6f5c0ee7b6b43ab196389825916917
 status: PASSED
 impact_snapshot:
-  files_changed: 27
-  churn_added: 1499
-  churn_removed: 206
+  files_changed: 179
+  churn_added: 38006
+  churn_removed: 649
 qa_checkpoint:
   signed: true
   signed_by: "@qa-validator"

@@ -1,4 +1,8 @@
 <!-- BUNDLE_PART 2 OF 3 -->
+FILE_START id=file_4d2d533509e3 path=.context/_scripts/inject_learnings.py domain=source lang=python lines=144 bytes=4763 mtime=2026-05-04T03:18:56.086697+00:00 sha1=2334dc2b0d40e1ab480245a058c0ba95cee4cfc3
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_4d2d533509e3
+
 ---
 <a id="file_327e4ce89821"></a>
 FILE_START id=file_327e4ce89821 path=.context/_scripts/learnings_aggregator.py domain=source lang=python lines=193 bytes=6861 mtime=2026-05-04T03:18:15.620833+00:00 sha1=777f6d802836af8c692a16fe5d5966024f6bc65f
@@ -31,7 +35,7 @@ FILE_END id=file_02d732116d93
 
 ---
 <a id="file_024b28a37d29"></a>
-FILE_START id=file_024b28a37d29 path=.context/_scripts/purge_journal.py domain=source lang=python lines=82 bytes=2761 mtime=2026-04-12T02:48:42.689091+00:00 sha1=8b12ecb77b7b91c035a2d7c9752910c71064d1e5
+FILE_START id=file_024b28a37d29 path=.context/_scripts/purge_journal.py domain=source lang=python lines=85 bytes=2798 mtime=2026-05-22T17:29:45.675900+00:00 sha1=7f7d732f74ebf2b5fa107e836866db6899648cb9
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_024b28a37d29
 
@@ -61,7 +65,7 @@ FILE_END id=file_1077e9084ea1
 
 ---
 <a id="file_8f42e61c8a29"></a>
-FILE_START id=file_8f42e61c8a29 path=.context/_scripts/workflow_journal_auditor.py domain=source lang=python lines=181 bytes=8041 mtime=2026-05-20T20:54:33.108282+00:00 sha1=f96f3a0321b6585db9f69f11035fd9e855cf1cdf
+FILE_START id=file_8f42e61c8a29 path=.context/_scripts/workflow_journal_auditor.py domain=source lang=python lines=181 bytes=8101 mtime=2026-05-22T17:32:11.282084+00:00 sha1=379e8662d8f5713b6fe6dc7e12db758d37b63eaa
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_8f42e61c8a29
 
@@ -121,7 +125,7 @@ FILE_END id=file_de9ef20db2be
 
 ---
 <a id="file_226d4f420001"></a>
-FILE_START id=file_226d4f420001 path=.context/brain/LEARNINGS.md domain=docs lang=markdown lines=58 bytes=4068 mtime=2026-05-22T16:50:49.458771+00:00 sha1=7fdf7adce4f5b5342b9fb7c5bc9513b2cb0d2076
+FILE_START id=file_226d4f420001 path=.context/brain/LEARNINGS.md domain=docs lang=markdown lines=58 bytes=4068 mtime=2026-05-22T17:33:52.891778+00:00 sha1=ba1ff1ab71587d37ad38eed631d372edfacf207e
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_226d4f420001
 
@@ -151,7 +155,7 @@ FILE_END id=file_c94f001202db
 
 ---
 <a id="file_cd6526d17218"></a>
-FILE_START id=file_cd6526d17218 path=.context/brain/RULES.md domain=docs lang=markdown lines=224 bytes=18526 mtime=2026-05-22T02:19:20.523043+00:00 sha1=a89ecf6e9f0b960a0b8a0fc8944f11de2c850660
+FILE_START id=file_cd6526d17218 path=.context/brain/RULES.md domain=docs lang=markdown lines=224 bytes=18520 mtime=2026-05-22T17:20:32.676143+00:00 sha1=69d6f10bff94d667349f94acf7b6461d9349a643
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_cd6526d17218
 
@@ -187,13 +191,13 @@ FILE_END id=file_9b6470da8849
 
 ---
 <a id="file_41c3d3da4381"></a>
-FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=933 bytes=55672 mtime=2026-05-22T16:50:50.776289+00:00 sha1=1299285d44d713c9421a2ba0209796b2248cac6d
+FILE_START id=file_41c3d3da4381 path=.context/maintenance/HARNESS_LOG.md domain=docs lang=markdown lines=971 bytes=58408 mtime=2026-05-22T17:33:53.977045+00:00 sha1=f466e621a0ba258f3cec80632192c1ba05aa81a3
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_41c3d3da4381
 
 ---
 <a id="file_019509328844"></a>
-FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=585 bytes=34060 mtime=2026-05-22T16:50:19.571278+00:00 sha1=cd780305dd0ab94032532451465d391aeb1504a0
+FILE_START id=file_019509328844 path=.context/maintenance/JOURNAL.md domain=docs lang=markdown lines=194 bytes=12539 mtime=2026-05-22T17:33:37.182454+00:00 sha1=282fd46a8bddcd4ea2f3e91a1090ef986759d430
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_019509328844
 
@@ -211,7 +215,7 @@ FILE_END id=file_ef714e7c8162
 
 ---
 <a id="file_d069d4f2ebef"></a>
-FILE_START id=file_d069d4f2ebef path=.context/maintenance/TECHNICAL_REQUIREMENTS.md domain=docs lang=markdown lines=170 bytes=1031 mtime=2026-05-22T16:50:48.871372+00:00 sha1=102903cbec3ca9f0f213434ec25a4ee6acdd1ee4
+FILE_START id=file_d069d4f2ebef path=.context/maintenance/TECHNICAL_REQUIREMENTS.md domain=docs lang=markdown lines=173 bytes=1034 mtime=2026-05-22T17:33:52.564749+00:00 sha1=4e02f313a01f2d38bef5daf84c1b6b92140bb0ac
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_d069d4f2ebef
 
@@ -271,7 +275,7 @@ FILE_END id=file_3dffe62e63f9
 
 ---
 <a id="file_d994ef6a0d75"></a>
-FILE_START id=file_d994ef6a0d75 path=.context/maintenance/rx-sam-audit.md domain=docs lang=markdown lines=74 bytes=3796 mtime=2026-05-22T16:48:23.496424+00:00 sha1=19e9d722fbe5fc8c1f043af7c053f5359dfa6a5f
+FILE_START id=file_d994ef6a0d75 path=.context/maintenance/rx-sam-audit.md domain=docs lang=markdown lines=79 bytes=4521 mtime=2026-05-22T17:18:53.174000+00:00 sha1=74da25e6941f9371eb43999138c0ada93d7cf425
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_d994ef6a0d75
 
@@ -301,7 +305,7 @@ FILE_END id=file_65a089176b85
 
 ---
 <a id="file_578d56cac1a4"></a>
-FILE_START id=file_578d56cac1a4 path=.context/market/WIKI/_index.md domain=docs lang=markdown lines=8 bytes=683 mtime=2026-05-22T16:50:51.052233+00:00 sha1=88e95b638c8214ffe557e70ecbf62f5201d72323
+FILE_START id=file_578d56cac1a4 path=.context/market/WIKI/_index.md domain=docs lang=markdown lines=8 bytes=683 mtime=2026-05-22T17:33:54.187905+00:00 sha1=88e95b638c8214ffe557e70ecbf62f5201d72323
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_578d56cac1a4
 
@@ -343,13 +347,13 @@ FILE_END id=file_b5d38697335e
 
 ---
 <a id="file_c255058b56fe"></a>
-FILE_START id=file_c255058b56fe path=.context/market/wiki_log.md domain=docs lang=markdown lines=59 bytes=5830 mtime=2026-05-22T16:50:51.773400+00:00 sha1=484ec91fa057cc37cbe41c5f5c8bd9fab41d22f3
+FILE_START id=file_c255058b56fe path=.context/market/wiki_log.md domain=docs lang=markdown lines=61 bytes=6067 mtime=2026-05-22T17:33:54.653142+00:00 sha1=4913e930611da59ef34186def59e4914463d840d
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_c255058b56fe
 
 ---
 <a id="file_068a21d64bec"></a>
-FILE_START id=file_068a21d64bec path=.context/monitoring/CONTEXT_HEALTH.md domain=docs lang=markdown lines=38 bytes=1530 mtime=2026-05-22T16:50:53.711250+00:00 sha1=911c3416e6ee7000c3cc9626fc3ddeeecb6ea052
+FILE_START id=file_068a21d64bec path=.context/monitoring/CONTEXT_HEALTH.md domain=docs lang=markdown lines=38 bytes=1520 mtime=2026-05-22T17:33:55.154451+00:00 sha1=86deffd74942e88b6ef2b3062c18c1d7aba0350b
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_068a21d64bec
 
@@ -361,15 +365,21 @@ FILE_END id=file_c6d44cc7da35
 
 ---
 <a id="file_b488072bb961"></a>
-FILE_START id=file_b488072bb961 path=.context/monitoring/PROJECT_INDEX_01.md domain=docs lang=markdown lines=501 bytes=29458 mtime=2026-05-20T22:09:32.935560+00:00 sha1=3adeaa7059dd0baec570e92c0180e96c5fdfe630
+FILE_START id=file_b488072bb961 path=.context/monitoring/PROJECT_INDEX_01.md domain=docs lang=markdown lines=501 bytes=30249 mtime=2026-05-22T16:50:55.715535+00:00 sha1=c07139ae26e1c6f07a27a6399dc3c9642b0ca45d
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_b488072bb961
 
 ---
 <a id="file_a12d65ab4927"></a>
-FILE_START id=file_a12d65ab4927 path=.context/monitoring/PROJECT_INDEX_02.md domain=docs lang=markdown lines=430 bytes=21365 mtime=2026-05-20T22:09:32.936806+00:00 sha1=a6dbf75453a9c8428f61925b8643bcb2b96418d8
+FILE_START id=file_a12d65ab4927 path=.context/monitoring/PROJECT_INDEX_02.md domain=docs lang=markdown lines=501 bytes=24798 mtime=2026-05-22T16:50:55.717538+00:00 sha1=324bae8af877fc531070a35b065606029e554696
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_a12d65ab4927
+
+---
+<a id="file_82687204d538"></a>
+FILE_START id=file_82687204d538 path=.context/monitoring/PROJECT_INDEX_03.md domain=docs lang=markdown lines=10 bytes=566 mtime=2026-05-22T16:50:55.719750+00:00 sha1=49f071005d608de324953e0b7e0e181b7fc47b0d
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_82687204d538
 
 ---
 <a id="file_e477c4c5a96c"></a>
@@ -382,6 +392,12 @@ FILE_END id=file_e477c4c5a96c
 FILE_START id=file_3adfd36c1559 path=.husky/_/husky.sh domain=source lang=bash lines=9 bytes=160 mtime=2026-04-11T01:12:06.610441+00:00 sha1=e8c52ee10c10eaa739ae7eca69c373dd437d9f33
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_3adfd36c1559
+
+---
+<a id="file_9848d7c90178"></a>
+FILE_START id=file_9848d7c90178 path=.kilo/package.json domain=config lang=json lines=5 bytes=60 mtime=2026-05-22T16:58:02.318805+00:00 sha1=bf9e78a4fb5dc6ed34d100d765e6bff16a455633
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_9848d7c90178
 
 ---
 <a id="file_5346932740b3"></a>
@@ -409,7 +425,7 @@ FILE_END id=file_39f69c785894
 
 ---
 <a id="file_e38a55334350"></a>
-FILE_START id=file_e38a55334350 path=.specs/features/blast_radius_mvp/STATE.md domain=docs lang=markdown lines=72 bytes=2238 mtime=2026-05-22T16:50:50.794477+00:00 sha1=f4f273fab9965834d752b208c48ef3ef15d55ef6
+FILE_START id=file_e38a55334350 path=.specs/features/blast_radius_mvp/STATE.md domain=docs lang=markdown lines=72 bytes=2240 mtime=2026-05-22T17:33:53.998279+00:00 sha1=f7fb5d318b4e622d9d4f53661c1b13a0459094a4
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_e38a55334350
 
@@ -483,19 +499,3 @@ FILE_END id=file_86bac54f32d7
 <a id="file_38ccbad5df5d"></a>
 FILE_START id=file_38ccbad5df5d path=tests/test_affinity_lite.py domain=source lang=python lines=51 bytes=1882 mtime=2026-05-06T01:24:19.244487+00:00 sha1=35549202f2b08097c522a8ad663757761604d8e2
 CONTENT_OMITTED toc_only=true
-FILE_END id=file_38ccbad5df5d
-
----
-<a id="file_45a34090c024"></a>
-FILE_START id=file_45a34090c024 path=tests/test_blast_radius.py domain=source lang=python lines=84 bytes=3012 mtime=2026-05-22T00:34:16.804174+00:00 sha1=219463c3a4a619a20816ade6e0c76c10c6edf89c
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_45a34090c024
-
----
-<a id="file_4c6bbd05056e"></a>
-FILE_START id=file_4c6bbd05056e path=tests/test_context.py domain=source lang=python lines=135 bytes=6249 mtime=2026-04-17T00:13:58.569614+00:00 sha1=9d17651da9da5326350654941d201d72c37c42c4
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_4c6bbd05056e
-
----
-<a id="file_7f153ad8e27b"></a>
