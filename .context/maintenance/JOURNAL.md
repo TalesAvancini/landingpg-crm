@@ -7,6 +7,21 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260522_1430
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+## 📅 2026-05-22 19:10 | 🛡️ Governance: Inclusão de Diretivas Comportamentais no AGENTS.md #Governança #Regras #Comportamento
+**Estado Atual:**
+- [x] **Regra de Deleção:** Estabelecido protocolo "No Explanation, No GO" (proibição de apagar arquivos sem consentimento explícito).
+- [x] **Regra de Transparência:** Incluído protocolo de interrupção (responder à dúvida e solicitar novo "Go").
+- [x] **Relatório de Falha:** Instituído o Protocolo Bandeira Branca para admitir limitações.
+- [x] **Anti-Loop:** Criada Regra de Limite (5 iterações) para prevenir teimosia da IA (Ralph Wiggum Loop).
+
+**Matriz de Propagação:**
+- [x] AGENTS.md -> [Nova seção: 🤖 DIRETIVAS COMPORTAMENTAIS]
+- [x] .context/maintenance/JOURNAL.md -> [Registro da alteração do manifesto base]
+
+executor_context_id: architect-agent
+validator_context_id: flow-auditor
+status: READY TO COMMIT
+
 ## 📅 2026-05-22 18:41 | ⚖️ Docs: Refinamento da Constituição no RULES.md (Auditoria flow-auditor) #Docs #Governança #Regras
 **Estado Atual:**
 - [x] **Topografia e Índices:** Atualizada a referência ao `PROJECT_INDEX.md` para o formato coringa `PROJECT_INDEX_*.md` refletindo a fragmentação gerada pelo `project_bundler.py`.

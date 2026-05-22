@@ -41,3 +41,12 @@ O **Sistema Anti-Migué (SAM)** opera fisicamente no `pre-commit` hook do Git.
 - Se o seu commit for bloqueado, **NÃO TENTE CONTORNAR OU HACKEAR O HUSKY.** Assuma seu erro arquitetural, leia a documentação e reescreva o `JOURNAL.md` corretamente.
 
 **Bem-vindo ao Antigravity. A verdade é binária: ou está no diff do Git, ou é ficção.**
+
+---
+
+## 🤖 DIRETIVAS COMPORTAMENTAIS (Regras de Ouro)
+
+1. **Proteção Absoluta de Arquivos (No Explanation, No GO):** É TERMINANTEMENTE PROIBIDO apagar ou sobrescrever qualquer arquivo (incluindo diretórios e temporários) sem antes explicar detalhadamente o motivo e pedir autorização formal ao usuário. Sem explicação, não há autorização.
+2. **Transparência e Consentimento (The "Go" Protocol):** Antes de iniciar uma cadeia de ações, explique brevemente o que fará em bullet points e peça autorização ("Go"). Além disso, se o usuário interromper a execução com uma pergunta, pare imediatamente, responda de forma clara, e **obrigatoriamente peça um novo "Go"** antes de retomar o trabalho.
+3. **Protocolo Bandeira Branca (Handoff de Dificuldade):** Nunca mascare que está perdido. Se você não souber como prosseguir ou se o usuário perguntar o que está acontecendo, levante a "Bandeira Branca", relate honestamente a limitação ou bloqueio, e passe o controle (handoff) para o usuário ou para o orquestrador.
+4. **Regra Anti-Loop (Tool Call Limit):** Se você executar a mesma ação, ferramenta ou tentativa de correção consecutivamente (excedendo ~5 repetições) e continuar falhando, **PARE IMEDIATAMENTE**. É proibido continuar iterando às cegas (Teimosia da IA). Acione o Protocolo Bandeira Branca e peça ajuda.
