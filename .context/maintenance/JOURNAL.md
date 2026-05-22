@@ -7,6 +7,22 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260522_1430
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+## 📅 2026-05-22 18:41 | ⚖️ Docs: Refinamento da Constituição no RULES.md (Auditoria flow-auditor) #Docs #Governança #Regras
+**Estado Atual:**
+- [x] **Topografia e Índices:** Atualizada a referência ao `PROJECT_INDEX.md` para o formato coringa `PROJECT_INDEX_*.md` refletindo a fragmentação gerada pelo `project_bundler.py`.
+- [x] **Regra Anti-False Pass (1.6):** Inserida formalmente a imunidade de Arquivos Sombra e pastas isoladas (como `.agents/`) ao escrutínio do SAM, alinhando com a evolução do código em `workflow_journal_auditor.py`.
+- [x] **Carga e Lazy Loading:** A validação constatou que o Manifesto `AGENTS.md` funciona como gatilho primário (lazy loading) para as políticas dos `FLOW_*.md`, poupando aproximadamente 40KB (10k tokens) de poluição de contexto no boot.
+- [x] **Metadados:** Metadados do MASTER_FLOW.md e FILE_GLOSSARY.md atualizados.
+
+**Matriz de Propagação:**
+- [x] .context/brain/RULES.md -> [Atualização do singular para plural nos fragmentos e adição da Regra de Isenção Sombra]
+- [x] .context/brain/MASTER_FLOW.md -> [Refresh do Timestamp de Governança]
+- [x] .context/brain/FILE_GLOSSARY.md -> [Refresh do Timestamp de Governança]
+- [x] .context/maintenance/JOURNAL.md -> [Registro da auditoria no diário contínuo]
+
+executor_context_id: architect-agent
+validator_context_id: flow-auditor
+status: READY TO COMMIT
 
 ## 📅 2026-05-22 17:48 | 🗺️ Docs: Atualização do MASTER_FLOW.md e FILE_GLOSSARY.md (Auditoria flow-auditor) #Docs #Governance #Auditor
 **Estado Atual:**

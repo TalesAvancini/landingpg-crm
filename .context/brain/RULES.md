@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-18
-Última Atualização: 2026-05-22
+Última Atualização: 2026-05-22 18:47
 Status: Ativo
 ---
 
@@ -33,7 +33,7 @@ Antes de gerar código de produção ou realizar refatorações, o Agente **DEVE
 2. **[ ] Strategic Layer:** `brain/INCEPTION.md` (se existir) + `market/SSOT_MAP.md`
 3. **[ ] Role Layer:** Conforme definido em `brain/AGENT_REGISTRY.md` + prompts físicos em `.agent/subagents/`.
 4. **[ ] Ephemeral Layer:** `brain/PRD.md` ativo + `maintenance/schema.sql` + últimas 30-50 linhas do `maintenance/JOURNAL.md`
-5. **[ ] Navigation Layer:** `monitoring/PROJECT_INDEX.md` (Consultar obrigatoriamente antes de criar novos arquivos)
+5. **[ ] Navigation Layer:** `monitoring/PROJECT_INDEX_*.md` (Consultar obrigatoriamente antes de criar novos arquivos)
 
 > ⚠️ **Bloqueio de Execução:** Se qualquer item estiver ausente ou desatualizado, a IA deve parar e solicitar a carga correta antes de prosseguir.
 
@@ -89,6 +89,7 @@ Uma onda/sprint só pode ser declarada **concluída** se **todas** as condiçõe
    - **PASS:** Árvore limpa + Signoff OK + Harness OK ⮕ Conclusão Autorizada.
    - **FAIL:** "Tudo pronto" no Journal + 2 arquivos untracked ⮕ **BLOQUEIO** (Fraude Detectada).
    - **FAIL:** "Sprint finalizada" + `qa_signoff: false` ⮕ **BLOQUEIO** (Inconsistência).
+4. **Isenção de Arquivos Sombra:** Modificações exclusivas em arquivos autogerados (`PROJECT_INDEX_*.md`, `CONTEXT_HEALTH.md`, etc) ou em diretórios ignorados (ex: `.agents/`) não disparam o SAM e não exigem registro obrigatório no Journal (Curto-Circuito).
 
 ## 🛡️ 1.7 Regra `MIMO_STATE_INTEGRITY` (Integridade de Estado)
 Toda automação que altere o `STATE.md` deve garantir:
@@ -167,7 +168,7 @@ A IA atua como bibliotecário chefe. Consistência entre Código e Contexto é o
 É proibido construir código baseado em suposições sobre a estrutura do Banco de Dados ou Arquitetura.
 1. **Verificação de Dados Obrigatória:** Antes de criar UI/lógica dependente de dados, validar `maintenance/schema.sql`.
 2. **Aviso de Divergência:** Se o código exigir um campo inexistente, parar e avisar: *"⚠️ Alerta: O Frontend exige o campo X, mas ele não existe no Schema. Sugiro gerar a migration antes de prosseguir."*
-3. **Prevenção de Duplicidade:** Antes de criar *qualquer* arquivo, componente (ex: botão, modal) ou utilitário novo, a IA DEVE inspecionar `monitoring/PROJECT_INDEX.md`. Se a responsabilidade já existir, reescreva ou estenda o código existente. NUNCA crie duplicatas funcionais.
+3. **Prevenção de Duplicidade:** Antes de criar *qualquer* arquivo, componente (ex: botão, modal) ou utilitário novo, a IA DEVE inspecionar os índices fragmentados `monitoring/PROJECT_INDEX_*.md`. Se a responsabilidade já existir, reescreva ou estenda o código existente. NUNCA crie duplicatas funcionais.
 
 ---
 
