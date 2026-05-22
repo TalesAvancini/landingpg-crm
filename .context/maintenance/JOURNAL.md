@@ -8,6 +8,18 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260522_1430
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-22 16:35 | 📜 Docs: Manifesto Raiz de Governança #Docs #Agents
+**Estado Atual:**
+- [x] **Manifesto Raiz:** Criado o `AGENTS.md` na raiz do projeto para servir como o Ponto de Entrada (Bootstrap) definitivo. Ele injeta as regras inquebráveis e garante que novos agentes leiam o `MASTER_FLOW.md` e os arquivos do `.context/brain/` imediatamente.
+
+**Matriz de Propagação:**
+- [x] AGENTS.md -> [Criação do manifesto de leitura obrigatória no boot]
+- [x] .context/maintenance/JOURNAL.md -> [Registro no diário]
+
+executor_context_id: architect-agent
+validator_context_id: user-request
+status: READY TO COMMIT
+
 ## 📅 2026-05-22 16:20 | 🧠 Feat: Gatilho de Estado do Diario (Curto-Circuito SAM) #Governance #SAM
 **Estado Atual:**
 - [x] **Inteligência do SAM:** Implementado o "Gatilho de Estado do Diário" no auditor (`workflow_journal_auditor.py`). O SAM agora não cobra entrada no Journal se apenas Shadow Files ou arquivos ignorados forem alterados.
