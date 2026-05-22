@@ -1,12 +1,24 @@
 ---
 Criado em: 2026-05-06 19:15
-Ultima Atualizacao: 2026-05-22 01:35
+Ultima Atualizacao: 2026-05-22 01:48
 Status: Ativo
 Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260506_191531.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-22 01:48 | 🛠️ Ajuste: Reforço de Git Cleanliness na Skill do SDD Orquestrador #Setup #Governance #Rules
+**Estado Atual:**
+- [x] **Skill:** Fortalecidas as regras de Git Cleanliness e commits automáticos na skill `sdd-orchestrator`.
+
+**Matriz de Propagação:**
+- [x] .agent/skills/sdd-orchestrator/SKILL.md -> [Regras de baseline limpa inseridas no Step 0 e Step 3]
+- [x] .context/maintenance/JOURNAL.md -> [Registro do Ajuste]
+
+executor_context_id: sdd-orchestrator
+validator_context_id: user-request
+status: READY TO COMMIT
 
 ## 📅 2026-05-22 01:35 | 🏁 Signoff: Homologação e Assinatura do QA #Governance #Validation
 **Estado Atual:**

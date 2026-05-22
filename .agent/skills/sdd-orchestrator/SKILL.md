@@ -13,12 +13,13 @@ This skill guides the Orchestrator (Hub) through the FULL Spec-Driven Developmen
 
 ## Instructions
 
-### Step 0: Pre-Flight Check (Git Cleanliness)
+### Step 0: Pre-Flight Check (Git Cleanliness Baseline)
 
-Before drafting any spec, you MUST ensure the workspace is clean to prevent SAM auditor errors ("Modificação Silenciosa" ou "Ghost Couplings") leaking into the new sprint.
-1. Run `git status --short` or `git status --ignored`.
-2. If there are uncommitted modifications (M, A, ??), you MUST explicitly commit them (e.g. `chore: setup ...`) and register them in the `JOURNAL.md` propagation matrix BEFORE starting the spec draft.
-3. Only proceed to Step 1 if the Git tree is completely clean for the feature scope.
+Before drafting any spec or planning changes, you MUST ensure the workspace is 100% clean. This is an inviolable rule to prevent residual or unrelated changes ("Modificação Silenciosa" or "Ghost Couplings") from leaking into the new feature's Git history and breaking pipeline gates.
+1. Run `git status --short` and `git status --ignored`.
+2. If there are ANY uncommitted modifications, untracked files, or staged changes, you MUST stop immediately. Do NOT draft the spec.
+3. Ask the user or use tools to commit them cleanly (e.g., `chore: cleanup residual changes`) and push them (`git push`) to sync with the remote repository.
+4. Only proceed to Step 1 when the command `git status --short` returns a completely empty output, guaranteeing a pristine baseline.
 
 ### Step 1: Blast Radius Calculation (Propagation Matrix)
 
@@ -40,7 +41,7 @@ Analyze the output buckets (`must_update`, `likely_update`, `declared_only`).
 5. **Raw Payloads**: You OBRIGATORIAMENTE must inject the actual texts of relevant rules and constraints directly into the Spec's Section 5. 
 6. Save the drafted spec in the `.specs/features/` directory.
 
-### Step 3: Human Ratification, Vaccine & Delegation
+### Step 3: Human Ratification, Vaccine & Delegation (Transition Gate)
 
 1. **Ratification:** Show the drafted Spec to the user and ask for explicit approval. Do NOT proceed or delegate to the executor until the user ratifies the Spec.
 2. Before delegating, you MUST run the MiMo injection to insert Scars into the Spec:
@@ -48,8 +49,14 @@ Analyze the output buckets (`must_update`, `likely_update`, `declared_only`).
 npm run context:inject
 ```
 3. Verify that the `*.enriched.md` file was generated.
-4. Hand off execution to the `spec-driver` subagent (e.g., via `/spec-driver [instrução]`), passing the path to the spec.
-5. Once delegated, **do not close the task**. Wait for execution.
+4. **Git Cleanliness Gate (Pre-Delegation):** Before spawning the executor subagent, you MUST commit the spec setup (the drafted `spec.md`, `STATE.md`, `tasks.md`, and the `*.enriched.md` files) to seal the feature setup in Git. Run:
+   - `git add .specs/features/<feature_id>/`
+   - Create a corresponding setup entry at the top of `JOURNAL.md` for this setup commit.
+   - Run `git commit -m "chore(sprint): setup spec and STATE for <feature_id>"`.
+   - Run `git push` to sync the baseline.
+   - Run `git status --short` to verify the tree is 100% clean.
+5. Hand off execution to the `spec-driver` subagent (e.g., via `/spec-driver [instrução]`), passing the path to the spec.
+6. Once delegated, **do not close the task**. Wait for execution.
 
 ### Step 4: Handle Escalations & The Immune System
 
