@@ -17,11 +17,23 @@ CONTEXT_DIR = Path(__file__).resolve().parents[1]
 JOURNAL_PATH = CONTEXT_DIR / "maintenance" / "JOURNAL.md"
 SYNAPSE_PATH = CONTEXT_DIR / "maintenance" / "JOURNAL_SYNAPSE.md"
 
+# Pastas ignoradas para auditoria SAM (Zona Segura de Rascunho e Arquivos Mortos)
+IGNORED_PREFIXES = ("planos/", "scratch/", "temp/", ".agents/", "graphify-out/", ".context/maintenance/_archive_context/")
+
+# Shadow Files: Arquivos auto-gerados pelo pipeline (isentos de Fraude Narrativa e Modificação Silenciosa)
+SHADOW_FILES = [
+    ".context/maintenance/JOURNAL.md",
+    ".context/maintenance/HARNESS_LOG.md",
+    ".context/maintenance/STATE.md",
+    ".context/monitoring/CONTEXT_HEALTH.md",
+    ".context/monitoring/PROJECT_INDEX_", # Prefixo
+    ".context/market/wiki_log.md",
+    ".context/brain/LEARNINGS.md",
+    ".context/maintenance/TECHNICAL_REQUIREMENTS.md"
+]
+
 def get_git_state():
     """Retorna dicionário com arquivos modificados e novos."""
-    # Pastas ignoradas para auditoria SAM (Zona Segura de Rascunho e Arquivos Mortos)
-    IGNORED_PREFIXES = ("planos/", "scratch/", "temp/", ".agents/", "graphify-out/", ".context/maintenance/_archive_context/")
-    
     try:
         res = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True, check=True)
         lines = res.stdout.splitlines()
@@ -145,20 +157,26 @@ def audit():
 
     # 1. Fraude Narrativa: Alegar que mudou algo que o Git não viu.
     for p_file in journal_propagated:
-        # Se o arquivo não está no Git e não é um diretório/padrão genérico
+        # Isenta arquivos em pastas ignoradas
+        if any(p_file.startswith(prefix) or prefix in p_file for prefix in IGNORED_PREFIXES):
+            continue
+            
+        # Isenta arquivos auto-gerados (Shadow Files)
+        if any(p_file.endswith(shadow) or shadow in p_file for shadow in SHADOW_FILES):
+            continue
+
+        # Se o arquivo não está no Git
         if not any(f.endswith(p_file) or p_file in f for f in git["all"]):
             violations.append(f"Fraude Narrativa: Arquivo '{p_file}' marcado como [x] no Journal, mas não há alterações no Git.")
 
     # 2. Modificação Silenciosa: Mudar algo no Git e não avisar no Journal.
-    # Ignora arquivos de contexto que são atualizados automaticamente e diretórios de sistema
-    ignore_silent = [".context/maintenance/JOURNAL.md", ".context/maintenance/HARNESS_LOG.md", ".context/maintenance/STATE.md"]
     for g_file in git["all"]:
-        if any(g_file.endswith(ex) for ex in ignore_silent):
+        # Isenta arquivos auto-gerados (Shadow Files)
+        if any(g_file.endswith(shadow) or shadow in g_file for shadow in SHADOW_FILES):
             continue
         
         # Se o arquivo Git não foi mencionado no Journal como [x]
         if not any(g_file.endswith(p) or p in g_file for p in journal_propagated):
-            # Verifica se está em alguma regra de obrigatoriedade (require_files_touched) para evitar erro duplo
             # Mas aqui o foco é: se mudou, tem que estar na Matriz de Propagação.
             violations.append(f"Modificação Silenciosa: Arquivo '{g_file}' alterado no Git mas ausente na Matriz de Propagação do Journal.")
 

@@ -8,6 +8,20 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260522_1430
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-22 14:55 | 🛠️ Feat: Isenção de Arquivos Sombra e Ignorados no SAM #Governance #SAM
+**Estado Atual:**
+- [x] **Arquivos Sombra:** Implementada a lista `SHADOW_FILES` no script do SAM para arquivos gerados automaticamente pelo pipeline (`PROJECT_INDEX*.md`, `CONTEXT_HEALTH.md`, `wiki_log.md`, etc.). Esses arquivos agora estão isentos das regras de Fraude Narrativa e Modificação Silenciosa, acabando com o loop Catch-22.
+- [x] **Arquivos Ignorados:** Adicionada validação na regra de Fraude Narrativa para perdoar arquivos que residem em pastas mapeadas no `IGNORED_PREFIXES` (como o arquivo morto gerado pelo `purge_journal.py`).
+
+**Matriz de Propagação:**
+- [x] .context/_scripts/workflow_journal_auditor.py -> [Implementação da lógica de Shadow Files e Ignored Prefixes]
+- [x] .context/maintenance/JOURNAL.md -> [Registro desta evolução de governança]
+- [x] .specs/features/blast_radius_mvp/STATE.md -> [Atualizado automaticamente pelo sync project]
+
+executor_context_id: bugfix-purge
+validator_context_id: flow-auditor
+status: READY TO COMMIT
+
 ## 📅 2026-05-22 14:35 | 🐛 Fix: Lógica de Slice do purge_journal.py #BugFix #Maintenance
 **Estado Atual:**
 - [x] **Correção no Script de Purge:** Modificado o `.context/_scripts/purge_journal.py` para não truncar as entradas incorretamente. O script assumia uma ordem cronológica normal. Como o Journal utiliza **Ordem Cronológica Reversa**, a lógica de fatiamento (`archive_entries` vs `keep_entries`) estava invertida, o que causava a preservação das entradas mais antigas (de abril) e o arquivamento das entradas recentes.

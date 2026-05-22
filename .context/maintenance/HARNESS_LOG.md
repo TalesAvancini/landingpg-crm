@@ -969,3 +969,26 @@ Status: Ativo
 
 ## [HARNESS-PASS] Report | spec:blast_radius_mvp
 - **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:blast_radius_mvp
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:blast_radius_mvp
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Fraude Narrativa: Arquivo '.context/_scripts/purge_journal.py' marcado como [x] no Journal, mas não há alterações no Git.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:blast_radius_mvp
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Modificação Silenciosa: Arquivo '.specs/features/blast_radius_mvp/STATE.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
