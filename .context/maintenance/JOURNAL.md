@@ -8,8 +8,18 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260522_1430
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
-## 📅 2026-05-22 16:35 | 📜 Docs: Manifesto Raiz de Governança #Docs #Agents
+## 📅 2026-05-22 16:40 | 📝 Docs: Gatilhos Semânticos do AGENTS.md #Docs #Agents
 **Estado Atual:**
+- [x] **Refinamento:** Os gatilhos de leitura condicional do `AGENTS.md` foram reescritos de forma mais assertiva, orientada à tarefa.
+- [x] **Inclusão:** O `SCRIPT_GLOSSARY.md` foi adicionado à lista de leituras exigidas para manipulação de automações.
+
+**Matriz de Propagação:**
+- [x] AGENTS.md -> [Refinamento dos gatilhos semânticos e inclusão do SCRIPT_GLOSSARY]
+- [x] .context/maintenance/JOURNAL.md -> [Registro no diário]
+
+executor_context_id: architect-agent
+validator_context_id: user-request
+status: READY TO COMMIT
 - [x] **Manifesto Raiz:** Criado o `AGENTS.md` na raiz do projeto para servir como o Ponto de Entrada (Bootstrap) definitivo. Ele injeta as regras inquebráveis e garante que novos agentes leiam o `MASTER_FLOW.md` e os arquivos do `.context/brain/` imediatamente.
 
 **Matriz de Propagação:**

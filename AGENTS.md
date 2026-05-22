@@ -18,16 +18,18 @@ Antes de iniciar qualquer tarefa, planejamento ou alteração neste repositório
 
 ## 🧭 DIRETIVAS SECUNDÁRIAS (Leitura Sob Demanda)
 
-Para preservar sua janela de contexto, os fluxos específicos de governança estão modularizados. Você **DEVE** ler os arquivos abaixo sob demanda, dependendo da tarefa que for executar:
+Para preservar sua janela de contexto, os fluxos específicos de governança estão modularizados. Você **DEVE** ler os arquivos abaixo sob demanda, usando o gatilho correto para a sua tarefa atual:
 
-- **Vai modificar arquivos, atualizar o status ou realizar um commit?**
-  👉 LEIA: `.context/brain/FLOW_JOURNAL_SYNC.md` (A Constituição do Diário. Errar aqui é bloqueio na certa).
-- **Vai criar uma nova funcionalidade do zero?**
-  👉 LEIA: `.context/brain/FLOW_SDD.md` (Spec-Driven Development).
-- **A tarefa envolve dependências ou afeta a arquitetura?**
-  👉 LEIA: `.context/brain/FLOW_PROPAGATION.md` e o `FILE_GLOSSARY.md`.
-- **Precisa buscar documentação ou contexto histórico do projeto?**
-  👉 LEIA: `.context/brain/FLOW_WIKI_ORACLE.md`.
+- **Se a tarefa envolver alterar código, relatar status ou criar um commit:**
+  👉 LEIA: `.context/brain/FLOW_JOURNAL_SYNC.md` (A Constituição do Diário. Contém as regras do SAM para não ser bloqueado no commit).
+- **Se a tarefa envolver iniciar ou planejar uma nova funcionalidade (Features):**
+  👉 LEIA: `.context/brain/FLOW_SDD.md` (Framework de Spec-Driven Development. Regras de como criar specs e chains de execução).
+- **Se a tarefa envolver alterar a arquitetura, gerenciar dependências ou entender a estrutura de pastas:**
+  👉 LEIA: `.context/brain/FLOW_PROPAGATION.md` e `.context/brain/FILE_GLOSSARY.md` (Mapeamento de dependências e dicionário oficial de arquivos).
+- **Se a tarefa envolver executar automações, invocar ferramentas ou modificar scripts do repositório:**
+  👉 LEIA: `.context/brain/SCRIPT_GLOSSARY.md` (Catálogo de todos os scripts Python de manutenção e governança).
+- **Se a tarefa envolver buscar documentação antiga, regras de negócio ou contexto histórico:**
+  👉 LEIA: `.context/brain/FLOW_WIKI_ORACLE.md` (Diretrizes de como pesquisar na base de conhecimento local).
 
 ---
 
