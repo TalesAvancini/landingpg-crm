@@ -3,12 +3,12 @@
 
 ---
 schema_version: 1
-generated_at: 2026-05-22T17:35:38.346166+00:00
+generated_at: 2026-05-22T17:56:24.691405+00:00
 root: template_inicío_de_projeto
 mode: full | TOC
 profile: ai-default
 file_count: 120
-byte_count: 794892
+byte_count: 797522
 ignored_dirs:
   - .cache
   - .cursor

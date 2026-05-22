@@ -992,3 +992,6 @@ Status: Ativo
 
 [FATAL] Modo STRICT: Pipeline bloqueado.
 
+
+## [HARNESS-PASS] Report | spec:blast_radius_mvp
+- **Detalhe:** All contracts valid

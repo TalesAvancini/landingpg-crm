@@ -1,14 +1,7 @@
 ---
-status: ❌ FAILED
-updated: 2026-05-22 14:55
-detail: journal_sam: Violações SAM detectadas.
-🤖 Iniciando Auditoria Anti-Migué (SAM)...
-
-❌ VIOLAÇÕES DETECTADAS:
-  - Modificação Silenciosa: Arquivo '.specs/features/blast_radius_mvp/STATE.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
-
-[FATAL] Modo STRICT: Pipeline bloqueado.
-
+status: ✅ PASSED
+updated: 2026-05-22 14:56
+detail: All checks passed
 ---
 
 # STATE: Blast Radius MVP
@@ -25,7 +18,7 @@ start_hash: 6bf56fe16c6f5c0ee7b6b43ab196389825916917
 status: PASSED
 impact_snapshot:
   files_changed: 179
-  churn_added: 38084
+  churn_added: 38096
   churn_removed: 657
 qa_checkpoint:
   signed: true
