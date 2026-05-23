@@ -119,6 +119,7 @@ Status: Ativo
 | `subagents/spec-driver.md` | **Executor Determinístico.** Subagente orquestrador da Chain-Skills V3. Executa as 9 skills em sequência rígida (Fail-Closed). | IA Orquestradora |
 | `subagents/qa-validator.md` | **Padrão B de Subagente.** Validador Físico. Subagente que é invocado de forma autônoma (Zero Trust) para ler Diffs, Specs e autorizar o commit. | IA Orquestradora |
 | `subagents/readme_chain_SDD.md` | **Padrão C de Subagente.** Especialista em documentação. Mantém os metadados externos e READMEs alinhados com o estado do sistema. | IA Orquestradora |
+| `subagents/propagation-auditor.md` | **Padrão D de Subagente.** Cirurgião Topológico. Lê diffs e atualiza mapas de arquitetura (Handoff de Propagação). | IA Orquestradora |
 | `skills/methodical_writer.json` | **Restrição de Ferramentas.** Configuração de permissões estritas e limites para a Skill 6 (Escrita Cirúrgica). | `@spec-driver` |
 | `skills/journal-sync/SKILL.md` | **Orquestrador de Acoplamento.** Sincroniza o Journal e propaga alterações via Blast Radius autonômico. | `@antigravity` |
 | `skills/hok-governor/SKILL.md` | **Governador de Conduta.** Baseline de senso comum e travas de segurança contra alucinações e loops. | `@antigravity` |

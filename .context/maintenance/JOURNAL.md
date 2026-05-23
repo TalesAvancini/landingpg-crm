@@ -7,6 +7,25 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260522_1430
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+## 📅 2026-05-22 22:50 | 🏗️ Arquitetura: Handoff de Propagação (Anti-Efeito Carimbo) #Architecture #Agents #Skills #Roles
+**Estado Atual:**
+- [x] **Git Save Point:** Tag `save-point-journal-sync-v1` gerada com sucesso antes das modificações.
+- [x] **Subagente Criado:** `.agent/subagents/propagation-auditor.md` instanciado com uma Cadeia de Ação Determinística de 4 passos para mapear diffs em topologias sem alucinação.
+- [x] **Agent Registry:** `@propagation-auditor` registrado oficialmente no `AGENT_REGISTRY.md` como "Cirurgião Topológico".
+- [x] **Refatoração do Journal Sync:** Injetada a *Heurística de Delegação* na skill `journal-sync`. O Orquestrador agora é forçado a invocar o auditor via handoff se o Blast Radius for originado de Spec E apontar >3 arquivos estruturais.
+
+**Matriz de Propagação:**
+- [x] .agent/subagents/propagation-auditor.md -> [Criação do Agente]
+- [x] .context/brain/AGENT_REGISTRY.md -> [Registro do Agente]
+- [x] .agent/skills/journal-sync/SKILL.md -> [Heurística de Handoff injetada]
+- [x] .context/brain/FILE_GLOSSARY.md -> [Propagação de Registro de Arquivo]
+- [x] .context/brain/SCRIPT_GLOSSARY.md -> [Propagação Forçada por Governança]
+- [x] .context/maintenance/JOURNAL.md -> [Registro Arquitetural]
+
+executor_context_id: architect-agent
+validator_context_id: flow-auditor
+status: READY TO COMMIT
+
 ## 📅 2026-05-22 22:04 | 🏗️ Skills: Refatoração completa da persona do hok-governor #Skills #Governance #Refactor
 **Estado Atual:**
 - [x] **Ajuste de Tom:** Transição da persona de "Ditador Zero-Trust" para "Arquiteto Sênior Colaborativo", alinhando as exigências ao respeito pelo usuário.

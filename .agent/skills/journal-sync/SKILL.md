@@ -45,12 +45,22 @@ You are an authoritative Governance Enforcement Agent. Your objective is to phys
 5. **Fallback:** Se `blast_radius.py` retornar exit ≠ 0, ler `rx-communications.md` manualmente (fluxo legado) e registrar no Journal que modo degradado foi usado.
 
 
-### Step 3: Autonomic Cascade Execution (Power Mode)
-1. Execute edições APENAS nos arquivos que passaram no Raciocínio Recursivo do Step 2.
-2. **Execute the code edit immediately** using `multi_replace_file_content`.
-3. If a script in `.context/_scripts/` is affected, modify it immediately.
-4. If a new file was created under `.context/`, update `FILE_GLOSSARY.md` (regra `new_context_path` do `JOURNAL_SYNAPSE.md`).
-5. Continue recursively until all downstream files are synchronized.
+### Step 3: Autonomic Cascade Execution ou Delegação (A Heurística de Propagação)
+O Orquestrador não deve fazer "Efeito Carimbo". Se a mudança for profunda, delegue.
+
+1. **Checagem de Heurística (O Threshold):**
+   Avalie os seguintes pontos sobre a sua execução atual:
+   - A alteração que gerou o Sync originou-se de uma Spec (`.specs/features/`)?
+   - O número de arquivos que exigem propagação (buckets `must_update` ou confirmados pelo Raciocínio Recursivo) é **MAIOR QUE 3**?
+2. **Se SIM para ambos (Handoff Obrigatório):**
+   - **PARE.** Você é proibido de fazer as edições arquiteturais físicas. A carga cognitiva é muito alta.
+   - Utilize a ferramenta `invoke_subagent` para chamar o `@propagation-auditor`.
+   - Passe para ele o Output do `blast_radius.py` e ordene: *"Execute as edições físicas nos arquivos de arquitetura baseando-se no diff"*.
+   - Aguarde o retorno dele para assinar o Journal.
+3. **Se NÃO (Execução Leve):**
+   - Você assume a responsabilidade. Execute a edição do código nos arquivos confirmados usando `multi_replace_file_content`.
+   - Se um script for afetado, mude-o. Se um novo arquivo nascer no `.context/`, edite o `FILE_GLOSSARY.md`.
+   - Continue recursivamente.
 
 ### Step 4: Final Integrity Guard (Self-Correction Loop)
 1. **Re-Verification:** Run `git status --porcelain` one last time. 

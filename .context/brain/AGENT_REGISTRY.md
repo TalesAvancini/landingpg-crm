@@ -42,6 +42,7 @@ Status: Ativo
 | `@gov-friction-analyst` | Diagnóstico de atrito de governança e filtragem de overkill | `.agent/skills/gov-friction-analyst/`, `maintenance/JOURNAL.md` (Checklist de Propagação) | 9 arquivos core (MASTER_FLOW, RULES, etc.), `SSD_ERRORS_LEDGER.md`, `AGENT_SCRATCHPAD.md` | "analise as dores do executor", "resolva bloqueios do gatekeeper", "diagnostique falhas" |
 | `@closure-thinker` | Síntese de fechamento analítica e rastreabilidade de origem | `.agent/skills/closure-thinker/`, `CLOSURE.md` | `spec.md`, `STATE.md`, `JOURNAL.md`, `.git/diff` | "gere o closure", "audite a entrega final", "extraia cicatrizes da feature" |
 | `@sdd-orchestrator` | Orquestração do ciclo de vida SDD (Blast Radius, Spec Draft, Handoff) | `.specs/features/`, `.agent/skills/sdd-orchestrator/` | `brain/FLOW_SDD.md`, `maintenance/rx-communications.md`, `brain/RULES.md` | "start SDD", "start a feature", "write a spec", "nova feature" |
+| `@propagation-auditor` | Cirurgião Topológico para "Handoff de Propagação". Aplica os diffs aos mapas arquiteturais | `.context/monitoring/`, `.context/brain/FILE_GLOSSARY.md`, etc. (Apenas Docs de Gov) | `blast_radius.py output`, `.git/diff`, `rx-communications.md` | "propague a arquitetura", "inicie o handoff de propagação", "atualize o project index" |
 
 > [!IMPORTANT]
 > **Diretriz Operacional (@gov-friction-analyst):**
