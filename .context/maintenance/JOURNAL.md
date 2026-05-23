@@ -8,6 +8,22 @@ Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260522_1430
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-23 17:42 | 🏛️ Arquitetura: Sincronização de Glossário e Regra de Ouro 5 #Architecture #Governance #Refactor
+**Estado Atual:**
+- [x] **Expurgo do Glossário:** Removidas todas as referências ao falecido `PROMPT_LIBRARY.md` do `FILE_GLOSSARY.md` e do `rx-communications.md`.
+- [x] **Regra de Ouro 5:** Injetada a regra de *Sincronia de Glossário (Blast Radius Manual)* no manifesto base `AGENTS.md` para evitar referências fantasmas em remoções futuras.
+- [x] **Grafo Atualizado:** Grafo local regerado com sucesso via `graphify update .`.
+
+**Matriz de Propagação:**
+- [x] AGENTS.md -> [Injeção da Regra 5]
+- [x] .context/brain/FILE_GLOSSARY.md -> [Remoção do PROMPT_LIBRARY.md]
+- [x] .context/maintenance/rx-communications.md -> [Remoção do PROMPT_LIBRARY.md]
+- [x] .context/maintenance/JOURNAL.md -> [Registro Arquitetural]
+
+executor_context_id: architect-agent
+validator_context_id: user-request
+status: READY TO COMMIT
+
 ## 📅 2026-05-23 16:36 | 🏛️ Arquitetura: Lipoaspiração do MASTER_FLOW e Resgate de Skills #Architecture #Governance #Refactor
 **Estado Atual:**
 - [x] **Expurgo Seguro:** O `PROMPT_LIBRARY.md` foi oficialmente deletado do repositório por obsolescência.

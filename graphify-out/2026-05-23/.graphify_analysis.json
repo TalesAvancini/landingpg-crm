@@ -1,0 +1,790 @@
+{
+  "communities": {
+    "0": [
+      "harness_runner_script",
+      "hok_governor_skill",
+      "master_flow",
+      "readme_antigravity_kit",
+      "readme_context_chain_skills",
+      "rules_master",
+      "scripts_harness_runner_check_enrichment_integrity",
+      "scripts_harness_runner_check_epistemological_gate",
+      "scripts_harness_runner_check_handoff_integrity",
+      "scripts_harness_runner_check_impact_radius",
+      "scripts_harness_runner_check_journal_sam",
+      "scripts_harness_runner_check_schema_contract",
+      "scripts_harness_runner_check_sprint_contract",
+      "scripts_harness_runner_check_strategic_alignment",
+      "scripts_harness_runner_get_diff_stats",
+      "scripts_harness_runner_get_inception_status",
+      "scripts_harness_runner_get_modified_files",
+      "scripts_harness_runner_log_harness",
+      "scripts_harness_runner_main",
+      "scripts_harness_runner_rationale_101",
+      "scripts_harness_runner_rationale_171",
+      "scripts_harness_runner_rationale_182",
+      "scripts_harness_runner_rationale_193",
+      "scripts_harness_runner_rationale_220",
+      "scripts_harness_runner_rationale_303",
+      "scripts_harness_runner_rationale_328",
+      "scripts_harness_runner_rationale_34",
+      "scripts_harness_runner_rationale_372",
+      "scripts_harness_runner_rationale_420",
+      "scripts_harness_runner_rationale_443",
+      "scripts_harness_runner_rationale_501",
+      "scripts_harness_runner_rationale_515",
+      "scripts_harness_runner_rationale_56",
+      "scripts_harness_runner_update_sprint_state",
+      "scripts_harness_runner_update_state_md",
+      "scripts_harness_runner_validate_sprint_contract",
+      "scripts_harness_runner_validate_standard_contract",
+      "spec_driver_subagent"
+    ],
+    "1": [
+      "package_json",
+      "template_inic\u00edo_de_projeto_package_author",
+      "template_inic\u00edo_de_projeto_package_description",
+      "template_inic\u00edo_de_projeto_package_devdependencies",
+      "template_inic\u00edo_de_projeto_package_devdependencies_husky",
+      "template_inic\u00edo_de_projeto_package_keywords",
+      "template_inic\u00edo_de_projeto_package_license",
+      "template_inic\u00edo_de_projeto_package_name",
+      "template_inic\u00edo_de_projeto_package_scripts",
+      "template_inic\u00edo_de_projeto_package_scripts_context_affinity",
+      "template_inic\u00edo_de_projeto_package_scripts_context_all",
+      "template_inic\u00edo_de_projeto_package_scripts_context_bundle",
+      "template_inic\u00edo_de_projeto_package_scripts_context_capture",
+      "template_inic\u00edo_de_projeto_package_scripts_context_check_migrations",
+      "template_inic\u00edo_de_projeto_package_scripts_context_check_version",
+      "template_inic\u00edo_de_projeto_package_scripts_context_cleanup",
+      "template_inic\u00edo_de_projeto_package_scripts_context_enrich",
+      "template_inic\u00edo_de_projeto_package_scripts_context_harness",
+      "template_inic\u00edo_de_projeto_package_scripts_context_health",
+      "template_inic\u00edo_de_projeto_package_scripts_context_ingest_guard",
+      "template_inic\u00edo_de_projeto_package_scripts_context_inject",
+      "template_inic\u00edo_de_projeto_package_scripts_context_learnings",
+      "template_inic\u00edo_de_projeto_package_scripts_context_learnings_triage",
+      "template_inic\u00edo_de_projeto_package_scripts_context_lint",
+      "template_inic\u00edo_de_projeto_package_scripts_context_lint_strict",
+      "template_inic\u00edo_de_projeto_package_scripts_context_map",
+      "template_inic\u00edo_de_projeto_package_scripts_context_purge",
+      "template_inic\u00edo_de_projeto_package_scripts_context_scan_secrets",
+      "template_inic\u00edo_de_projeto_package_scripts_context_sync",
+      "template_inic\u00edo_de_projeto_package_scripts_context_test",
+      "template_inic\u00edo_de_projeto_package_scripts_context_validate",
+      "template_inic\u00edo_de_projeto_package_scripts_context_wiki_health",
+      "template_inic\u00edo_de_projeto_package_scripts_context_workflow_journal",
+      "template_inic\u00edo_de_projeto_package_scripts_prepare",
+      "template_inic\u00edo_de_projeto_package_version"
+    ],
+    "2": [
+      "tests_test_oracle_py",
+      "tests_test_oracle_rationale_105",
+      "tests_test_oracle_rationale_114",
+      "tests_test_oracle_rationale_120",
+      "tests_test_oracle_rationale_128",
+      "tests_test_oracle_rationale_148",
+      "tests_test_oracle_rationale_55",
+      "tests_test_oracle_rationale_62",
+      "tests_test_oracle_rationale_68",
+      "tests_test_oracle_rationale_75",
+      "tests_test_oracle_rationale_81",
+      "tests_test_oracle_rationale_93",
+      "tests_test_oracle_rationale_99",
+      "tests_test_oracle_testoraclev3",
+      "tests_test_oracle_testoraclev3_create_article",
+      "tests_test_oracle_testoraclev3_setup",
+      "tests_test_oracle_testoraclev3_teardown",
+      "tests_test_oracle_testoraclev3_test_accent_normalization",
+      "tests_test_oracle_testoraclev3_test_aliases_indexed",
+      "tests_test_oracle_testoraclev3_test_basic_query_returns_result",
+      "tests_test_oracle_testoraclev3_test_confidence_calibrated",
+      "tests_test_oracle_testoraclev3_test_empty_query_returns_missing",
+      "tests_test_oracle_testoraclev3_test_index_file_is_read",
+      "tests_test_oracle_testoraclev3_test_json_output_is_valid",
+      "tests_test_oracle_testoraclev3_test_known_term_finds_correct_file",
+      "tests_test_oracle_testoraclev3_test_markdown_in_query",
+      "tests_test_oracle_testoraclev3_test_siglas_2_chars",
+      "tests_test_oracle_testoraclev3_test_stem_converges",
+      "tests_test_oracle_testoraclev3_test_top_n_graduated"
+    ],
+    "3": [
+      "context_health_dashboard",
+      "scripts_validate_context_check_atomic_transition",
+      "scripts_validate_context_check_files",
+      "scripts_validate_context_check_journal_chronology",
+      "scripts_validate_context_check_journal_lines",
+      "scripts_validate_context_check_metadata_freshness",
+      "scripts_validate_context_check_registry_structure",
+      "scripts_validate_context_check_specs_structure",
+      "scripts_validate_context_check_sprint_acceptance_sync",
+      "scripts_validate_context_check_state_freshness",
+      "scripts_validate_context_check_wiki_integrity",
+      "scripts_validate_context_estimate_tokens",
+      "scripts_validate_context_extract_header_update",
+      "scripts_validate_context_get_inception_metadata",
+      "scripts_validate_context_is_non_initial_context",
+      "scripts_validate_context_log_friction",
+      "scripts_validate_context_normalize_sprint_label",
+      "scripts_validate_context_rationale_142",
+      "scripts_validate_context_rationale_158",
+      "scripts_validate_context_rationale_186",
+      "scripts_validate_context_rationale_230",
+      "scripts_validate_context_rationale_274",
+      "scripts_validate_context_rationale_317",
+      "scripts_validate_context_rationale_334",
+      "scripts_validate_context_rationale_349",
+      "scripts_validate_context_rationale_98",
+      "scripts_validate_context_validate",
+      "validate_context_script"
+    ],
+    "4": [
+      "context_scripts_project_bundler_py",
+      "scripts_project_bundler_bundleconfig",
+      "scripts_project_bundler_chunk",
+      "scripts_project_bundler_chunk_content",
+      "scripts_project_bundler_classify_domain",
+      "scripts_project_bundler_collect_files",
+      "scripts_project_bundler_extract_imports",
+      "scripts_project_bundler_extract_symbols",
+      "scripts_project_bundler_filerecord",
+      "scripts_project_bundler_generate_context_markdown",
+      "scripts_project_bundler_get_dynamic_filename",
+      "scripts_project_bundler_is_sensitive_file",
+      "scripts_project_bundler_is_text_file",
+      "scripts_project_bundler_main",
+      "scripts_project_bundler_make_file_id",
+      "scripts_project_bundler_mask_sensitive",
+      "scripts_project_bundler_mode_name",
+      "scripts_project_bundler_parse_args",
+      "scripts_project_bundler_pick_fence",
+      "scripts_project_bundler_render_file_record",
+      "scripts_project_bundler_render_frontmatter",
+      "scripts_project_bundler_render_imports",
+      "scripts_project_bundler_render_index_by_domain",
+      "scripts_project_bundler_render_index_by_path",
+      "scripts_project_bundler_render_symbols",
+      "scripts_project_bundler_should_include_profile",
+      "scripts_project_bundler_write_output"
+    ],
+    "5": [
+      "agent_registry",
+      "flash_journal_sync_guard",
+      "flow_journal_sync",
+      "gov_friction_analyst_skill",
+      "inception",
+      "journal_maintenance",
+      "journal_md",
+      "journal_sync_skill",
+      "orquestrador_sdd_rules",
+      "qa_validator_subagent",
+      "rx_communications",
+      "rx_sam_audit_sam",
+      "scripts_workflow_journal_auditor_audit",
+      "scripts_workflow_journal_auditor_get_git_state",
+      "scripts_workflow_journal_auditor_get_latest_journal_entry",
+      "scripts_workflow_journal_auditor_get_synapse_rules",
+      "scripts_workflow_journal_auditor_rationale_21",
+      "scripts_workflow_journal_auditor_rationale_51",
+      "scripts_workflow_journal_auditor_rationale_66",
+      "start_here",
+      "workflow_journal_auditor_py"
+    ],
+    "6": [
+      "harness_registry",
+      "harness_runner_py",
+      "inject_learnings_py",
+      "mimo_memory",
+      "readme_chain_sdd",
+      "sam_auditor",
+      "scripts_inject_learnings_get_active_features",
+      "scripts_inject_learnings_inject_to_feature",
+      "scripts_inject_learnings_main",
+      "scripts_inject_learnings_parse_learnings_md",
+      "scripts_inject_learnings_rank_scars_by_relevance",
+      "scripts_inject_learnings_rationale_25",
+      "scripts_inject_learnings_rationale_38",
+      "scripts_inject_learnings_rationale_71",
+      "scripts_inject_learnings_rationale_92",
+      "ssd_errors_ledger",
+      "ssd_playbook_md",
+      "write_with_validation_py"
+    ],
+    "7": [
+      "tests_test_context_py",
+      "tests_test_context_rationale_101",
+      "tests_test_context_rationale_60",
+      "tests_test_context_rationale_68",
+      "tests_test_context_rationale_82",
+      "tests_test_context_rationale_91",
+      "tests_test_context_testcontextgovernance",
+      "tests_test_context_testcontextgovernance_run_script",
+      "tests_test_context_testcontextgovernance_setup",
+      "tests_test_context_testcontextgovernance_teardown",
+      "tests_test_context_testcontextgovernance_test_dirty_draft",
+      "tests_test_context_testcontextgovernance_test_onboarding_draft",
+      "tests_test_context_testcontextgovernance_test_purge_journal",
+      "tests_test_context_testcontextgovernance_test_sync_project",
+      "tests_test_context_testcontextgovernance_test_translation_lock",
+      "tests_test_context_testcontextgovernance_test_translation_pending",
+      "tests_test_context_testcontextgovernance_test_validate_integrity",
+      "tests_test_context_testcontextgovernance_test_validate_missing_file"
+    ],
+    "8": [
+      "affinity_lite_script",
+      "journal_journal",
+      "journal_synapse_rules",
+      "purge_journal_script",
+      "rx_biology_metabolism",
+      "rx_communications_map",
+      "rx_learnings_framework",
+      "scripts_affinity_lite_affinitylite_calculate_jaccard",
+      "scripts_affinity_lite_affinitylite_find_references",
+      "scripts_affinity_lite_affinitylite_generate_reports",
+      "scripts_affinity_lite_affinitylite_get_git_history",
+      "scripts_affinity_lite_affinitylite_init",
+      "scripts_affinity_lite_affinitylite_load_files",
+      "scripts_affinity_lite_affinitylite_log",
+      "scripts_affinity_lite_affinitylite_run_analysis",
+      "scripts_purge_journal_parse_entries"
+    ],
+    "9": [
+      "context_scripts_health_sync_py",
+      "context_scripts_sync_project_py",
+      "context_scripts_tz_utils_py",
+      "scripts_health_sync_count_journal_metrics",
+      "scripts_health_sync_count_pending_migrations",
+      "scripts_health_sync_count_schema_tables",
+      "scripts_health_sync_estimate_tokens",
+      "scripts_health_sync_update_dashboard",
+      "scripts_sync_project_get_package_deps",
+      "scripts_sync_project_get_schema_tables",
+      "scripts_sync_project_sync_requirements",
+      "scripts_tz_utils_format_ts",
+      "scripts_tz_utils_get_now_tz",
+      "scripts_tz_utils_rationale_23",
+      "scripts_tz_utils_rationale_29"
+    ],
+    "10": [
+      "affinity_scanner_affinity_scanner",
+      "harness_engineering_manifesto_doc",
+      "mimo_learnings_consolidado_learnings",
+      "plan_hok_advanced_security_and_db_secrets_scanner",
+      "plano_consolidado_oracle_v3_oracle_v3",
+      "plano_ultra_completo_implantacao_synapse_workflow_journal_flash_harness_runner",
+      "plano_ultra_completo_implantacao_synapse_workflow_journal_flash_journal_synapse",
+      "plano_ultra_completo_implantacao_synapse_workflow_journal_flash_run_context",
+      "plano_ultra_completo_implantacao_synapse_workflow_journal_flash_workflow_journal",
+      "plano_workflow_journal_sam_completo_sam",
+      "ralph_wiggum_loop_dossier_doc",
+      "roadmap_reactive_hok_v2_v3_health_sync",
+      "walkthrough_hok_triad_oracle"
+    ],
+    "11": [
+      "context_oracle_py",
+      "flow_wiki_oracle",
+      "scripts_context_oracle_append_to_wiki_log",
+      "scripts_context_oracle_build_index",
+      "scripts_context_oracle_load_index_file",
+      "scripts_context_oracle_normalize_text",
+      "scripts_context_oracle_query_oracle",
+      "scripts_context_oracle_rationale_114",
+      "scripts_context_oracle_rationale_33",
+      "scripts_context_oracle_rationale_42",
+      "scripts_context_oracle_rationale_46",
+      "scripts_context_oracle_simple_stem"
+    ],
+    "12": [
+      "tests_test_affinity_lite_calculate_jaccard",
+      "tests_test_affinity_lite_find_references",
+      "tests_test_affinity_lite_py",
+      "tests_test_affinity_lite_rationale_13",
+      "tests_test_affinity_lite_rationale_5",
+      "tests_test_affinity_lite_testaffinitylogic",
+      "tests_test_affinity_lite_testaffinitylogic_test_jaccard_full_match",
+      "tests_test_affinity_lite_testaffinitylogic_test_jaccard_no_match",
+      "tests_test_affinity_lite_testaffinitylogic_test_jaccard_partial_match",
+      "tests_test_affinity_lite_testaffinitylogic_test_reference_case_insensitive",
+      "tests_test_affinity_lite_testaffinitylogic_test_reference_found",
+      "tests_test_affinity_lite_testaffinitylogic_test_reference_word_boundary"
+    ],
+    "13": [
+      "harness_behavior_concept",
+      "ralph_wiggum_loop_concept",
+      "rules_brain",
+      "scripts_write_with_validation_rationale_18",
+      "scripts_write_with_validation_validate_write",
+      "spec_driver_agent",
+      "spec_melhoria_spec_driver",
+      "spec_v3_template",
+      "ssd_playbook",
+      "state_melhoria_spec_driver",
+      "tasks_melhoria_spec_driver",
+      "write_with_validation_script"
+    ],
+    "14": [
+      "context_scripts_learnings_aggregator_py",
+      "scripts_learnings_aggregator_calculate_score",
+      "scripts_learnings_aggregator_generate_learnings_md",
+      "scripts_learnings_aggregator_main",
+      "scripts_learnings_aggregator_rationale_117",
+      "scripts_learnings_aggregator_rationale_29",
+      "scripts_learnings_aggregator_rationale_76",
+      "scripts_learnings_aggregator_rationale_92",
+      "scripts_learnings_aggregator_safe_parse_harness_log",
+      "scripts_learnings_aggregator_safe_parse_ledger"
+    ],
+    "15": [
+      "context_scripts_enrich_context_py",
+      "scripts_enrich_context_check_market_coverage",
+      "scripts_enrich_context_get_inception_status",
+      "scripts_enrich_context_main",
+      "scripts_enrich_context_rationale_30",
+      "scripts_enrich_context_rationale_55",
+      "scripts_enrich_context_rationale_78",
+      "scripts_enrich_context_scan_entities",
+      "scripts_enrich_context_update_inbox"
+    ],
+    "16": [
+      "context_maintenance_rx_affinity_lite_json",
+      "maintenance_rx_affinity_lite_results",
+      "maintenance_rx_affinity_lite_run_id",
+      "maintenance_rx_affinity_lite_stats",
+      "maintenance_rx_affinity_lite_stats_dead_refs",
+      "maintenance_rx_affinity_lite_stats_ghosts",
+      "maintenance_rx_affinity_lite_stats_healthy",
+      "maintenance_rx_affinity_lite_stats_processed",
+      "maintenance_rx_affinity_lite_timestamp"
+    ],
+    "17": [
+      "agent_registry_agent_registry",
+      "governance_rules_hardening_spec",
+      "qa_validator_qa_validator",
+      "rules_rules",
+      "script_glossary_script_glossary",
+      "sdd_errors_ledger_sdd_errors_ledger",
+      "sdd_playbook_sdd_playbook",
+      "sdd_report_sdd_report",
+      "spec_driver_spec_driver"
+    ],
+    "18": [
+      "agent_skills_methodical_writer_json",
+      "skills_methodical_writer_description",
+      "skills_methodical_writer_name",
+      "skills_methodical_writer_parameters",
+      "skills_methodical_writer_parameters_content",
+      "skills_methodical_writer_parameters_file_path",
+      "skills_methodical_writer_parameters_task_id",
+      "skills_methodical_writer_task_id_required",
+      "skills_methodical_writer_task_id_type"
+    ],
+    "19": [
+      "context_scripts_lint_wiki_py",
+      "scripts_lint_wiki_append_to_wiki_log",
+      "scripts_lint_wiki_check_wiki",
+      "scripts_lint_wiki_find_raw_sources",
+      "scripts_lint_wiki_rationale_34",
+      "scripts_lint_wiki_rationale_39",
+      "scripts_lint_wiki_rationale_52",
+      "scripts_lint_wiki_suggest_source"
+    ],
+    "20": [
+      "tests_test_learnings_py",
+      "tests_test_learnings_rationale_20",
+      "tests_test_learnings_rationale_37",
+      "tests_test_learnings_rationale_49",
+      "tests_test_learnings_testmimomemory",
+      "tests_test_learnings_testmimomemory_test_decay_logic",
+      "tests_test_learnings_testmimomemory_test_harness_frequency_bonus",
+      "tests_test_learnings_testmimomemory_test_relevance_ranking"
+    ],
+    "21": [
+      "init_ai_project_sh",
+      "template_inic\u00edo_de_projeto_init_ai_project_check_deps",
+      "template_inic\u00edo_de_projeto_init_ai_project_detect_pkg_mgr",
+      "template_inic\u00edo_de_projeto_init_ai_project_error",
+      "template_inic\u00edo_de_projeto_init_ai_project_log",
+      "template_inic\u00edo_de_projeto_init_ai_project_success",
+      "template_inic\u00edo_de_projeto_init_ai_project_warn"
+    ],
+    "22": [
+      "context_scripts_cleanup_specs_py",
+      "scripts_cleanup_specs_archive_spec",
+      "scripts_cleanup_specs_cleanup",
+      "scripts_cleanup_specs_get_specs",
+      "scripts_cleanup_specs_is_protected",
+      "scripts_cleanup_specs_rationale_40"
+    ],
+    "23": [
+      "context_scripts_ingest_wiki_guard_py",
+      "scripts_ingest_wiki_guard_append_to_wiki_log",
+      "scripts_ingest_wiki_guard_main",
+      "scripts_ingest_wiki_guard_rationale_48",
+      "scripts_ingest_wiki_guard_rebuild_index_atomic",
+      "scripts_ingest_wiki_guard_validate_article"
+    ],
+    "24": [
+      "mudanca_specdriven_contract_sprints",
+      "plano_coreografia_multi_agent_hub_spoke",
+      "plano_governance_rules_hardening_governance",
+      "plano_v2_caminho_seguro_falsh_safe_path",
+      "template_base_v2_3_1_rules"
+    ],
+    "25": [
+      "run_context_py",
+      "template_inic\u00edo_de_projeto_run_context_get_inception_status",
+      "template_inic\u00edo_de_projeto_run_context_main",
+      "template_inic\u00edo_de_projeto_run_context_rationale_52",
+      "template_inic\u00edo_de_projeto_run_context_run_script"
+    ],
+    "26": [
+      "context_health_yml",
+      "harness_log",
+      "prompt_library",
+      "secrets_scanner_py",
+      "validate_context_py"
+    ],
+    "27": [
+      "auditoria_mimo_plano_consolidado_auditoria",
+      "learnings_mimo_v2_learnings",
+      "log_planos_log",
+      "plano_consolidado_oracle_v3_plano"
+    ],
+    "28": [
+      "context_scripts_check_version_consistency_py",
+      "scripts_check_version_consistency_get_ssot_version",
+      "scripts_check_version_consistency_normalize_version",
+      "scripts_check_version_consistency_validate_targets"
+    ],
+    "29": [
+      "context_maintenance_version_targets_json",
+      "maintenance_version_targets_ssot",
+      "maintenance_version_targets_targets"
+    ],
+    "30": [
+      "context_scripts_wiki_log_utils_py",
+      "scripts_wiki_log_utils_append_to_wiki_log",
+      "scripts_wiki_log_utils_rationale_17"
+    ],
+    "31": [
+      "plan_inception_final_v2_4_inception",
+      "plan_inception_final_v2_4_market",
+      "plan_spec_enricher_v2_4_1_spec_enricher"
+    ],
+    "32": [
+      "context_scripts_validate_commit_msg_py",
+      "scripts_validate_commit_msg_main",
+      "scripts_validate_commit_msg_validate"
+    ],
+    "33": [
+      "template_base_v2_3_1_run_context",
+      "template_base_v2_3_1_validate_context",
+      "walkthrough_hok_triad_walkthrough"
+    ],
+    "34": [
+      "agent_scratchpad_template",
+      "learnings"
+    ],
+    "35": [
+      "context_scripts_migration_registry_py",
+      "scripts_migration_registry_validate"
+    ],
+    "36": [
+      "context_scripts_oracle_analytics_py",
+      "scripts_oracle_analytics_parse_logs"
+    ],
+    "37": [
+      "afinnity_affinity_scanner",
+      "coupling_matrix_system_coupling"
+    ],
+    "38": [
+      "flow_sdd",
+      "tlc_integration"
+    ],
+    "39": [
+      "learnings_brain",
+      "spec_systemic_vaccination"
+    ],
+    "40": [
+      "regras_roteadas",
+      "rx_affinity_lite"
+    ],
+    "41": [
+      "chain_skills_v3_chain_skills",
+      "write_with_validation_write_with_validation"
+    ],
+    "42": [
+      "husky_husky_sh"
+    ],
+    "43": [
+      "roadmap_reactive_hok_v2_v3_roadmap"
+    ],
+    "44": [
+      "template_base_v2_3_1_templates"
+    ],
+    "45": [
+      "guia_estabilizacao_notebooklm_mcp"
+    ],
+    "46": [
+      "template_migration_guide"
+    ],
+    "47": [
+      "version_antigravity"
+    ],
+    "48": [
+      "readme_subagents_firmwares"
+    ],
+    "49": [
+      "graphify_rules"
+    ],
+    "50": [
+      "sobriedade_operacional_rules"
+    ],
+    "51": [
+      "closure_thinker_skill"
+    ],
+    "52": [
+      "file_glossary"
+    ],
+    "53": [
+      "script_glossary"
+    ],
+    "54": [
+      "rx_anatomy_structure"
+    ],
+    "55": [
+      "rx_repositorio_overview"
+    ],
+    "56": [
+      "ssot_map_router"
+    ],
+    "57": [
+      "governance_rules_hardening_design"
+    ],
+    "58": [
+      "state_systemic_vaccination"
+    ],
+    "59": [
+      "harness_architecture_concept"
+    ],
+    "60": [
+      "harness_maintainability_concept"
+    ],
+    "61": [
+      "closure_template"
+    ],
+    "62": [
+      "graphify_workflow"
+    ],
+    "63": [
+      "prd_template"
+    ],
+    "64": [
+      "roadmap"
+    ],
+    "65": [
+      "vision"
+    ],
+    "66": [
+      "architecture_pipeline"
+    ],
+    "67": [
+      "rebuild_guide"
+    ],
+    "68": [
+      "technical_requirements"
+    ],
+    "69": [
+      "tests_matrix"
+    ],
+    "70": [
+      "plan_hok_advanced_security_and_db_migration_registry"
+    ]
+  },
+  "cohesion": {
+    "0": 0.07681365576102418,
+    "1": 0.05714285714285714,
+    "2": 0.09359605911330049,
+    "3": 0.11904761904761904,
+    "4": 0.150997150997151,
+    "5": 0.11428571428571428,
+    "6": 0.1503267973856209,
+    "7": 0.16339869281045752,
+    "8": 0.19166666666666668,
+    "9": 0.2,
+    "10": 0.15384615384615385,
+    "11": 0.2878787878787879,
+    "12": 0.25757575757575757,
+    "13": 0.16666666666666666,
+    "14": 0.3111111111111111,
+    "15": 0.3333333333333333,
+    "16": 0.2222222222222222,
+    "17": 0.2222222222222222,
+    "18": 0.4166666666666667,
+    "19": 0.35714285714285715,
+    "20": 0.25,
+    "21": 0.38095238095238093,
+    "22": 0.5333333333333333,
+    "23": 0.5333333333333333,
+    "24": 0.4,
+    "25": 0.6,
+    "26": 0.4,
+    "27": 0.5,
+    "28": 0.6666666666666666,
+    "29": 0.6666666666666666,
+    "30": 0.6666666666666666,
+    "31": 0.6666666666666666,
+    "32": 1.0,
+    "33": 0.6666666666666666,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0,
+    "52": 1.0,
+    "53": 1.0,
+    "54": 1.0,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0
+  },
+  "gods": [
+    {
+      "id": "template_inic\u00edo_de_projeto_package_scripts",
+      "label": "scripts",
+      "degree": 27
+    },
+    {
+      "id": "tests_test_oracle_testoraclev3",
+      "label": "TestOracleV3",
+      "degree": 16
+    },
+    {
+      "id": "scripts_validate_context_validate",
+      "label": "validate()",
+      "degree": 15
+    },
+    {
+      "id": "scripts_project_bundler_collect_files",
+      "label": "collect_files()",
+      "degree": 13
+    },
+    {
+      "id": "scripts_harness_runner_main",
+      "label": "main()",
+      "degree": 12
+    },
+    {
+      "id": "tests_test_context_testcontextgovernance",
+      "label": "TestContextGovernance",
+      "degree": 12
+    },
+    {
+      "id": "scripts_project_bundler_generate_context_markdown",
+      "label": "generate_context_markdown()",
+      "degree": 9
+    },
+    {
+      "id": "workflow_journal_auditor_py",
+      "label": "workflow_journal_auditor.py (SAM)",
+      "degree": 9
+    },
+    {
+      "id": "scripts_tz_utils_format_ts",
+      "label": "format_ts()",
+      "degree": 7
+    },
+    {
+      "id": "tests_test_affinity_lite_testaffinitylogic",
+      "label": "TestAffinityLogic",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "System Anti-Migu\u00e9 (SAM)",
+      "target": "Harness Runner Script",
+      "source_files": [
+        ".specs/features/SSD_PLAYBOOK.md",
+        ".context/_scripts/harness_runner.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "implements",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code \u2194 doc); connects across different repos/directories"
+    },
+    {
+      "source": "MiMo Memory Injection",
+      "target": "Inject Learnings Script",
+      "source_files": [
+        ".specs/features/SSD_PLAYBOOK.md",
+        ".context/_scripts/inject_learnings.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "implements",
+      "why": "crosses file types (code \u2194 doc); connects across different repos/directories; peripheral node `MiMo Memory Injection` unexpectedly reaches hub `Inject Learnings Script`"
+    },
+    {
+      "source": "Context Health Check Workflow",
+      "target": "Validate Context Script",
+      "source_files": [
+        ".github/workflows/context-health.yml",
+        ".context/_scripts/validate_context.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "crosses file types (doc \u2194 code); connects across different repos/directories"
+    },
+    {
+      "source": "Context Health Check Workflow",
+      "target": "Secrets Scanner Script",
+      "source_files": [
+        ".github/workflows/context-health.yml",
+        ".context/_scripts/secrets_scanner.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "crosses file types (doc \u2194 code); connects across different repos/directories"
+    },
+    {
+      "source": "SSD-Chain Playbook",
+      "target": "Write with Validation Script",
+      "source_files": [
+        ".specs/features/SSD_PLAYBOOK.md",
+        ".context/_scripts/write_with_validation.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc \u2194 code); connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 236895,
+    "output": 10174
+  }
+}

@@ -149,9 +149,6 @@ Esta seção detalha o *blast radius* (raio de impacto) dos arquivos do ecossist
 - **`AGENT_REGISTRY.md`**
   - **Afeta:** O escopo de atuação de todas as IAs. Define quem pode editar qual arquivo.
   - **É Afetado Por:** Criação/Refatoração dos arquivos `.md` na pasta `.agent/`.
-- **`PROMPT_LIBRARY.md`**
-  - **Afeta:** Qualidade da interação e taxa de acerto do Orquestrador Humano.
-  - **É Afetado Por:** Aulas e adaptações práticas nos workflows.
 - **`START_HERE.md`**
   - **Afeta:** Curva de aprendizado de humanos que chegam ao projeto.
   - **É Afetado Por:** Refatorações pesadas no Córtex.
