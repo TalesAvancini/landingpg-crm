@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-05-01 00:51
-Ultima Atualizacao: 2026-05-07 23:30
+Ultima Atualizacao: 2026-05-24 17:20
 Status: Ativo
 ---
 
@@ -144,8 +144,17 @@ Esta seção detalha o *blast radius* (raio de impacto) dos arquivos do ecossist
   - **Afeta:** `spec-driver.md`, `qa-validator.md` (Guia o comportamento e a sequência de raciocínio lógico dos agentes).
   - **É Afetado Por:** `RULES.md`, `TLC_INTEGRATION.md`.
 - **`FLOW_PROPAGATION.md`**
-  - **Afeta:** Comportamento de qualquer Agente/Humano lidando com arquivos no repositório.
-  - **É Afetado Por:** `blast_radius.py`, `rx-communications.md`.
+  - **Afeta:** Comportamento de qualquer Agente/Humano lidando com arquivos no repositório. Orienta `semantic-propagation/SKILL.md` e `propagation-auditor.md`.
+  - **É Afetado Por:** `blast_radius.py`, `rx-communications.md`, `graphify explain`.
+- **`FLOW_SDD.md`**
+  - **Afeta:** Entendimento do processo SDD (9 arquivos). Referencia e documenta `spec-driver.md`, `qa-validator.md`, `spec_v3.md`, `SSD_PLAYBOOK.md`, `SSD_ERRORS_LEDGER.md`, `AGENT_SCRATCHPAD.md`.
+  - **É Afetado Por:** `sdd-orchestrator/SKILL.md`, `MASTER_FLOW.md`, `RULES.md`, `rx-communications.md`.
+- **`FLOW_JOURNAL_SYNC.md`**
+  - **Afeta:** Comportamento de agentes ao escrever no `JOURNAL.md`. Define a anatomia das entradas, regras do SAM e lógica de purge.
+  - **É Afetado Por:** `workflow_journal_auditor.py`, `purge_journal.py`, `JOURNAL_SYNAPSE.md`, `RULES.md`.
+- **`FLOW_WIKI_ORACLE.md`**
+  - **Afeta:** Pipeline de ingestão, validação e consulta da Wiki/Oracle (18 peças). Referencia `ingest_wiki_guard.py`, `lint_wiki.py`, `context_oracle.py`, `oracle_analytics.py`.
+  - **É Afetado Por:** `RULES.md` (§8 e §9), `SSOT_MAP.md`, `SCRIPT_GLOSSARY.md`.
 - **`AGENT_REGISTRY.md`**
   - **Afeta:** O escopo de atuação de todas as IAs. Define quem pode editar qual arquivo.
   - **É Afetado Por:** Criação/Refatoração dos arquivos `.md` na pasta `.agent/`.
@@ -184,9 +193,27 @@ Esta seção detalha o *blast radius* (raio de impacto) dos arquivos do ecossist
 - **`TESTS.md`**
   - **Afeta:** Nível de exigência do QA Validator.
   - **É Afetado Por:** `RULES.md`.
-- **`rx-*.md` (Anotomy, Biology, Communications, Learnings, SAM)**
-  - **Afeta:** Conhecimento "Meta" do sistema. Servem para IAs auditar e desenhar plantas.
-  - **É Afetado Por:** Seus respectivos espelhos. Ex: Mudar pastas -> Muda `rx-anatomy.md`. Mudar glossário -> Muda `rx-communications.md`.
+- **`rx-anatomy.md`**
+  - **Afeta:** Navegação de IAs na hierarquia física de pastas.
+  - **É Afetado Por:** Criação/remoção/renomeação de pastas no repositório.
+- **`rx-biology.md`**
+  - **Afeta:** Compreensão dos fluxos de dados entre sistemas.
+  - **É Afetado Por:** Mudanças na arquitetura de integração, `ARCHITECTURE.md`.
+- **`rx-communications.md`**
+  - **Afeta:** `blast_radius.py` (SSOT da Seção 4 para a Política), `FILE_GLOSSARY.md`, comportamento de propagação de todos os agentes.
+  - **É Afetado Por:** Criação/remoção de arquivos `.md` e scripts. `FILE_GLOSSARY.md` (sincronia obrigatória).
+- **`rx-learnings.md`**
+  - **Afeta:** Blueprint do Learnings Framework. Orienta `learnings_aggregator.py` e `inject_learnings.py` na arquitetura da memória cognitiva.
+  - **É Afetado Por:** `LEARNINGS.md`, `SSD_ERRORS_LEDGER.md`, `HARNESS_LOG.md`, `validate_context.py`.
+- **`rx-sam-audit.md`**
+  - **Afeta:** Documentação do SAM para auditores e agentes. Define regras de Shadow Files e Ignored Prefixes.
+  - **É Afetado Por:** `workflow_journal_auditor.py`, `RULES.md`, `JOURNAL.md`.
+- **`rx-affinity-lite.md`**
+  - **Afeta:** Detecção de Drift Temporal (Ghost Couplings) e Referencial (Dead Refs) no ecossistema.
+  - **É Afetado Por:** `affinity_lite.py`, Git Log.
+- **`RX_REPOSITORIO.md`**
+  - **Afeta:** Onboarding estrutural de IAs e humanos. Mapa funcional e hierarquia de verdade do repositório.
+  - **É Afetado Por:** Mudanças estruturais em `.context/`, `.agent/`, `.specs/`, `RULES.md`.
 - **`JOURNAL_SYNAPSE.md`**
   - **Afeta:** Tamanho do `JOURNAL.md` (Regras de purga de contexto).
   - **É Afetado Por:** Picos no "Token Bloat" detectados pelo `CONTEXT_HEALTH.md`.
@@ -201,6 +228,11 @@ Esta seção detalha o *blast radius* (raio de impacto) dos arquivos do ecossist
 - **`EXECUTION_BUFFER.md`**
   - **Afeta:** Controle de velocidade ("Cooldown") das IAs autônomas.
   - **É Afetado Por:** Carga excessiva no HOK Governor.
+
+### 📈 Mercado (`.context/market/`)
+- **`SSOT_MAP.md`**
+  - **Afeta:** Hierarquia de Verdade (SSOT) do projeto. Define a precedência entre Oráculo externo (NotebookLM), Wiki local, Compliance, Inception e PRD. Orienta `vision-architect` e `spec-enricher`.
+  - **É Afetado Por:** Criação de novo projeto (pós-clone obrigatório), mudanças na arquitetura epistemológica.
 
 ### 🧪 Specs (`.specs/`)
 - **`spec.md`**
@@ -223,9 +255,45 @@ Esta seção detalha o *blast radius* (raio de impacto) dos arquivos do ecossist
 - **`spec_v3.md` (Template)**
   - **Afeta:** Todo o esqueleto inicial de uma nova `spec.md` criada.
   - **É Afetado Por:** Atualizações do framework H.O.K para V4/V5.
-- **`subagents/*.md` (`spec-driver`, `qa-validator`, `readme_chain`)**
-  - **Afeta:** Personalidade, restrições e workflow isolado do respectivo agente.
-  - **É Afetado Por:** `MASTER_FLOW.md` e `RULES.md`.
+- **`CLOSURE.md` (Template)**
+  - **Afeta:** Estrutura do relatório de fechamento de features. Alimenta `JOURNAL.md` e `LEARNINGS.md` com narrativas e SCARs.
+  - **É Afetado Por:** `closure-thinker/SKILL.md`, evolução do processo SDD.
+- **`AGENT_SCRATCHPAD.md` (Template)**
+  - **Afeta:** Metacognição do `spec-driver` durante execução (Known Traps, escalation buffer).
+  - **É Afetado Por:** `SSD_ERRORS_LEDGER.md` (traps recorrentes promovidas), `sdd-orchestrator/SKILL.md` (cópia física no Step 3).
+- **`subagents/spec-driver.md`**
+  - **Afeta:** Execução da Chain-Skills V3. Produz `STATE.md`, código-fonte e handoffs.
+  - **É Afetado Por:** `MASTER_FLOW.md`, `RULES.md`, `sdd-orchestrator/SKILL.md`, `SSD_PLAYBOOK.md`.
+- **`subagents/qa-validator.md`**
+  - **Afeta:** Validação Zero Trust de Diffs contra Specs. Assina `qa_signoff`. Pergunta ao Orquestrador sobre propagação.
+  - **É Afetado Por:** `MASTER_FLOW.md`, `RULES.md`, `sdd-orchestrator/SKILL.md`, `semantic-propagation/SKILL.md`.
+- **`subagents/readme_chain_SDD.md`**
+  - **Afeta:** Manutenção de documentação externa e READMEs alinhados com o estado do sistema.
+  - **É Afetado Por:** `AGENT_REGISTRY.md`.
+- **`subagents/propagation-auditor.md`**
+  - **Afeta:** Atualização cirúrgica de mapas de arquitetura (`FILE_GLOSSARY.md`, `rx-communications.md`, `PROJECT_INDEX_*.md`) após execuções de Spec.
+  - **É Afetado Por:** `sdd-orchestrator/SKILL.md` (invocação), `semantic-propagation/SKILL.md` (execução), `FLOW_PROPAGATION.md`.
+- **`skills/sdd-orchestrator/SKILL.md`**
+  - **Afeta:** Ciclo de vida completo do SDD: blast radius, spec, delegação, escalação, signoff, propagação e cleanup.
+  - **É Afetado Por:** `MASTER_FLOW.md`, `RULES.md`, `FLOW_SDD.md`, `FLOW_PROPAGATION.md`.
+- **`skills/semantic-propagation/SKILL.md`**
+  - **Afeta:** Processo de propagação pós-commit: `blast_radius.py`, `graphify explain`, planos `superpowers-plan`, atualizações cirúrgicas em docs.
+  - **É Afetado Por:** `FLOW_PROPAGATION.md`, `blast_radius.py`, `rx-communications.md`, `graph.json`.
+- **`skills/hok-governor/SKILL.md`**
+  - **Afeta:** Baseline comportamental de todas as IAs. Travas de segurança, anti-loop e consulta obrigatória de glossários.
+  - **É Afetado Por:** `AGENTS.md`, `RULES.md`, `MASTER_FLOW.md`, `AGENT_REGISTRY.md`.
+- **`skills/journal-sync/SKILL.md`**
+  - **Afeta:** Sincronização do `JOURNAL.md` e propagação de alterações via Blast Radius.
+  - **É Afetado Por:** `rx-communications.md`, `blast_radius.py`, `FLOW_JOURNAL_SYNC.md`.
+- **`skills/flow-auditor/SKILL.md`**
+  - **Afeta:** Validação epistemológica de documentos FLOW_*.md contra a realidade física do repositório.
+  - **É Afetado Por:** `SCRIPT_GLOSSARY.md`, `FILE_GLOSSARY.md`, todos os `FLOW_*.md`.
+- **`skills/gov-friction-analyst/SKILL.md`**
+  - **Afeta:** Diagnóstico de atritos operacionais e planos de mitigação. Filtra sugestões exageradas (Overkill Radar).
+  - **É Afetado Por:** `HARNESS_LOG.md`, `JOURNAL.md`, `RULES.md`.
+- **`skills/closure-thinker/SKILL.md`**
+  - **Afeta:** Geração e auditoria do `CLOSURE.md` com base em evidências.
+  - **É Afetado Por:** `spec.md`, `STATE.md`, `JOURNAL.md`, `Git history`.
 
 ---
 
@@ -248,6 +316,26 @@ Esta seção mapeia os "músculos" do ecossistema definidos no `SCRIPT_GLOSSARY.
   - **Lê (Depende de):** `git status`, `rx-communications.md`, `JOURNAL.md`.
   - **Escreve em (Afeta):** `JOURNAL.md`, arquivos no Blast Radius (cascata).
   - **Gatilho:** Invocado manualmente ou via rito de fechamento.
+- **`sdd-orchestrator/SKILL.md`**
+  - **Lê (Depende de):** `blast_radius.py`, `spec.md`, `STATE.md`, `AGENT_SCRATCHPAD.md`, `RULES.md`, `MASTER_FLOW.md`.
+  - **Escreve em (Afeta):** Orquestra `spec-driver`, `qa-validator`, `propagation-auditor`. Escreve `JOURNAL.md`, `HARNESS_LOG.md`.
+  - **Gatilho:** Invocado quando o usuário pede SDD ou uma nova feature.
+- **`semantic-propagation/SKILL.md`**
+  - **Lê (Depende de):** `git diff`, `blast_radius.py`, `graphify explain`, `rx-communications.md`.
+  - **Escreve em (Afeta):** `FILE_GLOSSARY.md`, `rx-communications.md`, `PROJECT_INDEX_*.md`, metadados de docs.
+  - **Gatilho:** Invocado pelo Orquestrador via `@qa-validator` ou `@propagation-auditor`.
+- **`hok-governor/SKILL.md`**
+  - **Lê (Depende de):** `RULES.md`, `MASTER_FLOW.md`, `AGENT_REGISTRY.md`, `AGENTS.md`.
+  - **Escreve em (Afeta):** Nenhum diretamente. Influencia comportamento global das IAs.
+  - **Gatilho:** Carregado continuamente durante qualquer tarefa.
+- **`flow-auditor/SKILL.md`**
+  - **Lê (Depende de):** `FLOW_*.md`, `SCRIPT_GLOSSARY.md`, `FILE_GLOSSARY.md`, scripts em `_scripts/`.
+  - **Escreve em (Afeta):** Relatório de auditoria de coerência dos FLOWs.
+  - **Gatilho:** Invocado sob demanda para validar documentos de fluxo.
+- **`gov-friction-analyst/SKILL.md`**
+  - **Lê (Depende de):** `HARNESS_LOG.md`, `JOURNAL.md`, `RULES.md`.
+  - **Escreve em (Afeta):** Planos de mitigação, `JOURNAL.md` (sugestões).
+  - **Gatilho:** Invocado pelo Orquestrador quando há dores recorrentes.
 
 ### 📡 Motores de Visão
 - **`project_bundler.py`**

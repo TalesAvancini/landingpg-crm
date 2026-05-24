@@ -1,9 +1,28 @@
 ---
 Criado em: 2026-05-22 14:30
-Ultima Atualizacao: 2026-05-24 16:50
+Ultima Atualizacao: 2026-05-24 17:20
 Status: Ativo
 Nota: Semente pos-purge. 24 entries arquivadas em journal_archive_20260522_143007.md.
 ---
+
+## 📅 2026-05-24 17:20 | 🏛️ Arquitetura: Auditoria Granular do rx-communications.md #Architecture #Governance #Audit
+**Estado Atual:**
+- [x] **Desmembramento RX:** Substituída a entrada wildcard `rx-*.md` por 7 entradas individuais granulares (anatomy, biology, communications, learnings, sam-audit, affinity-lite, RX_REPOSITORIO).
+- [x] **FLOWs Mapeados:** Adicionadas entradas para `FLOW_SDD.md`, `FLOW_JOURNAL_SYNC.md` e `FLOW_WIKI_ORACLE.md` na Seção 4 do Córtex.
+- [x] **Skills Registradas:** Adicionadas 7 skills (sdd-orchestrator, semantic-propagation, hok-governor, flow-auditor, gov-friction-analyst, closure-thinker, journal-sync) nas Seções 4 e 5.
+- [x] **Templates Registrados:** Adicionadas entradas para `CLOSURE.md` e `AGENT_SCRATCHPAD.md` (templates).
+- [x] **Subagentes Expandidos:** Substituído wildcard `subagents/*.md` por entradas individuais (spec-driver, qa-validator, readme_chain_SDD, propagation-auditor).
+- [x] **Market:** Adicionada seção de Mercado com entrada `SSOT_MAP.md`.
+- [x] **Diagnóstico Graphify:** O `graphify explain` não indexou arquivos `.md` (apenas código Python via AST). Útil exclusivamente para scripts `.py`.
+
+**Matriz de Propagação:**
+- [x] .context/maintenance/rx-communications.md -> [Auditoria granular completa: ~30 novas entradas]
+- [x] .context/maintenance/JOURNAL.md -> [Registro arquitetural]
+
+executor_context_id: architect-agent
+validator_context_id: user-request
+status: READY TO COMMIT
+
 
 ## 📅 2026-05-24 16:50 | 🏛️ Arquitetura: Skill de Propagação Semântica e Fusão de Papéis Orquestrada #Architecture #Governance #Refactor
 **Estado Atual:**
