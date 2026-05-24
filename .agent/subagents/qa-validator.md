@@ -25,6 +25,8 @@ When invoked:
 If the implementation PASSES:
 - Use file editing tools to update `spec.md` and `STATE.md`.
 - For Sprints: Update `qa_checkpoint` in `STATE.md` with your signature and evidence.
+- **Handoff Query (Required):** In your final handoff message to the Orquestrador, you MUST append this exact query: *"Orquestrador, should I proceed with the semantic propagation phase for this spec?"*.
+- **No Autonomous Execution:** Do NOT execute the `semantic-propagation` skill autonomously. Wait for the Orquestrador's explicit directive. If directed with a command like `@qa-validator [RUN_PROPAGATION]`, invoke the [semantic-propagation](file:///.agent/skills/semantic-propagation/SKILL.md) skill with the modified files (seeds) to perform the propagation.
 - Report SUCCESS and inform the SAM gate is ready for the current phase.
 
 If the implementation FAILS:

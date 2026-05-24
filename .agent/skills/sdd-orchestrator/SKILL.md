@@ -79,10 +79,13 @@ Wait for the `@qa-validator` to return `qa_signoff: true` (or rejection).
 - **Final Hub Duties**: As the Orchestrator, you must now execute the final Rites:
   1. **Run Harness:** Run `npm run context:harness` to ensure the spec didn't break physical logic.
   2. **Validate SAM:** Ensure `npm run context:workflow-journal` passes cleanly.
-  3. **Aggregate Learnings:** Run `npm run context:learnings` to compile the error scars from `SSD_ERRORS_LEDGER.md` and failure loops from `HARNESS_LOG.md` into `LEARNINGS.md` before the spec directory is archived.
-  4. **Closure Synthesis:** Ensure the `CLOSURE.md` synthesis file is generated and technical decisions are migrated to `JOURNAL.md`.
-  5. **Commit:** Perform the final Git commit for the feature.
-  6. **Cleanup:** Run `npm run context:cleanup` to archive the ephemeral `.specs/features/` folder since the merge is complete.
+  3. **Orchestrate Semantic Propagation (The Hub Super-Skill):** The orchestrator acts as a management super-skill: instead of executing propagation themselves, they direct and explain things to the subagents, passing the seeds and paths via handoff while the subagents do the work. Evaluate the `@qa-validator`'s handoff query about starting the propagation phase:
+     * **For Small/Medium specs:** Direct `@qa-validator` to execute the propagation (fusing QA and propagation roles). In the handoff, the orchestrator MUST explain the context of the changes and direct the validator to run the skill. Reply with: `@qa-validator [RUN_PROPAGATION] Execute the semantic-propagation skill (file:///.agent/skills/semantic-propagation/SKILL.md) using the following modified files (seeds) as input: <list_of_seeds>. Here is the explanation of the changes: <explanation_of_changes_and_intent>.`
+     * **For Large/Complex specs:** Instruct `@qa-validator` to terminate. Spawn the `@propagation-auditor` to handle the large scope, explaining the task and directing it to run the skill. Reply with: `@propagation-auditor [RUN_PROPAGATION] Execute the semantic-propagation skill (file:///.agent/skills/semantic-propagation/SKILL.md) using the following modified files (seeds) as input: <list_of_seeds>. Here is the explanation of the changes: <explanation_of_changes_and_intent>.`
+  4. **Aggregate Learnings:** Run `npm run context:learnings` to compile the error scars from `SSD_ERRORS_LEDGER.md` and failure loops from `HARNESS_LOG.md` into `LEARNINGS.md` before the spec directory is archived.
+  5. **Closure Synthesis:** Ensure the `CLOSURE.md` synthesis file is generated and technical decisions are migrated to `JOURNAL.md`.
+  6. **Commit:** Perform the final Git commit for the feature.
+  7. **Cleanup:** Run `npm run context:cleanup` to archive the ephemeral `.specs/features/` folder since the merge is complete.
 
 ## Examples
 

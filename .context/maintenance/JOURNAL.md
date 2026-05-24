@@ -1,9 +1,30 @@
 ---
 Criado em: 2026-05-22 14:30
-Ultima Atualizacao: 2026-05-24 14:15
+Ultima Atualizacao: 2026-05-24 16:50
 Status: Ativo
-Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260522_143007.md.
+Nota: Semente pos-purge. 24 entries arquivadas em journal_archive_20260522_143007.md.
 ---
+
+## 📅 2026-05-24 16:50 | 🏛️ Arquitetura: Skill de Propagação Semântica e Fusão de Papéis Orquestrada #Architecture #Governance #Refactor
+**Estado Atual:**
+- [x] **Nova Skill:** Criada a skill `.agent/skills/semantic-propagation/SKILL.md` que encapsula o fluxo triplo (AST + rx-comm + Graphify Explain) e gera planos de propagação estruturados.
+- [x] **Sensoriamento Semântico:** Atualizada a estratégia em `FLOW_PROPAGATION.md` para documentar a terceira via de impacto (Semântica) e o rito de fechamento com fusão.
+- [x] **Orquestração e Handoff:** Atualizados os prompts de `@qa-validator` e `@propagation-auditor` para delegar o trabalho de propagação à nova skill, sob controle direto do `sdd-orchestrator` (Step 5).
+- [x] **Glossário Sincronizado:** Registrada a nova skill no `FILE_GLOSSARY.md`.
+
+**Matriz de Propagação:**
+- [x] .agent/skills/semantic-propagation/SKILL.md -> [Criação de nova skill]
+- [x] .context/brain/FLOW_PROPAGATION.md -> [Estratégia de sensoriamento triplo]
+- [x] .context/brain/FILE_GLOSSARY.md -> [Registro de nova skill]
+- [x] .agent/subagents/qa-validator.md -> [Query de handoff adicionada]
+- [x] .agent/subagents/propagation-auditor.md -> [Auditor fallback ajustado]
+- [x] .agent/skills/sdd-orchestrator/SKILL.md -> [Gate de decisão de propagação]
+- [x] .context/maintenance/JOURNAL.md -> [Registro arquitetural]
+
+executor_context_id: architect-agent
+validator_context_id: user-request
+status: READY TO COMMIT
+
 
 ## 📅 2026-05-24 14:15 | 🏛️ Arquitetura: Integração do Learnings Loop e Fail-Closed Gate #Architecture #Governance #Refactor
 **Estado Atual:**

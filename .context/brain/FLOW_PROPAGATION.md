@@ -23,24 +23,28 @@ graph TD
     classDef must fill:#e94560,stroke:#2b2d42,color:#fff,stroke-width:2px
     classDef likely fill:#e2b714,stroke:#2b2d42,color:#000,stroke-width:2px
     classDef declared fill:#0088cc,stroke:#2b2d42,color:#fff,stroke-width:2px
+    classDef semantic fill:#533483,stroke:#2b2d42,color:#fff,stroke-width:2px
 
     A(("O Arquivo\nModificado\n(A Semente)")):::seed
     
-    subgraph "⚙️ O Motor Duplo (blast_radius.py)"
-        B["Física (Graphify)<br>Quem importa o quê?"]:::motor
+    subgraph "⚙️ O Motor de Sensores (Análise de Propagação)"
+        B["Física (AST)<br>Quem importa o quê?"]:::motor
         C["Política (rx-comm)<br>Quem manda em quem?"]:::motor
+        D["Semântica (Graphify Explain)<br>O que está correlacionado?"]:::semantic
     end
 
     A --> B
     A --> C
+    A --> D
 
     subgraph "Os 3 Baldes (Buckets) de Impacto"
-        B -->|Mapeou| D["🔴 MUST UPDATE<br>(Apareceu nos dois)"]:::must
-        C -->|Mapeou| D
+        B -->|Mapeou| E["🔴 MUST UPDATE<br>(Física + Política)"]:::must
+        C -->|Mapeou| E
         
-        B -->|Mapeou só aqui| E["🟡 LIKELY UPDATE<br>(Apenas Física)"]:::likely
+        B -->|Mapeou só aqui| F["🟡 LIKELY UPDATE<br>(Apenas Física)"]:::likely
         
-        C -->|Mapeou só aqui| F["🔵 DECLARED ONLY<br>(Apenas Política)"]:::declared
+        C -->|Mapeou só aqui| G["🔵 DECLARED ONLY<br>(Política e Semântica)"]:::declared
+        D -->|Mapeou semântica| G
     end
 ```
 
@@ -60,7 +64,12 @@ Para calcular até onde as ondas vão, o script principal (`blast_radius.py`) us
 - **Como pensa:** Ele é a "Constituição". Ele mapeia coisas que o computador não vê, como: *"Se a Regra 1.5 mudar, o Comportamento do Agente de Testes deve mudar."*
 - **Sua limitação:** Ele é mantido por humanos e IAs. Se alguém não o atualizou, a lei fica defasada.
 
-**Por que usar os dois?** Porque o que a física não vê, a política cobra. E o que a política esquece, a física acusa (quebra).
+### 🧠 O Sensor Semântico (A Semântica Lógica)
+- **Quem gera:** O *Graphify* (via comando `$env:PYTHONUTF8=1; graphify explain`).
+- **Como pensa:** Ele é um scanner conceitual. Ele analisa o propósito lógico dos arquivos e percebe relações não mapeadas pelo código físico (ex: *"Esta alteração no agregador de erros impacta conceitualmente a especificação do rx-learnings.md"*).
+- **Sua utilidade:** Ele serve como o terceiro olho da propagação, revelando ao auditor quais documentos manuais ou de design devem ser visitados, carimbados ou atualizados.
+
+**Por que usar os três?** Porque a física nos dá as quebras de compilação, a política nos dá o contrato legal, e a semântica nos dá a consistência conceitual da documentação.
 
 ---
 
@@ -99,36 +108,38 @@ Se você é um Subagente (ou um humano), aqui está a sua cartilha de reação q
 
 ---
 
-## 🎬 5. O Fluxo de Execução (Nos Bastidores)
+## 🎬 5. O Fluxo de Execução (O Fechamento Semântico)
 
-Como esse motor duplo é ativado na prática durante o seu dia a dia?
+Como esse motor de sensores e o rito de fechamento são ativados na prática?
 
 ```mermaid
 sequenceDiagram
-    participant Dev as 🧑 Humano / Planner
-    participant SDD as 🕹️ sdd-orchestrator
-    participant Script as ⚙️ blast_radius.py
-    participant Husky as 🐶 Husky (Git)
+    participant SD as 🕹️ spec-driver
+    participant Hub as 🧑 Orquestrador (Hub)
+    participant QA as 🔍 qa-validator
+    participant Skill as 🧠 semantic-propagation (Skill)
+    participant Aud as 🕵️ propagation-auditor
 
-    Dev->>SDD: "Quero alterar o arquivo X e Y"
-    Note over SDD: Passo 1 do SDD:<br/>Entender o Raio de Impacto
+    SD->>Hub: Solicita Signoff da Spec
+    Hub->>QA: Invoca para Auditoria e QA
+    QA->>QA: Valida Diffs e Critérios DoD
+    QA-->>Hub: Assina qa_signoff e pergunta: "Devo rodar a propagação?"
     
-    SDD->>Script: Roda: blast_radius.py --changed X Y
+    alt Spec Pequena/Média (Fusão de Papéis)
+        Hub->>QA: Directs: "@qa-validator, execute a skill"
+        QA->>Skill: Executa a skill com as Seeds
+        Skill-->>QA: Retorna plano de atualização e executa
+        QA-->>Hub: Relata conclusão e finaliza
+    else Spec Grande (Fallback Tradicional)
+        Hub->>QA: Finaliza com Sucesso
+        Hub->>Aud: Invoca e envia as Seeds da propagação
+        Aud->>Skill: Executa a skill com as Seeds
+        Skill-->>Aud: Retorna plano de atualização e executa
+        Aud-->>Hub: Relata conclusão e finaliza
+    end
     
-    Script->>Script: Consulta graph.json (Física)
-    Script->>Script: Consulta rx-comm.md (Política)
-    
-    Script-->>SDD: Retorna: 1 MUST, 2 LIKELY, 0 DECLARED
-    
-    Note over SDD: Passo 2 do SDD:<br/>Preenche o spec.md
-    SDD->>Dev: Pede permissão para alterar (Scope Allow)
-    
-    Note over Dev,SDD: (Ciclo de Desenvolvimento Normal)
-    
-    Dev->>Husky: git commit -m "feature pronta"
-    Note over Husky: O Hook Post-Commit<br/>roda o Graphify
-    Husky-->>Husky: Atualiza graph.json silenciosamente<br/>para a próxima sprint!
+    Note over Hub: Orquestrador realiza o commit final e cleanup.
 ```
 
 > [!TIP]
-> **A Mágica do Husky:** O motor de física (`graph.json`) nunca fica velho! Toda vez que você faz um commit com sucesso, um gatilho escondido no Git (o `post-commit`) aciona o Graphify, atualizando o radar para que a próxima feature use mapas frescos e precisos.
+> **A Mágica do Orquestrador:** O `sdd-orchestrator` atua como uma superskill de gestão, direcionando o fluxo. Ele envia os caminhos de arquivos (Seeds) e as diretrizes do que fazer via handoff para o subagente responsável, garantindo controle total sobre o tamanho e complexidade do Blast Radius do projeto.

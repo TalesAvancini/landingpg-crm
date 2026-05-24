@@ -124,6 +124,7 @@ Status: Ativo
 | `skills/hok-governor/SKILL.md` | **Governador de Conduta.** Baseline de senso comum e travas de segurança contra alucinações e loops. | `@antigravity` |
 | `skills/gov-friction-analyst/SKILL.md` | **Analista de Fricção.** Diagnostica atritos do executor e propaga planos de mitigação (Overkill Radar). | `@gov-friction-analyst` |
 | `skills/closure-thinker/SKILL.md` | **Analista de Fechamento.** Protocolo para gerar ou auditar o `CLOSURE.md` com base em evidências. | `@antigravity` |
+| `skills/semantic-propagation/SKILL.md` | **Propagação Semântica.** Analisa commits usando `blast_radius.py` e `graphify explain` para gerar planos de propagação estruturados. | `@propagation-auditor` / `@qa-validator` |
 
 
 ---
