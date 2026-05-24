@@ -1,9 +1,15 @@
+---
+Criado em: 2026-05-04 12:00
+Ultima Atualizacao: 2026-05-24 14:10
+Status: Ativo
+---
+
 # 🧠 RX: H.O.K Learnings (Governança Cognitiva)
 
 ## 1. O Que é o Learnings Framework?
 No ecossistema H.O.K Forge, o **Learnings Framework** é o sistema de memória estratégica. Enquanto outros sistemas (como o SAM ou o Harness) focam em validar o *presente*, o Learnings foca em aprender com o *passado* para proteger o *futuro*.
 
-Ele resolve o problema do "Agente Amnésico": IAs tendem a cometer os mesmos erros repetidamente se não forem lembradas explicitamente de falhas anteriores. O sistema automatiza esse lembrete (via motor MiMo), transformando erros em "cicatrizes" (Scars) que servem de vacina para as próximas execuções.
+Ele resolve o problem do "Agente Amnésico": IAs tendem a cometer os mesmos erros repetidamente se não forem lembradas explicitamente de falhas anteriores. O sistema automatiza esse lembrete (via motor MiMo), transformando erros em "cicatrizes" (Scars) que servem de vacina para as próximas execuções.
 
 ---
 
@@ -14,8 +20,6 @@ graph TD
     subgraph Fontes ["Fontes de Dados (O Passado)"]
         A[HARNESS_LOG.md] --> |Parsing de Falhas| E
         B[SSD_ERRORS_LEDGER.md] --> |Causas Raiz| E
-        C[git log] --> |Diffs de Correção| E
-        D[JOURNAL.md] --> |Contexto Histórico| E
     end
 
     subgraph Processamento ["O Cérebro (Automático)"]

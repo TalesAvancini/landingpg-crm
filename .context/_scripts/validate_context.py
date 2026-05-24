@@ -27,6 +27,7 @@ REQUIRED_FILES = [
     "brain/MASTER_FLOW.md",
     "brain/AGENT_REGISTRY.md",
     "brain/PRD.md",
+    "brain/LEARNINGS.md",
     "maintenance/JOURNAL.md",
     "maintenance/schema.sql",
     "maintenance/TECHNICAL_REQUIREMENTS.md",
@@ -275,6 +276,7 @@ def check_metadata_freshness():
     targets = [
         CONTEXT_DIR / "brain" / "RULES.md",
         CONTEXT_DIR / "brain" / "MASTER_FLOW.md",
+        CONTEXT_DIR / "brain" / "LEARNINGS.md",
     ]
     stale = []
 
@@ -365,6 +367,33 @@ def is_non_initial_context():
             return True, f"Especificações de feature ativas: {len(active_specs)}"
 
     return False, "Contexto inicial limpo"
+
+
+def check_learnings_integrity():
+    """Verifica se o LEARNINGS.md está presente, tem frontmatter de metadados válido e seções esperadas."""
+    learnings_path = CONTEXT_DIR / "brain/LEARNINGS.md"
+    if not learnings_path.exists():
+        return False, "LEARNINGS.md está ausente (Fail-Closed Gate)."
+    
+    content = learnings_path.read_text(encoding="utf-8", errors="ignore")
+    
+    # 1. Verificar frontmatter basico
+    if not content.startswith("---"):
+        return False, "LEARNINGS.md não possui frontmatter válido."
+        
+    # Verificar metadados obrigatórios
+    metadata_match = re.search(r"Ultima Atualizacao:\s*(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})", content, re.IGNORECASE)
+    if not metadata_match:
+        return False, "LEARNINGS.md: metadado 'Ultima Atualizacao' ausente ou inválido no frontmatter."
+        
+    # 2. Verificar seções vitais
+    if "## 🚨 Top Cicatrizes Ativas (Scars)" not in content:
+        return False, "LEARNINGS.md: Seção 'Top Cicatrizes Ativas (Scars)' ausente."
+        
+    if "## ⚠️ Alertas Automáticos (Harness Log)" not in content:
+        return False, "LEARNINGS.md: Seção 'Alertas Automáticos (Harness Log)' ausente."
+        
+    return True, "LEARNINGS.md íntegro"
 
 
 def validate():
@@ -470,6 +499,13 @@ def validate():
         exit_code = 1
     else:
         print(f"[OK] WIKI: {wiki_msg}")
+
+    learn_ok, learn_msg = check_learnings_integrity()
+    if not learn_ok:
+        issues.append(f"[ERROR] LEARNINGS: {learn_msg}")
+        exit_code = 1
+    else:
+        print(f"[OK] LEARNINGS: {learn_msg}")
 
     atomic_ok, atomic_msg = check_atomic_transition()
     if not atomic_ok:

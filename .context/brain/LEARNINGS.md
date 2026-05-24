@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-05-04
-Ultima Atualizacao: 2026-05-22 15:18
+Ultima Atualizacao: 2026-05-24 14:12
 Status: Ativo
 ---
 
@@ -54,5 +54,5 @@ Status: Ativo
 - **[LOOP DETECTADO]** Spec `oracle_v3` falhou 5 vezes recentemente. Requer análise estratégica.
 - **[LOOP DETECTADO]** Spec `gov_chain_v3_phase2_dryrun` falhou 12 vezes recentemente. Requer análise estratégica.
 - **[LOOP DETECTADO]** Spec `gov_v3_stress_test` falhou 3 vezes recentemente. Requer análise estratégica.
-- **[LOOP DETECTADO]** Spec `manual` falhou 6 vezes recentemente. Requer análise estratégica.
+- **[LOOP DETECTADO]** Spec `manual` falhou 8 vezes recentemente. Requer análise estratégica.
 - **[LOOP DETECTADO]** Spec `blast_radius_mvp` falhou 7 vezes recentemente. Requer análise estratégica.

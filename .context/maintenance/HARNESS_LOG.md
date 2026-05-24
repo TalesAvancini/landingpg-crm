@@ -1001,3 +1001,19 @@ Status: Ativo
 
 ## [HARNESS-FAIL] Report | spec:manual
 - **Detalhe:** sprint_contract: Nenhuma Spec ativa detectada.
+
+## [HARNESS-FAIL] Report | spec:manual
+- **Detalhe:** sprint_contract: Nenhuma Spec ativa detectada. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ [FATAL] Modificação Silenciosa: Foram detectados arquivos governados alterados, mas o JOURNAL.md não possui uma nova entrada para este commit.
+Arquivos governados detectados (exemplo):
+  - .context/_scripts/validate_context.py
+  - .agent/skills/sdd-orchestrator/SKILL.md
+  - .context/maintenance/rx-learnings.md
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:manual
+- **Detalhe:** sprint_contract: Nenhuma Spec ativa detectada.

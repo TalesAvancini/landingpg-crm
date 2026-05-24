@@ -79,9 +79,10 @@ Wait for the `@qa-validator` to return `qa_signoff: true` (or rejection).
 - **Final Hub Duties**: As the Orchestrator, you must now execute the final Rites:
   1. **Run Harness:** Run `npm run context:harness` to ensure the spec didn't break physical logic.
   2. **Validate SAM:** Ensure `npm run context:workflow-journal` passes cleanly.
-  3. **Closure Synthesis:** Ensure the `CLOSURE.md` synthesis file is generated and technical decisions are migrated to `JOURNAL.md`.
-  4. **Commit:** Perform the final Git commit for the feature.
-  5. **Cleanup:** Run `npm run context:cleanup` to archive the ephemeral `.specs/features/` folder since the merge is complete.
+  3. **Aggregate Learnings:** Run `npm run context:learnings` to compile the error scars from `SSD_ERRORS_LEDGER.md` and failure loops from `HARNESS_LOG.md` into `LEARNINGS.md` before the spec directory is archived.
+  4. **Closure Synthesis:** Ensure the `CLOSURE.md` synthesis file is generated and technical decisions are migrated to `JOURNAL.md`.
+  5. **Commit:** Perform the final Git commit for the feature.
+  6. **Cleanup:** Run `npm run context:cleanup` to archive the ephemeral `.specs/features/` folder since the merge is complete.
 
 ## Examples
 

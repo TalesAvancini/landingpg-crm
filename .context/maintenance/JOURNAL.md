@@ -1,9 +1,26 @@
 ---
 Criado em: 2026-05-22 14:30
-Ultima Atualizacao: 2026-05-22 14:30
+Ultima Atualizacao: 2026-05-24 14:15
 Status: Ativo
 Nota: Semente pos-purge. 24 entradas arquivadas em journal_archive_20260522_143007.md.
 ---
+
+## 📅 2026-05-24 14:15 | 🏛️ Arquitetura: Integração do Learnings Loop e Fail-Closed Gate #Architecture #Governance #Refactor
+**Estado Atual:**
+- [x] **Blueprint Simplificado:** Simplificado o Mermaid diagram em `rx-learnings.md` removendo os canais obsoletos/complexos de `git log` e `JOURNAL.md`. Injetado frontmatter obrigatório de metadados.
+- [x] **Fail-Closed Validation Gate:** Atualizado `validate_context.py` para exigir `brain/LEARNINGS.md` e testar sua integridade estrutural/freshness de metadados, travando a CI em caso de ausência ou corrupção.
+- [x] **Automação no Orquestrador:** Modificada a skill `sdd-orchestrator` no arquivo `SKILL.md` para automatizar o acionamento de `npm run context:learnings` no fechamento de specs.
+
+**Matriz de Propagação:**
+- [x] .context/maintenance/rx-learnings.md -> [Blueprint atualizado e frontmatter injetado]
+- [x] .context/_scripts/validate_context.py -> [Gatekeeper Fail-Closed adicionado]
+- [x] .agent/skills/sdd-orchestrator/SKILL.md -> [Automação de agregação integrada]
+- [x] .context/maintenance/JOURNAL.md -> [Registro arquitetural]
+
+executor_context_id: architect-agent
+validator_context_id: user-request
+status: READY TO COMMIT
+
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
