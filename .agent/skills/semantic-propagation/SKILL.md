@@ -33,9 +33,16 @@ Analyze the returned buckets:
 
 ### Step 3: Semantic Analysis (Graphify Explain)
 
-For each modified file (seed), query the Graphify knowledge base to discover conceptual connections that lack physical code imports:
+For each modified file (seed), query the Graphify knowledge base to discover conceptual connections that lack physical code imports.
+
+> [!IMPORTANT]
+> O Graphify indexa arquivos usando o nome simplificado (basename) como label (ex: `RULES.md`, `learnings_aggregator.py`). 
+> Passar o caminho completo (ex: `.context/brain/RULES.md`) fará a consulta retornar "No node found".
+> **Sempre utilize apenas o nome simples do arquivo com sua extensão.**
+
+Execute o comando usando o nome simplificado do arquivo:
 ```powershell
-$env:PYTHONUTF8=1; graphify explain "<SEED_FILE_PATH>"
+$env:PYTHONUTF8=1; graphify explain "<SEED_FILE_BASENAME>"
 ```
 Analyze the output:
 * Look for connected nodes of type `document` or `markdown` (such as `rx-*.md`, blueprints, READMEs, or architectural specifications).

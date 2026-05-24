@@ -1,9 +1,24 @@
 ---
 Criado em: 2026-05-22 14:30
-Ultima Atualizacao: 2026-05-24 17:20
+Ultima Atualizacao: 2026-05-24 17:58
 Status: Ativo
 Nota: Semente pos-purge. 24 entries arquivadas em journal_archive_20260522_143007.md.
 ---
+
+## 📅 2026-05-24 17:58 | 🏛️ Arquitetura: Ajuste no Graphify e Nova Regra de Basename no Manifesto #Architecture #Governance #Fix
+**Estado Atual:**
+- [x] **Ajuste na Skill:** Corrigido o Step 3 da skill `.agent/skills/semantic-propagation/SKILL.md` para especificar que o `graphify explain` exige apenas o nome simplificado do arquivo (`basename`) como parâmetro.
+- [x] **Regra Comportamental:** Adicionada a Regra 6 no manifesto de governança root `AGENTS.md` definindo que todas as consultas ao Graphify (`explain` e `query`) com arquivos `.md` devem ser feitas por `basename` sob risco de falha.
+- [x] **Sincronia do Diário:** Registro atualizado com sucesso.
+
+**Matriz de Propagação:**
+- [x] .agent/skills/semantic-propagation/SKILL.md -> [Corrigida instrução de comando Graphify]
+- [x] AGENTS.md -> [Adicionada Regra 6 comportamental]
+- [x] .context/maintenance/JOURNAL.md -> [Registro de alteração]
+
+executor_context_id: architect-agent
+validator_context_id: user-request
+status: READY TO COMMIT
 
 ## 📅 2026-05-24 17:20 | 🏛️ Arquitetura: Auditoria Granular do rx-communications.md #Architecture #Governance #Audit
 **Estado Atual:**
