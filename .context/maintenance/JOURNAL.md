@@ -1,9 +1,22 @@
 ---
 Criado em: 2026-05-22 14:30
-Ultima Atualizacao: 2026-05-24 21:10
+Ultima Atualizacao: 2026-05-24 21:13
 Status: Ativo
 Nota: Semente pos-purge. 24 entries arquivadas em journal_archive_20260522_143007.md.
 ---
+
+## 📅 2026-05-24 21:13 | 🏛️ Arquitetura: Limitação da Leitura do Orquestrador a Fase de Onboarding #Architecture #Governance #Optimization
+**Estado Atual:**
+- [x] **Otimização de Contexto:** Modificada a Condição 3 no [GEMINI.md](file:///c:/Users/User/Desktop/ProjetosAntigravity/TEMPLATES/template_inic%C3%ADo_de_projeto/GEMINI.md) para exigir a leitura de [orquestrador.md](file:///c:/Users/User/Desktop/ProjetosAntigravity/TEMPLATES/template_inic%C3%ADo_de_projeto/.agent/rules_pool/orquestrador.md) apenas na fase de inicialização do papel (Onboarding/Boot), prevenindo consumo redundante de tokens em turnos subsequentes da mesma sessão.
+- [x] **Sincronia do Diário:** Registro efetuado com sucesso.
+
+**Matriz de Propagação:**
+- [x] GEMINI.md -> [Ajuste de condicional de roteamento para otimização de tokens de onboarding]
+- [x] .context/maintenance/JOURNAL.md -> [Registro de otimização de contexto]
+
+executor_context_id: architect-agent
+validator_context_id: user-request
+status: READY TO COMMIT
 
 ## 📅 2026-05-24 21:10 | 🏛️ Arquitetura: Ajuste no Comportamento e Separação de Papéis do Orquestrador #Architecture #Governance #Refactor
 **Estado Atual:**

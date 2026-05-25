@@ -12,12 +12,12 @@ Você está obrigado a seguir este roteamento em cascata. Antes de tomar qualque
 
 ### 2. Sobriedade Operacional (Anti-Overengineering)
 * **Condição:** Se você é o **Gemini Flash** ou se a tarefa exige foco estrito e minimalismo.
-* **Ação:** Leia a regra de sobriedade e conformidade de versão:
+* **Ação:** Leia a regra de sobriedade e conformidade de versionamento:
   -> [sobriedade-operacional.md](file:///c:/Users/User/Desktop/ProjetosAntigravity/TEMPLATES/template_inic%C3%ADo_de_projeto/.agent/rules_pool/sobriedade-operacional.md)
 
-### 3. Função de Orquestrador SDD
-* **Condição:** Se você está na função de **Orquestrador SDD** (planejando uma feature, injetando raw payloads em `.specs/`, rotacionando agentes no `AGENT_REGISTRY.md` ou autorizando fechamento de sprint).
-* **Ação:** Leia a regra de conduta do Orquestrador:
+### 3. Função de Orquestrador SDD (Onboarding/Boot)
+* **Condição:** Se você está **iniciando o papel** de Orquestrador SDD no chat atual, ativando uma Spec no início da sprint ou assumindo um novo ciclo de planejamento.
+* **Ação:** Leia a regra de conduta do Orquestrador (apenas uma vez para onboarding de diretrizes):
   -> [orquestrador.md](file:///c:/Users/User/Desktop/ProjetosAntigravity/TEMPLATES/template_inic%C3%ADo_de_projeto/.agent/rules_pool/orquestrador.md)
 
 ### 4. Contratos de Sprint, Commits e Sincronia de Journal
@@ -28,7 +28,7 @@ Você está obrigado a seguir este roteamento em cascata. Antes de tomar qualque
 ### 5. Alteração de Código Fonte e Controle de Escrita
 * **Condição:** Se a tarefa exigir alteração em arquivos de código fonte, modificação de interfaces/contratos, ou se a árvore estiver bloqueada com status `[BLOCKED]` ou `[FATAL]`.
 * **Ação:** Leia as seções de limites de impacto (Pre-flight) e controle de escrita mecânica:
-  -> [RULES.md#L56-L63](file:///c:/Users/User/Desktop/ProjetosAntigravity/TEMPLATES/template_inic%C3%ADo_de_projeto/.context/brain/RULES.md#L56-L63) e [RULES.md#L99-L124](file:///c:/Users/User/Desktop/ProjetosAntigravity/TEMPLATES/template_inic%C3%ADo_de_projeto/.context/brain/RULES.md#L99-L124)
+  -> [RULES.md#L56-L63](file:///c:/Users/User/Desktop/ProjetosAntigravity/TEMPLATES/template_inic%C3%ADo_de_projeto/.context/brain/RULES.md#L56-L63) and [RULES.md#L99-L124](file:///c:/Users/User/Desktop/ProjetosAntigravity/TEMPLATES/template_inic%C3%ADo_de_projeto/.context/brain/RULES.md#L99-L124)
 
 ### 6. Banco de Dados e Prevenção de Duplicidades (Monolith & Components)
 * **Condição:** Se a tarefa envolver alterações em bancos de dados (schema), componentes dependentes de dados, ou criação de novas funções, componentes de UI, utilitários ou classes.
