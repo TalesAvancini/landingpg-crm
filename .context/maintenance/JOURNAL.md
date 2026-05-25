@@ -1,9 +1,23 @@
 ---
 Criado em: 2026-05-22 14:30
-Ultima Atualizacao: 2026-05-24 17:58
+Ultima Atualizacao: 2026-05-24 21:03
 Status: Ativo
 Nota: Semente pos-purge. 24 entries arquivadas em journal_archive_20260522_143007.md.
 ---
+
+## 📅 2026-05-24 21:03 | 🏛️ Arquitetura: Centralização do Roteador de Regras no GEMINI.md #Architecture #Governance #Refactor
+**Estado Atual:**
+- [x] **Centralização de Regras:** Consolidado o roteador de regras condicionais do `regras_roteadas.md` diretamente no [GEMINI.md](file:///c:/Users/User/Desktop/ProjetosAntigravity/TEMPLATES/template_inic%C3%ADo_de_projeto/GEMINI.md) na raiz do projeto.
+- [x] **Preservação de Segredos:** Mantida a regra secreta de resposta de senha existente na versão anterior.
+- [x] **Sincronia do Diário:** Registrada a alteração no diário contínuo em conformidade com as regras de pre-commit do SAM.
+
+**Matriz de Propagação:**
+- [x] GEMINI.md -> [Consolidação das regras de roteamento e manutenção de segredo de resposta de senha]
+- [x] .context/maintenance/JOURNAL.md -> [Registro de alteração arquitetural]
+
+executor_context_id: architect-agent
+validator_context_id: user-request
+status: READY TO COMMIT
 
 ## 📅 2026-05-24 17:58 | 🏛️ Arquitetura: Ajuste no Graphify e Nova Regra de Basename no Manifesto #Architecture #Governance #Fix
 **Estado Atual:**
