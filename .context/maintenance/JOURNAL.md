@@ -1,9 +1,22 @@
 ---
 Criado em: 2026-05-22 14:30
-Ultima Atualizacao: 2026-05-24 21:03
+Ultima Atualizacao: 2026-05-24 21:10
 Status: Ativo
 Nota: Semente pos-purge. 24 entries arquivadas em journal_archive_20260522_143007.md.
 ---
+
+## 📅 2026-05-24 21:10 | 🏛️ Arquitetura: Ajuste no Comportamento e Separação de Papéis do Orquestrador #Architecture #Governance #Refactor
+**Estado Atual:**
+- [x] **Ajuste Comportamental:** Adicionadas diretivas explícitas no [orquestrador.md](file:///c:/Users/User/Desktop/ProjetosAntigravity/TEMPLATES/template_inic%C3%ADo_de_projeto/.agent/rules_pool/orquestrador.md) proibindo o "Complexo de Super-Herói" (intervir diretamente no código de produção quando executores falharem) e proibindo iniciativas de alteração autônomas sem demanda do usuário.
+- [x] **Preservação de Integridade:** Mantidas as instruções originais e o código de prova de leitura (senha de teste).
+
+**Matriz de Propagação:**
+- [x] .agent/rules_pool/orquestrador.md -> [Inclusão de restrições rígidas contra auto-correção de código e iniciativa autônoma]
+- [x] .context/maintenance/JOURNAL.md -> [Registro de alteração comportamental]
+
+executor_context_id: architect-agent
+validator_context_id: user-request
+status: READY TO COMMIT
 
 ## 📅 2026-05-24 21:03 | 🏛️ Arquitetura: Centralização do Roteador de Regras no GEMINI.md #Architecture #Governance #Refactor
 **Estado Atual:**
