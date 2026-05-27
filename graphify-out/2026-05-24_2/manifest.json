@@ -1,0 +1,1472 @@
+{
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\init_ai_project.sh": {
+    "mtime": 1777783992.7114148,
+    "ast_hash": "4757f7c555f48fa4c83147fec7bc8eb2",
+    "semantic_hash": "4757f7c555f48fa4c83147fec7bc8eb2"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\package.json": {
+    "mtime": 1779410170.9679682,
+    "ast_hash": "ca3f84702ebc5c4342b94a55b8a108d8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\run_context.py": {
+    "mtime": 1777862976.4518087,
+    "ast_hash": "2717b4e859d05eebb819c816837c9cb4",
+    "semantic_hash": "2717b4e859d05eebb819c816837c9cb4"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\run_context.sh": {
+    "mtime": 1776393097.204327,
+    "ast_hash": "4d88dfbb3f87333d474cefaf5228000b",
+    "semantic_hash": "4d88dfbb3f87333d474cefaf5228000b"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\skills\\methodical_writer.json": {
+    "mtime": 1777777801.7615075,
+    "ast_hash": "bc2563d2c8efc341a583f6641d642bbb",
+    "semantic_hash": "bc2563d2c8efc341a583f6641d642bbb"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\rx-affinity-lite.json": {
+    "mtime": 1778031012.3149986,
+    "ast_hash": "769a7937381f7a5250f3bc3ec994aa65",
+    "semantic_hash": "769a7937381f7a5250f3bc3ec994aa65"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\schema.sql": {
+    "mtime": 1775870708.3446684,
+    "ast_hash": "7a841d95aa277c726baf92746e5e4598",
+    "semantic_hash": "7a841d95aa277c726baf92746e5e4598"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\version_targets.json": {
+    "mtime": 1776861454.6546943,
+    "ast_hash": "ad85ec863225ab8d8b94b4e61bd86705",
+    "semantic_hash": "ad85ec863225ab8d8b94b4e61bd86705"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\migrations\\001_init.sql": {
+    "mtime": 1775960055.429255,
+    "ast_hash": "b55f5746ab01190b5abab17deccbffba",
+    "semantic_hash": "b55f5746ab01190b5abab17deccbffba"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\affinity_lite.py": {
+    "mtime": 1778030692.229964,
+    "ast_hash": "eaec63bca0ac4e71b24f6223eb70cd21",
+    "semantic_hash": "eaec63bca0ac4e71b24f6223eb70cd21"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\check_version_consistency.py": {
+    "mtime": 1776861472.9141972,
+    "ast_hash": "70347ddd45282a4b3be652937da9c900",
+    "semantic_hash": "70347ddd45282a4b3be652937da9c900"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\cleanup_specs.py": {
+    "mtime": 1777586581.2020915,
+    "ast_hash": "d3bcfdc31b3c8f9a5bb316d752efd67a",
+    "semantic_hash": "d3bcfdc31b3c8f9a5bb316d752efd67a"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\context_oracle.py": {
+    "mtime": 1777506275.875177,
+    "ast_hash": "8a4c53d5375a0a892ffb1ec31f6d7c08",
+    "semantic_hash": "8a4c53d5375a0a892ffb1ec31f6d7c08"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\enrich_context.py": {
+    "mtime": 1776385037.3619628,
+    "ast_hash": "c6939660e0f219ba7afc11bc9a9a7571",
+    "semantic_hash": "c6939660e0f219ba7afc11bc9a9a7571"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\harness_runner.py": {
+    "mtime": 1777586122.6035726,
+    "ast_hash": "c113f79527ea9c9325219504916f5af7",
+    "semantic_hash": "c113f79527ea9c9325219504916f5af7"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\health_sync.py": {
+    "mtime": 1775965211.302253,
+    "ast_hash": "cdf5a0aa914624bdb669dd42eedd7c04",
+    "semantic_hash": "cdf5a0aa914624bdb669dd42eedd7c04"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\ingest_wiki_guard.py": {
+    "mtime": 1777503909.652881,
+    "ast_hash": "39a957159d9890d288db7842afd851cb",
+    "semantic_hash": "39a957159d9890d288db7842afd851cb"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\inject_learnings.py": {
+    "mtime": 1777864736.0866966,
+    "ast_hash": "f5e3f7933baef220155d99c0abe87110",
+    "semantic_hash": "f5e3f7933baef220155d99c0abe87110"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\learnings_aggregator.py": {
+    "mtime": 1777864695.620833,
+    "ast_hash": "7edd47b8fba61a6367463d5b2f3329a3",
+    "semantic_hash": "7edd47b8fba61a6367463d5b2f3329a3"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\lint_wiki.py": {
+    "mtime": 1776900882.090035,
+    "ast_hash": "3b25655eef24f4c8f911b9633c8ee188",
+    "semantic_hash": "3b25655eef24f4c8f911b9633c8ee188"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\migration_registry.py": {
+    "mtime": 1775960327.875961,
+    "ast_hash": "bdcf581f109a389a8c94d16537a953bc",
+    "semantic_hash": "bdcf581f109a389a8c94d16537a953bc"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\oracle_analytics.py": {
+    "mtime": 1777505835.3936887,
+    "ast_hash": "acd6fb5e939f36bd6049defb24b3b2ad",
+    "semantic_hash": "acd6fb5e939f36bd6049defb24b3b2ad"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\project_bundler.py": {
+    "mtime": 1779314892.2107656,
+    "ast_hash": "3471396edb02cdafe533619e063bb0cd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\purge_journal.py": {
+    "mtime": 1779470985.6758997,
+    "ast_hash": "d0ad73ce2ea8892ad8ab1c33d1b3c62b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\sync_project.py": {
+    "mtime": 1775962139.7551908,
+    "ast_hash": "a95a4010abb2b2e8da3aced83c6747eb",
+    "semantic_hash": "a95a4010abb2b2e8da3aced83c6747eb"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\validate_commit_msg.py": {
+    "mtime": 1777862989.2913918,
+    "ast_hash": "6a6aa399432c56a87e89b03b2bffcfb9",
+    "semantic_hash": "6a6aa399432c56a87e89b03b2bffcfb9"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\validate_context.py": {
+    "mtime": 1778034379.479024,
+    "ast_hash": "e0fac6b4fd3444587ccbc24a7ed61c4e",
+    "semantic_hash": "e0fac6b4fd3444587ccbc24a7ed61c4e"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\workflow_journal_auditor.py": {
+    "mtime": 1779477456.959946,
+    "ast_hash": "b457b4b2e259aafdb734a242645019b2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\write_with_validation.py": {
+    "mtime": 1777852016.5077617,
+    "ast_hash": "9f0d9960478cde435a93c7bcbc1a04ad",
+    "semantic_hash": "9f0d9960478cde435a93c7bcbc1a04ad"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\_tz_utils.py": {
+    "mtime": 1775962045.1989574,
+    "ast_hash": "31d4e2aea0cea92e9c40a191736700bf",
+    "semantic_hash": "31d4e2aea0cea92e9c40a191736700bf"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\_wiki_log_utils.py": {
+    "mtime": 1777505143.1684437,
+    "ast_hash": "20994375f1a2469c881b63d63b60b081",
+    "semantic_hash": "20994375f1a2469c881b63d63b60b081"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\commit-msg": {
+    "mtime": 1777863006.2807455,
+    "ast_hash": "edf2f780e76e23e740e62d5dbaa7fe8b",
+    "semantic_hash": "edf2f780e76e23e740e62d5dbaa7fe8b"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\pre-commit": {
+    "mtime": 1777945334.5911236,
+    "ast_hash": "c90bf74927b1bb525cc1268304448e0d",
+    "semantic_hash": "c90bf74927b1bb525cc1268304448e0d"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\applypatch-msg": {
+    "mtime": 1775869926.6014464,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\commit-msg": {
+    "mtime": 1775869926.5994468,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\h": {
+    "mtime": 1775869923.170509,
+    "ast_hash": "15239a01c5554e56ff745570fb583a91",
+    "semantic_hash": "15239a01c5554e56ff745570fb583a91"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\husky.sh": {
+    "mtime": 1775869926.6104414,
+    "ast_hash": "13871d2ab13e8423790ecb2c01c78c18",
+    "semantic_hash": "13871d2ab13e8423790ecb2c01c78c18"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\post-applypatch": {
+    "mtime": 1775869926.603446,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\post-checkout": {
+    "mtime": 1779310230.455795,
+    "ast_hash": "b2c697689a25633baab654ec7eb3e2e6",
+    "semantic_hash": "b2c697689a25633baab654ec7eb3e2e6"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\post-commit": {
+    "mtime": 1779310230.4327862,
+    "ast_hash": "1bd9f050583a6761a09a6c00a39d61f7",
+    "semantic_hash": "1bd9f050583a6761a09a6c00a39d61f7"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\post-merge": {
+    "mtime": 1775869926.6074438,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\post-rewrite": {
+    "mtime": 1775869926.6054442,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\pre-applypatch": {
+    "mtime": 1775869926.6024463,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\pre-auto-gc": {
+    "mtime": 1775869926.6094422,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\pre-commit": {
+    "mtime": 1775869926.5964491,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\pre-merge-commit": {
+    "mtime": 1775869926.5974488,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\pre-push": {
+    "mtime": 1775869926.6084423,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\pre-rebase": {
+    "mtime": 1775869926.6044452,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\_\\prepare-commit-msg": {
+    "mtime": 1775869926.5984488,
+    "ast_hash": "0b71c2e7d39daa010985d529f1320b37",
+    "semantic_hash": "0b71c2e7d39daa010985d529f1320b37"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\tests\\test_affinity_lite.py": {
+    "mtime": 1778030659.244487,
+    "ast_hash": "20e8d8ca01c7a1296c3f2cc9e1ba7e06",
+    "semantic_hash": "20e8d8ca01c7a1296c3f2cc9e1ba7e06"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\tests\\test_context.py": {
+    "mtime": 1776384838.5696142,
+    "ast_hash": "37f996b8c53783b86b75418b17ddaa32",
+    "semantic_hash": "37f996b8c53783b86b75418b17ddaa32"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\tests\\test_learnings.py": {
+    "mtime": 1777864866.5430176,
+    "ast_hash": "469fd1e4382824af8ce5f17c1ae8cab6",
+    "semantic_hash": "469fd1e4382824af8ce5f17c1ae8cab6"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\tests\\test_oracle.py": {
+    "mtime": 1777504978.196941,
+    "ast_hash": "d45c5512917198abdaefcdbacac4a0ab",
+    "semantic_hash": "d45c5512917198abdaefcdbacac4a0ab"
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\_scripts\\blast_radius.py": {
+    "mtime": 1779410034.7467003,
+    "ast_hash": "b7660fd3ab738764ebe2220a05628f9f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.husky\\post-commit": {
+    "mtime": 1779410156.911692,
+    "ast_hash": "3eb7d82970e29bf569eb29630815755e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.kilo\\package.json": {
+    "mtime": 1779469082.3188047,
+    "ast_hash": "f6a56ce15a06a3042ca75a53903b85b3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\tests\\test_blast_radius.py": {
+    "mtime": 1779410056.8041744,
+    "ast_hash": "4a1f77d7c57d32a4c7b195f5cf6095f5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\AGENTS.md": {
+    "mtime": 1779556229.5728936,
+    "ast_hash": "3749d26c96904976fd483e9fa5fe7e79",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\GUIA_ESTABILIZACAO_NOTEBOOKLM.md": {
+    "mtime": 1776302656.342106,
+    "ast_hash": "500a1d2a75eab3a4e9ccf4919decd6b6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\README.md": {
+    "mtime": 1776960733.1446133,
+    "ast_hash": "98ee8190828835fd521ac2728066d273",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\README_CONTEXT.md": {
+    "mtime": 1778196618.348354,
+    "ast_hash": "8f71a9dbc52fa1b1a74e8efa1afdc140",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\TEMPLATE_MIGRATION.md": {
+    "mtime": 1776261312.9363196,
+    "ast_hash": "4c07a46b1c403f33a8bb323598c9f951",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\VERSION.md": {
+    "mtime": 1777235119.735804,
+    "ast_hash": "6657ec27be9f95177b885380509bbfa3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\README_subagents.md": {
+    "mtime": 1777869216.5439227,
+    "ast_hash": "a58e2ed46b72b6f9efeaa24c40f4b4d3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\rules_pool\\flash-journal-sync-guard.md": {
+    "mtime": 1778271744.4775052,
+    "ast_hash": "3b4bb8420f19636ec414a5234c0575aa",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\rules_pool\\graphify.md": {
+    "mtime": 1779310082.7222452,
+    "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\rules_pool\\orquestrador.md": {
+    "mtime": 1778382617.9026449,
+    "ast_hash": "0f115948a066081727b558bf3b187105",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\rules_pool\\sobriedade-operacional.md": {
+    "mtime": 1778200718.2887206,
+    "ast_hash": "3da3b88ccd98c947efce417a05421c43",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\skills\\closure-thinker\\SKILL.md": {
+    "mtime": 1778206457.2911363,
+    "ast_hash": "afb2c5782d7cd5837c11583069c7b36e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\skills\\flow-auditor\\SKILL.md": {
+    "mtime": 1779467872.798353,
+    "ast_hash": "e13e34921e18f56cebcc64b0117d57e7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\skills\\gov-friction-analyst\\README.md": {
+    "mtime": 1778112007.0911293,
+    "ast_hash": "bf80661ffdfbae566b4ba0c733a892ab",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\skills\\gov-friction-analyst\\SKILL.md": {
+    "mtime": 1778111994.6634314,
+    "ast_hash": "b33d242d2352a3e9dd9fd9d8141e2815",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\skills\\hok-governor\\SKILL.md": {
+    "mtime": 1779498167.5149128,
+    "ast_hash": "cd726ada1acda632288fed781a29193d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\skills\\journal-sync\\SKILL.md": {
+    "mtime": 1779501204.8648622,
+    "ast_hash": "ea76dc9267492d15ff31cc61c2aa760e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\skills\\sdd-orchestrator\\SKILL.md": {
+    "mtime": 1779554159.733279,
+    "ast_hash": "5064c106d3c125748111f4bc254180f9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\subagents\\propagation-auditor.md": {
+    "mtime": 1779502482.1031232,
+    "ast_hash": "fb25e9e04ee455127f94c8a52759ce93",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\subagents\\qa-validator.md": {
+    "mtime": 1777583910.151867,
+    "ast_hash": "7ec87676b5a2fbf82bfb29178898c5b5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\subagents\\readme_chain_SDD.md": {
+    "mtime": 1777848354.9730072,
+    "ast_hash": "7c31dbee6730331d8e11e56c0fa883a5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\subagents\\spec-driver.md": {
+    "mtime": 1778206765.9351408,
+    "ast_hash": "8ce26c19e7c4829f9569c8f7b6f77906",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\subagents\\spec-enricher.md": {
+    "mtime": 1779554075.4076314,
+    "ast_hash": "baced21ad9b8d4b2c32734996330bafa",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\subagents\\vision-architect.md": {
+    "mtime": 1779554075.3295345,
+    "ast_hash": "04686c3421ecc42a1fda42faca3966e5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\templates\\AGENT_SCRATCHPAD.md": {
+    "mtime": 1778109620.6735804,
+    "ast_hash": "4f59007544817a484119ae051a386324",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\templates\\CLOSURE.md": {
+    "mtime": 1778206358.428796,
+    "ast_hash": "0a8ba1f939a7eafc0b256d40fbb7bb7a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agent\\templates\\spec_v3.md": {
+    "mtime": 1778206334.6250336,
+    "ast_hash": "6333f99074835253a0c90bba4cf230f5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agents\\rules\\regras_roteadas.md": {
+    "mtime": 1779310111.7933676,
+    "ast_hash": "a402fbf2f3fc6aeeef7bdb897066a7d1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.agents\\workflows\\graphify.md": {
+    "mtime": 1779310082.7242472,
+    "ast_hash": "84de69efd46ab0b8430393bd4188f8f2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\AGENT_REGISTRY.md": {
+    "mtime": 1779501194.4531293,
+    "ast_hash": "af575410498c8256c38f284779dc7fae",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\FILE_GLOSSARY.md": {
+    "mtime": 1779567195.5514548,
+    "ast_hash": "c78cf3e8bc8229945a7de256b4cfc491",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\FLOW_JOURNAL_SYNC.md": {
+    "mtime": 1779477505.109187,
+    "ast_hash": "f957fe195e112a8dc69ce1825bc79743",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\FLOW_PROPAGATION.md": {
+    "mtime": 1779468500.175454,
+    "ast_hash": "b59dd8ed7d4ecbf6149253e8496693ed",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\FLOW_SDD.md": {
+    "mtime": 1778199778.0107636,
+    "ast_hash": "b8eaf214eacb5d4cb035bd775402b2c3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\FLOW_WIKI_ORACLE.md": {
+    "mtime": 1778271638.363609,
+    "ast_hash": "b4b998f0c0779eec9f97ac549a1d583e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\HARNESS_REGISTRY.md": {
+    "mtime": 1777600190.0864182,
+    "ast_hash": "73cce9d39e69b15bd45a4de344235aef",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\INCEPTION.md": {
+    "mtime": 1776957001.0454214,
+    "ast_hash": "c1f9b7d8194dacc6896d5ac80e07ec58",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\LEARNINGS.md": {
+    "mtime": 1779473937.1811087,
+    "ast_hash": "42de065553da97f19216e041c55c6de9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\MASTER_FLOW.md": {
+    "mtime": 1779554324.6099033,
+    "ast_hash": "fd58e78e3bb4955fc26f81ede779fb74",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\PRD.md": {
+    "mtime": 1776388903.5430398,
+    "ast_hash": "3eb83ec025df653fb57d22cc5344f3ab",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\ROADMAP.md": {
+    "mtime": 1776814324.6074927,
+    "ast_hash": "21b60dd8e41da0cba87b97fb97af8964",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\RULES.md": {
+    "mtime": 1779486435.5417101,
+    "ast_hash": "4f9120cce7a8f7051fd9206beb357d99",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\SCRIPT_GLOSSARY.md": {
+    "mtime": 1779501271.0601344,
+    "ast_hash": "9f783165a7462cd5ae96c961d7d6b424",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\START_HERE.md": {
+    "mtime": 1776384445.6379082,
+    "ast_hash": "1faf96e93e98708b31d8e77afc224ff4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\TLC_INTEGRATION.md": {
+    "mtime": 1777859323.611826,
+    "ast_hash": "0571d41fdfdd96b99e34c9c0a9f4dd16",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\brain\\VISION.md": {
+    "mtime": 1776958017.1518908,
+    "ast_hash": "58b66bd3d9c10d8ec85587fcc508f78e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\ARCHITECTURE.md": {
+    "mtime": 1776814299.053793,
+    "ast_hash": "8f71ba7333a6146d27ed0e8841f5943a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\HARNESS_LOG.md": {
+    "mtime": 1779473937.7461207,
+    "ast_hash": "4e3e99adcf44a90b8d8b63e2022ccd81",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\JOURNAL.md": {
+    "mtime": 1779635723.006518,
+    "ast_hash": "b8feee05b58a2a47ba6116bacdf97783",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\JOURNAL_SYNAPSE.md": {
+    "mtime": 1777945151.7644482,
+    "ast_hash": "b96b2fce82ae9430185c3f4ceeae88e2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\rebuild_guide.md": {
+    "mtime": 1775868195.3506207,
+    "ast_hash": "2e395a33c7424a8effa1bc92459a738c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\rx-affinity-lite.md": {
+    "mtime": 1778031012.324196,
+    "ast_hash": "69da2b7494cae7859268d13e9937b81c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\rx-anatomy.md": {
+    "mtime": 1777785249.314782,
+    "ast_hash": "623fe3050018c1caf17a372b5f0638b6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\rx-biology.md": {
+    "mtime": 1777175651.545017,
+    "ast_hash": "839b7623a79dcba81a2fcefba2032f91",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\rx-communications.md": {
+    "mtime": 1779556229.675125,
+    "ast_hash": "3bba20c6feb742b99e2dad0eaaa6c7c1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\rx-learnings.md": {
+    "mtime": 1777868435.8895283,
+    "ast_hash": "a7460037c1086ee49b982fc848e40e6f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\rx-sam-audit.md": {
+    "mtime": 1779477480.9343581,
+    "ast_hash": "fd7dc5cf89890811521199d2b39cc458",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\RX_REPOSITORIO.md": {
+    "mtime": 1777230522.9837732,
+    "ast_hash": "ea662923271f67ca71dcd4b9607a2d80",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\TECHNICAL_REQUIREMENTS.md": {
+    "mtime": 1779473936.8135014,
+    "ast_hash": "07ca14097e2667871be3c2344ba158e1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\TESTS.md": {
+    "mtime": 1776814301.2247777,
+    "ast_hash": "b30e3edc9f0bef249bb1a96c015f0609",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\journals\\journal_archive_20260424_144021.md": {
+    "mtime": 1777052421.845407,
+    "ast_hash": "dbf7b25f297a83197c53e6abe11acfd0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\journals\\journal_archive_20260503_015104.md": {
+    "mtime": 1777783864.5324976,
+    "ast_hash": "f447674f88dec784d2bbbff856a9d342",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\journals\\journal_archive_20260506_191531.md": {
+    "mtime": 1778105731.3799956,
+    "ast_hash": "c6de5d7f3ef6cd520a381b3fa8db390d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\journals\\journal_archive_20260522_143007.md": {
+    "mtime": 1779471007.9279463,
+    "ast_hash": "72d4bd44ba5f5d8e62517ceec491e76b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\prds\\PLAN_SPRINT_CONTRACT.md": {
+    "mtime": 1776437206.6977334,
+    "ast_hash": "c6d100ac43bad16b140f4dfafc7ec502",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\rx_history\\rx-biology_v2.4.1_legacy.md": {
+    "mtime": 1776696388.695155,
+    "ast_hash": "e26cddcd3d98936c553789abf9eaac95",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\affinity-lite_20260506_2008\\.enriched.md": {
+    "mtime": 1778106899.6109765,
+    "ast_hash": "c7b179dd287fdbac561ed38b88633ca1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\affinity-lite_20260506_2008\\AGENT_SCRATCHPAD.md": {
+    "mtime": 1778030639.2343187,
+    "ast_hash": "594851315fc12ce6310eec6463bb96f0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\affinity-lite_20260506_2008\\spec.md": {
+    "mtime": 1778030526.4204407,
+    "ast_hash": "497c9744415fa2437fe4fa452f5a24aa",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\affinity-lite_20260506_2008\\STATE.md": {
+    "mtime": 1778031579.3421533,
+    "ast_hash": "52abf2a3b3755a5265a756bddd134494",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\affinity-lite_20260506_2008\\tasks.md": {
+    "mtime": 1778031519.0744948,
+    "ast_hash": "0bc714311270b893fea9701d6978c7fa",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\blast_radius_mvp_20260522_150134\\.enriched.md": {
+    "mtime": 1779409619.7829137,
+    "ast_hash": "f42311bb9a347fcf6adde698f964d564",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\blast_radius_mvp_20260522_150134\\CLOSURE.md": {
+    "mtime": 1779412939.8235028,
+    "ast_hash": "faaa86340128cf4701d05864b69ff2ac",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\blast_radius_mvp_20260522_150134\\spec.md": {
+    "mtime": 1779413349.584559,
+    "ast_hash": "8152de0649f3f816a2aa6156971a5a38",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\blast_radius_mvp_20260522_150134\\STATE.md": {
+    "mtime": 1779472582.8996663,
+    "ast_hash": "918d5e6c10adf7f3920dc302944de452",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\blast_radius_mvp_20260522_150134\\tasks.md": {
+    "mtime": 1779410239.5171494,
+    "ast_hash": "df361cfa30d11c2e6c9ca3ca7abe928e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\docs_resenha\\spec.md": {
+    "mtime": 1776953160.08993,
+    "ast_hash": "af35ce3607122fb33cc348f399fc7277",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\docs_resenha\\STATE.md": {
+    "mtime": 1776953160.087931,
+    "ast_hash": "94e1871d05db1631f629d851bca9a796",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\governance-resiliency-fixes_20260506_2008\\.enriched.md": {
+    "mtime": 1778106899.6129804,
+    "ast_hash": "774a6570cdefb6e9a8919cf93efa7c19",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\governance-resiliency-fixes_20260506_2008\\AGENT_SCRATCHPAD.md": {
+    "mtime": 1778034123.960227,
+    "ast_hash": "3b486162111b6133ac35b222f8b12aac",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\governance-resiliency-fixes_20260506_2008\\spec.md": {
+    "mtime": 1778108871.481663,
+    "ast_hash": "06189567f055a317858034ad38a7e0c2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\governance-resiliency-fixes_20260506_2008\\STATE.md": {
+    "mtime": 1778034407.655187,
+    "ast_hash": "7c20e0f0255d9b7538cf35ca7d72e063",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\governance-resiliency-fixes_20260506_2008\\tasks.md": {
+    "mtime": 1778035246.3603485,
+    "ast_hash": "e5bbb8cbb06864a3bfb6b11aefa8160b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\gov_v3_stabilization_20260506_184250\\.enriched.md": {
+    "mtime": 1778101486.8557904,
+    "ast_hash": "dae5e7647f114e856ecaea27d5e0dec3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\gov_v3_stabilization_20260506_184250\\spec.md": {
+    "mtime": 1777853113.492192,
+    "ast_hash": "691bd75cf22b5334943c5b939551bed8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\gov_v3_stabilization_20260506_184250\\STATE.md": {
+    "mtime": 1778031604.2404926,
+    "ast_hash": "156288e7a7ed19d94bc9648d5bb88ccb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\gov_v3_stabilization_20260506_184250\\tasks.md": {
+    "mtime": 1777863119.0879877,
+    "ast_hash": "e3f5fde1ed322d3621229abca7e0aa3b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\hardening_v2.5\\spec.md": {
+    "mtime": 1776953160.0936434,
+    "ast_hash": "1451a68bb21a2c676ca3cdd5f2ee4816",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\hardening_v2.5\\STATE.md": {
+    "mtime": 1776953160.0921323,
+    "ast_hash": "02fe06b2fffe1d136429c0d93c3067e3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\hok-advanced-modules_20260414_075508\\spec.md": {
+    "mtime": 1775959832.7109036,
+    "ast_hash": "8fca7cb53bf37a7f8db3631886368148",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\hok-advanced-modules_20260414_075508\\STATE.md": {
+    "mtime": 1775965304.4080703,
+    "ast_hash": "5fe9a3e6bc93e79af1bcbcd3e820b4b4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\melhoria_spec_driver_20260506_2008\\.enriched.md": {
+    "mtime": 1778106899.6149788,
+    "ast_hash": "6e265c8b915ce26b52b48c793d3dd54c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\melhoria_spec_driver_20260506_2008\\AGENT_SCRATCHPAD.md": {
+    "mtime": 1778107558.3256507,
+    "ast_hash": "954479756b54cff81426fff49362a670",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\melhoria_spec_driver_20260506_2008\\spec.md": {
+    "mtime": 1778108855.3195388,
+    "ast_hash": "44882535345e7785dd246bc869b74c87",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\melhoria_spec_driver_20260506_2008\\STATE.md": {
+    "mtime": 1778108035.531688,
+    "ast_hash": "de14f2f3bfc58dcbb7f4e37c88b141a8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\melhoria_spec_driver_20260506_2008\\tasks.md": {
+    "mtime": 1778108028.2118113,
+    "ast_hash": "3ad35648575339756b1f08a7c93e3099",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\sync_maintenance\\spec.md": {
+    "mtime": 1776953160.0966425,
+    "ast_hash": "7ab1fc8723d8ca59ea3c206697d51dcc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\sync_maintenance\\STATE.md": {
+    "mtime": 1776953160.095644,
+    "ast_hash": "97df44f3bca3133fa4483d794d3d6c38",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\systemic_vaccination_20260506_1845\\.enriched.md": {
+    "mtime": 1778101486.85691,
+    "ast_hash": "6eef345d95cb73007fa6203594d543d2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\systemic_vaccination_20260506_1845\\spec.md": {
+    "mtime": 1778103820.1105309,
+    "ast_hash": "cf3e040dae5f36b3e8cdff1afbc1573b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\systemic_vaccination_20260506_1845\\STATE.md": {
+    "mtime": 1778102534.520071,
+    "ast_hash": "30c904e63a46adfd297bd33bfa3f4fa3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\systemic_vaccination_20260506_1845\\tasks.md": {
+    "mtime": 1778101440.1853907,
+    "ast_hash": "bddf402668e3ddf8c1c042b20d97f246",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\specs\\_template_20260421_204026\\spec.md": {
+    "mtime": 1776436246.3164194,
+    "ast_hash": "c6dfafefc2c34c25f289a73bea385d8a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\_old_raw\\stripe_docs.md": {
+    "mtime": 1775953302.1788268,
+    "ast_hash": "88d3d7ff31dd40d59198d1e3d1fc3296",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\maintenance\\_archive_context\\_old_raw\\template_inbox.md": {
+    "mtime": 1775953292.9470434,
+    "ast_hash": "9e78fb7195d603069d5e2ac63c80652d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\market\\economics.md": {
+    "mtime": 1776275411.97552,
+    "ast_hash": "cfd4df8abbdfa4a3c910321b4d52ebb2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\market\\MARKET_INBOX.md": {
+    "mtime": 1776280521.935146,
+    "ast_hash": "1c81c9aa49441986252a33b61b90f628",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\market\\SSOT_MAP.md": {
+    "mtime": 1776992030.3565989,
+    "ast_hash": "ac9c8cb689d014d5831cb69485508900",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\market\\wiki_log.md": {
+    "mtime": 1779472583.765628,
+    "ast_hash": "84bb8222170cdb90aff72f2c42d02e95",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\market\\RAW\\harness_engineering_manifesto.md": {
+    "mtime": 1776992004.9105594,
+    "ast_hash": "d83c8473ae7766d387fe147dc0a06773",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\market\\RAW\\ralph_wiggum_loop_dossier.md": {
+    "mtime": 1776992595.79256,
+    "ast_hash": "3bdf220bda9148fa06702deecbc85f07",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\market\\research\\draft.md": {
+    "mtime": 1776275553.764231,
+    "ast_hash": "f79e98a832d50a54a36864b807d52937",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\market\\research\\sprint_contracts.md": {
+    "mtime": 1776434787.894367,
+    "ast_hash": "466225e66aef841aa95fb325ee15684c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\market\\WIKI\\_index.md": {
+    "mtime": 1779472583.4433184,
+    "ast_hash": "6d7c468a89f6faa70f832c78b19ca42a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\market\\WIKI\\_template.md": {
+    "mtime": 1776808378.6589887,
+    "ast_hash": "47b59311dd67b64a57dad940240d596f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\market\\WIKI\\concepts\\harness_architecture.md": {
+    "mtime": 1776992335.142319,
+    "ast_hash": "3fea1abceec8e08c8667287671f629a9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\market\\WIKI\\concepts\\harness_behavior.md": {
+    "mtime": 1776992454.793992,
+    "ast_hash": "621f6914f4ab1118a5138e631fd32463",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\market\\WIKI\\concepts\\harness_maintainability.md": {
+    "mtime": 1776992066.5586996,
+    "ast_hash": "df4209c411b52ce3d8670693eddfd5e2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\market\\WIKI\\concepts\\ralph_wiggum_loop.md": {
+    "mtime": 1776992607.7063088,
+    "ast_hash": "e358690e9664b870865fc706dcc70508",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\monitoring\\CONTEXT_HEALTH.md": {
+    "mtime": 1779472584.0806148,
+    "ast_hash": "c5ff224b1f7d38580cf985642efa2c55",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\monitoring\\EXECUTION_BUFFER.md": {
+    "mtime": 1776522254.9551914,
+    "ast_hash": "6b663dae807b603703103de1860032ff",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\monitoring\\PROJECT_INDEX_01.md": {
+    "mtime": 1779472584.6937654,
+    "ast_hash": "6e280b390d6c94b4e70155a4127e9b5e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\monitoring\\PROJECT_INDEX_02.md": {
+    "mtime": 1779472584.695768,
+    "ast_hash": "619e87f4403a034b755fdc8b63835604",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.context\\monitoring\\PROJECT_INDEX_03.md": {
+    "mtime": 1779472584.6967697,
+    "ast_hash": "bf99a34a136cf46ce4c010f6c6b07ee5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.github\\workflows\\context-health.yml": {
+    "mtime": 1776170868.3215673,
+    "ast_hash": "f81c51038b80b0639deacd0f656c2e44",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\SSD_ERRORS_LEDGER.md": {
+    "mtime": 1778109633.4590492,
+    "ast_hash": "833b85bca02596b180e4af8587f298bc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\SSD_PLAYBOOK.md": {
+    "mtime": 1778206445.8115573,
+    "ast_hash": "38a5ae20c329d406476a5b6eb83be2fc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\log_old_features.md": {
+    "mtime": 1777783879.5530908,
+    "ast_hash": "95e6cdafc1e9d0e6525ff1ab4416ba23",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\contract_sprints_v2_safe\\spec.md": {
+    "mtime": 1777586200.33235,
+    "ast_hash": "5ff2ac13158e6ffdd3448fec1ab38a7c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\contract_sprints_v2_safe\\STATE.md": {
+    "mtime": 1777784525.8177369,
+    "ast_hash": "70f9f82f9da4344908c221712a88e541",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\contract_sprints_v2_safe\\tasks.md": {
+    "mtime": 1777586219.8987114,
+    "ast_hash": "ec060144438844ef836f5f0b933306d8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\governance_rules_hardening\\design.md": {
+    "mtime": 1777567381.443053,
+    "ast_hash": "1e6919df9f7e3a484eae228c660877a5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\governance_rules_hardening\\spec.md": {
+    "mtime": 1777604410.7903516,
+    "ast_hash": "217da043efba234e5a10c2015673eb13",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\governance_rules_hardening\\STATE.md": {
+    "mtime": 1777784467.8881316,
+    "ast_hash": "ef132fb58f45ad0d84a2a119ebd36b1d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\governance_rules_hardening\\tasks.md": {
+    "mtime": 1777604397.3186028,
+    "ast_hash": "f4eb7fc03bf09618e4e8bd694b3fa1f7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\gov_chain_v3_phase1\\spec.md": {
+    "mtime": 1777778059.1058638,
+    "ast_hash": "e46f872f82ed03f1ccc140d2c06ef5a0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\gov_chain_v3_phase1\\STATE.md": {
+    "mtime": 1777778571.1689336,
+    "ast_hash": "23fd4a67cade241d595e3a93098da758",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\gov_chain_v3_phase1\\tasks.md": {
+    "mtime": 1777778053.0072803,
+    "ast_hash": "e0399e4b078b4900f984120e34d80b65",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\gov_chain_v3_phase2_dryrun\\spec.md": {
+    "mtime": 1777781912.8855765,
+    "ast_hash": "28cae935dc0b2238f9ed5513e39e970a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\gov_chain_v3_phase2_dryrun\\STATE.md": {
+    "mtime": 1777781832.4674306,
+    "ast_hash": "ff96b463cc51356fab3a1fecf8006bbf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\gov_chain_v3_phase2_dryrun\\tasks.md": {
+    "mtime": 1777779510.3770175,
+    "ast_hash": "039aabfad3e154c2cfd54d19c8fa692f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\gov_v3_stress_test\\AGENT_SCRATCHPAD.md": {
+    "mtime": 1777783050.7280111,
+    "ast_hash": "7c608d1a21cce42f813940bf026fd87f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\gov_v3_stress_test\\spec.md": {
+    "mtime": 1777782844.1852305,
+    "ast_hash": "46e26ea1f9963efe464a1c760b452f82",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\gov_v3_stress_test\\STATE.md": {
+    "mtime": 1777783465.060749,
+    "ast_hash": "b7c64cf5f81f3340b86a70fd7f457aa0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\gov_v3_stress_test\\tasks.md": {
+    "mtime": 1777783175.2717931,
+    "ast_hash": "eab46e6babaebb2a0aa9811176603be7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\harness_fail_closed\\spec.md": {
+    "mtime": 1776809775.2836506,
+    "ast_hash": "6c7f34f866638f5c79cbcced056602fc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\harness_fail_closed\\STATE.md": {
+    "mtime": 1776898975.4554439,
+    "ast_hash": "ba13b27c02b7f0ce3f111ead3b149b6e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\meta-inception\\spec.md": {
+    "mtime": 1776436398.0031755,
+    "ast_hash": "45411e2cdfb19c181894213cd193b917",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\meta-inception\\STATE.md": {
+    "mtime": 1776808904.2858884,
+    "ast_hash": "659069b64d406f42d8cb047a103d1c60",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\multi_agent_choreography\\spec.md": {
+    "mtime": 1777437233.5531356,
+    "ast_hash": "7b8eb157898ad14b891975f730467c09",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\multi_agent_choreography\\STATE.md": {
+    "mtime": 1777437294.2261376,
+    "ast_hash": "e752c4045678aa59150be174baea963e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\oracle_v3\\spec.md": {
+    "mtime": 1777508027.066525,
+    "ast_hash": "1acacfa3df05d1fdb2293adf9d3a8a91",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\oracle_v3\\STATE.md": {
+    "mtime": 1777523639.4638984,
+    "ast_hash": "bfcca8fce3bed417e596ecc7e0ee09ec",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\qa_subagent\\spec.md": {
+    "mtime": 1777228030.87023,
+    "ast_hash": "d4cc0fd2c01f6f01723e9defe01c0f99",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\qa_subagent\\STATE.md": {
+    "mtime": 1777235178.1094143,
+    "ast_hash": "833430455040a381295fb4d818632514",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\sam_chronology_fix\\spec.md": {
+    "mtime": 1777227587.7893023,
+    "ast_hash": "4fb693ff7c0d49013c8eb7304a101d1b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\sam_chronology_fix\\STATE.md": {
+    "mtime": 1777227604.784593,
+    "ast_hash": "1abc99b3015a4d1f68defb897dd42aff",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\synapse_workflow\\spec.md": {
+    "mtime": 1777054073.542998,
+    "ast_hash": "dd4c064216becf5840237c563f06d615",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\synapse_workflow\\STATE.md": {
+    "mtime": 1777178361.4460385,
+    "ast_hash": "a4c333f28cf7715bc7d3450d22f1d30b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\wiki_level2\\spec.md": {
+    "mtime": 1776899475.6758313,
+    "ast_hash": "179af6cfc2c98b669e54786da7404292",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\wiki_level2\\STATE.md": {
+    "mtime": 1776992619.9172192,
+    "ast_hash": "450ecf6510ffc9196378c90526aacfde",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\wiki_level2\\tasks.md": {
+    "mtime": 1776900760.379948,
+    "ast_hash": "bc1feb2f7f5cead4a7b076bf4bb20223",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\_template_operacional\\design.md": {
+    "mtime": 1777567381.443053,
+    "ast_hash": "1e6919df9f7e3a484eae228c660877a5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\_template_operacional\\spec.md": {
+    "mtime": 1777594475.8312683,
+    "ast_hash": "1b0767ae4301bdbdfee636a6a85f2a88",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\_template_operacional\\STATE.md": {
+    "mtime": 1777567597.439099,
+    "ast_hash": "f2cf5ec71c76ecf843f4f701ae9b65c4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\_template_operacional\\tasks.md": {
+    "mtime": 1777567387.9848847,
+    "ast_hash": "7b545c7a43d666757d85b0dab9a5e888",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\_template_operacional_sprint\\CHECKLIST.md": {
+    "mtime": 1777784419.7724028,
+    "ast_hash": "d340247c341c553a15b8ceab2c73a024",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\_template_operacional_sprint\\design.md": {
+    "mtime": 1777594523.0529773,
+    "ast_hash": "09a82c3a980e7812180645e0e726796b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\_template_operacional_sprint\\spec.md": {
+    "mtime": 1777594490.952844,
+    "ast_hash": "d0276f92776562ae15fb8a217fbef9e2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\_template_operacional_sprint\\STATE.md": {
+    "mtime": 1777594503.531344,
+    "ast_hash": "7fa16c3768010898f5ede96b77255e06",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\.specs\\features\\_arquive_features\\_template_operacional_sprint\\tasks.md": {
+    "mtime": 1777594514.38402,
+    "ast_hash": "e27016318827ba724bceee8cdd7b3df5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\comentarios_Flash.md": {
+    "mtime": 1777524405.5157888,
+    "ast_hash": "2796672b2c3d62a9df9412fdd099c501",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\HANDOFF.md": {
+    "mtime": 1779403483.6592712,
+    "ast_hash": "9d37883f8c43fbd432941d8f65f29473",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\log_planos.md": {
+    "mtime": 1777519955.1428554,
+    "ast_hash": "ca50f22229fbc9779143bb7d9605ff23",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\MiMo_Learnnings.md": {
+    "mtime": 1777517188.1180534,
+    "ast_hash": "b1d44a545129689c4fd44b0d1256c4e4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\operacionalizacao_TLC_SpecDriven.md": {
+    "mtime": 1777527544.2555983,
+    "ast_hash": "04f45cebde96455c16853964ac1865dc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\relatorio_BigPicture_H2I.md": {
+    "mtime": 1777511944.762113,
+    "ast_hash": "db028120478b9a7c43156689d79323a2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\relatorio_erros_governanca.md": {
+    "mtime": 1777510709.5097454,
+    "ast_hash": "91bb2f4ce5ed9fe30257093ad6eeee82",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\relatorio_insights_context.md": {
+    "mtime": 1777421178.013257,
+    "ast_hash": "1cd861caa10edfc5157197f8f3195b85",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\relatorio_MiMo-v2.5-Pro.md": {
+    "mtime": 1777258126.6199198,
+    "ast_hash": "b5e83d080a02546b714d021767ae390c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\relatorio_Qwen.md": {
+    "mtime": 1777342599.4318566,
+    "ast_hash": "e995efe0f5379930ad4089cb5ecaf317",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\template_log_planos.md": {
+    "mtime": 1777424860.1365256,
+    "ast_hash": "570c94e26fbb8eac750bf45b8f77d206",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\governance_rules_hardening\\plano_governance_rules_hardening.md": {
+    "mtime": 1777593151.489973,
+    "ast_hash": "fa118c46d9ab169aa5204deec9bf0586",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\IDEIAS\\coupling_matrix_system.md": {
+    "mtime": 1777946949.6822717,
+    "ast_hash": "1426046063ee0366c368ab2a74b84aa1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\IDEIAS\\afinidade-py\\afinnity.md": {
+    "mtime": 1778027763.5642664,
+    "ast_hash": "8a13a01083f7a6e6189e0a118c1f3b6a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\IDEIAS\\afinidade-py\\avaliacao_critica.md": {
+    "mtime": 1778028915.0887377,
+    "ast_hash": "ddc5f00b474c27685567ab6068ea4031",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\Learnnings\\Learnings_MiMo_v2.md": {
+    "mtime": 1777861205.3984768,
+    "ast_hash": "4dc3f39fdadd6bacfff2a2a11c44496b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\Learnnings\\MiMo_Learnings_Consolidado.md": {
+    "mtime": 1777523617.5354493,
+    "ast_hash": "e4f2e7568af44aa858d1876899b8a8b4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\melhoria_spec-driver\\melhoria_spec-driver.md": {
+    "mtime": 1778105515.0316956,
+    "ast_hash": "dc382528d571615cef01b6986466096b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\mudanca_propagacao\\asset_futuro.md": {
+    "mtime": 1779399203.417073,
+    "ast_hash": "5259f9bbff0d7148031cb9788831a419",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\mudanca_propagacao\\critica_plano_mimo.md": {
+    "mtime": 1779400263.2951427,
+    "ast_hash": "71311c5442576cb82df615b3a0c4a52a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\mudanca_propagacao\\PLANO_FINAL_blast_radius.md": {
+    "mtime": 1779402638.2060108,
+    "ast_hash": "83c5b67d7be44344f36d4c7bb87b03a7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\mudanca_propagacao\\plano_mimo_propagation.md": {
+    "mtime": 1779399126.127946,
+    "ast_hash": "c45e88ed5890d77ad4c9fc00d37db06f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\mudanca_propagacao\\plano_OpusMiMo_propagation.md": {
+    "mtime": 1779401820.4110534,
+    "ast_hash": "6bf7f8033468022ab1193acd0d436936",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\mudanca_propagacao\\propagation_analysis.md": {
+    "mtime": 1779392274.4918907,
+    "ast_hash": "4c3b332667f7527a91e728cfae502553",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\mudanca_propagacao\\propagation_analysis_mini_spec.md": {
+    "mtime": 1779392160.0166402,
+    "ast_hash": "134880ef22c1098d8b9baa63805b85bb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\mudanca_propagacao\\V2plano_mimo_propagation.md": {
+    "mtime": 1779401570.7275167,
+    "ast_hash": "bf50f60557b2330a1eaa00b0e87c525b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\mudanca_specdriven\\mudanca_specdriven.md": {
+    "mtime": 1777577439.9475684,
+    "ast_hash": "69ef5dadb0c2195009d9a632e37393eb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\mudanca_specdriven\\plano_v2_caminho_seguro_falsh.md": {
+    "mtime": 1777579586.212568,
+    "ast_hash": "cb9ae7bea6926241a37863b00e49ebe9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\mudanca_specdriven\\relatorio_auditoria_contract_sprints.md": {
+    "mtime": 1777577770.1698463,
+    "ast_hash": "ae85e98e911fc8d68cc3c510b6565a4e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\SSD-Chain\\Chain-Skills V3.md": {
+    "mtime": 1777781949.7919405,
+    "ast_hash": "8f4b8558b388a381ffd5d56268dab8b6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\SSD-Chain\\chain_specdriver.md": {
+    "mtime": 1777769956.916299,
+    "ast_hash": "ac1c99f4c3ca5e26c6a2234fed5d694f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\SSD-Chain\\nota_deny_test.md": {
+    "mtime": 1777777532.9224005,
+    "ast_hash": "5e83b45509e7ed89500616d22235179e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\SSD-Chain\\RAW_SSD-Chain.md": {
+    "mtime": 1777774160.7974737,
+    "ast_hash": "2487040e4ad5420549a4c274b4401346",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\SSD-Chain\\SDD_Report.md": {
+    "mtime": 1777761424.0191529,
+    "ast_hash": "6d66aa3ba7a6de6c8ea7bbe5c3e8c761",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\orquestra\u00e7aoQA_SpecDriver\\plano_coreografia_multi_agent.md": {
+    "mtime": 1777430890.064632,
+    "ast_hash": "aee3b99312f837da09176aa1f4958f9d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\DIRECTIVA_V2.4.1_HARDENED.md": {
+    "mtime": 1776274915.7561936,
+    "ast_hash": "c4d85b15879864d942db1717d35669a6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\ideia_JOURNAL_SYNAPSE.md": {
+    "mtime": 1776993469.5905707,
+    "ast_hash": "e3ef823b682151676aea4123dc22d6f5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\implementation_plan.md": {
+    "mtime": 1775862928.1840317,
+    "ast_hash": "c964be94ec7d1c645aabb9c5eb97eafa",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\master_plan.md": {
+    "mtime": 1775864913.6523013,
+    "ast_hash": "901968ab5f16aead5fb27c28bcdf168c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\multi_agent_plan.md": {
+    "mtime": 1775863947.825062,
+    "ast_hash": "1182523795da1b2cdabe4ed3e713eacf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\Nivel_2_Karpathy_Wiki.md": {
+    "mtime": 1776898856.2478225,
+    "ast_hash": "8ed2c497d4cea1c5c34546c9eadbf824",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\PHASE_3_KARPATHY_WIKI.md": {
+    "mtime": 1776793908.4268146,
+    "ast_hash": "923bca49a65f9b7eb6ee9b826ae11de6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\plano_ultra_completo_implantacao_synapse_workflow_journal_flash.md": {
+    "mtime": 1777044348.1349428,
+    "ast_hash": "5abc40b7d407cd1dfa08d1976b13787f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\plano_workflow_Journal_SAM_completo.md": {
+    "mtime": 1777042674.9041774,
+    "ast_hash": "aa3ba8028e9b4d9b9a44df87116157ce",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\plan_hok_advanced_security_and_db.md": {
+    "mtime": 1775958931.6456792,
+    "ast_hash": "f875e6fcba52a1ec3d73a718222c76dd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\plan_inception_final_v2_4.md": {
+    "mtime": 1776176256.0877445,
+    "ast_hash": "7029999b36d4529735bb17f93e37ff43",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\plan_inception_market_v2_4.md": {
+    "mtime": 1776167109.9157538,
+    "ast_hash": "2d6b423036c86745086f1518c1649cc4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\PLAN_SPEC_ENRICHER_V2.4.1.md": {
+    "mtime": 1776280176.0744965,
+    "ast_hash": "fcfe5367d068f6926ab2794182059563",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\RESEARCH_NOTE_SPRINT_CONTRACTS.md": {
+    "mtime": 1776283475.439521,
+    "ast_hash": "581ed5ece849b8adc21cccd2af33aeeb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\roadmap_reactive_hok_v2_v3.md": {
+    "mtime": 1775952961.408542,
+    "ast_hash": "83e243177aa2ff1602ef76bb14dd5cc3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\template_base_v2_3_1.md": {
+    "mtime": 1776177754.0804458,
+    "ast_hash": "6a8b7b96e7f35c02cd55c0bd6e793d31",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_old_micelania\\walkthrough_hok_triad.md": {
+    "mtime": 1775952331.404227,
+    "ast_hash": "a2d40d51f78b8a349c1e9c5a363800b9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_OracleV3\\auditoria_MiMo_final.md": {
+    "mtime": 1777423212.1577678,
+    "ast_hash": "4386060d6154c5a3da2995a6d5a1d4d5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_OracleV3\\auditoria_MiMo_plano_consolidado.md": {
+    "mtime": 1777421979.8312857,
+    "ast_hash": "741e6efd2d261f92bbc18de9f141d484",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_OracleV3\\auditoria_MiMo_v3_final.md": {
+    "mtime": 1777423857.471219,
+    "ast_hash": "9a8ca99f76667600b230778063a74873",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_OracleV3\\auditoria_Qwen_cirurgica.md": {
+    "mtime": 1777424749.339345,
+    "ast_hash": "66c2220d094e2ae0a9c8fee3cc595b99",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_OracleV3\\auditoria_Qwen_plano_consolidado.md": {
+    "mtime": 1777422775.602802,
+    "ast_hash": "af51e4cdf3537e76937f4bcb60e837b0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_OracleV3\\log_planos.md": {
+    "mtime": 1777424860.1365256,
+    "ast_hash": "570c94e26fbb8eac750bf45b8f77d206",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_OracleV3\\plano_consolidado_Oracle_v3.md": {
+    "mtime": 1777424837.9728339,
+    "ast_hash": "aed4cfa9fade8ad62a101e1aa43d4331",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_OracleV3\\relatorio_MiMo-Oracle.md": {
+    "mtime": 1777420340.4188447,
+    "ast_hash": "90288f586f75a65373592648958802e1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_OracleV3\\relatorio_oracle_MiMo.md": {
+    "mtime": 1777344814.2046442,
+    "ast_hash": "f1f71ef41b2d17aa7dc7a7ef00fcce26",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_OracleV3\\relatorio_Oracle_Opus.md": {
+    "mtime": 1777420329.6889443,
+    "ast_hash": "ecad21329d54676820991daefed4ac0a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\planos\\_arquivo_planos\\_OracleV3\\relatorio_Oracle_Qwen.md": {
+    "mtime": 1777347836.2730005,
+    "ast_hash": "2a364dd1a1f0f48636d61b215b0ee6d2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\scratch\\dummy_test.txt": {
+    "mtime": 1777781159.5979686,
+    "ast_hash": "b0b36937ca69562d6f470c02badc6935",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\scratch\\stress_log.txt": {
+    "mtime": 1777783157.252206,
+    "ast_hash": "198e8f8a33a46f241dc11a14575f6449",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\User\\Desktop\\ProjetosAntigravity\\TEMPLATES\\template_inic\u00edo_de_projeto\\_modoLight\\Modo_Light.md": {
+    "mtime": 1775876985.201801,
+    "ast_hash": "a91ce7c453e56e60965c9f6ced0305cc",
+    "semantic_hash": ""
+  }
+}

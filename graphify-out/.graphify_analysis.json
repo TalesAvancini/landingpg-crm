@@ -1,12 +1,10 @@
 {
   "communities": {
     "0": [
-      "harness_runner_script",
-      "hok_governor_skill",
-      "master_flow",
-      "readme_antigravity_kit",
-      "readme_context_chain_skills",
-      "rules_master",
+      "context_scripts_harness_runner_py",
+      "context_scripts_health_sync_py",
+      "context_scripts_sync_project_py",
+      "context_scripts_tz_utils_py",
       "scripts_harness_runner_check_enrichment_integrity",
       "scripts_harness_runner_check_epistemological_gate",
       "scripts_harness_runner_check_handoff_integrity",
@@ -38,46 +36,269 @@
       "scripts_harness_runner_update_state_md",
       "scripts_harness_runner_validate_sprint_contract",
       "scripts_harness_runner_validate_standard_contract",
-      "spec_driver_subagent"
+      "scripts_health_sync_count_journal_metrics",
+      "scripts_health_sync_count_pending_migrations",
+      "scripts_health_sync_count_schema_tables",
+      "scripts_health_sync_estimate_tokens",
+      "scripts_health_sync_update_dashboard",
+      "scripts_sync_project_get_package_deps",
+      "scripts_sync_project_get_schema_tables",
+      "scripts_sync_project_sync_requirements",
+      "scripts_tz_utils_format_ts",
+      "scripts_tz_utils_get_now_tz",
+      "scripts_tz_utils_rationale_23",
+      "scripts_tz_utils_rationale_29"
     ],
     "1": [
-      "package_json",
-      "template_inic\u00edo_de_projeto_package_author",
-      "template_inic\u00edo_de_projeto_package_description",
-      "template_inic\u00edo_de_projeto_package_devdependencies",
-      "template_inic\u00edo_de_projeto_package_devdependencies_husky",
-      "template_inic\u00edo_de_projeto_package_keywords",
-      "template_inic\u00edo_de_projeto_package_license",
-      "template_inic\u00edo_de_projeto_package_name",
-      "template_inic\u00edo_de_projeto_package_scripts",
-      "template_inic\u00edo_de_projeto_package_scripts_context_affinity",
-      "template_inic\u00edo_de_projeto_package_scripts_context_all",
-      "template_inic\u00edo_de_projeto_package_scripts_context_bundle",
-      "template_inic\u00edo_de_projeto_package_scripts_context_capture",
-      "template_inic\u00edo_de_projeto_package_scripts_context_check_migrations",
-      "template_inic\u00edo_de_projeto_package_scripts_context_check_version",
-      "template_inic\u00edo_de_projeto_package_scripts_context_cleanup",
-      "template_inic\u00edo_de_projeto_package_scripts_context_enrich",
-      "template_inic\u00edo_de_projeto_package_scripts_context_harness",
-      "template_inic\u00edo_de_projeto_package_scripts_context_health",
-      "template_inic\u00edo_de_projeto_package_scripts_context_ingest_guard",
-      "template_inic\u00edo_de_projeto_package_scripts_context_inject",
-      "template_inic\u00edo_de_projeto_package_scripts_context_learnings",
-      "template_inic\u00edo_de_projeto_package_scripts_context_learnings_triage",
-      "template_inic\u00edo_de_projeto_package_scripts_context_lint",
-      "template_inic\u00edo_de_projeto_package_scripts_context_lint_strict",
-      "template_inic\u00edo_de_projeto_package_scripts_context_map",
-      "template_inic\u00edo_de_projeto_package_scripts_context_purge",
-      "template_inic\u00edo_de_projeto_package_scripts_context_scan_secrets",
-      "template_inic\u00edo_de_projeto_package_scripts_context_sync",
-      "template_inic\u00edo_de_projeto_package_scripts_context_test",
-      "template_inic\u00edo_de_projeto_package_scripts_context_validate",
-      "template_inic\u00edo_de_projeto_package_scripts_context_wiki_health",
-      "template_inic\u00edo_de_projeto_package_scripts_context_workflow_journal",
-      "template_inic\u00edo_de_projeto_package_scripts_prepare",
-      "template_inic\u00edo_de_projeto_package_version"
+      "agent_skills_gov_friction_analyst_gov_friction_analyst",
+      "agent_skills_hok_governor_hok_governor",
+      "agent_subagents_spec_driver_spec_driver",
+      "agents_agents",
+      "brain_agent_registry_1_spec_driver_pre_close_self_audit",
+      "brain_agent_registry_2_qa_validator_audit_signoff",
+      "brain_agent_registry_blindagem_de_subagente_chain_skills_v3",
+      "brain_agent_registry_camada_de_telemetria_governance_friction",
+      "brain_agent_registry_codeblock_1",
+      "brain_agent_registry_codeblock_2",
+      "brain_agent_registry_codeblock_3",
+      "brain_agent_registry_como_adicionar_um_novo_agente_template",
+      "brain_agent_registry_handoff_obrigat\u00f3rio_cruzamento_de_dom\u00ednios",
+      "brain_agent_registry_health_check_r\u00e1pido_para_context_keeper",
+      "brain_agent_registry_isolamento_de_contexto_anti_token_bloat",
+      "brain_agent_registry_protocolo_hardened_closing_v5",
+      "brain_agent_registry_protocolos_de_execu\u00e7\u00e3o",
+      "brain_agent_registry_regra_de_registro_obrigat\u00f3rio",
+      "brain_agent_registry_roteamento_de_tarefas_spawn_de_subagentes",
+      "brain_agent_registry_tabela_de_agentes_oficiais",
+      "brain_file_glossary_agent_intelig\u00eancia_aut\u00f4noma",
+      "brain_file_glossary_context_brain_estrat\u00e9gia_e_cogni\u00e7\u00e3o",
+      "brain_file_glossary_context_maintenance_registros_rx_e_evid\u00eancias_f\u00edsicas",
+      "brain_file_glossary_context_market_neg\u00f3cios_e_compliance",
+      "brain_file_glossary_context_monitoring_tempo_real",
+      "brain_file_glossary_file_glossary_md_dicion\u00e1rio_de_arquivos_do_framework",
+      "brain_file_glossary_planos_idea\u00e7\u00e3o_e_estrat\u00e9gia",
+      "brain_file_glossary_raiz_do_projeto_comandos_globais",
+      "brain_file_glossary_specs_o_workshop_t\u00e1tico",
+      "brain_flow_wiki_oracle_checklist_de_arquivos_do_flow",
+      "brain_flow_wiki_oracle_codeblock_1",
+      "brain_flow_wiki_oracle_codeblock_2",
+      "brain_flow_wiki_oracle_dados_e_armazenamento",
+      "brain_flow_wiki_oracle_diagrama_do_pipeline",
+      "brain_flow_wiki_oracle_documenta\u00e7\u00e3o_de_topologia",
+      "brain_flow_wiki_oracle_flow_oracle_wiki_mapeamento_completo",
+      "brain_flow_wiki_oracle_governan\u00e7a_regras_que_restringem_o_flow",
+      "brain_flow_wiki_oracle_resumo_18_pe\u00e7as_no_flow_wiki_oracle",
+      "brain_flow_wiki_oracle_scripts_motores",
+      "brain_flow_wiki_oracle_sequ\u00eancia_de_execu\u00e7\u00e3o_workflow_real",
+      "context_brain_agent_registry_md",
+      "context_brain_file_glossary_md",
+      "context_brain_flow_sdd_flow_sdd",
+      "context_brain_flow_wiki_oracle_md",
+      "context_brain_master_flow_md",
+      "context_brain_rules_rules"
     ],
     "2": [
+      "agent_skills_journal_sync_journal_sync",
+      "brain_flow_propagation_1_vis\u00e3o_hol\u00edstica_a_pedra_no_lago",
+      "brain_flow_propagation_2_o_motor_duplo_a_f\u00edsica_vs_a_pol\u00edtica",
+      "brain_flow_propagation_3_a_matem\u00e1tica_dos_3_buckets",
+      "brain_flow_propagation_4_tabela_de_a\u00e7\u00e3o_cheat_sheet",
+      "brain_flow_propagation_5_o_fluxo_de_execu\u00e7\u00e3o_nos_bastidores",
+      "brain_flow_propagation_codeblock_1",
+      "brain_flow_propagation_codeblock_2",
+      "brain_flow_propagation_declared_only_s\u00f3_na_pol\u00edtica",
+      "brain_flow_propagation_flow_propagation_o_sistema_de_blast_radius",
+      "brain_flow_propagation_likely_update_s\u00f3_na_f\u00edsica",
+      "brain_flow_propagation_must_update_apareceu_em_ambos",
+      "brain_flow_propagation_o_sensor_de_governan\u00e7a_a_pol\u00edtica",
+      "brain_flow_propagation_o_sensor_estrutural_a_f\u00edsica",
+      "brain_script_glossary_gates_de_governan\u00e7a_o_zero_trust",
+      "brain_script_glossary_metabolismo_e_manuten\u00e7\u00e3o_limpeza",
+      "brain_script_glossary_motores_de_vis\u00e3o_e_mapeamento",
+      "brain_script_glossary_motores_epistemol\u00f3gicos_or\u00e1culo_e_conhecimento",
+      "brain_script_glossary_orquestrador_universal_raiz",
+      "brain_script_glossary_script_glossary_md_motores_de_automa\u00e7\u00e3o_do_framework",
+      "brain_script_glossary_utilit\u00e1rios_compartilhados_m\u00f3dulos_base",
+      "context_brain_flow_propagation_md",
+      "context_brain_script_glossary_md",
+      "context_maintenance_journal_journal",
+      "context_maintenance_rx_communications_md",
+      "maintenance_rx_communications_1_mapa_mestre_de_conectividade_vis\u00e3o_hol\u00edstica",
+      "maintenance_rx_communications_2_tabela_de_sinais_de_conectividade",
+      "maintenance_rx_communications_3_governan\u00e7a_da_conectividade",
+      "maintenance_rx_communications_4_matriz_de_acoplamento_granular_adjacency_list",
+      "maintenance_rx_communications_5_matriz_de_acoplamento_de_automa\u00e7\u00e3o_scripts",
+      "maintenance_rx_communications_agentes_agent",
+      "maintenance_rx_communications_codeblock_1",
+      "maintenance_rx_communications_c\u00f3rtex_context_brain",
+      "maintenance_rx_communications_limpeza_e_manuten\u00e7\u00e3o",
+      "maintenance_rx_communications_manuten\u00e7\u00e3o_context_maintenance",
+      "maintenance_rx_communications_monitoramento_context_monitoring",
+      "maintenance_rx_communications_motores_de_vis\u00e3o",
+      "maintenance_rx_communications_motores_epistemol\u00f3gicos",
+      "maintenance_rx_communications_m\u00f3dulos_compartilhados_auxiliares",
+      "maintenance_rx_communications_raiz_do_projeto",
+      "maintenance_rx_communications_skills_agentes_automa\u00e7\u00e3o_cognitiva",
+      "maintenance_rx_communications_specs_specs",
+      "rx_communications_rx_communications"
+    ],
+    "3": [
+      "context_health_context_health",
+      "inject_learnings_py",
+      "journal_journal",
+      "maintenance_journal_2026_05_20_17_45_instala\u00e7\u00e3o_integra\u00e7\u00e3o_do_graphify_no_reposit\u00f3rio_tooling_installation_graphify",
+      "maintenance_journal_2026_05_20_19_10_ajuste_exclus\u00e3o_do_graphify_do_bundle_de_contexto_tooling_refactor_graphify",
+      "maintenance_journal_2026_05_22_00_37_implanta\u00e7\u00e3o_calculadora_blast_radius_mvp_sincroniza\u00e7\u00e3o_governance_verification_tooling_hardening",
+      "maintenance_journal_2026_05_22_01_08_ajuste_setup_pre_flight_do_sdd_orchestrator_setup_governance_roles_agents",
+      "maintenance_journal_2026_05_22_01_25_closure_blast_radius_mvp_governance_verification_tooling",
+      "maintenance_journal_2026_05_22_01_35_signoff_homologa\u00e7\u00e3o_e_assinatura_do_qa_governance_validation",
+      "maintenance_journal_2026_05_22_01_48_ajuste_refor\u00e7o_de_git_cleanliness_na_skill_do_sdd_orquestrador_setup_governance_rules",
+      "maintenance_journal_2026_05_22_13_42_implanta\u00e7\u00e3o_flow_propagation_md_skill_flow_auditor_e_alinhamento_de_governan\u00e7a_documentation_governance_setup_governan\u00e7a_regras",
+      "maintenance_journal_2026_05_22_14_20_adendo_de_governan\u00e7a_intera\u00e7\u00e3o_do_sam_com_arquivos_auto_gerados_documentation_governance_sam",
+      "maintenance_journal_2026_05_22_14_35_fix_l\u00f3gica_de_slice_do_purge_journal_py_bugfix_maintenance",
+      "maintenance_journal_2026_05_22_14_55_feat_isen\u00e7\u00e3o_de_arquivos_sombra_e_ignorados_no_sam_governance_sam",
+      "maintenance_journal_2026_05_22_15_02_chore_encerramento_e_arquivamento_da_spec_blast_radius_mvp_maintenance_specs",
+      "maintenance_journal_2026_05_22_15_18_docs_estabelecimento_da_constitui\u00e7\u00e3o_do_journal_docs_governance",
+      "maintenance_journal_2026_05_22_16_20_feat_gatilho_de_estado_do_diario_curto_circuito_sam_governance_sam",
+      "maintenance_journal_2026_05_22_16_40_docs_gatilhos_sem\u00e2nticos_do_agents_md_docs_agents",
+      "maintenance_journal_2026_05_22_17_48_docs_atualiza\u00e7\u00e3o_do_master_flow_md_e_file_glossary_md_auditoria_flow_auditor_docs_governance_auditor",
+      "maintenance_journal_2026_05_22_18_41_docs_refinamento_da_constitui\u00e7\u00e3o_no_rules_md_auditoria_flow_auditor_docs_governan\u00e7a_regras",
+      "maintenance_journal_2026_05_22_19_10_governance_inclus\u00e3o_de_diretivas_comportamentais_no_agents_md_governan\u00e7a_regras_comportamento",
+      "maintenance_journal_2026_05_22_21_50_skills_evolu\u00e7\u00e3o_do_hok_governor_para_orquestrador_supremo_skills_governance",
+      "maintenance_journal_2026_05_22_22_04_skills_refatora\u00e7\u00e3o_completa_da_persona_do_hok_governor_skills_governance_refactor",
+      "maintenance_journal_2026_05_22_22_50_arquitetura_handoff_de_propaga\u00e7\u00e3o_anti_efeito_carimbo_architecture_agents_skills_roles",
+      "maintenance_journal_2026_05_22_23_18_corre\u00e7\u00e3o_instru\u00e7\u00e3o_do_auditor_de_propaga\u00e7\u00e3o_bugfix_agents",
+      "maintenance_journal_2026_05_23_16_36_arquitetura_lipoaspira\u00e7\u00e3o_do_master_flow_e_resgate_de_skills_architecture_governance_refactor",
+      "maintenance_journal_2026_05_23_17_42_arquitetura_sincroniza\u00e7\u00e3o_de_gloss\u00e1rio_e_regra_de_ouro_5_architecture_governance_refactor",
+      "maintenance_journal_2026_05_24_15_04_configura\u00e7\u00e3o_exclus\u00f5es_do_graphify_via_ignore_tooling_refactor_graphify",
+      "maintenance_journal_journal_md_memoria_curta",
+      "purge_journal_py",
+      "rx_biology_rx_biology",
+      "rx_learnings_rx_learnings",
+      "scripts_inject_learnings_get_active_features",
+      "scripts_inject_learnings_inject_to_feature",
+      "scripts_inject_learnings_main",
+      "scripts_inject_learnings_parse_learnings_md",
+      "scripts_inject_learnings_rank_scars_by_relevance",
+      "scripts_inject_learnings_rationale_25",
+      "scripts_inject_learnings_rationale_38",
+      "scripts_inject_learnings_rationale_71",
+      "scripts_inject_learnings_rationale_92",
+      "scripts_purge_journal_parse_entries"
+    ],
+    "4": [
+      "agent_skills_hok_governor_skill_md",
+      "brain_flow_sdd_1_diagrama_de_arquitetura_vis\u00e3o_hol\u00edstica",
+      "brain_flow_sdd_1_rules_md_as_leis_do_ecossistema",
+      "brain_flow_sdd_2_master_flow_md_a_orquestra\u00e7\u00e3o",
+      "brain_flow_sdd_2_perfil_individual_dos_9_arquivos",
+      "brain_flow_sdd_3_agent_registry_md_o_dns_cognitivo",
+      "brain_flow_sdd_3_matriz_de_propaga\u00e7\u00e3o_de_mudan\u00e7as",
+      "brain_flow_sdd_4_sequ\u00eancia_de_execu\u00e7\u00e3o_a_cadeia_das_9_skills",
+      "brain_flow_sdd_4_spec_driver_md_o_executor_mec\u00e2nico",
+      "brain_flow_sdd_5_insights_chave",
+      "brain_flow_sdd_5_ssd_playbook_md_o_manual_t\u00e1tico",
+      "brain_flow_sdd_6_classifica\u00e7\u00e3o_por_camada",
+      "brain_flow_sdd_6_spec_v3_md_o_molde_da_spec",
+      "brain_flow_sdd_7_agent_scratchpad_md_o_rascunho_vol\u00e1til",
+      "brain_flow_sdd_8_ssd_errors_ledger_md_as_cicatrizes_permanentes",
+      "brain_flow_sdd_9_rx_communications_md_o_sistema_nervoso",
+      "brain_flow_sdd_camada_constitucional_a_lei",
+      "brain_flow_sdd_camada_de_estado_mem\u00f3ria",
+      "brain_flow_sdd_camada_de_motor_o_como",
+      "brain_flow_sdd_camada_transversal",
+      "brain_flow_sdd_codeblock_1",
+      "brain_flow_sdd_codeblock_3",
+      "brain_flow_sdd_flow_sdd_a_constitui\u00e7\u00e3o_dos_9_arquivos",
+      "brain_flow_sdd_tabela_resumo_de_impacto",
+      "context_brain_flow_sdd_md",
+      "hok_governor_skill_1_toler\u00e2ncia_\u00e0_explora\u00e7\u00e3o_escopo_vs_burocracia",
+      "hok_governor_skill_2_corre\u00e7\u00e3o_estrutural_anti_bypass",
+      "hok_governor_skill_3_paradigma_de_alertas_e_conflitos_evolu\u00e7\u00e3o_cont\u00ednua",
+      "hok_governor_skill_4_a_b\u00fassola_cognitiva_preven\u00e7\u00e3o_de_polui\u00e7\u00e3o_de_dom\u00ednio",
+      "hok_governor_skill_5_protocolo_de_estudo_tect\u00f4nico_sistematiza\u00e7\u00e3o",
+      "hok_governor_skill_6_propaga\u00e7\u00e3o_de_mudan\u00e7a_din\u00e2mica_anti_drift",
+      "hok_governor_skill_carga_de_contexto_suprema_protocolo_boot",
+      "hok_governor_skill_diagrama_cognitivo_do_h_o_k_mental_model",
+      "hok_governor_skill_h_o_k_governor_farol_de_bom_senso_orquestrador_supremo",
+      "hok_governor_skill_mapa_cartogr\u00e1fico_do_h_o_k_onde_buscar_as_coisas",
+      "hok_governor_skill_o_padr\u00e3o_ouro_do_arquiteto_restri\u00e7\u00e3o_cr\u00edtica_global",
+      "hok_governor_skill_princ\u00edpios_de_arquitetura_s\u00eanior_leis_comportamentais",
+      "hok_governor_skill_roteamento_de_escopo_lazy_loading_mandat\u00f3rio"
+    ],
+    "5": [
+      "scripts_validate_context_check_atomic_transition",
+      "scripts_validate_context_check_files",
+      "scripts_validate_context_check_journal_chronology",
+      "scripts_validate_context_check_journal_lines",
+      "scripts_validate_context_check_learnings_integrity",
+      "scripts_validate_context_check_metadata_freshness",
+      "scripts_validate_context_check_registry_structure",
+      "scripts_validate_context_check_specs_structure",
+      "scripts_validate_context_check_sprint_acceptance_sync",
+      "scripts_validate_context_check_state_freshness",
+      "scripts_validate_context_check_wiki_integrity",
+      "scripts_validate_context_estimate_tokens",
+      "scripts_validate_context_extract_header_update",
+      "scripts_validate_context_get_inception_metadata",
+      "scripts_validate_context_is_non_initial_context",
+      "scripts_validate_context_log_friction",
+      "scripts_validate_context_normalize_sprint_label",
+      "scripts_validate_context_rationale_142",
+      "scripts_validate_context_rationale_143",
+      "scripts_validate_context_rationale_158",
+      "scripts_validate_context_rationale_159",
+      "scripts_validate_context_rationale_186",
+      "scripts_validate_context_rationale_187",
+      "scripts_validate_context_rationale_230",
+      "scripts_validate_context_rationale_231",
+      "scripts_validate_context_rationale_274",
+      "scripts_validate_context_rationale_275",
+      "scripts_validate_context_rationale_317",
+      "scripts_validate_context_rationale_319",
+      "scripts_validate_context_rationale_334",
+      "scripts_validate_context_rationale_336",
+      "scripts_validate_context_rationale_349",
+      "scripts_validate_context_rationale_351",
+      "scripts_validate_context_rationale_373",
+      "scripts_validate_context_rationale_98",
+      "scripts_validate_context_rationale_99",
+      "scripts_validate_context_validate",
+      "validate_context_py"
+    ],
+    "6": [
+      "brain_rules_0_1_ciclo_de_vida_do_inception_hybrid_discovery",
+      "brain_rules_0_m\u00e1quina_de_estados_project_mode",
+      "brain_rules_10_dashboard_health_sync",
+      "brain_rules_1_10_regra_execution_gatekeeper_fail_closed_resume_protocol",
+      "brain_rules_1_11_regra_mimo_mandatory_injection_mem\u00f3ria_ativa",
+      "brain_rules_1_12_regra_sam_syntax_strictness_rigidez_de_sintaxe",
+      "brain_rules_1_13_protocolo_de_sincronia_de_metadados_metadata_only_propagation",
+      "brain_rules_1_14_protocolo_de_fechamento_de_feature_closure_thinking",
+      "brain_rules_1_15_protocolo_de_escalonamento_the_scratchpad_shield",
+      "brain_rules_1_1_regra_de_contrato_de_sprint_research_first",
+      "brain_rules_1_2_consist\u00eancia_de_vers\u00e3o_ssot",
+      "brain_rules_1_3_pre_flight_gate_impact_radius_anti_scope_blowout",
+      "brain_rules_1_4_protocolo_contract_sprints_v2_safe",
+      "brain_rules_1_5_regra_close_wave_rigor_de_fechamento",
+      "brain_rules_1_6_regra_anti_false_pass_integridade_narrativa",
+      "brain_rules_1_7_regra_mimo_state_integrity_integridade_de_estado",
+      "brain_rules_1_8_regra_critical_script_sanity_sanidade_de_scripts",
+      "brain_rules_1_9_regra_mechanical_over_aesthetics_governan\u00e7a_est\u00e9tica",
+      "brain_rules_1_checklist_de_carga_obrigat\u00f3rio",
+      "brain_rules_2_ansiedade_de_contexto_ralph_wiggum_loop",
+      "brain_rules_3_1_mapeamento_de_acoplamento_adjacency_lists",
+      "brain_rules_3_protocolo_de_manuten\u00e7\u00e3o_do_contexto",
+      "brain_rules_4_protocolo_database_architecture_first_anti_alucina\u00e7\u00e3o",
+      "brain_rules_5_comportamento_do_agente_transpar\u00eancia_roteamento",
+      "brain_rules_6_gatilhos_de_intera\u00e7\u00e3o_para_o_usu\u00e1rio",
+      "brain_rules_7_seguran\u00e7a_e_sa\u00fade",
+      "brain_rules_8_protocolo_oracle_engenharia_de_guerrilha",
+      "brain_rules_9_regra_karpathy_destila\u00e7\u00e3o_mandat\u00f3ria_v2_5_2",
+      "brain_rules_rules_md_template_universal_de_contexto_governan\u00e7a",
+      "context_brain_rules_md"
+    ],
+    "7": [
       "tests_test_oracle_py",
       "tests_test_oracle_rationale_105",
       "tests_test_oracle_rationale_114",
@@ -108,37 +329,37 @@
       "tests_test_oracle_testoraclev3_test_stem_converges",
       "tests_test_oracle_testoraclev3_test_top_n_graduated"
     ],
-    "3": [
-      "context_health_dashboard",
-      "scripts_validate_context_check_atomic_transition",
-      "scripts_validate_context_check_files",
-      "scripts_validate_context_check_journal_chronology",
-      "scripts_validate_context_check_journal_lines",
-      "scripts_validate_context_check_metadata_freshness",
-      "scripts_validate_context_check_registry_structure",
-      "scripts_validate_context_check_specs_structure",
-      "scripts_validate_context_check_sprint_acceptance_sync",
-      "scripts_validate_context_check_state_freshness",
-      "scripts_validate_context_check_wiki_integrity",
-      "scripts_validate_context_estimate_tokens",
-      "scripts_validate_context_extract_header_update",
-      "scripts_validate_context_get_inception_metadata",
-      "scripts_validate_context_is_non_initial_context",
-      "scripts_validate_context_log_friction",
-      "scripts_validate_context_normalize_sprint_label",
-      "scripts_validate_context_rationale_142",
-      "scripts_validate_context_rationale_158",
-      "scripts_validate_context_rationale_186",
-      "scripts_validate_context_rationale_230",
-      "scripts_validate_context_rationale_274",
-      "scripts_validate_context_rationale_317",
-      "scripts_validate_context_rationale_334",
-      "scripts_validate_context_rationale_349",
-      "scripts_validate_context_rationale_98",
-      "scripts_validate_context_validate",
-      "validate_context_script"
+    "8": [
+      "context_scripts_blast_radius_py",
+      "scripts_blast_radius_check_freshness",
+      "scripts_blast_radius_classify",
+      "scripts_blast_radius_load_graph_as_file_adjacency",
+      "scripts_blast_radius_main",
+      "scripts_blast_radius_normalize_seed",
+      "scripts_blast_radius_parse_rx_communications",
+      "scripts_blast_radius_rationale_102",
+      "scripts_blast_radius_rationale_118",
+      "scripts_blast_radius_rationale_136",
+      "scripts_blast_radius_rationale_28",
+      "scripts_blast_radius_rationale_58",
+      "tests_test_blast_radius_py",
+      "tests_test_blast_radius_rationale_1",
+      "tests_test_blast_radius_rationale_20",
+      "tests_test_blast_radius_rationale_30",
+      "tests_test_blast_radius_rationale_39",
+      "tests_test_blast_radius_rationale_48",
+      "tests_test_blast_radius_rationale_58",
+      "tests_test_blast_radius_rationale_70",
+      "tests_test_blast_radius_testclassifybuckets",
+      "tests_test_blast_radius_testclassifybuckets_test_both_agree_gives_must_update",
+      "tests_test_blast_radius_testclassifybuckets_test_governance_only_gives_declared",
+      "tests_test_blast_radius_testclassifybuckets_test_no_matches_gives_empty_buckets",
+      "tests_test_blast_radius_testclassifybuckets_test_seed_excluded_from_buckets",
+      "tests_test_blast_radius_testclassifybuckets_test_structural_only_gives_likely",
+      "tests_test_blast_radius_testdegradation",
+      "tests_test_blast_radius_testdegradation_test_both_unavailable_exits_4"
     ],
-    "4": [
+    "9": [
       "context_scripts_project_bundler_py",
       "scripts_project_bundler_bundleconfig",
       "scripts_project_bundler_chunk",
@@ -167,50 +388,167 @@
       "scripts_project_bundler_should_include_profile",
       "scripts_project_bundler_write_output"
     ],
-    "5": [
-      "agent_registry",
-      "flash_journal_sync_guard",
-      "flow_journal_sync",
-      "gov_friction_analyst_skill",
-      "inception",
-      "journal_maintenance",
-      "journal_md",
-      "journal_sync_skill",
-      "orquestrador_sdd_rules",
-      "qa_validator_subagent",
-      "rx_communications",
-      "rx_sam_audit_sam",
+    "10": [
+      "agent_skills_gov_friction_analyst_readme_md",
+      "agent_skills_gov_friction_analyst_skill_md",
+      "brain_master_flow_1_metadados_obrigat\u00f3rios",
+      "brain_master_flow_2_estrutura_de_governan\u00e7a_context_specs",
+      "brain_master_flow_3_o_ciclo_macro_do_tlc_ponteiros_de_execu\u00e7\u00e3o",
+      "brain_master_flow_4_1_o_gatilho_de_fric\u00e7\u00e3o_operacional_governance_friction",
+      "brain_master_flow_4_2_arquivamento_e_imutabilidade_prd_e_schema",
+      "brain_master_flow_4_3_a_regra_do_purge_journal_md",
+      "brain_master_flow_4_4_efemeridade_do_workshop_specs",
+      "brain_master_flow_4_as_leis_de_macro_manuten\u00e7\u00e3o",
+      "brain_master_flow_codeblock_1",
+      "brain_master_flow_codeblock_2",
+      "brain_master_flow_master_flow_o_roteador_global_e_c\u00f3digo_civil",
+      "gov_friction_analyst_readme_como_usar",
+      "gov_friction_analyst_readme_o_que_\u00e9",
+      "gov_friction_analyst_readme_quando_usar",
+      "gov_friction_analyst_skill_gov_friction_analyst_governance_friction_analyst",
+      "gov_friction_analyst_skill_limita\u00e7\u00f5es_e_conten\u00e7\u00f5es",
+      "gov_friction_analyst_skill_passo_1_diagn\u00f3stico_mapeado",
+      "gov_friction_analyst_skill_passo_2_o_filtro_overkill_radar",
+      "gov_friction_analyst_skill_passo_3_checklist_de_causa_efeito_vacina",
+      "gov_friction_analyst_skill_passo_4_plano_de_a\u00e7\u00e3o_estruturado",
+      "gov_friction_analyst_skill_purpose",
+      "gov_friction_analyst_skill_required_context_obrigat\u00f3rio",
+      "gov_friction_analyst_skill_triggers",
+      "gov_friction_analyst_skill_workflow_como_operar"
+    ],
+    "11": [
+      "agent_skills_journal_sync_skill_md",
+      "context_maintenance_rebuild_guide_md",
+      "journal_sync_skill_anti_patterns_n\u00e3o_fa\u00e7a",
+      "journal_sync_skill_error_fraude_narrativa",
+      "journal_sync_skill_error_propaga\u00e7\u00e3o_incompleta",
+      "journal_sync_skill_error_sam_pre_commit_fails",
+      "journal_sync_skill_instructions",
+      "journal_sync_skill_journal_sync_blast_radius_propagator_v2_3_0_recursive_reasoning",
+      "journal_sync_skill_step_0_reality_check_short_circuit",
+      "journal_sync_skill_step_1_journal_sam_sync",
+      "journal_sync_skill_step_2_blast_radius_calculation_racioc\u00ednio_recursivo",
+      "journal_sync_skill_step_3_autonomic_cascade_execution_ou_delega\u00e7\u00e3o_a_heur\u00edstica_de_propaga\u00e7\u00e3o",
+      "journal_sync_skill_step_4_final_integrity_guard_self_correction_loop",
+      "journal_sync_skill_step_5_report",
+      "journal_sync_skill_troubleshooting",
+      "maintenance_rebuild_guide_1_setup_do_ambiente",
+      "maintenance_rebuild_guide_2_ferramentas_de_automa\u00e7\u00e3o",
+      "maintenance_rebuild_guide_3_recupera\u00e7\u00e3o_de_contexto_archive",
+      "maintenance_rebuild_guide_codeblock_1",
+      "maintenance_rebuild_guide_codeblock_2",
+      "maintenance_rebuild_guide_codeblock_3",
+      "maintenance_rebuild_guide_op\u00e7\u00e3o_a_via_npm_recomendado_para_devs_web",
+      "maintenance_rebuild_guide_op\u00e7\u00e3o_b_via_make_recomendado_para_ci_cd_e_unix",
+      "maintenance_rebuild_guide_op\u00e7\u00e3o_c_via_bash_resili\u00eancia_universal",
+      "maintenance_rebuild_guide_requisitos_m\u00ednimos",
+      "rebuild_guide_rebuild_guide"
+    ],
+    "12": [
+      "template_inic\u00edo_de_projeto_package_scripts",
+      "template_inic\u00edo_de_projeto_package_scripts_context_affinity",
+      "template_inic\u00edo_de_projeto_package_scripts_context_all",
+      "template_inic\u00edo_de_projeto_package_scripts_context_blast_radius",
+      "template_inic\u00edo_de_projeto_package_scripts_context_bundle",
+      "template_inic\u00edo_de_projeto_package_scripts_context_capture",
+      "template_inic\u00edo_de_projeto_package_scripts_context_check_migrations",
+      "template_inic\u00edo_de_projeto_package_scripts_context_check_version",
+      "template_inic\u00edo_de_projeto_package_scripts_context_cleanup",
+      "template_inic\u00edo_de_projeto_package_scripts_context_enrich",
+      "template_inic\u00edo_de_projeto_package_scripts_context_harness",
+      "template_inic\u00edo_de_projeto_package_scripts_context_ingest_guard",
+      "template_inic\u00edo_de_projeto_package_scripts_context_inject",
+      "template_inic\u00edo_de_projeto_package_scripts_context_learnings",
+      "template_inic\u00edo_de_projeto_package_scripts_context_learnings_triage",
+      "template_inic\u00edo_de_projeto_package_scripts_context_lint",
+      "template_inic\u00edo_de_projeto_package_scripts_context_lint_strict",
+      "template_inic\u00edo_de_projeto_package_scripts_context_map",
+      "template_inic\u00edo_de_projeto_package_scripts_context_purge",
+      "template_inic\u00edo_de_projeto_package_scripts_context_scan_secrets",
+      "template_inic\u00edo_de_projeto_package_scripts_context_sync",
+      "template_inic\u00edo_de_projeto_package_scripts_context_test",
+      "template_inic\u00edo_de_projeto_package_scripts_context_validate",
+      "template_inic\u00edo_de_projeto_package_scripts_context_wiki_health",
+      "template_inic\u00edo_de_projeto_package_scripts_context_workflow_journal",
+      "template_inic\u00edo_de_projeto_package_scripts_prepare"
+    ],
+    "13": [
+      "context_brain_learnings_learnings",
+      "context_maintenance_harness_log_md",
+      "maintenance_harness_log_governance_friction_gf_journal_order_2026_04_30_22_34",
+      "maintenance_harness_log_governance_friction_gf_state_freshness_2026_04_30_22_34",
+      "maintenance_harness_log_harness_fail_report_spec_blast_radius_mvp",
+      "maintenance_harness_log_harness_fail_report_spec_contract_sprints_v2_safe",
+      "maintenance_harness_log_harness_fail_report_spec_gov_chain_v3_phase2_dryrun",
+      "maintenance_harness_log_harness_fail_report_spec_gov_v3_stabilization",
+      "maintenance_harness_log_harness_fail_report_spec_gov_v3_stress_test",
+      "maintenance_harness_log_harness_fail_report_spec_governance_rules_hardening",
+      "maintenance_harness_log_harness_fail_report_spec_manual",
+      "maintenance_harness_log_harness_fail_report_spec_multi_agent_choreography",
+      "maintenance_harness_log_harness_fail_report_spec_qa_subagent",
+      "maintenance_harness_log_harness_fail_report_spec_sam_chronology_fix",
+      "maintenance_harness_log_harness_fail_report_spec_synapse_workflow",
+      "maintenance_harness_log_harness_fail_report_spec_test_sprint",
+      "maintenance_harness_log_harness_pass_report_spec_blast_radius_mvp",
+      "maintenance_harness_log_harness_pass_report_spec_contract_sprints_v2_safe",
+      "maintenance_harness_log_harness_pass_report_spec_gov_chain_v3_phase2_dryrun",
+      "maintenance_harness_log_harness_pass_report_spec_gov_v3_stabilization",
+      "maintenance_harness_log_harness_pass_report_spec_gov_v3_stress_test",
+      "maintenance_harness_log_harness_pass_report_spec_oracle_v3",
+      "maintenance_harness_log_harness_pass_report_spec_qa_subagent",
+      "maintenance_harness_log_harness_pass_report_spec_synapse_workflow",
+      "maintenance_harness_log_harness_pass_report_spec_test_sprint"
+    ],
+    "14": [
+      "context_maintenance_rx_sam_audit_md",
+      "journal_synapse_journal_synapse",
+      "maintenance_journal_synapse_journal_synapse_md_matriz_de_gatilhos",
+      "maintenance_journal_synapse_tabela_de_refer\u00eancia_humana",
+      "maintenance_rx_sam_audit_1_o_que_\u00e9_o_sam",
+      "maintenance_rx_sam_audit_2_fluxograma_de_execu\u00e7\u00e3o_husky_gate",
+      "maintenance_rx_sam_audit_3_1_blast_radius_recursivo",
+      "maintenance_rx_sam_audit_3_2_segrega\u00e7\u00e3o_de_contexto_4_eyes_principle",
+      "maintenance_rx_sam_audit_3_3_fail_closed_gatekeeper",
+      "maintenance_rx_sam_audit_3_4_arquivos_sombra_e_o_gatilho_de_estado_do_di\u00e1rio_curto_circuito",
+      "maintenance_rx_sam_audit_3_conceitos_avan\u00e7ados_de_governan\u00e7a",
+      "maintenance_rx_sam_audit_4_tipos_de_viola\u00e7\u00e3o_detectados",
+      "maintenance_rx_sam_audit_a_trindade_da_auditoria",
+      "maintenance_rx_sam_audit_codeblock_1",
+      "maintenance_rx_sam_audit_insight_de_especialista",
+      "rx_sam_audit_rx_sam_audit",
       "scripts_workflow_journal_auditor_audit",
       "scripts_workflow_journal_auditor_get_git_state",
       "scripts_workflow_journal_auditor_get_latest_journal_entry",
       "scripts_workflow_journal_auditor_get_synapse_rules",
-      "scripts_workflow_journal_auditor_rationale_21",
-      "scripts_workflow_journal_auditor_rationale_51",
-      "scripts_workflow_journal_auditor_rationale_66",
-      "start_here",
+      "scripts_workflow_journal_auditor_rationale_36",
+      "scripts_workflow_journal_auditor_rationale_63",
+      "scripts_workflow_journal_auditor_rationale_78",
       "workflow_journal_auditor_py"
     ],
-    "6": [
-      "harness_registry",
-      "harness_runner_py",
-      "inject_learnings_py",
-      "mimo_memory",
-      "readme_chain_sdd",
-      "sam_auditor",
-      "scripts_inject_learnings_get_active_features",
-      "scripts_inject_learnings_inject_to_feature",
-      "scripts_inject_learnings_main",
-      "scripts_inject_learnings_parse_learnings_md",
-      "scripts_inject_learnings_rank_scars_by_relevance",
-      "scripts_inject_learnings_rationale_25",
-      "scripts_inject_learnings_rationale_38",
-      "scripts_inject_learnings_rationale_71",
-      "scripts_inject_learnings_rationale_92",
-      "ssd_errors_ledger",
-      "ssd_playbook_md",
-      "write_with_validation_py"
+    "15": [
+      "brain_flow_journal_sync_1_1_ordem_cronol\u00f3gica_reversa",
+      "brain_flow_journal_sync_1_2_o_limite_heur\u00edstico_e_o_purge_journal_py",
+      "brain_flow_journal_sync_1_3_anatomia_de_uma_entrada_perfeita",
+      "brain_flow_journal_sync_1_a_mec\u00e2nica_do_journal_o_di\u00e1rio_de_bordo",
+      "brain_flow_journal_sync_2_sam_auditoria_anti_migu\u00e9_e_a_regra_do_jogo",
+      "brain_flow_journal_sync_3_1_zonas_ignoradas_ignored_prefixes",
+      "brain_flow_journal_sync_3_2_os_shadow_files_shadow_files",
+      "brain_flow_journal_sync_3_3_o_curto_circuito_do_di\u00e1rio_gatilho_de_estado",
+      "brain_flow_journal_sync_3_o_catch_22_e_as_zonas_de_imunidade",
+      "brain_flow_journal_sync_4_a_arquitetura_do_ecossistema",
+      "brain_flow_journal_sync_5_troubleshooting_meu_commit_falhou_o_que_eu_fa\u00e7o",
+      "brain_flow_journal_sync_a_constitui\u00e7\u00e3o_do_journal_flow_governan\u00e7a_e_meandros_h_o_k_forge",
+      "brain_flow_journal_sync_codeblock_1",
+      "brain_flow_journal_sync_lei_1_o_contrato_deve_ser_assinado",
+      "brain_flow_journal_sync_lei_2_segrega\u00e7\u00e3o_de_deveres_conflito_de_interesse",
+      "brain_flow_journal_sync_lei_3_proibi\u00e7\u00e3o_de_fraude_narrativa",
+      "brain_flow_journal_sync_lei_4_proibi\u00e7\u00e3o_de_modifica\u00e7\u00e3o_silenciosa",
+      "brain_flow_journal_sync_o_gloss\u00e1rio_file_glossary_md",
+      "brain_flow_journal_sync_o_orquestrador_journal_sync_skill_md",
+      "brain_flow_journal_sync_o_synapse_journal_synapse_md",
+      "context_brain_flow_journal_sync_md"
     ],
-    "7": [
+    "16": [
       "tests_test_context_py",
       "tests_test_context_rationale_101",
       "tests_test_context_rationale_60",
@@ -230,71 +568,101 @@
       "tests_test_context_testcontextgovernance_test_validate_integrity",
       "tests_test_context_testcontextgovernance_test_validate_missing_file"
     ],
-    "8": [
-      "affinity_lite_script",
-      "journal_journal",
-      "journal_synapse_rules",
-      "purge_journal_script",
-      "rx_biology_metabolism",
-      "rx_communications_map",
-      "rx_learnings_framework",
-      "scripts_affinity_lite_affinitylite_calculate_jaccard",
-      "scripts_affinity_lite_affinitylite_find_references",
-      "scripts_affinity_lite_affinitylite_generate_reports",
-      "scripts_affinity_lite_affinitylite_get_git_history",
-      "scripts_affinity_lite_affinitylite_init",
-      "scripts_affinity_lite_affinitylite_load_files",
-      "scripts_affinity_lite_affinitylite_log",
-      "scripts_affinity_lite_affinitylite_run_analysis",
-      "scripts_purge_journal_parse_entries"
+    "17": [
+      "readme_md",
+      "template_inic\u00edo_de_projeto_readme_1_context_a_camada_de_governan\u00e7a",
+      "template_inic\u00edo_de_projeto_readme_2_specs_a_camada_de_execu\u00e7\u00e3o_tlc",
+      "template_inic\u00edo_de_projeto_readme_a_tr\u00edade_h_o_k_governan\u00e7a_n\u00edvel_3",
+      "template_inic\u00edo_de_projeto_readme_anatomia_do_reposit\u00f3rio",
+      "template_inic\u00edo_de_projeto_readme_antigravity_kit_v2_5_2_hardened_h_o_k_enabled",
+      "template_inic\u00edo_de_projeto_readme_cen\u00e1rio_1_reposit\u00f3rio_novo_template",
+      "template_inic\u00edo_de_projeto_readme_cen\u00e1rio_2_aplicando_a_projetos_existentes_bootstrapper",
+      "template_inic\u00edo_de_projeto_readme_codeblock_1",
+      "template_inic\u00edo_de_projeto_readme_codeblock_2",
+      "template_inic\u00edo_de_projeto_readme_codeblock_3",
+      "template_inic\u00edo_de_projeto_readme_comandos_de_opera\u00e7\u00e3o_v2_5_2",
+      "template_inic\u00edo_de_projeto_readme_configura\u00e7\u00e3o_de_fuso_hor\u00e1rio",
+      "template_inic\u00edo_de_projeto_readme_documenta\u00e7\u00e3o_de_opera\u00e7\u00e3o",
+      "template_inic\u00edo_de_projeto_readme_instala\u00e7\u00e3o_e_onboarding",
+      "template_inic\u00edo_de_projeto_readme_protocolo_de_ativa\u00e7\u00e3o_h\u00edbrida"
     ],
-    "9": [
-      "context_scripts_health_sync_py",
-      "context_scripts_sync_project_py",
-      "context_scripts_tz_utils_py",
-      "scripts_health_sync_count_journal_metrics",
-      "scripts_health_sync_count_pending_migrations",
-      "scripts_health_sync_count_schema_tables",
-      "scripts_health_sync_estimate_tokens",
-      "scripts_health_sync_update_dashboard",
-      "scripts_sync_project_get_package_deps",
-      "scripts_sync_project_get_schema_tables",
-      "scripts_sync_project_sync_requirements",
-      "scripts_tz_utils_format_ts",
-      "scripts_tz_utils_get_now_tz",
-      "scripts_tz_utils_rationale_23",
-      "scripts_tz_utils_rationale_29"
+    "18": [
+      "context_maintenance_rx_affinity_lite_md",
+      "maintenance_rx_affinity_lite_ghost_coupling",
+      "maintenance_rx_affinity_lite_healthy",
+      "maintenance_rx_affinity_lite_matriz_de_drift_lista_de_adjac\u00eancia",
+      "maintenance_rx_affinity_lite_results",
+      "maintenance_rx_affinity_lite_resumo_executivo",
+      "maintenance_rx_affinity_lite_run_id",
+      "maintenance_rx_affinity_lite_stats",
+      "maintenance_rx_affinity_lite_stats_dead_refs",
+      "maintenance_rx_affinity_lite_stats_ghosts",
+      "maintenance_rx_affinity_lite_stats_healthy",
+      "maintenance_rx_affinity_lite_stats_processed",
+      "maintenance_rx_affinity_lite_timestamp",
+      "rx_affinity_lite_rx_affinity_lite"
     ],
-    "10": [
-      "affinity_scanner_affinity_scanner",
-      "harness_engineering_manifesto_doc",
-      "mimo_learnings_consolidado_learnings",
-      "plan_hok_advanced_security_and_db_secrets_scanner",
-      "plano_consolidado_oracle_v3_oracle_v3",
-      "plano_ultra_completo_implantacao_synapse_workflow_journal_flash_harness_runner",
-      "plano_ultra_completo_implantacao_synapse_workflow_journal_flash_journal_synapse",
-      "plano_ultra_completo_implantacao_synapse_workflow_journal_flash_run_context",
-      "plano_ultra_completo_implantacao_synapse_workflow_journal_flash_workflow_journal",
-      "plano_workflow_journal_sam_completo_sam",
-      "ralph_wiggum_loop_dossier_doc",
-      "roadmap_reactive_hok_v2_v3_health_sync",
-      "walkthrough_hok_triad_oracle"
+    "19": [
+      "agent_skills_sdd_orchestrator_skill_md",
+      "agent_subagents_qa_validator_qa_validator",
+      "sdd_orchestrator_skill_codeblock_1",
+      "sdd_orchestrator_skill_codeblock_2",
+      "sdd_orchestrator_skill_example_1_escalation_handling",
+      "sdd_orchestrator_skill_examples",
+      "sdd_orchestrator_skill_instructions",
+      "sdd_orchestrator_skill_sdd_orchestrator",
+      "sdd_orchestrator_skill_step_0_pre_flight_check_git_cleanliness_baseline",
+      "sdd_orchestrator_skill_step_1_blast_radius_calculation_propagation_matrix",
+      "sdd_orchestrator_skill_step_2_draft_the_spec_the_payload_boundaries",
+      "sdd_orchestrator_skill_step_3_human_ratification_vaccine_delegation_transition_gate",
+      "sdd_orchestrator_skill_step_4_handle_escalations_the_immune_system",
+      "sdd_orchestrator_skill_step_5_receive_signoff_final_closure"
     ],
-    "11": [
-      "context_oracle_py",
-      "flow_wiki_oracle",
-      "scripts_context_oracle_append_to_wiki_log",
-      "scripts_context_oracle_build_index",
-      "scripts_context_oracle_load_index_file",
-      "scripts_context_oracle_normalize_text",
-      "scripts_context_oracle_query_oracle",
-      "scripts_context_oracle_rationale_114",
-      "scripts_context_oracle_rationale_33",
-      "scripts_context_oracle_rationale_42",
-      "scripts_context_oracle_rationale_46",
-      "scripts_context_oracle_simple_stem"
+    "20": [
+      "template_inic\u00edo_de_projeto_template_migration_1_clonar_o_template",
+      "template_inic\u00edo_de_projeto_template_migration_2_romper_o_v\u00ednculo_com_o_antigravity_reset_do_git",
+      "template_inic\u00edo_de_projeto_template_migration_3_iniciar_seu_novo_reposit\u00f3rio",
+      "template_inic\u00edo_de_projeto_template_migration_4_conectar_ao_seu_novo_reposit\u00f3rio_no_github",
+      "template_inic\u00edo_de_projeto_template_migration_5_ativar_o_motor_de_governan\u00e7a",
+      "template_inic\u00edo_de_projeto_template_migration_codeblock_1",
+      "template_inic\u00edo_de_projeto_template_migration_codeblock_2",
+      "template_inic\u00edo_de_projeto_template_migration_codeblock_3",
+      "template_inic\u00edo_de_projeto_template_migration_codeblock_4",
+      "template_inic\u00edo_de_projeto_template_migration_codeblock_5",
+      "template_inic\u00edo_de_projeto_template_migration_dicas_de_manuten\u00e7\u00e3o",
+      "template_inic\u00edo_de_projeto_template_migration_guia_de_migra\u00e7\u00e3o_do_template_para_o_projeto_real",
+      "template_inic\u00edo_de_projeto_template_migration_passo_a_passo_via_cli",
+      "template_migration_md"
     ],
-    "12": [
+    "21": [
+      "context_market_raw_harness_engineering_manifesto_md",
+      "raw_harness_engineering_manifesto_1_introdu\u00e7\u00e3o_o_fim_do_vibe_coding",
+      "raw_harness_engineering_manifesto_2_a_ontologia_do_harness",
+      "raw_harness_engineering_manifesto_3_1_guias_feedforward",
+      "raw_harness_engineering_manifesto_3_2_sensores_feedback",
+      "raw_harness_engineering_manifesto_3_a_teoria_de_controle_feedforward_vs_feedback",
+      "raw_harness_engineering_manifesto_4_as_tr\u00eas_categorias_de_harness_de_software",
+      "raw_harness_engineering_manifesto_5_patologias_de_ia_e_a_separa\u00e7\u00e3o_de_pap\u00e9is",
+      "raw_harness_engineering_manifesto_6_padr\u00f5es_de_execu\u00e7\u00e3o_o_ralph_wiggum_loop",
+      "raw_harness_engineering_manifesto_7_engenharia_de_contexto_superando_o_rag_tradicional",
+      "raw_harness_engineering_manifesto_8_conclus\u00e3o_a_arte_da_subtra\u00e7\u00e3o",
+      "raw_harness_engineering_manifesto_harness_engineering_a_transi\u00e7\u00e3o_do_vibe_coding_para_a_automa\u00e7\u00e3o_de_software_em_larga_escala"
+    ],
+    "22": [
+      "context_maintenance_rx_learnings_md",
+      "maintenance_rx_learnings_1_o_agregador_learnings_aggregator_py",
+      "maintenance_rx_learnings_1_o_que_\u00e9_o_learnings_framework",
+      "maintenance_rx_learnings_2_a_mem\u00f3ria_central_learnings_md",
+      "maintenance_rx_learnings_2_arquitetura_visual_o_fluxo_da_mem\u00f3ria",
+      "maintenance_rx_learnings_3_o_injetor_inject_learnings_py",
+      "maintenance_rx_learnings_3_os_componentes_vitais",
+      "maintenance_rx_learnings_4_a_spec_enriquecida_enriched_md",
+      "maintenance_rx_learnings_4_mec\u00e2nicas_avan\u00e7adas_de_governan\u00e7a",
+      "maintenance_rx_learnings_5_por_que_isso_\u00e9_revolucion\u00e1rio",
+      "maintenance_rx_learnings_codeblock_1",
+      "maintenance_rx_learnings_rx_h_o_k_learnings_governan\u00e7a_cognitiva"
+    ],
+    "23": [
       "tests_test_affinity_lite_calculate_jaccard",
       "tests_test_affinity_lite_find_references",
       "tests_test_affinity_lite_py",
@@ -308,22 +676,85 @@
       "tests_test_affinity_lite_testaffinitylogic_test_reference_found",
       "tests_test_affinity_lite_testaffinitylogic_test_reference_word_boundary"
     ],
-    "13": [
-      "harness_behavior_concept",
-      "ralph_wiggum_loop_concept",
-      "rules_brain",
-      "scripts_write_with_validation_rationale_18",
-      "scripts_write_with_validation_validate_write",
-      "spec_driver_agent",
-      "spec_melhoria_spec_driver",
-      "spec_v3_template",
-      "ssd_playbook",
-      "state_melhoria_spec_driver",
-      "tasks_melhoria_spec_driver",
-      "write_with_validation_script"
+    "24": [
+      "brain_learnings_alertas_autom\u00e1ticos_harness_log",
+      "brain_learnings_learnings_md_mem\u00f3ria_estrat\u00e9gica_mimo",
+      "brain_learnings_scar_001_edi\u00e7\u00e3o_destrutiva_de_estado_regex_agressivo_score_324",
+      "brain_learnings_scar_002_execu\u00e7\u00e3o_irrespons\u00e1vel_bypass_de_planejamento_score_171",
+      "brain_learnings_scar_003_configura\u00e7\u00e3o_h\u00edbrida_inv\u00e1lida_modo_sprint_vs_standard_score_108",
+      "brain_learnings_scar_004_drift_de_baseline_start_hash_desatualizado_score_108",
+      "brain_learnings_scar_005_fechamento_prematuro_de_task_acceptance_pendente_score_108",
+      "brain_learnings_scar_006_deriva_de_aten\u00e7\u00e3o_e_falhas_de_regex_surgical_edits_score_90",
+      "brain_learnings_scar_007_substitui\u00e7\u00e3o_cega_drift_de_target_content_score_90",
+      "brain_learnings_top_cicatrizes_ativas_scars",
+      "context_brain_learnings_md"
     ],
-    "14": [
-      "context_scripts_learnings_aggregator_py",
+    "25": [
+      "context_maintenance_rx_biology_md",
+      "maintenance_rx_biology_1_o_sistema_nervoso_central_run_context_py",
+      "maintenance_rx_biology_2_o_sistema_imunol\u00f3gico_harness_runner_py",
+      "maintenance_rx_biology_3_a_gl\u00e2ndula_de_crescimento_sync_project_py_enrich_context_py",
+      "maintenance_rx_biology_4_o_sistema_de_excre\u00e7\u00e3o_purge_journal_py_cleanup_specs_py",
+      "maintenance_rx_biology_codeblock_1",
+      "maintenance_rx_biology_evolu\u00e7\u00e3o_o_futuro_rx_do_produto",
+      "maintenance_rx_biology_o_metabolismo_ciclo_de_vida_do_contexto",
+      "maintenance_rx_biology_regras_de_homeostase_estabilidade",
+      "maintenance_rx_biology_rx_biologia_funcional_do_framework_modo_autobuilder",
+      "maintenance_rx_biology_\u00f3rg\u00e3os_e_s\u00ednapses_componentes_ativos"
+    ],
+    "26": [
+      "context_scripts_context_oracle_py",
+      "scripts_context_oracle_append_to_wiki_log",
+      "scripts_context_oracle_build_index",
+      "scripts_context_oracle_load_index_file",
+      "scripts_context_oracle_normalize_text",
+      "scripts_context_oracle_query_oracle",
+      "scripts_context_oracle_rationale_114",
+      "scripts_context_oracle_rationale_33",
+      "scripts_context_oracle_rationale_42",
+      "scripts_context_oracle_rationale_46",
+      "scripts_context_oracle_simple_stem"
+    ],
+    "27": [
+      "agents_rules_regras_roteadas_md",
+      "rules_regras_roteadas_1_modelo_de_linguagem_flash_velocidade_sync",
+      "rules_regras_roteadas_2_sobriedade_operacional_anti_overengineering",
+      "rules_regras_roteadas_3_fun\u00e7\u00e3o_de_orquestrador_sdd",
+      "rules_regras_roteadas_4_contratos_de_sprint_commits_e_sincronia_de_journal",
+      "rules_regras_roteadas_5_altera\u00e7\u00e3o_de_c\u00f3digo_fonte_e_controle_de_escrita",
+      "rules_regras_roteadas_6_banco_de_dados_e_preven\u00e7\u00e3o_de_duplicidades_monolith_components",
+      "rules_regras_roteadas_7_ingest\u00e3o_de_conhecimento_e_karpathy_guard",
+      "rules_regras_roteadas_8_perguntas_sobre_c\u00f3digo_e_arquitetura_graphify",
+      "rules_regras_roteadas_regras_condicionais",
+      "rules_regras_roteadas_roteador_de_regras_antigravity_kit"
+    ],
+    "28": [
+      "agent_templates_agent_scratchpad_md",
+      "templates_agent_scratchpad_1_fatal_modifica\u00e7\u00e3o_silenciosa_harness_sam",
+      "templates_agent_scratchpad_2_hg01_viola\u00e7\u00e3o_de_escopo_sprint",
+      "templates_agent_scratchpad_3_blocked_task_x_j\u00e1_est\u00e1_conclu\u00edda",
+      "templates_agent_scratchpad_4_inje\u00e7\u00e3o_de_contexto_mimo",
+      "templates_agent_scratchpad_5_blocked_falta_de_justificativa_de_tier",
+      "templates_agent_scratchpad_6_fail_substitui\u00e7\u00e3o_vazia_empty_diff",
+      "templates_agent_scratchpad_directives_resolu\u00e7\u00f5es_do_orquestrador",
+      "templates_agent_scratchpad_inbox_escalation_d\u00favidas",
+      "templates_agent_scratchpad_known_traps_leia_antes_de_bater_a_cabe\u00e7a",
+      "templates_agent_scratchpad_task_id_timestamp"
+    ],
+    "29": [
+      "context_maintenance_rx_repositorio_md",
+      "maintenance_rx_repositorio_1_vis\u00e3o_geral_r\u00e1pida",
+      "maintenance_rx_repositorio_2_mapa_estrutural_da_raiz",
+      "maintenance_rx_repositorio_3_detalhamento_das_pastas_cr\u00edticas",
+      "maintenance_rx_repositorio_4_pontos_de_aten\u00e7\u00e3o_e_diagn\u00f3stico",
+      "maintenance_rx_repositorio_5_hierarquia_funcional_de_verdade",
+      "maintenance_rx_repositorio_agent_subagentes_e_autonomia",
+      "maintenance_rx_repositorio_context_governan\u00e7a_e_mem\u00f3ria",
+      "maintenance_rx_repositorio_rx_raio_x_do_reposit\u00f3rio_antigravity_template_v2_5_2",
+      "maintenance_rx_repositorio_specs_workshop_de_execu\u00e7\u00e3o"
+    ],
+    "30": [
+      "learnings_aggregator_py",
       "scripts_learnings_aggregator_calculate_score",
       "scripts_learnings_aggregator_generate_learnings_md",
       "scripts_learnings_aggregator_main",
@@ -334,7 +765,74 @@
       "scripts_learnings_aggregator_safe_parse_harness_log",
       "scripts_learnings_aggregator_safe_parse_ledger"
     ],
-    "15": [
+    "31": [
+      "agent_templates_closure_md",
+      "templates_closure_1_o_problema_copiado_da_spec",
+      "templates_closure_2_o_que_planejamos_vs_o_que_entregamos",
+      "templates_closure_3_modifica\u00e7\u00f5es_realizadas",
+      "templates_closure_4_blast_radius_real",
+      "templates_closure_5_cicatrizes_learnings_md",
+      "templates_closure_6_backlog_gerado",
+      "templates_closure_7_governan\u00e7a",
+      "templates_closure_closure_report_feature_id",
+      "templates_closure_rastreabilidade"
+    ],
+    "32": [
+      "agent_subagents_readme_chain_sdd_md",
+      "subagents_readme_chain_sdd_1_a_ilus\u00e3o_das_9_skills",
+      "subagents_readme_chain_sdd_2_o_tri\u00e2ngulo_de_ferro_por_que_a_ia_n\u00e3o_escapa",
+      "subagents_readme_chain_sdd_3_o_detetor_de_mentiras_em_tempo_real_harness_runner",
+      "subagents_readme_chain_sdd_4_conclus\u00e3o_o_imposto_sobre_a_malandragem",
+      "subagents_readme_chain_sdd_a_o_executor_spec_driver",
+      "subagents_readme_chain_sdd_b_o_gatekeeper_f\u00edsico_write_with_validation_py",
+      "subagents_readme_chain_sdd_c_o_auditor_qa_validator",
+      "subagents_readme_chain_sdd_desvendando_o_spec_driver_v3_a_engenharia_da_paranoia"
+    ],
+    "33": [
+      "agent_skills_closure_thinker_skill_md",
+      "closure_thinker_skill_checklist_final",
+      "closure_thinker_skill_closure_thinker_o_protocolo_de_s\u00edntese",
+      "closure_thinker_skill_instru\u00e7\u00f5es_de_execu\u00e7\u00e3o",
+      "closure_thinker_skill_protocolo_de_refatora\u00e7\u00e3o_para_closures_mal_feitos",
+      "closure_thinker_skill_step_1_mapeamento_de_realidade_audit",
+      "closure_thinker_skill_step_2_an\u00e1lise_de_delta_plano_vs_entrega",
+      "closure_thinker_skill_step_3_extra\u00e7\u00e3o_de_cicatrizes_the_scar_tissue",
+      "closure_thinker_skill_step_4_reda\u00e7\u00e3o_do_closure_md"
+    ],
+    "34": [
+      "package_json",
+      "template_inic\u00edo_de_projeto_package_author",
+      "template_inic\u00edo_de_projeto_package_description",
+      "template_inic\u00edo_de_projeto_package_devdependencies",
+      "template_inic\u00edo_de_projeto_package_devdependencies_husky",
+      "template_inic\u00edo_de_projeto_package_keywords",
+      "template_inic\u00edo_de_projeto_package_license",
+      "template_inic\u00edo_de_projeto_package_name",
+      "template_inic\u00edo_de_projeto_package_version"
+    ],
+    "35": [
+      "context_market_raw_ralph_wiggum_loop_dossier_md",
+      "raw_ralph_wiggum_loop_dossier_1_origem_e_filosofia",
+      "raw_ralph_wiggum_loop_dossier_2_o_problema_context_rot_e_context_anxiety",
+      "raw_ralph_wiggum_loop_dossier_3_a_mec\u00e2nica_do_loop",
+      "raw_ralph_wiggum_loop_dossier_4_a_anatomia_do_prompt_perfeito_e_o_backpressure",
+      "raw_ralph_wiggum_loop_dossier_5_o_funil_de_execu\u00e7\u00e3o_nunca_comece_pelo_loop",
+      "raw_ralph_wiggum_loop_dossier_6_casos_reais_sucessos_falhas_e_ferramentas",
+      "raw_ralph_wiggum_loop_dossier_resenha_ultra_completa_o_padr\u00e3o_ralph_wiggum_loop_na_engenharia_de_agentes",
+      "raw_ralph_wiggum_loop_dossier_veredito"
+    ],
+    "36": [
+      "context_scripts_affinity_lite_py",
+      "scripts_affinity_lite_affinitylite_calculate_jaccard",
+      "scripts_affinity_lite_affinitylite_find_references",
+      "scripts_affinity_lite_affinitylite_generate_reports",
+      "scripts_affinity_lite_affinitylite_get_git_history",
+      "scripts_affinity_lite_affinitylite_init",
+      "scripts_affinity_lite_affinitylite_load_files",
+      "scripts_affinity_lite_affinitylite_log",
+      "scripts_affinity_lite_affinitylite_run_analysis"
+    ],
+    "37": [
       "context_scripts_enrich_context_py",
       "scripts_enrich_context_check_market_coverage",
       "scripts_enrich_context_get_inception_status",
@@ -345,29 +843,7 @@
       "scripts_enrich_context_scan_entities",
       "scripts_enrich_context_update_inbox"
     ],
-    "16": [
-      "context_maintenance_rx_affinity_lite_json",
-      "maintenance_rx_affinity_lite_results",
-      "maintenance_rx_affinity_lite_run_id",
-      "maintenance_rx_affinity_lite_stats",
-      "maintenance_rx_affinity_lite_stats_dead_refs",
-      "maintenance_rx_affinity_lite_stats_ghosts",
-      "maintenance_rx_affinity_lite_stats_healthy",
-      "maintenance_rx_affinity_lite_stats_processed",
-      "maintenance_rx_affinity_lite_timestamp"
-    ],
-    "17": [
-      "agent_registry_agent_registry",
-      "governance_rules_hardening_spec",
-      "qa_validator_qa_validator",
-      "rules_rules",
-      "script_glossary_script_glossary",
-      "sdd_errors_ledger_sdd_errors_ledger",
-      "sdd_playbook_sdd_playbook",
-      "sdd_report_sdd_report",
-      "spec_driver_spec_driver"
-    ],
-    "18": [
+    "38": [
       "agent_skills_methodical_writer_json",
       "skills_methodical_writer_description",
       "skills_methodical_writer_name",
@@ -378,7 +854,49 @@
       "skills_methodical_writer_task_id_required",
       "skills_methodical_writer_task_id_type"
     ],
-    "19": [
+    "39": [
+      "agent_subagents_spec_driver_md",
+      "subagents_spec_driver_execution_gate_skill_6",
+      "subagents_spec_driver_in_case_of_failure",
+      "subagents_spec_driver_matriz_de_acoplamento_cuidado",
+      "subagents_spec_driver_nota_restricao_de_ferramentas_e_cognitiva_via_prompt_para_manter_flexibilidade_do_orquestrador",
+      "subagents_spec_driver_regra_anti_loop_handoff_obrigat\u00f3rio",
+      "subagents_spec_driver_resume_protocolo_de_re_igni\u00e7\u00e3o",
+      "subagents_spec_driver_the_9_skill_chain",
+      "subagents_spec_driver_the_supreme_rule_fail_closed"
+    ],
+    "40": [
+      "readme_context_md",
+      "template_inic\u00edo_de_projeto_readme_context_1_vis\u00e3o_geral",
+      "template_inic\u00edo_de_projeto_readme_context_2_estrutura_em_camadas",
+      "template_inic\u00edo_de_projeto_readme_context_3_o_fluxo_chain_skills_9_skills",
+      "template_inic\u00edo_de_projeto_readme_context_4_operando_com_o_anti_loop",
+      "template_inic\u00edo_de_projeto_readme_context_5_comandos_r\u00e1pidos_v3_0_0",
+      "template_inic\u00edo_de_projeto_readme_context_codeblock_1",
+      "template_inic\u00edo_de_projeto_readme_context_pilares_de_opera\u00e7\u00e3o_v3_0_0",
+      "template_inic\u00edo_de_projeto_readme_context_readme_context_md_guia_de_opera\u00e7\u00e3o_chain_skills_v3"
+    ],
+    "41": [
+      "brain_start_here_1_declare_sua_vis\u00e3o",
+      "brain_start_here_2_solicite_a_tradu\u00e7\u00e3o_cognitiva",
+      "brain_start_here_3_ratifique_os_limites",
+      "brain_start_here_comandos_\u00fateis",
+      "brain_start_here_o_ciclo_de_vida_da_descoberta",
+      "brain_start_here_passo_a_passo_para_inicializar",
+      "brain_start_here_start_here_seu_guia_de_onboarding",
+      "context_brain_start_here_md"
+    ],
+    "42": [
+      "guia_estabilizacao_notebooklm_guia_estabilizacao_notebooklm",
+      "guia_estabilizacao_notebooklm_md",
+      "template_inic\u00edo_de_projeto_guia_estabilizacao_notebooklm_1_prepara\u00e7\u00e3o_do_ambiente_obrigat\u00f3rio",
+      "template_inic\u00edo_de_projeto_guia_estabilizacao_notebooklm_2_corre\u00e7\u00e3o_de_depend\u00eancias_o_soro",
+      "template_inic\u00edo_de_projeto_guia_estabilizacao_notebooklm_3_o_fluxo_de_login_definitivo",
+      "template_inic\u00edo_de_projeto_guia_estabilizacao_notebooklm_4_como_o_mcp_funciona_na_pr\u00e1tica",
+      "template_inic\u00edo_de_projeto_guia_estabilizacao_notebooklm_codeblock_1",
+      "template_inic\u00edo_de_projeto_guia_estabilizacao_notebooklm_codeblock_2"
+    ],
+    "43": [
       "context_scripts_lint_wiki_py",
       "scripts_lint_wiki_append_to_wiki_log",
       "scripts_lint_wiki_check_wiki",
@@ -388,7 +906,17 @@
       "scripts_lint_wiki_rationale_52",
       "scripts_lint_wiki_suggest_source"
     ],
-    "20": [
+    "44": [
+      "agent_templates_spec_v3_md",
+      "templates_spec_v3_0_origem",
+      "templates_spec_v3_1_o_problema",
+      "templates_spec_v3_2_a_solu\u00e7\u00e3o",
+      "templates_spec_v3_3_requisitos_funcionais_acceptance",
+      "templates_spec_v3_4_crit\u00e9rios_de_integridade_v3_n\u00e3o_negoci\u00e1veis",
+      "templates_spec_v3_5_raw_payloads_inje\u00e7\u00e3o_at\u00f4mica",
+      "templates_spec_v3_feature_nome_amig\u00e1vel"
+    ],
+    "45": [
       "tests_test_learnings_py",
       "tests_test_learnings_rationale_20",
       "tests_test_learnings_rationale_37",
@@ -398,7 +926,52 @@
       "tests_test_learnings_testmimomemory_test_harness_frequency_bonus",
       "tests_test_learnings_testmimomemory_test_relevance_ranking"
     ],
-    "21": [
+    "46": [
+      "agent_readme_subagents_1_roles_personas_vs_sub_agents_firmwares",
+      "agent_readme_subagents_a_roles_l\u00f3gicas_personas",
+      "agent_readme_subagents_b_sub_agents_firmwares_de_execu\u00e7\u00e3o",
+      "agent_readme_subagents_estrutura_do_diret\u00f3rio",
+      "agent_readme_subagents_md",
+      "agent_readme_subagents_readme_subagents",
+      "agent_readme_subagents_regra_de_ouro_anti_alucina\u00e7\u00e3o"
+    ],
+    "47": [
+      "agent_subagents_spec_enricher_md",
+      "subagents_spec_enricher_codeblock_1",
+      "subagents_spec_enricher_entrega_obrigat\u00f3ria_output_format",
+      "subagents_spec_enricher_protocolo_determin\u00edstico_obrigat\u00f3rio",
+      "subagents_spec_enricher_regras_inegoci\u00e1veis",
+      "subagents_spec_enricher_seu_objetivo",
+      "subagents_spec_enricher_spec_enricher_spec_enricher"
+    ],
+    "48": [
+      "brain_vision_a_nossa_realidade_engenharia_para_pmes",
+      "brain_vision_a_tr\u00edade_h_o_k_o_governador_cibern\u00e9tico",
+      "brain_vision_conclus\u00e3o",
+      "brain_vision_do_vibe_coding_\u00e0_governan\u00e7a_cognitiva_h_o_k_forge_v2_5",
+      "brain_vision_o_canteiro_de_obras_ef\u00eamero_e_o_ralph_wiggum_loop",
+      "brain_vision_o_horizonte_a_engenharia_de_concep\u00e7\u00e3o",
+      "context_brain_vision_md"
+    ],
+    "49": [
+      "agent_skills_flow_auditor_skill_md",
+      "flow_auditor_skill_1_extra\u00e7\u00e3o_de_entidades_parsing_do_flow",
+      "flow_auditor_skill_2_reality_check_o_cruzamento_f\u00edsico",
+      "flow_auditor_skill_3_veredicto_e_execu\u00e7\u00e3o_fail_closed",
+      "flow_auditor_skill_flow_auditor_reality_check_de_documentos_h_o_k",
+      "flow_auditor_skill_integra\u00e7\u00e3o_cadeia_de_skills_skills_chain",
+      "flow_auditor_skill_protocolo_de_auditoria_rigorosa"
+    ],
+    "50": [
+      "agent_subagents_propagation_auditor_md",
+      "subagents_propagation_auditor_1_ingest\u00e3o_de_contexto_frio_read_phase",
+      "subagents_propagation_auditor_2_mapeamento_reverso_mental_sandbox",
+      "subagents_propagation_auditor_3_edi\u00e7\u00e3o_f\u00edsica_ou_invoca\u00e7\u00e3o_de_motor_a_cirurgia",
+      "subagents_propagation_auditor_4_handoff_de_retorno_the_signoff",
+      "subagents_propagation_auditor_cadeia_de_execu\u00e7\u00e3o_obrigat\u00f3ria_propagation_chain",
+      "subagents_propagation_auditor_propagation_auditor_o_arque\u00f3logo_h_o_k"
+    ],
+    "51": [
       "init_ai_project_sh",
       "template_inic\u00edo_de_projeto_init_ai_project_check_deps",
       "template_inic\u00edo_de_projeto_init_ai_project_detect_pkg_mgr",
@@ -407,7 +980,72 @@
       "template_inic\u00edo_de_projeto_init_ai_project_success",
       "template_inic\u00edo_de_projeto_init_ai_project_warn"
     ],
-    "22": [
+    "52": [
+      "context_market_wiki_template_md",
+      "wiki_template_codeblock_1",
+      "wiki_template_exemplo_m\u00ednimo",
+      "wiki_template_links_relacionados",
+      "wiki_template_regras_fluxo",
+      "wiki_template_resumo",
+      "wiki_template_t\u00edtulo_descritivo"
+    ],
+    "53": [
+      "agent_subagents_vision_architect_md",
+      "subagents_vision_architect_cadeia_de_restri\u00e7\u00f5es_obrigat\u00f3rias",
+      "subagents_vision_architect_como_executar_sua_tarefa",
+      "subagents_vision_architect_o_que_voc\u00ea_faz",
+      "subagents_vision_architect_sa\u00edda_esperada_no_fim_da_atua\u00e7\u00e3o",
+      "subagents_vision_architect_vision_architect_vision_architect"
+    ],
+    "54": [
+      "brain_inception_checklist_estrat\u00e9gico_preenchimento_obrigat\u00f3rio",
+      "brain_inception_inception_fronteiras_estrat\u00e9gicas_ssot",
+      "brain_inception_nunca_boundaries",
+      "brain_inception_sempre_restri\u00e7\u00f5es_de_processo",
+      "brain_inception_vis\u00e3o_mestra",
+      "context_brain_inception_md"
+    ],
+    "55": [
+      "brain_prd_1_vis\u00e3o_geral",
+      "brain_prd_2_requisitos_funcionais_\u00e9picos",
+      "brain_prd_3_critical_dependencies_limites",
+      "brain_prd_4_l\u00f3gica_de_neg\u00f3cio_categ\u00f3rica_regras",
+      "brain_prd_product_requirements_document_prd",
+      "context_brain_prd_md"
+    ],
+    "56": [
+      "brain_tlc_integration_ciclo_de_vida_tlc_na_arquitetura_v3_5_a_pr\u00e1tica",
+      "brain_tlc_integration_gloss\u00e1rio_de_refer\u00eancias_pasta_c_users_user_gemini_skills_tlc_spec_driven",
+      "brain_tlc_integration_regras_de_ouro_zero_migu\u00e9",
+      "brain_tlc_integration_skill_m\u00e3e_tlc_spec_driven",
+      "brain_tlc_integration_tlc_integration_md_o_c\u00f3rtex_de_execu\u00e7\u00e3o",
+      "context_brain_tlc_integration_md"
+    ],
+    "57": [
+      "concepts_harness_architecture_architecture_fitness_harness_harness_de_arquitetura",
+      "concepts_harness_architecture_exemplos_pr\u00e1ticos_na_ind\u00fastria_como_as_big_techs_fazem",
+      "concepts_harness_architecture_integra\u00e7\u00e3o_no_antigravity_kit_h_o_k_v2_5_2",
+      "concepts_harness_architecture_key_takeaways",
+      "concepts_harness_architecture_related",
+      "context_market_wiki_concepts_harness_architecture_md"
+    ],
+    "58": [
+      "concepts_harness_behavior_behaviour_harness_harness_de_comportamento",
+      "concepts_harness_behavior_exemplos_pr\u00e1ticos_na_ind\u00fastria_como_as_big_techs_fazem",
+      "concepts_harness_behavior_integra\u00e7\u00e3o_no_antigravity_kit_h_o_k_v2_5_2",
+      "concepts_harness_behavior_key_takeaways",
+      "concepts_harness_behavior_related",
+      "context_market_wiki_concepts_harness_behavior_md"
+    ],
+    "59": [
+      "concepts_harness_maintainability_exemplos_de_implementa\u00e7\u00e3o_padr\u00f5es_globais",
+      "concepts_harness_maintainability_integra\u00e7\u00e3o_no_antigravity_kit_h_o_k_v2_5_2",
+      "concepts_harness_maintainability_key_takeaways",
+      "concepts_harness_maintainability_maintainability_harness_harness_de_manutenibilidade",
+      "concepts_harness_maintainability_related",
+      "context_market_wiki_concepts_harness_maintainability_md"
+    ],
+    "60": [
       "context_scripts_cleanup_specs_py",
       "scripts_cleanup_specs_archive_spec",
       "scripts_cleanup_specs_cleanup",
@@ -415,7 +1053,15 @@
       "scripts_cleanup_specs_is_protected",
       "scripts_cleanup_specs_rationale_40"
     ],
-    "23": [
+    "61": [
+      "agent_rules_pool_sobriedade_operacional_md",
+      "rules_pool_sobriedade_operacional_1_minimalismo_sem\u00e2ntico_e_de_nomenclatura",
+      "rules_pool_sobriedade_operacional_2_estabilidade_de_vers\u00e3o_anti_infla\u00e7\u00e3o",
+      "rules_pool_sobriedade_operacional_3_abordagem_cir\u00fargica_e_simples",
+      "rules_pool_sobriedade_operacional_4_verifica\u00e7\u00e3o_de_sobriedade",
+      "rules_pool_sobriedade_operacional_sobriedade_sem\u00e2ntica_operacional_e_de_vers\u00e3o"
+    ],
+    "62": [
       "context_scripts_ingest_wiki_guard_py",
       "scripts_ingest_wiki_guard_append_to_wiki_log",
       "scripts_ingest_wiki_guard_main",
@@ -423,272 +1069,354 @@
       "scripts_ingest_wiki_guard_rebuild_index_atomic",
       "scripts_ingest_wiki_guard_validate_article"
     ],
-    "24": [
-      "mudanca_specdriven_contract_sprints",
-      "plano_coreografia_multi_agent_hub_spoke",
-      "plano_governance_rules_hardening_governance",
-      "plano_v2_caminho_seguro_falsh_safe_path",
-      "template_base_v2_3_1_rules"
+    "63": [
+      "agents_md",
+      "template_inic\u00edo_de_projeto_agents_diretivas_comportamentais_regras_de_ouro",
+      "template_inic\u00edo_de_projeto_agents_diretivas_prim\u00e1rias_leitura_obrigat\u00f3ria_no_boot",
+      "template_inic\u00edo_de_projeto_agents_diretivas_secund\u00e1rias_leitura_sob_demanda",
+      "template_inic\u00edo_de_projeto_agents_manifesto_de_governan\u00e7a_h_o_k_forge_leia_me_primeiro",
+      "template_inic\u00edo_de_projeto_agents_o_sam_est\u00e1_observando"
     ],
-    "25": [
+    "64": [
+      "concepts_ralph_wiggum_loop_key_takeaways",
+      "concepts_ralph_wiggum_loop_mec\u00e2nica_de_funcionamento_h_o_k_integration",
+      "concepts_ralph_wiggum_loop_o_funil_de_execu\u00e7\u00e3o",
+      "concepts_ralph_wiggum_loop_ralph_wiggum_loop",
+      "concepts_ralph_wiggum_loop_related"
+    ],
+    "65": [
+      "context_maintenance_technical_requirements_md",
+      "maintenance_technical_requirements_devdependencies",
+      "maintenance_technical_requirements_requisitos_m\u00ednimos_motor",
+      "maintenance_technical_requirements_restri\u00e7\u00f5es_de_infraestrutura_guerrilha",
+      "maintenance_technical_requirements_tabelas_no_schema_schema_sql"
+    ],
+    "66": [
       "run_context_py",
       "template_inic\u00edo_de_projeto_run_context_get_inception_status",
       "template_inic\u00edo_de_projeto_run_context_main",
       "template_inic\u00edo_de_projeto_run_context_rationale_52",
       "template_inic\u00edo_de_projeto_run_context_run_script"
     ],
-    "26": [
-      "context_health_yml",
-      "harness_log",
-      "prompt_library",
-      "secrets_scanner_py",
-      "validate_context_py"
+    "67": [
+      "agent_rules_pool_flash_journal_sync_guard_md",
+      "rules_pool_flash_journal_sync_guard_an\u00e1lise_de_impacto",
+      "rules_pool_flash_journal_sync_guard_goal",
+      "rules_pool_flash_journal_sync_guard_plan"
     ],
-    "27": [
-      "auditoria_mimo_plano_consolidado_auditoria",
-      "learnings_mimo_v2_learnings",
-      "log_planos_log",
-      "plano_consolidado_oracle_v3_plano"
+    "68": [
+      "maintenance_rx_anatomy_estrutura_de_pastas",
+      "maintenance_rx_anatomy_rx_anatomy_md_raio_x_de_anatomia",
+      "maintenance_rx_anatomy_specs_workbench_de_execu\u00e7\u00e3o_at\u00f4mica",
+      "rx_anatomy_rx_anatomy"
     ],
-    "28": [
+    "69": [
+      "context_market_ssot_map_md",
+      "market_ssot_map_hierarquia_da_verdade_local_ssot",
+      "market_ssot_map_oracle_baseline_mem\u00f3ria_externa",
+      "market_ssot_map_ssot_map_roteador_do_or\u00e1culo_hierarquia_da_verdade"
+    ],
+    "70": [
+      "context_monitoring_context_health_md",
+      "monitoring_context_health_health_check_do_contexto_dashboard",
+      "monitoring_context_health_hist\u00f3rico_de_sa\u00fade_log_de_purges",
+      "monitoring_context_health_regras_de_degrada\u00e7\u00e3o_a\u00e7\u00f5es"
+    ],
+    "71": [
+      "context_monitoring_project_index_01_md",
+      "monitoring_project_index_01_index_by_domain",
+      "monitoring_project_index_01_index_by_path",
+      "project_index_01_project_index_01"
+    ],
+    "72": [
+      "context_market_research_sprint_contracts_md",
+      "research_sprint_contracts_1_resumo_t\u00e1tico_a_filosofia_dos_contratos_de_sprint",
+      "research_sprint_contracts_2_excertos_brutos_e_evid\u00eancias_da_literatura_cita\u00e7\u00e3o_obrigat\u00f3ria",
+      "research_sprint_contracts_pesquisa_contratos_de_sprint_e_leniency_bias_em_sess\u00f5es_de_llm"
+    ],
+    "73": [
       "context_scripts_check_version_consistency_py",
       "scripts_check_version_consistency_get_ssot_version",
       "scripts_check_version_consistency_normalize_version",
       "scripts_check_version_consistency_validate_targets"
     ],
-    "29": [
+    "74": [
+      "brain_harness_registry_regras_de_execu\u00e7\u00e3o",
+      "brain_harness_registry_tabela_de_harnesses_ativos",
+      "context_brain_harness_registry_md"
+    ],
+    "75": [
+      "context_maintenance_tests_md",
+      "maintenance_tests_matriz_de_casos_cr\u00edticos",
+      "maintenance_tests_tests_cobertura_framework"
+    ],
+    "76": [
       "context_maintenance_version_targets_json",
       "maintenance_version_targets_ssot",
       "maintenance_version_targets_targets"
     ],
-    "30": [
-      "context_scripts_wiki_log_utils_py",
-      "scripts_wiki_log_utils_append_to_wiki_log",
-      "scripts_wiki_log_utils_rationale_17"
+    "77": [
+      "context_monitoring_execution_buffer_md",
+      "monitoring_execution_buffer_buffer_atual_ticks_ocupados",
+      "monitoring_execution_buffer_od\u00f4metro_de_execu\u00e7\u00e3o_kbum"
     ],
-    "31": [
-      "plan_inception_final_v2_4_inception",
-      "plan_inception_final_v2_4_market",
-      "plan_spec_enricher_v2_4_1_spec_enricher"
-    ],
-    "32": [
+    "78": [
       "context_scripts_validate_commit_msg_py",
       "scripts_validate_commit_msg_main",
       "scripts_validate_commit_msg_validate"
     ],
-    "33": [
-      "template_base_v2_3_1_run_context",
-      "template_base_v2_3_1_validate_context",
-      "walkthrough_hok_triad_walkthrough"
+    "79": [
+      "context_scripts_wiki_log_utils_py",
+      "scripts_wiki_log_utils_append_to_wiki_log",
+      "scripts_wiki_log_utils_rationale_17"
     ],
-    "34": [
-      "agent_scratchpad_template",
-      "learnings"
+    "80": [
+      "context_scripts_write_with_validation_py",
+      "scripts_write_with_validation_rationale_18",
+      "scripts_write_with_validation_validate_write"
     ],
-    "35": [
+    "81": [
+      "context_maintenance_architecture_md",
+      "maintenance_architecture_architecture_pipeline_de_classes_fluxos",
+      "maintenance_architecture_estrutura_atual_exemplo"
+    ],
+    "82": [
+      "context_market_wiki_index_md",
+      "wiki_index_topicos",
+      "wiki_index_wiki_index_raiz"
+    ],
+    "83": [
+      "brain_roadmap_roadmap_fases_do_autobuilder",
+      "context_brain_roadmap_md"
+    ],
+    "84": [
+      "context_brain_inception_inception",
+      "context_brain_vision_vision"
+    ],
+    "85": [
       "context_scripts_migration_registry_py",
       "scripts_migration_registry_validate"
     ],
-    "36": [
+    "86": [
+      "context_market_economics_md",
+      "market_economics_economics_financials"
+    ],
+    "87": [
+      "context_market_wiki_log_md",
+      "market_wiki_log_wiki_log_append_only"
+    ],
+    "88": [
+      "agent_rules_pool_graphify_md",
+      "rules_pool_graphify_graphify"
+    ],
+    "89": [
       "context_scripts_oracle_analytics_py",
       "scripts_oracle_analytics_parse_logs"
     ],
-    "37": [
-      "afinnity_affinity_scanner",
-      "coupling_matrix_system_coupling"
+    "90": [
+      "version_md",
+      "version_version"
     ],
-    "38": [
-      "flow_sdd",
-      "tlc_integration"
+    "91": [
+      "agents_workflows_graphify_md",
+      "workflows_graphify_workflow_graphify"
     ],
-    "39": [
-      "learnings_brain",
-      "spec_systemic_vaccination"
+    "92": [
+      "agent_rules_pool_orquestrador_md"
     ],
-    "40": [
-      "regras_roteadas",
-      "rx_affinity_lite"
+    "93": [
+      "agent_subagents_qa_validator_md"
     ],
-    "41": [
-      "chain_skills_v3_chain_skills",
-      "write_with_validation_write_with_validation"
+    "94": [
+      "context_market_market_inbox_md"
     ],
-    "42": [
-      "husky_husky_sh"
+    "95": [
+      "context_market_research_draft_md"
     ],
-    "43": [
-      "roadmap_reactive_hok_v2_v3_roadmap"
+    "96": [
+      "context_monitoring_project_index_02_md"
     ],
-    "44": [
-      "template_base_v2_3_1_templates"
+    "97": [
+      "context_monitoring_project_index_03_md"
     ],
-    "45": [
-      "guia_estabilizacao_notebooklm_mcp"
+    "98": [
+      "readme_readme"
     ],
-    "46": [
-      "template_migration_guide"
+    "99": [
+      "readme_context_readme_context"
     ],
-    "47": [
-      "version_antigravity"
+    "100": [
+      "template_migration_template_migration"
     ],
-    "48": [
-      "readme_subagents_firmwares"
+    "101": [
+      "agent_rules_pool_flash_journal_sync_guard_flash_journal_sync_guard"
     ],
-    "49": [
-      "graphify_rules"
+    "102": [
+      "agent_rules_pool_graphify_graphify"
     ],
-    "50": [
-      "sobriedade_operacional_rules"
+    "103": [
+      "agent_rules_pool_orquestrador_orquestrador"
     ],
-    "51": [
-      "closure_thinker_skill"
+    "104": [
+      "agent_skills_closure_thinker_closure_thinker"
     ],
-    "52": [
-      "file_glossary"
+    "105": [
+      "agent_skills_flow_auditor_flow_auditor"
     ],
-    "53": [
-      "script_glossary"
+    "106": [
+      "agent_subagents_propagation_auditor_propagation_auditor"
     ],
-    "54": [
-      "rx_anatomy_structure"
+    "107": [
+      "agent_subagents_spec_enricher_spec_enricher"
     ],
-    "55": [
-      "rx_repositorio_overview"
+    "108": [
+      "agent_subagents_vision_architect_vision_architect"
     ],
-    "56": [
-      "ssot_map_router"
+    "109": [
+      "rx_repositorio_rx_repositorio"
     ],
-    "57": [
-      "governance_rules_hardening_design"
-    ],
-    "58": [
-      "state_systemic_vaccination"
-    ],
-    "59": [
-      "harness_architecture_concept"
-    ],
-    "60": [
-      "harness_maintainability_concept"
-    ],
-    "61": [
-      "closure_template"
-    ],
-    "62": [
-      "graphify_workflow"
-    ],
-    "63": [
-      "prd_template"
-    ],
-    "64": [
-      "roadmap"
-    ],
-    "65": [
-      "vision"
-    ],
-    "66": [
-      "architecture_pipeline"
-    ],
-    "67": [
-      "rebuild_guide"
-    ],
-    "68": [
-      "technical_requirements"
-    ],
-    "69": [
-      "tests_matrix"
-    ],
-    "70": [
-      "plan_hok_advanced_security_and_db_migration_registry"
+    "110": [
+      "ssot_map_ssot_map"
     ]
   },
   "cohesion": {
-    "0": 0.07681365576102418,
-    "1": 0.05714285714285714,
-    "2": 0.09359605911330049,
-    "3": 0.11904761904761904,
-    "4": 0.150997150997151,
-    "5": 0.11428571428571428,
-    "6": 0.1503267973856209,
-    "7": 0.16339869281045752,
-    "8": 0.19166666666666668,
-    "9": 0.2,
-    "10": 0.15384615384615385,
-    "11": 0.2878787878787879,
-    "12": 0.25757575757575757,
-    "13": 0.16666666666666666,
-    "14": 0.3111111111111111,
-    "15": 0.3333333333333333,
-    "16": 0.2222222222222222,
-    "17": 0.2222222222222222,
-    "18": 0.4166666666666667,
-    "19": 0.35714285714285715,
-    "20": 0.25,
-    "21": 0.38095238095238093,
-    "22": 0.5333333333333333,
-    "23": 0.5333333333333333,
-    "24": 0.4,
-    "25": 0.6,
-    "26": 0.4,
-    "27": 0.5,
-    "28": 0.6666666666666666,
-    "29": 0.6666666666666666,
-    "30": 0.6666666666666666,
-    "31": 0.6666666666666666,
-    "32": 1.0,
-    "33": 0.6666666666666666,
-    "34": 1.0,
-    "35": 1.0,
-    "36": 1.0,
-    "37": 1.0,
-    "38": 1.0,
-    "39": 1.0,
-    "40": 1.0,
-    "41": 1.0,
-    "42": 1.0,
-    "43": 1.0,
-    "44": 1.0,
-    "45": 1.0,
-    "46": 1.0,
-    "47": 1.0,
-    "48": 1.0,
-    "49": 1.0,
-    "50": 1.0,
-    "51": 1.0,
-    "52": 1.0,
-    "53": 1.0,
-    "54": 1.0,
-    "55": 1.0,
-    "56": 1.0,
-    "57": 1.0,
-    "58": 1.0,
-    "59": 1.0,
-    "60": 1.0,
-    "61": 1.0,
-    "62": 1.0,
-    "63": 1.0,
-    "64": 1.0,
-    "65": 1.0,
-    "66": 1.0,
-    "67": 1.0,
-    "68": 1.0,
-    "69": 1.0,
-    "70": 1.0
+    "0": 0.06382978723404255,
+    "1": 0.05507246376811594,
+    "2": 0.047619047619047616,
+    "3": 0.05226480836236934,
+    "4": 0.05405405405405406,
+    "5": 0.07965860597439545,
+    "6": 0.06666666666666667,
+    "7": 0.09359605911330049,
+    "8": 0.09523809523809523,
+    "9": 0.150997150997151,
+    "10": 0.07692307692307693,
+    "11": 0.07692307692307693,
+    "12": 0.07692307692307693,
+    "13": 0.08,
+    "14": 0.09420289855072464,
+    "15": 0.09523809523809523,
+    "16": 0.16339869281045752,
+    "17": 0.125,
+    "18": 0.14285714285714285,
+    "19": 0.14285714285714285,
+    "20": 0.14285714285714285,
+    "21": 0.16666666666666666,
+    "22": 0.16666666666666666,
+    "23": 0.25757575757575757,
+    "24": 0.18181818181818182,
+    "25": 0.18181818181818182,
+    "26": 0.32727272727272727,
+    "27": 0.18181818181818182,
+    "28": 0.18181818181818182,
+    "29": 0.2,
+    "30": 0.3111111111111111,
+    "31": 0.2,
+    "32": 0.2222222222222222,
+    "33": 0.2222222222222222,
+    "34": 0.2222222222222222,
+    "35": 0.2222222222222222,
+    "36": 0.4444444444444444,
+    "37": 0.3333333333333333,
+    "38": 0.4166666666666667,
+    "39": 0.2222222222222222,
+    "40": 0.2222222222222222,
+    "41": 0.25,
+    "42": 0.25,
+    "43": 0.35714285714285715,
+    "44": 0.25,
+    "45": 0.25,
+    "46": 0.2857142857142857,
+    "47": 0.2857142857142857,
+    "48": 0.2857142857142857,
+    "49": 0.2857142857142857,
+    "50": 0.2857142857142857,
+    "51": 0.38095238095238093,
+    "52": 0.2857142857142857,
+    "53": 0.3333333333333333,
+    "54": 0.3333333333333333,
+    "55": 0.3333333333333333,
+    "56": 0.3333333333333333,
+    "57": 0.3333333333333333,
+    "58": 0.3333333333333333,
+    "59": 0.3333333333333333,
+    "60": 0.5333333333333333,
+    "61": 0.3333333333333333,
+    "62": 0.5333333333333333,
+    "63": 0.3333333333333333,
+    "64": 0.4,
+    "65": 0.4,
+    "66": 0.6,
+    "67": 0.5,
+    "68": 0.5,
+    "69": 0.5,
+    "70": 0.5,
+    "71": 0.5,
+    "72": 0.5,
+    "73": 0.6666666666666666,
+    "74": 0.6666666666666666,
+    "75": 0.6666666666666666,
+    "76": 0.6666666666666666,
+    "77": 0.6666666666666666,
+    "78": 1.0,
+    "79": 0.6666666666666666,
+    "80": 0.6666666666666666,
+    "81": 0.6666666666666666,
+    "82": 0.6666666666666666,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0,
+    "93": 1.0,
+    "94": 1.0,
+    "95": 1.0,
+    "96": 1.0,
+    "97": 1.0,
+    "98": 1.0,
+    "99": 1.0,
+    "100": 1.0,
+    "101": 1.0,
+    "102": 1.0,
+    "103": 1.0,
+    "104": 1.0,
+    "105": 1.0,
+    "106": 1.0,
+    "107": 1.0,
+    "108": 1.0,
+    "109": 1.0,
+    "110": 1.0
   },
   "gods": [
     {
       "id": "template_inic\u00edo_de_projeto_package_scripts",
       "label": "scripts",
-      "degree": 27
+      "degree": 29
+    },
+    {
+      "id": "brain_rules_rules_md_template_universal_de_contexto_governan\u00e7a",
+      "label": "\ud83d\udcdc RULES.md \u2014 Template Universal de Contexto & Governan\u00e7a",
+      "degree": 28
+    },
+    {
+      "id": "maintenance_journal_journal_md_memoria_curta",
+      "label": "JOURNAL.md (Memoria Curta)",
+      "degree": 26
+    },
+    {
+      "id": "scripts_validate_context_validate",
+      "label": "validate()",
+      "degree": 16
     },
     {
       "id": "tests_test_oracle_testoraclev3",
       "label": "TestOracleV3",
       "degree": 16
-    },
-    {
-      "id": "scripts_validate_context_validate",
-      "label": "validate()",
-      "degree": 15
     },
     {
       "id": "scripts_project_bundler_collect_files",
@@ -706,85 +1434,75 @@
       "degree": 12
     },
     {
+      "id": "gov_friction_analyst_skill_gov_friction_analyst_governance_friction_analyst",
+      "label": "gov-friction-analyst (Governance Friction Analyst)",
+      "degree": 10
+    },
+    {
       "id": "scripts_project_bundler_generate_context_markdown",
       "label": "generate_context_markdown()",
       "degree": 9
-    },
-    {
-      "id": "workflow_journal_auditor_py",
-      "label": "workflow_journal_auditor.py (SAM)",
-      "degree": 9
-    },
-    {
-      "id": "scripts_tz_utils_format_ts",
-      "label": "format_ts()",
-      "degree": 7
-    },
-    {
-      "id": "tests_test_affinity_lite_testaffinitylogic",
-      "label": "TestAffinityLogic",
-      "degree": 7
     }
   ],
   "surprises": [
     {
-      "source": "System Anti-Migu\u00e9 (SAM)",
-      "target": "Harness Runner Script",
+      "source": "Manifesto de Governan\u00e7a: H.O.K Forge",
+      "target": "Rules Constitution",
       "source_files": [
-        ".specs/features/SSD_PLAYBOOK.md",
-        ".context/_scripts/harness_runner.py"
-      ],
-      "confidence": "INFERRED",
-      "relation": "implements",
-      "why": "inferred connection - not explicitly stated in source; crosses file types (code \u2194 doc); connects across different repos/directories"
-    },
-    {
-      "source": "MiMo Memory Injection",
-      "target": "Inject Learnings Script",
-      "source_files": [
-        ".specs/features/SSD_PLAYBOOK.md",
-        ".context/_scripts/inject_learnings.py"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "implements",
-      "why": "crosses file types (code \u2194 doc); connects across different repos/directories; peripheral node `MiMo Memory Injection` unexpectedly reaches hub `Inject Learnings Script`"
-    },
-    {
-      "source": "Context Health Check Workflow",
-      "target": "Validate Context Script",
-      "source_files": [
-        ".github/workflows/context-health.yml",
-        ".context/_scripts/validate_context.py"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "crosses file types (doc \u2194 code); connects across different repos/directories"
-    },
-    {
-      "source": "Context Health Check Workflow",
-      "target": "Secrets Scanner Script",
-      "source_files": [
-        ".github/workflows/context-health.yml",
-        ".context/_scripts/secrets_scanner.py"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "crosses file types (doc \u2194 code); connects across different repos/directories"
-    },
-    {
-      "source": "SSD-Chain Playbook",
-      "target": "Write with Validation Script",
-      "source_files": [
-        ".specs/features/SSD_PLAYBOOK.md",
-        ".context/_scripts/write_with_validation.py"
+        "AGENTS.md",
+        ".context/brain/RULES.md"
       ],
       "confidence": "EXTRACTED",
       "relation": "references",
-      "why": "crosses file types (doc \u2194 code); connects across different repos/directories"
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "Manifesto de Governan\u00e7a: H.O.K Forge",
+      "target": "Flow SDD",
+      "source_files": [
+        "AGENTS.md",
+        ".context/brain/FLOW_SDD.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "H.O.K Governor Skill",
+      "target": "Manifesto de Governan\u00e7a: H.O.K Forge",
+      "source_files": [
+        ".agent/skills/hok-governor/SKILL.md",
+        "AGENTS.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "Governance Friction Analyst Skill",
+      "target": "Rules Constitution",
+      "source_files": [
+        ".agent/skills/gov-friction-analyst/SKILL.md",
+        ".context/brain/RULES.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "H.O.K Governor Skill",
+      "target": "Rules Constitution",
+      "source_files": [
+        ".agent/skills/hok-governor/SKILL.md",
+        ".context/brain/RULES.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
     }
   ],
   "tokens": {
-    "input": 236895,
-    "output": 10174
+    "input": 136860,
+    "output": 7102
   }
 }
