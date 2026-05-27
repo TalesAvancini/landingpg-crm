@@ -5,6 +5,25 @@ Status: Ativo
 Nota: Semente pos-purge. 24 entries arquivadas em journal_archive_20260522_143007.md.
 ---
 
+## 📅 2026-05-27 18:59 | 🧪 Teste: Setup Spec SDD Dry-Run (teste_trivial_dryrun) #Test #SDD #Governance
+**Estado Atual:**
+- [x] **Setup de Spec:** Criada a spec `teste_trivial_dryrun` com 4 tarefas triviais para validar empiricamente o fluxo SDD.
+- [x] **MiMo Injection:** Executado `npm run context:inject` com sucesso. Arquivo `.enriched.md` gerado.
+- [x] **SCRATCHPAD Instanciado:** Template copiado para a feature.
+- [x] **Baseline Anchor:** Hash `6721eeb` registrado no STATE.md.
+
+**Matriz de Propagação:**
+- [x] .specs/features/teste_trivial_dryrun/spec.md -> [Criação da spec de teste]
+- [x] .specs/features/teste_trivial_dryrun/STATE.md -> [Criação do STATE com baseline]
+- [x] .specs/features/teste_trivial_dryrun/tasks.md -> [Criação do tasklist]
+- [x] .specs/features/teste_trivial_dryrun/.enriched.md -> [Gerado via MiMo inject]
+- [x] .specs/features/teste_trivial_dryrun/AGENT_SCRATCHPAD.md -> [Template instanciado]
+- [x] .context/maintenance/JOURNAL.md -> [Registro de setup]
+
+executor_context_id: sdd-orchestrator
+validator_context_id: user-request
+status: READY TO COMMIT
+
 ## 📅 2026-05-24 21:13 | 🏛️ Arquitetura: Limitação da Leitura do Orquestrador a Fase de Onboarding #Architecture #Governance #Optimization
 **Estado Atual:**
 - [x] **Otimização de Contexto:** Modificada a Condição 3 no [GEMINI.md](file:///c:/Users/User/Desktop/ProjetosAntigravity/TEMPLATES/template_inic%C3%ADo_de_projeto/GEMINI.md) para exigir a leitura de [orquestrador.md](file:///c:/Users/User/Desktop/ProjetosAntigravity/TEMPLATES/template_inic%C3%ADo_de_projeto/.agent/rules_pool/orquestrador.md) apenas na fase de inicialização do papel (Onboarding/Boot), prevenindo consumo redundante de tokens em turnos subsequentes da mesma sessão.
