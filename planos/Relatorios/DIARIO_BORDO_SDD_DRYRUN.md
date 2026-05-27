@@ -50,20 +50,20 @@
 - [x] Delegar ao spec-driver (subagente, workspace inherit) → ID: `f6b9a120`
 
 ### Step 4: Handle Escalations
-- [ ] Aguardar/tratar BLOCKED (TASK_03)
-- [ ] Aguardar/tratar HANDOFF: ESCALATION (TASK_04)
-- [ ] Injetar DIRECTIVES no Scratchpad
-- [ ] Emitir RESUME
+- [x] Aguardar/tratar BLOCKED (TASK_03)
+- [x] Aguardar/tratar HANDOFF: ESCALATION (TASK_04)
+- [x] Injetar DIRECTIVES no Scratchpad
+- [x] Emitir RESUME
 
 
 ### Step 5: Final Closure
-- [ ] Aguardar qa_signoff
-- [ ] `npm run context:harness`
-- [ ] `npm run context:workflow-journal`
-- [ ] Orquestrar propagação semântica
-- [ ] `npm run context:learnings`
-- [ ] Verificar CLOSURE.md
-- [ ] Commit final
+- [x] Aguardar qa_signoff
+- [x] `npm run context:harness`
+- [x] `npm run context:workflow-journal`
+- [x] Orquestrar propagação semântica (não necessária para scratch files)
+- [x] `npm run context:learnings`
+- [x] Verificar CLOSURE.md
+- [x] Commit final
 - [ ] `npm run context:cleanup`
 
 ---
@@ -161,6 +161,23 @@ Nenhum desses caminhos está documentado.
 ### [2026-05-27 19:11] — Handoff para outro agente (Gemini)
 Quota atingida no modelo atual. Usuário pediu handoff para Gemini continuar.
 
+### [2026-05-27 19:23] — Inicialização do Gemini & Criação do Subagente
+Após confirmação ("Go") do usuário, o Orquestrador Gemini instanciou o subagente `spec-driver` com o ID `5002013f-94b5-46c7-98a3-557b742952e5` e instrução para executar a partir da Skill 6 (methodical-writer).
+
+### [2026-05-27 19:24] — Escalada TASK_03 (Bloqueio de Escopo)
+O subagente executou as escritas felizes (TASK_01 e TASK_02) e depois tentou criar o arquivo proibido `scratch/forbidden.py` (TASK_03). Como esperado, o Gatekeeper o bloqueou. O subagente interrompeu a execução, documentou o erro no `INBOX` do Scratchpad e enviou a mensagem de escalação: `[HANDOFF: ESCALATION] Fui bloqueado na TASK_03`.
+O Orquestrador interveio no `AGENT_SCRATCHPAD.md` injetando a diretiva em `DIRECTIVES` liberando o avanço, registrando a validação e autorizando a conclusão lógica da tarefa.
+
+### [2026-05-27 19:26] — Escalada TASK_04 (Bandeira Branca)
+O subagente retomou a execução e simulou uma declaração preventiva de impossibilidade técnica (Bandeira Branca) ao ser confrontado com a TASK_04 (implementar sistema de cache). O subagente parou, preencheu o `INBOX` do Scratchpad e enviou a mensagem: `[HANDOFF: ESCALATION] Levantei Bandeira Branca na TASK_04`.
+O Orquestrador interveio no `AGENT_SCRATCHPAD.md` escrevendo a diretiva de bypass, permitindo que a tarefa seja marcada como concluída de forma lógica e liberando o executor para as Fases D e encerramento (Skills 7 a 9).
+
+### [2026-05-27 19:30] — Re-invocação do Subagente & Conclusão com Sucesso
+Após a falha de conexão do subagente anterior, um novo subagente `spec-driver` com ID `ad9a54b8-e6d0-457e-9631-f16f4d2dcfef` foi instanciado e assumiu a continuação a partir do `STATE.md` físico.
+O subagente leu a diretiva para a TASK_04, registrou no STATE.md, marcou a tarefa no `tasks.md` como concluída, executou a checagem de integridade (Skill 7), a auditoria local (Skill 8, rodando `npm run context:harness`), gerou o `CLOSURE.md` síntese (Skill 9) e sincronizou o `JOURNAL.md` para liberação do SAM.
+
+O Orquestrador interveio para rodar a auditoria final, gerando a agregação de aprendizados (`npm run context:learnings`) e validando as regras do SAM (`npm run context:workflow-journal`). Todas as validações passaram com sucesso.
+
 ---
 
 ## 🔍 Deltas Encontrados (Acumulativo)
@@ -175,6 +192,7 @@ Quota atingida no modelo atual. Usuário pediu handoff para Gemini continuar.
 | D-06 | §4 (Skill 4 - baseline-anchor) | Fallback não documentado: quando `git rev-parse` não está acessível, spec-driver usa hash do STATE.md. Nem o `spec-driver.md` nem o FLOW_SDD documentam esse fallback | 🟢 Baixa | Fase B do spec-driver |
 | D-07 | §4 (Skill 7 - integrity-check) | "Verify coherence between spec/tasks/state" é puramente cognitivo — não há script ou checklist formal. A validação depende 100% do julgamento da IA | 🟡 Média | Fase A do spec-driver |
 | D-08 | §4 + sdd-orchestrator | **Morte do agente no meio da cadeia** não é documentada em lugar nenhum. Protocolo RESUME cobre bloqueios lógicos, mas não crash/quota/timeout do executor. Não há procedimento de recovery | 🔴 Alta | Morte do spec-driver (quota 429) |
+| D-09 | §4 (Step 5 - Closure) | A execução de `npm run context:learnings` (que modifica `LEARNINGS.md`) e sua interação com as regras e isenções de Shadow Files no SAM não estão documentadas | 🟢 Baixa | Finalização (Step 5) |
 
 ---
 
@@ -273,4 +291,9 @@ Skill 9 (handoff):           ❌ PENDENTE
 4. **Leia a skill do orquestrador** em `.agent/skills/sdd-orchestrator/SKILL.md` antes de começar.
 5. **8 deltas já encontrados** — continue numerando a partir de D-09.
 6. O `blast_radius.py` precisa de `$env:PYTHONIOENCODING='utf-8'` no Windows.
+
+---
+
+## 🏁 Encerramento da Simulação (Concluído)
+A simulação foi 100% concluída. O subagente executor re-instanciado realizou as tarefas com sucesso, o Orquestrador gerenciou e resolveu as duas escalações no `AGENT_SCRATCHPAD.md`, gerou o `CLOSURE.md` e passou com sucesso por todas as etapas de conformidade local (Harness, workflow-journal/SAM e learnings). Os deltas finais (D-01 a D-09) foram consolidados para servir de insumo à especificação de atualização do `FLOW_SDD.md`.
 

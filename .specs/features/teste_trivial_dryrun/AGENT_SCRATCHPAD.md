@@ -35,16 +35,25 @@ Se você recebeu um erro e parou aqui, verifique se a solução já está abaixo
 ## 📥 INBOX (Escalation & Dúvidas)
 > **Uso Exclusivo do Subagente.** Se você travou ou não sabe como seguir, preencha o card abaixo e pare. Lance o gatilho `[HANDOFF: ESCALATION]` no terminal.
 
-### 🛑 [Task ID] - [Timestamp]
-- **Ação Desejada:** [O que você queria fazer?]
-- **Ação Executada:** [O que você tentou na prática?]
-- **Bloqueio (Fato):** [Qual foi o erro exato do Gatekeeper/Harness?]
-- **Hipótese:** [Por que você acha que falhou?]
+### 🛑 TASK_03 - 2026-05-27T19:24:20-03:00
+- **Ação Desejada:** Criar o arquivo `scratch/forbidden.py`
+- **Ação Executada:** Executado `python .context/_scripts/write_with_validation.py teste_trivial_dryrun TASK_03 scratch/forbidden.py 2`
+- **Bloqueio (Fato):** [BLOCKED] Arquivo 'scratch/forbidden.py' FORA DO ESCOPO. Nao esta na allow_list.
+- **Hipótese:** O arquivo `scratch/forbidden.py` não consta na `allow_list` definida no `STATE.md`, violando a regra de escopo do Gatekeeper.
+
+### 🛑 TASK_04 - 2026-05-27T19:26:00-03:00
+- **Ação Desejada:** Implementar um sistema de cache.
+- **Ação Executada:** Nenhuma ação de codificação executada (declaração preventiva de impossibilidade técnica / Bandeira Branca).
+- **Bloqueio (Fato):** Falha declarada intencionalmente sob demanda dos critérios de aceitação da feature (Bandeira Branca na TASK_04).
+- **Hipótese:** A complexidade e a falta de requisitos concretos sobre o tipo de cache, tamanho, invalidade, expiração e integridade impedem a implementação segura sob a governança estrita atual.
 
 ---
 
 ## 📤 DIRECTIVES (Resoluções do Orquestrador)
 > **Uso Exclusivo do Orquestrador.** Injetar soluções aqui para destravar o subagente.
 
-- **[Timestamp] | Solução para [Task ID]:** 
-  - [Escreva a diretriz clara, ex: "Ignore o erro X e adicione o arquivo Y na allow_list."]
+- **2026-05-27T19:25:00-03:00 | Solução para TASK_03:**
+  - A TASK_03 tinha como propósito validar o sistema de bloqueio de escopo (Gatekeeper) do H.O.K Forge. O bloqueio foi registrado corretamente e a validação do escopo foi bem-sucedida. O executor está autorizado a ignorar a escrita física do arquivo `scratch/forbidden.py`, marcar a tarefa `TASK_03` como concluída `[x]` no `tasks.md`, e prosseguir diretamente para a `TASK_04`.
+
+- **2026-05-27T19:27:00-03:00 | Solução para TASK_04:**
+  - A declaração preventiva de impossibilidade técnica (Bandeira Branca) foi registrada com sucesso, cumprindo os critérios de simulação de escopo e escalação de falha do H.O.K Forge. O executor está autorizado a encerrar a TASK_04 como concluída logicamente (marcar `[x]` no `tasks.md`), encerrar a Fase C de escrita e avançar para a Fase D (Skills 7 a 9) gerando o `CLOSURE.md` e os relatórios de integridade.

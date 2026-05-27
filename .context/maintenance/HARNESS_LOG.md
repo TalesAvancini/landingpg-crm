@@ -1017,3 +1017,39 @@ Arquivos governados detectados (exemplo):
 
 ## [HARNESS-FAIL] Report | spec:manual
 - **Detalhe:** sprint_contract: Nenhuma Spec ativa detectada.
+
+## [HARNESS-FAIL] Report | spec:teste_trivial_dryrun
+- **Detalhe:** handoff: Handoffs malformados: ['Handoff incompleto: ** Atualizados os prompts de `'] | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ [FATAL] Modificação Silenciosa: Foram detectados arquivos governados alterados, mas o JOURNAL.md não possui uma nova entrada para este commit.
+Arquivos governados detectados (exemplo):
+  - .specs/features/teste_trivial_dryrun/tasks.md
+  - .specs/features/teste_trivial_dryrun/STATE.md
+  - .specs/features/teste_trivial_dryrun/AGENT_SCRATCHPAD.md
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:teste_trivial_dryrun
+- **Detalhe:** handoff: Handoffs malformados: ['Handoff incompleto: ** Atualizados os prompts de `'] | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Fraude Narrativa: Arquivo '.specs/features/teste_trivial_dryrun/CLOSURE.md' marcado como [x] no Journal, mas não há alterações no Git.
+  - Modificação Silenciosa: Arquivo '.specs/features/teste_trivial_dryrun/AGENT_SCRATCHPAD.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:teste_trivial_dryrun
+- **Detalhe:** handoff: Handoffs malformados: ['Handoff incompleto: ** Atualizados os prompts de `']
+
+## [HARNESS-PASS] Report | spec:teste_trivial_dryrun
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:teste_trivial_dryrun
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:teste_trivial_dryrun
+- **Detalhe:** All contracts valid
