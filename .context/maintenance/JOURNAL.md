@@ -8,6 +8,20 @@ Nota: Semente pos-purge. 26 entradas arquivadas em journal_archive_20260527_2019
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-27 20:30 | 🛡️ Governança: Inclusão da Regra 7 de Limpeza Preventiva do Git no Manifesto #Governance #Rules #Comportamento
+**Estado Atual:**
+- [x] **Nova Regra Comportamental:** Adicionada a Diretiva Comportamental 7 (Verificação de Git Cleanliness) no manifesto base `AGENTS.md` para evitar poluição e concorrência indesejada de arquivos em novos planejamentos/sprints.
+
+**Matriz de Propagação:**
+- [x] AGENTS.md -> [Inclusão da Regra 7 de Pre-flight Cleanliness no Manifesto]
+- [x] .specs/features/teste_trivial_dryrun/STATE.md -> [Atualização do status da Spec pelo Harness]
+- [x] .context/maintenance/JOURNAL.md -> [Registro de nova diretiva comportamental]
+
+executor_context_id: architect-agent
+validator_context_id: user-request
+status: READY TO COMMIT
+
+
 ## 📅 2026-05-27 20:08 | 🏛️ Arquitetura: Ajuste nos Paradoxos de Invocação, Protocolo de Queda e Nomenclatura SDD #Architecture #Governance #Refactor #Firmware #Roles #Agents #Governança #Regras
 **Estado Atual:**
 - [x] **Unificação Constitucional:** Adicionados metadados, diagramas corretos com `@sdd-orchestrator` / `@propagation-auditor` / `CLOSURE.md` e a tabela de mapeamento de nomenclatura no `FLOW_SDD.md` do Governance Core.
