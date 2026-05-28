@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-05-24 12:30
-Última Atualização: 2026-05-27 19:45
+Última Atualização: 2026-05-27 22:10
 Status: Ativo
 ---
 
@@ -170,6 +170,7 @@ graph TB
 | **Papel no SDD** | Mapa SSOT de toda a topologia de conectividade. Documenta quem afeta quem (blast radius) tanto para arquivos de governança quanto para scripts de automação. É o "raio-X" que previne modificações silenciosas. |
 | **Lê de** | Estado real do repositório (reflete a realidade) |
 | **É consumido por** | `@gov-friction-analyst`, qualquer agente que precise avaliar impacto antes de modificar |
+| **Relacionado** | [`FLOW_PROPAGATION.md`](.context/brain/FLOW_PROPAGATION.md) — motor de política e automação do Blast Radius. |
 | **Blast Radius** | 🟢 Não tem impacto executivo direto. É **descritivo**, não prescritivo. Mas se estiver desatualizado, agentes tomam decisões com mapa errado. |
 
 ---@gov-friction-analyst`, qualquer agente que precise avaliar impacto antes de modificar |
@@ -249,6 +250,7 @@ sequenceDiagram
     Note over Hub: Step 0: Pre-Flight Check (Baseline)
     Note over Hub: Step 1 & 2: Blast Radius & Draft Spec
     Note over Hub: Step 3: Vaccine Injection (MiMo) & Setup Commit
+    Note over Hub: Step 3.5: Ratificação Humana (Go Protocol)<br/>Orquestrador apresenta plano cirúrgico; execução só inicia após consentimento explícito ("Go")
     Hub->>SD: Invocação: @spec-driver [instrução]
 
     rect rgb(26, 26, 46)
@@ -301,6 +303,7 @@ sequenceDiagram
             Note over Hub: Dispensa Justificada (D-11):<br/>Registra justificativa no STATE.md
         else
             Hub->>Prop: Spawna auditor ou executa skill semantic-propagation
+            Note over Prop: Ferramentas: blast_radius.py + graphify explain
             Prop-->>Hub: Plano de propagação aplicado
         end
     end

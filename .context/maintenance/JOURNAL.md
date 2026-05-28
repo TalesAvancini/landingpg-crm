@@ -8,6 +8,21 @@ Nota: Semente pos-purge. 26 entradas arquivadas em journal_archive_20260527_2019
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-27 22:54 | 🛡️ Governança: Documentação do Go Protocol e Ferramentas no SDD Flow #Governance #Rules #Documentation
+**Estado Atual:**
+- [x] **Enriquecimento Constitucional:** Integradas notas detalhadas no diagrama de sequência do `FLOW_SDD.md` descrevendo o Step 3.5 (Go Protocol / Ratificação Humana) e especificando as ferramentas utilizadas na propagação semântica (`blast_radius.py` e `graphify explain`).
+- [x] **Topologia das Conexões:** Atualizada a tabela de `rx-communications.md` no `FLOW_SDD.md` para linkar explicitamente ao `FLOW_PROPAGATION.md`.
+
+**Matriz de Propagação:**
+- [x] .context/brain/FLOW_SDD.md -> [Integração do Go Protocol e ferramentas no diagrama de sequência]
+- [x] .specs/features/teste_trivial_dryrun/STATE.md -> [Atualização do status da Spec pelo Harness]
+- [x] .context/maintenance/JOURNAL.md -> [Registro das atualizações do fluxo SDD]
+
+executor_context_id: architect-agent
+validator_context_id: user-request
+status: READY TO COMMIT
+
+
 ## 📅 2026-05-27 20:30 | 🛡️ Governança: Inclusão da Regra 7 de Limpeza Preventiva do Git no Manifesto #Governance #Rules #Comportamento
 **Estado Atual:**
 - [x] **Nova Regra Comportamental:** Adicionada a Diretiva Comportamental 7 (Verificação de Git Cleanliness) no manifesto base `AGENTS.md` para evitar poluição e concorrência indesejada de arquivos em novos planejamentos/sprints.
