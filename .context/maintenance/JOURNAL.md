@@ -8,6 +8,18 @@ Nota: Semente pos-purge. 26 entradas arquivadas em journal_archive_20260527_2019
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-27 23:08 | 🛡️ Governança: Remoção de Regra Obsoleta em AGENTS.md #Governance #Rules #Cleanup
+**Estado Atual:**
+- [x] **Simplificação Constitucional**: Removida a diretiva primária que exigia a leitura do arquivo inexistente `.agents/rules/rules.md` no boot, já que suas atribuições foram centralizadas e integradas no `GEMINI.md`.
+
+**Matriz de Propagação:**
+- [x] AGENTS.md -> [Remoção da regra obsoleta de leitura de rules.md]
+- [x] .context/maintenance/JOURNAL.md -> [Registro de alteração de regra de governança]
+
+executor_context_id: architect-agent
+validator_context_id: user-request
+status: READY TO COMMIT
+
 ## 📅 2026-05-27 23:00 | 🏁 Signoff: Fechamento de Spec e Homologação do QA #Governance #Validation
 **Estado Atual:**
 - [x] **Homologação do QA:** Assinado o termo de aceitação de QA (`qa_signoff: true`) na especificação `teste_trivial_dryrun` após o dry-run passar em todas as validações, preparando a Spec para expiração/arquivamento.

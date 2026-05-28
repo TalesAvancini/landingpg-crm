@@ -9,10 +9,9 @@ Se você quer codificar aqui e ter seus commits aprovados, você **DEVE** seguir
 
 ## 🛑 DIRETIVAS PRIMÁRIAS (Leitura Obrigatória no Boot)
 
-Antes de iniciar qualquer tarefa, planejamento ou alteração neste repositório, você está **OBRIGADO** a ler e internalizar os seguintes arquivos:
+Antes de iniciar qualquer tarefa, planejamento ou alteração neste repositório, você está **OBRIGADO** a ler e internalizar o seguinte arquivo:
 
 1. **[O FLUXO MESTRE](file:///.context/brain/MASTER_FLOW.md)**: A espinha dorsal da arquitetura. Ele mapeia como as coisas funcionam aqui.
-2. **[REGRAS LOCAIS](file:///.agents/rules/rules.md)**: O conjunto de regras comportamentais específicas deste workspace.
 
 ---
 
