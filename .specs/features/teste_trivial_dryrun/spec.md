@@ -28,7 +28,7 @@ sprint_01:
     - TASK_04 forçou HANDOFF ESCALATION por falha declarada
     - Todas as 9 skills executadas e registradas no STATE.md
     - CLOSURE.md gerado
-  qa_signoff: false
+  qa_signoff: true
 ---
 
 # Feature: Teste Trivial SDD Dry-Run
