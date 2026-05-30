@@ -1,6 +1,6 @@
 # 🧠 AGENT_SCRATCHPAD
-Feature: [feature_id]
-Sprint: [current_sprint]
+Feature: landing_page_crm
+Sprint: sprint_01
 
 ## 💡 Known Traps (Leia Antes de Bater a Cabeça!)
 
@@ -46,5 +46,5 @@ Se você recebeu um erro e parou aqui, verifique se a solução já está abaixo
 ## 📤 DIRECTIVES (Resoluções do Orquestrador)
 > **Uso Exclusivo do Orquestrador.** Injetar soluções aqui para destravar o subagente.
 
-- **[Timestamp] | Solução para [Task ID]:** 
-  - [Escreva a diretriz clara, ex: "Ignore o erro X e adicione o arquivo Y na allow_list."]
+- **2026-05-29 23:30 | Solução para Handoff Inicial:** 
+  - **Diretriz:** Buscar as skills em `C:\Users\compartilhadoAntigravity\AntigravityKit\ag-kit-main\.agent`.

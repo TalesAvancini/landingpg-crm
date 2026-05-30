@@ -4,7 +4,7 @@
 - **Feature ID**: landing_page_crm
 - **Sprint**: sprint_01
 - **Status**: PLANNING
-- **Updated**: 2026-05-29 23:30
+- **updated:** 2026-05-29 23:33
 - **Max Impact Radius**: 6
 
 ## Progresso da Cadeia (Chain Skills)

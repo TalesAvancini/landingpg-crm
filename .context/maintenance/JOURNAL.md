@@ -1,12 +1,26 @@
 ---
 Criado em: 2026-05-27 20:19
-Ultima Atualizacao: 2026-05-29 23:28
+Ultima Atualizacao: 2026-05-29 23:38
 Status: Ativo
 Nota: Semente pos-purge. 26 entradas arquivadas em journal_archive_20260527_201918.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-29 23:35 | 🏛️ Arquitetura: Ajustes de Metadados e Diretriz de Handoff no Scratchpad #Architecture #Setup #Handoff
+**Estado Atual:**
+- [x] **Handoff Directive**: Injetada a diretriz para busca de skills no `AGENT_SCRATCHPAD.md`.
+- [x] **State Metadata**: Corrigido o formato de updated no `STATE.md` para remover aviso do validador.
+
+**Matriz de Propagação:**
+- [x] .specs/features/landing_page_crm/STATE.md -> [Ajuste de formato e timestamp do metadado updated]
+- [x] .specs/features/landing_page_crm/AGENT_SCRATCHPAD.md -> [Injeção da diretiva de handoff de skills no scratchpad]
+- [x] .context/maintenance/JOURNAL.md -> [Registro de ajustes de conformidade e diretrizes]
+
+executor_context_id: sdd-orchestrator
+validator_context_id: user-request
+status: READY TO COMMIT
 
 ## 📅 2026-05-29 23:28 | 🧪 Sprint: Setup da Spec landing_page_crm (SDD Step 2-3) #SDD #Setup #LandingPage
 **Estado Atual:**
