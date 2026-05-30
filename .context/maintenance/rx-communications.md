@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-05-01 00:51
-Ultima Atualizacao: 2026-05-24 17:20
+Ultima Atualizacao: 2026-05-30
 Status: Ativo
 ---
 
@@ -437,3 +437,11 @@ Esta seção mapeia os "músculos" do ecossistema definidos no `SCRIPT_GLOSSARY.
 - **`_tz_utils.py`** & **`_wiki_log_utils.py`**
   - **Afetam:** Todos os scripts de log e metadados acima (padronizando fusos e escritas unificadas).
   - **Gatilho:** Importação via `import`.
+
+---
+
+### 📁 Planos Técnicos (`docs/`)
+- **`docs/PLAN-api-notion-crm.md`**
+  - **Afeta:** `spec.md`, `tasks.md` (Dita as tarefas e escopo da API Notion CRM).
+  - **É Afetado Por:** `PRD.md` (Requisitos de negócio).
+

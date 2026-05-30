@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-10 21:00
-Ultima Atualizacao: 2026-05-27 20:08
+Ultima Atualizacao: 2026-05-30
 Status: Ativo
 ---
 
@@ -134,4 +134,13 @@ Status: Ativo
 | Arquivo | Responsabilidade Principal | Agente Guardião |
 | :--- | :--- | :--- |
 | `planos/melhoria_spec-driver/` | Documentação de melhorias táticas para o executor do Spec-Driven V3. | `@orchestrator` |
+
+---
+
+## 📁 `docs/` (Planos Técnicos e Integração)
+
+| Arquivo | Responsabilidade Principal | Agente Guardião |
+| :--- | :--- | :--- |
+| `docs/PLAN-api-notion-crm.md` | **Plano de Integração.** Detalhamento técnico da arquitetura, tasks e critérios de aceitação para a API Notion CRM. | `@project-planner` |
+
  

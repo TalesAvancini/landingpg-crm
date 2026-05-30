@@ -2,6 +2,7 @@
 Criado em: 2026-05-29 22:57
 Ultima Atualizacao: 2026-05-29 22:57
 Status: Ativo
+SSOT: true
 ---
 
 # 📦 Product Requirements Document (PRD)
@@ -59,3 +60,7 @@ Este documento define as especificações funcionais e a arquitetura do MVP de c
 *   **RNF3.1 — Latência de Ingestão**: O lead deve aparecer no Notion em menos de 3 segundos após o clique final.
 *   **RNF3.2 — Segurança**: API Keys e tokens devem ficar em variáveis de ambiente `.env`.
 *   **RNF3.3 — Custo Fixo Zero**: O sistema deve rodar inteiramente no plano gratuito das ferramentas (Vercel, Notion, Typebot e Calendly).
+
+## Critical Dependencies
+- Notion Client SDK for Node.js (Fonte: market/notionhq-client)
+- Dotenv Environment Variable Config (Fonte: market/dotenv)

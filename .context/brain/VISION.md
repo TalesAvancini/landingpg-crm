@@ -1,3 +1,4 @@
+<!-- SSOT -->
 # Visão do Projeto: Sistema de Captação e CRM Automatizado (Agência MVP)
 
 Framework Version: v2.5.2

@@ -45,8 +45,8 @@ def get_git_state():
             status = line[:2]
             path = line[3:].strip()
             
-            # Skip arquivos em pastas de rascunho
-            if path.startswith(IGNORED_PREFIXES):
+            # Skip arquivos em pastas de rascunho ou compilados temporários
+            if path.startswith(IGNORED_PREFIXES) or "__pycache__" in path or path.endswith(".pyc"):
                 continue
                 
             if "??" in status or "A" in status:

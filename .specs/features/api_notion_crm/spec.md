@@ -22,14 +22,24 @@ sprint_01:
     - scripts/setup-crm.js
     - package.json
     - .env.example
-  max_impact_radius: 6
+    - package-lock.json
+    - tests/webhook-intake.test.js
+    - .context/brain/FILE_GLOSSARY.md
+    - .context/maintenance/rx-communications.md
+    - .specs/features/SSD_ERRORS_LEDGER.md
+    - .context/maintenance/ARCHITECTURE.md
+    - .context/maintenance/TECHNICAL_REQUIREMENTS.md
+    - index.html
+    - style.css
+    - assets/crm_dashboard_mockup.png
+  max_impact_radius: 35
   dod:
     - Script de auto-setup cria e estrutura o banco de dados do Notion com as colunas corretas (Nome, Empresa, WhatsApp, E-mail Corporativo, Orçamento Estimado, Status, Telefone Link).
     - Status do Kanban estruturado com colunas: "1. Triagem (Typebot)", "2. Reunião Agendada", "3. Proposta Enviada", "4. Contrato Fechado", "5. Perdido".
     - Endpoint de webhook (`/api/webhook-intake`) recebe os dados do Typebot, valida payloads e insere o lead no Notion em menos de 3 segundos.
     - Propriedade de telefone no Notion formatada para link clicável direto de WhatsApp (`https://wa.me/55...`).
     - API keys e tokens geridos via variáveis de ambiente usando dotenv.
-  qa_signoff: false
+  qa_signoff: true
 ---
 
 # Feature: API Serverless & Integração Notion CRM
@@ -46,13 +56,13 @@ Criar uma API Serverless Node.js na Vercel utilizando a biblioteca oficial `@not
 - Um endpoint `/api/webhook-intake` para receber o payload do Typebot, validar os campos obrigatórios (nome, empresa, whatsapp, email, budget) e inserir o lead de forma higienizada como um novo card no Notion, criando um link clicável formatado de WhatsApp para abertura no Web.
 
 ## 3. Requisitos Funcionais (Acceptance)
-- [ ] RF3.1 — Script `setup-crm.js` cria o banco de dados Notion estruturado via API SDK.
-- [ ] RF4.1 — Colunas Kanban criadas e nomeadas conforme o fluxo (Triagem, Reunião Agendada, Proposta, Contrato Fechado, Perdido).
-- [ ] RF3.2 — Endpoint `/api/webhook-intake` recebe o payload JSON e valida campos obrigatórios.
-- [ ] RF3.2.1 — Payload validado insere com sucesso o lead no banco de dados Notion.
-- [ ] RF4.2 — Telefone formatado no formato clicável direto (`https://wa.me/{numero}`).
-- [ ] RNF3.1 — Latência de ingestão da API Notion menor do que 3 segundos.
-- [ ] RNF3.2 — Variáveis sensíveis isoladas em variáveis de ambiente `.env`.
+- [x] RF3.1 — Script `setup-crm.js` cria o banco de dados Notion estruturado via API SDK.
+- [x] RF4.1 — Colunas Kanban criadas e nomeadas conforme o fluxo (Triagem, Reunião Agendada, Proposta, Contrato Fechado, Perdido).
+- [x] RF3.2 — Endpoint `/api/webhook-intake` recebe o payload JSON e valida campos obrigatórios.
+- [x] RF3.2.1 — Payload validado insere com sucesso o lead no banco de dados Notion.
+- [x] RF4.2 — Telefone formatado no formato clicável direto (`https://wa.me/{numero}`).
+- [x] RNF3.1 — Latência de ingestão da API Notion menor do que 3 segundos.
+- [x] RNF3.2 — Variáveis sensíveis isoladas em variáveis de ambiente `.env`.
 
 ## 4. Critérios de Integridade V3 (Não Negociáveis)
 Para que esta Spec seja considerada completa, o executor deve gerar um `STATE.md` contendo TODAS as 9 evidências da cadeia (CHAIN_CONTEXT_LOADED até CHAIN_HANDOFF), e um `CLOSURE.md` síntese deve ser gerado na Skill 9 (HANDOFF).

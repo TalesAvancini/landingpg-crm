@@ -1106,3 +1106,215 @@ Arquivos governados detectados (exemplo):
 
 ## [HARNESS-PASS] Report | spec:teste_trivial_dryrun
 - **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:api_notion_crm
+- **Detalhe:** enrichment: Seção Critical Dependencies obrigatória para PRDs com integrações/compliance | sprint_contract: [HG06] start_hash não encontrado para sprint_01 no STATE.md (Formato esperado: ## sprint_01 
+ start_hash: ...) | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ [FATAL] Modificação Silenciosa: Foram detectados arquivos governados alterados, mas o JOURNAL.md não possui uma nova entrada para este commit.
+Arquivos governados detectados (exemplo):
+  - docs/
+  - .context/_scripts/__pycache__/context_oracle.cpython-314.pyc
+  - .context/_scripts/__pycache__/_wiki_log_utils.cpython-314.pyc
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:api_notion_crm
+- **Detalhe:** sprint_contract: [HG06] start_hash não encontrado para sprint_01 no STATE.md (Formato esperado: ## sprint_01 
+ start_hash: ...) | impact_radius: Raio de impacto excedido! (Modificados: 7 > Limite: 6). Re-fragmente a SPEC ou aumente o limite se justificado. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ [FATAL] Modificação Silenciosa: Foram detectados arquivos governados alterados, mas o JOURNAL.md não possui uma nova entrada para este commit.
+Arquivos governados detectados (exemplo):
+  - .context/_scripts/__pycache__/_tz_utils.cpython-314.pyc
+  - .context/_scripts/__pycache__/_wiki_log_utils.cpython-314.pyc
+  - .context/brain/PRD.md
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:api_notion_crm
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ [FATAL] Modificação Silenciosa: Foram detectados arquivos governados alterados, mas o JOURNAL.md não possui uma nova entrada para este commit.
+Arquivos governados detectados (exemplo):
+  - .context/_scripts/__pycache__/_tz_utils.cpython-314.pyc
+  - .specs/features/api_notion_crm/STATE.md
+  - .context/brain/PRD.md
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:api_notion_crm
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Modificação Silenciosa: Arquivo '.context/_scripts/__pycache__/_tz_utils.cpython-314.pyc' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/_scripts/__pycache__/_wiki_log_utils.cpython-314.pyc' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/_scripts/__pycache__/context_oracle.cpython-314.pyc' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'docs/' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:api_notion_crm
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Modificação Silenciosa: Arquivo '.context/_scripts/__pycache__/context_oracle.cpython-314.pyc' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/_scripts/__pycache__/_wiki_log_utils.cpython-314.pyc' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/_scripts/__pycache__/_tz_utils.cpython-314.pyc' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'docs/PLAN-api-notion-crm.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:api_notion_crm
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Fraude Narrativa: Arquivo 'scripts/setup-crm.js' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo 'api/webhook-intake.js' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.env.example' marcado como [x] no Journal, mas não há alterações no Git.
+  - Modificação Silenciosa: Arquivo '.context/_scripts/workflow_journal_auditor.py' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:api_notion_crm
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Fraude Narrativa: Arquivo 'scripts/setup-crm.js' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo 'api/webhook-intake.js' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo '.env.example' marcado como [x] no Journal, mas não há alterações no Git.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:api_notion_crm
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Fraude Narrativa: Arquivo 'scripts/setup-crm.js' marcado como [x] no Journal, mas não há alterações no Git.
+  - Fraude Narrativa: Arquivo 'api/webhook-intake.js' marcado como [x] no Journal, mas não há alterações no Git.
+  - Modificação Silenciosa: Arquivo 'scripts/' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'api/' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:api_notion_crm
+- **Detalhe:** impact_radius: Raio de impacto excedido! (Modificados: 15 > Limite: 12). Re-fragmente a SPEC ou aumente o limite se justificado.
+
+## [HARNESS-PASS] Report | spec:api_notion_crm
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:api_notion_crm
+- **Detalhe:** impact_radius: Raio de impacto excedido! (Modificados: 18 > Limite: 16). Re-fragmente a SPEC ou aumente o limite se justificado. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Modificação Silenciosa: Arquivo 'package-lock.json' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-PASS] Report | spec:api_notion_crm
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:api_notion_crm
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Modificação Silenciosa: Arquivo '.specs/features/api_notion_crm/tasks.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-PASS] Report | spec:api_notion_crm
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:api_notion_crm
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:api_notion_crm
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:api_notion_crm
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:api_notion_crm
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Modificação Silenciosa: Arquivo 'index.html' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'style.css' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'assets/' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:api_notion_crm
+- **Detalhe:** journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Fraude Narrativa: Arquivo 'assets/crm_dashboard_mockup.png' marcado como [x] no Journal, mas não há alterações no Git.
+  - Modificação Silenciosa: Arquivo 'assets/' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-PASS] Report | spec:api_notion_crm
+- **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:manual
+- **Detalhe:** sprint_contract: Nenhuma Spec ativa detectada. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ VIOLAÇÕES DETECTADAS:
+  - Modificação Silenciosa: Arquivo '.context/_scripts/workflow_journal_auditor.py' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/landing_page_crm/AGENT_SCRATCHPAD.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.env.example' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'api/webhook-intake.js' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'docs/PLAN-api-notion-crm.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'tests/webhook-intake.test.js' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/api_notion_crm/AGENT_SCRATCHPAD.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'style.css' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'assets/crm_dashboard_mockup.png' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/api_notion_crm/tasks.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'index.html' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'package.json' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/api_notion_crm/CLOSURE.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/brain/FILE_GLOSSARY.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'scripts/setup-crm.js' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo 'package-lock.json' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/maintenance/rx-communications.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/maintenance/ARCHITECTURE.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.context/brain/PRD.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/api_notion_crm/.enriched.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/SSD_ERRORS_LEDGER.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+  - Modificação Silenciosa: Arquivo '.specs/features/landing_page_crm/.enriched.md' alterado no Git mas ausente na Matriz de Propagação do Journal.
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
+
+## [HARNESS-FAIL] Report | spec:api_notion_crm
+- **Detalhe:** impact_radius: Raio de impacto excedido! (Modificados: 31 > Limite: 28). Re-fragmente a SPEC ou aumente o limite se justificado.
+
+## [HARNESS-PASS] Report | spec:api_notion_crm
+- **Detalhe:** All contracts valid
+
+## [HARNESS-PASS] Report | spec:api_notion_crm
+- **Detalhe:** All contracts valid

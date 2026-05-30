@@ -1,3 +1,4 @@
+<!-- SSOT -->
 # 📜 A Constituição do Journal: Flow, Governança e Meandros (H.O.K Forge)
 
 > **⚠️ AVISO AOS AGENTES E HUMANOS:** 

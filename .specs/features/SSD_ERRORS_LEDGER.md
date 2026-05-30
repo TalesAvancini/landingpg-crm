@@ -99,6 +99,18 @@ Registro continuo de erros recorrentes em execucao spec-driven.
 - **Regra adicionada/ajustada:** É OBRIGATÓRIO executar `view_file` ou `grep` nas linhas que se deseja alterar imediatamente ANTES de chamar a ferramenta de escrita. NUNCA edite "de cabeça".
 - **Evidencia (arquivo/commit/log):** `.agent/templates/AGENT_SCRATCHPAD.md` (Trap #6).
 
+### Scar #008 — Colisão de Bytecode Python no SAM (Falso Positivo)
+- **Data:** 2026-05-30
+- **Feature:** api_notion_crm
+- **Sprint:** sprint_01
+- **Erro:** Falsos positivos de Modificação Silenciosa causados por arquivos `.pyc` (bytecode Python) gerados em runtime.
+- **Sintoma observado:** Bloqueio contínuo do SAM e loops de retentativa da IA consumindo muitos tokens e tempo.
+- **Causa raiz:** O interpretador Python gerava ou modificava arquivos compilados `.pyc` dentro de `__pycache__` durante a execução do harness. Como esses binários estavam trackeados anteriormente no Git index, o SAM os enxergava como arquivos modificados e bloqueava o pipeline por não estarem na Matriz de Propagação.
+- **Como foi detectado:** Logs de execução e validação cruzada do Harness com Git status.
+- **Correcao aplicada:** Remoção permanente de arquivos `.pyc` do índice do Git (`git rm --cached`), inclusão estrita no `.gitignore` e configuração do `workflow_journal_auditor.py` para ignorar padrões contendo `__pycache__` ou `.pyc`.
+- **Regra adicionada/ajustada:** Ignorar arquivos de runtime/bytecode auto-gerados no auditor do SAM e assegurar exclusão física no Git.
+- **Evidencia (arquivo/commit/log):** `.context/_scripts/workflow_journal_auditor.py` (função `get_git_state`).
+
 ---
 
 ## Template de Entrada

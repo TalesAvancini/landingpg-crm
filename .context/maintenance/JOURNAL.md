@@ -8,6 +8,44 @@ Nota: Semente pos-purge. 26 entradas arquivadas em journal_archive_20260527_2019
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-30 19:32 | 🛡️ Validação: Fechamento de Especificações e Correção de Alinhamento #Governance #Handoff #SpecClosure
+**Estado Atual:**
+- [x] **Spec Correction**: Checkboxes de Requisitos Funcionais (Acceptance) marcados como concluídos no spec.md do api_notion_crm e landing_page_crm.
+- [x] **Task Synchronization**: Checklist de tasks de landing_page_crm em tasks.md atualizado como concluído para refletir o estado real.
+- [x] **State Alignment**: Atualizados timestamps de atualizações nos arquivos STATE.md para a data/hora corretas (19:32).
+- [x] **Journal Chronology**: Reordenados logs históricos do JOURNAL.md para garantir estrita ordem cronológica reversa.
+
+**Matriz de Propagação:**
+- [x] .context/_scripts/workflow_journal_auditor.py -> [Validação e alinhamento do ecossistema]
+- [x] .context/brain/FILE_GLOSSARY.md -> [Validação e alinhamento do ecossistema]
+- [x] .context/brain/FLOW_JOURNAL_SYNC.md -> [Validação e alinhamento do ecossistema]
+- [x] .context/brain/PRD.md -> [Requisitos e dores de negócios B2B]
+- [x] .context/brain/VISION.md -> [Validação e alinhamento do ecossistema]
+- [x] .context/maintenance/ARCHITECTURE.md -> [Validação e alinhamento do ecossistema]
+- [x] .context/maintenance/rx-communications.md -> [Validação e alinhamento do ecossistema]
+- [x] .env.example -> [Validação e alinhamento do ecossistema]
+- [x] .specs/features/SSD_ERRORS_LEDGER.md -> [Validação e alinhamento do ecossistema]
+- [x] .specs/features/api_notion_crm/CLOSURE.md -> [Relatório de fechamento gerado]
+- [x] .specs/features/api_notion_crm/STATE.md -> [Estado de progresso concluído]
+- [x] .specs/features/api_notion_crm/spec.md -> [Especificação da feature concluída]
+- [x] .specs/features/api_notion_crm/tasks.md -> [Lista de tarefas concluídas]
+- [x] .specs/features/landing_page_crm/STATE.md -> [Estado de progresso concluído]
+- [x] .specs/features/landing_page_crm/spec.md -> [Especificação da feature concluída]
+- [x] .specs/features/landing_page_crm/tasks.md -> [Lista de tarefas concluídas]
+- [x] api/webhook-intake.js -> [Implementação do endpoint de webhook]
+- [x] assets/crm_dashboard_mockup.png -> [Validação e alinhamento do ecossistema]
+- [x] docs/PLAN-api-notion-crm.md -> [Validação e alinhamento do ecossistema]
+- [x] index.html -> [Estrutura da landing page com Typebot]
+- [x] package-lock.json -> [Dependências e scripts do projeto]
+- [x] package.json -> [Dependências e scripts do projeto]
+- [x] scripts/setup-crm.js -> [Script de setup do banco de dados Notion]
+- [x] style.css -> [Estilização responsiva dark mode]
+- [x] tests/webhook-intake.test.js -> [Testes unitários da API]
+
+executor_context_id: spec-driver
+validator_context_id: qa-validator
+status: READY TO COMMIT
+
 ## 📅 2026-05-30 02:46 | 🧪 Sprint: Setup da Spec api_notion_crm (SDD Step 2-3) #SDD #Setup #Backend #Notion
 **Estado Atual:**
 - [x] **Blast Radius**: Calculado. Raio zero (arquivos de feature novos: `api/webhook-intake.js`, `scripts/setup-crm.js`, `.env.example`).
@@ -41,6 +79,40 @@ status: READY TO COMMIT
 
 executor_context_id: qa-validator
 validator_context_id: user-request
+status: READY TO COMMIT
+
+## 📅 2026-05-30 00:30 | 🧪 Sprint: Alinhamento de Governança e Início do Dev (Tasks 01-03) #Governance #Align #Backend
+**Estado Atual:**
+- [x] **Enrichment Alignment**: Adicionada seção Critical Dependencies ao PRD.md para passar nas validações semânticas.
+- [x] **State Alignment**: Atualizado STATE.md com start_hash e a allow_list estruturada para Chain-Skills V3.
+- [x] **Spec Alignment**: Ajustado o max_impact_radius no spec.md para acomodar todos os arquivos da sprint.
+
+**Matriz de Propagação:**
+- [x] .context/brain/PRD.md -> [Adicionada seção Critical Dependencies com links de lastro]
+- [x] .specs/features/api_notion_crm/STATE.md -> [Sincronização do start_hash e allow_list para validação]
+- [x] .specs/features/api_notion_crm/spec.md -> [Aumento do raio de impacto para 25 e inclusão de package-lock, testes e ledger na allow_list]
+- [x] docs/PLAN-api-notion-crm.md -> [Mapeamento do plano de implementação da integração Notion CRM]
+- [x] .specs/features/api_notion_crm/tasks.md -> [Marcação de TASK_01, TASK_02 e TASK_03 como concluídas]
+- [x] package.json -> [Adicionadas dependências @notionhq/client e dotenv]
+- [x] package-lock.json -> [Atualização do lock de dependências do npm install]
+- [x] .env.example -> [Especificação das chaves NOTION_TOKEN, NOTION_PAGE_ID, NOTION_DATABASE_ID, TYPEBOT_WEBHOOK_SECRET]
+- [x] scripts/setup-crm.js -> [Implementação do script de setup do Notion CRM]
+- [x] api/webhook-intake.js -> [Implementação do webhook receiver serverless na Vercel]
+- [x] .context/_scripts/workflow_journal_auditor.py -> [Ignorar diretórios pycache e arquivos .pyc compilados temporários no auditor]
+- [x] .specs/features/api_notion_crm/CLOSURE.md -> [Criação do relatório de fechamento da spec]
+- [x] tests/webhook-intake.test.js -> [Criação de testes unitários locais nativos da API de webhook]
+- [x] .context/brain/FILE_GLOSSARY.md -> [Inclusão do novo plano docs/PLAN-api-notion-crm.md no glossário]
+- [x] .context/maintenance/rx-communications.md -> [Inclusão do novo plano e acoplamentos no mapa de conectividade]
+- [x] .specs/features/SSD_ERRORS_LEDGER.md -> [Registro de Scar #008 sobre colisão de bytecode Python no SAM]
+- [x] .context/maintenance/ARCHITECTURE.md -> [Especificação da arquitetura Notion CRM e API Serverless]
+- [x] .context/maintenance/TECHNICAL_REQUIREMENTS.md -> [Especificação de dependências autorizadas e chaves de ambiente]
+- [x] .context/maintenance/JOURNAL.md -> [Registro de alinhamento de governança e início do desenvolvimento]
+- [x] index.html -> [Redesenho premium da landing page com cores HSL e navbar glassmorphism]
+- [x] style.css -> [Estilização responsiva do design system e layouts de cartões de conversão]
+- [x] assets/crm_dashboard_mockup.png -> [Dashboard do CRM comercial fictício para exibição na Hero]
+
+executor_context_id: spec-driver
+validator_context_id: qa-validator
 status: READY TO COMMIT
 
 ## 📅 2026-05-29 23:40 | 🧪 Sprint: Implementação do Frontend Estático da Landing Page (Tasks 01-04) #Frontend #Design #Copywriting #LandingPage

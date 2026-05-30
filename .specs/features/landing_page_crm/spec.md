@@ -20,7 +20,7 @@ sprint_01:
     # Feature Scope
     - index.html
     - style.css
-  max_impact_radius: 6
+  max_impact_radius: 35
   dod:
     - Landing Page renderiza corretamente em desktop e mobile (responsiva)
     - Seção Hero com headline de impacto, subheadline e CTA único visíveis acima da dobra
@@ -50,17 +50,17 @@ Criar uma Landing Page estática em HTML5/CSS3 puro (sem frameworks JS), com des
 - Design dark mode moderno com tipografia profissional (Google Fonts), gradientes e micro-animações
 
 ## 3. Requisitos Funcionais (Acceptance)
-- [ ] RF1.1 — Página única responsiva (HTML5/CSS3) sem links de fuga ou menu de navegação
-- [ ] RF1.2 — Widget/container do Typebot incorporado na página (script placeholder configurável)
-- [ ] COPY-01 — Headline Hero focada em valor e corte de tempo
-- [ ] COPY-02 — Subheadline explicativa do serviço
-- [ ] COPY-03 — CTA único com texto de benefício (não genérico)
-- [ ] COPY-04 — Seções seguindo framework PAS (Problem, Agitation, Solution)
-- [ ] COPY-05 — Pilha de benefícios focada em outcomes (Corte de Custos, Tempo, Escala)
-- [ ] DESIGN-01 — Dark mode premium com gradientes sutis e paleta harmoniosa
-- [ ] DESIGN-02 — Tipografia profissional via Google Fonts (Inter ou Outfit)
-- [ ] DESIGN-03 — Micro-animações em hover/scroll para engajamento
-- [ ] DESIGN-04 — Layout 100% responsivo (mobile-first)
+- [x] RF1.1 — Página única responsiva (HTML5/CSS3) sem links de fuga ou menu de navegação
+- [x] RF1.2 — Widget/container do Typebot incorporado na página (script placeholder configurável)
+- [x] COPY-01 — Headline Hero focada em valor e corte de tempo
+- [x] COPY-02 — Subheadline explicativa do serviço
+- [x] COPY-03 — CTA único com texto de benefício (não genérico)
+- [x] COPY-04 — Seções seguindo framework PAS (Problem, Agitation, Solution)
+- [x] COPY-05 — Pilha de benefícios focada em outcomes (Corte de Custos, Tempo, Escala)
+- [x] DESIGN-01 — Dark mode premium com gradientes sutis e paleta harmoniosa
+- [x] DESIGN-02 — Tipografia profissional via Google Fonts (Inter ou Outfit)
+- [x] DESIGN-03 — Micro-animações em hover/scroll para engajamento
+- [x] DESIGN-04 — Layout 100% responsivo (mobile-first)
 
 ## 4. Critérios de Integridade V3 (Não Negociáveis)
 Para que esta Spec seja considerada completa, o executor deve gerar um `STATE.md` contendo TODAS as 9 evidências da cadeia (CHAIN_CONTEXT_LOADED até CHAIN_HANDOFF), e um `CLOSURE.md` síntese deve ser gerado na Skill 9 (HANDOFF).

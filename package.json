@@ -30,7 +30,8 @@
     "context:bundle": "python run_context.py bundle",
     "context:affinity": "python .context/_scripts/affinity_lite.py",
     "context:blast-radius": "python .context/_scripts/blast_radius.py",
-    "test:blast-radius": "python -c \"from tests.test_blast_radius import TestClassifyBuckets, TestDegradation; c = TestClassifyBuckets(); c.test_both_agree_gives_must_update(); c.test_structural_only_gives_likely(); c.test_governance_only_gives_declared(); c.test_no_matches_gives_empty_buckets(); c.test_seed_excluded_from_buckets(); d = TestDegradation(); d.test_both_unavailable_exits_4(); print('ALL TESTS PASSED')\""
+    "test:blast-radius": "python -c \"from tests.test_blast_radius import TestClassifyBuckets, TestDegradation; c = TestClassifyBuckets(); c.test_both_agree_gives_must_update(); c.test_structural_only_gives_likely(); c.test_governance_only_gives_declared(); c.test_no_matches_gives_empty_buckets(); c.test_seed_excluded_from_buckets(); d = TestDegradation(); d.test_both_unavailable_exits_4(); print('ALL TESTS PASSED')\"",
+    "test:webhook": "node tests/webhook-intake.test.js"
   },
   "keywords": [
     "ai",
@@ -41,6 +42,10 @@
   ],
   "author": "Tales Avancini",
   "license": "MIT",
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "dotenv": "^16.4.5"
+  },
   "devDependencies": {
     "husky": "^9.1.7"
   }

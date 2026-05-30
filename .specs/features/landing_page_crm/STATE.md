@@ -4,7 +4,7 @@
 - **Feature ID**: landing_page_crm
 - **Sprint**: sprint_01
 - **Status**: DONE
-- **updated:** 2026-05-30 02:45
+- **updated:** 2026-05-30 19:32
 - **start_hash**: ebd460e
 - **Max Impact Radius**: 6
 
