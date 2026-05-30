@@ -1,12 +1,32 @@
 ---
 Criado em: 2026-05-27 20:19
-Ultima Atualizacao: 2026-05-30 02:45
+Ultima Atualizacao: 2026-05-30 02:46
 Status: Ativo
 Nota: Semente pos-purge. 26 entradas arquivadas em journal_archive_20260527_201918.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-30 02:46 | 🧪 Sprint: Setup da Spec api_notion_crm (SDD Step 2-3) #SDD #Setup #Backend #Notion
+**Estado Atual:**
+- [x] **Blast Radius**: Calculado. Raio zero (arquivos de feature novos: `api/webhook-intake.js`, `scripts/setup-crm.js`, `.env.example`).
+- [x] **Spec Drafted**: Criada spec com 3 tasks atômicas, scope_allow e regras injetadas.
+- [x] **MiMo Injection**: Executado `npm run context:inject` para enriquecer a spec.
+- [x] **Scratchpad Instanciado**: Configurado com a localização física das skills.
+
+**Matriz de Propagação:**
+- [x] .specs/features/api_notion_crm/spec.md -> [Criação da spec da API e Notion CRM]
+- [x] .specs/features/api_notion_crm/tasks.md -> [Criação do tasklist com 3 tasks de backend]
+- [x] .specs/features/api_notion_crm/STATE.md -> [Criação do state tracker do backend]
+- [x] .specs/features/api_notion_crm/.enriched.md -> [Gerado via MiMo inject]
+- [x] .specs/features/api_notion_crm/AGENT_SCRATCHPAD.md -> [Configuração com diretriz de handoff de skills]
+- [x] .specs/features/landing_page_crm/.enriched.md -> [Sincronização de qa_signoff no enriched da spec anterior]
+- [x] .context/maintenance/JOURNAL.md -> [Registro de setup de spec de API e sync de enriched]
+
+executor_context_id: sdd-orchestrator
+validator_context_id: user-request
+status: READY TO COMMIT
 
 ## 📅 2026-05-30 02:45 | 🛡️ Validação: Homologação e Assinatura da Sprint 01 #QA #Validation #SpecSignoff
 **Estado Atual:**
