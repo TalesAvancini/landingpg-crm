@@ -1,0 +1,355 @@
+/* 🎨 DESIGN SYSTEM & RESET CSS */
+:root {
+    --bg-color: #0b0c10;
+    --bg-surface: #1f2833;
+    --bg-card: rgba(31, 40, 51, 0.45);
+    --primary-color: #66fcf1;
+    --primary-hover: #45a29e;
+    --text-primary: #ffffff;
+    --text-secondary: #c5c6c7;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --gradient-primary: linear-gradient(135deg, #66fcf1 0%, #45a29e 100%);
+    --gradient-dark: linear-gradient(180deg, #0b0c10 0%, #151922 100%);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --border-glass: 1px solid rgba(255, 255, 255, 0.05);
+    --border-active: 1px solid rgba(102, 252, 241, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-image: var(--gradient-dark);
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* 🌌 HERO SECTION */
+.hero-section {
+    position: relative;
+    padding: 4rem 0 6rem 0;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.glow-effect {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(102, 252, 241, 0.15) 0%, rgba(11, 12, 16, 0) 70%);
+    filter: blur(80px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.logo-area {
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+    z-index: 10;
+}
+
+.logo-text {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo-text .accent {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin-top: 4rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(102, 252, 241, 0.08);
+    border: 1px solid rgba(102, 252, 241, 0.2);
+    border-radius: 50px;
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(180deg, #ffffff 0%, #c5c6c7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subheadline {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+    font-weight: 300;
+}
+
+/* 🚀 BOTÃO PRINCIPAL COM ANIMAÇÃO E HOVER */
+.cta-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 1.1rem 2.8rem;
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #0b0c10;
+    background: var(--gradient-primary);
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(102, 252, 241, 0.3);
+    transition: var(--transition-smooth);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 252, 241, 0.5);
+    filter: brightness(1.1);
+}
+
+.btn-primary:active {
+    transform: translateY(-1px);
+}
+
+/* 🧱 ELEMENTOS DE SEÇÃO COMUNS */
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 4rem auto;
+}
+
+.section-header h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.section-sub {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-weight: 300;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* 🔴 SEÇÃO PROBLEM & DOENÇA (PAS - PROBLEM) */
+.problem-section {
+    padding: 8rem 0;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.card-problem {
+    background: var(--bg-card);
+    border: var(--border-glass);
+    border-radius: 12px;
+    padding: 2.5rem;
+    transition: var(--transition-smooth);
+    backdrop-filter: blur(10px);
+}
+
+.card-problem:hover {
+    border: rgba(239, 69, 101, 0.3) 1px solid; /* Cor avermelhada sutil de atenção */
+    transform: translateY(-5px);
+}
+
+.card-problem h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.card-problem p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+/* 🟢 SEÇÃO SOLUTION & OUTCOMES (PAS - SOLUTION) */
+.solution-section {
+    padding: 8rem 0;
+    background: rgba(31, 40, 51, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.card-outcome {
+    background: var(--bg-card);
+    border: var(--border-glass);
+    border-radius: 12px;
+    padding: 2.5rem;
+    transition: var(--transition-smooth);
+    backdrop-filter: blur(10px);
+}
+
+.card-outcome:hover {
+    border: var(--border-active);
+    transform: translateY(-5px);
+}
+
+.card-outcome .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-outcome h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.card-outcome p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+/* 💬 SEÇÃO DO TYPEBOT */
+.typebot-section {
+    padding: 8rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.typebot-embed-wrapper {
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border: var(--border-glass);
+    border-radius: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.typebot-container {
+    width: 100%;
+    height: 100%;
+}
+
+.typebot-fallback {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text-secondary);
+    z-index: 1;
+}
+
+.typebot-fallback p {
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(102, 252, 241, 0.1);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+    margin: 0 auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* 🖥️ RESPONSIVIDADE */
+@media (max-width: 992px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .problem-section, .solution-section, .typebot-section {
+        padding: 5rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .subheadline {
+        font-size: 1.1rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .typebot-embed-wrapper {
+        height: 500px;
+    }
+}

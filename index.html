@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automação de Captação e CRM para Agências | MVP</title>
+    <!-- Google Fonts: Outfit para Headlines e Inter para corpo de texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="landing-page">
+        <!-- Seção Hero: Focada em Valor e Conversão Rápida -->
+        <section class="hero-section">
+            <div class="glow-effect"></div>
+            <div class="container">
+                <header class="logo-area">
+                    <span class="logo-text">H.O.K<span class="accent">.Forge</span></span>
+                </header>
+                
+                <div class="hero-content">
+                    <div class="badge">Automação Inteligente</div>
+                    <h1>Economize 20 Horas de Trabalho Manual por Semana em 14 Dias</h1>
+                    <p class="subheadline">Ajudamos agências e empresas B2B a automatizar o acompanhamento de leads usando inteligência artificial e CRMs invisíveis — sem custos fixos com ferramentas de integração.</p>
+                    
+                    <div class="cta-wrapper">
+                        <a href="#qualificacao" class="btn-primary">Fazer Diagnóstico Gratuito</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Problem & Agitation (Dores Reais do B2B) -->
+        <section class="problem-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>O Gargalo Invisível das Agências Comerciais</h2>
+                    <p class="section-sub">Por que a maioria das agências não consegue escalar o time comercial de forma eficiente?</p>
+                </div>
+                
+                <div class="grid-3">
+                    <div class="card-problem">
+                        <h3>Dreno de Tempo Manual</h3>
+                        <p>O time comercial perde metade do dia copiando e colando informações de formulários para planilhas, em vez de focar no fechamento.</p>
+                    </div>
+                    
+                    <div class="card-problem">
+                        <h3>Fuga de Leads Quentes</h3>
+                        <p>Leads qualificados esfriam esperando por contato comercial manual que demora horas ou até dias para acontecer.</p>
+                    </div>
+                    
+                    <div class="card-problem">
+                        <h3>Ferramentas Caras e Complexas</h3>
+                        <p>Plataformas como Zapier ou Make consomem margem de lucro com custos fixos e quebras de integrações constantes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Solution & Outcomes (Benefícios Focados no Negócio) -->
+        <section class="solution-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>A Máquina de Vendas 100% Autônoma</h2>
+                    <p class="section-sub">Estrutura de ponta a ponta sem custos fixos de integração.</p>
+                </div>
+                
+                <div class="grid-3">
+                    <div class="card-outcome">
+                        <div class="icon">⏱️</div>
+                        <h3>Recuperação de Tempo</h3>
+                        <p>Triagem, qualificação e agendamento ocorrem em tempo real. Seu lead agendado cai direto na agenda com todas as informações prontas.</p>
+                    </div>
+                    
+                    <div class="card-outcome">
+                        <div class="icon">📈</div>
+                        <h3>Escala Automática</h3>
+                        <p>Qualifique 10 ou 1.000 leads por dia com o mesmo custo fixo: zero. Sua infraestrutura cresce sem aumentar a sua folha de pagamento.</p>
+                    </div>
+                    
+                    <div class="card-outcome">
+                        <div class="icon">💰</div>
+                        <h3>Custo Fixo Zero</h3>
+                        <p>Utilização dos planos gratuitos de ponta do ecossistema: Typebot, Notion, Calendly e Vercel APIs. Racionalização total de margem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção do Formulário / Triagem Conversacional (Typebot Container) -->
+        <section id="qualificacao" class="typebot-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Faça o Seu Diagnóstico de Automação</h2>
+                    <p class="section-sub">Responda às perguntas abaixo em 60 segundos e veja se sua agência está elegível para automação comercial.</p>
+                </div>
+                
+                <div class="typebot-embed-wrapper">
+                    <!-- Placeholder Container para o Typebot -->
+                    <div id="typebot-container" class="typebot-container">
+                        <!-- Caso o script falhe ou bloqueie, renderiza uma mensagem amigável -->
+                        <div class="typebot-fallback">
+                            <p>Carregando triagem interativa...</p>
+                            <div class="spinner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script Oficial de Ingestão do Typebot -->
+    <script type="module">
+        import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@3/dist/web.js'
+
+        // Inicializa o Typebot embutido no container
+        Typebot.initBubble({
+            typebot: "landingpg-crm-qualify",
+            apiHost: "https://viewer.typebot.io",
+            button: { color: "#66fcf1" },
+        });
+
+        // Caso prefira inline embed também:
+        Typebot.initStandard({
+            target: "typebot-container",
+            typebot: "landingpg-crm-qualify",
+            apiHost: "https://viewer.typebot.io"
+        });
+    </script>
+</body>
+</html>

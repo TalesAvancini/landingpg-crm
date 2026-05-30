@@ -12,3 +12,7 @@ graphify-out/cost.json
 # Node Modules
 node_modules/
 
+# Environment secrets
+.env
+
+
