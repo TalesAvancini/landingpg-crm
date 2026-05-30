@@ -1,7 +1,7 @@
 ---
-version: 3.0.0
+version: 2.5.2
 mode: STRATEGIC
-status: DRAFT  # [DRAFT | ACTIVE | TRANSLATION_LOCK]
+status: ACTIVE  # [DRAFT | ACTIVE | TRANSLATION_LOCK]
 ---
 
 <!-- 🚨 SYSTEM TRIGGER: IA, NÃO PROSSIGA PARA GERAÇÃO DE CÓDIGO SE OS CAMPOS ABAIXO CONTIVEREM "[TODO]" OU PERGUNTAS. INTERROGUE O HUMANO PRIMEIRO. -->
@@ -18,17 +18,23 @@ status: DRAFT  # [DRAFT | ACTIVE | TRANSLATION_LOCK]
 *Ratificado a partir da tradução cognitiva do `VISION.md`.*
 
 ## 🎯 Visão Mestra
-[TODO: Insira aqui a visão técnica unificada do novo projeto]
+Desenvolvimento de uma Landing Page focada em conversão B2B que acopla um formulário conversacional (Typebot) a um endpoint de API Node.js serverless na Vercel. A API consome o SDK oficial do Notion para popular e gerenciar um CRM comercial estruturado de forma 100% automatizada (com script de auto-setup do banco no Notion). O fluxo garante custo fixo de infraestrutura zero e redirecionamento para agendamento controlado via Calendly.
 
 ## 🛑 NUNCA (Boundaries)
 > *Limites inegociáveis. Se a IA tentar cruzar estas linhas, o Harness aplicará o fail-fast.*
-- [TODO: Ex: Nunca criar banco de dados sem autenticação]
+- **NUNCA** utilizar bancos de dados relacionais ou NoSQL clássicos (como PostgreSQL, MongoDB) para persistência de leads, mantendo o Notion como o banco exclusivo de dados comerciais (SSOT).
+- **NUNCA** utilizar ferramentas de middleware pagas (Make, Zapier) para a transmissão ou mapeamento de dados. Toda a integração de webhook e consumo do SDK Notion deve ser feita via código na API Node.js.
+- **NUNCA** expor tokens de API do Notion, links sensíveis ou chaves de webhook no código do lado do cliente (client-side/Landing Page).
+- **NUNCA** criar rotas de navegação tradicionais (como "Sobre", "Contato") na Landing Page pública, preservando a estrutura de conversão de funil de página única sem rotas de fuga.
 
 ## 🛡️ Checklist Estratégico (Preenchimento Obrigatório)
-- [ ] **Transações DB?** (Sim/Não. Se sim, qual engine?)
-- [ ] **APIs Externas?** (Ex: Stripe, Meta, OpenAI)
-- [ ] **Compliance Obrigatório?** (Ex: LGPD, HIPAA, PCI)
+- [x] **Transações DB?** Sim (Notion API via SDK oficial `@notionhq/client` atuando como banco de dados).
+- [x] **APIs Externas?** Sim (Notion API, Webhook intake do Typebot, redirecionamento Calendly).
+- [x] **Compliance Obrigatório?** Sim (LGPD - Coleta de dados pessoais como nome, e-mail e WhatsApp via formulário de triagem).
 
 ## 🟢 SEMPRE (Restrições de Processo)
 > *Processos que a IA deve invocar obrigatoriamente durante o ciclo de vida.*
-- [TODO: Ex: Sempre validar entrada de formulário no backend]
+- **SEMPRE** utilizar variáveis de ambiente estruturadas (`.env`) para gerenciar as credenciais da API do Notion (`NOTION_TOKEN`, `NOTION_DATABASE_ID`).
+- **SEMPRE** estruturar a Landing Page em HTML5/CSS3 sem frameworks JS pesados (como NextJS ou React se não solicitados), mantendo-a minimalista, responsiva e performática.
+- **SEMPRE** validar os campos de payload (`name`, `company`, `whatsapp`, `email`, `budget`) no webhook do Express antes de tentar a inserção no Notion.
+- **SEMPRE** formatar a propriedade de telefone no Notion de forma a gerar um link direto clicável para o WhatsApp (`https://wa.me/{numero}`).

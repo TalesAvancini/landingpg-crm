@@ -1,5 +1,7 @@
 # Visão do Projeto: Sistema de Captação e CRM Automatizado (Agência MVP)
 
+Framework Version: v2.5.2
+
 Este documento define a visão estratégica, os objetivos de negócio e as funcionalidades planejadas para o MVP do sistema de captação e triagem de leads, integrado ao Notion CRM.
 
 ## 🎯 O "Porquê" (Essência)

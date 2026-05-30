@@ -8,3 +8,7 @@ contexto_*.md
 # Graphify
 graphify-out/manifest.json
 graphify-out/cost.json
+
+# Node Modules
+node_modules/
+
