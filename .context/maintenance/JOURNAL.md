@@ -1,12 +1,31 @@
 ---
 Criado em: 2026-05-27 20:19
-Ultima Atualizacao: 2026-05-29 23:01
+Ultima Atualizacao: 2026-05-29 23:28
 Status: Ativo
 Nota: Semente pos-purge. 26 entradas arquivadas em journal_archive_20260527_201918.md.
 ---
 
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
+
+## 📅 2026-05-29 23:28 | 🧪 Sprint: Setup da Spec landing_page_crm (SDD Step 2-3) #SDD #Setup #LandingPage
+**Estado Atual:**
+- [x] **Blast Radius**: Calculado. Raio zero (arquivos greenfield: `index.html`, `style.css`).
+- [x] **Spec Drafted**: Criada spec com 4 tasks atômicas, YAML frontmatter, scope_allow e raw payloads injetados.
+- [x] **MiMo Injection**: Executado `npm run context:inject`. Arquivo `.enriched.md` gerado com sucesso.
+- [x] **Scratchpad Instanciado**: Template copiado para a feature.
+
+**Matriz de Propagação:**
+- [x] .specs/features/landing_page_crm/spec.md -> [Criação da spec da Landing Page]
+- [x] .specs/features/landing_page_crm/tasks.md -> [Criação do tasklist com 4 tasks atômicas]
+- [x] .specs/features/landing_page_crm/STATE.md -> [Criação do state tracker com blast radius]
+- [x] .specs/features/landing_page_crm/.enriched.md -> [Gerado via MiMo inject]
+- [x] .specs/features/landing_page_crm/AGENT_SCRATCHPAD.md -> [Template instanciado]
+- [x] .context/maintenance/JOURNAL.md -> [Registro de setup da spec]
+
+executor_context_id: sdd-orchestrator
+validator_context_id: user-request
+status: READY TO COMMIT
 
 ## 📅 2026-05-29 22:58 | 🏛️ Arquitetura: Ativação do Inception, Escrita do PRD e Setup de Dependências #Architecture #Setup #PRD #Inception
 **Estado Atual:**
