@@ -8,6 +8,28 @@ Nota: Semente pos-purge. 26 entradas arquivadas em journal_archive_20260527_2019
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-30 19:37 | 🛡️ Validação: Arquivamento de Especificações Concluídas #Governance #Cleanup #SpecArchiving
+**Estado Atual:**
+- [x] **Spec Archiving**: Movidos os diretórios de especificações concluídas (api_notion_crm e landing_page_crm) para a pasta _archive_context/specs/ para manter a bancada de trabalho (.specs/features/) limpa e sem specs ativas.
+
+**Matriz de Propagação:**
+- [x] .specs/features/api_notion_crm/.enriched.md -> [Arquivado]
+- [x] .specs/features/api_notion_crm/AGENT_SCRATCHPAD.md -> [Arquivado]
+- [x] .specs/features/api_notion_crm/CLOSURE.md -> [Arquivado]
+- [x] .specs/features/api_notion_crm/STATE.md -> [Arquivado]
+- [x] .specs/features/api_notion_crm/spec.md -> [Arquivado]
+- [x] .specs/features/api_notion_crm/tasks.md -> [Arquivado]
+- [x] .specs/features/landing_page_crm/.enriched.md -> [Arquivado]
+- [x] .specs/features/landing_page_crm/AGENT_SCRATCHPAD.md -> [Arquivado]
+- [x] .specs/features/landing_page_crm/STATE.md -> [Arquivado]
+- [x] .specs/features/landing_page_crm/spec.md -> [Arquivado]
+- [x] .specs/features/landing_page_crm/tasks.md -> [Arquivado]
+- [x] .context/maintenance/JOURNAL.md -> [Registro de arquivamento das specs concluídas]
+
+executor_context_id: spec-driver
+validator_context_id: qa-validator
+status: READY TO COMMIT
+
 ## 📅 2026-05-30 19:32 | 🛡️ Validação: Fechamento de Especificações e Correção de Alinhamento #Governance #Handoff #SpecClosure
 **Estado Atual:**
 - [x] **Spec Correction**: Checkboxes de Requisitos Funcionais (Acceptance) marcados como concluídos no spec.md do api_notion_crm e landing_page_crm.
