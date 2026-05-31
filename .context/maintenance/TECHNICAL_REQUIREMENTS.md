@@ -50,7 +50,7 @@ Para o funcionamento correto dos endpoints e scripts de automação, o arquivo l
 | `TYPEBOT_WEBHOOK_SECRET` | String (Segredo) | Token estático e estrito de segurança que valida a autenticação Bearer da requisição originária do Typebot. |
 
 <!-- AUTO-SYNC START -->
-*🤖 Atualizado automaticamente em 2026-05-30 19:35*
+*🤖 Atualizado automaticamente em 2026-05-30 21:44*
 
 ### Dependencias (package.json)
 - `@notionhq/client`: `^2.2.15`
@@ -63,6 +63,7 @@ Para o funcionamento correto dos endpoints e scripts de automação, o arquivo l
 - `orders`
 
 <!-- AUTO-SYNC END -->
+
 
 
 

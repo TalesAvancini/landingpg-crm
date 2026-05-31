@@ -8,6 +8,27 @@ Nota: Semente pos-purge. 26 entradas arquivadas em journal_archive_20260527_2019
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-30 21:45 | 🛡️ Governança: Implantação do Modo Light e Novos Harnesses #Governance #LightMode #Harnesses
+**Estado Atual:**
+- [x] **SAM Light**: Implementada a tolerância dinâmica em branches secundárias (modo WARNING).
+- [x] **Env Drift Gate**: Criado scanner para validar consumo de variáveis de ambiente contra o .env.example.
+- [x] **Loop Exhaustion Harness**: Criado detector de loops de falha com auto-reset baseado em diff do Git.
+- [x] **Complexity & Coverage Gate**: Criado gate consultivo para alertas de complexidade e cobertura de testes.
+- [x] **Harness Integration**: Integrados os novos scanners em harness_runner.py.
+
+**Matriz de Propagação:**
+- [x] .context/_scripts/workflow_journal_auditor.py -> [Tolerância dinâmica e relatório visual no SAM]
+- [x] .context/_scripts/harness_runner.py -> [Integração dos novos gates no executor mestre]
+- [x] .context/_scripts/env_drift_gate.py -> [Novo scanner de variáveis de ambiente]
+- [x] .context/_scripts/loop_exhaustion_harness.py -> [Novo detector de loops de falhas consecutivas]
+- [x] .context/_scripts/complexity_coverage_gate.py -> [Novo gate consultivo de complexidade e cobertura]
+- [x] .context/brain/FILE_GLOSSARY.md -> [Registro das atualizações de glossário do projeto]
+- [x] .context/brain/SCRIPT_GLOSSARY.md -> [Registro dos novos scripts de validação criados]
+
+executor_context_id: spec-driver
+validator_context_id: qa-validator
+status: READY TO COMMIT
+
 ## 📅 2026-05-30 21:36 | 🛡️ Governança: Inclusão do Protocolo de Pre-Push no AGENTS.md #Governance #Agents #Rules
 **Estado Atual:**
 - [x] **Agents Rule 9**: Adicionada a regra 9 ("Protocolo de Pre-Push & Sunset") em AGENTS.md, formalizando a obrigatoriedade da validação final local e geração de bypasses de warnings pelo inquisidor.

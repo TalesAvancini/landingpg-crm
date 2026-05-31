@@ -1,78 +1,30 @@
 <!-- BUNDLE_PART 3 OF 3 -->
+<a id="file_d4065cd9a76b"></a>
+FILE_START id=file_d4065cd9a76b path=.specs/features/_DEPRACETED_teste_trivial_dryrun/CLOSURE.md domain=docs lang=markdown lines=63 bytes=3048 mtime=2026-05-30T00:37:51.104984+00:00 sha1=f72f44653ab63c627ba30c54bc732dbb75a9e43d
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_d4065cd9a76b
+
+---
+<a id="file_9281119467c2"></a>
+FILE_START id=file_9281119467c2 path=.specs/features/_DEPRACETED_teste_trivial_dryrun/STATE.md domain=docs lang=markdown lines=128 bytes=4554 mtime=2026-05-30T00:37:51.110822+00:00 sha1=26383bae4122cbab425b415b8e53307ad82308cf
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_9281119467c2
+
+---
+<a id="file_f02f85175942"></a>
+FILE_START id=file_f02f85175942 path=.specs/features/_DEPRACETED_teste_trivial_dryrun/spec.md domain=docs lang=markdown lines=66 bytes=4141 mtime=2026-05-30T00:37:51.111824+00:00 sha1=b3b9741fefd529d211879fabc07cb473fa42abc4
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_f02f85175942
+
+---
 <a id="file_bb3698c64f47"></a>
 FILE_START id=file_bb3698c64f47 path=.specs/features/_DEPRACETED_teste_trivial_dryrun/tasks.md domain=docs lang=markdown lines=8 bytes=422 mtime=2026-05-30T00:37:51.112823+00:00 sha1=c437184233d09875d3b6409d2c8df6bd6a384ceb
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_bb3698c64f47
 
 ---
-<a id="file_3a6577c53dae"></a>
-FILE_START id=file_3a6577c53dae path=.specs/features/api_notion_crm/.enriched.md domain=docs lang=markdown lines=90 bytes=6345 mtime=2026-05-30T03:09:42.019860+00:00 sha1=07b12d2fa808c1de13c7f800e93be540294c2b36
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_3a6577c53dae
-
----
-<a id="file_ec848fe8154e"></a>
-FILE_START id=file_ec848fe8154e path=.specs/features/api_notion_crm/AGENT_SCRATCHPAD.md domain=docs lang=markdown lines=42 bytes=2198 mtime=2026-05-30T02:45:48.526265+00:00 sha1=cf5122edd453164ccaedbbbb3da1208b1a83b06a
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_ec848fe8154e
-
----
-<a id="file_f2304f9f0e1a"></a>
-FILE_START id=file_f2304f9f0e1a path=.specs/features/api_notion_crm/CLOSURE.md domain=docs lang=markdown lines=64 bytes=4029 mtime=2026-05-30T03:49:11.066104+00:00 sha1=558895376ef73e77b6da7a22bfa6ef5343236901
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_f2304f9f0e1a
-
----
-<a id="file_3a60ec733464"></a>
-FILE_START id=file_3a60ec733464 path=.specs/features/api_notion_crm/STATE.md domain=docs lang=markdown lines=70 bytes=2371 mtime=2026-05-30T22:35:10.299151+00:00 sha1=258f1433e9d6c39fe61cea3c90afc27bcc37f09b
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_3a60ec733464
-
----
-<a id="file_2cdb46fd32b1"></a>
-FILE_START id=file_2cdb46fd32b1 path=.specs/features/api_notion_crm/spec.md domain=docs lang=markdown lines=76 bytes=5168 mtime=2026-05-30T22:31:09.727217+00:00 sha1=35983a6cad0600ff800d833f9699a6927fe56639
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_2cdb46fd32b1
-
----
-<a id="file_a30242626e85"></a>
-FILE_START id=file_a30242626e85 path=.specs/features/api_notion_crm/tasks.md domain=docs lang=markdown lines=18 bytes=1384 mtime=2026-05-30T03:50:21.343290+00:00 sha1=d406a29bb3d44cdff75a26ee10aecd7e95c3cf49
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_a30242626e85
-
----
-<a id="file_d92bcce7c6df"></a>
-FILE_START id=file_d92bcce7c6df path=.specs/features/landing_page_crm/.enriched.md domain=docs lang=markdown lines=99 bytes=6210 mtime=2026-05-30T03:09:42.023841+00:00 sha1=dd25b5e1bba56706102c854df7130b8f5435293a
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_d92bcce7c6df
-
----
-<a id="file_8f3853b2a206"></a>
-FILE_START id=file_8f3853b2a206 path=.specs/features/landing_page_crm/AGENT_SCRATCHPAD.md domain=docs lang=markdown lines=50 bytes=2949 mtime=2026-05-30T02:33:25.856548+00:00 sha1=de9a7685463a04a81a62581bb574783595128a5d
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_8f3853b2a206
-
----
-<a id="file_a737521f87f8"></a>
-FILE_START id=file_a737521f87f8 path=.specs/features/landing_page_crm/STATE.md domain=docs lang=markdown lines=58 bytes=2779 mtime=2026-05-30T22:31:43.605052+00:00 sha1=135d30a58a1a082978a606ee783c87f7b6ae3377
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_a737521f87f8
-
----
-<a id="file_0f37f6625f72"></a>
-FILE_START id=file_0f37f6625f72 path=.specs/features/landing_page_crm/spec.md domain=docs lang=markdown lines=75 bytes=4679 mtime=2026-05-30T22:31:14.166964+00:00 sha1=f56ca29afbc9978208aa8aeee4139f6dd9ffe0c2
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_0f37f6625f72
-
----
-<a id="file_d4aeeca754c3"></a>
-FILE_START id=file_d4aeeca754c3 path=.specs/features/landing_page_crm/tasks.md domain=docs lang=markdown lines=23 bytes=1471 mtime=2026-05-30T22:28:03.739103+00:00 sha1=ae260008d536f5845d9b1b1198741809fe9480f3
-CONTENT_OMITTED toc_only=true
-FILE_END id=file_d4aeeca754c3
-
----
 <a id="file_37dd68363fc1"></a>
-FILE_START id=file_37dd68363fc1 path=AGENTS.md domain=docs lang=markdown lines=55 bytes=6051 mtime=2026-05-30T01:04:00.760314+00:00 sha1=d8459f95b6e48abddff4cb4d7ada331b7945d1fa
+FILE_START id=file_37dd68363fc1 path=AGENTS.md domain=docs lang=markdown lines=56 bytes=6555 mtime=2026-05-31T00:32:39.781265+00:00 sha1=e4b5b5fee792be5cfa251a31abd134fbfce1e198
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_37dd68363fc1
 

@@ -546,6 +546,26 @@ def check_epistemological_gate(spec_path: Path):
         return True, "Gate Epistemológico Erro"
 
 
+def run_env_drift_gate():
+    """Executa o Harness de Variáveis de Ambiente."""
+    gate_path = CONTEXT_DIR / "_scripts" / "env_drift_gate.py"
+    if not gate_path.exists():
+        return True, "Env Drift Gate ausente (skip)"
+    res = subprocess.run([sys.executable, str(gate_path)], capture_output=True, text=True, encoding="utf-8")
+    if res.returncode != 0:
+        return False, res.stdout + res.stderr
+    print(res.stdout)
+    return True, "Env Drift OK"
+
+def run_complexity_coverage_gate():
+    """Executa o Harness de Complexidade e Cobertura Semântica (Consultivo)."""
+    gate_path = CONTEXT_DIR / "_scripts" / "complexity_coverage_gate.py"
+    if not gate_path.exists():
+        return True, "Complexity Gate ausente (skip)"
+    res = subprocess.run([sys.executable, str(gate_path)], capture_output=True, text=True, encoding="utf-8")
+    print(res.stdout)
+    return True, "Complexity and Coverage evaluated"
+
 def main():
     # 0. Verificação de Estado (Hybrid Discovery)
     status = get_inception_status()
@@ -615,6 +635,8 @@ def main():
     spec_path = spec_dir / "spec.md" if spec_dir else Path("dummy")
 
     checks = {
+        "env_drift": run_env_drift_gate(),
+        "complexity_coverage": run_complexity_coverage_gate(),
         "schema": check_schema_contract(spec_path),
         "handoff": check_handoff_integrity(
             JOURNAL.read_text(encoding="utf-8") if JOURNAL.exists() else ""

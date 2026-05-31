@@ -3,12 +3,12 @@
 
 ---
 schema_version: 1
-generated_at: 2026-05-30T22:35:12.354503+00:00
+generated_at: 2026-05-31T00:44:38.813156+00:00
 root: landing-pg-crm
 mode: full | TOC
 profile: ai-default
-file_count: 142
-byte_count: 940266
+file_count: 136
+byte_count: 933538
 ignored_dirs:
   - .cache
   - .cursor
@@ -76,6 +76,7 @@ sensitive_rules:
   - `.agent/skills/flow-auditor/SKILL.md` -> [file_d0c78dc4a998](#file_d0c78dc4a998)
   - `.agent/skills/gov-friction-analyst/README.md` -> [file_be3286745d59](#file_be3286745d59)
   - `.agent/skills/gov-friction-analyst/SKILL.md` -> [file_6838c4ed47bf](#file_6838c4ed47bf)
+  - `.agent/skills/harness-context/SKILL.md` -> [file_aac4c5eedb92](#file_aac4c5eedb92)
   - `.agent/skills/hok-governor/SKILL.md` -> [file_5f13170679aa](#file_5f13170679aa)
   - `.agent/skills/journal-sync/SKILL.md` -> [file_7ccf0899fce4](#file_7ccf0899fce4)
   - `.agent/skills/sdd-orchestrator/SKILL.md` -> [file_979698c33068](#file_979698c33068)
@@ -86,6 +87,7 @@ sensitive_rules:
   - `.agent/subagents/spec-driver.md` -> [file_a412f1bb7017](#file_a412f1bb7017)
   - `.agent/subagents/spec-enricher.md` -> [file_ab8acd672d62](#file_ab8acd672d62)
   - `.agent/subagents/vision-architect.md` -> [file_0214cbb1af92](#file_0214cbb1af92)
+  - `.agent/subagents/warning-inquisitor.md` -> [file_4e631f32b3d1](#file_4e631f32b3d1)
   - `.agent/templates/AGENT_SCRATCHPAD.md` -> [file_4047da35f994](#file_4047da35f994)
   - `.agent/templates/CLOSURE.md` -> [file_ac388dacdf5e](#file_ac388dacdf5e)
   - `.agent/templates/spec_v3.md` -> [file_856590ab70be](#file_856590ab70be)
@@ -145,17 +147,6 @@ sensitive_rules:
   - `.specs/features/_DEPRACETED_teste_trivial_dryrun/STATE.md` -> [file_9281119467c2](#file_9281119467c2)
   - `.specs/features/_DEPRACETED_teste_trivial_dryrun/spec.md` -> [file_f02f85175942](#file_f02f85175942)
   - `.specs/features/_DEPRACETED_teste_trivial_dryrun/tasks.md` -> [file_bb3698c64f47](#file_bb3698c64f47)
-  - `.specs/features/api_notion_crm/.enriched.md` -> [file_3a6577c53dae](#file_3a6577c53dae)
-  - `.specs/features/api_notion_crm/AGENT_SCRATCHPAD.md` -> [file_ec848fe8154e](#file_ec848fe8154e)
-  - `.specs/features/api_notion_crm/CLOSURE.md` -> [file_f2304f9f0e1a](#file_f2304f9f0e1a)
-  - `.specs/features/api_notion_crm/STATE.md` -> [file_3a60ec733464](#file_3a60ec733464)
-  - `.specs/features/api_notion_crm/spec.md` -> [file_2cdb46fd32b1](#file_2cdb46fd32b1)
-  - `.specs/features/api_notion_crm/tasks.md` -> [file_a30242626e85](#file_a30242626e85)
-  - `.specs/features/landing_page_crm/.enriched.md` -> [file_d92bcce7c6df](#file_d92bcce7c6df)
-  - `.specs/features/landing_page_crm/AGENT_SCRATCHPAD.md` -> [file_8f3853b2a206](#file_8f3853b2a206)
-  - `.specs/features/landing_page_crm/STATE.md` -> [file_a737521f87f8](#file_a737521f87f8)
-  - `.specs/features/landing_page_crm/spec.md` -> [file_0f37f6625f72](#file_0f37f6625f72)
-  - `.specs/features/landing_page_crm/tasks.md` -> [file_d4aeeca754c3](#file_d4aeeca754c3)
   - `AGENTS.md` -> [file_37dd68363fc1](#file_37dd68363fc1)
   - `GEMINI.md` -> [file_d65c29a37f38](#file_d65c29a37f38)
   - `GUIA_ESTABILIZACAO_NOTEBOOKLM.md` -> [file_95dabcdf3543](#file_95dabcdf3543)
@@ -171,14 +162,17 @@ sensitive_rules:
   - `.context/_scripts/blast_radius.py` -> [file_7924059d2ef7](#file_7924059d2ef7)
   - `.context/_scripts/check_version_consistency.py` -> [file_4ffe1a34765a](#file_4ffe1a34765a)
   - `.context/_scripts/cleanup_specs.py` -> [file_82cd6bde54ff](#file_82cd6bde54ff)
+  - `.context/_scripts/complexity_coverage_gate.py` -> [file_fca11f8e9d8d](#file_fca11f8e9d8d)
   - `.context/_scripts/context_oracle.py` -> [file_10081abf87e1](#file_10081abf87e1)
   - `.context/_scripts/enrich_context.py` -> [file_e94b4e40315c](#file_e94b4e40315c)
+  - `.context/_scripts/env_drift_gate.py` -> [file_0ef217a426ed](#file_0ef217a426ed)
   - `.context/_scripts/harness_runner.py` -> [file_1edef35c2f56](#file_1edef35c2f56)
   - `.context/_scripts/health_sync.py` -> [file_a642d240b9ab](#file_a642d240b9ab)
   - `.context/_scripts/ingest_wiki_guard.py` -> [file_0731dcfd7873](#file_0731dcfd7873)
   - `.context/_scripts/inject_learnings.py` -> [file_4d2d533509e3](#file_4d2d533509e3)
   - `.context/_scripts/learnings_aggregator.py` -> [file_327e4ce89821](#file_327e4ce89821)
   - `.context/_scripts/lint_wiki.py` -> [file_ab41b07fb3fb](#file_ab41b07fb3fb)
+  - `.context/_scripts/loop_exhaustion_harness.py` -> [file_558d27bf3fb5](#file_558d27bf3fb5)
   - `.context/_scripts/migration_registry.py` -> [file_d65b48a9d56c](#file_d65b48a9d56c)
   - `.context/_scripts/oracle_analytics.py` -> [file_6e825c0bd6ad](#file_6e825c0bd6ad)
   - `.context/_scripts/project_bundler.py` -> [file_02d732116d93](#file_02d732116d93)
@@ -216,6 +210,7 @@ sensitive_rules:
 - `.agent/skills/flow-auditor/SKILL.md` -> [file_d0c78dc4a998](#file_d0c78dc4a998)
 - `.agent/skills/gov-friction-analyst/README.md` -> [file_be3286745d59](#file_be3286745d59)
 - `.agent/skills/gov-friction-analyst/SKILL.md` -> [file_6838c4ed47bf](#file_6838c4ed47bf)
+- `.agent/skills/harness-context/SKILL.md` -> [file_aac4c5eedb92](#file_aac4c5eedb92)
 - `.agent/skills/hok-governor/SKILL.md` -> [file_5f13170679aa](#file_5f13170679aa)
 - `.agent/skills/journal-sync/SKILL.md` -> [file_7ccf0899fce4](#file_7ccf0899fce4)
 - `.agent/skills/methodical_writer.json` -> [file_31c8b76d8265](#file_31c8b76d8265)
@@ -227,6 +222,7 @@ sensitive_rules:
 - `.agent/subagents/spec-driver.md` -> [file_a412f1bb7017](#file_a412f1bb7017)
 - `.agent/subagents/spec-enricher.md` -> [file_ab8acd672d62](#file_ab8acd672d62)
 - `.agent/subagents/vision-architect.md` -> [file_0214cbb1af92](#file_0214cbb1af92)
+- `.agent/subagents/warning-inquisitor.md` -> [file_4e631f32b3d1](#file_4e631f32b3d1)
 - `.agent/templates/AGENT_SCRATCHPAD.md` -> [file_4047da35f994](#file_4047da35f994)
 - `.agent/templates/CLOSURE.md` -> [file_ac388dacdf5e](#file_ac388dacdf5e)
 - `.agent/templates/spec_v3.md` -> [file_856590ab70be](#file_856590ab70be)
@@ -238,14 +234,17 @@ sensitive_rules:
 - `.context/_scripts/blast_radius.py` -> [file_7924059d2ef7](#file_7924059d2ef7)
 - `.context/_scripts/check_version_consistency.py` -> [file_4ffe1a34765a](#file_4ffe1a34765a)
 - `.context/_scripts/cleanup_specs.py` -> [file_82cd6bde54ff](#file_82cd6bde54ff)
+- `.context/_scripts/complexity_coverage_gate.py` -> [file_fca11f8e9d8d](#file_fca11f8e9d8d)
 - `.context/_scripts/context_oracle.py` -> [file_10081abf87e1](#file_10081abf87e1)
 - `.context/_scripts/enrich_context.py` -> [file_e94b4e40315c](#file_e94b4e40315c)
+- `.context/_scripts/env_drift_gate.py` -> [file_0ef217a426ed](#file_0ef217a426ed)
 - `.context/_scripts/harness_runner.py` -> [file_1edef35c2f56](#file_1edef35c2f56)
 - `.context/_scripts/health_sync.py` -> [file_a642d240b9ab](#file_a642d240b9ab)
 - `.context/_scripts/ingest_wiki_guard.py` -> [file_0731dcfd7873](#file_0731dcfd7873)
 - `.context/_scripts/inject_learnings.py` -> [file_4d2d533509e3](#file_4d2d533509e3)
 - `.context/_scripts/learnings_aggregator.py` -> [file_327e4ce89821](#file_327e4ce89821)
 - `.context/_scripts/lint_wiki.py` -> [file_ab41b07fb3fb](#file_ab41b07fb3fb)
+- `.context/_scripts/loop_exhaustion_harness.py` -> [file_558d27bf3fb5](#file_558d27bf3fb5)
 - `.context/_scripts/migration_registry.py` -> [file_d65b48a9d56c](#file_d65b48a9d56c)
 - `.context/_scripts/oracle_analytics.py` -> [file_6e825c0bd6ad](#file_6e825c0bd6ad)
 - `.context/_scripts/project_bundler.py` -> [file_02d732116d93](#file_02d732116d93)
@@ -316,17 +315,6 @@ sensitive_rules:
 - `.specs/features/_DEPRACETED_teste_trivial_dryrun/STATE.md` -> [file_9281119467c2](#file_9281119467c2)
 - `.specs/features/_DEPRACETED_teste_trivial_dryrun/spec.md` -> [file_f02f85175942](#file_f02f85175942)
 - `.specs/features/_DEPRACETED_teste_trivial_dryrun/tasks.md` -> [file_bb3698c64f47](#file_bb3698c64f47)
-- `.specs/features/api_notion_crm/.enriched.md` -> [file_3a6577c53dae](#file_3a6577c53dae)
-- `.specs/features/api_notion_crm/AGENT_SCRATCHPAD.md` -> [file_ec848fe8154e](#file_ec848fe8154e)
-- `.specs/features/api_notion_crm/CLOSURE.md` -> [file_f2304f9f0e1a](#file_f2304f9f0e1a)
-- `.specs/features/api_notion_crm/STATE.md` -> [file_3a60ec733464](#file_3a60ec733464)
-- `.specs/features/api_notion_crm/spec.md` -> [file_2cdb46fd32b1](#file_2cdb46fd32b1)
-- `.specs/features/api_notion_crm/tasks.md` -> [file_a30242626e85](#file_a30242626e85)
-- `.specs/features/landing_page_crm/.enriched.md` -> [file_d92bcce7c6df](#file_d92bcce7c6df)
-- `.specs/features/landing_page_crm/AGENT_SCRATCHPAD.md` -> [file_8f3853b2a206](#file_8f3853b2a206)
-- `.specs/features/landing_page_crm/STATE.md` -> [file_a737521f87f8](#file_a737521f87f8)
-- `.specs/features/landing_page_crm/spec.md` -> [file_0f37f6625f72](#file_0f37f6625f72)
-- `.specs/features/landing_page_crm/tasks.md` -> [file_d4aeeca754c3](#file_d4aeeca754c3)
 - `AGENTS.md` -> [file_37dd68363fc1](#file_37dd68363fc1)
 - `GEMINI.md` -> [file_d65c29a37f38](#file_d65c29a37f38)
 - `GUIA_ESTABILIZACAO_NOTEBOOKLM.md` -> [file_95dabcdf3543](#file_95dabcdf3543)
@@ -405,8 +393,14 @@ CONTENT_OMITTED toc_only=true
 FILE_END id=file_6838c4ed47bf
 
 ---
+<a id="file_aac4c5eedb92"></a>
+FILE_START id=file_aac4c5eedb92 path=.agent/skills/harness-context/SKILL.md domain=docs lang=markdown lines=58 bytes=3271 mtime=2026-05-31T00:13:09.839898+00:00 sha1=0274c08e6311ddcd79a69bc874a9bb3f7b25bc26
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_aac4c5eedb92
+
+---
 <a id="file_5f13170679aa"></a>
-FILE_START id=file_5f13170679aa path=.agent/skills/hok-governor/SKILL.md domain=docs lang=markdown lines=94 bytes=7027 mtime=2026-05-30T00:37:50.737039+00:00 sha1=b0e1a36a3967f24b1cb5d3ad05be2ddb2f58770c
+FILE_START id=file_5f13170679aa path=.agent/skills/hok-governor/SKILL.md domain=docs lang=markdown lines=108 bytes=8316 mtime=2026-05-31T00:28:29.673923+00:00 sha1=5efda1074b809947eb6c606cddccd3f03b8eb156
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_5f13170679aa
 
@@ -430,7 +424,7 @@ FILE_END id=file_979698c33068
 
 ---
 <a id="file_a941e1079c74"></a>
-FILE_START id=file_a941e1079c74 path=.agent/skills/semantic-propagation/SKILL.md domain=docs lang=markdown lines=84 bytes=3878 mtime=2026-05-30T00:37:50.746046+00:00 sha1=447b31d03d8d484e9830d04fc179fe81f663fdb2
+FILE_START id=file_a941e1079c74 path=.agent/skills/semantic-propagation/SKILL.md domain=docs lang=markdown lines=104 bytes=5378 mtime=2026-05-31T00:13:16.855421+00:00 sha1=22cfa5bd95d2c5fec10720290240c058d594735c
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_a941e1079c74
 
@@ -469,6 +463,12 @@ FILE_END id=file_ab8acd672d62
 FILE_START id=file_0214cbb1af92 path=.agent/subagents/vision-architect.md domain=docs lang=markdown lines=31 bytes=1726 mtime=2026-05-30T00:37:50.756043+00:00 sha1=c7f3911359a1fd24406694b16ef418d48a57880f
 CONTENT_OMITTED toc_only=true
 FILE_END id=file_0214cbb1af92
+
+---
+<a id="file_4e631f32b3d1"></a>
+FILE_START id=file_4e631f32b3d1 path=.agent/subagents/warning-inquisitor.md domain=docs lang=markdown lines=30 bytes=2377 mtime=2026-05-31T00:28:51.736031+00:00 sha1=96328320347de4cdcb623be33a63cb8cc7ae437f
+CONTENT_OMITTED toc_only=true
+FILE_END id=file_4e631f32b3d1
 
 ---
 <a id="file_4047da35f994"></a>

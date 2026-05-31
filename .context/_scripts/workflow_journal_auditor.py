@@ -85,12 +85,29 @@ def get_latest_journal_entry():
     # Em Ordem Cronológica Reversa, a entrada mais recente é a primeira após o cabeçalho (índice 1)
     return "## 📅" + valid_entries[1] if len(valid_entries) > 1 else ""
 
+def get_current_branch():
+    """Retorna o nome da branch git atual ou 'main' em caso de erro."""
+    try:
+        res = subprocess.run(["git", "rev-parse", "--abbrev-ref", "HEAD"], capture_output=True, text=True, check=True)
+        return res.stdout.strip()
+    except Exception:
+        return "main"
+
 def audit():
     print("🤖 Iniciando Auditoria Anti-Migué (SAM)...")
     
     git = get_git_state()
     synapse = get_synapse_rules()
-    mode = synapse.get("mode", "assist")
+    
+    branch = get_current_branch()
+    strict_branches = {"main", "master"}
+    
+    if branch in strict_branches:
+        mode = synapse.get("mode", "strict")
+    else:
+        mode = "assist"
+        print(f"ℹ️ [SAM] Feature branch '{branch}' detectada. Modo: ASSIST (WARNING).")
+
     
     # --- NOVO CURTO-CIRCUITO DE ESTADO DO DIÁRIO (Gatilho SAM Inteligente) ---
     # Verifica se há alterações em arquivos governados (não-sombras e não-ignorados)

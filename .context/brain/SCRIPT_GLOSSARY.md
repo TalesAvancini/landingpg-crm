@@ -1,6 +1,6 @@
 ---
 Criado em: 2026-04-26
-Ultima Atualizacao: 2026-05-27 20:08
+Ultima Atualizacao: 2026-05-30 21:45
 Status: Ativo
 
 ---
@@ -39,6 +39,9 @@ Status: Ativo
 | `secrets_scanner.py` | **Leucócito** | Varre ativamente o código e arquivos markdown atrás de chaves de API, senhas ou tokens que o desenvolvedor/IA possa ter "hardcoded" por acidente. | Roda no pipeline `context:all` |
 | `write_with_validation.py` | **Músculo Esquelético** | Validador Físico de Escrita (Skill 6). Impede que o agente modifique arquivos se não houver um Plano de Implementação (Tier Justification) ou se houver um bloqueio (exigindo `RESUME_DIRECTIVE`). | Chamado pela IA no terminal (`methodical-writer`) |
 | `validate_commit_msg.py` | **Radar Semântico** | Validador de mensagens de commit (Conventional Commits). Garante que a história do projeto seja parseável e profissional. | Roda via Husky no `commit-msg` |
+| `env_drift_gate.py` | **Leucócito de Ambiente** | Harness de Variáveis de Ambiente. Varre o código do projeto em busca de leituras de process.env.* e garante que estejam listadas no .env.example. | Roda integrado no `harness_runner.py` |
+| `loop_exhaustion_harness.py` | **Anti-Loop Físico** | Harness de Exaustão de Loop. Monitora falhas consecutivas e bloqueia a execução subsequente de testes se a IA entrar em loop sem mudar código. | Invocado ao término de testes locais |
+| `complexity_coverage_gate.py` | **Consultor Pedagógico** | Gate de Complexidade & Cobertura Semântica. Emite alertas didáticos sobre complexidade de código e ausência de testes mínimos. | Roda integrado no `harness_runner.py` (WARNING) |
 
 ---
 

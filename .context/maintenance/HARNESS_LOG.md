@@ -1318,3 +1318,16 @@ Arquivos governados detectados (exemplo):
 
 ## [HARNESS-PASS] Report | spec:api_notion_crm
 - **Detalhe:** All contracts valid
+
+## [HARNESS-FAIL] Report | spec:manual
+- **Detalhe:** sprint_contract: Nenhuma Spec ativa detectada. | journal_sam: Violações SAM detectadas.
+🤖 Iniciando Auditoria Anti-Migué (SAM)...
+
+❌ [FATAL] Modificação Silenciosa: Foram detectados arquivos governados alterados, mas o JOURNAL.md não possui uma nova entrada para este commit.
+Arquivos governados detectados (exemplo):
+  - .context/_scripts/complexity_coverage_gate.py
+  - .context/_scripts/loop_exhaustion_harness.py
+  - .context/_scripts/workflow_journal_auditor.py
+
+[FATAL] Modo STRICT: Pipeline bloqueado.
+
