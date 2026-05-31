@@ -8,6 +8,17 @@ Nota: Semente pos-purge. 26 entradas arquivadas em journal_archive_20260527_2019
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-30 21:36 | 🛡️ Governança: Inclusão do Protocolo de Pre-Push no AGENTS.md #Governance #Agents #Rules
+**Estado Atual:**
+- [x] **Agents Rule 9**: Adicionada a regra 9 ("Protocolo de Pre-Push & Sunset") em AGENTS.md, formalizando a obrigatoriedade da validação final local e geração de bypasses de warnings pelo inquisidor.
+
+**Matriz de Propagação:**
+- [x] AGENTS.md -> [Inclusão da Regra 9 de Diretivas Comportamentais]
+
+executor_context_id: spec-driver
+validator_context_id: qa-validator
+status: READY TO COMMIT
+
 ## 📅 2026-05-30 21:35 | 🛡️ Validação: Implementação de Skills de Governança e Inquisidor #Governance #Harness #Inquisitor
 **Estado Atual:**
 - [x] **Harness Context**: Implementação da skill harness-context para contextualizar o ecossistema.
