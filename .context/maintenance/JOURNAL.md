@@ -8,6 +8,17 @@ Nota: Semente pos-purge. 26 entradas arquivadas em journal_archive_20260527_2019
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-31 12:35 | 🛡️ Governança: Criação do Guia de Handoff para Autobuilder #Governance #Handoff #Autobuilder
+**Estado Atual:**
+- [x] **Handoff Generated**: Criado o manual técnico [HANDOFF_MIGRATION_AUTOBUILDER.md](file:///planos/HANDOFF_MIGRATION_AUTOBUILDER.md) para guiar a migração dos Harnesses locais e Modo Light para o repositório mãe.
+
+**Matriz de Propagação:**
+- [x] planos/HANDOFF_MIGRATION_AUTOBUILDER.md -> [Registro do guia técnico cirúrgico de transição]
+
+executor_context_id: spec-driver
+validator_context_id: qa-validator
+status: READY TO COMMIT
+
 ## 📅 2026-05-30 22:12 | 🛡️ Governança: Aprimoramento da Skill harness-context #Governance #Skills #Docs
 **Estado Atual:**
 - [x] **Skill Enhancement**: Aprimorada a skill local .agent/skills/harness-context/SKILL.md detalhando o funcionamento físico dos novos validadores de Harness (Env Drift, Loop Exhaustion, Complexity & Coverage).
