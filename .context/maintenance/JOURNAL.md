@@ -8,6 +8,17 @@ Nota: Semente pos-purge. 26 entradas arquivadas em journal_archive_20260527_2019
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-30 22:12 | 🛡️ Governança: Aprimoramento da Skill harness-context #Governance #Skills #Docs
+**Estado Atual:**
+- [x] **Skill Enhancement**: Aprimorada a skill local .agent/skills/harness-context/SKILL.md detalhando o funcionamento físico dos novos validadores de Harness (Env Drift, Loop Exhaustion, Complexity & Coverage).
+
+**Matriz de Propagação:**
+- [x] .agent/skills/harness-context/SKILL.md -> [Detalhamento de mecânicas físicas, log JSON de loop, resets e scanners]
+
+executor_context_id: spec-driver
+validator_context_id: qa-validator
+status: READY TO COMMIT
+
 ## 📅 2026-05-30 22:08 | 🛡️ Governança: Documentação do SAM Dinâmico em Guias e Skills #Governance #Docs #Sync
 **Estado Atual:**
 - [x] **Documentation Sync**: Registrada a regra da tolerância dinâmica do SAM em AGENTS.md, no FLOW_JOURNAL_SYNC.md e na skill hok-governor/SKILL.md para orientação comportamental das IAs.
