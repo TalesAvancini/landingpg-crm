@@ -84,6 +84,20 @@ A arquitetura é viva. O registro no `JOURNAL.md` deve refletir de forma elegant
 
 ---
 
+## 🚀 PROTOCOLO DE PRE-PUSH & SUNSET (Encerramento de Feature)
+
+Antes de realizar ou sugerir qualquer `git push`, o orquestrador/agente deve executar este protocolo obrigatório para garantir conformidade epistemológica e evitar bloqueios na CI/CD:
+
+1. **Ativação da Skill de Propagação:** Carregue e execute a skill `semantic-propagation`.
+2. **Execução de Validação:** Rode a verificação completa local (`npm run context:all`).
+3. **Gerenciamento de Alertas (Warnings):**
+   * **Warnings Críticos (Infraestrutura/Ambiente, ex: Env Drift):** Bloqueie o push imediatamente e solicite a intervenção do Humano (Arquiteto) ou corrija o erro de configuração.
+   * **Warnings de Código (Complexidade/Cobertura):** Invoque o subagente **Inquisidor de Warnings** para analisar os alertas de código e gerar um rascunho de justificativas sob a seção `Bypasses/Justificativas` no `JOURNAL.md`. Apresente as justificativas para validação humana.
+4. **Arquivamento da Bancada:** Certifique-se de arquivar as especificações concluídas da feature (`npm run context:cleanup`) de modo que a pasta `.specs/features/` fique limpa antes do push.
+5. **Aprovação Humana:** Somente após o veredito final e aprovação do Humano sobre as justificativas, execute o `git push`.
+
+---
+
 ## 🛑 O Padrão Ouro do Arquiteto (Restrição Crítica Global)
 
 Como co-orquestrador, você personifica as diretivas comportamentais máximas do manifesto `AGENTS.md`. Incorpore estas atitudes inegociáveis:

@@ -8,6 +8,22 @@ Nota: Semente pos-purge. 26 entradas arquivadas em journal_archive_20260527_2019
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-30 21:35 | 🛡️ Validação: Implementação de Skills de Governança e Inquisidor #Governance #Harness #Inquisitor
+**Estado Atual:**
+- [x] **Harness Context**: Implementação da skill harness-context para contextualizar o ecossistema.
+- [x] **Warning Inquisitor**: Criação do subagente Warning Inquisitor para catalogação e justificativa de warnings.
+- [x] **Pre-Push Protocol**: Implementação do protocolo de validação final no hok-governor e semantic-propagation.
+
+**Matriz de Propagação:**
+- [x] .agent/skills/harness-context/SKILL.md -> [Implementação da skill harness-context]
+- [x] .agent/skills/hok-governor/SKILL.md -> [Modificação com inserção do protocolo de pre-push]
+- [x] .agent/skills/semantic-propagation/SKILL.md -> [Injeção do passo de validação de warnings]
+- [x] .agent/subagents/warning-inquisitor.md -> [Definição de papel e regras do inquisidor]
+
+executor_context_id: spec-driver
+validator_context_id: qa-validator
+status: READY TO COMMIT
+
 ## 📅 2026-05-30 19:37 | 🛡️ Validação: Arquivamento de Especificações Concluídas #Governance #Cleanup #SpecArchiving
 **Estado Atual:**
 - [x] **Spec Archiving**: Movidos os diretórios de especificações concluídas (api_notion_crm e landing_page_crm) para a pasta _archive_context/specs/ para manter a bancada de trabalho (.specs/features/) limpa e sem specs ativas.
@@ -25,44 +41,6 @@ Nota: Semente pos-purge. 26 entradas arquivadas em journal_archive_20260527_2019
 - [x] .specs/features/landing_page_crm/spec.md -> [Arquivado]
 - [x] .specs/features/landing_page_crm/tasks.md -> [Arquivado]
 - [x] .context/maintenance/JOURNAL.md -> [Registro de arquivamento das specs concluídas]
-
-executor_context_id: spec-driver
-validator_context_id: qa-validator
-status: READY TO COMMIT
-
-## 📅 2026-05-30 19:32 | 🛡️ Validação: Fechamento de Especificações e Correção de Alinhamento #Governance #Handoff #SpecClosure
-**Estado Atual:**
-- [x] **Spec Correction**: Checkboxes de Requisitos Funcionais (Acceptance) marcados como concluídos no spec.md do api_notion_crm e landing_page_crm.
-- [x] **Task Synchronization**: Checklist de tasks de landing_page_crm em tasks.md atualizado como concluído para refletir o estado real.
-- [x] **State Alignment**: Atualizados timestamps de atualizações nos arquivos STATE.md para a data/hora corretas (19:32).
-- [x] **Journal Chronology**: Reordenados logs históricos do JOURNAL.md para garantir estrita ordem cronológica reversa.
-
-**Matriz de Propagação:**
-- [x] .context/_scripts/workflow_journal_auditor.py -> [Validação e alinhamento do ecossistema]
-- [x] .context/brain/FILE_GLOSSARY.md -> [Validação e alinhamento do ecossistema]
-- [x] .context/brain/FLOW_JOURNAL_SYNC.md -> [Validação e alinhamento do ecossistema]
-- [x] .context/brain/PRD.md -> [Requisitos e dores de negócios B2B]
-- [x] .context/brain/VISION.md -> [Validação e alinhamento do ecossistema]
-- [x] .context/maintenance/ARCHITECTURE.md -> [Validação e alinhamento do ecossistema]
-- [x] .context/maintenance/rx-communications.md -> [Validação e alinhamento do ecossistema]
-- [x] .env.example -> [Validação e alinhamento do ecossistema]
-- [x] .specs/features/SSD_ERRORS_LEDGER.md -> [Validação e alinhamento do ecossistema]
-- [x] .specs/features/api_notion_crm/CLOSURE.md -> [Relatório de fechamento gerado]
-- [x] .specs/features/api_notion_crm/STATE.md -> [Estado de progresso concluído]
-- [x] .specs/features/api_notion_crm/spec.md -> [Especificação da feature concluída]
-- [x] .specs/features/api_notion_crm/tasks.md -> [Lista de tarefas concluídas]
-- [x] .specs/features/landing_page_crm/STATE.md -> [Estado de progresso concluído]
-- [x] .specs/features/landing_page_crm/spec.md -> [Especificação da feature concluída]
-- [x] .specs/features/landing_page_crm/tasks.md -> [Lista de tarefas concluídas]
-- [x] api/webhook-intake.js -> [Implementação do endpoint de webhook]
-- [x] assets/crm_dashboard_mockup.png -> [Validação e alinhamento do ecossistema]
-- [x] docs/PLAN-api-notion-crm.md -> [Validação e alinhamento do ecossistema]
-- [x] index.html -> [Estrutura da landing page com Typebot]
-- [x] package-lock.json -> [Dependências e scripts do projeto]
-- [x] package.json -> [Dependências e scripts do projeto]
-- [x] scripts/setup-crm.js -> [Script de setup do banco de dados Notion]
-- [x] style.css -> [Estilização responsiva dark mode]
-- [x] tests/webhook-intake.test.js -> [Testes unitários da API]
 
 executor_context_id: spec-driver
 validator_context_id: qa-validator

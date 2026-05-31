@@ -82,3 +82,23 @@ Before modifying any file, you MUST write an implementation plan using the **`su
    ```powershell
    python run_context.py check-version; python run_context.py validate; python run_context.py scan-secrets; python run_context.py workflow-journal
    ```
+
+### Step 6: Final Validation & Push Gate (Orchestrator Role)
+
+This step must be executed by the **final validator** or the **sdd-orchestrator** immediately before running `git push`.
+
+1. **Run the Pre-Push Check:** Execute the full pipeline locally to verify complete technical alignment:
+   ```powershell
+   npm run context:all
+   ```
+2. **Analyze Warnings & Advisories:** 
+   * **FATAL / ERROR:** Represents a hard contract or reality check violation. It **MUST** be fixed immediately. The push is blocked.
+   * **WARNING / ADVISORY (Karpathy Layer, Complexity, Semantic Coverage):** The orchestrator must audit these warnings and apply conscious judgment:
+     * *Is it a real structural regression or missing dependency?* (e.g., missing variable in `.env.example`). **Resolve it** before pushing.
+     * *Is it acceptable trade-off or noise?* (e.g., a complex function that cannot be split due to scope constraints, or a minor private helper without test coverage). **Approve and bypass it**. Document any major exceptions in the `STATE.md` or `JOURNAL.md` entry.
+3. **Clean the Workbench:** Ensure all completed specs are properly closed and archived:
+   ```powershell
+   npm run context:cleanup
+   ```
+   Verify that no active completed specs remain in `.specs/features/`. They must reside in `.context/maintenance/_archive_context/specs/` before hitting the remote repository.
+4. **Trigger Git Push:** Run `git push` only after the workbench is verified clean and all warnings are validated.
