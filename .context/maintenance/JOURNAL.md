@@ -8,6 +8,19 @@ Nota: Semente pos-purge. 26 entradas arquivadas em journal_archive_20260527_2019
 # JOURNAL.md (Memoria Curta)
 > Mantido por purge_journal.py. Limite heuristico de caracteres atingido.
 
+## 📅 2026-05-30 22:08 | 🛡️ Governança: Documentação do SAM Dinâmico em Guias e Skills #Governance #Docs #Sync
+**Estado Atual:**
+- [x] **Documentation Sync**: Registrada a regra da tolerância dinâmica do SAM em AGENTS.md, no FLOW_JOURNAL_SYNC.md e na skill hok-governor/SKILL.md para orientação comportamental das IAs.
+
+**Matriz de Propagação:**
+- [x] AGENTS.md -> [Inclusão de notas sobre Tolerância Dinâmica e Enforcement Estrito]
+- [x] .context/brain/FLOW_JOURNAL_SYNC.md -> [Registro de modos de operação STRICT vs ASSIST e hierarquia de leis]
+- [x] .agent/skills/hok-governor/SKILL.md -> [Inclusão de nota comportamental sobre Modo Light e correção de diários]
+
+executor_context_id: spec-driver
+validator_context_id: qa-validator
+status: READY TO COMMIT
+
 ## 📅 2026-05-30 21:45 | 🛡️ Governança: Implantação do Modo Light e Novos Harnesses #Governance #LightMode #Harnesses
 **Estado Atual:**
 - [x] **SAM Light**: Implementada a tolerância dinâmica em branches secundárias (modo WARNING).

@@ -35,9 +35,11 @@ Para preservar sua janela de contexto, os fluxos específicos de governança est
 ## ⚖️ O SAM ESTÁ OBSERVANDO
 
 O **Sistema Anti-Migué (SAM)** opera fisicamente no `pre-commit` hook do Git.
+- **Tolerância Dinâmica (Modo Light):** Em branches de feature ou bugfix, o SAM opera em modo **WARNING (assist)**. Ele exibirá o relatório detalhado de inconsistências de diário no terminal, mas **não bloqueará o seu commit** (Exit Code 0).
+- **Enforcement Estrito:** Em branches principais (`main` e `master`), o SAM opera em modo **STRICT (Exit Code 1)**, travando fisicamente commits inconsistentes.
 - Ele sabe se você tocou num arquivo e não relatou no Diário.
 - Ele sabe se você relatou algo no Diário mas não tocou no arquivo.
-- Se o seu commit for bloqueado, **NÃO TENTE CONTORNAR OU HACKEAR O HUSKY.** Assuma seu erro arquitetural, leia a documentação e reescreva o `JOURNAL.md` corretamente.
+- Se o seu commit for bloqueado em branches estritas, **NÃO TENTE CONTORNAR OU HACKEAR O HUSKY.** Assuma seu erro arquitetural, leia a documentação e reescreva o `JOURNAL.md` corretamente.
 
 **Bem-vindo ao Antigravity. A verdade é binária: ou está no diff do Git, ou é ficção.**
 

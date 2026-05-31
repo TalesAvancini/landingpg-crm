@@ -48,20 +48,26 @@ status: READY TO COMMIT
 
 O **SAM** (`workflow_journal_auditor.py`) atua como o promotor de justiça no hook de `pre-commit` do Husky. Se ele disser não, o commit morre. Ele audita o `JOURNAL.md` lendo a **primeira entrada** (a mais recente) e comparando com o output do `git status --porcelain`.
 
-Ele implementa 4 leis absolutas:
+### 2.1 Tolerância Dinâmica (Modos de Operação)
+O SAM possui dois modos de execução baseados na branch git atual:
+- **Modo ASSIST (WARNING - Feature Branches):** Se a branch ativa for uma branch de feature ou bugfix (diferente de `main` e `master`), o SAM aponta todas as violações de diário de forma pedagógica, mas retorna exit code `0`, permitindo o commit local rápido para incentivar o desenvolvimento sem fricção.
+- **Modo STRICT (LOCK - Branches Estritas):** Se a branch atual for `main` ou `master`, o SAM falha com exit code `1`, exigindo 100% de consistência antes do merge/push.
 
-### Lei 1: O Contrato Deve Ser Assinado
+### 2.2 As 4 Leis Absolutas
+Ele implementa 4 leis:
+
+#### Lei 1: O Contrato Deve Ser Assinado
 - Falha se faltar `executor_context_id` ou `validator_context_id`.
 - Falha se o status não contiver `READY TO COMMIT` ou `🟢`.
 
-### Lei 2: Segregação de Deveres (Conflito de Interesse)
+#### Lei 2: Segregação de Deveres (Conflito de Interesse)
 - Falha se `executor_context_id == validator_context_id`. Quem programa não pode assinar a própria QA.
 
-### Lei 3: Proibição de Fraude Narrativa
+#### Lei 3: Proibição de Fraude Narrativa
 - **O Crime:** O agente escreve na Matriz de Propagação que alterou o arquivo `X`, mas o `git status` mostra que `X` não foi tocado. (Mentiu no diário).
 - **A Punição:** Bloqueio do pipeline.
 
-### Lei 4: Proibição de Modificação Silenciosa
+#### Lei 4: Proibição de Modificação Silenciosa
 - **O Crime:** O `git status` acusa que o arquivo `Y` foi modificado, mas o agente "esqueceu" de listá-lo na Matriz de Propagação do Journal. (Tentou contrabandear código).
 - **A Punição:** Bloqueio do pipeline.
 

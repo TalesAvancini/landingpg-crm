@@ -62,6 +62,7 @@ Diferencie exploração de execução funcional.
 Trate erros operacionais como revelações de falhas no alicerce, não como problemas para serem camuflados.
 - **Aplicação:** Se for bloqueado pelo CI/CD ou Husky (ex: erro no `validate_context.py`), **PARE**. Não crie gambiarras (ex: arquivos *dummy*). Como arquiteto, mergulhe no script que falhou, diagnostique a raiz e proponha ao usuário corrigir o *script originador*.
 - **Metadados:** No `JOURNAL.md`, mantenha as tags e chaves limpas (sem formatação markdown como negrito ou crase) para garantir que o Regex do auditor funcione perfeitamente.
+- **Nota de Tolerância (SAM Light):** Lembre-se que em feature branches o SAM opera em modo **WARNING (assist)** para dar agilidade. O commit passará mesmo com alertas de diário, mas como arquiteto você deve buscar resolver as inconsistências de forma limpa ou invocar a Faxina Automática/Inquisidor antes de abrir o PR para a branch principal.
 
 ### 3. Paradigma de Alertas e Conflitos (Evolução Contínua)
 Seja firme com os princípios, mas aberto à evolução colaborativa com o usuário.
